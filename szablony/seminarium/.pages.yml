@@ -1,0 +1,57 @@
+# Pages CMS (https://pagescms.org) — panel referatów seminarium „__NAZWA__”.
+# Repozytorium założył automat strony Instytutu (__STRONA_REPO__) z szablonu szablony/seminarium/.
+# Każdy zapis w panelu to commit; workflow .github/workflows/powiadom-strone.yml prosi wtedy stronę
+# Instytutu o przebudowę, a strona pobiera referaty z folderu referaty/ i pliki z folderu pliki/.
+# Pola są takie same jak w kolekcji „Referaty seminaryjne” głównej strony (src/content.config.ts).
+
+settings:
+  commit:
+    identity: user
+
+# Pliki (slajdy itp.) trafiają do folderu pliki/ tego repozytorium, a na stronie Instytutu
+# są pod adresem /pliki/seminaria/__SEMINARIUM__/<nazwa pliku>.
+media:
+  input: pliki
+  output: /pliki/seminaria/__SEMINARIUM__
+  rename: safe
+
+content:
+  - name: referaty
+    label: Referaty
+    description: "Referaty seminarium „__NAZWA__”. Termin i salę wpisuje się przy każdym referacie. Po zapisaniu referat pojawi się na stronie Instytutu w ok. 3–5 minut."
+    type: collection
+    path: referaty
+    format: yaml-frontmatter
+    filename:
+      template: "{year}-{month}-{day}-{primary}.md"
+      field: create
+    view:
+      fields: [tytul, prelegent, termin]
+      primary: tytul
+      sort: termin
+      order: desc
+    fields:
+      - { name: tytul, label: Tytuł referatu, type: string, required: true }
+      - { name: prelegent, label: Prelegent, type: string, required: true }
+      - { name: afiliacja, label: Afiliacja, type: string }
+      - name: termin
+        label: Termin
+        type: date
+        required: true
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm
+      - { name: sala, label: Sala, type: string }
+      - name: pliki
+        label: Pliki (slajdy itp.)
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: plik, label: Plik, type: file, options: { path: pliki } }
+      - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
+      - name: body
+        label: Streszczenie (Markdown, wzory w $...$)
+        type: code
+        options:
+          format: markdown

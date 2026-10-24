@@ -1,0 +1,55 @@
+name: Powiadomienie strony Instytutu
+
+# Po każdej zmianie na gałęzi main (np. referat zapisany w Pages CMS) prosi stronę Instytutu
+# o przebudowę (zdarzenie repository_dispatch typu „seminaria”). Strona pobiera wtedy referaty
+# z folderu referaty/ i pliki z folderu pliki/ tego repozytorium — zmiana jest widoczna po ok. 3–5 minutach.
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: powiadom-strone
+  cancel-in-progress: true
+
+env:
+  # Repozytorium strony Instytutu. Zmienna IM_STRONA_REPO (ustawiona w tym repozytorium albo w całej
+  # organizacji) ma pierwszeństwo — po przeniesieniu strony wystarczy zmienić tę jedną wartość.
+  STRONA_REPO: ${{ vars.IM_STRONA_REPO || '__STRONA_REPO__' }}
+
+jobs:
+  powiadom:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      # Sekret IM_STRONA_TOKEN: token z prawem „Contents: read and write” do repozytorium strony
+      # (ustawia go automat przy zakładaniu repozytorium albo administrator — sekret repozytorium lub organizacji).
+      - name: Prośba o przebudowę strony
+        env:
+          GH_TOKEN: ${{ secrets.IM_STRONA_TOKEN }}
+        run: |
+          if [ -z "$GH_TOKEN" ]; then
+            echo "::warning title=Brak sekretu IM_STRONA_TOKEN::Strona Instytutu nie została powiadomiona — referaty pojawią się przy najbliższym planowym budowaniu (dwa razy dziennie). Poproś administratora strony o ustawienie sekretu IM_STRONA_TOKEN."
+            exit 0
+          fi
+          if gh api "repos/$STRONA_REPO/dispatches" -f event_type=seminaria -f "client_payload[repozytorium]=$GITHUB_REPOSITORY"; then
+            echo "::notice title=Strona powiadomiona::Strona $STRONA_REPO przebuduje się i pobierze referaty (ok. 3–5 minut)."
+          else
+            echo "::error title=Nie udało się powiadomić strony::Sprawdź sekret IM_STRONA_TOKEN (ważność, dostęp do $STRONA_REPO). Referaty pojawią się przy najbliższym planowym budowaniu strony."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v5
+
+      # Ta sama kontrola, którą strona robi przy pobieraniu: referat z błędem (np. bez prelegenta albo terminu)
+      # zostanie na stronie pominięty, a tutaj przebieg zakończy się na czerwono z opisem błędu.
+      - name: Kontrola referatów
+        run: |
+          if ! curl -fsSL --retry 2 "https://raw.githubusercontent.com/$STRONA_REPO/HEAD/skrypty/seminaria/pobierz_referaty.py" -o "$RUNNER_TEMP/pobierz_referaty.py"; then
+            echo "::notice title=Kontrola referatów::Pominięta — skrypt kontrolny strony jest niedostępny (np. repozytorium strony jest prywatne)."
+            exit 0
+          fi
+          python3 "$RUNNER_TEMP/pobierz_referaty.py" --sprawdz .
