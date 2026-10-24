@@ -1,0 +1,48 @@
+name: Sprawdzenie gałęzi (bez publikacji)
+
+# Budowanie gałęzi roboczych (agent-*, qa-*) — tylko kontrola, że strona się buduje.
+# Nic nie jest publikowane; wynik i błędy widać w adnotacjach przebiegu.
+on:
+  push:
+    branches: ['agent-*', 'qa-*']
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: sprawdz-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-node@v5
+        with:
+          node-version: 22
+
+      - name: Instalacja zależności
+        run: npm install --no-audit --no-fund
+
+      - name: Kontrola plików treści
+        run: |
+          if ! python3 skrypty/sprawdz_tresci.py > tresci.log 2>&1; then
+            msg=$(sed -e 's/%/%25/g' tresci.log | head -60 | awk '{printf "%s%%0A", $0}')
+            echo "::error title=Błędy w plikach treści::${msg}"
+            exit 1
+          fi
+
+      - name: Budowanie strony
+        run: |
+          set -o pipefail
+          if ! npm run build 2>&1 | tee build.log; then
+            msg=$(tail -c 6000 build.log | sed -e 's/\x1b\[[0-9;]*m//g' -e 's/%/%25/g' -e 's/\r/%0D/g' | awk '{printf "%s%%0A", $0}')
+            echo "::error title=Błąd budowania::${msg}"
+            exit 1
+          fi
+          warn=$(sed -e 's/\x1b\[[0-9;]*m//g' build.log | grep -iE 'warn|error|failed|not found' | head -40 | sed -e 's/%/%25/g' | awk '{printf "%s%%0A", $0}' || true)
+          if [ -n "$warn" ]; then echo "::warning title=Ostrzeżenia budowania::${warn}"; fi
+          echo "::notice title=Wynik budowania::$(find dist -name '*.html' | wc -l) stron HTML, $(du -sh dist | cut -f1)"
