@@ -13,6 +13,16 @@
       "nazwa_en": "Winter semester 2026/27",
       "poczatek": "2026-10-02",
       "koniec": "2027-02-05",
+      "terminy": {
+        "semestr_od": "2026-10-01",
+        "semestr_do": "2027-02-23",
+        "inauguracja": "2026-10-01",
+        "sesja_od": "2027-02-06",
+        "sesja_do": "2027-02-16",
+        "poprawkowa_od": "2027-02-17",
+        "poprawkowa_do": "2027-02-23",
+        "przerwy": []
+      },
       "pdf": "/pliki/studia/kolory-dni/2026-27z-oznaczenia.pdf",
       "uwagi": "",
       "uwagi_en": "",
@@ -31,6 +41,19 @@
       "nazwa_en": "Summer semester 2026/27",
       "poczatek": "2027-02-24",
       "koniec": "2027-06-17",
+      "terminy": {
+        "semestr_od": "2027-02-24",
+        "semestr_do": "2027-09-30",
+        "inauguracja": "",
+        "sesja_od": "2027-06-18",
+        "sesja_do": "2027-07-01",
+        "poprawkowa_od": "2027-09-01",
+        "poprawkowa_do": "2027-09-09",
+        "przerwy": [
+          { "od": "2027-07-02", "do": "2027-08-31" },
+          { "od": "2027-09-10", "do": "2027-09-30" }
+        ]
+      },
       "pdf": "",
       "uwagi": "Kolory wyliczone automatycznie z harmonogramu roku akademickiego — Instytut nie opublikował jeszcze kalendarza na ten semestr.",
       "uwagi_en": "Colours calculated automatically from the academic year schedule — the Institute has not yet published the calendar for this semester.",

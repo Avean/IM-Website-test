@@ -4,7 +4,9 @@
 //
 // Panele renderuje strona, zaraz pod przełącznikiem: element z id = `id` semestru i atrybutem data-ps-panel;
 // panel semestru wybranego podczas budowania dostaje też data-ps-aktywny. Elementy towarzyszące panelowi
-// (np. spis sekcji w prawym pasku) mają data-ps-dla="<id>" i przełączają się razem z nim.
+// (np. spis sekcji w prawym pasku, terminy i listy semestru niżej na stronie) mają data-ps-dla="<id>"
+// i przełączają się razem z nim. lustro = drugi zestaw takich samych przycisków niżej na stronie (np. nad „Rokiem
+// w skrócie”), zsynchronizowany z głównym — pokazuje, który semestr jest wybrany, i pozwala go zmienić bez przewijania.
 // Bez JavaScriptu przełącznik jest ukryty, a wszystkie semestry są widoczne jeden pod drugim.
 // W przeglądarce semestr wybiera się wg dzisiejszej daty (Europe/Warsaw) albo wg adresu (#zimowy, #letni, kotwica w panelu);
 // przełączenie zmienia adres (history.replaceState), więc link do wybranego semestru można skopiować.
@@ -15,15 +17,26 @@ interface Props {
   aktywny: string; // id semestru wybranego podczas budowania (wybierzSemestr z ./wyborSemestru)
   lang: Lang;
   etykieta?: string;
+  lustro?: boolean; // kopia przycisków sterująca głównym przełącznikiem strony (role="group", aria-pressed)
 }
-const { semestry, aktywny, lang, etykieta = lang === 'en' ? 'Semesters' : 'Semestry' } = Astro.props;
+const { semestry, aktywny, lang, lustro = false } = Astro.props;
+const etykieta = Astro.props.etykieta ?? (lustro ? (lang === 'en' ? 'Semester shown' : 'Pokazany semestr') : lang === 'en' ? 'Semesters' : 'Semestry');
 // Na wąskim ekranie krótsza etykieta, żeby dwa przyciski zmieściły się obok siebie: „Zimowy 2026/27”, „Winter 2026/27”.
 const krotka = (e: string) => {
   const k = e.replace(/^semestr\s+/i, '').replace(/\s+semester\b/i, '');
   return k.charAt(0).toUpperCase() + k.slice(1);
 };
 ---
-{semestry.length > 1 && (
+{semestry.length > 1 && lustro && (
+  <div class="tabs ps-tabs ps-lustro" role="group" aria-label={etykieta} data-ps-lustro>
+    {semestry.map((s) => (
+      <button type="button" class="chip" aria-pressed={s.id === aktywny ? 'true' : 'false'} data-ps-cel={s.id}>
+        {krotka(s.etykieta) === s.etykieta ? s.etykieta : <><span class="ps-pelna">{s.etykieta}</span><span class="ps-krotka">{krotka(s.etykieta)}</span></>}
+      </button>
+    ))}
+  </div>
+)}
+{semestry.length > 1 && !lustro && (
   <div class="tabs ps-tabs" role="tablist" aria-label={etykieta} data-ps>
     {semestry.map((s) => (
       <button
@@ -78,6 +91,7 @@ const krotka = (e: string) => {
         p.toggleAttribute('data-ps-aktywny', i === j);
         p.hidden = i !== j;
         document.querySelectorAll(`[data-ps-dla="${CSS.escape(p.id)}"]`).forEach((el) => el.toggleAttribute('data-ps-aktywny', i === j));
+        document.querySelectorAll(`[data-ps-lustro] [data-ps-cel="${CSS.escape(p.id)}"]`).forEach((b) => b.setAttribute('aria-pressed', String(i === j)));
       });
       wysokosc();
     };
@@ -86,7 +100,12 @@ const krotka = (e: string) => {
       try { h = decodeURIComponent(location.hash.slice(1)); } catch { /* zły adres */ }
       return h ? document.getElementById(h) : null;
     };
-    const indeks = (el: HTMLElement | null) => (el ? P.findIndex((p) => p === el || p.contains(el)) : -1);
+    // semestr, do którego należy element: panel albo element towarzyszący (data-ps-dla)
+    const indeks = (el: HTMLElement | null) => {
+      if (!el) return -1;
+      const dla = el.closest<HTMLElement>('[data-ps-dla]')?.dataset.psDla;
+      return P.findIndex((p) => p === el || p.contains(el) || p.id === dla);
+    };
     const doCelu = (el: HTMLElement) => requestAnimationFrame(() => el.scrollIntoView());
 
     const cel = celZAdresu();
@@ -105,7 +124,7 @@ const krotka = (e: string) => {
       const el = celZAdresu();
       const j = indeks(el);
       if (j < 0) return;
-      if (P[j].hidden) pokaz(j);
+      if (P[j].hidden || !el!.getClientRects().length) pokaz(j);
       doCelu(el!);
     });
 
@@ -114,6 +133,10 @@ const krotka = (e: string) => {
       if (fokus) tabs[j].focus();
       history.replaceState(history.state, '', `#${P[j].id}`);
     };
+    document.querySelectorAll<HTMLButtonElement>('[data-ps-lustro] [data-ps-cel]').forEach((b) => {
+      const k = P.findIndex((p) => p.id === b.dataset.psCel);
+      if (k >= 0) b.addEventListener('click', () => wybierz(k, false));
+    });
     tabs.forEach((t, k) => {
       t.addEventListener('click', () => wybierz(k, false));
       t.addEventListener('keydown', (e) => {
