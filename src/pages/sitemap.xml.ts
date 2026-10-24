@@ -4,6 +4,7 @@ import { getCollection } from 'astro:content';
 import { aktualnosci, obrony, seminaria, konferencje, granty, slugOf } from '../lib/tresci';
 import { absolute } from '../lib/url';
 import { wJezyku } from '../lib/i18n';
+import { wykazy } from '../views/publikacjeDane';
 
 export async function GET(context: APIContext) {
   const sciezki: string[] = ['/', '/instytut', '/nauka', '/studia', '/popularyzacja', '/aktualnosci', '/kalendarz', '/seminaria', '/pracownicy', '/obrony-doktorskie', '/nauka/konferencje', '/nauka/granty', '/nauka/sukcesy', '/studia/rok-akademicki'];
@@ -16,6 +17,7 @@ export async function GET(context: APIContext) {
   for (const k of await getCollection('kierunki')) if (k.data.opublikowany !== false) sciezki.push(`/studia/${k.id}`);
   for (const z of await getCollection('zaklady')) if (z.data.opublikowany !== false) sciezki.push(`/instytut/zaklady/${z.id}`);
   sciezki.push('/instytut/struktura', '/instytut/wladze');
+  sciezki.push('/nauka/publikacje', ...Object.keys(wykazy).map((r) => `/nauka/publikacje/${r}`));
   for (const s of await getCollection('specjalnosci')) if (s.data.opublikowany !== false && !s.data.bez_podstrony) sciezki.push(`/studia/${s.data.kierunek}/${s.id}`);
   sciezki.push('/warto-wiedziec');
   for (const w of await getCollection('warto_wiedziec')) if (w.data.opublikowany !== false && w.body?.trim()) sciezki.push(`/warto-wiedziec/${slugOf(w.id)}`);

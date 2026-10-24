@@ -980,6 +980,85 @@ content:
       - { name: opis_en, label: "EN: opis", type: text }
       - { name: tresc_en, label: "EN: treść (Markdown)", type: text }
 
+  # ---------------------------------------------------------------- PUBLIKACJE
+  - name: publikacje
+    label: Publikacje
+    description: "Strona /nauka/publikacje. Nowy rok: dodaj go na górze listy „Lata” i wgraj PDF. Liczby prac liczą się same z wykazów w HTML (Publikacje — wykazy prac)."
+    type: file
+    path: src/data/publikacje.json
+    format: json
+    fields:
+      - { name: wstep, label: Tekst pod tytułem, type: text }
+      - { name: wstep_en, label: "EN: tekst pod tytułem", type: text }
+      - name: lata
+        label: Lata (najnowszy na górze)
+        type: object
+        list: true
+        fields:
+          - { name: rok, label: Rok, type: number, required: true }
+          - { name: plik, label: Wykaz (PDF), type: file, options: { path: public/pliki/nauka/publikacje } }
+          - { name: link, label: "Albo link do wykazu (https://…), gdy nie ma PDF", type: string }
+          - { name: uwagi, label: Uwaga na karcie roku (opcjonalnie), type: string }
+          - { name: uwagi_en, label: "EN: uwaga", type: string }
+      - { name: czasopisma_naglowek, label: Nagłówek sekcji czasopism, type: string, default: "Czasopisma redagowane w Instytucie" }
+      - { name: czasopisma_naglowek_en, label: "EN: nagłówek sekcji czasopism", type: string }
+      - name: czasopisma
+        label: Czasopisma
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string, required: true }
+          - { name: opis, label: Opis, type: text }
+          - { name: opis_en, label: "EN: opis", type: text }
+          - { name: wydawca, label: Wydawca, type: string }
+          - { name: wydawca_en, label: "EN: wydawca", type: string }
+          - { name: wsparcie, label: "Wsparcie (np. współfinansujące wydziały)", type: string }
+          - { name: wsparcie_en, label: "EN: wsparcie", type: string }
+          - { name: redakcja, label: Adres redakcji, type: string }
+          - { name: redakcja_en, label: "EN: adres redakcji", type: string }
+          - { name: kontakt, label: E-mail redakcji, type: string }
+          - { name: issn, label: "ISSN (druk)", type: string }
+          - { name: eissn, label: "eISSN (online)", type: string }
+          - { name: adres, label: Strona czasopisma (https://…), type: string }
+      - { name: archiwum, label: "Uwaga pod czasopismami (np. o dawnych seriach)", type: text }
+      - { name: archiwum_en, label: "EN: uwaga pod czasopismami", type: text }
+  - name: publikacje-wykazy
+    label: Publikacje — wykazy prac (lista w HTML)
+    description: "Jeden plik = jeden rok (podstrona /nauka/publikacje/RRRR). Wykaz w HTML jest opcjonalny — wystarczy PDF w „Publikacje”."
+    type: collection
+    path: src/data/publikacje
+    format: json
+    filename: "{fields.rok}.json"
+    view:
+      fields: [rok]
+      primary: rok
+      sort: rok
+      order: desc
+    fields:
+      - { name: rok, label: Rok, type: number, required: true }
+      - { name: uwagi, label: Uwaga nad listą (opcjonalnie), type: text }
+      - { name: uwagi_en, label: "EN: uwaga nad listą", type: text }
+      - name: grupy
+        label: "Grupy prac (jedna grupa bez nagłówka = zwykła lista)"
+        type: object
+        list: true
+        fields:
+          - { name: naglowek, label: "Nagłówek grupy (np. Artykuły problemowe; puste = bez nagłówka)", type: string }
+          - { name: naglowek_en, label: "EN: nagłówek grupy", type: string }
+          - { name: rok_wydania, label: "Rok wydania, jeśli inny niż rok wykazu", type: number }
+          - name: prace
+            label: Prace
+            type: object
+            list: true
+            fields:
+              - { name: autorzy, label: Autorzy, type: string }
+              - { name: tytul, label: Tytuł, type: string }
+              - { name: zrodlo, label: "Czasopismo / wydawnictwo, rok, tom, strony", type: string }
+              - { name: opis, label: "Opis w jednym polu (gdy tytułu i źródła nie da się rozdzielić)", type: string }
+              - { name: doi, label: "DOI (np. 10.1016/j.jfa.2025.111082)", type: string }
+              - { name: if, label: "IF (impact factor, opcjonalnie)", type: string }
+              - { name: uwagi, label: Uwagi (np. język, „w druku”), type: string }
+
   # ---------------------------------------------------------------- USTAWIENIA
   - name: ustawienia-grupa
     label: Ustawienia strony
