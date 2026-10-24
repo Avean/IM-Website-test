@@ -136,6 +136,8 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
   .brand-logo + .sr-only + .brand-txt { padding-left: 0; border-left: 0; }
 }
 .brand-name, .brand-sub { white-space: nowrap; }
+/* nazwa się nie ściska (inaczej tekst wchodził pod menu); progi menu i wyszukiwarki dobrane pomiarem */
+@media (min-width: 561px) { .brand { flex: none; } .brand-txt { min-width: auto; } }
 .brand-txt { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
 .brand-name { font-size: 18px; font-weight: 800; letter-spacing: -0.01em; color: var(--ink); }
 .brand-sub { font-size: 13px; font-weight: 500; color: var(--muted); }
@@ -449,10 +451,10 @@ details[open] > summary .chev { transform: rotate(180deg); }
 
 /* ---------- dodatki do nagłówka ---------- */
 .hdr-search { display: flex; align-items: center; gap: 8px; height: 44px; padding: 0 14px; border-radius: 999px; background: var(--surface); color: var(--muted); }
-.hdr-search input { width: 92px; border: 0; background: transparent; font: inherit; font-size: 15px; color: var(--ink); outline: none; }
+.hdr-search input { width: 72px; border: 0; background: transparent; font: inherit; font-size: 15px; color: var(--ink); outline: none; }
 .hdr-search:focus-within { box-shadow: inset 0 0 0 2px var(--accent); }
 .search-narrow { display: none; }
-@media (max-width: 1279px) {
+@media (max-width: 1299px) {
   .hdr-search { display: none; }
   .search-narrow { display: inline-flex; }
 }
