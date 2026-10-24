@@ -73,17 +73,19 @@ const sekcje = [
         {liczby.map((x) => <div class="stat"><span class="n">{x.n}</span><span class="l">{x.l}</span></div>)}
       </div>
 
-      <details class="toc toc-top gl-spis" data-pagefind-ignore>
-        <summary>{naTejStronie}<Ikona nazwa="dol" class="chev" rozmiar={18} /></summary>
-        <ol>
-          {sekcje.map((s) => (
-            <li>
-              <a href={`#${s.id}`}>{s.tekst} <span class="gl-spis-ile">({s.ile})</span></a>
-              {s.id === 'zakonczone' && <ol class="gl-lata" aria-label={T('Rok zakończenia', 'Year completed')}>{grupy.map((gr) => <li><a href={`#rok-${gr.rok}`}>{gr.rok}</a></li>)}</ol>}
-            </li>
-          ))}
-        </ol>
-      </details>
+      {sekcje.length > 1 && (
+        <details class="toc toc-top gl-spis" data-pagefind-ignore>
+          <summary>{naTejStronie}<Ikona nazwa="dol" class="chev" rozmiar={18} /></summary>
+          <ol>
+            {sekcje.map((s) => (
+              <li>
+                <a href={`#${s.id}`}>{s.tekst} <span class="gl-spis-ile">({s.ile})</span></a>
+                {s.id === 'zakonczone' && <ol class="gl-lata" aria-label={T('Rok zakończenia', 'Year completed')}>{grupy.map((gr) => <li><a href={`#rok-${gr.rok}`}>{gr.rok}</a></li>)}</ol>}
+              </li>
+            ))}
+          </ol>
+        </details>
+      )}
 
       <section class="gl-sekcja" id="realizowane" aria-labelledby="h-realizowane">
         <h2 id="h-realizowane">{T('Realizowane', 'Ongoing')} <span class="muted gl-ile">({realizowane.length})</span></h2>
