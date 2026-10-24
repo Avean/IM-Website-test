@@ -1,5 +1,6 @@
 ---
 // Podstrona zakładu: opis, skład (z tabeli pracowników), seminaria, granty, konferencje, obrony, aktualności.
+import { zTytulem } from '../lib/osoby';
 import { render } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
@@ -89,8 +90,8 @@ const wszystkieZaklady = await zaklady();
           <div class={kierownik?.data.strona ? 'person lead-person os-link' : 'person lead-person'}>
             <span class="role">{T('Kierownik', 'Head')}</span>
             <span class="os-n">{kierownik?.data.strona
-              ? <a class="os-a" href={kierownik.data.strona}>{kierownik.data.stopien} {kierownik.data.imie_nazwisko}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
-              : kierownik ? `${kierownik.data.stopien ?? ''} ${kierownik.data.imie_nazwisko}` : d.kierownik}</span>
+              ? <a class="os-a" href={kierownik.data.strona}>{zTytulem(kierownik.data.stopien, kierownik.data.imie_nazwisko)}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
+              : kierownik ? zTytulem(kierownik.data.stopien, kierownik.data.imie_nazwisko) : d.kierownik}</span>
             <span class="os-c">
               {kierownik?.data.email && <a href={`mailto:${kierownik.data.email}`}><Ikona nazwa="mail" rozmiar={14} />{kierownik.data.email}</a>}
               {(kierownik?.data.telefon || d.telefon) && <span><Ikona nazwa="telefon" rozmiar={14} />{kierownik?.data.telefon || d.telefon}</span>}
@@ -104,7 +105,7 @@ const wszystkieZaklady = await zaklady();
             <ul class="people">
               {g.osoby.map((o) => (
                 <li class={o.data.strona ? 'person os-link' : 'person'}>
-                  <span class="os-n">{o.data.strona ? <a class="os-a" href={o.data.strona}>{o.data.stopien} {o.data.imie_nazwisko}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a> : `${o.data.stopien ?? ''} ${o.data.imie_nazwisko}`}</span>
+                  <span class="os-n">{o.data.strona ? <a class="os-a" href={o.data.strona}>{zTytulem(o.data.stopien, o.data.imie_nazwisko)}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a> : zTytulem(o.data.stopien, o.data.imie_nazwisko)}</span>
                   <span class="os-c">
                     {o.data.email && <a href={`mailto:${o.data.email}`}>{o.data.email}</a>}
                     {o.data.pokoj && <span>{T('pok.', 'room')} {o.data.pokoj}</span>}

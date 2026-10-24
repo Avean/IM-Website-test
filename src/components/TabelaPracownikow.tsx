@@ -76,7 +76,7 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
     .filter((g) => g.osoby.length > 0);
 
   const wiersz = (o: Osoba, maTel: boolean) => {
-    const nazwa = `${o.stopien ? `${o.stopien} ` : ''}${o.imie_nazwisko}`;
+    const nazwa = zTytulem(o.stopien, o.imie_nazwisko);
     const linkZakladu = o.zaklad ? linkiZakladow[o.zaklad] : undefined;
     return (
       <li key={o.id} className={o.strona ? 'staff-row os-link' : 'staff-row'}>

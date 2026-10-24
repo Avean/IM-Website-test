@@ -1,5 +1,6 @@
 ---
 // Podstrona specjalności. Treść: src/content/specjalnosci/<id>.md (edycja w Pages CMS).
+import { zTytulem } from '../lib/osoby';
 import { render, getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
@@ -201,8 +202,8 @@ const sekcje = [
               <li class={o.osoba?.data.strona ? 'person os-link' : 'person'}>
                 {o.rola && <span style="font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)">{w(o, 'rola')}</span>}
                 <span class="os-n">{o.osoba?.data.strona
-                  ? <a class="os-a" href={o.osoba.data.strona}>{o.osoba.data.stopien} {o.osoba.data.imie_nazwisko}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
-                  : o.osoba ? `${o.osoba.data.stopien ?? ''} ${o.osoba.data.imie_nazwisko}` : o.imie_nazwisko}</span>
+                  ? <a class="os-a" href={o.osoba.data.strona}>{zTytulem(o.osoba.data.stopien, o.osoba.data.imie_nazwisko)}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
+                  : o.osoba ? zTytulem(o.osoba.data.stopien, o.osoba.data.imie_nazwisko) : o.imie_nazwisko}</span>
                 {o.osoba && (
                   <span class="os-c">
                     {o.osoba.data.email && <a href={`mailto:${o.osoba.data.email}`}>{o.osoba.data.email}</a>}

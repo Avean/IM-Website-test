@@ -1,5 +1,6 @@
 ---
 // Strona kierunku studiów (np. Matematyka). Treść: src/content/kierunki/<kierunek>.md (edycja w Pages CMS).
+import { zTytulem } from '../lib/osoby';
 import { render, getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
@@ -27,10 +28,10 @@ const faq = await Promise.all(d.faq.map(async (f) => ({ q: w(f, 'pytanie'), a: a
 const nazwyZakladow = Object.fromEntries((await zaklady()).map((z) => [z.id, z]));
 // Kafelki specjalności budują się z plików specjalności (src/content/specjalnosci) — jedno miejsce edycji.
 const osoby = await pracownicy();
-const zTytulem = (n: string) => {
+const zTytulemZeSpisu = (n: string) => {
   const kand = osoby.filter((p) => p.data.imie_nazwisko === n.trim());
   const o = kand.find((p) => p.data.grupa === 'nauczyciel') ?? kand.find((p) => p.data.grupa !== 'administracja') ?? kand[0];
-  return o?.data.stopien ? `${o.data.stopien} ${n.trim()}` : n.trim();
+  return zTytulem(o?.data.stopien, n);
 };
 const specjalnosci = (await getCollection('specjalnosci'))
   .filter((s) => s.data.kierunek === kierunek.id && s.data.opublikowany !== false && s.data.na_stronie_kierunku)
@@ -38,7 +39,7 @@ const specjalnosci = (await getCollection('specjalnosci'))
   .map((s) => ({
     ...s.data,
     strona: s.data.bez_podstrony ? undefined : s.id,
-    opiekunowie: s.data.opiekunowie.map((o) => zTytulem(o.imie_nazwisko)).join(', '),
+    opiekunowie: s.data.opiekunowie.map((o) => zTytulemZeSpisu(o.imie_nazwisko)).join(', '),
     dla_kogo: s.data.kafelek_dla_kogo,
     dla_kogo_en: s.data.kafelek_dla_kogo_en,
     kariera: s.data.kafelek_kariera,
