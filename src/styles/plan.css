@@ -49,8 +49,8 @@
 
 /* ---------- telefon: wiersz = karta ---------- */
 @media (max-width: 760px) {
-  .pz-naglowek { display: none; }
   .pz-tabela, .pz-tabela tbody { display: block; }
+  .pz-tabela.pz-naglowek { display: none; }
   .pz-tabela colgroup { display: none; }
   .pz-tabela thead.pz-ukryty { display: block; height: 0; overflow: hidden; }
   .pz-tabela tbody tr { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 10px; padding: 8px 2px; border-bottom: 1px solid var(--line); }
