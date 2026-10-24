@@ -427,6 +427,10 @@ content:
           - { name: termin, label: Termin, type: string }
           - { name: formularz, label: "Formularz (np. C2)", type: string }
           - { name: formularz_adres, label: Link do formularza, type: string }
+          - { name: przypomnienie, label: "Przypomnienie w „Najbliższych wydarzeniach” (strona główna, aktualności)", type: boolean, default: false }
+          - { name: data, label: "Data terminu (do kiedy) — potrzebna do przypomnienia", type: date, options: { format: yyyy-MM-dd } }
+          - { name: dni_przed, label: "Ile dni przed terminem pokazać przypomnienie (domyślnie 14)", type: number, default: 14 }
+          - { name: co_roku, label: "Powtarza się co roku (ten sam dzień i miesiąc)", type: boolean, default: true }
           - { name: co_en, label: "EN: sprawa", type: string }
           - { name: kogo_en, label: "EN: kogo dotyczy", type: string }
           - { name: termin_en, label: "EN: termin", type: string }

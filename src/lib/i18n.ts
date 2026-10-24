@@ -229,6 +229,7 @@ export const RODZAJE: Record<string, { pl: string; en: string }> = {
   obrona: { pl: 'Obrona doktorska', en: 'PhD defence' },
   referat: { pl: 'Seminarium', en: 'Seminar' },
   konferencja: { pl: 'Konferencja', en: 'Conference' },
+  termin: { pl: 'Termin', en: 'Deadline' },
 };
 
 export const RODZAJE_GRANTOW: Record<string, { pl: string; en: string }> = {

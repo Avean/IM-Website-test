@@ -120,7 +120,7 @@ export function sala(s: string | undefined, lang: Lang = 'pl'): string | undefin
 
 // Wspólny format pozycji kalendarza.
 export interface Wydarzenie {
-  rodzaj: 'wydarzenie' | 'obrona' | 'referat' | 'konferencja';
+  rodzaj: 'wydarzenie' | 'obrona' | 'referat' | 'konferencja' | 'termin';
   tytul: string;
   podtytul?: string;
   poczatek: string;
@@ -132,6 +132,8 @@ export interface Wydarzenie {
   href: string;
   uid: string;
   opis?: string;
+  // od kiedy pokazywać w „Najbliższych wydarzeniach” (terminy z tabel kierunków); bez pola — reguła dni roboczych
+  widoczneOd?: string;
 }
 
 const koniecDomyslny = (start: string, minuty: number) => (hasTime(start) ? plusMinutes(start, minuty) : undefined);
@@ -202,7 +204,39 @@ export function poDniachRoboczych(od: string, n: number): string {
 // (Ustawienia → „Wydarzenia na stronie głównej”). Gdy żadnego nie ma, sekcja się nie pokazuje.
 export async function wydarzeniaNaGlowna(limit = 3, lang: Lang = 'pl', dniRoboczych = 5): Promise<Wydarzenie[]> {
   const granica = poDniachRoboczych(today(), dniRoboczych);
-  return (await najblizszeWydarzenia(100, lang)).filter((w) => w.poczatek.slice(0, 10) <= granica).slice(0, limit);
+  const blisko = (await najblizszeWydarzenia(100, lang)).filter((w) => w.poczatek.slice(0, 10) <= granica);
+  const terminy = (await przypomnieniaTerminow(lang)).filter((w) => today() >= w.widoczneOd! && today() <= w.poczatek);
+  // kolejność jak w najblizszeWydarzenia: chronologicznie, obrony na końcu
+  const wszystkie = [...blisko.filter((w) => w.rodzaj !== 'obrona'), ...terminy].sort((x, y) => (x.poczatek < y.poczatek ? -1 : 1));
+  return [...wszystkie, ...blisko.filter((w) => w.rodzaj === 'obrona')].slice(0, limit);
+}
+
+// Terminy z tabel „Terminy i formularze” kierunków (pole „Przypomnienie”): wydarzenie typu „Termin”,
+// widoczne od `dni_przed` dni (kalendarzowych) przed terminem do dnia terminu. „Co roku” = najbliższe wystąpienie tego dnia i miesiąca.
+export async function przypomnieniaTerminow(lang: Lang = 'pl'): Promise<Wydarzenie[]> {
+  const dzis = today();
+  const out: Wydarzenie[] = [];
+  for (const k of await getCollection('kierunki')) {
+    if (k.data.opublikowany === false) continue;
+    k.data.terminy.forEach((t, i) => {
+      if (!t.przypomnienie || !t.data) return;
+      let d = t.data.slice(0, 10);
+      if (t.co_roku) {
+        const md = d.slice(4);
+        d = `${dzis.slice(0, 4)}${md}`;
+        if (d < dzis) d = `${Number(dzis.slice(0, 4)) + 1}${md}`;
+      }
+      if (d < dzis) return;
+      const pl = lang !== 'en';
+      const kogo = (pl ? t.kogo : t.kogo_en || t.kogo) || '';
+      const form = t.formularz ? `${pl ? 'formularz' : 'form'} ${t.formularz}` : '';
+      out.push({
+        rodzaj: 'termin', tytul: (pl ? t.co : t.co_en || t.co), podtytul: [kogo, form].filter(Boolean).join(' · ') || undefined,
+        poczatek: d, href: `/studia/${k.id}#terminy`, uid: `termin-${k.id}-${i}-${d}`, widoczneOd: addDays(d, -t.dni_przed),
+      });
+    });
+  }
+  return out.sort((a, b) => (a.poczatek < b.poczatek ? -1 : 1));
 }
 
 // Tydzień pokazywany na stronie głównej: bieżący, a od soboty — następny.

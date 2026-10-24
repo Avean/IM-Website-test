@@ -217,6 +217,11 @@ const kierunki = defineCollection({
       termin_en: optStr,
       formularz: optStr,
       formularz_adres: optStr,
+      // przypomnienie w „Najbliższych wydarzeniach” (strona główna, aktualności) przed terminem
+      data: optDate,
+      przypomnienie: z.preprocess(empty, z.boolean().default(false)),
+      dni_przed: z.preprocess(empty, z.coerce.number().int().min(0).default(14)),
+      co_roku: z.preprocess(empty, z.boolean().default(true)),
     })),
     praktyki: optStr,
     praktyki_en: optStr,

@@ -186,6 +186,10 @@ terminy:
   termin: do 15 października
   termin_en: by 15 October
   formularz: C3
+  data: 2026-10-15
+  przypomnienie: true
+  dni_przed: 14
+  co_roku: true
   formularz_adres: https://forms.cloud.microsoft/e/LKA4mEgVtN
 - co: Zgłoszenie promotora i tematyki pracy magisterskiej
   co_en: Choice of master's thesis supervisor
@@ -210,6 +214,10 @@ terminy:
   termin: do 31 grudnia
   termin_en: by 31 December
   formularz: C1
+  data: 2026-12-31
+  przypomnienie: true
+  dni_przed: 14
+  co_roku: true
 - co: Zgłoszenie promotora i tematyki pracy magisterskiej
   co_en: Choice of master's thesis supervisor
   kogo: studia II stopnia, rekrutacja zimowa
@@ -225,6 +233,10 @@ terminy:
   termin: do 30 czerwca
   termin_en: by 30 June
   formularz: C2
+  data: 2027-06-30
+  przypomnienie: true
+  dni_przed: 14
+  co_roku: true
   formularz_adres: https://forms.cloud.microsoft/e/SWEQQ1YF5L
 - co: Wpis ponad limit miejsc w grupie
   co_en: Enrolment above the group limit
