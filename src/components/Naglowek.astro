@@ -126,15 +126,16 @@ const logo = (ustawienia as any).logo as string | undefined;
   );
 
   // Pływający nagłówek: cień po przewinięciu; na stronie głównej przezroczysty na zdjęciu tylko u góry strony
-  // a na samym dole strony głównej przyjmuje kolor stopki
+  // a na samym dole każdej strony przyjmuje kolor stopki
   const hdr = document.querySelector<HTMLElement>('.hdr');
-  const stopka = hdr?.classList.contains('hdr-foto') ? document.querySelector<HTMLElement>('.ftr') : null;
+  const stopka = document.querySelector<HTMLElement>('.ftr');
   const odswiezNaglowek = () => {
     if (!hdr) return;
-    hdr.classList.toggle('przewiniety', window.scrollY > 40);
+    const przewiniety = window.scrollY > 40;
+    hdr.classList.toggle('przewiniety', przewiniety);
     if (stopka) {
-      const naDole = stopka.getBoundingClientRect().top < window.innerHeight * 0.6
-        || window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      const naDole = przewiniety && (stopka.getBoundingClientRect().top < window.innerHeight * 0.6
+        || window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4);
       hdr.classList.toggle('hdr-stopka', naDole);
     }
   };
