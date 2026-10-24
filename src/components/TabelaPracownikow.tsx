@@ -1,5 +1,10 @@
-// Tabela pracowników z wyszukiwarką i filtrem grup (działa też bez JavaScriptu — wtedy pokazuje całość).
-import { useMemo, useState } from 'react';
+// Spis pracowników z wyszukiwarką i filtrami (grupa, zakład). Komponent renderuje się już na serwerze,
+// więc bez JavaScriptu pokazuje pełną, pogrupowaną listę (filtry działają po wczytaniu skryptu).
+// Każda osoba to jedno „pole” (wiersz siatki): gdy ma stronę domową, link na imieniu i nazwisku
+// obejmuje całe pole (klasy .os-link / .os-a w global.css), a e-mail i zakład są osobnymi linkami.
+// Kolumna „Telefon” pojawia się tylko w sekcjach, w których ktoś ma numer (w praktyce: administracja).
+// Doktoranci są podzieleni według roku studiów (Rok 1, Rok 2, …; bez roku — na końcu).
+import { Fragment, useMemo, useState } from 'react';
 
 export interface Osoba {
   id: string;
@@ -25,6 +30,26 @@ interface Props {
 const norm = (s: string) =>
   s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ł/g, 'l');
 
+const nazwisko = (s: string) => s.trim().split(/\s+/).pop() ?? s;
+const poNazwisku = (a: Osoba, b: Osoba) =>
+  nazwisko(a.imie_nazwisko).localeCompare(nazwisko(b.imie_nazwisko), 'pl') || a.imie_nazwisko.localeCompare(b.imie_nazwisko, 'pl');
+const maRok = (o: Osoba) => typeof o.rok_studiow === 'number' && Number.isFinite(o.rok_studiow);
+
+interface Podsekcja { klucz: string; tytul?: string; osoby: Osoba[] }
+
+// Doktoranci: rok 1, 2, 3, … (w roku alfabetycznie po nazwisku), osoby bez roku na końcu.
+function wedlugRoku(osoby: Osoba[], napisy: Record<string, string>): Podsekcja[] {
+  const lata = [...new Set(osoby.filter(maRok).map((o) => o.rok_studiow as number))].sort((a, b) => a - b);
+  const wynik: Podsekcja[] = lata.map((r) => ({
+    klucz: `rok-${r}`,
+    tytul: `${napisy.rok} ${r}`,
+    osoby: osoby.filter((o) => o.rok_studiow === r).sort(poNazwisku),
+  }));
+  const bezRoku = osoby.filter((o) => !maRok(o)).sort(poNazwisku);
+  if (bezRoku.length) wynik.push({ klucz: 'rok-brak', tytul: napisy.rokBrak, osoby: bezRoku });
+  return wynik;
+}
+
 export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Props) {
   const [q, setQ] = useState('');
   const [grupa, setGrupa] = useState('');
@@ -43,8 +68,68 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
   }, [osoby, q, grupa, zaklad, nazwyZakladow]);
 
   const sekcje = grupy
-    .map((g) => ({ ...g, osoby: widoczne.filter((o) => o.grupa === g.id) }))
+    .map((g) => {
+      const os = widoczne.filter((o) => o.grupa === g.id);
+      const podsekcje: Podsekcja[] = g.id === 'doktorant' ? wedlugRoku(os, napisy) : [{ klucz: 'wszyscy', osoby: os }];
+      return { ...g, osoby: os, podsekcje, maTel: os.some((o) => !!o.telefon) };
+    })
     .filter((g) => g.osoby.length > 0);
+
+  const wiersz = (o: Osoba, maTel: boolean) => {
+    const nazwa = `${o.stopien ? `${o.stopien} ` : ''}${o.imie_nazwisko}`;
+    const linkZakladu = o.zaklad ? linkiZakladow[o.zaklad] : undefined;
+    return (
+      <li key={o.id} className={o.strona ? 'staff-row os-link' : 'staff-row'}>
+        <div className="c n">
+          {o.strona ? <a className="os-a" href={o.strona}>{nazwa}</a> : <span>{nazwa}</span>}
+          {(o.funkcja || linkZakladu) && (
+            <small>
+              {o.funkcja}
+              {o.funkcja && linkZakladu && ' · '}
+              {linkZakladu && <a href={linkZakladu}>{nazwyZakladow[o.zaklad as string]}</a>}
+            </small>
+          )}
+        </div>
+        <div className="c">
+          {o.email && (
+            <>
+              <span className="lbl">{napisy.email}: </span>
+              <a href={`mailto:${o.email}`}>{o.email}</a>
+            </>
+          )}
+        </div>
+        {maTel && (
+          <div className="c">
+            {o.telefon && (
+              <>
+                <span className="lbl">{napisy.telefon}: </span>
+                <a href={`tel:+48${o.telefon.replace(/\s/g, '')}`}>{o.telefon}</a>
+              </>
+            )}
+          </div>
+        )}
+        <div className="c">
+          {o.pokoj && (
+            <>
+              <span className="lbl">{napisy.pokoj}: </span>
+              {o.pokoj}
+            </>
+          )}
+        </div>
+        <div className="c www" aria-hidden="true">
+          {o.strona && (
+            <>
+              {napisy.link}
+              <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" style={{ width: 13, height: 13 }}>
+                <path d="M14 4h6v6M20 4l-9 9" />
+                <path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5" />
+              </svg>
+            </>
+          )}
+        </div>
+      </li>
+    );
+  };
 
   return (
     <div>
@@ -83,50 +168,27 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
       </p>
 
       {sekcje.map((g) => (
-        <section key={g.id} style={{ marginBottom: 36 }}>
+        <section key={g.id} className={g.maTel ? 'staff-dir z-tel' : 'staff-dir'} style={{ marginBottom: 36 }}>
           <h2 style={{ fontSize: 22, margin: '18px 0 8px' }}>{g.nazwa}</h2>
-          <table className="staff">
-            <thead>
-              <tr>
-                <th scope="col">{napisy.imie}</th>
-                {g.id === 'doktorant' && <th scope="col">{napisy.rok}</th>}
-                <th scope="col">{napisy.email}</th>
-                <th scope="col">{napisy.telefon}</th>
-                <th scope="col">{napisy.pokoj}</th>
-                <th scope="col">{napisy.strona}</th>
-              </tr>
-            </thead>
-            <tbody>
-              {g.osoby.map((o) => (
-                <tr key={o.id}>
-                  <td className="n" data-l={napisy.imie}>
-                    {o.stopien ? `${o.stopien} ` : ''}
-                    {o.imie_nazwisko}
-                    {(o.funkcja || o.zaklad) && (
-                      <small>
-                        {o.funkcja}
-                        {o.funkcja && o.zaklad && ' · '}
-                        {o.zaklad && linkiZakladow[o.zaklad] && <a href={linkiZakladow[o.zaklad]} style={{ color: 'inherit' }}>{nazwyZakladow[o.zaklad]}</a>}
-                      </small>
-                    )}
-                  </td>
-                  {g.id === 'doktorant' && <td data-l={napisy.rok}>{o.rok_studiow ?? ''}</td>}
-                  <td data-l={napisy.email}>{o.email ? <a href={`mailto:${o.email}`}>{o.email}</a> : ''}</td>
-                  <td data-l={napisy.telefon}>{o.telefon ? <a href={`tel:+48${o.telefon.replace(/\s/g, '')}`}>{o.telefon}</a> : ''}</td>
-                  <td data-l={napisy.pokoj}>{o.pokoj ?? ''}</td>
-                  <td data-l={napisy.strona}>
-                    {o.strona ? (
-                      <a href={o.strona} aria-label={`${napisy.strona}: ${o.imie_nazwisko}`}>
-                        {napisy.link}
-                      </a>
-                    ) : (
-                      ''
-                    )}
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          <div className="staff-head" aria-hidden="true">
+            <span>{napisy.imie}</span>
+            <span>{napisy.email}</span>
+            {g.maTel && <span>{napisy.telefon}</span>}
+            <span>{napisy.pokoj}</span>
+            <span>{napisy.strona}</span>
+          </div>
+          {g.podsekcje.map((p) => (
+            <Fragment key={p.klucz}>
+              {p.tytul && (
+                <h3 className="subhead staff-sub">
+                  {p.tytul} <span className="muted" style={{ fontWeight: 600 }}>({p.osoby.length})</span>
+                </h3>
+              )}
+              <ul className="staff-list" role="list">
+                {p.osoby.map((o) => wiersz(o, g.maTel))}
+              </ul>
+            </Fragment>
+          ))}
         </section>
       ))}
       {widoczne.length === 0 && <p style={{ color: 'var(--muted)' }}>{napisy.brak}</p>}

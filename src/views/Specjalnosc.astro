@@ -30,7 +30,8 @@ const nazwaKierunku = kierunek ? wybierz(kierunek.data, 'nazwa', lang) : d.kieru
 const inne = (await getCollection('specjalnosci')).filter((s) => s.data.kierunek === d.kierunek && s.data.opublikowany !== false).sort((a, b) => a.data.nazwa.localeCompare(b.data.nazwa, 'pl'));
 const zaklad = d.zaklad ? (await zaklady()).find((z) => z.id === d.zaklad) : undefined;
 const osoby = await pracownicy();
-// imię i nazwisko jak w spisie pracowników (bez tytułów) — wtedy pokazujemy e-mail, pokój i telefon
+// imię i nazwisko jak w spisie pracowników (bez tytułów) — wtedy pokazujemy e-mail, pokój (telefon tylko u administracji),
+// a gdy osoba ma stronę domową, całe pole jest linkiem do niej (klasy .os-link / .os-a w global.css)
 // (przy dwóch wpisach o tym samym nazwisku pierwszeństwo ma nauczyciel akademicki, nie administracja)
 const znajdz = (n: string) => {
   const kand = osoby.filter((p) => p.data.imie_nazwisko === n.trim());
@@ -197,9 +198,11 @@ const sekcje = [
           <h2 id="opiekun">{opiekunowie.length > 1 ? T('Opiekunowie specjalności', 'Coordinators') : T('Opiekun specjalności', 'Coordinator')}</h2>
           <ul class="people">
             {opiekunowie.map((o) => (
-              <li class="person">
+              <li class={o.osoba?.data.strona ? 'person os-link' : 'person'}>
                 {o.rola && <span style="font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)">{w(o, 'rola')}</span>}
-                <span class="os-n">{o.osoba ? `${o.osoba.data.stopien ?? ''} ${o.osoba.data.imie_nazwisko}` : o.imie_nazwisko}</span>
+                <span class="os-n">{o.osoba?.data.strona
+                  ? <a class="os-a" href={o.osoba.data.strona}>{o.osoba.data.stopien} {o.osoba.data.imie_nazwisko}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
+                  : o.osoba ? `${o.osoba.data.stopien ?? ''} ${o.osoba.data.imie_nazwisko}` : o.imie_nazwisko}</span>
                 {o.osoba && (
                   <span class="os-c">
                     {o.osoba.data.email && <a href={`mailto:${o.osoba.data.email}`}>{o.osoba.data.email}</a>}

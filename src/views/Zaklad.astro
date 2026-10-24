@@ -24,7 +24,8 @@ const obszary = lang === 'en' && d.obszary_en.length ? d.obszary_en : d.obszary;
 const { Content } = await render(zaklad);
 const htmlEn = lang === 'en' && d.tresc_en ? await renderMarkdown(d.tresc_en) : '';
 
-// Skład
+// Skład. Osoba ze stroną domową to jedno klikalne pole (klasy .os-link / .os-a w global.css).
+// Telefonów pracowników naukowych nie podajemy (pole „telefon” zakładu — tylko numer ogólny, jeśli jest).
 const osoby = await pracownicy();
 const nazwisko = (s: string) => s.trim().split(/\s+/).pop() ?? s;
 const sortuj = (a: Pracownik, b: Pracownik) =>
@@ -85,14 +86,15 @@ const wszystkieZaklady = await zaklady();
       <section class="zsec" aria-labelledby="sklad">
         <h2 id="sklad">{T('Skład', 'People')} <span class="muted" style="font-size:16px;font-weight:600">({czlonkowie.length})</span></h2>
         {(kierownik || d.kierownik) && (
-          <div class="person lead-person">
+          <div class={kierownik?.data.strona ? 'person lead-person os-link' : 'person lead-person'}>
             <span class="role">{T('Kierownik', 'Head')}</span>
-            <span class="os-n">{kierownik ? `${kierownik.data.stopien ?? ''} ${kierownik.data.imie_nazwisko}` : d.kierownik}</span>
+            <span class="os-n">{kierownik?.data.strona
+              ? <a class="os-a" href={kierownik.data.strona}>{kierownik.data.stopien} {kierownik.data.imie_nazwisko}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
+              : kierownik ? `${kierownik.data.stopien ?? ''} ${kierownik.data.imie_nazwisko}` : d.kierownik}</span>
             <span class="os-c">
               {kierownik?.data.email && <a href={`mailto:${kierownik.data.email}`}><Ikona nazwa="mail" rozmiar={14} />{kierownik.data.email}</a>}
               {(kierownik?.data.telefon || d.telefon) && <span><Ikona nazwa="telefon" rozmiar={14} />{kierownik?.data.telefon || d.telefon}</span>}
               {kierownik?.data.pokoj && <span>{T('pok.', 'room')} {kierownik.data.pokoj}</span>}
-              {kierownik?.data.strona && <a href={kierownik.data.strona}>WWW</a>}
             </span>
           </div>
         )}
@@ -101,8 +103,8 @@ const wszystkieZaklady = await zaklady();
             <h3 class="subhead">{g.tytul}</h3>
             <ul class="people">
               {g.osoby.map((o) => (
-                <li class="person">
-                  <span class="os-n">{o.data.strona ? <a href={o.data.strona}>{o.data.stopien} {o.data.imie_nazwisko}</a> : `${o.data.stopien ?? ''} ${o.data.imie_nazwisko}`}</span>
+                <li class={o.data.strona ? 'person os-link' : 'person'}>
+                  <span class="os-n">{o.data.strona ? <a class="os-a" href={o.data.strona}>{o.data.stopien} {o.data.imie_nazwisko}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a> : `${o.data.stopien ?? ''} ${o.data.imie_nazwisko}`}</span>
                   <span class="os-c">
                     {o.data.email && <a href={`mailto:${o.data.email}`}>{o.data.email}</a>}
                     {o.data.pokoj && <span>{T('pok.', 'room')} {o.data.pokoj}</span>}
