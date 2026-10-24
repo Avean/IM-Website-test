@@ -1,155 +1,86 @@
 /* ==========================================================================
    Plan zajęć (/studia/plan-zajec) — style tylko tej strony (import w src/views/PlanZajec.astro).
-   Kolory typów zajęć: --pz-<typ> (tło bloku) i --pz-<typ>-k (pasek/obramowanie), osobno dla trybu ciemnego.
+   Układ jak dawny planZ.php: sekcje, a w nich przedmioty z tabelą grup. Kolumny wszystkich tabel
+   mają te same szerokości (table-layout: fixed + <colgroup>), więc tworzą jedną wspólną siatkę
+   z nagłówkiem kolumn na górze semestru. Na telefonie wiersz tabeli zamienia się w kartę.
    ========================================================================== */
 
-.plan-strona {
-  --pz-wyk: #e2eafa;  --pz-wyk-k: #1b2d52;
-  --pz-konw: #f1e5f8; --pz-konw-k: #7d3c98;
-  --pz-cw: #fdeed6;   --pz-cw-k: #c77612;
-  --pz-lab: #dcf2e7;  --pz-lab-k: #1d7a50;
-  --pz-sem: #dcf0f5;  --pz-sem-k: #0e6f80;
-  --pz-war: #fbe3e1;  --pz-war-k: #b03a2e;
-  --pz-inne: #eceff4; --pz-inne-k: #5b6b82;
-}
-:root[data-theme='dark'] .plan-strona {
-  --pz-wyk: #1b2949;  --pz-wyk-k: #8fb0ff;
-  --pz-konw: #2f1f3c; --pz-konw-k: #d4a0ec;
-  --pz-cw: #3a2a12;   --pz-cw-k: #f2a33a;
-  --pz-lab: #12352a;  --pz-lab-k: #5fd3a0;
-  --pz-sem: #0f3038;  --pz-sem-k: #5cc8d9;
-  --pz-war: #3d1d1c;  --pz-war-k: #f08a80;
-  --pz-inne: #222b3b; --pz-inne-k: #9da9be;
-}
-.pz-wyk { --c: var(--pz-wyk); --ck: var(--pz-wyk-k); }
-.pz-konw { --c: var(--pz-konw); --ck: var(--pz-konw-k); }
-.pz-cw { --c: var(--pz-cw); --ck: var(--pz-cw-k); }
-.pz-lab { --c: var(--pz-lab); --ck: var(--pz-lab-k); }
-.pz-sem { --c: var(--pz-sem); --ck: var(--pz-sem-k); }
-.pz-war { --c: var(--pz-war); --ck: var(--pz-war-k); }
-.pz-inne { --c: var(--pz-inne); --ck: var(--pz-inne-k); }
+.pz-semestry { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
+.pz-semestry .chip { display: inline-flex; align-items: center; text-decoration: none; }
+.pz-semestry .chip:hover { border-color: var(--ink); color: var(--ink); }
 
-/* bez JavaScriptu: statyczna lista; z JavaScriptem: wyspa z filtrami */
-html:not(.js) .pz-app { display: none; }
-.js .pz-nojs { display: none; }
+.pz-stan { padding: 16px 18px; border-radius: var(--radius); background: var(--surface); color: var(--muted); font-weight: 600; }
+.pz-semestr { scroll-margin-top: calc(var(--hdr-h, 71px) + 12px); }
+.pz-semestr + .pz-semestr { margin-top: 56px; padding-top: 32px; border-top: 1px solid var(--line); }
+.pz-semestr > h2 { margin: 8px 0 6px; font-size: clamp(22px, 3vw, 28px); font-weight: 800; }
+.pz-data { margin: 0 0 8px; font-size: 14px; font-weight: 600; color: var(--muted); }
+.pz-uwagi-ogolne { margin: 0 0 18px; padding-left: 20px; font-size: 15px; color: var(--text); }
+.pz-zrodlo { margin-top: 40px; font-size: 14px; color: var(--muted); }
 
-.pz-stan { padding: 18px 20px; border-radius: var(--radius); background: var(--surface); color: var(--muted); font-weight: 600; }
-.pz-opis { margin: 0; font-size: 14px; color: var(--muted); }
-.pz-info { margin: 14px 0 10px; font-size: 14px; color: var(--muted); }
-.pz-info strong { color: var(--ink); }
-
-/* ---------- narzędzia ---------- */
-.pz-narzedzia { display: flex; flex-direction: column; gap: 14px; padding: 18px; border-radius: var(--radius-l); background: var(--surface); }
-.pz-semestry, .pz-widoki { display: flex; flex-wrap: wrap; gap: 8px; }
-.pz-krotka { display: none; }
-.pz-pola[hidden] { display: none; }
-.pz-przelacz { align-self: flex-start; }
-.pz-szukaj { width: 100%; min-width: 0; }
-.pz-pola { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); gap: 10px 12px; }
-.pz-pole { display: flex; flex-direction: column; gap: 4px; min-width: 0; }
-.pz-etykieta { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-.pz-pole select { width: 100%; min-height: 44px; padding: 0 12px; border-radius: 12px; border: 1.5px solid var(--line); background: var(--bg); color: var(--ink); font: inherit; font-size: 15px; }
-.pz-pole select:focus { outline: none; border-color: var(--ink); }
-.pz-pasek { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 10px; }
-.pz-akcje { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
-.pz-licznik { margin-right: 4px; font-size: 14px; font-weight: 700; color: var(--muted); }
-
-.pz-legenda { display: flex; flex-wrap: wrap; gap: 6px 14px; margin: 0 0 12px; padding: 0; list-style: none; font-size: 13px; font-weight: 700; color: var(--muted); }
-.pz-legenda li { display: inline-flex; align-items: center; gap: 6px; }
-.pz-legenda li::before { content: ''; width: 14px; height: 14px; border-radius: 4px; background: var(--c); box-shadow: inset 3px 0 0 var(--ck); }
-
-/* ---------- siatka tygodnia ---------- */
-.pz-wskazowka { margin-bottom: 10px; }
-.pz-siatka-ramka { overflow-x: auto; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); }
-.pz-siatka { display: grid; min-width: 100%; }
-.pz-rog, .pz-naglowek-dnia { position: sticky; top: 0; z-index: 3; background: var(--surface); border-bottom: 1px solid var(--line); }
-.pz-naglowek-dnia { padding: 10px 8px; font-size: 14px; font-weight: 800; color: var(--ink); text-align: center; border-left: 1px solid var(--line); }
-.pz-os { position: relative; }
-.pz-os span { position: absolute; right: 8px; transform: translateY(-50%); font-size: 12px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
-.pz-os span:first-child { transform: none; }
-.pz-kolumna {
-  position: relative; border-left: 1px solid var(--line);
-  background-image: repeating-linear-gradient(to bottom, var(--line) 0 1px, transparent 1px var(--godz));
-}
-.pz-blok {
-  position: absolute; z-index: 1; height: var(--hh); overflow: hidden;
-  display: flex; flex-direction: column; gap: 1px; padding: 4px 6px 4px 8px;
-  border-radius: 8px; background: var(--c); box-shadow: inset 4px 0 0 var(--ck);
-  color: var(--ink); text-decoration: none; font-size: 12px; line-height: 1.3;
-}
-.pz-blok strong { font-size: 12.5px; font-weight: 800; overflow-wrap: anywhere; }
-.pz-blok-linia { display: block; overflow-wrap: anywhere; }
-.pz-blok-czas, .pz-blok-uwagi, .pz-blok-grupa { display: none; }
-.pz-blok:hover, .pz-blok:focus-visible {
-  z-index: 6; height: auto; min-height: var(--hh); min-width: min(260px, 70vw);
-  box-shadow: inset 4px 0 0 var(--ck), 0 10px 26px rgb(0 0 0 / .22); color: var(--ink);
-}
-.pz-blok:hover .pz-blok-czas, .pz-blok:focus-visible .pz-blok-czas,
-.pz-blok:hover .pz-blok-grupa, .pz-blok:focus-visible .pz-blok-grupa,
-.pz-blok:hover .pz-blok-uwagi, .pz-blok:focus-visible .pz-blok-uwagi { display: block; }
-.pz-blok-uwagi { white-space: pre-line; color: var(--muted); }
-.pz-blok:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
-
-/* ---------- listy ---------- */
-.pz-sekcja { margin-top: 22px; }
-.pz-sekcja > h2 { margin: 28px 0 4px; font-size: 26px; }
-.pz-dzien-tytul { margin: 22px 0 8px; font-size: 20px; font-weight: 800; }
-.pz-lista { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 8px; }
-.pz-wiersz { display: grid; grid-template-columns: 8.2em minmax(0, 1fr); gap: 4px 14px; padding: 10px 14px 10px 16px; border-radius: 12px; background: var(--c); box-shadow: inset 4px 0 0 var(--ck); }
-.pz-czas { display: flex; flex-direction: column; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; font-size: 15px; }
-.pz-dzien { font-size: 13px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .04em; }
-.pz-tresc { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
-.pz-tytul { display: flex; flex-wrap: wrap; align-items: baseline; gap: 2px 10px; }
-.pz-tytul a { font-weight: 800; color: var(--ink); text-decoration: none; }
-.pz-tytul a:hover { text-decoration: underline; text-underline-offset: 3px; }
-.pz-typ { font-size: 14px; font-weight: 700; color: var(--muted); }
-.pz-typ-glowny { font-weight: 800; color: var(--ink); }
-.pz-meta { display: flex; flex-wrap: wrap; gap: 2px 14px; font-size: 14px; color: var(--text); }
-.pz-czest { font-weight: 700; }
-.pz-kier { padding: 0 8px; border-radius: 999px; background: var(--bg); font-size: 12px; font-weight: 800; letter-spacing: .03em; color: var(--muted); }
-.pz-uwagi { font-size: 13.5px; color: var(--muted); white-space: pre-line; }
-.pz-uwagi a { color: inherit; font-weight: 700; }
-.pz-przedmiot { margin: 0 0 16px; }
-.pz-przedmiot h4 { margin: 14px 0 8px; font-size: 17px; }
+.pz-sekcja h3 { margin: 30px 0 4px; padding: 10px 14px; border-radius: var(--radius-s); background: var(--tint); color: var(--tint-ink); font-size: 17px; font-weight: 800; }
+.pz-przedmiot { break-inside: avoid; }
+.pz-przedmiot h4 { margin: 16px 0 2px; font-size: 17px; font-weight: 800; }
 .pz-przedmiot h4 a { color: var(--ink); text-decoration: none; }
-.pz-przedmiot h4 a:hover { text-decoration: underline; text-underline-offset: 3px; }
-.pz-kod { font-size: 12px; font-weight: 600; color: var(--muted); }
+.pz-przedmiot h4 a:hover { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
+:root[data-theme='dark'] .pz-przedmiot h4 a:hover { color: var(--accent); }
 
-/* tabela w wersji bez JavaScriptu */
-.pz-tabela { width: 100%; border-collapse: collapse; font-size: 14px; }
-.pz-tabela th { text-align: left; padding: 6px 8px; border-bottom: 1.5px solid var(--line); font-size: 12px; text-transform: uppercase; letter-spacing: .05em; color: var(--muted); }
-.pz-tabela td { padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; }
-.pz-tabela tr td:first-child { box-shadow: inset 4px 0 0 var(--ck); padding-left: 12px; }
-.pz-nowrap { white-space: nowrap; }
+/* ---------- tabele (wspólna siatka kolumn) ---------- */
+.pz-tabela { width: 100%; table-layout: fixed; border-collapse: collapse; font-size: 15px; line-height: 1.45; }
+.pz-tabela .k-gr { width: 3.2rem; }
+.pz-tabela .k-typ { width: 6.4rem; }
+.pz-tabela .k-prow { width: 24%; }
+.pz-tabela .k-dzien { width: 7.8rem; }
+.pz-tabela .k-godz { width: 8.4rem; }
+.pz-tabela .k-sala { width: 4.6rem; }
+.pz-tabela td { padding: 6px 8px; border-bottom: 1px solid var(--line); vertical-align: top; overflow-wrap: anywhere; }
+.pz-tabela tbody tr:hover td { background: var(--surface); }
+.pz-tabela .c-gr, .pz-tabela .c-godz, .pz-tabela .c-sala { font-variant-numeric: tabular-nums; }
+.pz-tabela .c-godz { white-space: nowrap; }
+.pz-tabela .c-godz small { display: block; font-size: 13px; color: var(--muted); white-space: normal; }
+.pz-tabela .c-uwagi { font-size: 14px; color: var(--muted); white-space: pre-line; }
+.pz-tabela .c-uwagi a { color: inherit; font-weight: 700; }
+.pz-tabela abbr { text-decoration: none; }
+.pz-naglowek { position: sticky; top: var(--hdr-h, 71px); z-index: 2; background: var(--bg); }
+.pz-naglowek th { padding: 8px; border-bottom: 1.5px solid var(--line); text-align: left; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+/* nagłówki kolumn w tabelach przedmiotów — tylko dla czytników ekranu (widoczny jest nagłówek na górze semestru) */
+.pz-ukryty th { padding: 0; height: 0; border: 0; }
+.pz-ukryty th span { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+.pz-m { display: none; }
 
-.pz-o-planie { margin-top: 36px; }
-.pz-o-planie ul { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; }
-
+/* ---------- telefon: wiersz = karta ---------- */
 @media (max-width: 760px) {
-  .pz-narzedzia { padding: 14px; }
-  .pz-wiersz { grid-template-columns: minmax(0, 1fr); padding: 10px 12px 10px 14px; }
-  .pz-czas { flex-direction: row; gap: 8px; align-items: baseline; }
-  .pz-pasek { flex-direction: column; align-items: stretch; }
-  .pz-pelna { position: absolute; width: 1px; height: 1px; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
-  .pz-krotka { display: inline; }
+  .pz-naglowek { display: none; }
+  .pz-tabela, .pz-tabela tbody { display: block; }
+  .pz-tabela colgroup { display: none; }
+  .pz-tabela thead.pz-ukryty { display: block; height: 0; overflow: hidden; }
+  .pz-tabela tbody tr { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0 10px; padding: 8px 2px; border-bottom: 1px solid var(--line); }
+  .pz-tabela td { display: block; padding: 0; border: 0; }
+  .pz-tabela td:empty { display: none; }
+  .pz-tabela .c-typ { order: 1; font-weight: 800; color: var(--ink); }
+  .pz-tabela .c-gr { order: 2; font-weight: 700; }
+  .pz-tabela .c-dzien { order: 3; }
+  .pz-tabela .c-godz { order: 4; font-weight: 700; }
+  .pz-tabela .c-sala { order: 5; }
+  .pz-tabela .c-prow { order: 6; flex-basis: 100%; }
+  .pz-tabela .c-uwagi { order: 7; flex-basis: 100%; }
+  .pz-tabela .c-godz small { display: inline; margin-left: 6px; }
+  .pz-m { display: inline; }
+  .pz-tabela tbody tr:hover td { background: none; }
 }
 
 /* ---------- wydruk ---------- */
 @media print {
-  @page { size: A4 landscape; margin: 10mm; }
-  .hdr, .ftr, .skip, .crumbs, .pz-narzedzia, .pz-o-planie, .pz-wskazowka { display: none !important; }
+  @page { margin: 12mm; }
+  .hdr, .ftr, .skip, .crumbs, .pz-semestry { display: none !important; }
+  .page-head { background: none; border: 0; }
   .page-head .wrap { padding: 0 0 6px; }
-  .page-head h1 { font-size: 20pt; }
+  .page-head h1 { font-size: 18pt; }
   .page-head .lead { display: none; }
   .plan-strona { padding: 0 !important; max-width: none; }
-  .plan-strona * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  .pz-siatka-ramka { overflow: visible; border: 0; }
-  .pz-siatka { grid-template-columns: 2.6rem repeat(var(--dni, 5), minmax(0, 1fr)) !important; }
-  .pz-blok { font-size: 7pt; padding: 2px 3px 2px 5px; box-shadow: inset 3px 0 0 var(--ck); }
-  .pz-blok strong { font-size: 7.5pt; }
-  .pz-naglowek-dnia { position: static; }
-  .pz-wiersz, .pz-przedmiot, .pz-tabela tr { break-inside: avoid; }
-  .pz-lista { gap: 4px; }
-  .pz-wiersz { padding: 4px 8px; font-size: 10pt; }
+  .pz-naglowek { position: static; }
+  .pz-semestr + .pz-semestr { break-before: page; border: 0; margin-top: 0; }
+  .pz-tabela { font-size: 9pt; }
+  .pz-sekcja h3 { background: none; padding: 0; border-bottom: 1.5px solid #000; color: #000; }
+  .pz-tabela tr { break-inside: avoid; }
   a { color: inherit !important; text-decoration: none !important; }
 }

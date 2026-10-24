@@ -89,8 +89,6 @@ CZESTOTLIWOSC_API = {
     'every_fortnight_even': 'parzyste', 'every_month': 'co_miesiac', 'once': 'raz', 'other': 'inna',
 }
 
-# Kierunki rozpoznawane w uwagach USOS („tylko dla SIAD”, „dla ISIM”, „dla MT”) oraz w kodach i nazwach.
-RE_KIERUNEK = re.compile(r'\bdla\s+(MT|ISIM|SIAD)\b')
 
 ALFABET_PL = 'aąbcćdeęfghijklłmnńoóprsśtuvwxyzźż'
 OSTRZEZENIA = []
@@ -284,6 +282,8 @@ def zloz_semestr(sloty, nazwy):
         if s.get('prowadzacy') and s['prowadzacy'] not in scalone[klucz]['prowadzacy']:
             scalone[klucz]['prowadzacy'].append(s['prowadzacy'])
     zajecia = [scalone[k] for k in kolejnosc]
+    for z in zajecia:  # prowadzący alfabetycznie po nazwisku, jak w starym planie
+        z['prowadzacy'].sort(key=lambda o: (klucz_pl(o.split()[-1]), klucz_pl(o)))
     # 2. bloki stykające się w czasie (koniec = początek następnego) → jeden blok (jak w starym planie)
     grupy, kolejnosc = {}, []
     for z in zajecia:
@@ -301,20 +301,7 @@ def zloz_semestr(sloty, nazwy):
                 continue
             zajecia.append(z)
             poprzedni = z
-    # 3. kierunki: z uwag („dla SIAD”), z kodu (…-ISIM) i nazwy („(AI)” = SIAD); zajęcia bez własnego
-    #    oznaczenia dziedziczą oznaczenia całego przedmiotu (np. wspólny wykład dla grup MT i SIAD)
-    kier_przedmiotu = {}
-    for z in zajecia:
-        z['_wlasne'] = sorted(set(RE_KIERUNEK.findall(tekst_uwag(z['uwagi']))))
-        k = kier_przedmiotu.setdefault(z['kod'], set())
-        k.update(z['_wlasne'])
-        if 'ISIM' in z['kod'].upper():
-            k.add('ISIM')
-        if '(AI)' in (nazwy.get(z['kod'], {}).get('pl') or ''):
-            k.add('SIAD')
-    for z in zajecia:
-        z['kierunki'] = z.pop('_wlasne') or sorted(kier_przedmiotu.get(z['kod'], ()))
-    # 4. przedmioty i kolejność
+    # 3. przedmioty: alfabetycznie w sekcjach (kategoriach) jak w starym planie
     przedmioty = []
     for kod in {z['kod'] for z in zajecia}:
         n = nazwy.get(kod, {})
@@ -323,17 +310,21 @@ def zloz_semestr(sloty, nazwy):
             p['nazwa_en'] = n['en']
         p['kategoria'] = kategoria(kod)
         p['usos'] = LINK_PRZEDMIOTU + urllib.parse.quote(kod, safe='-')
-        if kier_przedmiotu.get(kod):
-            p['kierunki'] = sorted(kier_przedmiotu[kod])
         przedmioty.append(p)
     przedmioty.sort(key=lambda p: (KOLEJNOSC_KATEGORII.index(p['kategoria']), klucz_pl(p['nazwa']), p['kod']))
     pozycja = {p['kod']: i for i, p in enumerate(przedmioty)}
 
+    # 4. zajęcia w przedmiocie — kolejność jak w plan.class.php: typ malejąco (wyk, lab, konw, ćw…),
+    #    numer grupy, dzień, nazwisko prowadzącego, godzina (sortowanie stabilne, od klucza najmniej ważnego)
     def klucz_grupy(g):
         return (0, int(g), '') if str(g).isdigit() else (1, 0, str(g))
 
-    zajecia.sort(key=lambda z: (pozycja[z['kod']], KOLEJNOSC_TYPOW.index(z['typ']) if z['typ'] in KOLEJNOSC_TYPOW else 99, z['typ'],
-                                klucz_grupy(z['grupa']), 9 if z['dzien'] is None else z['dzien'], z['od'] or ''))
+    zajecia.sort(key=lambda z: z['od'] or '')
+    zajecia.sort(key=lambda z: klucz_pl(z['prowadzacy'][0].split()[-1]) if z['prowadzacy'] else [])
+    zajecia.sort(key=lambda z: 9 if z['dzien'] is None else z['dzien'])
+    zajecia.sort(key=lambda z: klucz_grupy(z['grupa']))
+    zajecia.sort(key=lambda z: z['typ'], reverse=True)
+    zajecia.sort(key=lambda z: pozycja[z['kod']])
     wynik = []
     for z in zajecia:
         w = {'kod': z['kod'], 'typ': z['typ']}
@@ -349,8 +340,6 @@ def zloz_semestr(sloty, nazwy):
             w['sala'] = z['sala']
         if z['uwagi']:
             w['uwagi'] = z['uwagi']
-        if z['kierunki']:
-            w['kierunki'] = z['kierunki']
         wynik.append(w)
     return przedmioty, wynik
 
