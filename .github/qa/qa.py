@@ -32,6 +32,8 @@ STARA_HOST = re.compile(r'^(www\.)?math\.uni\.wroc\.pl$', re.I)
 SUB_HOST = re.compile(r'(^|\.)math\.uni\.wroc\.pl$', re.I)
 POMIJANE_SCHEMATY = ('mailto', 'tel', 'javascript', 'data', 'blob', 'about', 'sms', 'callto')
 POMIJANE_KATALOGI = ('pagefind', '_astro')
+# przyciski „udostępnij” (adres zawiera adres strony testowej) — nie sprawdzamy
+UDOSTEPNIJ = re.compile(r'facebook\.com/sharer|twitter\.com/intent|x\.com/intent|linkedin\.com/(sharing|shareArticle)|localhost%3A', re.I)
 MAX_ADNOTACJI = 9
 
 
@@ -228,10 +230,12 @@ def cmd_indeks():
                         kotwice_zepsute.append({'strona': strona, 'cel': sciezka + '#' + kotwica, 'href': v, 'element': el})
             else:
                 _, url, host = k
+                if UDOSTEPNIJ.search(url):
+                    continue
                 zewn[url].add(strona)
                 if STARA_HOST.match(host):
                     sciezka = urlsplit(url).path or '/'
-                    kat = 'pliki' if sciezka.startswith('/sites/default/files') else ('strony domowe (~)' if sciezka.startswith('/~') else 'strony')
+                    kat = 'pliki' if sciezka.startswith('/sites/default/files') else ('strony domowe (~, /users/)' if sciezka.startswith(('/~', '/users/')) else 'strony')
                     stara.append((strona, url, kat))
                 elif SUB_HOST.search(host):
                     sub.append((strona, url, host))
@@ -606,11 +610,15 @@ def cmd_dostepnosc():
                              'wymagany': dn.get('expectedContrastRatio'), 'czcionka': f"{dn.get('fontSize', '')} {dn.get('fontWeight', '')}".strip(),
                              'komunikat': n.get('komunikat') or n.get('blad', '')})
     po_wezle = {(k['strona'], k['selektor']): k for k in kontrast}
+    zmierzone = {(url[len(ORIGIN):] if url.startswith(ORIGIN) else url) for url, w in
+                 (surowe.items() if isinstance(surowe, dict) else []) if isinstance(w, list) and not any('blad' in n for n in w)}
     for g in grupy.values():
         for x in g['przyklady']:
             k = po_wezle.get((x['strona'], x['selektor']))
             if k and k.get('wspolczynnik'):
                 x['kontrast'] = f"{k['wspolczynnik']}:1 (wymagane {k['wymagany']}), {k['fg']} na {k['bg']}, {k['czcionka']}"
+            elif g['regula'] == 'color-contrast' and x['strona'] in zmierzone:
+                x['kontrast'] = 'NIE potwierdzone ponownym pomiarem axe-core po pełnym załadowaniu (prawdopodobnie fałszywy alarm — sprawdzić ręcznie)'
     for g in grupy.values():
         g['pliki'] = pliki_dla(g['przyklady'][0]['selektor'], g['przyklady'][0]['kontekst']) if g['przyklady'] else '?'
     lista = sorted(grupy.values(), key=lambda g: (-len(g['strony']), -g['wystapienia']))
