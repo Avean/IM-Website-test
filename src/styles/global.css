@@ -572,7 +572,9 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .os-link:hover, .os-link:focus-within { border-color: var(--ink); background: var(--tint); box-shadow: 0 6px 20px rgb(0 0 0 / .08); }
 .os-link:hover .os-a { text-decoration: underline; text-underline-offset: 4px; }
 .staff-row.os-link:hover::before, .staff-row.os-link:focus-within::before { opacity: 0; }
-.os-a .ico { margin-left: 5px; vertical-align: -1px; color: var(--muted); }
+/* ikona „strona zewnętrzna” w prawym górnym rogu karty — znak, że całe pole jest linkiem (także na telefonie) */
+.person.os-link { padding-right: 36px; }
+.person.os-link .os-a .ico { position: absolute; top: 14px; right: 12px; color: var(--muted); }
 @supports selector(:has(a)) {
   .os-link .os-a:focus-visible { outline: none; }
   .os-link:has(.os-a:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
