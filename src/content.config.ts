@@ -318,4 +318,30 @@ const granty = defineCollection({
   }),
 });
 
-export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony, konferencje, granty, zaklady, kierunki, specjalnosci };
+// „Warto wiedzieć”: krótka lista trwałych, wyjątkowych osiągnięć Instytutu (pasek na stronie głównej + sekcje na /nauka i /studia).
+// Pozycja z treścią (body) dostaje własną podstronę /warto-wiedziec/<plik>; bez treści karta prowadzi do pola „link”.
+const warto_wiedziec = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/warto_wiedziec' }),
+  schema: z.object({
+    tytul: z.string(),
+    tytul_en: optStr,
+    // rok jako tekst (np. „2017” albo „2010, 2018”) — liczba z YAML-a też przejdzie
+    rok: z.preprocess((v) => (v == null || v === '' ? undefined : String(v)), z.string().optional()),
+    zajawka: optStr,
+    zajawka_en: optStr,
+    dzial: z.preprocess(empty, z.enum(['nauka', 'studia', 'instytut']).default('instytut')),
+    na_glownej: published,
+    kolejnosc: z.preprocess(empty, z.coerce.number().default(100)),
+    obraz: optStr,
+    obraz_opis: optStr,
+    obraz_opis_en: optStr,
+    link: optStr,
+    link_etykieta: optStr,
+    link_etykieta_en: optStr,
+    tresc_en: optStr,
+    zrodla: strList,
+    opublikowany: published,
+  }),
+});
+
+export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony, konferencje, granty, zaklady, kierunki, specjalnosci, warto_wiedziec };

@@ -7,6 +7,7 @@ import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
 import Ikona from '../components/Ikona.astro';
 import KartaAktualnosci from '../components/KartaAktualnosci.astro';
+import WartoWiedziec from '../components/WartoWiedziec.astro';
 import ustawienia from '../data/ustawienia.json';
 import tekst from '../data/dzialy/studia.json';
 import { u, isExternal } from '../lib/url';
@@ -202,6 +203,8 @@ const wstep = w(tekst, 'wstep');
         </div>
       </section>
     )}
+
+    <WartoWiedziec lang={lang} dzial="studia" />
 
     <section class="zsec" aria-labelledby="aktualnosci">
       <div class="dz-head">
