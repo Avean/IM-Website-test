@@ -55,5 +55,6 @@
   "partnerzy": [],
   "powiadomienia": {
     "adres": ""
-  }
+  },
+  "tlo_strony": true
 }

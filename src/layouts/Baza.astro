@@ -70,7 +70,7 @@ const testowa = (Astro.site?.hostname ?? '').endsWith('github.io');
     </script>
     <slot name="head" />
   </head>
-  <body>
+  <body class:list={[{ 'tlo-fale': (ustawienia as any).tlo_strony }]}>
     <a class="skip" href="#tresc">{lang === 'en' ? 'Skip to content' : 'Przejdź do treści'}</a>
     <Naglowek lang={lang} sciezka={sciezka} inny={inny} naZdjeciu={stronaGlowna && !!ustawienia.baner?.zdjecie} />
     {!opublikowany && (
