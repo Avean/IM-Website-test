@@ -53,7 +53,7 @@ const krotka = (e: string) => {
     P.forEach((p, i) => {
       p.setAttribute('role', 'tabpanel');
       p.setAttribute('aria-labelledby', tabs[i].id);
-      p.tabIndex = 0;
+      // bez tabindex: link z #kotwicą (np. /studia/plan-zajec#letni) nie ustawia fokusu na całym panelu (żółta ramka)
     });
 
     // Przewinięcie do panelu ma pokazać też przełącznik nad nim: scroll-margin-top panelu = odległość od góry przełącznika.
@@ -139,7 +139,6 @@ const krotka = (e: string) => {
   [data-ps-dla] { display: contents; }
   /* html ma scroll-padding-top = wysokość nagłówka; margines panelu = wysokość przełącznika nad nim */
   html.js [data-ps-panel] { scroll-margin-top: var(--ps-h, 56px); }
-  [data-ps-panel]:focus-visible { outline-offset: 6px; }
   .ps-tabs { margin: 0 0 18px; }
   .ps-krotka { display: none; }
   @media (max-width: 479px) {
