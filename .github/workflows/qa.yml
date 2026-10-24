@@ -83,6 +83,8 @@ jobs:
         run: python3 .github/qa/qa.py wewnetrzne
 
       # (b) Linki zewnętrzne — unikalne adresy zebrane przez skrypt (plik qa-wyniki/zewnetrzne.html).
+      # --insecure: serwer starej strony ma niepełny łańcuch certyfikatów (przeglądarki go uzupełniają),
+      # a tu sprawdzamy, czy adres istnieje. 403/429/3xx/5xx/timeout = „nie wiadomo”, nie błąd.
       - name: Linki zewnętrzne — lychee
         id: lychee_zewn
         uses: lycheeverse/lychee-action@v2
@@ -93,6 +95,7 @@ jobs:
             --timeout 25
             --max-retries 2
             --retry-wait-time 4
+            --insecure
             --user-agent 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0 Safari/537.36'
             qa-wyniki/zewnetrzne.html
           format: json
@@ -117,7 +120,9 @@ jobs:
         run: |
           python3 -m http.server 8080 --directory dist > "$RUNNER_TEMP/serwer.log" 2>&1 &
           for i in $(seq 1 30); do curl -fs -o /dev/null http://localhost:8080/ && break; sleep 1; done
-          "$RUNNER_TEMP/pa11y/node_modules/.bin/pa11y-ci" --config qa-wyniki/pa11y.json > qa-wyniki/pa11y.log 2>&1 || true
+          "$RUNNER_TEMP/pa11y/node_modules/.bin/pa11y-ci" --config qa-wyniki/pa11y.json > qa-wyniki/pa11y-log.txt 2>&1 || true
+          # Kolory i współczynniki dla zgłoszeń color-contrast (pa11y podaje sam komunikat).
+          PA11Y_DIR="$RUNNER_TEMP/pa11y" node .github/qa/kontrast.cjs >> qa-wyniki/pa11y-log.txt 2>&1 || true
 
       - name: Dostępność — wynik
         run: python3 .github/qa/qa.py dostepnosc
@@ -163,7 +168,7 @@ jobs:
           mkdir -p qa/dane
           cp "$W/raport.md" qa/raport.md
           for f in wynik-wewnetrzne.json wynik-zewnetrzne.json wynik-stara.json wynik-dostepnosc.json \
-                   lychee-wewnetrzne.json lychee-zewnetrzne.json pa11y-wyniki.json pa11y.json pa11y.log; do
+                   lychee-zewnetrzne.json pa11y-wyniki.json pa11y.json pa11y-log.txt kontrast.json; do
             if [ -f "$W/$f" ]; then cp "$W/$f" "qa/dane/$f"; fi
           done
           git config user.name 'github-actions[bot]'

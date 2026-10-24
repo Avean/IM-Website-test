@@ -313,8 +313,11 @@ def konfiguracja_pa11y(adresy):
             'runners': ['axe', 'htmlcs'],
             'standard': 'WCAG2AA',
             'timeout': 90000,
-            'wait': 300,
-            'concurrency': 4,
+            'wait': 500,
+            'concurrency': 1,
+            # KaTeX (warstwa wizualna, aria-hidden) daje fałszywe alarmy kontrastu przy ułamkach;
+            # dostępna warstwa MathML jest nadal testowana.
+            'hideElements': '.katex-html',
             'viewport': {'width': 1280, 'height': 900},
             'chromeLaunchConfig': {'args': ['--no-sandbox', '--disable-setuid-sandbox', '--disable-dev-shm-usage']},
             'reporters': ['cli', ['json', {'fileName': os.path.join(OUT, 'pa11y-wyniki.json')}]],
@@ -401,16 +404,16 @@ def cmd_wewnetrzne():
 
     for u in uwagi:
         print(f'::warning title=Linki wewnętrzne — narzędzie::{esc_msg(u)}')
-    po_celu = defaultdict(list)
+    po_celu = defaultdict(set)
     for z in lista:
-        po_celu[z['cel']].append(z['strona'])
+        po_celu[z['cel']].add(z['strona'])
     linie = [f'{cel}  ←  {skroc(sorted(s))}' for cel, s in sorted(po_celu.items(), key=lambda x: -len(x[1]))]
     if linie:
         for i in range(0, min(len(linie), 4 * 25), 25):
             adnotacja('error', f'Zepsute linki wewnętrzne ({len(lista)} wystąpień, {len(po_celu)} adresów) {i // 25 + 1}', linie[i:i + 25])
-    po_kotwicy = defaultdict(list)
+    po_kotwicy = defaultdict(set)
     for z in kotwice:
-        po_kotwicy[z['cel']].append(z['strona'])
+        po_kotwicy[z['cel']].add(z['strona'])
     if po_kotwicy:
         linie = [f'{cel}  ←  {skroc(sorted(s))}' for cel, s in sorted(po_kotwicy.items(), key=lambda x: -len(x[1]))]
         adnotacja('warning', f'Nieistniejące kotwice (#) ({len(kotwice)} wystąpień)', linie[:40])
@@ -418,7 +421,9 @@ def cmd_wewnetrzne():
           f'{len(kotwice)} nieistniejących kotwic; lychee: {esc_msg(json.dumps(wynik["lychee"]))}')
 
 
-NIEPEWNE_KODY = {401, 403, 405, 406, 408, 418, 425, 429, 451, 999}
+NIEPEWNE_KODY = {400, 401, 403, 405, 406, 408, 418, 425, 429, 451, 999}
+# serwisy blokujące automaty — wynik zawsze „nie wiadomo”
+NIEPEWNE_HOSTY = re.compile(r'(^|\.)(facebook\.com|instagram\.com|linkedin\.com|x\.com|twitter\.com|researchgate\.net|scholar\.google\.[a-z.]+|youtube\.com)$', re.I)
 
 
 def cmd_zewnetrzne():
@@ -431,8 +436,10 @@ def cmd_zewnetrzne():
         strony = mapa.get(norm_url(w['url']), [])
         rek = {'url': w['url'], 'kod': w['kod'], 'status': w['tekst'], 'strony': strony}
         t = w['tekst'].lower()
-        if (w['kod'] in NIEPEWNE_KODY or (w['kod'] or 0) >= 500 or 'timeout' in t or 'timed out' in t
-                or 'too many' in t or 'rate limit' in t):
+        host = (urlsplit(w['url']).hostname or '') if w['url'].startswith('http') else ''
+        if (w['kod'] in NIEPEWNE_KODY or (w['kod'] or 0) >= 500 or 300 <= (w['kod'] or 0) < 400
+                or NIEPEWNE_HOSTY.search(host) or 'timeout' in t or 'timed out' in t
+                or 'too many' in t or 'rate limit' in t or 'certificate' in t):
             niepewne.append(rek)
         else:
             zepsute.append(rek)
@@ -461,40 +468,62 @@ def cmd_stara():
     ind = wczytaj_json('indeks.json', {})
     stara = ind.get('stara', [])
     n_stron = max(ind.get('liczba_stron', 1), 1)
-    kat = defaultdict(lambda: {'wystapienia': 0, 'adresy': set(), 'strony': set()})
     strony_url = defaultdict(set)
-    sekcje = Counter()
-    for strona, url, k in stara:
-        kat[k]['wystapienia'] += 1
-        kat[k]['adresy'].add(url)
-        kat[k]['strony'].add(strona)
+    for strona, url, _ in stara:
         strony_url[url].add(strona)
-        seg = strona.strip('/').split('/')
-        sekcje[('/' + '/'.join(seg[:2 if seg[0] == 'en' else 1]) + '/').replace('//', '/')] += 1
-    top = sorted(strony_url.items(), key=lambda x: (-len(x[1]), x[0]))[:15]
-    szablon = [u for u, s in strony_url.items() if len(s) >= 0.5 * n_stron]
+    # linki z szablonu (menu, stopka) — na ≥50% stron; liczone osobno, żeby nie zasłaniały treści
+    szablon = sorted(u for u, s in strony_url.items() if len(s) >= 0.5 * n_stron)
+
+    def statystyka(wpisy):
+        kat = defaultdict(lambda: {'wystapienia': 0, 'adresy': set(), 'strony': set()})
+        for strona, url, k in wpisy:
+            kat[k]['wystapienia'] += 1
+            kat[k]['adresy'].add(url)
+            kat[k]['strony'].add(strona)
+        return {
+            'razem': {'wystapienia': len(wpisy), 'adresy': len({u for _, u, _ in wpisy}), 'strony': len({s for s, _, _ in wpisy})},
+            'kategorie': {k: {'wystapienia': v['wystapienia'], 'adresy': len(v['adresy']), 'strony': len(v['strony'])}
+                          for k, v in sorted(kat.items())},
+        }
+
+    tresc = [w for w in stara if w[1] not in szablon]
+    tresc_pl = [w for w in tresc if not w[0].startswith('/en/')]
+    sekcje = Counter()
+    for strona, _, _ in tresc_pl:
+        seg = strona.strip('/').split('/')[0]
+        sekcje[f'/{seg}/' if seg else '/'] += 1
+    url_tresc = defaultdict(set)
+    for strona, url, _ in tresc:
+        url_tresc[url].add(strona)
+    top = sorted(url_tresc.items(), key=lambda x: (-len(x[1]), x[0]))[:15]
     sub = Counter(h for _, _, h in ind.get('subdomeny', []))
     wynik = {
-        'razem': {'wystapienia': len(stara), 'adresy': len(strony_url), 'strony': len({s for s, _, _ in stara})},
-        'kategorie': {k: {'wystapienia': v['wystapienia'], 'adresy': len(v['adresy']), 'strony': len(v['strony'])} for k, v in kat.items()},
-        'top15': [{'url': u, 'strony': len(s), 'przyklady': sorted(s)[:3]} for u, s in top],
+        'wszystko': statystyka(stara),
+        'bez_szablonu': statystyka(tresc),
+        'bez_szablonu_pl': statystyka(tresc_pl),
         'w_szablonie': szablon,
-        'sekcje': sekcje.most_common(),
+        'top15': [{'url': u, 'strony': len(s), 'przyklady': sorted(s)[:3]} for u, s in top],
+        'sekcje_pl': sekcje.most_common(),
         'subdomeny': sub.most_common(),
         'wszystkie': {u: sorted(s) for u, s in sorted(strony_url.items())},
     }
     zapisz_json('wynik-stara.json', wynik)
-    r = wynik['razem']
-    linie = [f'Razem: {r["wystapienia"]} wystąpień, {r["adresy"]} różnych adresów, na {r["strony"]} stronach.']
-    for k, v in sorted(wynik['kategorie'].items()):
-        linie.append(f'- {k}: {v["wystapienia"]} wystąpień, {v["adresy"]} adresów, {v["strony"]} stron')
-    if szablon:
-        linie.append(f'W szablonie (na ≥50% stron): {", ".join(szablon)}')
-    linie.append('Wg sekcji (wystąpienia): ' + ', '.join(f'{s} {n}' for s, n in sekcje.most_common(12)))
+
+    def opis(st):
+        r = st['razem']
+        out = [f'{r["wystapienia"]} wystąpień, {r["adresy"]} adresów, na {r["strony"]} stronach']
+        for k, v in st['kategorie'].items():
+            out.append(f'   - {k}: {v["wystapienia"]} wystąpień, {v["adresy"]} adresów, {v["strony"]} stron')
+        return out
+    linie = ['Wszystkie linki: ' + opis(wynik['wszystko'])[0]]
+    linie += [f'W szablonie (menu/stopka, na ≥50% stron): {len(szablon)} adresów: ' + ', '.join(szablon)]
+    linie += ['W treści (bez szablonu, PL+EN): ' + opis(wynik['bez_szablonu'])[0]] + opis(wynik['bez_szablonu'])[1:]
+    linie += ['W treści, tylko strony polskie: ' + opis(wynik['bez_szablonu_pl'])[0]] + opis(wynik['bez_szablonu_pl'])[1:]
+    linie.append('Wg sekcji (PL, wystąpienia): ' + ', '.join(f'{s} {n}' for s, n in sekcje.most_common(12)))
     if sub:
         linie.append('Inne serwisy *.math.uni.wroc.pl (nie liczone): ' + ', '.join(f'{h} {n}' for h, n in sub.most_common(8)))
     adnotacja('notice', 'Dług migracyjny — linki do math.uni.wroc.pl', linie)
-    adnotacja('notice', 'Dług migracyjny — 15 najczęstszych adresów (liczba stron)',
+    adnotacja('notice', 'Dług migracyjny — 15 najczęstszych adresów w treści (liczba stron PL+EN)',
               [f'{len(s):4d}  {u}' for u, s in top])
 
 
@@ -533,7 +562,7 @@ def cmd_dostepnosc():
     dane = wczytaj_json('pa11y-wyniki.json')
     log = ''
     try:
-        log = open(os.path.join(OUT, 'pa11y.log'), encoding='utf-8', errors='replace').read()
+        log = open(os.path.join(OUT, 'pa11y-log.txt'), encoding='utf-8', errors='replace').read()
     except OSError:
         pass
     if not isinstance(dane, dict) or 'results' not in dane:
@@ -563,11 +592,30 @@ def cmd_dostepnosc():
             if len(g['przyklady']) < 4 and not any(x['selektor'] == p.get('selector') for x in g['przyklady']):
                 g['przyklady'].append({'strona': adres, 'selektor': (p.get('selector') or '')[:200],
                                        'kontekst': (p.get('context') or '')[:240], 'komunikat': (p.get('message') or '')[:300]})
+    # szczegóły kontrastu z kontrast.cjs (kolory i współczynnik)
+    kontrast = []
+    surowe = wczytaj_json('kontrast.json', {}) or {}
+    for url, wezly in (surowe.items() if isinstance(surowe, dict) else []):
+        if not isinstance(wezly, list):
+            continue
+        adres = url[len(ORIGIN):] if url.startswith(ORIGIN) else url
+        for n in wezly:
+            dn = n.get('dane') or {}
+            kontrast.append({'strona': adres, 'selektor': n.get('selektor', ''), 'html': n.get('html', ''),
+                             'fg': dn.get('fgColor'), 'bg': dn.get('bgColor'), 'wspolczynnik': dn.get('contrastRatio'),
+                             'wymagany': dn.get('expectedContrastRatio'), 'czcionka': f"{dn.get('fontSize', '')} {dn.get('fontWeight', '')}".strip(),
+                             'komunikat': n.get('komunikat') or n.get('blad', '')})
+    po_wezle = {(k['strona'], k['selektor']): k for k in kontrast}
+    for g in grupy.values():
+        for x in g['przyklady']:
+            k = po_wezle.get((x['strona'], x['selektor']))
+            if k and k.get('wspolczynnik'):
+                x['kontrast'] = f"{k['wspolczynnik']}:1 (wymagane {k['wymagany']}), {k['fg']} na {k['bg']}, {k['czcionka']}"
     for g in grupy.values():
         g['pliki'] = pliki_dla(g['przyklady'][0]['selektor'], g['przyklady'][0]['kontekst']) if g['przyklady'] else '?'
     lista = sorted(grupy.values(), key=lambda g: (-len(g['strony']), -g['wystapienia']))
     wynik = {'przetestowane': len(per_strona), 'problemy': sum(per_strona.values()), 'reguly': lista,
-             'nieudane': nieudane, 'per_strona': per_strona}
+             'nieudane': nieudane, 'per_strona': per_strona, 'kontrast': kontrast}
     zapisz_json('wynik-dostepnosc.json', wynik)
 
     powazne = [g for g in lista if g['wplyw'] in ('critical', 'serious')]
@@ -578,6 +626,8 @@ def cmd_dostepnosc():
         for x in g['przyklady'][:2]:
             out.append(f'• {x["strona"]}  {x["selektor"]}')
             out.append(f'  {x["kontekst"][:160]}')
+            if x.get('kontrast'):
+                out.append(f'  kontrast: {x["kontrast"]}')
         if g.get('pomoc'):
             out.append(g['pomoc'])
         return out
@@ -639,9 +689,9 @@ def cmd_raport():
     a(f'### Nieistniejące kotwice (#) — {len(kot)}')
     if kot:
         a('')
-        po = defaultdict(list)
+        po = defaultdict(set)
         for z in kot:
-            po[z['cel']].append(z['strona'])
+            po[z['cel']].add(z['strona'])
         a('| cel | strony |')
         a('|---|---|')
         for cel, s in sorted(po.items(), key=lambda x: -len(x[1]))[:80]:
@@ -667,21 +717,20 @@ def cmd_raport():
     a('')
     a('## 3. Dług migracyjny — linki do math.uni.wroc.pl')
     a('')
-    if st:
-        rz = st['razem']
-        a(f'Razem {rz["wystapienia"]} wystąpień, {rz["adresy"]} różnych adresów, na {rz["strony"]} stronach.')
+    if st and 'wszystko' in st:
+        a('| zakres | rodzaj | wystąpienia | adresy | strony |')
+        a('|---|---|---|---|---|')
+        for nazwa, klucz in (('wszystko', 'wszystko'), ('w treści (PL+EN)', 'bez_szablonu'), ('w treści, tylko PL', 'bez_szablonu_pl')):
+            x = st[klucz]
+            a(f'| {nazwa} | **razem** | {x["razem"]["wystapienia"]} | {x["razem"]["adresy"]} | {x["razem"]["strony"]} |')
+            for k, v in x['kategorie'].items():
+                a(f'| {nazwa} | {k} | {v["wystapienia"]} | {v["adresy"]} | {v["strony"]} |')
         a('')
-        a('| rodzaj | wystąpienia | adresy | strony |')
-        a('|---|---|---|---|')
-        for k, v in sorted(st['kategorie'].items()):
-            a(f'| {k} | {v["wystapienia"]} | {v["adresy"]} | {v["strony"]} |')
+        a(f'W szablonie (menu/stopka, na ≥50% stron): {", ".join(st["w_szablonie"]) or "brak"}')
         a('')
-        if st.get('w_szablonie'):
-            a(f'W szablonie (na ≥50% stron): {", ".join(st["w_szablonie"])}')
-            a('')
-        a('Wg sekcji (wystąpienia): ' + ', '.join(f'`{s}` {n}' for s, n in st['sekcje']))
+        a('Wg sekcji (tylko PL, bez szablonu): ' + ', '.join(f'`{s}` {n}' for s, n in st['sekcje_pl']))
         a('')
-        a('### 15 najczęstszych adresów (liczba stron)')
+        a('### 15 najczęstszych adresów w treści (liczba stron PL+EN)')
         a('')
         for t in st['top15']:
             a(f'- {t["strony"]} × {t["url"]} (np. {", ".join(t["przyklady"])})')
@@ -711,6 +760,17 @@ def cmd_raport():
             for x in g['przyklady']:
                 a(f'- `{x["strona"]}` `{md_kom(x["selektor"])}` — {md_kom(x["komunikat"][:200])}')
                 a(f'  - `{md_kom(x["kontekst"][:200])}`')
+                if x.get('kontrast'):
+                    a(f'  - kontrast: {md_kom(x["kontrast"])}')
+        if do.get('kontrast'):
+            a('')
+            a('### Szczegóły kontrastu (axe-core, ponowny pomiar)')
+            a('')
+            a('| strona | selektor | współczynnik | wymagany | tekst | tło | czcionka |')
+            a('|---|---|---|---|---|---|---|')
+            for k in do['kontrast'][:120]:
+                a(f'| `{k["strona"]}` | `{md_kom(k["selektor"][-90:])}` | {k["wspolczynnik"] or md_kom(k["komunikat"][:120])} | '
+                  f'{k["wymagany"] or ""} | {k["fg"] or ""} | {k["bg"] or ""} | {k["czcionka"]} |')
         if do.get('nieudane'):
             a('')
             a('### Nie udało się przetestować')
