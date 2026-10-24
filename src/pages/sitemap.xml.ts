@@ -17,6 +17,9 @@ export async function GET(context: APIContext) {
   for (const z of await getCollection('zaklady')) if (z.data.opublikowany !== false) sciezki.push(`/instytut/zaklady/${z.id}`);
   sciezki.push('/instytut/struktura', '/instytut/wladze');
   for (const s of await getCollection('specjalnosci')) if (s.data.opublikowany !== false && !s.data.bez_podstrony) sciezki.push(`/studia/${s.data.kierunek}/${s.id}`);
+  sciezki.push('/warto-wiedziec');
+  for (const w of await getCollection('warto_wiedziec')) if (w.data.opublikowany !== false && w.body?.trim()) sciezki.push(`/warto-wiedziec/${slugOf(w.id)}`);
+  sciezki.push('/studia/plan-zajec');
   const url = (p: string) => absolute(p, context.site);
   const wpisy = sciezki
     .map((p) => {

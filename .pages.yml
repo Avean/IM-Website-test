@@ -780,6 +780,37 @@ content:
           format: markdown
 
   # ---------------------------------------------------------------- PRACOWNICY
+  - name: warto_wiedziec
+    label: Warto wiedzieć
+    description: "Krótka lista wyjątkowych, trwałych osiągnięć (np. Annals of Mathematics, wykład T. Tao). Bieżące nagrody i granty → Aktualności, rodzaj „sukces”."
+    type: collection
+    path: src/content/warto_wiedziec
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view: { fields: [tytul, rok, dzial, na_glownej], primary: tytul, sort: kolejnosc }
+    fields:
+      - { name: tytul, label: Tytuł, type: string, required: true }
+      - { name: tytul_en, label: "EN: tytuł", type: string }
+      - { name: rok, label: "Rok (np. 2017) — duża liczba na karcie", type: string }
+      - { name: zajawka, label: "Zajawka na kartę (1–2 zdania)", type: text }
+      - { name: zajawka_en, label: "EN: zajawka", type: text }
+      - name: dzial
+        label: Gdzie pokazać poza stroną główną
+        type: select
+        default: nauka
+        options: { values: [ { name: nauka, label: "Nauka (/nauka)" }, { name: studia, label: "Studia (/studia)" }, { name: instytut, label: "Tylko strona główna i lista" } ] }
+      - { name: na_glownej, label: Pokaż na stronie głównej, type: boolean, default: true }
+      - { name: kolejnosc, label: "Kolejność (mniejsza = wcześniej)", type: number }
+      - { name: obraz, label: "Zdjęcie (tylko z prawem do publikacji)", type: image, options: { path: public/pliki/warto-wiedziec } }
+      - { name: obraz_opis, label: Opis zdjęcia, type: string }
+      - { name: obraz_opis_en, label: "EN: opis zdjęcia", type: string }
+      - { name: link, label: "Link (artykuł, nagranie; /… albo https://…)", type: string }
+      - { name: link_etykieta, label: Napis na przycisku linku, type: string }
+      - { name: link_etykieta_en, label: "EN: napis na przycisku", type: string }
+      - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
+      - { name: body, label: "Opis (opcjonalnie; z opisem pozycja ma własną podstronę, bez opisu karta prowadzi do linku)", type: rich-text, options: { format: markdown } }
+      - { name: tresc_en, label: "EN: opis (Markdown; puste = pokaże opis po polsku)", type: text }
+      - { name: zrodla, label: "Źródła (dla redakcji, niewyświetlane)", type: string, list: true }
   - name: pracownicy
     label: Pracownicy
     type: collection
