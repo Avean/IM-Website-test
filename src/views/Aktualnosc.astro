@@ -129,7 +129,6 @@ const adres = absolute(wJezyku(`/aktualnosci/${slug}`, lang), Astro.site);
       <div class="share">
         <span>{t(lang, 'udostepnij')}:</span>
         <button type="button" class="btn btn-small" data-kopiuj={adres} data-ok={t(lang, 'skopiowano')}><Ikona nazwa="link" rozmiar={16} /><span>{t(lang, 'kopiuj')}</span></button>
-        <a class="btn btn-small" href={`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(adres)}`}><Ikona nazwa="facebook" rozmiar={16} />Facebook</a>
       </div>
 
       {(nowszy || starszy) && (
