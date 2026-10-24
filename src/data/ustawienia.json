@@ -18,12 +18,12 @@
     {
       "etykieta": "Dla studentów",
       "etykieta_en": "Students",
-      "adres": "/studia/matematyka"
+      "adres": "/studia"
     },
     {
       "etykieta": "Dla naukowców",
       "etykieta_en": "Researchers",
-      "adres": "/seminaria"
+      "adres": "/nauka"
     }
   ],
   "studia": {
