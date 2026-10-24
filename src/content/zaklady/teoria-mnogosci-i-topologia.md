@@ -5,7 +5,6 @@ nazwa_krotka: "Teoria mnogości i topologia"
 nazwa_krotka_en: "Set theory and topology"
 nazwa_en: "Department of Set Theory and Topology"
 kierownik: "Grzegorz Plebanek"
-telefon: "71 375 7406"
 obszary:
   - "teoria mnogości"
   - "topologia"

@@ -48,6 +48,11 @@ def sprawdz(p):
         for sid in dane.get('seminaria') or []:
             if not os.path.exists(f'{katalog}{sid}.md'):
                 bledy.append(f'{p}: seminarium „{sid}” nie istnieje (brak pliku {katalog}{sid}.md)')
+    if kol == 'pracownicy':
+        # Numery telefonów podajemy wyłącznie przy administracji (brak pola grupa = nauczyciel).
+        grupa = dane.get('grupa') or 'nauczyciel'
+        if grupa != 'administracja' and str(dane.get('telefon') or '').strip():
+            bledy.append(f'{p}: pole „telefon” jest dozwolone tylko dla grupy „administracja” (tu: „{grupa}”) — usuń numer')
     return bledy
 
 pliki = []

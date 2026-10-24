@@ -365,7 +365,6 @@ kontakt:
   rola_en: Deputy Director for Teaching
   osoba: dr Tomasz Elsner
   email: Tomasz.Elsner@math.uni.wroc.pl
-  telefon: 71 375 7417
   pokoj: '305'
 - rola: Opiekun I roku
   rola_en: First-year coordinator
@@ -377,6 +376,9 @@ kontakt:
   email: dziekanat.wmi@uwr.edu.pl
   telefon: 71 375 7890
 akty:
+- nazwa: Procedura dyplomowania
+  nazwa_en: Diploma procedure
+  plik: /studia/procedura-dyplomowania
 - nazwa: Regulamin studiów
   nazwa_en: Study regulations (Polish)
   plik: https://uwr.edu.pl/wp-content/uploads/2024/09/Uchwala-Nr-68_2024-Senatu-UWr-z-2024-04-24-w-sprawie-regulaminu-studiow-na-Uniwersytecie-Wroclawskim-1.pdf

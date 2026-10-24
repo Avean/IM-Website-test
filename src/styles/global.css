@@ -559,3 +559,53 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .zapis .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
 .zapis-stan { margin: 0; font-size: 14px; font-weight: 600; color: var(--ink); }
 .zapis-stan:empty { display: none; }
+
+/* ---------- Spis pracowników: siatka pól zamiast tabeli (src/components/TabelaPracownikow.tsx) ----------
+   Każda osoba to wiersz .staff-row w liście .staff-list; nagłówek .staff-head (tylko na szerokim ekranie,
+   ukryty przed czytnikami) ma ten sam układ kolumn. Kolumna „Telefon” istnieje tylko w sekcjach z klasą
+   .z-tel (tam, gdzie ktoś ma numer — w praktyce administracja). Etykiety .lbl („E-mail:”, „Pokój:”) są
+   dla czytników ekranu, a na wąskim ekranie także widoczne. Doktoranci mają podnagłówki roku (.staff-sub). */
+.staff-dir { --staff-cols: minmax(0, 2.4fr) minmax(0, 1.8fr) minmax(4.5em, .5fr) 5em; }
+.staff-dir.z-tel { --staff-cols: minmax(0, 2.4fr) minmax(0, 1.8fr) 9.5em minmax(4.5em, .5fr) 5em; }
+.staff-head, .staff-row { display: grid; grid-template-columns: var(--staff-cols); gap: 4px 16px; padding: 12px 14px; }
+.staff-head { padding-top: 10px; padding-bottom: 10px; border-bottom: 1.5px solid var(--line); font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.staff-sub { margin: 20px 0 2px 14px; }
+.staff-list { list-style: none; margin: 0; padding: 0; }
+.staff-row { position: relative; border: 1px solid transparent; border-radius: 12px; font-size: 15px; overflow-wrap: anywhere; }
+.staff-row::before { content: ''; position: absolute; left: 14px; right: 14px; bottom: -1px; height: 1px; background: var(--line); }
+.staff-row .n { font-weight: 800; color: var(--ink); }
+.staff-row .n small { display: block; font-size: 14px; font-weight: 500; color: var(--muted); }
+.staff-row .n small a { color: inherit; }
+.staff-row .lbl { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.staff-row .www { display: flex; align-items: center; gap: 4px; align-self: start; font-size: 13px; font-weight: 800; letter-spacing: .04em; color: var(--muted); }
+@media (max-width: 760px) {
+  .staff-head { display: none; }
+  .staff-row { grid-template-columns: minmax(0, 1fr); gap: 2px; padding: 12px; }
+  .staff-row::before { left: 12px; right: 12px; }
+  .staff-row .c:empty { display: none; }
+  .staff-row .n { margin-bottom: 2px; }
+  .staff-row .lbl { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; white-space: normal; font-size: 13px; color: var(--muted); }
+  .staff-sub { margin-left: 12px; }
+}
+
+/* ---------- Klikalne pole osoby (spis pracowników, skład zakładu, opiekunowie specjalności) ----------
+   Osoba ze stroną domową: pole .os-link, a link .os-a na imieniu i nazwisku jest rozciągnięty na całe pole
+   (::after), więc kliknięcie w dowolne miejsce otwiera stronę osoby. Pozostałe linki w polu (e-mail, telefon,
+   zakład) leżą nad nim i działają osobno. Po najechaniu: tło --tint, ciemna ramka, podkreślone nazwisko
+   (jak .spec-link). Osoby bez strony nie mają tej klasy — bez podświetlenia i bez linku. */
+.person { border: 1px solid transparent; }
+.os-link { position: relative; transition: border-color .15s, box-shadow .15s, background-color .15s; }
+.os-link .os-a { color: var(--ink); text-decoration: none; }
+.os-link .os-a::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+.os-link a:not(.os-a) { position: relative; z-index: 1; }
+.os-link:hover, .os-link:focus-within { border-color: var(--ink); background: var(--tint); box-shadow: 0 6px 20px rgb(0 0 0 / .08); }
+.os-link:hover .os-a { text-decoration: underline; text-underline-offset: 4px; }
+.staff-row.os-link:hover::before, .staff-row.os-link:focus-within::before { opacity: 0; }
+/* ikona „strona zewnętrzna” w prawym górnym rogu karty — znak, że całe pole jest linkiem (także na telefonie) */
+.person.os-link { padding-right: 36px; }
+.person.os-link .os-a .ico { position: absolute; top: 14px; right: 12px; color: var(--muted); }
+@supports selector(:has(a)) {
+  .os-link .os-a:focus-visible { outline: none; }
+  .os-link:has(.os-a:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
+}
+@media (prefers-reduced-motion: reduce) { .os-link { transition: none; } }

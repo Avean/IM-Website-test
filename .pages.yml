@@ -460,7 +460,7 @@ content:
           - { name: rola, label: "Rola (np. Sekretariat dydaktyczny)", type: string }
           - { name: osoba, label: Osoba, type: string }
           - { name: email, label: E-mail, type: string }
-          - { name: telefon, label: Telefon, type: string }
+          - { name: telefon, label: "Telefon (tylko sekretariat, dziekanat, administracja)", type: string }
           - { name: pokoj, label: Pokój, type: string }
           - { name: rola_en, label: "EN: rola", type: string }
       - name: akty
@@ -631,7 +631,7 @@ content:
       - { name: nazwa, label: Pełna nazwa, type: string, required: true }
       - { name: nazwa_krotka, label: "Krótka nazwa (np. Geometria)", type: string }
       - { name: kierownik, label: "Kierownik (imię i nazwisko jak w spisie pracowników)", type: string }
-      - { name: telefon, label: Telefon kierownika, type: string }
+      - { name: telefon, label: "Telefon zakładu (tylko numer ogólny, np. sekretariat — nie podajemy numerów pracowników naukowych)", type: string }
       - { name: opis, label: Jedno zdanie o zakładzie, type: text }
       - name: obszary
         label: Obszary badań (tagi)
@@ -776,7 +776,7 @@ content:
     format: yaml
     filename: "{primary}.yml"
     view:
-      fields: [imie_nazwisko, grupa, pokoj, telefon]
+      fields: [imie_nazwisko, grupa, zaklad, pokoj]
       primary: imie_nazwisko
       sort: imie_nazwisko
     fields:
@@ -809,7 +809,7 @@ content:
             - { name: dydaktyka, label: Pracownia Dydaktyki i Popularyzacji Matematyki }
       - { name: rok_studiow, label: Rok studiów doktoranckich, type: number }
       - { name: email, label: E-mail, type: string }
-      - { name: telefon, label: "Telefon (np. 71 375 7401)", type: string }
+      - { name: telefon, label: "Telefon (tylko administracja — u pracowników naukowych nie podajemy)", type: string }
       - { name: pokoj, label: Pokój, type: string }
       - { name: strona, label: Strona domowa, type: string }
       - { name: opublikowany, label: Widoczny na stronie, type: boolean, default: true }

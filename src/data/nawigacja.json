@@ -188,6 +188,11 @@
               "adres": "/studia/egzaminy-i-dyplom"
             },
             {
+              "etykieta": "Procedura dyplomowania",
+              "etykieta_en": "Diploma procedure",
+              "adres": "/studia/procedura-dyplomowania"
+            },
+            {
               "etykieta": "Sprawy studenckie",
               "etykieta_en": "Student affairs",
               "adres": "/studia/sprawy-studenckie"

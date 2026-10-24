@@ -38,6 +38,6 @@ e-mail: [dziekanat.wmi@uwr.edu.pl](mailto:dziekanat.wmi@uwr.edu.pl)
 
 ## Zobacz też
 
-- [Pracownicy — telefony i pokoje](/pracownicy)
+- [Pracownicy — e-maile i pokoje](/pracownicy)
 - [Władze Instytutu](/instytut/wladze)
 - [Kontakty w sprawach studenckich](/studia/sprawy-studenckie)

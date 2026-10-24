@@ -5,7 +5,6 @@ nazwa_krotka: "Algebra i teoria modeli"
 nazwa_krotka_en: "Algebra and model theory"
 nazwa_en: "Department of Algebra and Model Theory"
 kierownik: "Ludomir Newelski"
-telefon: "71 375 7462"
 obszary:
   - "teoria modeli"
   - "algebra"

@@ -1,5 +1,7 @@
 ---
 // Lista pracowników. Każda osoba to osobny plik w src/content/pracownicy (edycja w Pages CMS).
+// Kolejność: alfabetycznie po nazwisku; doktorantów komponent dzieli dodatkowo według roku studiów.
+// Telefony podajemy tylko przy administracji (pilnuje tego skrypty/sprawdz_tresci.py).
 import { getCollection } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
@@ -28,6 +30,7 @@ const napisy = {
   osob: t(lang, 'osob'),
   imie: t(lang, 'imieNazwisko'),
   rok: t(lang, 'rok'),
+  rokBrak: lang === 'en' ? 'Year not specified' : 'Rok nieokreślony',
   email: t(lang, 'email'),
   telefon: t(lang, 'telefon'),
   pokoj: t(lang, 'pokoj'),

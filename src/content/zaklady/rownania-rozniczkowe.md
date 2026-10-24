@@ -5,7 +5,6 @@ nazwa_krotka: "Równania różniczkowe"
 nazwa_krotka_en: "Differential equations"
 nazwa_en: "Department of Differential Equations"
 kierownik: "Piotr Biler"
-telefon: "71 375 7408"
 obszary:
   - "równania cząstkowe"
   - "równania nielokalne"
