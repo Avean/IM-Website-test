@@ -58,6 +58,8 @@ def sprawdz(p):
     if kol == 'specjalnosci':
         katalog = p.split('src/content/')[0] + 'src/content/seminaria/'
         for sid in dane.get('seminaria') or []:
+            # pole „reference” z CMS zapisuje ścieżkę pliku — liczy się sama nazwa pliku
+            sid = re.sub(r'\.(md|ya?ml|json)$', '', str(sid).strip().split('/')[-1])
             if not os.path.exists(f'{katalog}{sid}.md'):
                 bledy.append(f'{p}: seminarium „{sid}” nie istnieje (brak pliku {katalog}{sid}.md)')
     if kol == 'pracownicy':

@@ -131,7 +131,8 @@ export function rangaStopnia(stopien?: string): number {
 }
 
 // Folder referatu = identyfikator seminarium (np. referaty/statystyka/2026-10-13-x.md).
-export const seminariumReferatu = (r: Referat) => r.id.split('/')[0];
+// Seminarium referatu: pole „Seminarium” z CMS, a gdy puste — folder, w którym leży plik.
+export const seminariumReferatu = (r: Referat) => r.data.seminarium || r.id.split('/')[0];
 
 export async function referaty(wszystkie = false): Promise<Referat[]> {
   const items = await getCollection('referaty');

@@ -17,6 +17,11 @@ const toDateString = (v: unknown) => {
 const date = z.preprocess(toDateString, z.string().regex(/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2})?/, 'Data w formacie RRRR-MM-DD lub RRRR-MM-DDTGG:MM'));
 const optDate = z.preprocess(toDateString, z.string().regex(/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2})?/).optional());
 const optStr = z.preprocess(empty, z.string().optional());
+// Pola CMS typu „reference” zapisują ścieżkę pliku (np. src/content/zaklady/geometria.md) — zamieniamy ją na id wpisu (geometria).
+// Dzięki temu nowy zakład / seminarium / kierunek dodany w CMS od razu pojawia się na listach wyboru w innych sekcjach.
+const idWpisu = (v: unknown) => (typeof v === 'string' ? v.trim().replace(/^.*\//, '').replace(/\.(md|ya?ml|json)$/i, '') : v);
+const optId = z.preprocess((v) => { const x = empty(v); return x == null ? undefined : idWpisu(x); }, z.string().optional());
+const idList = z.preprocess((v) => (v == null || v === '' ? [] : (Array.isArray(v) ? v : [v]).map(idWpisu)), z.array(z.string()));
 const strList = z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(z.string()));
 const published = z.preprocess((v) => (v == null || v === '' ? true : v), z.boolean());
 
@@ -43,7 +48,7 @@ const aktualnosci = defineCollection({
     tytul_en: optStr,
     zajawka_en: optStr,
     tresc_en: optStr,
-    zaklad: optStr,
+    zaklad: optId,
     opublikowany: published,
   }),
 });
@@ -70,7 +75,7 @@ const pracownicy = defineCollection({
     stopien: optStr,
     grupa: z.preprocess(empty, z.enum(['nauczyciel', 'doktorant', 'administracja', 'emeryt']).default('nauczyciel')),
     funkcja: optStr,
-    zaklad: optStr,
+    zaklad: optId,
     rok_studiow: z.preprocess(empty, z.coerce.number().int().optional()),
     email: optStr,
     telefon: optStr,
@@ -91,7 +96,7 @@ const seminaria = defineCollection({
     grupa_google: optStr,
     archiwum: optStr,
     // seminarium zakładu (każdy zakład ma jedno); puste = seminarium niezależne
-    zaklad: z.preprocess((v) => (v == null || v === '' ? [] : Array.isArray(v) ? v : [v]), z.array(z.string())),
+    zaklad: idList,
     aktywne: published,
     do_uzupelnienia: strList,
     opublikowany: published,
@@ -101,6 +106,8 @@ const seminaria = defineCollection({
 const referaty = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/referaty' }),
   schema: z.object({
+    // seminarium referatu (puste = folder, w którym leży plik)
+    seminarium: optId,
     tytul: z.string(),
     prelegent: z.string(),
     afiliacja: optStr,
@@ -126,7 +133,7 @@ const obrony = defineCollection({
     streszczenie_en: optStr,
     recenzje: z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(z.object({ recenzent: z.string(), plik: z.string() }))),
     bip: optStr,
-    zaklad: optStr,
+    zaklad: optId,
     w_aktualnosciach: published,
     opublikowany: published,
   }),
@@ -243,7 +250,7 @@ const specjalnosci = defineCollection({
   schema: z.object({
     nazwa: z.string(),
     nazwa_en: optStr,
-    kierunek: z.preprocess(empty, z.string().default('matematyka')),
+    kierunek: z.preprocess((v) => idWpisu(empty(v)), z.string().default('matematyka')),
     // kafelek na stronie kierunku budowany z tego pliku (jedno miejsce edycji)
     kolejnosc: z.preprocess(empty, z.coerce.number().default(99)),
     na_stronie_kierunku: z.preprocess((v) => (v == null || v === '' ? true : v), z.boolean()),
@@ -257,7 +264,7 @@ const specjalnosci = defineCollection({
     poziom_en: optStr,
     opis: optStr,
     opis_en: optStr,
-    zaklad: optStr,
+    zaklad: optId,
     opiekunowie: lista(z.object({ imie_nazwisko: z.string(), rola: optStr, rola_en: optStr })),
     wygaszana: z.preprocess((v) => (v == null || v === '' ? false : v), z.boolean()),
     dla_kogo: optStr,
@@ -267,7 +274,7 @@ const specjalnosci = defineCollection({
     // „Jak przebiega specjalność” — oś semestrów/etapów
     etapy: lista(z.object({ kiedy: z.string(), kiedy_en: optStr, tytul: z.string(), tytul_en: optStr, opis: optStr, opis_en: optStr })),
     // identyfikatory seminariów (pliki z src/content/seminaria) związanych ze specjalnością
-    seminaria: strList,
+    seminaria: idList,
     przedmioty: lista(z.object({
       grupa: z.string(),
       grupa_en: optStr,
@@ -298,7 +305,7 @@ const konferencje = defineCollection({
     miejsce: optStr,
     strona: optStr,
     organizatorzy: optStr,
-    zaklad: optStr,
+    zaklad: optId,
     zdjecie: optStr,
     odwolana: z.preprocess((v) => (v == null || v === '' ? false : v), z.boolean()),
     opublikowany: published,
@@ -318,7 +325,7 @@ const granty = defineCollection({
     rok_od: rok,
     rok_do: rok,
     kwota: optStr,
-    zaklad: optStr,
+    zaklad: optId,
     strona: optStr,
     opublikowany: published,
   }),
