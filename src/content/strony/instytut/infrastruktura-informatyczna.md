@@ -4,28 +4,44 @@ opis: "Sieć komputerowa, pracownie i oprogramowanie w Instytucie."
 tytul_en: "IT infrastructure"
 opis_en: "Computer network, labs and software at the Institute."
 tresc_en: |
-  Computer network and laboratories are run by the Institute computer lab ([staff directory](/en/pracownicy)).
+  Computer network and laboratories are run by the Institute computer lab ([staff directory](/en/pracownicy)). Contact the network administrators at [admin@math.uni.wroc.pl](mailto:admin@math.uni.wroc.pl) or in room 402.
 
-  - [Local network regulations](https://www.math.uni.wroc.pl/regulamin-lokalnej-sieci-komputerowej-instytutu-matematycznego)
-  - [Computer lab opening hours](https://www.math.uni.wroc.pl/godziny-otwarcia-laboratorium-komputerowego)
-  - [Network for staff and PhD students (PDF, Polish)](https://www.math.uni.wroc.pl/sites/default/files/siec_im_dla_pracownikow_i_doktorantow.pdf)
-  - [Student network and computer labs (PDF, Polish)](https://www.math.uni.wroc.pl/sites/default/files/siec_studencka_i_laboratoria_komputerowe.pdf)
-  - [Software in the computer labs](https://www.math.uni.wroc.pl/programy-dostepne-w-pracowniach-komputerowych)
-  - [Software available to students and staff](https://www.math.uni.wroc.pl/programy-dostepne-dla-studentow-i-pracownikow)
-  - [Wireless network access](https://www.math.uni.wroc.pl/dostep-do-sieci-bezprzewodowej)
-  - [Interactive whiteboard](https://www.math.uni.wroc.pl/tablica-interaktywna)
-  - [FriCAS](http://axiom-wiki.newsynthesis.org/)
+  ## Computer network
+
+  - [Local network regulations](/en/instytut/infrastruktura-informatyczna/regulamin-sieci) — rules for using the network and the computer laboratory.
+  - [Computer network for staff and PhD students](/en/instytut/infrastruktura-informatyczna/siec-dla-pracownikow-i-doktorantow) — administrators, personal web pages, VPN.
+  - [Student network and computer labs](/en/instytut/infrastruktura-informatyczna/siec-studencka) — student accounts, VPN for students.
+  - [Wireless network access](/en/instytut/infrastruktura-informatyczna/siec-bezprzewodowa) — eduroam and the guest network.
+
+  ## Computer labs
+
+  - [Computer lab opening hours](/en/instytut/infrastruktura-informatyczna/godziny-otwarcia-laboratorium) — where the labs are and when they are open.
+  - [Software in the computer labs](/en/instytut/infrastruktura-informatyczna/programy-w-pracowniach) — operating systems and installed programs.
+  - [Interactive whiteboard](/en/instytut/infrastruktura-informatyczna/tablica-interaktywna) — working with the whiteboard in lab 416.
+
+  ## Software
+
+  - [Software available to students and staff](/en/instytut/infrastruktura-informatyczna/programy-dla-studentow-i-pracownikow) — MS Office 365, Microsoft programs, STATISTICA, KNOPPIX.
+  - [FriCAS](http://axiom-wiki.newsynthesis.org/) — project website (FriCAS is available on the Linux computers in the labs).
 opublikowany: true
 ---
 
-Siecią i pracowniami komputerowymi opiekuje się Laboratorium komputerowe ([kontakt w spisie pracowników](/pracownicy)).
+Siecią i pracowniami komputerowymi opiekuje się Laboratorium komputerowe ([kontakt w spisie pracowników](/pracownicy)). Z administratorami sieci można się skontaktować, pisząc na adres [admin@math.uni.wroc.pl](mailto:admin@math.uni.wroc.pl), lub w pokoju 402.
 
-- [Regulamin lokalnej sieci komputerowej](https://www.math.uni.wroc.pl/regulamin-lokalnej-sieci-komputerowej-instytutu-matematycznego)
-- [Godziny otwarcia pracowni komputerowych](https://www.math.uni.wroc.pl/godziny-otwarcia-laboratorium-komputerowego)
-- [Sieć komputerowa dla pracowników i doktorantów (PDF)](https://www.math.uni.wroc.pl/sites/default/files/siec_im_dla_pracownikow_i_doktorantow.pdf)
-- [Sieć studencka i laboratoria komputerowe (PDF)](https://www.math.uni.wroc.pl/sites/default/files/siec_studencka_i_laboratoria_komputerowe.pdf)
-- [Programy dostępne w pracowniach komputerowych](https://www.math.uni.wroc.pl/programy-dostepne-w-pracowniach-komputerowych)
-- [Programy dostępne dla studentów i pracowników](https://www.math.uni.wroc.pl/programy-dostepne-dla-studentow-i-pracownikow)
-- [Dostęp do sieci bezprzewodowej](https://www.math.uni.wroc.pl/dostep-do-sieci-bezprzewodowej)
-- [Tablica interaktywna](https://www.math.uni.wroc.pl/tablica-interaktywna)
-- [FriCAS](http://axiom-wiki.newsynthesis.org/)
+## Sieć komputerowa
+
+- [Regulamin lokalnej sieci komputerowej](/instytut/infrastruktura-informatyczna/regulamin-sieci) — zasady korzystania z sieci i laboratorium komputerowego.
+- [Sieć komputerowa dla pracowników i doktorantów](/instytut/infrastruktura-informatyczna/siec-dla-pracownikow-i-doktorantow) — administratorzy, strony domowe WWW, VPN.
+- [Sieć studencka i laboratoria komputerowe](/instytut/infrastruktura-informatyczna/siec-studencka) — konta studenckie, VPN dla studentów.
+- [Dostęp do sieci bezprzewodowej](/instytut/infrastruktura-informatyczna/siec-bezprzewodowa) — eduroam i sieć dla gości.
+
+## Pracownie komputerowe
+
+- [Godziny otwarcia pracowni komputerowych](/instytut/infrastruktura-informatyczna/godziny-otwarcia-laboratorium) — gdzie są pracownie i kiedy są czynne.
+- [Programy dostępne w pracowniach komputerowych](/instytut/infrastruktura-informatyczna/programy-w-pracowniach) — systemy operacyjne i zainstalowane programy.
+- [Tablica interaktywna](/instytut/infrastruktura-informatyczna/tablica-interaktywna) — praca z tablicą w laboratorium 416.
+
+## Oprogramowanie
+
+- [Programy dostępne dla studentów i pracowników](/instytut/infrastruktura-informatyczna/programy-dla-studentow-i-pracownikow) — MS Office 365, programy Microsoft, STATISTICA, KNOPPIX.
+- [FriCAS](http://axiom-wiki.newsynthesis.org/) — strona projektu (program dostępny na komputerach z systemem Linux w pracowniach).
