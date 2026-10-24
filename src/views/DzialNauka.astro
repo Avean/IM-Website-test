@@ -6,6 +6,7 @@ import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
 import Ikona from '../components/Ikona.astro';
 import TabelaReferatow from '../components/TabelaReferatow.astro';
+import WartoWiedziec from '../components/WartoWiedziec.astro';
 import dzial from '../data/dzialy/nauka.json';
 import { u, isExternal } from '../lib/url';
 import { t, wJezyku, wybierz, RODZAJE_GRANTOW } from '../lib/i18n';
@@ -129,6 +130,8 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
         </p>
       </section>
     )}
+
+    <WartoWiedziec lang={lang} dzial="nauka" />
 
     <section class="zsec" aria-labelledby="seminaria">
       <h2 id="seminaria">{naglowekSeminariow}</h2>

@@ -6,6 +6,7 @@ import KartaAktualnosci from './KartaAktualnosci.astro';
 import KartaWydarzenia from './KartaWydarzenia.astro';
 import TabelaReferatow from './TabelaReferatow.astro';
 import KafelekKoloryDni from './KafelekKoloryDni.astro';
+import WartoWiedziec from './WartoWiedziec.astro';
 import ustawienia from '../data/ustawienia.json';
 import skroty from '../data/skroty.json';
 import { u, isExternal } from '../lib/url';
@@ -159,4 +160,6 @@ const kafelki = [
       </div>
     </div>
   </section>
+
+  <WartoWiedziec lang={lang} uklad="glowna" limit={4} />
 </Baza>

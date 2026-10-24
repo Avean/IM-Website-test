@@ -7,6 +7,7 @@ WYMAGANE = {
     'aktualnosci': ['tytul', 'data'], 'strony': ['tytul'], 'seminaria': ['nazwa'], 'referaty': ['tytul', 'prelegent', 'termin'],
     'obrony': ['kandydat', 'tytul_rozprawy', 'termin'], 'konferencje': ['tytul', 'poczatek'], 'granty': ['tytul'],
     'zaklady': ['nazwa'], 'kierunki': ['nazwa'], 'specjalnosci': ['nazwa'], 'pracownicy': ['imie_nazwisko'],
+    'warto_wiedziec': ['tytul'],
 }
 LISTY_OBIEKTOW = {'specjalnosci': ['opiekunowie', 'dlaczego', 'etapy', 'seminaria', 'przedmioty', 'tematy_prac', 'dokumenty', 'linki', 'faq'],
                   'kierunki': ['fakty', 'przyciski', 'dlaczego', 'etapy', 'specjalnosci', 'programy', 'terminy', 'faq', 'kontakt', 'akty']}
@@ -64,6 +65,17 @@ def sprawdz(p):
         grupa = dane.get('grupa') or 'nauczyciel'
         if grupa != 'administracja' and str(dane.get('telefon') or '').strip():
             bledy.append(f'{p}: pole „telefon” jest dozwolone tylko dla grupy „administracja” (tu: „{grupa}”) — usuń numer')
+    if kol == 'warto_wiedziec':
+        # „Warto wiedzieć”: dział z listy, pola tak/nie jako wartości logiczne, obraz musi istnieć w public/
+        dz = dane.get('dzial')
+        if dz not in (None, '', 'nauka', 'studia', 'instytut'):
+            bledy.append(f'{p}: pole „dzial” musi być jednym z: nauka, studia, instytut (tu: „{dz}”)')
+        for k in ('na_glownej', 'opublikowany'):
+            if dane.get(k) not in (None, '', True, False):
+                bledy.append(f'{p}: pole „{k}” musi mieć wartość true albo false')
+        obraz = str(dane.get('obraz') or '')
+        if obraz.startswith('/pliki/') and not os.path.exists(p.split('src/content/')[0] + 'public' + obraz):
+            bledy.append(f'{p}: brak pliku obrazu public{obraz}')
     return bledy
 
 pliki = []
