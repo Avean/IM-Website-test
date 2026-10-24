@@ -40,6 +40,31 @@ jobs:
         uses: actions/configure-pages@v5
         continue-on-error: true
 
+      # Referaty seminariów z osobnymi repozytoriami (pole „repozytorium” w src/content/seminaria/*.md) —
+      # patrz README, „Repozytoria seminariów”. Gdy żadne seminarium go nie ma, krok niczego nie zmienia.
+      # Błąd pobierania nie zatrzymuje budowania: zostaje ostatni dobry stan z pamięci podręcznej
+      # (albo referaty z głównego repozytorium) i ostrzeżenie w adnotacjach.
+      - name: Pamięć podręczna referatów seminariów
+        uses: actions/cache/restore@v4
+        with:
+          path: .cache/seminaria
+          key: seminaria-${{ github.run_id }}
+          restore-keys: seminaria-
+
+      - name: Referaty z repozytoriów seminariów
+        id: seminaria
+        continue-on-error: true
+        env:
+          SEMINARIA_TOKEN: ${{ secrets.IM_SEMINARIA_TOKEN }}
+        run: python3 skrypty/seminaria/pobierz_referaty.py
+
+      - name: Zapis pamięci podręcznej referatów seminariów
+        if: steps.seminaria.outputs.zapisz == 'tak'
+        uses: actions/cache/save@v4
+        with:
+          path: .cache/seminaria
+          key: seminaria-${{ github.run_id }}-${{ github.run_attempt }}
+
       # Adres i ścieżkę bazową podaje configure-pages (działa też z domeną UWr).
       # Gdy Pages nie jest jeszcze włączone, budujemy z ustawieniami domyślnymi z astro.config.mjs.
       - name: Budowanie strony

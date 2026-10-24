@@ -35,6 +35,13 @@ jobs:
             exit 1
           fi
 
+      # Jak w deploy.yml: referaty z osobnych repozytoriów seminariów (bez pola „repozytorium” — nic się nie zmienia).
+      - name: Referaty z repozytoriów seminariów
+        continue-on-error: true
+        env:
+          SEMINARIA_TOKEN: ${{ secrets.IM_SEMINARIA_TOKEN }}
+        run: python3 skrypty/seminaria/pobierz_referaty.py
+
       - name: Budowanie strony
         run: |
           set -o pipefail

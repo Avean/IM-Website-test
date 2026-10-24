@@ -1,0 +1,51 @@
+name: Repozytoria seminariów (zakładanie)
+
+# Zakłada osobne repozytorium seminarium (własny Pages CMS tylko z referatami), gdy redaktor zaznaczy
+# w CMS „Osobne repozytorium dla organizatora” — patrz README, „Repozytoria seminariów”.
+# Skrypt: skrypty/seminaria/nowe_repo.py, szablon repozytorium: szablony/seminarium/.
+#
+# Wymaga sekretu IM_ADMIN_TOKEN — bez niego kończy się na zielono z ostrzeżeniem i niczego nie zmienia.
+# Opcjonalnie: sekret IM_STRONA_TOKEN (kopiowany do nowego repozytorium) oraz zmienne
+# (Settings → Secrets and variables → Actions → Variables):
+#   IM_SEMINARIA_WLASCICIEL  konto albo organizacja na repozytoria seminariów (domyślnie Avean)
+#   IM_SEMINARIA_PREFIKS     początek nazwy repozytorium (domyślnie seminarium-)
+#   IM_SEMINARIA_WIDOCZNOSC  public (domyślnie) albo private (wtedy budowanie strony potrzebuje sekretu IM_SEMINARIA_TOKEN)
+# Ręczne uruchomienie (Actions → Run workflow) z zaznaczoną „Próbą” tylko pokazuje, co zostałoby zrobione.
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'src/content/seminaria/**'
+  workflow_dispatch:
+    inputs:
+      proba:
+        description: 'Próba: tylko pokaż, co zostałoby zrobione (nic nie zakładaj)'
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+concurrency:
+  group: nowe-repo-seminarium
+  cancel-in-progress: false
+
+jobs:
+  zaloz:
+    # tylko gałąź main — z gałęzi roboczych automat nigdy nie zakłada repozytoriów
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Zakładanie repozytoriów seminariów
+        env:
+          IM_ADMIN_TOKEN: ${{ secrets.IM_ADMIN_TOKEN }}
+          IM_STRONA_TOKEN: ${{ secrets.IM_STRONA_TOKEN }}
+          GH_TOKEN: ${{ github.token }}
+          WLASCICIEL: ${{ vars.IM_SEMINARIA_WLASCICIEL || 'Avean' }}
+          PREFIKS: ${{ vars.IM_SEMINARIA_PREFIKS || 'seminarium-' }}
+          WIDOCZNOSC: ${{ vars.IM_SEMINARIA_WIDOCZNOSC || 'public' }}
+          PROBA: ${{ inputs.proba && 'tak' || '' }}
+        run: python3 skrypty/seminaria/nowe_repo.py
