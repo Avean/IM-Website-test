@@ -1,596 +1,23 @@
 {
  "zepsute": [
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.docx",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.docx))",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2011",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2011))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_lsmaga_mrowinska.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_lsmaga_mrowinska.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/repetii.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/repetii.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_rr1.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_rr1.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_symstoch.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_symstoch.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_mbochenski_antasik.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_mbochenski_antasik.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/szarek",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/szarek))",
-   "strony": [
-    "/en/instytut/zaklady/analiza-funkcjonalna/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/analiza-funkcjonalna/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/"
-   ]
-  },
-  {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-workshop18",
-   "kod": 302,
-   "status": "Rejected status code: 302 Found",
+   "url": "http://www.math.uni.wroc.pl/~karch/pattern/",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
    "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
+    "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/"
+    "/nauka/konferencje/2016-mathematics-of-pattern-formation/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2009",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2009))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/momentw.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/momentw.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxi_histmat_info.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxi_histmat_info.pdf))",
-   "strony": [
-    "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/~sgal/szkola/Kombinatoryka/Zbior_zadan_z_kombinatoryki.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~sgal/szkola/Kombinatoryka/Zbior_zadan_z_kombinatoryki.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/tem7.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/tem7.pdf))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-stosowana.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-stosowana.pdf))",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/zadania-z-egzaminow-licencjackich",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/zadania-z-egzaminow-licencjackich))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf))",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/komentarz_do_wytycznych_dla_prac_dyplomowych.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/komentarz_do_wytycznych_dla_prac_dyplomowych.pdf))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/krupski.ps",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/krupski.ps))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2019.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2019.pdf))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2023.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2023.pdf))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/sesja_poprawkowa2027luty.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/sesja_poprawkowa2027luty.pdf))",
-   "strony": [
-    "/en/studia/zajecia/",
-    "/studia/zajecia/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_okalenda_korpalski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_okalenda_korpalski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/karrer",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/karrer))",
-   "strony": [
-    "/en/instytut/zaklady/geometria/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/geometria/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2005",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2005))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/tjan",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/tjan))",
-   "strony": [
-    "/en/instytut/zaklady/geometria/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/geometria/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/krupski.dvi",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/krupski.dvi))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_leigentler_tadej.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_leigentler_tadej.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_mwilczynski_mrowinska.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_mwilczynski_mrowinska.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
-   ]
-  },
-  {
-   "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf",
+   "url": "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf",
    "kod": 404,
    "status": "Rejected status code: 404 Not Found",
    "strony": [
     "/en/studia/skrypty/",
     "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/))",
-   "strony": [
-    "/",
-    "/404.html",
-    "/aktualnosci/",
-    "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
-    "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
-    "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
-    "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
-    "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
-    "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
-    "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
-    "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
-    "/aktualnosci/2026-06-16-seminarium-wydzialowe/",
-    "/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
-    "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
-    "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
-    "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
-    "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
-    "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
-    "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
-    "/aktualnosci/2026-10-17-rusza-tutornia/",
-    "/deklaracja-dostepnosci/",
-    "/en/",
-    "/en/aktualnosci/",
-    "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
-    "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
-    "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
-    "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
-    "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
-    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
-    "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
-    "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
-    "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/",
-    "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
-    "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
-    "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
-    "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
-    "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
-    "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
-    "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
-    "/en/aktualnosci/2026-10-17-rusza-tutornia/",
-    "/en/deklaracja-dostepnosci/",
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/en/instytut/kontakt/",
-    "/en/instytut/struktura/",
-    "/en/instytut/wladze/",
-    "/en/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/en/instytut/zaklady/analiza-funkcjonalna/",
-    "/en/instytut/zaklady/analiza-matematyczna/",
-    "/en/instytut/zaklady/dydaktyka/",
-    "/en/instytut/zaklady/geometria/",
-    "/en/instytut/zaklady/rownania-rozniczkowe/",
-    "/en/instytut/zaklady/statystyka/",
-    "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
-    "/en/kalendarz/",
-    "/en/nauka/granty/",
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
-    "/en/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
-    "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
-    "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
-    "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
-    "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
-    "/en/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
-    "/en/nauka/konferencje/2014-workshop-in-set-theory/",
-    "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
-    "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
-    "/en/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
-    "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
-    "/en/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
-    "/en/nauka/konferencje/2016-combinatorics-and-groups/",
-    "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
-    "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2016-stochastic-models-v/",
-    "/en/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
-    "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
-    "/en/nauka/konferencje/2017-model-theory-conference/",
-    "/en/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
-    "/en/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
-    "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
-    "/en/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
-    "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2018-stochastic-models-vi/",
-    "/en/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
-    "/en/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
-    "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
-    "/en/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
-    "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
-    "/en/nauka/konferencje/2020-model-theory-conference/",
-    "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2020-random-models/",
-    "/en/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
-    "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
-    "/en/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2023-discrete-random-structures/",
-    "/en/nauka/konferencje/2023-model-theory-conference/",
-    "/en/nauka/konferencje/2023-model-theory-workshop/",
-    "/en/nauka/konferencje/2023-stochastic-models-vii/",
-    "/en/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
-    "/en/nauka/konferencje/2024-probability-and-analysis-2024/",
-    "/en/nauka/konferencje/2024-second-wroclaw-logic-conference/",
-    "/en/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
-    "/en/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
-    "/en/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
-    "/en/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
-    "/en/nauka/konferencje/2025-structures-in-banach-spaces/",
-    "/en/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
-    "/en/nauka/konferencje/2026-discrete-random-structures-ii/",
-    "/en/nauka/publikacje/",
-    "/en/obrony-doktorskie/",
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/en/polityka-prywatnosci/",
-    "/en/pracownicy/",
-    "/en/seminaria/",
-    "/en/seminaria/analiza-harmoniczna/",
-    "/en/seminaria/dyskretna-analiza-harmoniczna/",
-    "/en/seminaria/prawdopodobienstwo/",
-    "/en/seminaria/rownania-rozniczkowe/",
-    "/en/seminaria/statystyka/",
-    "/en/studia/egzaminy-i-dyplom/",
-    "/en/studia/matematyka/",
-    "/en/studia/matematyka/analiza-danych/",
-    "/en/studia/matematyka/matematyka-aktuarialno-finansowa/",
-    "/en/studia/matematyka/matematyka-nauczycielska/",
-    "/en/studia/matematyka/matematyka-stosowana/",
-    "/en/studia/matematyka/matematyka-teoretyczna/",
-    "/en/studia/pierwszy-rok/",
-    "/en/studia/podyplomowe/",
-    "/en/studia/procedura-dyplomowania/",
-    "/en/studia/rok-akademicki/",
-    "/en/studia/siad/",
-    "/en/studia/skrypty/",
-    "/en/studia/sprawy-studenckie/",
-    "/en/studia/szkola-doktorska/",
-    "/en/studia/zajecia/",
-    "/en/szukaj/",
-    "/instytut/infrastruktura-informatyczna/",
-    "/instytut/kontakt/",
-    "/instytut/struktura/",
-    "/instytut/wladze/",
-    "/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/instytut/zaklady/analiza-funkcjonalna/",
-    "/instytut/zaklady/analiza-matematyczna/",
-    "/instytut/zaklady/dydaktyka/",
-    "/instytut/zaklady/geometria/",
-    "/instytut/zaklady/rownania-rozniczkowe/",
-    "/instytut/zaklady/statystyka/",
-    "/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/instytut/zaklady/teoria-prawdopodobienstwa/",
-    "/kalendarz/",
-    "/nauka/granty/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
-    "/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
-    "/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
-    "/nauka/konferencje/2014-7th-young-set-theory-workshop/",
-    "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
-    "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
-    "/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
-    "/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
-    "/nauka/konferencje/2014-workshop-in-set-theory/",
-    "/nauka/konferencje/2015-conference-on-geometric-group-theory/",
-    "/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
-    "/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
-    "/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
-    "/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
-    "/nauka/konferencje/2016-combinatorics-and-groups/",
-    "/nauka/konferencje/2016-mathematics-of-pattern-formation/",
-    "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
-    "/nauka/konferencje/2016-stochastic-models-v/",
-    "/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
-    "/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
-    "/nauka/konferencje/2017-model-theory-conference/",
-    "/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
-    "/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
-    "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
-    "/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
-    "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
-    "/nauka/konferencje/2018-stochastic-models-vi/",
-    "/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
-    "/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
-    "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
-    "/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
-    "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
-    "/nauka/konferencje/2020-model-theory-conference/",
-    "/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
-    "/nauka/konferencje/2020-random-models/",
-    "/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
-    "/nauka/konferencje/2022-probability-and-analysis-2022/",
-    "/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2023-discrete-random-structures/",
-    "/nauka/konferencje/2023-model-theory-conference/",
-    "/nauka/konferencje/2023-model-theory-workshop/",
-    "/nauka/konferencje/2023-stochastic-models-vii/",
-    "/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
-    "/nauka/konferencje/2024-probability-and-analysis-2024/",
-    "/nauka/konferencje/2024-second-wroclaw-logic-conference/",
-    "/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
-    "/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
-    "/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
-    "/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
-    "/nauka/konferencje/2025-structures-in-banach-spaces/",
-    "/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
-    "/nauka/konferencje/2026-discrete-random-structures-ii/",
-    "/nauka/publikacje/",
-    "/obrony-doktorskie/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/polityka-prywatnosci/",
-    "/pracownicy/",
-    "/seminaria/",
-    "/seminaria/analiza-harmoniczna/",
-    "/seminaria/dyskretna-analiza-harmoniczna/",
-    "/seminaria/prawdopodobienstwo/",
-    "/seminaria/rownania-rozniczkowe/",
-    "/seminaria/statystyka/",
-    "/studia/egzaminy-i-dyplom/",
-    "/studia/matematyka/",
-    "/studia/matematyka/analiza-danych/",
-    "/studia/matematyka/matematyka-aktuarialno-finansowa/",
-    "/studia/matematyka/matematyka-nauczycielska/",
-    "/studia/matematyka/matematyka-stosowana/",
-    "/studia/matematyka/matematyka-teoretyczna/",
-    "/studia/pierwszy-rok/",
-    "/studia/podyplomowe/",
-    "/studia/procedura-dyplomowania/",
-    "/studia/rok-akademicki/",
-    "/studia/siad/",
-    "/studia/skrypty/",
-    "/studia/sprawy-studenckie/",
-    "/studia/szkola-doktorska/",
-    "/studia/zajecia/",
-    "/szukaj/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/archiwalne-programy-studiow-na-kierunku-matematyka",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/archiwalne-programy-studiow-na-kierunku-matematyka))",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
    ]
   },
   {
@@ -605,183 +32,158 @@
    ]
   },
   {
-   "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
-   "kod": 302,
-   "status": "Rejected status code: 302 Found",
-   "strony": [
-    "/en/studia/zajecia/",
-    "/studia/zajecia/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxiii_khm_info.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxiii_khm_info.pdf))",
-   "strony": [
-    "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2020.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2020.pdf))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_zuchowski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_zuchowski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/postepowania-w-sprawie-nadania-stopnia-doktora-w-instytucie-matematycznym",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/postepowania-w-sprawie-nadania-stopnia-doktora-w-instytucie-matematycznym))",
-   "strony": [
-    "/en/obrony-doktorskie/",
-    "/obrony-doktorskie/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/abstract_tadej.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/abstract_tadej.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/tablica-interaktywna",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/tablica-interaktywna))",
-   "strony": [
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/instytut/infrastruktura-informatyczna/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/bendikov",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/bendikov))",
-   "strony": [
-    "/en/instytut/zaklady/analiza-funkcjonalna/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/analiza-funkcjonalna/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2013",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2013))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/46-2017.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/46-2017.pdf))",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_pmucha_tadej.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_pmucha_tadej.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_pzakrzewski_zuchowski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_pzakrzewski_zuchowski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/skryptn.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skryptn.pdf))",
+   "url": "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
    "strony": [
     "/en/studia/skrypty/",
     "/studia/skrypty/"
    ]
   },
   {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
+   "url": "http://forum2019.math.uni.wroc.pl/",
+   "kod": null,
+   "status": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://forum2019.math.uni.wroc.pl/))",
    "strony": [
-    "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/"
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-dokumenty",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-dokumenty))",
+   "url": "https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=harezlak",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
    "strony": [
-    "/en/studia/szkola-doktorska/",
-    "/studia/szkola-doktorska/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/valiunas",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/valiunas))",
-   "strony": [
-    "/en/instytut/zaklady/geometria/",
+    "/en/instytut/zaklady/statystyka/",
     "/en/pracownicy/",
-    "/instytut/zaklady/geometria/",
+    "/instytut/zaklady/statystyka/",
     "/pracownicy/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-mgr.pdf",
+   "url": "http://magweb.math.uni.wroc.pl/analiza/bedlewo17/",
    "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-mgr.pdf))",
+   "status": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://magweb.math.uni.wroc.pl/analiza/bedlewo17/))",
    "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/wizualizacja.pdf",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/studia/skrypty/",
+    "/studia/skrypty/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/studia/skrypty/",
+    "/studia/skrypty/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/mathbank/preprinty/index.php",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/nauka/publikacje/",
+    "/nauka/publikacje/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/studia/skrypty/",
+    "/studia/skrypty/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~grzes/dydaktyka13_14/fr_main.pdf",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/studia/skrypty/",
+    "/studia/skrypty/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~stanczr/semin/semin.html",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/seminaria/rownania-rozniczkowe/",
+    "/seminaria/rownania-rozniczkowe/"
+   ]
+  },
+  {
+   "url": "http://math.uni.wroc.pl/~nadav",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+    "/en/pracownicy/",
+    "/instytut/zaklady/algebra-i-teoria-modeli/",
+    "/pracownicy/"
+   ]
+  }
+ ],
+ "niepewne": [
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/"
+   ]
+  },
+  {
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-random",
+   "kod": 302,
+   "status": "Rejected status code: 302 Found",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2020-random-models/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2020-random-models/"
+   ]
+  },
+  {
+   "url": "http://bcc.impan.pl/14PAHA/",
+   "kod": 502,
+   "status": "Rejected status code: 502 Bad Gateway",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/"
    ]
   },
   {
@@ -796,213 +198,149 @@
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2024.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2024.pdf))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr21-ad-zakres.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr21-ad-zakres.pdf))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/sesja2027luty.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/sesja2027luty.pdf))",
-   "strony": [
-    "/en/studia/zajecia/",
-    "/studia/zajecia/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/krupski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/krupski.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/doktorat_antasik.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/doktorat_antasik.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/siec_im_dla_pracownikow_i_doktorantow.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/siec_im_dla_pracownikow_i_doktorantow.pdf))",
-   "strony": [
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/instytut/infrastruktura-informatyczna/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2006",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2006))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/wykaz_kdmat_2025_2026.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/wykaz_kdmat_2025_2026.pdf))",
-   "strony": [
-    "/en/studia/szkola-doktorska/",
-    "/studia/szkola-doktorska/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf))",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
-   ]
-  },
-  {
-   "url": "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/skryptn.ps",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skryptn.ps))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/~wrobel/",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~wrobel/))",
-   "strony": [
-    "/en/instytut/zaklady/analiza-funkcjonalna/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/analiza-funkcjonalna/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2017.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2017.pdf))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/egzlic_zagadnienia.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/egzlic_zagadnienia.pdf))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/abstract_mrowinska.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/abstract_mrowinska.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza",
    "kod": 400,
    "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/aktualnosci/2026-06-19-seminarium-ze-statystyki/"
+    "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/wdsl.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/wdsl.pdf))",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
+    "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/"
    ]
   },
   {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-paha",
+   "url": "https://combandgroups.wordpress.com/",
+   "kod": 403,
+   "status": "Rejected status code: 403 Forbidden",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2016-combinatorics-and-groups/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2016-combinatorics-and-groups/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/"
+   ]
+  },
+  {
+   "url": "http://bcc.impan.pl/14Young/",
+   "kod": 502,
+   "status": "Rejected status code: 502 Bad Gateway",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2014-7th-young-set-theory-workshop/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/knmtuwr",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/studia/sprawy-studenckie/",
+    "/studia/sprawy-studenckie/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-17-rusza-tutornia",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-10-17-rusza-tutornia/"
+   ]
+  },
+  {
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/22-19thworkshop",
    "kod": 302,
    "status": "Rejected status code: 302 Found",
    "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+    "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/"
+    "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2025.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2025.pdf))",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
+    "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.pdf))",
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-19thworkshop",
+   "kod": 302,
+   "status": "Rejected status code: 302 Found",
    "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+    "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+    "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr21-te-zakres.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr21-te-zakres.pdf))",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
+    "/aktualnosci/2026-06-16-seminarium-wydzialowe/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf))",
+   "url": "https://panda.pwr.edu.pl/",
+   "kod": 503,
+   "status": "Rejected status code: 503 Service Unavailable",
    "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2022-probability-and-analysis-2022/"
    ]
   },
   {
-   "url": "http://www.math.uni.wroc.pl/~pms/",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (http://www.math.uni.wroc.pl/~pms/))",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
+    "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/"
    ]
   },
   {
@@ -1017,59 +355,125 @@
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxii_konferencja_z_historii_matematyki_2018_program.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxii_konferencja_z_historii_matematyki_2018_program.pdf))",
+   "url": "http://bcc.impan.pl/13Levy/",
+   "kod": 502,
+   "status": "Rejected status code: 502 Bad Gateway",
    "strony": [
-    "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/"
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.docx",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.docx))",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
+    "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_tadej.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/streszczenie_tadej.pdf))",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/"
+    "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/oferty-pracy",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/oferty-pracy))",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/en/studia/sprawy-studenckie/",
-    "/studia/sprawy-studenckie/"
+    "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/"
    ]
   },
   {
-   "url": "http://www.math.uni.wroc.pl/mathbank/preprinty/index.php",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
+    "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/users/slomian",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/slomian))",
+   "url": "http://www.impan.pl/~set_theory/dmvptm14/",
+   "kod": 403,
+   "status": "Rejected status code: 403 Forbidden",
    "strony": [
-    "/en/instytut/zaklady/analiza-funkcjonalna/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/analiza-funkcjonalna/",
-    "/pracownicy/"
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2014-workshop-in-set-theory/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2014-workshop-in-set-theory/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/"
+   ]
+  },
+  {
+   "url": "https://erc.europa.eu/",
+   "kod": 403,
+   "status": "Rejected status code: 403 Forbidden",
+   "strony": [
+    "/en/nauka/granty/",
+    "/nauka/granty/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/"
+   ]
+  },
+  {
+   "url": "http://bcc.impan.pl/16PAHA/",
+   "kod": 502,
+   "status": "Rejected status code: 502 Bad Gateway",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/"
    ]
   },
   {
@@ -1339,1898 +743,12 @@
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/kwalifikacyjne-studia-podyplomowe-nauczanie-matematyki",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/kwalifikacyjne-studia-podyplomowe-nauczanie-matematyki))",
-   "strony": [
-    "/en/studia/podyplomowe/",
-    "/studia/podyplomowe/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/doktorat_mrowinska.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/doktorat_mrowinska.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_izezula_mrowinska.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_izezula_mrowinska.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
-   ]
-  },
-  {
-   "url": "https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=harezlak",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/instytut/zaklady/statystyka/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/statystyka/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/wytyczne_prace_dyplomowe.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/wytyczne_prace_dyplomowe.pdf))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/decyzje1rok2sem.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/decyzje1rok2sem.pdf))",
-   "strony": [
-    "/en/studia/pierwszy-rok/",
-    "/studia/pierwszy-rok/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/siec_studencka_i_laboratoria_komputerowe.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/siec_studencka_i_laboratoria_komputerowe.pdf))",
-   "strony": [
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/instytut/infrastruktura-informatyczna/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_akwela_zuchowski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_akwela_zuchowski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/zajecia-w-im",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/zajecia-w-im))",
-   "strony": [
-    "/en/studia/zajecia/",
-    "/studia/zajecia/"
-   ]
-  },
-  {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-19thworkshop",
+   "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
    "kod": 302,
    "status": "Rejected status code: 302 Found",
    "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sukcesy",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sukcesy))",
-   "strony": [
-    "/",
-    "/404.html",
-    "/aktualnosci/",
-    "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
-    "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
-    "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
-    "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
-    "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
-    "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
-    "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
-    "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
-    "/aktualnosci/2026-06-16-seminarium-wydzialowe/",
-    "/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
-    "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
-    "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
-    "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
-    "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
-    "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
-    "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
-    "/aktualnosci/2026-10-17-rusza-tutornia/",
-    "/deklaracja-dostepnosci/",
-    "/en/",
-    "/en/aktualnosci/",
-    "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
-    "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
-    "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
-    "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
-    "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
-    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
-    "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
-    "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
-    "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/",
-    "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
-    "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
-    "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
-    "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
-    "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
-    "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
-    "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
-    "/en/aktualnosci/2026-10-17-rusza-tutornia/",
-    "/en/deklaracja-dostepnosci/",
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/en/instytut/kontakt/",
-    "/en/instytut/struktura/",
-    "/en/instytut/wladze/",
-    "/en/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/en/instytut/zaklady/analiza-funkcjonalna/",
-    "/en/instytut/zaklady/analiza-matematyczna/",
-    "/en/instytut/zaklady/dydaktyka/",
-    "/en/instytut/zaklady/geometria/",
-    "/en/instytut/zaklady/rownania-rozniczkowe/",
-    "/en/instytut/zaklady/statystyka/",
-    "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
-    "/en/kalendarz/",
-    "/en/nauka/granty/",
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
-    "/en/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
-    "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
-    "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
-    "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
-    "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
-    "/en/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
-    "/en/nauka/konferencje/2014-workshop-in-set-theory/",
-    "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
-    "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
-    "/en/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
-    "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
-    "/en/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
-    "/en/nauka/konferencje/2016-combinatorics-and-groups/",
-    "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
-    "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2016-stochastic-models-v/",
-    "/en/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
-    "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
-    "/en/nauka/konferencje/2017-model-theory-conference/",
-    "/en/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
-    "/en/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
-    "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
-    "/en/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
-    "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2018-stochastic-models-vi/",
-    "/en/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
-    "/en/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
-    "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
-    "/en/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
-    "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
-    "/en/nauka/konferencje/2020-model-theory-conference/",
-    "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2020-random-models/",
-    "/en/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
-    "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
-    "/en/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2023-discrete-random-structures/",
-    "/en/nauka/konferencje/2023-model-theory-conference/",
-    "/en/nauka/konferencje/2023-model-theory-workshop/",
-    "/en/nauka/konferencje/2023-stochastic-models-vii/",
-    "/en/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
-    "/en/nauka/konferencje/2024-probability-and-analysis-2024/",
-    "/en/nauka/konferencje/2024-second-wroclaw-logic-conference/",
-    "/en/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
-    "/en/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
-    "/en/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
-    "/en/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
-    "/en/nauka/konferencje/2025-structures-in-banach-spaces/",
-    "/en/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
-    "/en/nauka/konferencje/2026-discrete-random-structures-ii/",
-    "/en/nauka/publikacje/",
-    "/en/obrony-doktorskie/",
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/en/polityka-prywatnosci/",
-    "/en/pracownicy/",
-    "/en/seminaria/",
-    "/en/seminaria/analiza-harmoniczna/",
-    "/en/seminaria/dyskretna-analiza-harmoniczna/",
-    "/en/seminaria/prawdopodobienstwo/",
-    "/en/seminaria/rownania-rozniczkowe/",
-    "/en/seminaria/statystyka/",
-    "/en/studia/egzaminy-i-dyplom/",
-    "/en/studia/matematyka/",
-    "/en/studia/matematyka/analiza-danych/",
-    "/en/studia/matematyka/matematyka-aktuarialno-finansowa/",
-    "/en/studia/matematyka/matematyka-nauczycielska/",
-    "/en/studia/matematyka/matematyka-stosowana/",
-    "/en/studia/matematyka/matematyka-teoretyczna/",
-    "/en/studia/pierwszy-rok/",
-    "/en/studia/podyplomowe/",
-    "/en/studia/procedura-dyplomowania/",
-    "/en/studia/rok-akademicki/",
-    "/en/studia/siad/",
-    "/en/studia/skrypty/",
-    "/en/studia/sprawy-studenckie/",
-    "/en/studia/szkola-doktorska/",
-    "/en/studia/zajecia/",
-    "/en/szukaj/",
-    "/instytut/infrastruktura-informatyczna/",
-    "/instytut/kontakt/",
-    "/instytut/struktura/",
-    "/instytut/wladze/",
-    "/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/instytut/zaklady/analiza-funkcjonalna/",
-    "/instytut/zaklady/analiza-matematyczna/",
-    "/instytut/zaklady/dydaktyka/",
-    "/instytut/zaklady/geometria/",
-    "/instytut/zaklady/rownania-rozniczkowe/",
-    "/instytut/zaklady/statystyka/",
-    "/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/instytut/zaklady/teoria-prawdopodobienstwa/",
-    "/kalendarz/",
-    "/nauka/granty/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
-    "/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
-    "/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
-    "/nauka/konferencje/2014-7th-young-set-theory-workshop/",
-    "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
-    "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
-    "/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
-    "/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
-    "/nauka/konferencje/2014-workshop-in-set-theory/",
-    "/nauka/konferencje/2015-conference-on-geometric-group-theory/",
-    "/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
-    "/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
-    "/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
-    "/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
-    "/nauka/konferencje/2016-combinatorics-and-groups/",
-    "/nauka/konferencje/2016-mathematics-of-pattern-formation/",
-    "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
-    "/nauka/konferencje/2016-stochastic-models-v/",
-    "/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
-    "/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
-    "/nauka/konferencje/2017-model-theory-conference/",
-    "/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
-    "/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
-    "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
-    "/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
-    "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
-    "/nauka/konferencje/2018-stochastic-models-vi/",
-    "/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
-    "/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
-    "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
-    "/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
-    "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
-    "/nauka/konferencje/2020-model-theory-conference/",
-    "/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
-    "/nauka/konferencje/2020-random-models/",
-    "/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
-    "/nauka/konferencje/2022-probability-and-analysis-2022/",
-    "/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2023-discrete-random-structures/",
-    "/nauka/konferencje/2023-model-theory-conference/",
-    "/nauka/konferencje/2023-model-theory-workshop/",
-    "/nauka/konferencje/2023-stochastic-models-vii/",
-    "/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
-    "/nauka/konferencje/2024-probability-and-analysis-2024/",
-    "/nauka/konferencje/2024-second-wroclaw-logic-conference/",
-    "/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
-    "/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
-    "/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
-    "/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
-    "/nauka/konferencje/2025-structures-in-banach-spaces/",
-    "/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
-    "/nauka/konferencje/2026-discrete-random-structures-ii/",
-    "/nauka/publikacje/",
-    "/obrony-doktorskie/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/polityka-prywatnosci/",
-    "/pracownicy/",
-    "/seminaria/",
-    "/seminaria/analiza-harmoniczna/",
-    "/seminaria/dyskretna-analiza-harmoniczna/",
-    "/seminaria/prawdopodobienstwo/",
-    "/seminaria/rownania-rozniczkowe/",
-    "/seminaria/statystyka/",
-    "/studia/egzaminy-i-dyplom/",
-    "/studia/matematyka/",
-    "/studia/matematyka/analiza-danych/",
-    "/studia/matematyka/matematyka-aktuarialno-finansowa/",
-    "/studia/matematyka/matematyka-nauczycielska/",
-    "/studia/matematyka/matematyka-stosowana/",
-    "/studia/matematyka/matematyka-teoretyczna/",
-    "/studia/pierwszy-rok/",
-    "/studia/podyplomowe/",
-    "/studia/procedura-dyplomowania/",
-    "/studia/rok-akademicki/",
-    "/studia/siad/",
-    "/studia/skrypty/",
-    "/studia/sprawy-studenckie/",
-    "/studia/szkola-doktorska/",
-    "/studia/zajecia/",
-    "/szukaj/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/plan_26_27z_popr3.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/plan_26_27z_popr3.pdf))",
-   "strony": [
-    "/en/studia/pierwszy-rok/",
-    "/studia/pierwszy-rok/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_al1.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_al1.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/doktorat_tadej.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/doktorat_tadej.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/diakow",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/diakow))",
-   "strony": [
-    "/en/pracownicy/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2007",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2007))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/abstract_korpalski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/abstract_korpalski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr22-na-zakres.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr22-na-zakres.pdf))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2021.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2021.pdf))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/decyzje1rok1sem.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/decyzje1rok1sem.pdf))",
-   "strony": [
-    "/en/studia/pierwszy-rok/",
-    "/studia/pierwszy-rok/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_mhrusak_zuchowski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_mhrusak_zuchowski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxiii_khm_program.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxiii_khm_program.pdf))",
-   "strony": [
-    "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2015.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2015.pdf))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxi_histmat_program2.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxi_histmat_program2.pdf))",
-   "strony": [
-    "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/wswiatkowski",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/wswiatkowski))",
-   "strony": [
-    "/en/pracownicy/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2018.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2018.pdf))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2014",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2014))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-17-rusza-tutornia",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-10-17-rusza-tutornia/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/programy-dostepne-dla-studentow-i-pracownikow",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/programy-dostepne-dla-studentow-i-pracownikow))",
-   "strony": [
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/instytut/infrastruktura-informatyczna/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_antasik.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/streszczenie_antasik.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_tadej.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_tadej.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2016.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2016.pdf))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_antasik.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_antasik.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_spetrovskiy_tadej.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_spetrovskiy_tadej.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_rrcz.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_rrcz.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/regulamin-praktyk-nauczycielskich-2026.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/regulamin-praktyk-nauczycielskich-2026.pdf))",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/program-most",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/program-most))",
-   "strony": [
-    "/en/studia/sprawy-studenckie/",
-    "/studia/sprawy-studenckie/"
-   ]
-  },
-  {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/22-19thworkshop",
-   "kod": 302,
-   "status": "Rejected status code: 302 Found",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_korpalski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_korpalski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/zadania-z-egzaminow-magisterskich",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/zadania-z-egzaminow-magisterskich))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/~pkowa/conf23.html",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~pkowa/conf23.html))",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2023-model-theory-conference/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2023-model-theory-conference/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/adapt2026_matematyka.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/adapt2026_matematyka.pdf))",
-   "strony": [
-    "/en/studia/pierwszy-rok/",
-    "/studia/pierwszy-rok/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/KNZM.UWr/",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/studia/sprawy-studenckie/",
-    "/studia/sprawy-studenckie/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/godziny-otwarcia-laboratorium-komputerowego",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/godziny-otwarcia-laboratorium-komputerowego))",
-   "strony": [
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/instytut/infrastruktura-informatyczna/"
-   ]
-  },
-  {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/17-modeltheory",
-   "kod": 302,
-   "status": "Rejected status code: 302 Found",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2017-model-theory-conference/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2017-model-theory-conference/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/e-learnings.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/e-learnings.pdf))",
-   "strony": [
     "/en/studia/zajecia/",
     "/studia/zajecia/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/duda",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/duda))",
-   "strony": [
-    "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr21-af-zakres.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr21-af-zakres.pdf))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "http://www.math.uni.wroc.pl/~karch/pattern/",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2016-mathematics-of-pattern-formation/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr21-ek-zakres.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr21-ek-zakres.pdf))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/praktyka.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/praktyka.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/~mirek",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~mirek))",
-   "strony": [
-    "/en/instytut/zaklady/analiza-funkcjonalna/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/analiza-funkcjonalna/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_tkania_korpalski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_tkania_korpalski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/~pkowa/work23.html",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~pkowa/work23.html))",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2023-model-theory-workshop/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2023-model-theory-workshop/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php))",
-   "strony": [
-    "/en/studia/rok-akademicki/",
-    "/en/studia/zajecia/",
-    "/studia/rok-akademicki/",
-    "/studia/zajecia/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/wylupek",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/wylupek))",
-   "strony": [
-    "/en/instytut/wladze/",
-    "/en/instytut/zaklady/statystyka/",
-    "/en/pracownicy/",
-    "/instytut/wladze/",
-    "/instytut/zaklady/statystyka/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2012",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2012))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/wizualizacja.pdf",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/~lorek/bedlewo2018/",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~lorek/bedlewo2018/))",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2018-stochastic-models-vi/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2018-stochastic-models-vi/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-06-16-seminarium-wydzialowe/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-nauczycielska.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-nauczycielska.pdf))",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/wdsl.ps",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/wdsl.ps))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_tmaszczyk_antasik.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_tmaszczyk_antasik.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
-   ]
-  },
-  {
-   "url": "http://www.math.uni.wroc.pl/~grzes/dydaktyka13_14/fr_main.pdf",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/"
-   ]
-  },
-  {
-   "url": "https://prac.im.pwr.edu.pl/~twowlc/",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://prac.im.pwr.edu.pl/~twowlc/))",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2024-second-wroclaw-logic-conference/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2024-second-wroclaw-logic-conference/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/adapt2026_siad.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/adapt2026_siad.pdf))",
-   "strony": [
-    "/en/studia/pierwszy-rok/",
-    "/studia/pierwszy-rok/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/gappo",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/gappo))",
-   "strony": [
-    "/en/instytut/zaklady/geometria/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/geometria/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-stypendia-i-granty",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-stypendia-i-granty))",
-   "strony": [
-    "/en/studia/szkola-doktorska/",
-    "/studia/szkola-doktorska/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/WRSSWMI/",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/studia/sprawy-studenckie/",
-    "/studia/sprawy-studenckie/"
-   ]
-  },
-  {
-   "url": "http://www.math.uni.wroc.pl/~stanczr/semin/semin.html",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/seminaria/rownania-rozniczkowe/",
-    "/seminaria/rownania-rozniczkowe/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_al2.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_al2.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/pawlikowski",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/pawlikowski))",
-   "strony": [
-    "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/zaitseva",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/zaitseva))",
-   "strony": [
-    "/en/pracownicy/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.pdf))",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/abstract_antasik.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/abstract_antasik.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_mrowinska.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/streszczenie_mrowinska.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/registering-at-hasselt-university.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/registering-at-hasselt-university.pdf))",
-   "strony": [
-    "/en/studia/zajecia/",
-    "/studia/zajecia/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-17-rusza-tutornia",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-10-17-rusza-tutornia/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2003",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2003))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/mikrupski",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/mikrupski))",
-   "strony": [
-    "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/miklos",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/miklos))",
-   "strony": [
-    "/en/pracownicy/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_mrowinska.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_mrowinska.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/~szekli/documents/mumio/mumio-16-trans/skrypt-16.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~szekli/documents/mumio/mumio-16-trans/skrypt-16.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_awreid_antasik.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_awreid_antasik.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/wykaz_kdinf_2025_2026.docx",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/wykaz_kdinf_2025_2026.docx))",
-   "strony": [
-    "/en/studia/szkola-doktorska/",
-    "/studia/szkola-doktorska/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/repet.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/repet.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/poradnik_26_27.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/poradnik_26_27.pdf))",
-   "strony": [
-    "/en/studia/pierwszy-rok/",
-    "/studia/pierwszy-rok/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr21-st-zakres.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr21-st-zakres.pdf))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2004",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2004))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2008",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2008))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "http://math.uni.wroc.pl/~nadav",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-teoretyczna.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-teoretyczna.pdf))",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/zasady-rejestracji.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zasady-rejestracji.pdf))",
-   "strony": [
-    "/en/studia/zajecia/",
-    "/studia/zajecia/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/abstract_zuchowski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/abstract_zuchowski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2022.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2022.pdf))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/knmtuwr",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/studia/sprawy-studenckie/",
-    "/studia/sprawy-studenckie/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_jkakol_korpalski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_jkakol_korpalski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_af.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_af.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-rekrutacja",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-rekrutacja))",
-   "strony": [
-    "/en/studia/szkola-doktorska/",
-    "/studia/szkola-doktorska/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/programy-dostepne-w-pracowniach-komputerowych",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/programy-dostepne-w-pracowniach-komputerowych))",
-   "strony": [
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/instytut/infrastruktura-informatyczna/"
-   ]
-  },
-  {
-   "url": "http://forum2019.math.uni.wroc.pl/",
-   "kod": null,
-   "status": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://forum2019.math.uni.wroc.pl/))",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-informacje-ogolne",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-informacje-ogolne))",
-   "strony": [
-    "/en/studia/szkola-doktorska/",
-    "/studia/szkola-doktorska/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_korpalski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/streszczenie_korpalski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/xxx.program2.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxx.program2.pdf))",
-   "strony": [
-    "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/zhang",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/zhang))",
-   "strony": [
-    "/en/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/hajduk",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/hajduk))",
-   "strony": [
-    "/en/instytut/zaklady/geometria/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/geometria/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/doktorat_korpalski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/doktorat_korpalski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/dostep-do-sieci-bezprzewodowej",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/dostep-do-sieci-bezprzewodowej))",
-   "strony": [
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/instytut/infrastruktura-informatyczna/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php))",
-   "strony": [
-    "/",
-    "/404.html",
-    "/aktualnosci/",
-    "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
-    "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
-    "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
-    "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
-    "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
-    "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
-    "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
-    "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
-    "/aktualnosci/2026-06-16-seminarium-wydzialowe/",
-    "/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
-    "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
-    "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
-    "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
-    "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
-    "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
-    "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
-    "/aktualnosci/2026-10-17-rusza-tutornia/",
-    "/deklaracja-dostepnosci/",
-    "/en/",
-    "/en/aktualnosci/",
-    "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
-    "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
-    "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
-    "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
-    "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
-    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
-    "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
-    "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
-    "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/",
-    "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
-    "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
-    "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
-    "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
-    "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
-    "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
-    "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
-    "/en/aktualnosci/2026-10-17-rusza-tutornia/",
-    "/en/deklaracja-dostepnosci/",
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/en/instytut/kontakt/",
-    "/en/instytut/struktura/",
-    "/en/instytut/wladze/",
-    "/en/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/en/instytut/zaklady/analiza-funkcjonalna/",
-    "/en/instytut/zaklady/analiza-matematyczna/",
-    "/en/instytut/zaklady/dydaktyka/",
-    "/en/instytut/zaklady/geometria/",
-    "/en/instytut/zaklady/rownania-rozniczkowe/",
-    "/en/instytut/zaklady/statystyka/",
-    "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
-    "/en/kalendarz/",
-    "/en/nauka/granty/",
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
-    "/en/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
-    "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
-    "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
-    "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
-    "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
-    "/en/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
-    "/en/nauka/konferencje/2014-workshop-in-set-theory/",
-    "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
-    "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
-    "/en/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
-    "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
-    "/en/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
-    "/en/nauka/konferencje/2016-combinatorics-and-groups/",
-    "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
-    "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2016-stochastic-models-v/",
-    "/en/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
-    "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
-    "/en/nauka/konferencje/2017-model-theory-conference/",
-    "/en/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
-    "/en/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
-    "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
-    "/en/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
-    "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2018-stochastic-models-vi/",
-    "/en/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
-    "/en/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
-    "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
-    "/en/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
-    "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
-    "/en/nauka/konferencje/2020-model-theory-conference/",
-    "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2020-random-models/",
-    "/en/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
-    "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
-    "/en/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2023-discrete-random-structures/",
-    "/en/nauka/konferencje/2023-model-theory-conference/",
-    "/en/nauka/konferencje/2023-model-theory-workshop/",
-    "/en/nauka/konferencje/2023-stochastic-models-vii/",
-    "/en/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
-    "/en/nauka/konferencje/2024-probability-and-analysis-2024/",
-    "/en/nauka/konferencje/2024-second-wroclaw-logic-conference/",
-    "/en/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
-    "/en/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
-    "/en/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
-    "/en/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
-    "/en/nauka/konferencje/2025-structures-in-banach-spaces/",
-    "/en/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
-    "/en/nauka/konferencje/2026-discrete-random-structures-ii/",
-    "/en/nauka/publikacje/",
-    "/en/obrony-doktorskie/",
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/en/polityka-prywatnosci/",
-    "/en/pracownicy/",
-    "/en/seminaria/",
-    "/en/seminaria/analiza-harmoniczna/",
-    "/en/seminaria/dyskretna-analiza-harmoniczna/",
-    "/en/seminaria/prawdopodobienstwo/",
-    "/en/seminaria/rownania-rozniczkowe/",
-    "/en/seminaria/statystyka/",
-    "/en/studia/egzaminy-i-dyplom/",
-    "/en/studia/matematyka/",
-    "/en/studia/matematyka/analiza-danych/",
-    "/en/studia/matematyka/matematyka-aktuarialno-finansowa/",
-    "/en/studia/matematyka/matematyka-nauczycielska/",
-    "/en/studia/matematyka/matematyka-stosowana/",
-    "/en/studia/matematyka/matematyka-teoretyczna/",
-    "/en/studia/pierwszy-rok/",
-    "/en/studia/podyplomowe/",
-    "/en/studia/procedura-dyplomowania/",
-    "/en/studia/rok-akademicki/",
-    "/en/studia/siad/",
-    "/en/studia/skrypty/",
-    "/en/studia/sprawy-studenckie/",
-    "/en/studia/szkola-doktorska/",
-    "/en/studia/zajecia/",
-    "/en/szukaj/",
-    "/instytut/infrastruktura-informatyczna/",
-    "/instytut/kontakt/",
-    "/instytut/struktura/",
-    "/instytut/wladze/",
-    "/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/instytut/zaklady/analiza-funkcjonalna/",
-    "/instytut/zaklady/analiza-matematyczna/",
-    "/instytut/zaklady/dydaktyka/",
-    "/instytut/zaklady/geometria/",
-    "/instytut/zaklady/rownania-rozniczkowe/",
-    "/instytut/zaklady/statystyka/",
-    "/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/instytut/zaklady/teoria-prawdopodobienstwa/",
-    "/kalendarz/",
-    "/nauka/granty/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
-    "/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
-    "/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
-    "/nauka/konferencje/2014-7th-young-set-theory-workshop/",
-    "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
-    "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
-    "/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
-    "/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
-    "/nauka/konferencje/2014-workshop-in-set-theory/",
-    "/nauka/konferencje/2015-conference-on-geometric-group-theory/",
-    "/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
-    "/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
-    "/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
-    "/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
-    "/nauka/konferencje/2016-combinatorics-and-groups/",
-    "/nauka/konferencje/2016-mathematics-of-pattern-formation/",
-    "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
-    "/nauka/konferencje/2016-stochastic-models-v/",
-    "/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
-    "/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
-    "/nauka/konferencje/2017-model-theory-conference/",
-    "/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
-    "/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
-    "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
-    "/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
-    "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
-    "/nauka/konferencje/2018-stochastic-models-vi/",
-    "/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
-    "/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
-    "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
-    "/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
-    "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
-    "/nauka/konferencje/2020-model-theory-conference/",
-    "/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
-    "/nauka/konferencje/2020-random-models/",
-    "/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
-    "/nauka/konferencje/2022-probability-and-analysis-2022/",
-    "/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2023-discrete-random-structures/",
-    "/nauka/konferencje/2023-model-theory-conference/",
-    "/nauka/konferencje/2023-model-theory-workshop/",
-    "/nauka/konferencje/2023-stochastic-models-vii/",
-    "/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
-    "/nauka/konferencje/2024-probability-and-analysis-2024/",
-    "/nauka/konferencje/2024-second-wroclaw-logic-conference/",
-    "/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
-    "/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
-    "/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
-    "/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
-    "/nauka/konferencje/2025-structures-in-banach-spaces/",
-    "/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
-    "/nauka/konferencje/2026-discrete-random-structures-ii/",
-    "/nauka/publikacje/",
-    "/obrony-doktorskie/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/polityka-prywatnosci/",
-    "/pracownicy/",
-    "/seminaria/",
-    "/seminaria/analiza-harmoniczna/",
-    "/seminaria/dyskretna-analiza-harmoniczna/",
-    "/seminaria/prawdopodobienstwo/",
-    "/seminaria/rownania-rozniczkowe/",
-    "/seminaria/statystyka/",
-    "/studia/egzaminy-i-dyplom/",
-    "/studia/matematyka/",
-    "/studia/matematyka/analiza-danych/",
-    "/studia/matematyka/matematyka-aktuarialno-finansowa/",
-    "/studia/matematyka/matematyka-nauczycielska/",
-    "/studia/matematyka/matematyka-stosowana/",
-    "/studia/matematyka/matematyka-teoretyczna/",
-    "/studia/pierwszy-rok/",
-    "/studia/podyplomowe/",
-    "/studia/procedura-dyplomowania/",
-    "/studia/rok-akademicki/",
-    "/studia/siad/",
-    "/studia/skrypty/",
-    "/studia/sprawy-studenckie/",
-    "/studia/szkola-doktorska/",
-    "/studia/zajecia/",
-    "/szukaj/"
-   ]
-  },
-  {
-   "url": "http://magweb.math.uni.wroc.pl/analiza/bedlewo17/",
-   "kod": null,
-   "status": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://magweb.math.uni.wroc.pl/analiza/bedlewo17/))",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/"
-   ]
-  },
-  {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-random",
-   "kod": 302,
-   "status": "Rejected status code: 302 Found",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2020-random-models/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2020-random-models/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/kkowa",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/kkowa))",
-   "strony": [
-    "/en/pracownicy/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/~valiunas/erasmus/",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~valiunas/erasmus/))",
-   "strony": [
-    "/en/studia/sprawy-studenckie/",
-    "/studia/sprawy-studenckie/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/doktorat_zuchowski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/doktorat_zuchowski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
-   ]
-  },
-  {
-   "url": "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/sullivan",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/sullivan))",
-   "strony": [
-    "/en/instytut/zaklady/geometria/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/geometria/",
-    "/pracownicy/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/~lorek/bedlewo2023/",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~lorek/bedlewo2023/))",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2023-stochastic-models-vii/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2023-stochastic-models-vii/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxii_konferencja_z_historii_matematyki_2018.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxii_konferencja_z_historii_matematyki_2018.pdf))",
-   "strony": [
-    "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/ckp.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/ckp.pdf))",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/terminy",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/terminy))",
-   "strony": [
-    "/en/studia/egzaminy-i-dyplom/",
-    "/studia/egzaminy-i-dyplom/"
-   ]
-  },
-  {
-   "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_zuchowski.pdf",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/streszczenie_zuchowski.pdf))",
-   "strony": [
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2010",
-   "kod": null,
-   "status": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2010))",
-   "strony": [
-    "/en/nauka/publikacje/",
-    "/nauka/publikacje/"
-   ]
-  }
- ],
- "niepewne": [
-  {
-   "url": "http://bcc.impan.pl/14Young/",
-   "kod": 502,
-   "status": "Rejected status code: 502 Bad Gateway",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2014-7th-young-set-theory-workshop/"
-   ]
-  },
-  {
-   "url": "http://bcc.impan.pl/13Levy/",
-   "kod": 502,
-   "status": "Rejected status code: 502 Bad Gateway",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/"
-   ]
-  },
-  {
-   "url": "http://bcc.impan.pl/14PAHA/",
-   "kod": 502,
-   "status": "Rejected status code: 502 Bad Gateway",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/"
-   ]
-  },
-  {
-   "url": "http://www.impan.pl/~set_theory/dmvptm14/",
-   "kod": 403,
-   "status": "Rejected status code: 403 Forbidden",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2014-workshop-in-set-theory/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2014-workshop-in-set-theory/"
-   ]
-  },
-  {
-   "url": "http://bcc.impan.pl/16PAHA/",
-   "kod": 502,
-   "status": "Rejected status code: 502 Bad Gateway",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/"
    ]
   },
   {
@@ -3245,32 +763,64 @@
    ]
   },
   {
-   "url": "https://www.ptm.org.pl/konkursy/wyklady-im-waclawa-sierpinskiego",
-   "kod": 503,
-   "status": "Rejected status code: 503 Service Unavailable",
-   "strony": [
-    "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
-    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/"
-   ]
-  },
-  {
-   "url": "https://erc.europa.eu/",
-   "kod": 403,
-   "status": "Rejected status code: 403 Forbidden",
-   "strony": [
-    "/en/nauka/granty/",
-    "/nauka/granty/"
-   ]
-  },
-  {
-   "url": "https://panda.pwr.edu.pl/",
-   "kod": 503,
-   "status": "Rejected status code: 503 Service Unavailable",
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-workshop18",
+   "kod": 302,
+   "status": "Rejected status code: 302 Found",
    "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
+    "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2022-probability-and-analysis-2022/"
+    "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/WRSSWMI/",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/studia/sprawy-studenckie/",
+    "/studia/sprawy-studenckie/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/KNZM.UWr/",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/studia/sprawy-studenckie/",
+    "/studia/sprawy-studenckie/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/"
    ]
   },
   {
@@ -3285,318 +835,90 @@
    ]
   },
   {
-   "url": "http://www.matematyka.wroc.pl/",
-   "kod": 403,
-   "status": "Rejected status code: 403 Forbidden",
+   "url": "https://www.ptm.org.pl/konkursy/wyklady-im-waclawa-sierpinskiego",
+   "kod": 503,
+   "status": "Rejected status code: 503 Service Unavailable",
    "strony": [
-    "/",
-    "/404.html",
-    "/aktualnosci/",
-    "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
-    "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
-    "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
-    "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
-    "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
     "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
-    "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
-    "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
-    "/aktualnosci/2026-06-16-seminarium-wydzialowe/",
-    "/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
-    "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
-    "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
-    "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
-    "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
-    "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
-    "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
-    "/aktualnosci/2026-10-17-rusza-tutornia/",
-    "/deklaracja-dostepnosci/",
-    "/en/",
-    "/en/aktualnosci/",
-    "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
-    "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
-    "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
-    "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
-    "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
-    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
-    "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
-    "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
-    "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/",
-    "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
-    "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
-    "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
-    "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
-    "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
-    "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
-    "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
-    "/en/aktualnosci/2026-10-17-rusza-tutornia/",
-    "/en/deklaracja-dostepnosci/",
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/en/instytut/kontakt/",
-    "/en/instytut/struktura/",
-    "/en/instytut/wladze/",
-    "/en/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/en/instytut/zaklady/analiza-funkcjonalna/",
-    "/en/instytut/zaklady/analiza-matematyczna/",
-    "/en/instytut/zaklady/dydaktyka/",
-    "/en/instytut/zaklady/geometria/",
-    "/en/instytut/zaklady/rownania-rozniczkowe/",
-    "/en/instytut/zaklady/statystyka/",
-    "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
-    "/en/kalendarz/",
-    "/en/nauka/granty/",
+    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/"
+   ]
+  },
+  {
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-paha",
+   "kod": 302,
+   "status": "Rejected status code: 302 Found",
+   "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
-    "/en/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
-    "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
-    "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
-    "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
-    "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
-    "/en/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
-    "/en/nauka/konferencje/2014-workshop-in-set-theory/",
-    "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
-    "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
-    "/en/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
-    "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
-    "/en/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
-    "/en/nauka/konferencje/2016-combinatorics-and-groups/",
-    "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
-    "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2016-stochastic-models-v/",
-    "/en/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
-    "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
-    "/en/nauka/konferencje/2017-model-theory-conference/",
-    "/en/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
-    "/en/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
-    "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
-    "/en/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
     "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2018-stochastic-models-vi/",
-    "/en/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
-    "/en/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
-    "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
-    "/en/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
-    "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
-    "/en/nauka/konferencje/2020-model-theory-conference/",
-    "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
-    "/en/nauka/konferencje/2020-random-models/",
-    "/en/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
-    "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
-    "/en/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
-    "/en/nauka/konferencje/2023-discrete-random-structures/",
-    "/en/nauka/konferencje/2023-model-theory-conference/",
-    "/en/nauka/konferencje/2023-model-theory-workshop/",
-    "/en/nauka/konferencje/2023-stochastic-models-vii/",
-    "/en/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
-    "/en/nauka/konferencje/2024-probability-and-analysis-2024/",
-    "/en/nauka/konferencje/2024-second-wroclaw-logic-conference/",
-    "/en/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
-    "/en/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
-    "/en/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
-    "/en/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
-    "/en/nauka/konferencje/2025-structures-in-banach-spaces/",
-    "/en/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
-    "/en/nauka/konferencje/2026-discrete-random-structures-ii/",
-    "/en/nauka/publikacje/",
-    "/en/obrony-doktorskie/",
-    "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/en/polityka-prywatnosci/",
-    "/en/pracownicy/",
-    "/en/seminaria/",
-    "/en/seminaria/analiza-harmoniczna/",
-    "/en/seminaria/dyskretna-analiza-harmoniczna/",
-    "/en/seminaria/prawdopodobienstwo/",
-    "/en/seminaria/rownania-rozniczkowe/",
-    "/en/seminaria/statystyka/",
-    "/en/studia/egzaminy-i-dyplom/",
-    "/en/studia/matematyka/",
-    "/en/studia/matematyka/analiza-danych/",
-    "/en/studia/matematyka/matematyka-aktuarialno-finansowa/",
-    "/en/studia/matematyka/matematyka-nauczycielska/",
-    "/en/studia/matematyka/matematyka-stosowana/",
-    "/en/studia/matematyka/matematyka-teoretyczna/",
-    "/en/studia/pierwszy-rok/",
-    "/en/studia/podyplomowe/",
-    "/en/studia/procedura-dyplomowania/",
-    "/en/studia/rok-akademicki/",
-    "/en/studia/siad/",
-    "/en/studia/skrypty/",
-    "/en/studia/sprawy-studenckie/",
-    "/en/studia/szkola-doktorska/",
-    "/en/studia/zajecia/",
-    "/en/szukaj/",
-    "/instytut/infrastruktura-informatyczna/",
-    "/instytut/kontakt/",
-    "/instytut/struktura/",
-    "/instytut/wladze/",
-    "/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/instytut/zaklady/analiza-funkcjonalna/",
-    "/instytut/zaklady/analiza-matematyczna/",
-    "/instytut/zaklady/dydaktyka/",
-    "/instytut/zaklady/geometria/",
-    "/instytut/zaklady/rownania-rozniczkowe/",
-    "/instytut/zaklady/statystyka/",
-    "/instytut/zaklady/teoria-mnogosci-i-topologia/",
-    "/instytut/zaklady/teoria-prawdopodobienstwa/",
-    "/kalendarz/",
-    "/nauka/granty/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
-    "/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
-    "/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
-    "/nauka/konferencje/2014-7th-young-set-theory-workshop/",
-    "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
-    "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
-    "/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
-    "/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
-    "/nauka/konferencje/2014-workshop-in-set-theory/",
-    "/nauka/konferencje/2015-conference-on-geometric-group-theory/",
-    "/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
-    "/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
-    "/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
-    "/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
-    "/nauka/konferencje/2016-combinatorics-and-groups/",
-    "/nauka/konferencje/2016-mathematics-of-pattern-formation/",
-    "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
-    "/nauka/konferencje/2016-stochastic-models-v/",
-    "/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
-    "/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
-    "/nauka/konferencje/2017-model-theory-conference/",
-    "/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
-    "/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
-    "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
-    "/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
-    "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
-    "/nauka/konferencje/2018-stochastic-models-vi/",
-    "/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
-    "/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
-    "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
-    "/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
-    "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
-    "/nauka/konferencje/2020-model-theory-conference/",
-    "/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
-    "/nauka/konferencje/2020-random-models/",
-    "/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
-    "/nauka/konferencje/2022-probability-and-analysis-2022/",
-    "/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
-    "/nauka/konferencje/2023-discrete-random-structures/",
-    "/nauka/konferencje/2023-model-theory-conference/",
-    "/nauka/konferencje/2023-model-theory-workshop/",
-    "/nauka/konferencje/2023-stochastic-models-vii/",
-    "/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
-    "/nauka/konferencje/2024-probability-and-analysis-2024/",
-    "/nauka/konferencje/2024-second-wroclaw-logic-conference/",
-    "/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
-    "/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
-    "/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
-    "/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
-    "/nauka/konferencje/2025-structures-in-banach-spaces/",
-    "/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
-    "/nauka/konferencje/2026-discrete-random-structures-ii/",
-    "/nauka/publikacje/",
-    "/obrony-doktorskie/",
-    "/obrony-doktorskie/2026-06-18-maciej-korpalski/",
-    "/obrony-doktorskie/2026-06-19-aleksander-antasik/",
-    "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
-    "/obrony-doktorskie/2026-10-20-maciej-tadej/",
-    "/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
-    "/polityka-prywatnosci/",
-    "/pracownicy/",
-    "/seminaria/",
-    "/seminaria/analiza-harmoniczna/",
-    "/seminaria/dyskretna-analiza-harmoniczna/",
-    "/seminaria/prawdopodobienstwo/",
-    "/seminaria/rownania-rozniczkowe/",
-    "/seminaria/statystyka/",
-    "/studia/egzaminy-i-dyplom/",
-    "/studia/matematyka/",
-    "/studia/matematyka/analiza-danych/",
-    "/studia/matematyka/matematyka-aktuarialno-finansowa/",
-    "/studia/matematyka/matematyka-nauczycielska/",
-    "/studia/matematyka/matematyka-stosowana/",
-    "/studia/matematyka/matematyka-teoretyczna/",
-    "/studia/pierwszy-rok/",
-    "/studia/podyplomowe/",
-    "/studia/procedura-dyplomowania/",
-    "/studia/rok-akademicki/",
-    "/studia/siad/",
-    "/studia/skrypty/",
-    "/studia/sprawy-studenckie/",
-    "/studia/szkola-doktorska/",
-    "/studia/zajecia/",
-    "/szukaj/"
+    "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/"
    ]
   },
   {
-   "url": "https://www.math.uni.wroc.pl/regulamin-lokalnej-sieci-komputerowej-instytutu-matematycznego",
-   "kod": null,
-   "status": "Timeout",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/en/instytut/infrastruktura-informatyczna/",
-    "/instytut/infrastruktura-informatyczna/"
+    "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/"
    ]
   },
   {
-   "url": "http://www.iam.fmph.uniba.sk/institute/quittner/bedlewo20/",
-   "kod": null,
-   "status": "Timeout",
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-17-rusza-tutornia",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-10-17-rusza-tutornia/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-06-19-seminarium-ze-statystyki/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/"
+   ]
+  },
+  {
+   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/"
+   ]
+  },
+  {
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/17-modeltheory",
+   "kod": 302,
+   "status": "Rejected status code: 302 Found",
    "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+    "/en/nauka/konferencje/2017-model-theory-conference/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/2026-27z-oznaczenia.pdf",
-   "kod": null,
-   "status": "Timeout",
-   "strony": [
-    "/en/studia/rok-akademicki/",
-    "/studia/rok-akademicki/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-lic.pdf",
-   "kod": null,
-   "status": "Timeout",
-   "strony": [
-    "/en/studia/matematyka/",
-    "/studia/matematyka/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/users/hecht",
-   "kod": null,
-   "status": "Timeout",
-   "strony": [
-    "/en/instytut/zaklady/rownania-rozniczkowe/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/rownania-rozniczkowe/",
-    "/pracownicy/"
+    "/nauka/konferencje/2017-model-theory-conference/"
    ]
   },
   {
@@ -3609,17 +931,28 @@
     "/nauka/konferencje/",
     "/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/"
    ]
+  },
+  {
+   "url": "http://www.iam.fmph.uniba.sk/institute/quittner/bedlewo20/",
+   "kod": null,
+   "status": "Timeout",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/"
+   ]
   }
  ],
  "sprawdzone": 443,
  "lychee": {
   "total": 443,
-  "successful": 192,
-  "errors": 245,
+  "successful": 369,
+  "errors": 72,
   "excludes": 0,
-  "timeouts": 6,
+  "timeouts": 2,
   "unknown": 0,
-  "redirects": 90
+  "redirects": 92
  },
  "kod_lychee": "2"
 }

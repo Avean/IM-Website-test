@@ -1,63 +1,83 @@
 {
- "razem": {
-  "wystapienia": 2893,
-  "adresy": 287,
-  "strony": 259
- },
- "kategorie": {
-  "strony": {
-   "wystapienia": 1769,
-   "adresy": 67,
+ "wszystko": {
+  "razem": {
+   "wystapienia": 2893,
+   "adresy": 287,
    "strony": 259
   },
-  "strony domowe (~)": {
-   "wystapienia": 898,
-   "adresy": 109,
-   "strony": 259
-  },
-  "pliki": {
-   "wystapienia": 226,
-   "adresy": 111,
-   "strony": 36
+  "kategorie": {
+   "pliki": {
+    "wystapienia": 226,
+    "adresy": 111,
+    "strony": 36
+   },
+   "strony": {
+    "wystapienia": 1769,
+    "adresy": 67,
+    "strony": 259
+   },
+   "strony domowe (~)": {
+    "wystapienia": 898,
+    "adresy": 109,
+    "strony": 259
+   }
   }
  },
+ "bez_szablonu": {
+  "razem": {
+   "wystapienia": 782,
+   "adresy": 283,
+   "strony": 102
+  },
+  "kategorie": {
+   "pliki": {
+    "wystapienia": 226,
+    "adresy": 111,
+    "strony": 36
+   },
+   "strony": {
+    "wystapienia": 176,
+    "adresy": 64,
+    "strony": 52
+   },
+   "strony domowe (~)": {
+    "wystapienia": 380,
+    "adresy": 108,
+    "strony": 56
+   }
+  }
+ },
+ "bez_szablonu_pl": {
+  "razem": {
+   "wystapienia": 391,
+   "adresy": 283,
+   "strony": 51
+  },
+  "kategorie": {
+   "pliki": {
+    "wystapienia": 113,
+    "adresy": 111,
+    "strony": 18
+   },
+   "strony": {
+    "wystapienia": 88,
+    "adresy": 64,
+    "strony": 26
+   },
+   "strony domowe (~)": {
+    "wystapienia": 190,
+    "adresy": 108,
+    "strony": 28
+   }
+  }
+ },
+ "w_szablonie": [
+  "http://www.math.uni.wroc.pl/~jwr/trapez/",
+  "https://www.math.uni.wroc.pl/",
+  "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php",
+  "https://www.math.uni.wroc.pl/sukcesy"
+ ],
  "top15": [
-  {
-   "url": "http://www.math.uni.wroc.pl/~jwr/trapez/",
-   "strony": 259,
-   "przyklady": [
-    "/",
-    "/404.html",
-    "/aktualnosci/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/",
-   "strony": 259,
-   "przyklady": [
-    "/",
-    "/404.html",
-    "/aktualnosci/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php",
-   "strony": 259,
-   "przyklady": [
-    "/",
-    "/404.html",
-    "/aktualnosci/"
-   ]
-  },
-  {
-   "url": "https://www.math.uni.wroc.pl/sukcesy",
-   "strony": 259,
-   "przyklady": [
-    "/",
-    "/404.html",
-    "/aktualnosci/"
-   ]
-  },
   {
    "url": "http://www.math.uni.wroc.pl/~pkowa/ln20.html",
    "strony": 6,
@@ -156,114 +176,68 @@
     "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
     "/nauka/konferencje/"
    ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/sesja_Urbanik",
+   "strony": 4,
+   "przyklady": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+    "/nauka/konferencje/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/users/staniak",
+   "strony": 4,
+   "przyklady": [
+    "/en/instytut/zaklady/statystyka/",
+    "/en/pracownicy/",
+    "/instytut/zaklady/statystyka/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~aracz/",
+   "strony": 4,
+   "przyklady": [
+    "/en/instytut/zaklady/rownania-rozniczkowe/",
+    "/en/pracownicy/",
+    "/instytut/zaklady/rownania-rozniczkowe/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~biler/",
+   "strony": 4,
+   "przyklady": [
+    "/en/instytut/zaklady/rownania-rozniczkowe/",
+    "/en/pracownicy/",
+    "/instytut/zaklady/rownania-rozniczkowe/"
+   ]
   }
  ],
- "w_szablonie": [
-  "https://www.math.uni.wroc.pl/sukcesy",
-  "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php",
-  "http://www.math.uni.wroc.pl/~jwr/trapez/",
-  "https://www.math.uni.wroc.pl/"
- ],
- "sekcje": [
-  [
-   "/en/nauka/",
-   576
-  ],
-  [
-   "/nauka/",
-   576
-  ],
-  [
-   "/en/studia/",
-   237
-  ],
-  [
-   "/studia/",
-   237
-  ],
-  [
-   "/en/instytut/",
-   206
-  ],
+ "sekcje_pl": [
   [
    "/instytut/",
-   206
-  ],
-  [
-   "/aktualnosci/",
-   145
-  ],
-  [
-   "/en/aktualnosci/",
-   145
-  ],
-  [
-   "/en/pracownicy/",
-   103
+   99
   ],
   [
    "/pracownicy/",
-   103
+   95
   ],
   [
-   "/en/obrony-doktorskie/",
-   84
+   "/studia/",
+   95
+  ],
+  [
+   "/nauka/",
+   64
   ],
   [
    "/obrony-doktorskie/",
-   84
-  ],
-  [
-   "/en/seminaria/",
-   50
+   36
   ],
   [
    "/seminaria/",
-   50
-  ],
-  [
-   "/404.html/",
-   9
-  ],
-  [
-   "/en/",
-   9
-  ],
-  [
-   "/",
-   9
-  ],
-  [
-   "/deklaracja-dostepnosci/",
-   8
-  ],
-  [
-   "/en/deklaracja-dostepnosci/",
-   8
-  ],
-  [
-   "/en/kalendarz/",
-   8
-  ],
-  [
-   "/en/polityka-prywatnosci/",
-   8
-  ],
-  [
-   "/en/szukaj/",
-   8
-  ],
-  [
-   "/kalendarz/",
-   8
-  ],
-  [
-   "/polityka-prywatnosci/",
-   8
-  ],
-  [
-   "/szukaj/",
-   8
+   2
   ]
  ],
  "subdomeny": [

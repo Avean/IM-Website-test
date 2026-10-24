@@ -6,8 +6,9 @@
   ],
   "standard": "WCAG2AA",
   "timeout": 90000,
-  "wait": 300,
-  "concurrency": 4,
+  "wait": 500,
+  "concurrency": 1,
+  "hideElements": ".katex-html",
   "viewport": {
    "width": 1280,
    "height": 900

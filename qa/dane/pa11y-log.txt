@@ -1,0 +1,789 @@
+Running Pa11y on 47 URLs:
+ > http://localhost:8080/ - 3 errors
+ > http://localhost:8080/aktualnosci/ - 1 errors
+ > http://localhost:8080/deklaracja-dostepnosci/ - 1 errors
+ > http://localhost:8080/kalendarz/ - 1 errors
+ > http://localhost:8080/obrony-doktorskie/ - 1 errors
+ > http://localhost:8080/polityka-prywatnosci/ - 1 errors
+ > http://localhost:8080/pracownicy/ - 1 errors
+ > http://localhost:8080/seminaria/ - 1 errors
+ > http://localhost:8080/szukaj/ - 2 errors
+ > http://localhost:8080/aktualnosci/2026-10-17-rusza-tutornia/ - 1 errors
+ > http://localhost:8080/instytut/wladze/ - 1 errors
+ > http://localhost:8080/instytut/zaklady/teoria-prawdopodobienstwa/ - 1 errors
+ > http://localhost:8080/nauka/granty/ - 1 errors
+ > http://localhost:8080/nauka/konferencje/ - 1 errors
+ > http://localhost:8080/nauka/publikacje/ - 1 errors
+ > http://localhost:8080/nauka/konferencje/2026-discrete-random-structures-ii/ - 1 errors
+ > http://localhost:8080/obrony-doktorskie/2026-10-27-malwina-mrowinska/ - 1 errors
+ > http://localhost:8080/seminaria/statystyka/ - 1 errors
+ > http://localhost:8080/studia/zajecia/ - 1 errors
+ > http://localhost:8080/studia/matematyka/ - 4 errors
+ > http://localhost:8080/studia/matematyka/matematyka-teoretyczna/ - 1 errors
+ > http://localhost:8080/instytut/infrastruktura-informatyczna/ - 1 errors
+ > http://localhost:8080/instytut/kontakt/ - 1 errors
+ > http://localhost:8080/studia/egzaminy-i-dyplom/ - 1 errors
+ > http://localhost:8080/studia/pierwszy-rok/ - 1 errors
+ > http://localhost:8080/studia/podyplomowe/ - 1 errors
+ > http://localhost:8080/studia/procedura-dyplomowania/ - 1 errors
+ > http://localhost:8080/studia/rok-akademicki/ - 1 errors
+ > http://localhost:8080/studia/siad/ - 1 errors
+ > http://localhost:8080/studia/skrypty/ - 1 errors
+ > http://localhost:8080/studia/sprawy-studenckie/ - 1 errors
+ > http://localhost:8080/studia/szkola-doktorska/ - 1 errors
+ > http://localhost:8080/en/ - 3 errors
+ > http://localhost:8080/en/aktualnosci/ - 1 errors
+ > http://localhost:8080/en/studia/matematyka/ - 4 errors
+ > http://localhost:8080/en/instytut/kontakt/ - 1 errors
+ > http://localhost:8080/en/pracownicy/ - 1 errors
+ > http://localhost:8080/404.html - 1 errors
+ > http://localhost:8080/?qa=ciemny - 3 errors
+ > http://localhost:8080/studia/matematyka/?qa=ciemny - 4 errors
+ > http://localhost:8080/aktualnosci/?qa=ciemny - 1 errors
+ > http://localhost:8080/pracownicy/?qa=ciemny - 1 errors
+ > http://localhost:8080/seminaria/?qa=ciemny - 1 errors
+ > http://localhost:8080/instytut/zaklady/teoria-prawdopodobienstwa/?qa=ciemny - 1 errors
+ > http://localhost:8080/?qa=telefon - 2 errors
+ > http://localhost:8080/studia/matematyka/?qa=telefon - 4 errors
+ > http://localhost:8080/pracownicy/?qa=telefon - 1 errors
+
+Errors in http://localhost:8080/:
+
+ • Elements must meet minimum color contrast ratio thresholds
+   (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)
+
+   (#tresc > section:nth-child(1) > figure > figcaption)
+
+   <figcaption>Fot. fotopolska.eu</figcaption>
+
+ • Elements must meet minimum color contrast ratio thresholds
+   (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)
+
+   (#h1-glowna)
+
+   <h1 id="h1-glowna">Instytut Matematyczny</h1>
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/aktualnosci/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/deklaracja-dostepnosci/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/kalendarz/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/obrony-doktorskie/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/polityka-prywatnosci/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/pracownicy/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/seminaria/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/szukaj/:
+
+ • Form elements should have a visible label
+   (https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=axeAPI)
+
+   (#szukajka > div > form > input)
+
+   <input class="pagefind-ui__search-input svelte-e9gkc3" type="text"
+   placeholder="Szukaj na stronie" title="Szukaj na stronie"
+   autocapitalize="none" enterkeyhint="search" autofocus="">
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/aktualnosci/2026-10-17-rusza-tutornia/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/instytut/wladze/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/instytut/zaklady/teoria-prawdopodobienstwa/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/nauka/granty/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/nauka/konferencje/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/nauka/publikacje/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/nauka/konferencje/2026-discrete-random-structures-ii/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/obrony-doktorskie/2026-10-27-malwina-mrowinska/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/seminaria/statystyka/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/zajecia/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/matematyka/:
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-0)
+
+   <button type="button" role="tab" class="chip" id="tab-0"
+   aria-controls="prog-0" aria-selected="true" aria-pressed="true"
+   data-od="2026" data-do="2100" tabindex="0">Nowy program (od 2026/27)</button>
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-1)
+
+   <button type="button" role="tab" class="chip" id="tab-1"
+   aria-controls="prog-1" aria-selected="false" aria-pressed="false"
+   data-od="2022" data-do="2025" tabindex="-1">Stary program
+   (2022–2025/26)</button>
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-2)
+
+   <button type="button" role="tab" class="chip" id="tab-2"
+   aria-controls="prog-2" aria-selected="false" aria-pressed="false"
+   data-od="1990" data-do="2021" tabindex="-1">Programy archiwalne (przed
+   2022...</button>
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/matematyka/matematyka-teoretyczna/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/instytut/infrastruktura-informatyczna/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/instytut/kontakt/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/egzaminy-i-dyplom/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/pierwszy-rok/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/podyplomowe/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/procedura-dyplomowania/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/rok-akademicki/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/siad/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/skrypty/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/sprawy-studenckie/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/szkola-doktorska/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/en/:
+
+ • Elements must meet minimum color contrast ratio thresholds
+   (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)
+
+   (#tresc > section:nth-child(1) > figure > figcaption)
+
+   <figcaption>Fot. fotopolska.eu</figcaption>
+
+ • Elements must meet minimum color contrast ratio thresholds
+   (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)
+
+   (#h1-glowna)
+
+   <h1 id="h1-glowna">Mathematical Institute</h1>
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/en/szukaj" method="get">
+   <svg class="ico " style="width...</form>
+
+Errors in http://localhost:8080/en/aktualnosci/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/en/szukaj" method="get">
+   <svg class="ico " style="width...</form>
+
+Errors in http://localhost:8080/en/studia/matematyka/:
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-0)
+
+   <button type="button" role="tab" class="chip" id="tab-0"
+   aria-controls="prog-0" aria-selected="true" aria-pressed="true"
+   data-od="2026" data-do="2100" tabindex="0">New curriculum (from
+   2026/27)</button>
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-1)
+
+   <button type="button" role="tab" class="chip" id="tab-1"
+   aria-controls="prog-1" aria-selected="false" aria-pressed="false"
+   data-od="2022" data-do="2025" tabindex="-1">Previous curriculum
+   (2022–2025/...</button>
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-2)
+
+   <button type="button" role="tab" class="chip" id="tab-2"
+   aria-controls="prog-2" aria-selected="false" aria-pressed="false"
+   data-od="1990" data-do="2021" tabindex="-1">Archived curricula (before
+   2022...</button>
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/en/szukaj" method="get">
+   <svg class="ico " style="width...</form>
+
+Errors in http://localhost:8080/en/instytut/kontakt/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/en/szukaj" method="get">
+   <svg class="ico " style="width...</form>
+
+Errors in http://localhost:8080/en/pracownicy/:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/en/szukaj" method="get">
+   <svg class="ico " style="width...</form>
+
+Errors in http://localhost:8080/404.html:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/?qa=ciemny:
+
+ • Elements must meet minimum color contrast ratio thresholds
+   (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)
+
+   (#tresc > section:nth-child(1) > figure > figcaption)
+
+   <figcaption>Fot. fotopolska.eu</figcaption>
+
+ • Elements must meet minimum color contrast ratio thresholds
+   (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)
+
+   (#h1-glowna)
+
+   <h1 id="h1-glowna">Instytut Matematyczny</h1>
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/matematyka/?qa=ciemny:
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-0)
+
+   <button type="button" role="tab" class="chip" id="tab-0"
+   aria-controls="prog-0" aria-selected="true" aria-pressed="true"
+   data-od="2026" data-do="2100" tabindex="0">Nowy program (od 2026/27)</button>
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-1)
+
+   <button type="button" role="tab" class="chip" id="tab-1"
+   aria-controls="prog-1" aria-selected="false" aria-pressed="false"
+   data-od="2022" data-do="2025" tabindex="-1">Stary program
+   (2022–2025/26)</button>
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-2)
+
+   <button type="button" role="tab" class="chip" id="tab-2"
+   aria-controls="prog-2" aria-selected="false" aria-pressed="false"
+   data-od="1990" data-do="2021" tabindex="-1">Programy archiwalne (przed
+   2022...</button>
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/aktualnosci/?qa=ciemny:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/pracownicy/?qa=ciemny:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/seminaria/?qa=ciemny:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/instytut/zaklady/teoria-prawdopodobienstwa/?qa=ciemny:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/?qa=telefon:
+
+ • Elements must meet minimum color contrast ratio thresholds
+   (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)
+
+   (#tresc > section:nth-child(1) > figure > figcaption)
+
+   <figcaption>Fot. fotopolska.eu</figcaption>
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/studia/matematyka/?qa=telefon:
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-0)
+
+   <button type="button" role="tab" class="chip" id="tab-0"
+   aria-controls="prog-0" aria-selected="true" aria-pressed="true"
+   data-od="2026" data-do="2100" tabindex="0">Nowy program (od 2026/27)</button>
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-1)
+
+   <button type="button" role="tab" class="chip" id="tab-1"
+   aria-controls="prog-1" aria-selected="false" aria-pressed="false"
+   data-od="2022" data-do="2025" tabindex="-1">Stary program
+   (2022–2025/26)</button>
+
+ • Elements must only use supported ARIA attributes
+   (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)
+
+   (#tab-2)
+
+   <button type="button" role="tab" class="chip" id="tab-2"
+   aria-controls="prog-2" aria-selected="false" aria-pressed="false"
+   data-od="1990" data-do="2021" tabindex="-1">Programy archiwalne (przed
+   2022...</button>
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+Errors in http://localhost:8080/pracownicy/?qa=telefon:
+
+ • This form does not contain a submit button, which creates issues for those
+   who cannot submit the form using the keyboard. Submit buttons are INPUT
+   elements with type attribute "submit" or "image", or BUTTON elements with
+   type "submit" or omitted/invalid.
+
+   (html > body > header > div > div > form)
+
+   <form class="hdr-search" role="search" action="/szukaj" method="get"> <svg
+   class="ico " style="width...</form>
+
+✘ 0/47 URLs passed

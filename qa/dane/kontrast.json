@@ -1,0 +1,6 @@
+{
+ "http://localhost:8080/": [],
+ "http://localhost:8080/en/": [],
+ "http://localhost:8080/?qa=ciemny": [],
+ "http://localhost:8080/?qa=telefon": []
+}
