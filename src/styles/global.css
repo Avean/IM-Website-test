@@ -130,7 +130,7 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
 .nav { display: flex; align-items: stretch; gap: 2px; align-self: stretch; }
 .nav > a { align-self: center; }
 /* pozycja działu: napis = link do strony działu, strzałka = rozwinięcie; lista także po najechaniu myszką */
-.nav-item { position: static; display: flex; align-items: center; }
+.nav-item { position: relative; display: flex; align-items: center; }
 .nav > a, .nav-pill { display: inline-flex; align-items: center; gap: 5px; min-height: 44px; padding: 0 12px; border-radius: 999px; font-size: 15px; font-weight: 600; text-decoration: none; color: var(--ink); }
 .nav-pill { gap: 0; }
 .nav-top, .nav-arrow { display: inline-flex; align-items: center; min-height: 44px; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; text-decoration: none; cursor: pointer; }
@@ -142,7 +142,8 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
 .nav-item:not(.bez-hover):hover > .dropdown, .nav-item.open > .dropdown, .nav-item > .dropdown:focus-within { visibility: visible; opacity: 1; pointer-events: auto; transition: opacity .12s, visibility 0s; }
 .nav-item:not(.bez-hover):hover .nav-arrow .chev, .nav-item.open .nav-arrow .chev { transform: rotate(180deg); }
 .hdr-row { position: relative; }
-.dropdown { position: absolute; top: calc(100% - 4px); left: 50%; transform: translateX(-50%); max-width: calc(100% - 2 * var(--gutter)); display: grid; grid-auto-flow: column; gap: 28px; padding: 22px 24px; border-radius: var(--radius-l); background: var(--bg); border: 1px solid var(--line); box-shadow: var(--shadow); }
+/* lista rozwija się pod swoją pozycją menu (wyśrodkowana pod nią); --dx przesuwa ją, gdy wystawałaby poza ekran (skrypt w Naglowek.astro) */
+.dropdown { position: absolute; top: calc(100% - 4px); left: 50%; transform: translateX(calc(-50% + var(--dx, 0px))); width: max-content; max-width: calc(100vw - 2 * var(--gutter)); display: grid; grid-auto-flow: column; gap: 28px; padding: 22px 24px; border-radius: var(--radius-l); background: var(--bg); border: 1px solid var(--line); box-shadow: var(--shadow); }
 .dropdown-group { display: flex; flex-direction: column; min-width: 180px; max-width: 250px; }
 .dropdown-group h3 { margin: 0 0 6px; font-size: 12px; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); }
 .dropdown-group a { display: flex; align-items: center; gap: 6px; padding: 7px 0; font-size: 15px; font-weight: 600; text-decoration: none; color: var(--ink); line-height: 1.3; }
