@@ -26,8 +26,8 @@ const logo = (ustawienia as any).logo as string | undefined;
     <a class="brand" href={u(wJezyku('/', lang))}>
       {logo
         ? <img src={u(logo)} alt="" width="44" height="44" />
-        : <span class="brand-godlo" aria-hidden="true" style={`--godlo:url(${u('/pliki/uwr-godlo.png')})`}></span>}
-      <span class="brand-uwr">{lang === 'en' ? <><span>University</span> <span>of Wrocław</span></> : <><span>Uniwersytet</span> <span>Wrocławski</span></>}</span>
+        : <span class="brand-logo" aria-hidden="true" style={`--logo-pelne:url(${u('/pliki/uwr-logo.png')});--logo-godlo:url(${u('/pliki/uwr-godlo.png')})`}></span>}
+      <span class="sr-only">{t(lang, 'uwr')}: </span>
       <span class="brand-txt">
         <span class="brand-name">{t(lang, 'instytut')}</span>
         <span class="brand-sub">{t(lang, 'wydzial')}</span>
@@ -134,7 +134,9 @@ const logo = (ustawienia as any).logo as string | undefined;
   const stopka = document.querySelector<HTMLElement>('.ftr');
   const odswiezNaglowek = () => {
     if (!hdr) return;
-    const przewiniety = window.scrollY > 40;
+    // na stronie ze zdjęciem nagłówek zostaje przezroczysty, dopóki nie zbliżymy się do końca zdjęcia
+    const foto = hdr.classList.contains('hdr-foto') ? document.querySelector<HTMLElement>('.hero-fig') : null;
+    const przewiniety = foto ? foto.getBoundingClientRect().bottom <= hdr.offsetHeight + 72 : window.scrollY > 40;
     hdr.classList.toggle('przewiniety', przewiniety);
     if (stopka) {
       const naDole = przewiniety && (stopka.getBoundingClientRect().top < window.innerHeight - 80

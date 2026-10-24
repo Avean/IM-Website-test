@@ -115,32 +115,27 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
 .js .hdr.hdr-stopka:not(.menu-otwarte) .burger { background: rgb(255 255 255 / .14); }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-name, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav > a, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav-pill, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .icon-btn:not(.burger), .js .hdr.hdr-stopka:not(.menu-otwarte) .brand-name, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav > a, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav-pill, .js .hdr.hdr-stopka:not(.menu-otwarte) .icon-btn:not(.burger) { color: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-sub, .js .hdr.hdr-stopka:not(.menu-otwarte) .brand-sub { color: rgb(255 255 255 / .82); }
-.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-uwr, .js .hdr.hdr-stopka:not(.menu-otwarte) .brand-uwr { color: #fff; border-right-color: rgb(255 255 255 / .35); }
-.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-godlo, .js .hdr.hdr-stopka:not(.menu-otwarte) .brand-godlo { background: #fff; }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-logo, .js .hdr.hdr-stopka:not(.menu-otwarte) .brand-logo { background: #fff; }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-txt, .js .hdr.hdr-stopka:not(.menu-otwarte) .brand-txt { border-left-color: rgb(255 255 255 / .35); }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav > a:hover, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav-item:hover > .nav-pill, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav-item.open > .nav-pill, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .icon-btn:not(.burger):hover, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav > a:hover, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav-item:hover > .nav-pill, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav-item.open > .nav-pill, .js .hdr.hdr-stopka:not(.menu-otwarte) .icon-btn:not(.burger):hover { background: rgb(255 255 255 / .16); color: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav > a[aria-current='page'], .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav .is-current > .nav-pill, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav > a[aria-current='page'], .js .hdr.hdr-stopka:not(.menu-otwarte) .nav .is-current > .nav-pill { background: rgb(255 255 255 / .22); color: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search, .js .hdr.hdr-stopka:not(.menu-otwarte) .hdr-search { background: rgb(0 0 0 / .62); color: rgb(255 255 255 / .9); }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search input, .js .hdr.hdr-stopka:not(.menu-otwarte) .hdr-search input { color: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search input::placeholder, .js .hdr.hdr-stopka:not(.menu-otwarte) .hdr-search input::placeholder { color: rgb(255 255 255 / .8); }
-.hdr .brand-name, .hdr .brand-sub, .hdr .brand-uwr, .hdr .nav > a, .hdr .nav-pill, .hdr .icon-btn, .hdr-search { transition: color .25s, background-color .25s; }
+.hdr .brand-name, .hdr .brand-sub, .hdr .nav > a, .hdr .nav-pill, .hdr .icon-btn, .hdr-search { transition: color .25s, background-color .25s; }
 .js .hdr-foto ~ main .hero-fig::after { content: ''; position: absolute; inset: 0 0 auto 0; height: max(45%, 190px); background: linear-gradient(rgb(6 11 22 / .74), rgb(6 11 22 / .38) 55%, rgb(6 11 22 / 0)); pointer-events: none; }
 .js .hdr-foto ~ main .hero-fig figcaption { top: calc(var(--hdr-h) + 12px); z-index: 1; }
 .hdr-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 70px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
 .brand img { width: auto; height: 44px; }
-/* godło UWr (maska z public/pliki/uwr-godlo.png) w kolorze UWr; na zdjęciu i przy stopce — białe */
-.brand-godlo { flex: none; width: 46px; height: 46px; background: var(--uwr); -webkit-mask: var(--godlo) center / contain no-repeat; mask: var(--godlo) center / contain no-repeat; transition: background-color .25s; }
-.brand-uwr { display: flex; flex-direction: column; justify-content: center; padding-right: 12px; margin-left: -2px; border-right: 1px solid var(--line); font-size: 15.5px; font-weight: 500; line-height: 1.1; letter-spacing: .005em; color: var(--uwr); white-space: nowrap; transition: color .25s, border-color .25s; }
-.brand-uwr > span { display: block; }
-/* napis „Uniwersytet Wrocławski” tylko tam, gdzie mieści się obok menu (sprawdzone pomiarem szerokości) */
-@media (min-width: 1081px) and (max-width: 1319px) { .brand-uwr { display: none; } }
-.brand-name, .brand-sub { white-space: nowrap; }
-@media (min-width: 1081px) and (max-width: 1199px) {
-  .nav > a, .nav-pill { padding: 0 7px; font-size: 14.5px; }
-  .brand-name { font-size: 17px; }
-  .brand-sub { font-size: 12px; }
+/* pełny logotyp UWr (orzeł + napis) jako maska w kolorze UWr; na zdjęciu i przy stopce — biały; na telefonie samo godło */
+.brand-logo { display: block; flex: none; height: 40px; aspect-ratio: 500 / 160; background: var(--uwr); -webkit-mask: var(--logo-pelne) left center / contain no-repeat; mask: var(--logo-pelne) left center / contain no-repeat; transition: background-color .25s; }
+.brand-logo + .sr-only + .brand-txt { padding-left: 12px; border-left: 1px solid var(--line); transition: border-color .25s; }
+@media (max-width: 640px) {
+  .brand-logo { aspect-ratio: 1; -webkit-mask-image: var(--logo-godlo); mask-image: var(--logo-godlo); }
+  .brand-logo + .sr-only + .brand-txt { padding-left: 0; border-left: 0; }
 }
-@media (max-width: 640px) { .brand-uwr { display: none; } }
+.brand-name, .brand-sub { white-space: nowrap; }
 .brand-txt { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
 .brand-name { font-size: 18px; font-weight: 800; letter-spacing: -0.01em; color: var(--ink); }
 .brand-sub { font-size: 13px; font-weight: 500; color: var(--muted); }
@@ -184,14 +179,14 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
 .mnav .mgroup a { display: flex; align-items: center; gap: 6px; min-height: 40px; font-weight: 600; text-decoration: none; color: var(--ink); }
 .chev { transition: transform .15s; }
 details[open] > summary .chev { transform: rotate(180deg); }
-@media (max-width: 1080px) {
+@media (max-width: 1180px) {
   .nav { display: none; }
   .burger { display: inline-flex; }
 }
 @media (max-width: 560px) {
   .hide-narrow { display: none !important; }
   .brand img { height: 38px; }
-  .brand-godlo { width: 40px; height: 40px; }
+  .brand-logo { height: 38px; }
   .brand { gap: 10px; }
   .brand-sub { font-size: 12px; }
   .brand-name { font-size: 16px; }
@@ -204,6 +199,7 @@ details[open] > summary .chev { transform: rotate(180deg); }
 }
 
 /* ---------- baner (strona główna) ---------- */
+.hero-logo { display: block; height: clamp(44px, 5vw, 56px); aspect-ratio: 500 / 160; margin: 0 0 14px; background: var(--uwr); -webkit-mask: var(--logo-pelne) left center / contain no-repeat; mask: var(--logo-pelne) left center / contain no-repeat; }
 .hero-fig { position: relative; margin: 0; height: clamp(260px, 34vw, 480px); background: var(--photo); overflow: hidden; }
 .hero-fig img { display: block; width: 100%; height: 100%; object-fit: cover; }
 .hero-fig figcaption { position: absolute; top: 16px; right: var(--gutter); padding: 6px 10px; border-radius: 8px; background: rgba(10, 16, 32, .66); color: #fff; font-size: 12px; font-weight: 600; }
@@ -456,7 +452,7 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .hdr-search input { width: 92px; border: 0; background: transparent; font: inherit; font-size: 15px; color: var(--ink); outline: none; }
 .hdr-search:focus-within { box-shadow: inset 0 0 0 2px var(--accent); }
 .search-narrow { display: none; }
-@media (max-width: 1240px) {
+@media (max-width: 1279px) {
   .hdr-search { display: none; }
   .search-narrow { display: inline-flex; }
 }
@@ -467,7 +463,7 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .mnav > a { justify-content: space-between; }
 .mnav a[aria-current='page'] { color: var(--primary); }
 :root[data-theme='dark'] .mnav a[aria-current='page'] { color: var(--accent); }
-@media (min-width: 1081px) { .mnav, .mnav.open { display: none; } }
+@media (min-width: 1181px) { .mnav, .mnav.open { display: none; } }
 [hidden] { display: none !important; }
 .article-head { display: flex; flex-direction: column; gap: 12px; margin-bottom: 24px; }
 .article-head h1 { margin: 0; font-size: clamp(30px, 4.6vw, 46px); font-weight: 800; letter-spacing: -0.025em; line-height: 1.08; }
