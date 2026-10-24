@@ -862,7 +862,7 @@ content:
   # ---------------------------------------------------------------- STRONY
   - name: kolory-dni
     label: Kalendarz zajęć (kolory dni)
-    description: "Kolory liczą się same: wpisz okres zajęć, dni wolne (dni rektorskie, przerwy) i zamiany dni z zarządzenia o organizacji roku. Święta ustawowe są uwzględniane automatycznie. Podgląd: /studia/rok-akademicki (każdy dzień tygodnia powinien wypaść 15 razy)."
+    description: "Kolory liczą się same: wpisz okres zajęć, dni wolne (dni rektorskie, przerwy) i zamiany dni z zarządzenia o organizacji roku. Święta ustawowe są uwzględniane automatycznie. Podgląd: /studia/rok-akademicki (każdy dzień tygodnia powinien wypaść 15 razy). Terminy sesji i przerw do tabeli „Rok w skrócie” — w polu Terminy przy semestrze."
     type: file
     path: src/data/kolory-dni.json
     format: json
@@ -887,6 +887,24 @@ content:
           - { name: nazwa_en, label: "EN: nazwa", type: string }
           - { name: poczatek, label: Pierwszy dzień zajęć, type: date, required: true, options: { format: yyyy-MM-dd } }
           - { name: koniec, label: Ostatni dzień zajęć, type: date, required: true, options: { format: yyyy-MM-dd } }
+          - name: terminy
+            label: "Terminy do tabeli „Rok w skrócie” (zajęcia biorą się z pól powyżej)"
+            type: object
+            fields:
+              - { name: semestr_od, label: Semestr od, type: date, options: { format: yyyy-MM-dd } }
+              - { name: semestr_do, label: Semestr do, type: date, options: { format: yyyy-MM-dd } }
+              - { name: inauguracja, label: "Uroczysta inauguracja roku (zwykle tylko zimą)", type: date, options: { format: yyyy-MM-dd } }
+              - { name: sesja_od, label: Sesja egzaminacyjna od, type: date, options: { format: yyyy-MM-dd } }
+              - { name: sesja_do, label: Sesja egzaminacyjna do, type: date, options: { format: yyyy-MM-dd } }
+              - { name: poprawkowa_od, label: Sesja poprawkowa od, type: date, options: { format: yyyy-MM-dd } }
+              - { name: poprawkowa_do, label: Sesja poprawkowa do, type: date, options: { format: yyyy-MM-dd } }
+              - name: przerwy
+                label: "Przerwa semestralna (wakacje) — jeden lub kilka okresów"
+                type: object
+                list: true
+                fields:
+                  - { name: od, label: Od, type: date, options: { format: yyyy-MM-dd } }
+                  - { name: do, label: Do, type: date, options: { format: yyyy-MM-dd } }
           - name: wolne
             label: "Dni wolne od zajęć (święta ustawowe dodają się same)"
             type: object
@@ -915,14 +933,14 @@ content:
           - { name: uwagi_en, label: "EN: uwaga", type: text }
   - name: rok-akademicki
     label: Rok akademicki — tekst strony
-    description: "Kolory, dni wolne i zamiany dni wpisuje się w „Kalendarz zajęć (kolory dni)”; tu tylko tekst."
+    description: "Kolory, terminy semestru, dni wolne i zamiany dni wpisuje się w „Kalendarz zajęć (kolory dni)”; tu tylko tekst."
     type: file
     path: src/data/rok-akademicki.md
     format: yaml-frontmatter
     fields:
       - { name: tytul, label: Tytuł, type: string, required: true }
       - { name: opis, label: Krótki opis, type: text }
-      - { name: body, label: "Treść pod kalendarzem (rok w skrócie, sesje)", type: rich-text, options: { format: markdown, path: public/pliki/strony } }
+      - { name: body, label: "Tekst wspólny pod tabelą „Rok w skrócie” (bez dat semestru)", type: rich-text, options: { format: markdown, path: public/pliki/strony } }
       - { name: dalej, label: "Koniec strony (linki, podstawa prawna)", type: rich-text, options: { format: markdown } }
       - { name: tytul_en, label: "EN: tytuł", type: string }
       - { name: opis_en, label: "EN: opis", type: text }
