@@ -1,0 +1,39 @@
+---
+// Strona projektu (powstaje tylko, gdy projekt ma opis).
+import { render } from 'astro:content';
+import Baza from '../layouts/Baza.astro';
+import NaglowekStrony from '../components/NaglowekStrony.astro';
+import Ikona from '../components/Ikona.astro';
+import { u } from '../lib/url';
+import { wJezyku, RODZAJE_GRANTOW } from '../lib/i18n';
+import type { Lang } from '../lib/daty';
+import type { Grant } from '../lib/tresci';
+
+interface Props { grant: Grant; lang: Lang }
+const { grant, lang } = Astro.props;
+const d = grant.data;
+const tytul = (lang === 'en' && d.tytul_en) || d.tytul;
+const { Content } = await render(grant);
+const naglowek = lang === 'en' ? 'Research projects and grants' : 'Projekty i granty';
+const lata = d.rok_od && d.rok_do && d.rok_od !== d.rok_do ? `${d.rok_od}–${d.rok_do}` : String(d.rok_od ?? d.rok_do ?? '');
+---
+<Baza tytul={tytul} opublikowany={d.opublikowany}>
+  <NaglowekStrony tytul={tytul} lang={lang} okruszki={[{ etykieta: lang === 'en' ? 'Research' : 'Nauka' }, { etykieta: naglowek, adres: '/nauka/granty' }]} />
+  <div class="wrap layout">
+    <div class="main">
+      <dl class="info-list" style="margin-bottom:24px">
+        <dt>{lang === 'en' ? 'Funding' : 'Finansowanie'}</dt><dd>{RODZAJE_GRANTOW[d.rodzaj][lang]}{d.program ? ` — ${d.program}` : ''}</dd>
+        {d.kod && <><dt>{lang === 'en' ? 'Number' : 'Numer'}</dt><dd>{d.kod}</dd></>}
+        {lata && <><dt>{lang === 'en' ? 'Duration' : 'Realizacja'}</dt><dd>{lata}</dd></>}
+        {d.kierownik && <><dt>{lang === 'en' ? 'Principal investigator' : 'Kierownik'}</dt><dd>{d.kierownik}</dd></>}
+        {d.wykonawcy && <><dt>{lang === 'en' ? 'Team' : 'Wykonawcy'}</dt><dd>{d.wykonawcy}</dd></>}
+        {d.kwota && <><dt>{lang === 'en' ? 'Budget' : 'Kwota'}</dt><dd>{d.kwota}</dd></>}
+      </dl>
+      {d.strona && <p><a class="btn btn-primary" href={d.strona}>{lang === 'en' ? 'Project website' : 'Strona projektu'}<Ikona nazwa="zewnetrzny" rozmiar={16} /></a></p>}
+      <div class="prose"><Content /></div>
+    </div>
+    <aside class="side" data-pagefind-ignore>
+      <a class="link-arrow" href={u(wJezyku('/nauka/granty', lang))}><Ikona nazwa="wstecz" rozmiar={16} />{naglowek}</a>
+    </aside>
+  </div>
+</Baza>

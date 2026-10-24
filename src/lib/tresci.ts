@@ -6,6 +6,8 @@ export type Aktualnosc = CollectionEntry<'aktualnosci'>;
 export type Obrona = CollectionEntry<'obrony'>;
 export type Referat = CollectionEntry<'referaty'>;
 export type Seminarium = CollectionEntry<'seminaria'>;
+export type Konferencja = CollectionEntry<'konferencje'>;
+export type Grant = CollectionEntry<'granty'>;
 
 export const opublikowane = <T extends { data: { opublikowany?: boolean } }>(e: T) => e.data.opublikowany !== false;
 
@@ -33,6 +35,20 @@ export async function seminaria(wszystkie = false): Promise<Seminarium[]> {
     .sort((a, b) => a.data.nazwa.localeCompare(b.data.nazwa, 'pl'));
 }
 
+export async function konferencje(wszystkie = false): Promise<Konferencja[]> {
+  const items = await getCollection('konferencje');
+  return items
+    .filter((e) => wszystkie || opublikowane(e))
+    .sort((a, b) => (a.data.poczatek < b.data.poczatek ? 1 : a.data.poczatek > b.data.poczatek ? -1 : 0));
+}
+
+export async function granty(wszystkie = false): Promise<Grant[]> {
+  const items = await getCollection('granty');
+  return items
+    .filter((e) => wszystkie || opublikowane(e))
+    .sort((a, b) => (b.data.rok_od ?? 0) - (a.data.rok_od ?? 0) || (b.data.rok_do ?? 0) - (a.data.rok_do ?? 0) || a.data.tytul.localeCompare(b.data.tytul, 'pl'));
+}
+
 // Folder referatu = identyfikator seminarium (np. referaty/statystyka/2026-10-13-x.md).
 export const seminariumReferatu = (r: Referat) => r.id.split('/')[0];
 
@@ -51,7 +67,7 @@ export function sala(s: string | undefined, lang: Lang = 'pl'): string | undefin
 
 // Wspólny format pozycji kalendarza.
 export interface Wydarzenie {
-  rodzaj: 'wydarzenie' | 'obrona' | 'referat';
+  rodzaj: 'wydarzenie' | 'obrona' | 'referat' | 'konferencja';
   tytul: string;
   podtytul?: string;
   poczatek: string;
@@ -68,7 +84,7 @@ export interface Wydarzenie {
 const koniecDomyslny = (start: string, minuty: number) => (hasTime(start) ? plusMinutes(start, minuty) : undefined);
 
 export async function wszystkieWydarzenia(lang: Lang = 'pl'): Promise<Wydarzenie[]> {
-  const [akt, obr, ref, sem] = await Promise.all([aktualnosci(), obrony(), referaty(), seminaria()]);
+  const [akt, obr, ref, sem, konf] = await Promise.all([aktualnosci(), obrony(), referaty(), seminaria(), konferencje()]);
   const nazwy = new Map(sem.map((s) => [s.id, (lang === 'en' && s.data.nazwa_en) || s.data.nazwa]));
   const out: Wydarzenie[] = [];
   for (const a of akt) {
@@ -83,6 +99,13 @@ export async function wszystkieWydarzenia(lang: Lang = 'pl'): Promise<Wydarzenie
     out.push({
       rodzaj: 'obrona', tytul: `${lang === 'en' ? 'PhD defence' : 'Obrona doktoratu'}: ${o.data.kandydat}`, podtytul: o.data.tytul_rozprawy, poczatek: o.data.termin,
       koniecIcs: koniecDomyslny(o.data.termin, 120), miejsce: o.data.miejsce, href: `/obrony-doktorskie/${slugOf(o.id)}`, uid: `obr-${slugOf(o.id)}`,
+    });
+  }
+  for (const k of konf) {
+    if (k.data.odwolana) continue;
+    out.push({
+      rodzaj: 'konferencja', tytul: (lang === 'en' && k.data.tytul_en) || k.data.tytul, poczatek: k.data.poczatek, koniec: k.data.koniec,
+      miejsce: k.data.miejsce, href: `/nauka/konferencje/${slugOf(k.id)}`, uid: `konf-${slugOf(k.id)}`,
     });
   }
   for (const r of ref) {

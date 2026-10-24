@@ -1,15 +1,17 @@
 // Mapa strony dla wyszukiwarek (tylko opublikowane treści, obie wersje językowe).
 import type { APIContext } from 'astro';
 import { getCollection } from 'astro:content';
-import { aktualnosci, obrony, seminaria, slugOf } from '../lib/tresci';
+import { aktualnosci, obrony, seminaria, konferencje, granty, slugOf } from '../lib/tresci';
 import { absolute } from '../lib/url';
 import { wJezyku } from '../lib/i18n';
 
 export async function GET(context: APIContext) {
-  const sciezki: string[] = ['/', '/aktualnosci', '/kalendarz', '/seminaria', '/pracownicy', '/obrony-doktorskie'];
+  const sciezki: string[] = ['/', '/aktualnosci', '/kalendarz', '/seminaria', '/pracownicy', '/obrony-doktorskie', '/nauka/konferencje', '/nauka/granty'];
   for (const a of await aktualnosci()) sciezki.push(`/aktualnosci/${slugOf(a.id)}`);
   for (const o of await obrony()) sciezki.push(`/obrony-doktorskie/${slugOf(o.id)}`);
   for (const s of await seminaria()) sciezki.push(`/seminaria/${s.id}`);
+  for (const k of await konferencje()) sciezki.push(`/nauka/konferencje/${slugOf(k.id)}`);
+  for (const g of await granty()) if (g.body?.trim()) sciezki.push(`/nauka/granty/${slugOf(g.id)}`);
   for (const s of await getCollection('strony')) if (s.data.opublikowany !== false) sciezki.push(`/${s.id}`);
   const url = (p: string) => absolute(p, context.site);
   const wpisy = sciezki

@@ -1,0 +1,109 @@
+---
+// Projekty i granty: realizowane i zakończone, z filtrem rodzaju i wyszukiwarką.
+import { render } from 'astro:content';
+import Baza from '../layouts/Baza.astro';
+import NaglowekStrony from '../components/NaglowekStrony.astro';
+import Ikona from '../components/Ikona.astro';
+import { u } from '../lib/url';
+import { t, wJezyku, RODZAJE_GRANTOW } from '../lib/i18n';
+import { today, type Lang } from '../lib/daty';
+import { granty, slugOf, type Grant } from '../lib/tresci';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const wszystkie = await granty();
+const rok = Number(today().slice(0, 4));
+const trwa = (g: Grant) => (g.data.rok_do ?? 0) >= rok;
+const realizowane = wszystkie.filter(trwa);
+const zakonczone = wszystkie.filter((g) => !trwa(g));
+const zOpisem = new Set(wszystkie.filter((g) => g.body?.trim()).map((g) => g.id));
+const rodzaje = (['ncn', 'ue', 'wewnetrzny', 'inny'] as const).filter((r) => wszystkie.some((g) => g.data.rodzaj === r));
+const lata = (g: Grant) => (g.data.rok_od && g.data.rok_do && g.data.rok_od !== g.data.rok_do ? `${g.data.rok_od}–${g.data.rok_do}` : String(g.data.rok_od ?? g.data.rok_do ?? ''));
+const tytul = (g: Grant) => (lang === 'en' && g.data.tytul_en) || g.data.tytul;
+const naglowek = lang === 'en' ? 'Research projects and grants' : 'Projekty i granty';
+const lead = lang === 'en'
+  ? 'Research projects carried out at the Mathematical Institute, funded by the National Science Centre (NCN), EU programmes and other sources.'
+  : 'Projekty badawcze realizowane w Instytucie Matematycznym, finansowane przez Narodowe Centrum Nauki, programy unijne i inne źródła.';
+---
+<Baza tytul={naglowek} opis={lead}>
+  <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: lang === 'en' ? 'Research' : 'Nauka' }, { etykieta: naglowek }]}>
+    <div class="filters">
+      <div class="chips" role="group" aria-label={lang === 'en' ? 'Funding' : 'Źródło finansowania'}>
+        <button type="button" class="chip" aria-pressed="true" data-rodzaj="">{t(lang, 'wszystkie')}</button>
+        {rodzaje.map((r) => <button type="button" class="chip" aria-pressed="false" data-rodzaj={r}>{RODZAJE_GRANTOW[r][lang]}</button>)}
+      </div>
+      <label class="search">
+        <Ikona nazwa="szukaj" rozmiar={18} />
+        <span class="sr-only">{lang === 'en' ? 'Search projects' : 'Szukaj projektów'}</span>
+        <input type="search" data-szukaj placeholder={lang === 'en' ? 'Title, PI, code…' : 'Tytuł, kierownik, numer…'} />
+      </label>
+    </div>
+  </NaglowekStrony>
+
+  <div class="wrap layout">
+    <div class="main">
+      {[{ id: 'realizowane', h: lang === 'en' ? 'Ongoing' : 'Realizowane', lista: realizowane }, { id: 'zakonczone', h: lang === 'en' ? 'Completed' : 'Zakończone', lista: zakonczone }].map((s) => s.lista.length > 0 && (
+        <section data-grupa aria-labelledby={`h-${s.id}`} style="margin-bottom:28px">
+          <h2 id={`h-${s.id}`} style="font-size:24px;margin:0 0 6px">{s.h} <span class="muted" style="font-size:16px;font-weight:600">({s.lista.length})</span></h2>
+          {s.lista.map((g) => (
+            <article class="grant" data-rodzaj={g.data.rodzaj}>
+              <div class="news-meta">
+                <span class={`badge${g.data.rodzaj === 'ncn' ? ' badge-wydarzenie' : g.data.rodzaj === 'ue' ? ' badge-sukces' : ''}`}>{RODZAJE_GRANTOW[g.data.rodzaj][lang]}</span>
+                {g.data.program && <span class="badge">{g.data.program}</span>}
+                <span>{lata(g)}</span>
+                {g.data.kod && <span style="font-variant-numeric:tabular-nums">· {g.data.kod}</span>}
+              </div>
+              <h3>{zOpisem.has(g.id) ? <a href={u(wJezyku(`/nauka/granty/${slugOf(g.id)}`, lang))}>{tytul(g)}</a> : tytul(g)}</h3>
+              {g.data.kierownik && <p class="who"><span class="muted">{lang === 'en' ? 'Principal investigator' : 'Kierownik'}:</span> {g.data.kierownik}</p>}
+              {g.data.wykonawcy && <p class="who muted" style="font-size:14px">{lang === 'en' ? 'Team' : 'Wykonawcy'}: {g.data.wykonawcy}</p>}
+              {g.data.strona && <a class="link-arrow" style="min-height:32px;font-size:14px" href={g.data.strona}>{lang === 'en' ? 'Project website' : 'Strona projektu'}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>}
+            </article>
+          ))}
+        </section>
+      ))}
+      <p class="muted" data-pusto hidden>{lang === 'en' ? 'No projects match the search.' : 'Brak projektów spełniających kryteria.'}</p>
+    </div>
+    <aside class="side" data-pagefind-ignore>
+      <div class="side-box">
+        <h2>{lang === 'en' ? 'In numbers' : 'W liczbach'}</h2>
+        <dl class="info-list">
+          <dt>{lang === 'en' ? 'Ongoing' : 'Realizowane'}</dt><dd><strong>{realizowane.length}</strong></dd>
+          {rodzaje.map((r) => <><dt>{RODZAJE_GRANTOW[r][lang]}</dt><dd>{wszystkie.filter((g) => g.data.rodzaj === r).length}</dd></>)}
+        </dl>
+      </div>
+      <div class="side-box">
+        <h2>{lang === 'en' ? 'Funding opportunities' : 'Gdzie szukać finansowania'}</h2>
+        <a class="link-arrow" href="https://www.ncn.gov.pl/ogloszenia/konkursy">NCN<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
+        <a class="link-arrow" href="https://erc.europa.eu/">ERC<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
+        <a class="link-arrow" href="https://nawa.gov.pl/">NAWA<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
+      </div>
+    </aside>
+  </div>
+</Baza>
+
+<script>
+  const btn = Array.from(document.querySelectorAll<HTMLButtonElement>('button[data-rodzaj]'));
+  const poz = Array.from(document.querySelectorAll<HTMLElement>('.grant'));
+  const grupy = Array.from(document.querySelectorAll<HTMLElement>('[data-grupa]'));
+  const pusto = document.querySelector<HTMLElement>('[data-pusto]');
+  const szukaj = document.querySelector<HTMLInputElement>('[data-szukaj]');
+  let rodzaj = '';
+  const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ł/g, 'l');
+  function filtruj() {
+    const q = norm(szukaj?.value.trim() ?? '');
+    let ile = 0;
+    for (const p of poz) {
+      const ok = (!rodzaj || p.dataset.rodzaj === rodzaj) && (!q || norm(p.textContent ?? '').includes(q));
+      p.hidden = !ok;
+      if (ok) ile++;
+    }
+    for (const g of grupy) g.hidden = !g.querySelector('.grant:not([hidden])');
+    if (pusto) pusto.hidden = ile > 0;
+  }
+  btn.forEach((b) => b.addEventListener('click', () => {
+    rodzaj = b.dataset.rodzaj ?? '';
+    btn.forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
+    filtruj();
+  }));
+  szukaj?.addEventListener('input', filtruj);
+</script>

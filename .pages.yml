@@ -268,6 +268,91 @@ content:
         options:
           format: markdown
 
+  # ---------------------------------------------------------------- KONFERENCJE
+  - name: konferencje
+    label: Konferencje
+    type: collection
+    path: src/content/konferencje
+    format: yaml-frontmatter
+    filename:
+      template: "{year}-{primary}.md"
+      field: create
+    view:
+      fields: [tytul, poczatek, miejsce, opublikowany]
+      primary: tytul
+      sort: poczatek
+      order: desc
+    fields:
+      - { name: tytul, label: Nazwa konferencji, type: string, required: true }
+      - { name: tytul_en, label: "EN: nazwa (jeśli inna)", type: string }
+      - name: poczatek
+        label: Początek
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: koniec
+        label: Koniec
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - { name: miejsce, label: "Miejsce (np. Wrocław, Będlewo)", type: string }
+      - { name: strona, label: Strona internetowa konferencji, type: string }
+      - { name: organizatorzy, label: Organizatorzy z Instytutu, type: string }
+      - { name: zaklad, label: Zakład (opcjonalnie), type: string }
+      - { name: zdjecie, label: Plakat lub zdjęcie (opcjonalnie), type: image, options: { path: public/pliki/konferencje } }
+      - { name: odwolana, label: Odwołana, type: boolean, default: false }
+      - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
+      - name: body
+        label: Opis (opcjonalnie)
+        type: rich-text
+        options:
+          format: markdown
+          path: public/pliki/konferencje
+
+  # ---------------------------------------------------------------- GRANTY
+  - name: granty
+    label: Projekty i granty
+    type: collection
+    path: src/content/granty
+    format: yaml-frontmatter
+    filename:
+      template: "{year}-{primary}.md"
+      field: create
+    view:
+      fields: [tytul, kierownik, rok_od, rodzaj]
+      primary: tytul
+      sort: rok_od
+      order: desc
+    fields:
+      - { name: tytul, label: Tytuł projektu, type: string, required: true }
+      - { name: tytul_en, label: "EN: tytuł", type: string }
+      - { name: kod, label: "Numer (np. 2024/53/N/ST1/02294)", type: string }
+      - name: rodzaj
+        label: Źródło finansowania
+        type: select
+        default: ncn
+        options:
+          values:
+            - { name: ncn, label: NCN }
+            - { name: ue, label: UE i międzynarodowe }
+            - { name: wewnetrzny, label: Wewnętrzne }
+            - { name: inny, label: Inne }
+      - { name: program, label: "Program (np. OPUS, SONATA, PRELUDIUM)", type: string }
+      - { name: kierownik, label: Kierownik, type: string }
+      - { name: wykonawcy, label: Wykonawcy, type: string }
+      - { name: rok_od, label: Rok rozpoczęcia, type: number }
+      - { name: rok_do, label: Rok zakończenia, type: number }
+      - { name: kwota, label: Kwota (opcjonalnie), type: string }
+      - { name: zaklad, label: Zakład (opcjonalnie), type: string }
+      - { name: strona, label: Strona projektu, type: string }
+      - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
+      - name: body
+        label: Opis projektu (opcjonalnie; z opisem projekt dostaje własną podstronę)
+        type: rich-text
+        options:
+          format: markdown
+
   # ---------------------------------------------------------------- PRACOWNICY
   - name: pracownicy
     label: Pracownicy

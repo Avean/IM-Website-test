@@ -228,6 +228,14 @@ export const RODZAJE: Record<string, { pl: string; en: string }> = {
   kariera: { pl: 'Kariera', en: 'Careers' },
   obrona: { pl: 'Obrona doktorska', en: 'PhD defence' },
   referat: { pl: 'Seminarium', en: 'Seminar' },
+  konferencja: { pl: 'Konferencja', en: 'Conference' },
+};
+
+export const RODZAJE_GRANTOW: Record<string, { pl: string; en: string }> = {
+  ncn: { pl: 'NCN', en: 'NCN' },
+  ue: { pl: 'UE i międzynarodowe', en: 'EU and international' },
+  wewnetrzny: { pl: 'Wewnętrzne', en: 'Internal' },
+  inny: { pl: 'Inne', en: 'Other' },
 };
 
 export const ODBIORCY: Record<string, { pl: string; en: string }> = {

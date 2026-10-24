@@ -8,25 +8,53 @@
           "nazwa": "Ludzie",
           "nazwa_en": "People",
           "linki": [
-            { "etykieta": "Pracownicy", "etykieta_en": "Staff", "adres": "/pracownicy" },
-            { "etykieta": "Władze", "etykieta_en": "Management", "adres": "/instytut/wladze" }
+            {
+              "etykieta": "Pracownicy",
+              "etykieta_en": "Staff",
+              "adres": "/pracownicy"
+            },
+            {
+              "etykieta": "Władze",
+              "etykieta_en": "Management",
+              "adres": "/instytut/wladze"
+            }
           ]
         },
         {
           "nazwa": "Organizacja",
           "nazwa_en": "Organisation",
           "linki": [
-            { "etykieta": "Struktura i zakłady", "etykieta_en": "Structure and departments", "adres": "/instytut/struktura" },
-            { "etykieta": "Kontakt", "etykieta_en": "Contact", "adres": "/instytut/kontakt" }
+            {
+              "etykieta": "Struktura i zakłady",
+              "etykieta_en": "Structure and departments",
+              "adres": "/instytut/struktura"
+            },
+            {
+              "etykieta": "Kontakt",
+              "etykieta_en": "Contact",
+              "adres": "/instytut/kontakt"
+            }
           ]
         },
         {
           "nazwa": "Więcej",
           "nazwa_en": "More",
           "linki": [
-            { "etykieta": "Infrastruktura informatyczna", "etykieta_en": "IT infrastructure", "adres": "/instytut/infrastruktura-informatyczna" },
-            { "etykieta": "Sukcesy", "etykieta_en": "Achievements", "adres": "https://www.math.uni.wroc.pl/sukcesy" },
-            { "etykieta": "Biblioteka", "etykieta_en": "Library", "adres": "https://wmi.uwr.edu.pl/biblioteka-wydzialowa/" }
+            {
+              "etykieta": "Infrastruktura informatyczna",
+              "etykieta_en": "IT infrastructure",
+              "adres": "/instytut/infrastruktura-informatyczna"
+            },
+            {
+              "etykieta": "Sukcesy",
+              "etykieta_en": "Achievements",
+              "adres": "https://www.math.uni.wroc.pl/sukcesy"
+            },
+            {
+              "etykieta": "Biblioteka",
+              "etykieta_en": "Library",
+              "adres": "https://wmi.uwr.edu.pl/biblioteka-wydzialowa/"
+            }
           ]
         }
       ]
@@ -39,19 +67,47 @@
           "nazwa": "Badania",
           "nazwa_en": "Research",
           "linki": [
-            { "etykieta": "Seminaria", "etykieta_en": "Seminars", "adres": "/seminaria" },
-            { "etykieta": "Kalendarz", "etykieta_en": "Calendar", "adres": "/kalendarz" },
-            { "etykieta": "Konferencje", "etykieta_en": "Conferences", "adres": "https://www.math.uni.wroc.pl/konferencje" },
-            { "etykieta": "Projekty i granty", "etykieta_en": "Grants", "adres": "https://www.math.uni.wroc.pl/granty" },
-            { "etykieta": "Publikacje", "etykieta_en": "Publications", "adres": "/nauka/publikacje" }
+            {
+              "etykieta": "Seminaria",
+              "etykieta_en": "Seminars",
+              "adres": "/seminaria"
+            },
+            {
+              "etykieta": "Kalendarz",
+              "etykieta_en": "Calendar",
+              "adres": "/kalendarz"
+            },
+            {
+              "etykieta": "Konferencje",
+              "etykieta_en": "Conferences",
+              "adres": "/nauka/konferencje"
+            },
+            {
+              "etykieta": "Projekty i granty",
+              "etykieta_en": "Grants",
+              "adres": "/nauka/granty"
+            },
+            {
+              "etykieta": "Publikacje",
+              "etykieta_en": "Publications",
+              "adres": "/nauka/publikacje"
+            }
           ]
         },
         {
           "nazwa": "Stopnie naukowe",
           "nazwa_en": "Degrees",
           "linki": [
-            { "etykieta": "Obrony doktorskie", "etykieta_en": "PhD defences", "adres": "/obrony-doktorskie" },
-            { "etykieta": "Rada Dyscypliny Matematyka", "etykieta_en": "Mathematics Discipline Council", "adres": "https://bip.uni.wroc.pl/1436/237/sklad-rady-dyscypliny-naukowej-matematyka.html" }
+            {
+              "etykieta": "Obrony doktorskie",
+              "etykieta_en": "PhD defences",
+              "adres": "/obrony-doktorskie"
+            },
+            {
+              "etykieta": "Rada Dyscypliny Matematyka",
+              "etykieta_en": "Mathematics Discipline Council",
+              "adres": "https://bip.uni.wroc.pl/1436/237/sklad-rady-dyscypliny-naukowej-matematyka.html"
+            }
           ]
         }
       ]
@@ -64,36 +120,92 @@
           "nazwa": "Kierunki",
           "nazwa_en": "Programmes",
           "linki": [
-            { "etykieta": "Matematyka", "etykieta_en": "Mathematics", "adres": "/studia/matematyka" },
-            { "etykieta": "Sztuczna inteligencja w analizie danych", "etykieta_en": "AI in Data Analysis", "adres": "/studia/siad" },
-            { "etykieta": "ISIM", "etykieta_en": "ISIM", "adres": "https://wmi.uwr.edu.pl/isim-studenci/" },
-            { "etykieta": "Szkoła doktorska", "etykieta_en": "Doctoral school", "adres": "/studia/szkola-doktorska" },
-            { "etykieta": "Studia podyplomowe", "etykieta_en": "Postgraduate studies", "adres": "/studia/podyplomowe" }
+            {
+              "etykieta": "Matematyka",
+              "etykieta_en": "Mathematics",
+              "adres": "/studia/matematyka"
+            },
+            {
+              "etykieta": "Sztuczna inteligencja w analizie danych",
+              "etykieta_en": "AI in Data Analysis",
+              "adres": "/studia/siad"
+            },
+            {
+              "etykieta": "ISIM",
+              "etykieta_en": "ISIM",
+              "adres": "https://wmi.uwr.edu.pl/isim-studenci/"
+            },
+            {
+              "etykieta": "Szkoła doktorska",
+              "etykieta_en": "Doctoral school",
+              "adres": "/studia/szkola-doktorska"
+            },
+            {
+              "etykieta": "Studia podyplomowe",
+              "etykieta_en": "Postgraduate studies",
+              "adres": "/studia/podyplomowe"
+            }
           ]
         },
         {
           "nazwa": "Na co dzień",
           "nazwa_en": "Everyday",
           "linki": [
-            { "etykieta": "Plan zajęć", "etykieta_en": "Timetable", "adres": "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php" },
-            { "etykieta": "USOSweb", "etykieta_en": "USOSweb", "adres": "https://usosweb.uwr.edu.pl/" },
-            { "etykieta": "Rok akademicki", "etykieta_en": "Academic year", "adres": "/studia/rok-akademicki" },
-            { "etykieta": "Zajęcia i konsultacje", "etykieta_en": "Classes and office hours", "adres": "/studia/zajecia" },
-            { "etykieta": "Pierwszy rok", "etykieta_en": "First year", "adres": "/studia/pierwszy-rok" }
+            {
+              "etykieta": "Plan zajęć",
+              "etykieta_en": "Timetable",
+              "adres": "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php"
+            },
+            {
+              "etykieta": "USOSweb",
+              "etykieta_en": "USOSweb",
+              "adres": "https://usosweb.uwr.edu.pl/"
+            },
+            {
+              "etykieta": "Rok akademicki",
+              "etykieta_en": "Academic year",
+              "adres": "/studia/rok-akademicki"
+            },
+            {
+              "etykieta": "Zajęcia i konsultacje",
+              "etykieta_en": "Classes and office hours",
+              "adres": "/studia/zajecia"
+            },
+            {
+              "etykieta": "Pierwszy rok",
+              "etykieta_en": "First year",
+              "adres": "/studia/pierwszy-rok"
+            }
           ]
         },
         {
           "nazwa": "Dyplom i sprawy",
           "nazwa_en": "Diploma and student affairs",
           "linki": [
-            { "etykieta": "Egzaminy i dyplom", "etykieta_en": "Exams and diploma", "adres": "/studia/egzaminy-i-dyplom" },
-            { "etykieta": "Sprawy studenckie", "etykieta_en": "Student affairs", "adres": "/studia/sprawy-studenckie" },
-            { "etykieta": "Skrypty", "etykieta_en": "Lecture notes", "adres": "/studia/skrypty" }
+            {
+              "etykieta": "Egzaminy i dyplom",
+              "etykieta_en": "Exams and diploma",
+              "adres": "/studia/egzaminy-i-dyplom"
+            },
+            {
+              "etykieta": "Sprawy studenckie",
+              "etykieta_en": "Student affairs",
+              "adres": "/studia/sprawy-studenckie"
+            },
+            {
+              "etykieta": "Skrypty",
+              "etykieta_en": "Lecture notes",
+              "adres": "/studia/skrypty"
+            }
           ]
         }
       ]
     },
-    { "etykieta": "Aktualności", "etykieta_en": "News", "adres": "/aktualnosci" },
+    {
+      "etykieta": "Aktualności",
+      "etykieta_en": "News",
+      "adres": "/aktualnosci"
+    },
     {
       "etykieta": "Popularyzacja",
       "etykieta_en": "Outreach",
@@ -102,14 +214,34 @@
           "nazwa": "Dla szkół i nie tylko",
           "nazwa_en": "For schools and the public",
           "linki": [
-            { "etykieta": "Fundacja Matematyków Wrocławskich", "etykieta_en": "Wrocław Mathematicians Foundation", "adres": "https://fmw.math.uni.wroc.pl/" },
-            { "etykieta": "Wrocławski Portal Matematyczny", "etykieta_en": "Wrocław Mathematical Portal", "adres": "http://www.matematyka.wroc.pl/" },
-            { "etykieta": "Wrocławski Oddział PTM", "etykieta_en": "Polish Mathematical Society, Wrocław", "adres": "https://ptm.math.uni.wroc.pl/" },
-            { "etykieta": "Tygodnik „Trapez”", "etykieta_en": "„Trapez” weekly", "adres": "http://www.math.uni.wroc.pl/~jwr/trapez/" }
+            {
+              "etykieta": "Fundacja Matematyków Wrocławskich",
+              "etykieta_en": "Wrocław Mathematicians Foundation",
+              "adres": "https://fmw.math.uni.wroc.pl/"
+            },
+            {
+              "etykieta": "Wrocławski Portal Matematyczny",
+              "etykieta_en": "Wrocław Mathematical Portal",
+              "adres": "http://www.matematyka.wroc.pl/"
+            },
+            {
+              "etykieta": "Wrocławski Oddział PTM",
+              "etykieta_en": "Polish Mathematical Society, Wrocław",
+              "adres": "https://ptm.math.uni.wroc.pl/"
+            },
+            {
+              "etykieta": "Tygodnik „Trapez”",
+              "etykieta_en": "„Trapez” weekly",
+              "adres": "http://www.math.uni.wroc.pl/~jwr/trapez/"
+            }
           ]
         }
       ]
     },
-    { "etykieta": "Rekrutacja", "etykieta_en": "Admissions", "adres": "https://studia-wmi.uwr.edu.pl/" }
+    {
+      "etykieta": "Rekrutacja",
+      "etykieta_en": "Admissions",
+      "adres": "https://studia-wmi.uwr.edu.pl/"
+    }
   ]
 }

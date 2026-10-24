@@ -125,4 +125,42 @@ const obrony = defineCollection({
   }),
 });
 
-export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony };
+const rok = z.preprocess(empty, z.coerce.number().int().optional());
+
+const konferencje = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/konferencje' }),
+  schema: z.object({
+    tytul: z.string(),
+    tytul_en: optStr,
+    poczatek: date,
+    koniec: optDate,
+    miejsce: optStr,
+    strona: optStr,
+    organizatorzy: optStr,
+    zaklad: optStr,
+    zdjecie: optStr,
+    odwolana: z.preprocess((v) => (v == null || v === '' ? false : v), z.boolean()),
+    opublikowany: published,
+  }),
+});
+
+const granty = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/granty' }),
+  schema: z.object({
+    tytul: z.string(),
+    tytul_en: optStr,
+    kod: optStr,
+    rodzaj: z.preprocess(empty, z.enum(['ncn', 'ue', 'wewnetrzny', 'inny']).default('inny')),
+    program: optStr,
+    kierownik: optStr,
+    wykonawcy: optStr,
+    rok_od: rok,
+    rok_do: rok,
+    kwota: optStr,
+    zaklad: optStr,
+    strona: optStr,
+    opublikowany: published,
+  }),
+});
+
+export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony, konferencje, granty };
