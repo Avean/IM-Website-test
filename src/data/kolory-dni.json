@@ -1,0 +1,41 @@
+{
+  "semestry": [
+    {
+      "nazwa": "Semestr zimowy 2026/27",
+      "nazwa_en": "Winter semester 2026/27",
+      "poczatek": "2026-10-02",
+      "koniec": "2027-02-05",
+      "pdf": "/pliki/studia/kolory-dni/2026-27z-oznaczenia.pdf",
+      "uwagi": "",
+      "uwagi_en": "",
+      "wolne": [
+        { "od": "2026-11-12", "do": "2026-11-13", "opis": "Dni rektorskie (Święto Uniwersytetu)", "opis_en": "Rector's days off (University Day)" },
+        { "od": "2026-12-21", "do": "2027-01-06", "opis": "Przerwa świąteczna", "opis_en": "Christmas break" }
+      ],
+      "zamiany": [
+        { "data": "2026-12-18", "jak_dzien": "sr" }
+      ],
+      "wyjatki": []
+    },
+    {
+      "nazwa": "Semestr letni 2026/27",
+      "nazwa_en": "Summer semester 2026/27",
+      "poczatek": "2027-02-24",
+      "koniec": "2027-06-17",
+      "pdf": "",
+      "uwagi": "Kolory wyliczone automatycznie z harmonogramu roku akademickiego — Instytut nie opublikował jeszcze kalendarza na ten semestr.",
+      "uwagi_en": "Colours calculated automatically from the academic year schedule — the Institute has not yet published the calendar for this semester.",
+      "wolne": [
+        { "od": "2027-03-26", "do": "2027-03-30", "opis": "Przerwa świąteczna", "opis_en": "Easter break" },
+        { "od": "2027-05-07", "do": "", "opis": "Dzień rektorski", "opis_en": "Rector's day off" },
+        { "od": "2027-05-28", "do": "", "opis": "Dzień rektorski (Juwenalia)", "opis_en": "Rector's day off (Juwenalia)" }
+      ],
+      "zamiany": [
+        { "data": "2027-03-24", "jak_dzien": "pt" },
+        { "data": "2027-04-01", "jak_dzien": "pon" },
+        { "data": "2027-05-05", "jak_dzien": "pt" }
+      ],
+      "wyjatki": []
+    }
+  ]
+}

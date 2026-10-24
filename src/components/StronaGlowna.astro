@@ -5,6 +5,7 @@ import Ikona from './Ikona.astro';
 import KartaAktualnosci from './KartaAktualnosci.astro';
 import KartaWydarzenia from './KartaWydarzenia.astro';
 import TabelaReferatow from './TabelaReferatow.astro';
+import KafelekKoloryDni from './KafelekKoloryDni.astro';
 import ustawienia from '../data/ustawienia.json';
 import skroty from '../data/skroty.json';
 import { u, isExternal } from '../lib/url';
@@ -16,6 +17,8 @@ import { najblizszeWydarzenia, aktualnosciNaGlowna, wyroznionaAktualnosc, refera
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
+// Kafelek „Na skróty” z tym adresem pokazuje dzisiejszy kolor dnia (KafelekKoloryDni).
+const KOLORY_DNI = '/studia/kolory-dni';
 
 const wydarzenia = await najblizszeWydarzenia(3, lang);
 const wyrozniona = await wyroznionaAktualnosc(lang);
@@ -77,10 +80,14 @@ const kafelki = [
   <section aria-label={t(lang, 'naSkroty')}>
     <div class="wrap tiles">
       {skroty.kafelki.map((k) => (
-        <a class="tile" href={href(k.adres)}>
-          <Ikona nazwa={k.ikona} />
-          <span>{wybierz(k, 'etykieta', lang)}</span>
-        </a>
+        k.adres === KOLORY_DNI ? (
+          <KafelekKoloryDni lang={lang} adres={k.adres} etykieta={wybierz(k, 'etykieta', lang)} />
+        ) : (
+          <a class="tile" href={href(k.adres)}>
+            <Ikona nazwa={k.ikona} />
+            <span>{wybierz(k, 'etykieta', lang)}</span>
+          </a>
+        )
       ))}
     </div>
   </section>
