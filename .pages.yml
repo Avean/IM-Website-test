@@ -253,7 +253,7 @@ content:
 
   - name: referaty
     label: Referaty seminaryjne
-    description: "Dodaj referat i wybierz seminarium w polu „Seminarium” (albo dodaj go w folderze seminarium). Termin i salę wpisuje się przy każdym referacie."
+    description: "Każde seminarium ma swój folder — dodaj referat w folderze właściwego seminarium. Termin i salę wpisuje się przy każdym referacie."
     type: collection
     path: src/content/referaty
     format: yaml-frontmatter
@@ -267,10 +267,6 @@ content:
       sort: termin
       order: desc
     fields:
-      - name: seminarium
-        label: "Seminarium (wybierz; przy referacie dodanym w folderze seminarium można pominąć)"
-        type: reference
-        options: { collection: seminaria, value: "{path}", label: "{primary}", search: nazwa }
       - { name: tytul, label: Tytuł referatu, type: string, required: true }
       - { name: prelegent, label: Prelegent, type: string, required: true }
       - { name: afiliacja, label: Afiliacja, type: string }
