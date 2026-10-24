@@ -226,7 +226,7 @@ programy:
   dokumenty:
   - nazwa: Archiwalne programy studiów
     nazwa_en: Archived curricula (Polish)
-    plik: https://www.math.uni.wroc.pl/archiwalne-programy-studiow-na-kierunku-matematyka
+    plik: /studia/archiwalne-programy
 terminy:
 - co: Podanie o wpis bez spełnionych wymogów wstępnych
   co_en: Request to enrol without prerequisites

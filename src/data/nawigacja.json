@@ -193,6 +193,11 @@
               "adres": "/studia/sprawy-studenckie"
             },
             {
+              "etykieta": "Program MOST",
+              "etykieta_en": "MOST programme",
+              "adres": "/studia/program-most"
+            },
+            {
               "etykieta": "Skrypty",
               "etykieta_en": "Lecture notes",
               "adres": "/studia/skrypty"
