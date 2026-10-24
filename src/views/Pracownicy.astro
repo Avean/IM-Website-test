@@ -1,0 +1,44 @@
+---
+// Lista pracowników. Każda osoba to osobny plik w src/content/pracownicy (edycja w Pages CMS).
+import { getCollection } from 'astro:content';
+import Baza from '../layouts/Baza.astro';
+import NaglowekStrony from '../components/NaglowekStrony.astro';
+import TabelaPracownikow, { type Osoba } from '../components/TabelaPracownikow.tsx';
+import { t } from '../lib/i18n';
+import type { Lang } from '../lib/daty';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const nazwisko = (s: string) => s.trim().split(/\s+/).pop() ?? s;
+const osoby: Osoba[] = (await getCollection('pracownicy'))
+  .filter((p) => p.data.opublikowany !== false)
+  .map((p) => ({ id: p.id, ...p.data }))
+  .sort((a, b) => nazwisko(a.imie_nazwisko).localeCompare(nazwisko(b.imie_nazwisko), 'pl') || a.imie_nazwisko.localeCompare(b.imie_nazwisko, 'pl'))
+  .map(({ opublikowany, ...o }: any) => o);
+const grupy = (['nauczyciel', 'doktorant', 'administracja', 'emeryt'] as const)
+  .filter((g) => osoby.some((o) => o.grupa === g))
+  .map((g) => ({ id: g, nazwa: t(lang, `g_${g}`) }));
+const napisy = {
+  szukaj: lang === 'en' ? 'Search by name, room, e-mail…' : 'Szukaj: nazwisko, pokój, e-mail…',
+  grupa: lang === 'en' ? 'Group' : 'Grupa',
+  wszyscy: t(lang, 'wszyscy'),
+  osob: t(lang, 'osob'),
+  imie: t(lang, 'imieNazwisko'),
+  rok: t(lang, 'rok'),
+  email: t(lang, 'email'),
+  telefon: t(lang, 'telefon'),
+  pokoj: t(lang, 'pokoj'),
+  strona: t(lang, 'strona'),
+  link: 'WWW',
+  brak: lang === 'en' ? 'Nobody matches the search.' : 'Nikogo nie znaleziono.',
+};
+const lead = lang === 'en'
+  ? 'Contact details of the staff, PhD students and administration of the Mathematical Institute.'
+  : 'Dane kontaktowe pracowników, doktorantów i administracji Instytutu Matematycznego.';
+---
+<Baza tytul={t(lang, 'pracownicy')} opis={lead}>
+  <NaglowekStrony tytul={t(lang, 'pracownicy')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut') }, { etykieta: t(lang, 'pracownicy') }]} />
+  <div class="wrap" style="padding-top:28px;padding-bottom:64px">
+    <TabelaPracownikow client:load osoby={osoby} grupy={grupy} napisy={napisy} />
+  </div>
+</Baza>

@@ -1,0 +1,58 @@
+---
+// Strona stała (Markdown z src/content/strony). Adres = ścieżka pliku, np. studia/matematyka.md → /studia/matematyka
+import { render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import Baza from '../layouts/Baza.astro';
+import NaglowekStrony from '../components/NaglowekStrony.astro';
+import Ikona from '../components/Ikona.astro';
+import nawigacja from '../data/nawigacja.json';
+import { u, isExternal } from '../lib/url';
+import { t, wJezyku, wybierz } from '../lib/i18n';
+import { renderMarkdown } from '../lib/markdown';
+import type { Lang } from '../lib/daty';
+
+interface Props { strona: CollectionEntry<'strony'>; lang: Lang }
+const { strona, lang } = Astro.props;
+const d = strona.data;
+const tytul = (lang === 'en' && d.tytul_en) || d.tytul;
+const opis = (lang === 'en' && d.opis_en) || d.opis;
+const { Content } = await render(strona);
+const htmlEn = lang === 'en' && d.tresc_en ? await renderMarkdown(d.tresc_en) : '';
+const tylkoPolski = lang === 'en' && !d.tresc_en;
+
+// Dział menu, do którego należy strona — do okruszków i bocznej nawigacji.
+const adres = '/' + strona.id;
+type Link = { etykieta: string; etykieta_en?: string; adres: string };
+const dzial = (nawigacja.menu as any[]).find((m) => (m.grupy ?? []).some((g: any) => g.linki.some((l: Link) => l.adres === adres)));
+const linkiDzialu: Link[] = dzial ? dzial.grupy.flatMap((g: any) => g.linki) : [];
+const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
+---
+<Baza tytul={tytul} opis={opis} opublikowany={d.opublikowany}>
+  <NaglowekStrony tytul={tytul} lead={opis} lang={lang} okruszki={[...(dzial ? [{ etykieta: wybierz(dzial, 'etykieta', lang) }] : []), { etykieta: tytul }]} />
+  <div class="wrap layout">
+    <div class="main">
+      {tylkoPolski && <p class="notice">{t('en', 'wersjaPolska')}</p>}
+      <div class="prose" lang={tylkoPolski ? 'pl' : undefined}>
+        {htmlEn ? <Fragment set:html={htmlEn} /> : <Content />}
+      </div>
+    </div>
+    {linkiDzialu.length > 0 && (
+      <aside class="side">
+        <nav class="side-box" aria-label={wybierz(dzial, 'etykieta', lang)}>
+          <h2>{wybierz(dzial, 'etykieta', lang)}</h2>
+          <div style="display:flex;flex-direction:column">
+            {linkiDzialu.map((l) => (
+              <a
+                href={href(l.adres)}
+                aria-current={l.adres === adres ? 'page' : undefined}
+                style={`display:flex;align-items:center;gap:6px;min-height:40px;font-weight:${l.adres === adres ? 800 : 600};text-decoration:none;color:var(--ink);border-top:1px solid var(--line)`}
+              >
+                {wybierz(l, 'etykieta', lang)}{isExternal(l.adres) && <Ikona nazwa="zewnetrzny" rozmiar={13} />}
+              </a>
+            ))}
+          </div>
+        </nav>
+      </aside>
+    )}
+  </div>
+</Baza>

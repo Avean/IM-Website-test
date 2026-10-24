@@ -1,0 +1,34 @@
+{
+  "kolumny": [
+    {
+      "tytul": "Instytut",
+      "tytul_en": "Institute",
+      "linki": [
+        { "etykieta": "Pracownicy", "etykieta_en": "Staff", "adres": "/pracownicy" },
+        { "etykieta": "Struktura i zakłady", "etykieta_en": "Structure", "adres": "/instytut/struktura" },
+        { "etykieta": "Władze", "etykieta_en": "Management", "adres": "/instytut/wladze" },
+        { "etykieta": "Kontakt", "etykieta_en": "Contact", "adres": "/instytut/kontakt" }
+      ]
+    },
+    {
+      "tytul": "Studia",
+      "tytul_en": "Study",
+      "linki": [
+        { "etykieta": "Plan zajęć", "etykieta_en": "Timetable", "adres": "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php" },
+        { "etykieta": "Konsultacje", "etykieta_en": "Office hours", "adres": "/studia/zajecia#konsultacje" },
+        { "etykieta": "Terminy", "etykieta_en": "Key dates", "adres": "/studia/rok-akademicki" },
+        { "etykieta": "Rekrutacja", "etykieta_en": "Admissions", "adres": "https://studia-wmi.uwr.edu.pl/" }
+      ]
+    },
+    {
+      "tytul": "Nauka",
+      "tytul_en": "Research",
+      "linki": [
+        { "etykieta": "Seminaria", "etykieta_en": "Seminars", "adres": "/seminaria" },
+        { "etykieta": "Kalendarz", "etykieta_en": "Calendar", "adres": "/kalendarz" },
+        { "etykieta": "Publikacje", "etykieta_en": "Publications", "adres": "/nauka/publikacje" },
+        { "etykieta": "Obrony doktorskie", "etykieta_en": "PhD defences", "adres": "/obrony-doktorskie" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+---
+// Lista seminariów z najbliższym referatem.
+import Baza from '../layouts/Baza.astro';
+import NaglowekStrony from '../components/NaglowekStrony.astro';
+import TabelaReferatow from '../components/TabelaReferatow.astro';
+import Ikona from '../components/Ikona.astro';
+import { u } from '../lib/url';
+import { t, wJezyku } from '../lib/i18n';
+import { long, now, today, hasTime, type Lang } from '../lib/daty';
+import { seminaria, referaty, seminariumReferatu, referatyWTygodniu, tydzienSeminariow, slugOf } from '../lib/tresci';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const sem = await seminaria();
+const ref = await referaty();
+const n = now();
+const nastepny = (id: string) =>
+  ref.find((r) => seminariumReferatu(r) === id && (hasTime(r.data.termin) ? r.data.termin >= n : r.data.termin >= today()));
+const aktywne = sem.filter((s) => s.data.aktywne);
+const nieaktywne = sem.filter((s) => !s.data.aktywne);
+const tydzien = tydzienSeminariow();
+const wTygodniu = await referatyWTygodniu(lang);
+const nazwa = (s: (typeof sem)[number]) => (lang === 'en' && s.data.nazwa_en) || s.data.nazwa;
+const lead = lang === 'en'
+  ? 'Research seminars of the Mathematical Institute. Everyone is welcome.'
+  : 'Seminaria naukowe Instytutu Matematycznego. Zapraszamy wszystkich zainteresowanych.';
+---
+<Baza tytul={t(lang, 'seminaria')} opis={lead}>
+  <NaglowekStrony tytul={t(lang, 'seminaria')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'seminaria') }]} />
+  <div class="wrap" style="padding-top:32px;padding-bottom:64px;display:flex;flex-direction:column;gap:40px">
+    <section aria-labelledby="h-tydzien">
+      <div class="section-head" style="margin-bottom:14px">
+        <h2 id="h-tydzien" style="font-size:24px">{t(lang, tydzien.przyszly ? 'seminariaPrzyszly' : 'seminariaTydzien')}</h2>
+        <a class="link-arrow" href={u(wJezyku('/kalendarz#subskrypcja', lang))}><Ikona nazwa="kalendarz" rozmiar={16} />{t(lang, 'subskrybuj')}</a>
+      </div>
+      <div style="border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
+        <TabelaReferatow wiersze={wTygodniu} lang={lang} etykieta={t(lang, 'seminariaTydzien')} pusty={t(lang, tydzien.przyszly ? 'brakReferatowPrzyszly' : 'brakReferatow')} />
+      </div>
+    </section>
+
+    <section aria-labelledby="h-wszystkie">
+      <h2 id="h-wszystkie" class="sr-only">{t(lang, 'wszystkieSeminaria')}</h2>
+      <div class="sem-cards">
+        {aktywne.map((s) => {
+          const r = nastepny(s.id);
+          return (
+            <a class="sem-card" href={u(wJezyku(`/seminaria/${s.id}`, lang))}>
+              <span class="t">{nazwa(s)}</span>
+              {s.data.termin && <span class="news-meta"><Ikona nazwa="zegar" rozmiar={15} />{s.data.termin}</span>}
+              {s.data.prowadzacy.length > 0 && <span style="font-size:15px">{t(lang, 'prowadzacy')}: {s.data.prowadzacy.join(', ')}</span>}
+              {r ? (
+                <span style="font-size:15px;padding-top:10px;border-top:1px solid var(--line)">
+                  <strong style="color:var(--ink)">{long(r.data.termin, lang)}</strong> — {r.data.tytul} <span class="muted">({r.data.prelegent})</span>
+                </span>
+              ) : (
+                <span class="muted" style="font-size:14px;padding-top:10px;border-top:1px solid var(--line)">{t(lang, 'brakNadchodzacych')}</span>
+              )}
+            </a>
+          );
+        })}
+      </div>
+    </section>
+
+    {nieaktywne.length > 0 && (
+      <section aria-labelledby="h-nieaktywne">
+        <h2 id="h-nieaktywne" style="font-size:20px">{lang === 'en' ? 'Other seminars' : 'Pozostałe seminaria'}</h2>
+        <ul>
+          {nieaktywne.map((s) => <li><a href={u(wJezyku(`/seminaria/${s.id}`, lang))}>{nazwa(s)}</a></li>)}
+        </ul>
+      </section>
+    )}
+  </div>
+</Baza>

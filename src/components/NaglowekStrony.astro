@@ -1,0 +1,23 @@
+---
+// Pasek tytułu podstrony z okruszkami.
+import { u, isExternal } from '../lib/url';
+import { t, wJezyku } from '../lib/i18n';
+import type { Lang } from '../lib/daty';
+
+interface Props { tytul: string; lead?: string; lang: Lang; okruszki?: { etykieta: string; adres?: string }[] }
+const { tytul, lead, lang, okruszki = [] } = Astro.props;
+const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
+---
+<div class="page-head">
+  <div class="wrap">
+    <nav class="crumbs" aria-label={lang === 'en' ? 'Breadcrumbs' : 'Okruszki'}>
+      <ol>
+        <li><a href={href('/')}>{t(lang, 'stronaGlowna')}</a></li>
+        {okruszki.map((o) => <li>{o.adres ? <a href={href(o.adres)}>{o.etykieta}</a> : o.etykieta}</li>)}
+      </ol>
+    </nav>
+    <h1>{tytul}</h1>
+    {lead && <p class="lead">{lead}</p>}
+    <slot />
+  </div>
+</div>

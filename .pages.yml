@@ -1,0 +1,479 @@
+# Konfiguracja Pages CMS (https://pagescms.org) — panel edycji strony Instytutu.
+# Każda zmiana w panelu to commit w tym repozytorium; GitHub Actions przebudowuje stronę w ok. 2 minuty.
+
+settings:
+  commit:
+    identity: user
+
+media:
+  input: public/pliki
+  output: /pliki
+  rename: safe
+
+content:
+  # ---------------------------------------------------------------- AKTUALNOŚCI
+  - name: aktualnosci
+    label: Aktualności
+    type: collection
+    path: src/content/aktualnosci
+    format: yaml-frontmatter
+    filename:
+      template: "{year}-{month}-{day}-{primary}.md"
+      field: create
+    view:
+      fields: [tytul, data, rodzaj, opublikowany]
+      primary: tytul
+      sort: data
+      order: desc
+    fields:
+      - name: tytul
+        label: Tytuł
+        type: string
+        required: true
+      - name: data
+        label: Data publikacji
+        type: date
+        required: true
+        options:
+          format: yyyy-MM-dd
+      - name: opublikowany
+        label: Opublikowany
+        description: Odznaczone = podgląd. Wpis ma swój adres, ale nie pojawia się na listach, w wyszukiwarce ani w mapie strony.
+        type: boolean
+        default: true
+      - name: rodzaj
+        label: Rodzaj
+        type: select
+        default: ogloszenie
+        options:
+          values:
+            - { name: ogloszenie, label: Ogłoszenie }
+            - { name: wydarzenie, label: Wydarzenie }
+            - { name: sukces, label: Sukces }
+            - { name: kariera, label: Kariera }
+      - name: dla
+        label: Dla kogo
+        type: select
+        options:
+          multiple: true
+          values:
+            - { name: studenci, label: Studenci }
+            - { name: doktoranci, label: Doktoranci }
+            - { name: pracownicy, label: Pracownicy }
+            - { name: kandydaci, label: Kandydaci }
+      - name: zajawka
+        label: Zajawka (1–2 zdania na listę i stronę główną)
+        type: text
+      - name: zdjecie
+        label: Zdjęcie główne
+        type: image
+        options:
+          path: public/pliki/aktualnosci
+      - name: zdjecie_opis
+        label: Podpis / opis zdjęcia (np. kto jest na zdjęciu, autor)
+        type: string
+      - name: wyroznij_do
+        label: Wyróżnij na stronie głównej do… (żółty pasek; puste = bez wyróżnienia)
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: wydarzenie_poczatek
+        label: "Wydarzenie: początek (puste = to nie jest wydarzenie)"
+        type: date
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm
+      - name: wydarzenie_koniec
+        label: "Wydarzenie: koniec (opcjonalnie)"
+        type: date
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm
+      - name: wydarzenie_miejsce
+        label: "Wydarzenie: miejsce (np. sala WS, Instytut Matematyczny UWr)"
+        type: string
+      - name: body
+        label: Treść
+        type: rich-text
+        options:
+          format: markdown
+          path: public/pliki/aktualnosci
+      - name: galeria
+        label: Galeria zdjęć
+        type: object
+        list: true
+        fields:
+          - name: plik
+            label: Zdjęcie
+            type: image
+            options:
+              path: public/pliki/aktualnosci
+          - name: podpis
+            label: Podpis
+            type: string
+      - name: album
+        label: Link do pełnego albumu (np. Google Photos, Flickr)
+        type: string
+      - name: zalaczniki
+        label: Załączniki (PDF itp.)
+        type: object
+        list: true
+        fields:
+          - name: nazwa
+            label: Nazwa wyświetlana
+            type: string
+          - name: plik
+            label: Plik
+            type: file
+            options:
+              path: public/pliki/aktualnosci
+      - name: tytul_en
+        label: "EN: tytuł"
+        type: string
+      - name: zajawka_en
+        label: "EN: zajawka"
+        type: text
+      - name: tresc_en
+        label: "EN: treść (Markdown; puste = wersja angielska pokaże treść po polsku)"
+        type: text
+
+  # ---------------------------------------------------------------- OBRONY
+  - name: obrony
+    label: Obrony doktorskie
+    type: collection
+    path: src/content/obrony
+    format: yaml-frontmatter
+    filename:
+      template: "{year}-{month}-{day}-{primary}.md"
+      field: create
+    view:
+      fields: [kandydat, termin, opublikowany]
+      primary: kandydat
+      sort: termin
+      order: desc
+    fields:
+      - { name: kandydat, label: Imię i nazwisko doktoranta, type: string, required: true }
+      - { name: tytul_rozprawy, label: Tytuł rozprawy, type: string, required: true }
+      - name: promotorzy
+        label: Promotor / promotorzy
+        type: string
+        list: true
+      - name: termin
+        label: Termin obrony
+        type: date
+        required: true
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm
+      - { name: miejsce, label: Miejsce, type: string, default: "sala WS, Instytut Matematyczny UWr" }
+      - name: data_ogloszenia
+        label: Data ogłoszenia (pozycja na liście aktualności)
+        type: date
+        options:
+          format: yyyy-MM-dd
+      - name: opublikowany
+        label: Opublikowany
+        type: boolean
+        default: true
+      - name: w_aktualnosciach
+        label: Pokaż też w aktualnościach
+        type: boolean
+        default: true
+      - { name: zawiadomienie, label: Zawiadomienie o obronie (PDF), type: file, options: { path: public/pliki/obrony } }
+      - { name: rozprawa, label: Rozprawa doktorska (PDF), type: file, options: { path: public/pliki/obrony } }
+      - { name: streszczenie_pl, label: Streszczenie po polsku (PDF), type: file, options: { path: public/pliki/obrony } }
+      - { name: streszczenie_en, label: Streszczenie po angielsku (PDF), type: file, options: { path: public/pliki/obrony } }
+      - name: recenzje
+        label: Recenzje
+        type: object
+        list: true
+        fields:
+          - { name: recenzent, label: "Recenzent (np. prof. dr hab. Jan Kowalski)", type: string }
+          - { name: plik, label: Recenzja (PDF), type: file, options: { path: public/pliki/obrony } }
+      - { name: bip, label: Link do ogłoszenia w BIP (opcjonalnie), type: string }
+      - name: body
+        label: Dodatkowy opis (opcjonalnie)
+        type: rich-text
+        options:
+          format: markdown
+
+  # ---------------------------------------------------------------- SEMINARIA
+  - name: seminaria
+    label: Seminaria
+    type: collection
+    path: src/content/seminaria
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [nazwa, termin, aktywne]
+      primary: nazwa
+    fields:
+      - { name: nazwa, label: Nazwa seminarium, type: string, required: true }
+      - { name: nazwa_en, label: "EN: nazwa", type: string }
+      - name: prowadzacy
+        label: Prowadzący
+        type: string
+        list: true
+      - { name: termin, label: "Stały termin (np. czwartek 12:15–14:00, sala 711)", type: string }
+      - { name: kontakt, label: E-mail kontaktowy, type: string }
+      - { name: strona, label: Zewnętrzna strona seminarium, type: string }
+      - { name: grupa_google, label: Link do zapisu na listę (Google Groups), type: string }
+      - { name: archiwum, label: Link do archiwum referatów, type: string }
+      - { name: aktywne, label: Aktywne, type: boolean, default: true }
+      - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
+      - name: body
+        label: Opis (Markdown, wzory w $...$)
+        type: code
+        options:
+          format: markdown
+
+  - name: referaty
+    label: Referaty seminaryjne
+    description: Każde seminarium ma swój folder — dodaj referat w folderze właściwego seminarium.
+    type: collection
+    path: src/content/referaty
+    format: yaml-frontmatter
+    subfolders: true
+    filename:
+      template: "{year}-{month}-{day}-{primary}.md"
+      field: create
+    view:
+      fields: [tytul, prelegent, termin]
+      primary: tytul
+      sort: termin
+      order: desc
+    fields:
+      - { name: tytul, label: Tytuł referatu, type: string, required: true }
+      - { name: prelegent, label: Prelegent, type: string, required: true }
+      - { name: afiliacja, label: Afiliacja, type: string }
+      - name: termin
+        label: Termin
+        type: date
+        required: true
+        options:
+          time: true
+          format: yyyy-MM-dd'T'HH:mm
+      - { name: sala, label: Sala, type: string }
+      - name: pliki
+        label: Pliki (slajdy itp.)
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: plik, label: Plik, type: file, options: { path: public/pliki/seminaria } }
+      - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
+      - name: body
+        label: Streszczenie (Markdown, wzory w $...$)
+        type: code
+        options:
+          format: markdown
+
+  # ---------------------------------------------------------------- PRACOWNICY
+  - name: pracownicy
+    label: Pracownicy
+    type: collection
+    path: src/content/pracownicy
+    format: yaml
+    filename: "{primary}.yml"
+    view:
+      fields: [imie_nazwisko, grupa, pokoj, telefon]
+      primary: imie_nazwisko
+      sort: imie_nazwisko
+    fields:
+      - { name: imie_nazwisko, label: Imię i nazwisko, type: string, required: true }
+      - { name: stopien, label: "Stopień / tytuł (np. dr hab., prof. UWr)", type: string }
+      - name: grupa
+        label: Grupa
+        type: select
+        default: nauczyciel
+        options:
+          values:
+            - { name: nauczyciel, label: Nauczyciele akademiccy }
+            - { name: doktorant, label: Doktoranci }
+            - { name: administracja, label: Administracja }
+            - { name: emeryt, label: Emerytowani pracownicy }
+      - { name: funkcja, label: "Funkcja (np. Sekretariat dydaktyczny)", type: string }
+      - { name: zaklad, label: Zakład, type: string }
+      - { name: rok_studiow, label: Rok studiów doktoranckich, type: number }
+      - { name: email, label: E-mail, type: string }
+      - { name: telefon, label: "Telefon (np. 71 375 7401)", type: string }
+      - { name: pokoj, label: Pokój, type: string }
+      - { name: strona, label: Strona domowa, type: string }
+      - { name: opublikowany, label: Widoczny na stronie, type: boolean, default: true }
+
+  # ---------------------------------------------------------------- STRONY
+  - name: strony
+    label: Strony stałe
+    description: Adres strony = ścieżka pliku, np. studia/matematyka.md → /studia/matematyka
+    type: collection
+    path: src/content/strony
+    format: yaml-frontmatter
+    subfolders: true
+    filename: "{primary}.md"
+    view:
+      fields: [tytul, opublikowany]
+      primary: tytul
+    fields:
+      - { name: tytul, label: Tytuł, type: string, required: true }
+      - { name: opis, label: Krótki opis (pod tytułem i w Google), type: text }
+      - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
+      - name: body
+        label: Treść
+        type: rich-text
+        options:
+          format: markdown
+          path: public/pliki/strony
+      - { name: tytul_en, label: "EN: tytuł", type: string }
+      - { name: opis_en, label: "EN: opis", type: text }
+      - { name: tresc_en, label: "EN: treść (Markdown)", type: text }
+
+  # ---------------------------------------------------------------- USTAWIENIA
+  - name: ustawienia-grupa
+    label: Ustawienia strony
+    type: group
+    items:
+      - name: ustawienia
+        label: Strona główna i kontakt
+        type: file
+        path: src/data/ustawienia.json
+        format: json
+        fields:
+          - name: baner
+            label: Baner na stronie głównej
+            type: object
+            fields:
+              - { name: zdjecie, label: Zdjęcie, type: image, options: { path: public/pliki/baner } }
+              - { name: opis, label: Opis zdjęcia (dla niewidomych), type: string }
+              - { name: podpis, label: "Podpis (np. Fot. Jan Kowalski)", type: string }
+              - { name: kadr, label: "Kadrowanie (np. center 55%)", type: string }
+          - { name: logo, label: Logo w nagłówku (opcjonalnie), type: image, options: { path: public/pliki } }
+          - { name: wstep, label: Tekst pod nazwą Instytutu, type: text }
+          - { name: wstep_en, label: "EN: tekst pod nazwą", type: text }
+          - name: przyciski
+            label: Przyciski pod tekstem
+            type: object
+            list: true
+            fields:
+              - { name: etykieta, label: Etykieta, type: string }
+              - { name: etykieta_en, label: "EN: etykieta", type: string }
+              - { name: adres, label: Adres, type: string }
+          - name: studia
+            label: Sekcja „Studiuj matematykę”
+            type: object
+            fields:
+              - { name: tytul, label: Tytuł, type: string }
+              - { name: tytul_en, label: "EN: tytuł", type: string }
+              - { name: opis, label: Opis, type: string }
+              - { name: opis_en, label: "EN: opis", type: string }
+              - { name: rekrutacja, label: Link do rekrutacji, type: string }
+              - name: kierunki
+                label: Kafelki kierunków
+                type: object
+                list: true
+                fields:
+                  - { name: poziom, label: "Poziom (np. I i II stopień)", type: string }
+                  - { name: poziom_en, label: "EN: poziom", type: string }
+                  - { name: nazwa, label: Nazwa, type: string }
+                  - { name: nazwa_en, label: "EN: nazwa", type: string }
+                  - { name: opis, label: Opis, type: string }
+                  - { name: opis_en, label: "EN: opis", type: string }
+                  - { name: adres, label: Adres, type: string }
+          - name: kontakt
+            label: Dane kontaktowe (stopka)
+            type: object
+            fields:
+              - { name: adres, label: Adres, type: string }
+              - { name: telefon, label: Telefon, type: string }
+              - { name: email, label: E-mail, type: string }
+          - { name: facebook, label: Facebook, type: string }
+          - { name: youtube, label: YouTube, type: string }
+          - { name: archiwum, label: Adres archiwum starej strony, type: string }
+          - name: partnerzy
+            label: Partnerzy (logotypy w stopce)
+            type: object
+            list: true
+            fields:
+              - { name: nazwa, label: Nazwa, type: string }
+              - { name: logo, label: Logo, type: image, options: { path: public/pliki/partnerzy } }
+              - { name: adres, label: Strona partnera, type: string }
+
+      - name: skroty
+        label: Kafelki „Na skróty”
+        type: file
+        path: src/data/skroty.json
+        format: json
+        fields:
+          - name: kafelki
+            label: Kafelki
+            type: object
+            list: true
+            fields:
+              - { name: etykieta, label: Etykieta, type: string }
+              - { name: etykieta_en, label: "EN: etykieta", type: string }
+              - { name: adres, label: Adres (np. /pracownicy albo https://…), type: string }
+              - name: ikona
+                label: Ikona
+                type: select
+                options:
+                  values:
+                    - { name: kalendarz, label: Kalendarz }
+                    - { name: zegar, label: Zegar }
+                    - { name: ludzie, label: Ludzie }
+                    - { name: tablica, label: Tablica }
+                    - { name: flaga, label: Flaga }
+                    - { name: zewnetrzny, label: Link zewnętrzny }
+                    - { name: czapka, label: Czapka absolwenta }
+                    - { name: plik, label: Dokument }
+                    - { name: mail, label: Koperta }
+
+      - name: nawigacja
+        label: Menu główne
+        type: file
+        path: src/data/nawigacja.json
+        format: json
+        fields:
+          - name: menu
+            label: Pozycje menu
+            type: object
+            list: true
+            fields:
+              - { name: etykieta, label: Etykieta, type: string }
+              - { name: etykieta_en, label: "EN: etykieta", type: string }
+              - { name: adres, label: "Adres (tylko dla pozycji bez rozwijanej listy)", type: string }
+              - name: grupy
+                label: Grupy w rozwijanym menu
+                type: object
+                list: true
+                fields:
+                  - { name: nazwa, label: Nazwa grupy, type: string }
+                  - { name: nazwa_en, label: "EN: nazwa grupy", type: string }
+                  - name: linki
+                    label: Linki
+                    type: object
+                    list: true
+                    fields:
+                      - { name: etykieta, label: Etykieta, type: string }
+                      - { name: etykieta_en, label: "EN: etykieta", type: string }
+                      - { name: adres, label: Adres, type: string }
+
+      - name: stopka
+        label: Stopka
+        type: file
+        path: src/data/stopka.json
+        format: json
+        fields:
+          - name: kolumny
+            label: Kolumny
+            type: object
+            list: true
+            fields:
+              - { name: tytul, label: Tytuł kolumny, type: string }
+              - { name: tytul_en, label: "EN: tytuł", type: string }
+              - name: linki
+                label: Linki
+                type: object
+                list: true
+                fields:
+                  - { name: etykieta, label: Etykieta, type: string }
+                  - { name: etykieta_en, label: "EN: etykieta", type: string }
+                  - { name: adres, label: Adres, type: string }

@@ -1,0 +1,82 @@
+{
+  "baner": {
+    "zdjecie": "/pliki/baner/odra-most-grunwaldzki.jpg",
+    "opis": "Odra i Most Grunwaldzki, w tle budynki przy placu Grunwaldzkim",
+    "podpis": "Fot. archiwum strony IM",
+    "kadr": "center 55%"
+  },
+  "logo": "",
+  "wstep": "Badania, seminaria i studia matematyczne na Wydziale Matematyki i Informatyki Uniwersytetu Wrocławskiego.",
+  "wstep_en": "Research, seminars and mathematics programmes at the Faculty of Mathematics and Computer Science, University of Wrocław.",
+  "przyciski": [
+    {
+      "etykieta": "Dla kandydatów",
+      "etykieta_en": "Prospective students",
+      "adres": "https://studia-wmi.uwr.edu.pl/"
+    },
+    {
+      "etykieta": "Dla studentów",
+      "etykieta_en": "Students",
+      "adres": "/studia/matematyka"
+    },
+    {
+      "etykieta": "Dla naukowców",
+      "etykieta_en": "Researchers",
+      "adres": "/seminaria"
+    }
+  ],
+  "studia": {
+    "tytul": "Studiuj matematykę we Wrocławiu",
+    "tytul_en": "Study mathematics in Wrocław",
+    "opis": "Studia I, II i III stopnia oraz studia podyplomowe.",
+    "opis_en": "Bachelor's, master's and doctoral studies, plus postgraduate programmes.",
+    "rekrutacja": "https://studia-wmi.uwr.edu.pl/",
+    "kierunki": [
+      {
+        "poziom": "I i II stopień",
+        "poziom_en": "BSc and MSc",
+        "nazwa": "Matematyka",
+        "nazwa_en": "Mathematics",
+        "opis": "Nowy program studiów od roku 2026/27.",
+        "opis_en": "New curriculum from 2026/27.",
+        "adres": "/studia/matematyka"
+      },
+      {
+        "poziom": "Kierunek",
+        "poziom_en": "Programme",
+        "nazwa": "Sztuczna inteligencja w analizie danych",
+        "nazwa_en": "AI in Data Analysis",
+        "opis": "Program studiów i dokumenty.",
+        "opis_en": "Curriculum and documents.",
+        "adres": "/studia/siad"
+      },
+      {
+        "poziom": "III stopień",
+        "poziom_en": "PhD",
+        "nazwa": "Szkoła doktorska",
+        "nazwa_en": "Doctoral school",
+        "opis": "Kolegium Doktorskie Matematyki.",
+        "opis_en": "Doctoral College of Mathematics.",
+        "adres": "/studia/szkola-doktorska"
+      },
+      {
+        "poziom": "Podyplomowe",
+        "poziom_en": "Postgraduate",
+        "nazwa": "Nauczanie matematyki",
+        "nazwa_en": "Teaching mathematics",
+        "opis": "Studia kwalifikacyjne, 3 semestry.",
+        "opis_en": "Qualification programme, 3 semesters.",
+        "adres": "/studia/podyplomowe"
+      }
+    ]
+  },
+  "kontakt": {
+    "adres": "pl. Grunwaldzki 2, 50-384 Wrocław",
+    "telefon": "+48 71 375 74 01",
+    "email": "dyrekcja@math.uni.wroc.pl"
+  },
+  "facebook": "https://www.facebook.com/IMUWr",
+  "youtube": "https://www.youtube.com/channel/UCO0NMxdgMe2ZISJAbEcKH4w",
+  "archiwum": "https://www.math.uni.wroc.pl/",
+  "partnerzy": []
+}

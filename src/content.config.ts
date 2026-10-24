@@ -1,0 +1,128 @@
+import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
+
+// Pages CMS zapisuje puste pola jako "" albo null — traktujemy je jak brak wartości.
+const empty = (v: unknown) => (v === '' || v === null ? undefined : v);
+
+// Daty trzymamy jako tekst "RRRR-MM-DD" lub "RRRR-MM-DDTGG:MM" w czasie lokalnym (Warszawa),
+// żeby nie było przesunięć stref czasowych przy budowaniu na serwerach GitHuba.
+const toDateString = (v: unknown) => {
+  v = empty(v);
+  if (v instanceof Date) {
+    const iso = v.toISOString();
+    return iso.slice(11, 16) === '00:00' ? iso.slice(0, 10) : iso.slice(0, 16);
+  }
+  return v;
+};
+const date = z.preprocess(toDateString, z.string().regex(/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2})?/, 'Data w formacie RRRR-MM-DD lub RRRR-MM-DDTGG:MM'));
+const optDate = z.preprocess(toDateString, z.string().regex(/^\d{4}-\d{2}-\d{2}(T\d{2}:\d{2})?/).optional());
+const optStr = z.preprocess(empty, z.string().optional());
+const strList = z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(z.string()));
+const published = z.preprocess((v) => (v == null || v === '' ? true : v), z.boolean());
+
+const plik = z.object({ nazwa: optStr, plik: z.string() });
+const plikList = z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(plik));
+
+const aktualnosci = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/aktualnosci' }),
+  schema: z.object({
+    tytul: z.string(),
+    data: date,
+    rodzaj: z.preprocess(empty, z.enum(['ogloszenie', 'wydarzenie', 'sukces', 'kariera']).default('ogloszenie')),
+    dla: z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(z.enum(['studenci', 'doktoranci', 'pracownicy', 'kandydaci']))),
+    zajawka: optStr,
+    zdjecie: optStr,
+    zdjecie_opis: optStr,
+    galeria: z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(z.object({ plik: z.string(), podpis: optStr }))),
+    album: optStr,
+    zalaczniki: plikList,
+    wydarzenie_poczatek: optDate,
+    wydarzenie_koniec: optDate,
+    wydarzenie_miejsce: optStr,
+    wyroznij_do: optDate,
+    tytul_en: optStr,
+    zajawka_en: optStr,
+    tresc_en: optStr,
+    opublikowany: published,
+  }),
+});
+
+const strony = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/strony' }),
+  schema: z.object({
+    tytul: z.string(),
+    opis: optStr,
+    tytul_en: optStr,
+    opis_en: optStr,
+    tresc_en: optStr,
+    opublikowany: published,
+  }),
+});
+
+const pracownicy = defineCollection({
+  loader: glob({ pattern: '**/*.{yml,yaml}', base: './src/content/pracownicy' }),
+  schema: z.object({
+    imie_nazwisko: z.string(),
+    stopien: optStr,
+    grupa: z.preprocess(empty, z.enum(['nauczyciel', 'doktorant', 'administracja', 'emeryt']).default('nauczyciel')),
+    funkcja: optStr,
+    zaklad: optStr,
+    rok_studiow: z.preprocess(empty, z.coerce.number().int().optional()),
+    email: optStr,
+    telefon: optStr,
+    pokoj: optStr,
+    strona: optStr,
+    opublikowany: published,
+  }),
+});
+
+const seminaria = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/seminaria' }),
+  schema: z.object({
+    nazwa: z.string(),
+    nazwa_en: optStr,
+    prowadzacy: strList,
+    kontakt: optStr,
+    termin: optStr,
+    strona: optStr,
+    grupa_google: optStr,
+    archiwum: optStr,
+    aktywne: published,
+    opublikowany: published,
+  }),
+});
+
+const referaty = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/referaty' }),
+  schema: z.object({
+    tytul: z.string(),
+    prelegent: z.string(),
+    afiliacja: optStr,
+    termin: date,
+    sala: optStr,
+    pliki: plikList,
+    opublikowany: published,
+  }),
+});
+
+const obrony = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/obrony' }),
+  schema: z.object({
+    kandydat: z.string(),
+    tytul_rozprawy: z.string(),
+    promotorzy: strList,
+    termin: date,
+    miejsce: optStr,
+    data_ogloszenia: optDate,
+    zawiadomienie: optStr,
+    rozprawa: optStr,
+    streszczenie_pl: optStr,
+    streszczenie_en: optStr,
+    recenzje: z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(z.object({ recenzent: z.string(), plik: z.string() }))),
+    bip: optStr,
+    w_aktualnosciach: published,
+    opublikowany: published,
+  }),
+});
+
+export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony };
