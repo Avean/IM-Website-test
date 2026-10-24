@@ -1,5 +1,5 @@
 ---
-// Kolory dni: dzisiejszy kolor, legenda i kalendarze semestrów.
+// Kalendarz zajęć (/studia/kalendarz-zajec): dzisiejszy kolor dnia, zamiany dni, dni wolne, legenda i kalendarze semestrów.
 // Dane: src/data/kolory-dni.json (Pages CMS), kolory liczy src/lib/kolory-dni.ts — ta strona jest też podglądem dla redaktora.
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
@@ -18,10 +18,10 @@ const wielka = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
 
 const dzis = today();
 const t0 = tekstDnia(dzis, lang);
-const naglowek = T('Kolory dni', 'Day colours');
+const naglowek = T('Kalendarz zajęć', 'Class calendar');
 const lead = T(
-  'W Instytucie nie obowiązuje parzystość tygodni podawana przez USOS, tylko kolory dni: w przypadku zajęć odbywających się co drugi tydzień jedna grupa ma zajęcia w dni pomarańczowe, a druga w niebieskie.',
-  'At the Institute we do not use the week parity shown in USOS, but day colours: for classes held every other week, one group meets on orange days and the other on blue days.',
+  'Kolory dni, zamiany dni i dni wolne od zajęć w bieżącym semestrze. W Instytucie nie obowiązuje parzystość tygodni podawana przez USOS, tylko kolory dni: w przypadku zajęć odbywających się co drugi tydzień jedna grupa ma zajęcia w dni pomarańczowe, a druga w niebieskie.',
+  'Day colours, swapped days and days without classes in the current semester. At the Institute we do not use the week parity shown in USOS, but day colours: for classes held every other week, one group meets on orange days and the other on blue days.',
 );
 
 // Semestry trwające i przyszłe na górze, zakończone — w zwijanym archiwum.

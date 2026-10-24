@@ -18,7 +18,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
 // Kafelek „Na skróty” z tym adresem pokazuje dzisiejszy kolor dnia (KafelekKoloryDni).
-const KOLORY_DNI = '/studia/kolory-dni';
+const KOLORY_DNI = '/studia/kalendarz-zajec';
 
 const wydarzenia = await najblizszeWydarzenia(3, lang);
 const wyrozniona = await wyroznionaAktualnosc(lang);

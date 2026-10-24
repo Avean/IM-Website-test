@@ -287,7 +287,7 @@ export interface TekstDnia {
   nastepnyKolor: Kolor | null;
 }
 
-// Wspólne napisy dla kafelka na stronie głównej i strony /studia/kolory-dni.
+// Wspólne napisy dla kafelka na stronie głównej i strony /studia/kalendarz-zajec.
 export function tekstDnia(data: string, lang: Lang = 'pl'): TekstDnia {
   const T = (pl: string, en: string) => (lang === 'en' ? en : pl);
   const info = infoDnia(data);
@@ -320,7 +320,7 @@ export function tekstDnia(data: string, lang: Lang = 'pl'): TekstDnia {
   const powod = info?.wolne ? T(info.wolne.opis, info.wolne.opis_en) : '';
   return {
     data, kolor: null, litera: '–', nastepny, nastepnyKolor: nk,
-    tytul: brak ? T('Kolory dni', 'Day colours') : T('Dziś brak zajęć', 'No classes today'),
+    tytul: brak ? T('Kalendarz zajęć', 'Class calendar') : T('Dziś brak zajęć', 'No classes today'),
     opis: brak ? T('Brak danych o kolejnym semestrze', 'No data for the next semester') : opisNast,
     opisDlugi: brak
       ? T('Brak danych o kolejnym semestrze.', 'No data for the next semester yet.')

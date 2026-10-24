@@ -49,7 +49,7 @@ tresc_en: |
 
   ## Day colours
 
-  At our Institute we do not use the week parity shown in USOS but **day colours**: for classes held every other week, one group meets on orange days and the other on blue days. Which colour each day has: [Day colours](/en/studia/kolory-dni) (also as a [PDF for the winter semester 2026/27](/pliki/studia/kolory-dni/2026-27z-oznaczenia.pdf)).
+  At our Institute we do not use the week parity shown in USOS but **day colours**: for classes held every other week, one group meets on orange days and the other on blue days. Which colour each day has: [Class calendar](/en/studia/kalendarz-zajec) (also as a [PDF for the winter semester 2026/27](/pliki/studia/kolory-dni/2026-27z-oznaczenia.pdf)).
 
   ## Timetable and other dates
 
@@ -111,7 +111,7 @@ Dla studentów ostatniego roku studiów danego stopnia dziekan, w porozumieniu z
 
 ## Kolory dni
 
-W naszym Instytucie nie obowiązuje parzystość tygodni podawana w USOS, tylko **kolory dni**: w przypadku zajęć odbywających się co drugi tydzień jedna grupa ma zajęcia w dni pomarańczowe, a druga w niebieskie. Jaki kolor ma dany dzień: [Kolory dni](/studia/kolory-dni) (także jako [PDF na semestr zimowy 2026/27](/pliki/studia/kolory-dni/2026-27z-oznaczenia.pdf)).
+W naszym Instytucie nie obowiązuje parzystość tygodni podawana w USOS, tylko **kolory dni**: w przypadku zajęć odbywających się co drugi tydzień jedna grupa ma zajęcia w dni pomarańczowe, a druga w niebieskie. Jaki kolor ma dany dzień, które dni są zamienione i kiedy nie ma zajęć: [Kalendarz zajęć](/studia/kalendarz-zajec) (także jako [PDF na semestr zimowy 2026/27](/pliki/studia/kolory-dni/2026-27z-oznaczenia.pdf)).
 
 ## Plan zajęć i inne terminy
 

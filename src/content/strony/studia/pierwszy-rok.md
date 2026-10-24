@@ -200,7 +200,7 @@ tresc_en: |
 
   > Failing the same compulsory course twice usually results in removal from the list of students, and repeating a course has to be paid for.
 
-  The Institute does not use the week parity shown in USOS but **day colours**: for classes held every other week, one group meets on orange days and the other on blue days — see [Day colours](/en/studia/rok-akademicki#day-colours).
+  The Institute does not use the week parity shown in USOS but **day colours**: for classes held every other week, one group meets on orange days and the other on blue days — see [Class calendar](/en/studia/kalendarz-zajec).
 
   Advice from the guide:
 
@@ -287,7 +287,7 @@ tresc_en: |
 
   **Does my first-semester level affect my choice of specialisation?** No. The assignment applies only to first-semester courses.
 
-  **What are orange and blue days?** The Institute uses day colours instead of the week parity shown in USOS — see [Day colours](/en/studia/rok-akademicki#day-colours).
+  **What are orange and blue days?** The Institute uses day colours instead of the week parity shown in USOS — see [Class calendar](/en/studia/kalendarz-zajec).
 
   **My test went badly. Can I retake it?** In principle there are no retakes of individual tests — you have to do better in the next one. Some lecturers hold a resit test at the end of the semester; the rules are given at the beginning of the course.
 
@@ -517,7 +517,7 @@ Do **egzaminu** w sesji mogą przystąpić tylko osoby, które zaliczyły ćwicz
 
 > Dwukrotne niezaliczenie tego samego przedmiotu obowiązkowego zazwyczaj skutkuje skreśleniem z listy studentów, a za powtarzanie przedmiotu trzeba zapłacić.
 
-W Instytucie nie obowiązuje parzystość tygodni podawana przez USOS, ale **kolory dni**: w przypadku zajęć odbywających się co drugi tydzień jedna grupa ma zajęcia w dniach pomarańczowych, a druga w niebieskich — zob. [Kolory dni](/studia/rok-akademicki#kolory-dni).
+W Instytucie nie obowiązuje parzystość tygodni podawana przez USOS, ale **kolory dni**: w przypadku zajęć odbywających się co drugi tydzień jedna grupa ma zajęcia w dniach pomarańczowych, a druga w niebieskich — zob. [Kalendarz zajęć](/studia/kalendarz-zajec).
 
 Rady z przewodnika:
 
@@ -604,7 +604,7 @@ Programy: [matematyka (PDF)](/pliki/studia/pierwszy-rok/adapt2026_matematyka.pdf
 
 **Czy poziom z 1. semestru wpływa na wybór specjalności?** Nie. Przydział dotyczy wyłącznie przedmiotów pierwszego semestru.
 
-**Co oznaczają dni pomarańczowe i niebieskie?** W Instytucie zamiast parzystości tygodni z USOS obowiązują kolory dni — zob. [Kolory dni](/studia/rok-akademicki#kolory-dni).
+**Co oznaczają dni pomarańczowe i niebieskie?** W Instytucie zamiast parzystości tygodni z USOS obowiązują kolory dni — zob. [Kalendarz zajęć](/studia/kalendarz-zajec).
 
 **Nie poszło mi kolokwium. Czy mogę je poprawić?** Co do zasady nie poprawia się pojedynczych kolokwiów — następne trzeba napisać lepiej. Niektórzy wykładowcy organizują kolokwium poprawkowe pod koniec semestru; zasady podają na początku zajęć.
 

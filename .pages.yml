@@ -826,6 +826,48 @@ content:
       - { name: opublikowany, label: Widoczny na stronie, type: boolean, default: true }
 
   # ---------------------------------------------------------------- STRONY
+  - name: kolory-dni
+    label: Kalendarz zajęć (kolory dni)
+    description: "Kolory liczą się same: wpisz okres zajęć, dni wolne (dni rektorskie, przerwy) i zamiany dni z zarządzenia o organizacji roku. Święta ustawowe są uwzględniane automatycznie. Podgląd: /studia/kalendarz-zajec (każdy dzień tygodnia powinien wypaść 15 razy)."
+    type: file
+    path: src/data/kolory-dni.json
+    format: json
+    fields:
+      - name: semestry
+        label: Semestry
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: "Nazwa (np. Semestr zimowy 2027/28)", type: string, required: true }
+          - { name: nazwa_en, label: "EN: nazwa", type: string }
+          - { name: poczatek, label: Pierwszy dzień zajęć, type: date, required: true, options: { format: yyyy-MM-dd } }
+          - { name: koniec, label: Ostatni dzień zajęć, type: date, required: true, options: { format: yyyy-MM-dd } }
+          - name: wolne
+            label: "Dni wolne od zajęć (święta ustawowe dodają się same)"
+            type: object
+            list: true
+            fields:
+              - { name: od, label: Od, type: date, options: { format: yyyy-MM-dd } }
+              - { name: do, label: "Do (puste = jeden dzień)", type: date, options: { format: yyyy-MM-dd } }
+              - { name: opis, label: "Opis (np. Przerwa świąteczna)", type: string }
+              - { name: opis_en, label: "EN: opis", type: string }
+          - name: zamiany
+            label: "Zamiany dni (np. w piątek zajęcia środowe)"
+            type: object
+            list: true
+            fields:
+              - { name: data, label: Data, type: date, options: { format: yyyy-MM-dd } }
+              - { name: jak_dzien, label: Zajęcia według planu, type: select, options: { values: [{ name: pon, label: poniedziałku }, { name: wt, label: wtorku }, { name: sr, label: środy }, { name: czw, label: czwartku }, { name: pt, label: piątku }] } }
+          - name: wyjatki
+            label: "Wyjątki: ręczny kolor jednego dnia (normalnie puste)"
+            type: object
+            list: true
+            fields:
+              - { name: data, label: Data, type: date, options: { format: yyyy-MM-dd } }
+              - { name: kolor, label: Kolor, type: select, options: { values: [{ name: niebieski, label: niebieski }, { name: pomaranczowy, label: pomarańczowy }] } }
+          - { name: pdf, label: "Kalendarz PDF (opcjonalnie)", type: file, options: { path: public/pliki/studia/kolory-dni } }
+          - { name: uwagi, label: "Uwaga nad kalendarzem (opcjonalnie)", type: text }
+          - { name: uwagi_en, label: "EN: uwaga", type: text }
   - name: strony
     label: Strony stałe
     description: Adres strony = ścieżka pliku, np. studia/matematyka.md → /studia/matematyka
