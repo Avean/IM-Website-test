@@ -174,16 +174,21 @@ const logo = (ustawienia as any).logo as string | undefined;
     if (!(e.target as Element).closest('.nav-item')) zamknijMenu();
   });
   // Lista pod pozycją menu: wyśrodkowana pod nią, ale nie wychodzi poza ekran (margines 16 px)
-  const dopasujListy = () =>
-    pozycje.forEach((p) => {
-      const lista = p.querySelector<HTMLElement>('.dropdown');
-      if (!lista) return;
-      lista.style.setProperty('--dx', '0px');
-      const r = lista.getBoundingClientRect();
-      const m = 16;
-      const dx = r.left < m ? m - r.left : r.right > window.innerWidth - m ? window.innerWidth - m - r.right : 0;
-      lista.style.setProperty('--dx', `${Math.round(dx)}px`);
-    });
+  const dopasuj = (p: HTMLElement) => {
+    const lista = p.querySelector<HTMLElement>('.dropdown');
+    if (!lista) return;
+    lista.style.setProperty('--dx', '0px');
+    const r = lista.getBoundingClientRect();
+    if (!r.width) return;
+    const m = 16;
+    const dx = r.left < m ? m - r.left : r.right > window.innerWidth - m ? window.innerWidth - m - r.right : 0;
+    lista.style.setProperty('--dx', `${Math.round(dx)}px`);
+  };
+  const dopasujListy = () => pozycje.forEach(dopasuj);
+  pozycje.forEach((p) => {
+    p.addEventListener('pointerenter', () => dopasuj(p));
+    p.addEventListener('focusin', () => dopasuj(p));
+  });
   dopasujListy();
   window.addEventListener('resize', dopasujListy, { passive: true });
   document.fonts?.ready.then(dopasujListy);
