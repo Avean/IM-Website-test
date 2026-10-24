@@ -27,7 +27,7 @@ tresc_en: |
 
   ## Timetables and remote login
 
-  Detailed lab timetables are available on the Institute website — [winter semester](https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php) and [summer semester](https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php) (Polish) — and on the lab doors.
+  Detailed lab timetables are available on the Institute website — [winter semester](/en/studia/plan-zajec#zimowy) and [summer semester](/en/studia/plan-zajec#letni) (Polish) — and on the lab doors.
 
   Since the computers in the labs are not switched off after classes, you can log in to them at any time of day. From outside the network, first log in to the [chaos server](https://www.math.uni.wroc.pl/serwer-dla-studentow-chaos) (Polish) and then to a computer in the lab. Useful IP addresses and host names are listed on the [computer lab equipment](https://www.math.uni.wroc.pl/wyposazenie-laboratorium-komputerowego) page (Polish). See also [Student network and computer labs](/en/instytut/infrastruktura-informatyczna/siec-studencka) (VPN).
 
@@ -58,7 +58,7 @@ W okresie wakacji poszczególne laboratoria mogą być czasowo niedostępne z po
 
 ## Plany zajęć i zdalne logowanie
 
-Szczegółowe plany zajęć można znaleźć na stronie Instytutu — [semestr zimowy](https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php) i [semestr letni](https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php) — oraz na drzwiach laboratoriów.
+Szczegółowe plany zajęć można znaleźć na stronie Instytutu — [semestr zimowy](/studia/plan-zajec#zimowy) i [semestr letni](/studia/plan-zajec#letni) — oraz na drzwiach laboratoriów.
 
 Ponieważ komputery w laboratoriach nie są wyłączane po zajęciach, można się do nich logować przez całą dobę. Spoza sieci należy najpierw zalogować się na [serwerze chaos](https://www.math.uni.wroc.pl/serwer-dla-studentow-chaos), a następnie na komputerze w laboratorium. Przydatne adresy IP i nazwy komputerów znajdują się na stronie [Wyposażenie pracowni komputerowych](https://www.math.uni.wroc.pl/wyposazenie-laboratorium-komputerowego). Zobacz też: [Sieć studencka i laboratoria komputerowe](/instytut/infrastruktura-informatyczna/siec-studencka) (VPN).
 

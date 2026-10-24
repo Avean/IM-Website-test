@@ -89,7 +89,7 @@ const pdfy = [...biezace, ...minione].filter((s) => s.pdf);
       <div class="side-box">
         <h2>{T('Zobacz też', 'See also')}</h2>
         <ul class="kd-pliki">
-          <li><a href="https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php"><Ikona nazwa="kalendarz" rozmiar={18} /><span>{T('Plan zajęć', 'Timetable')}</span></a></li>
+          <li><a href={href('/studia/plan-zajec')}><Ikona nazwa="kalendarz" rozmiar={18} /><span>{T('Plan zajęć', 'Timetable')}</span></a></li>
           <li><a href={href('/studia/rok-akademicki')}><Ikona nazwa="flaga" rozmiar={18} /><span>{T('Rok akademicki — terminy', 'Academic year — key dates')}</span></a></li>
         </ul>
       </div>

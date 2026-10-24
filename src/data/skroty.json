@@ -1,6 +1,6 @@
 {
   "kafelki": [
-    { "etykieta": "Plan zajęć", "etykieta_en": "Timetable", "adres": "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php", "ikona": "kalendarz" },
+    { "etykieta": "Plan zajęć", "etykieta_en": "Timetable", "adres": "/studia/plan-zajec", "ikona": "kalendarz" },
     { "etykieta": "Kalendarz zajęć", "etykieta_en": "Class calendar", "adres": "/studia/kalendarz-zajec", "ikona": "kalendarz" },
     { "etykieta": "Pracownicy", "etykieta_en": "Staff", "adres": "/pracownicy", "ikona": "ludzie" },
     { "etykieta": "Seminaria", "etykieta_en": "Seminars", "adres": "/seminaria", "ikona": "tablica" },

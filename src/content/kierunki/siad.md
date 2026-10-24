@@ -31,7 +31,7 @@ przyciski:
   adres: https://studia-wmi.uwr.edu.pl/siad/
 - etykieta: Plan zajęć
   etykieta_en: Timetable
-  adres: https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php
+  adres: /studia/plan-zajec#zimowy
 - etykieta: Program studiów
   etykieta_en: Curriculum
   adres: https://bip.uni.wroc.pl/download/attachment/47701/uchwala-nr-8_2025-senatu-uwr-z-2025-02-26-w-sprawie-programu-studiow-dla-kierunku-sztuczna-inteligencja-w-analizie-danych-studia-stacjonarne-i-stopnia.pdf
@@ -139,8 +139,8 @@ faq:
   odpowiedz_en: According to the curriculum, in the 6th semester you complete a team project and take the diploma exam. Graduates are awarded the licencjat (bachelor's) degree.
 - pytanie: Gdzie znajdę plan zajęć?
   pytanie_en: Where can I find the timetable?
-  odpowiedz: Zajęcia kierunku są w [planie zajęć Instytutu Matematycznego](https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php) (grupy oznaczone „tylko dla SIAD”). Zasady rejestracji i formularze — na stronie [Zajęcia i konsultacje](/studia/zajecia).
-  odpowiedz_en: Classes are listed in the [Mathematical Institute timetable](https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php) (groups marked “tylko dla SIAD”). Registration rules and forms are on the [Classes and office hours](/en/studia/zajecia) page.
+  odpowiedz: Zajęcia kierunku są w [planie zajęć Instytutu Matematycznego](/studia/plan-zajec#zimowy) (grupy oznaczone „tylko dla SIAD”). Zasady rejestracji i formularze — na stronie [Zajęcia i konsultacje](/studia/zajecia).
+  odpowiedz_en: Classes are listed in the [Mathematical Institute timetable](/en/studia/plan-zajec#zimowy) (groups marked “tylko dla SIAD”). Registration rules and forms are on the [Classes and office hours](/en/studia/zajecia) page.
 - pytanie: Gdzie szukać pomocy na pierwszym roku?
   pytanie_en: Where can I get help in my first year?
   odpowiedz: U opiekuna I roku oraz na stronie [Pierwszy rok](/studia/pierwszy-rok), gdzie jest m.in. plan Dnia Adaptacyjnego dla kierunku.

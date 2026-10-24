@@ -11,7 +11,7 @@ tresc_en: |
   > The **health and safety (BHP) training** must be completed by **31 October 2026**. It is an online course; the details were sent to you by e-mail.
 
   - [Guide for new mathematics students (PDF, Polish)](/pliki/studia/pierwszy-rok/poradnik_26_27.pdf) — required reading, please read it carefully.
-  - [First-semester timetable for mathematics — corrected version of 9 October 2026 (PDF)](/pliki/studia/pierwszy-rok/plan_26_27z_popr3.pdf). If in doubt, the most up-to-date (though less convenient) version is the [winter-semester timetable](https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php).
+  - [First-semester timetable for mathematics — corrected version of 9 October 2026 (PDF)](/pliki/studia/pierwszy-rok/plan_26_27z_popr3.pdf). If in doubt, the most up-to-date (though less convenient) version is the [winter-semester timetable](/en/studia/plan-zajec#zimowy).
   - The [tutoring room](/en/aktualnosci/2026-10-17-rusza-tutornia) has been open in room 202 since 19 October — the tutors' schedule is attached to the announcement.
   - The [winter exam timetable](#first-year-exams) is available.
   - Accounts in the University systems (USOSweb and Office 365) have been created for you, and the login details were sent to the e-mail address you gave during admission. Please activate these accounts.
@@ -328,7 +328,7 @@ Przewodnik dla osób zaczynających studia licencjackie w Instytucie Matematyczn
 > **Szkolenie BHP** trzeba zaliczyć do **31 października 2026 r.** Szkolenie odbywa się przez internet; szczegóły otrzymali Państwo mailem.
 
 - [Przewodnik dla nowo przyjętych studentów matematyki (PDF)](/pliki/studia/pierwszy-rok/poradnik_26_27.pdf) — lektura obowiązkowa, proszę czytać uważnie.
-- [Plan zajęć 1. semestru na kierunku matematyka — wersja poprawiona z 9 października 2026 r. (PDF)](/pliki/studia/pierwszy-rok/plan_26_27z_popr3.pdf). W razie wątpliwości najbardziej aktualna, choć mniej wygodna, jest [ta wersja planu](https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php).
+- [Plan zajęć 1. semestru na kierunku matematyka — wersja poprawiona z 9 października 2026 r. (PDF)](/pliki/studia/pierwszy-rok/plan_26_27z_popr3.pdf). W razie wątpliwości najbardziej aktualna, choć mniej wygodna, jest [ta wersja planu](/studia/plan-zajec#zimowy).
 - Od 19 października w sali 202 działa [tutornia](/aktualnosci/2026-10-17-rusza-tutornia) — plan dyżurów tutorów jest w załączniku do ogłoszenia.
 - Dostępny jest [harmonogram egzaminów sesji zimowej](#egzaminy-pierwszego-roku).
 - Zostały dla Państwa utworzone konta w systemach UWr (USOSweb i Office 365), a dane dostępowe wysłano na adres e-mail podany podczas rekrutacji. Proszę aktywować te konta.

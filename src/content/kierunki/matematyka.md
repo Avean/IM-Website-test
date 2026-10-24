@@ -31,7 +31,7 @@ przyciski:
   adres: https://studia-wmi.uwr.edu.pl/
 - etykieta: Plan zajęć
   etykieta_en: Timetable
-  adres: https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php
+  adres: /studia/plan-zajec#zimowy
 - etykieta: Katalog przedmiotów
   etykieta_en: Course catalogue
   adres: https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT

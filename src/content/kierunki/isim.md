@@ -325,7 +325,7 @@ tresc_en: |-
 
   | | Mathematical Institute | Institute of Computer Science |
   |---|---|---|
-  | Timetable | [winter](https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php) and [summer](https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php) semester | [Registration system](https://zapisy.ii.uni.wroc.pl/courses/) (also lists ISIM mathematics classes) |
+  | Timetable | [winter](/en/studia/plan-zajec#zimowy) and [summer](/en/studia/plan-zajec#letni) semester | [Registration system](https://zapisy.ii.uni.wroc.pl/courses/) (also lists ISIM mathematics classes) |
   | Course descriptions | [USOSweb catalogue](https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT) | [Registration system](https://zapisy.ii.uni.wroc.pl/courses/) |
   | Registration for classes | USOSweb — schedule and rules: [Classes and office hours](/en/studia/zajecia) | [Registration system](https://zapisy.ii.uni.wroc.pl/), rules on the [page for new students](https://ii.uni.wroc.pl/dla-studenta/dla-nowych-studentow) |
   | Office hours | [Classes and office hours](/en/studia/zajecia) | [staff profiles](https://zapisy.ii.uni.wroc.pl/users/employees/) |
@@ -384,7 +384,7 @@ Wybór przedmiotów uzgadniasz z tutorem. Co semestr, w ciągu trzech tygodni od
 
 | | Instytut Matematyczny | Instytut Informatyki |
 |---|---|---|
-| Plan zajęć | semestr [zimowy](https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php) i [letni](https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php) | [System Zapisów](https://zapisy.ii.uni.wroc.pl/courses/) (zawiera też zajęcia matematyczne ISIM) |
+| Plan zajęć | semestr [zimowy](/studia/plan-zajec#zimowy) i [letni](/studia/plan-zajec#letni) | [System Zapisów](https://zapisy.ii.uni.wroc.pl/courses/) (zawiera też zajęcia matematyczne ISIM) |
 | Opisy przedmiotów | [katalog w USOSweb](https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT) | [System Zapisów](https://zapisy.ii.uni.wroc.pl/courses/) |
 | Zapisy na zajęcia | USOSweb — harmonogram i zasady: [Zajęcia i konsultacje](/studia/zajecia) | [System Zapisów](https://zapisy.ii.uni.wroc.pl/), zasady na [stronie dla nowych studentów](https://ii.uni.wroc.pl/dla-studenta/dla-nowych-studentow) |
 | Konsultacje | [Zajęcia i konsultacje](/studia/zajecia) | [profile pracowników](https://zapisy.ii.uni.wroc.pl/users/employees/) |

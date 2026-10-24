@@ -53,7 +53,7 @@ tresc_en: |
 
   ## Timetable and other dates
 
-  - Timetable: [winter semester 2026/27](https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php), [summer semester 2026/27](https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php) (working versions).
+  - Timetable: [winter semester 2026/27](/en/studia/plan-zajec#zimowy), [summer semester 2026/27](/en/studia/plan-zajec#letni) (working versions).
   - Exam session schedules, office hours and course registration: [Classes and office hours](/en/studia/zajecia).
   - Declarations, deadlines and forms for mathematics students: [Deadlines and forms](/en/studia/matematyka#terminy).
   - Diploma examinations: [Exams and diploma](/en/studia/egzaminy-i-dyplom).
@@ -115,7 +115,7 @@ W naszym Instytucie nie obowiązuje parzystość tygodni podawana w USOS, tylko 
 
 ## Plan zajęć i inne terminy
 
-- Plan zajęć: [semestr zimowy 2026/27](https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php), [semestr letni 2026/27](https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php) (wersje robocze).
+- Plan zajęć: [semestr zimowy 2026/27](/studia/plan-zajec#zimowy), [semestr letni 2026/27](/studia/plan-zajec#letni) (wersje robocze).
 - Harmonogramy egzaminów w sesji, konsultacje i rejestracja na zajęcia: [Zajęcia i konsultacje](/studia/zajecia).
 - Deklaracje, terminy i formularze dla studentów matematyki: [Terminy i formularze](/studia/matematyka#terminy).
 - Egzaminy dyplomowe: [Egzaminy i dyplom](/studia/egzaminy-i-dyplom).

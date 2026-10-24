@@ -91,6 +91,20 @@ Na stronie każdego seminarium jest formularz „Powiadomienia e-mail”. Zapisa
 
 Po zmianie kodu skryptu: **Wdróż → Zarządzaj wdrożeniami → Edytuj → Nowa wersja** (adres `/exec` się nie zmienia). Po przeniesieniu strony na domenę UWr zmień `KANAL` w `KONFIG`.
 
+## Plan zajęć (automatycznie z USOS)
+
+Strona `/studia/plan-zajec` ma układ dawnego planZ.php / planL.php: alfabetyczna lista przedmiotów w tych samych sekcjach, oba semestry (kotwice `#zimowy`, `#letni`).
+
+- Dane: `src/data/plan/plan.json` — **nie edytuje się ich ręcznie**.
+- Workflow „Plan zajęć z USOS” (`.github/workflows/plan-zajec.yml`) uruchamia `skrypty/plan/pobierz_plan.py` 3 razy dziennie (1:47, 9:37, 15:47 UTC) albo ręcznie (Actions → Run workflow). Gdy plan się zmienił, commituje plik i zleca przebudowę strony.
+- Źródło: publiczny eksport USOSweb `https://usosweb.uwr.edu.pl/planIM.php?cdyd_kod=<semestr>` (ten sam, z którego korzystał stary plan); zapasowo anonimowe USOS API (bez uwag). Semestry ustalają się same. Przy przerwie technicznej USOS zostają poprzednie dane.
+- Bez klucza USOS API. Warto poprosić zespół USOS UWr o utrzymanie eksportu `planIM.php` po wyłączeniu starej strony.
+- Jeśli gałąź main dostanie ochronę, trzeba dopuścić commity GitHub Actions.
+
+## Kalendarz zajęć (kolory dni)
+
+Strona `/studia/kalendarz-zajec` i kafelek na stronie głównej liczą kolory dni same (reguła sprawdzona na PDF-ach z lat 2021–2027). W CMS: **Kalendarz zajęć (kolory dni)** → semestr → okres zajęć, dni wolne i zamiany dni z zarządzenia o organizacji roku; święta ustawowe dodają się same. Kontrola: na stronie każdy dzień tygodnia powinien wypaść 15 razy.
+
 ## Repozytoria seminariów (plan)
 
 Każde seminarium może mieć osobne repozytorium z własnym Pages CMS. Po zmianie w takim repozytorium jego workflow wysyła do tego repozytorium zdarzenie `repository_dispatch` typu `seminaria`, które uruchamia przebudowę strony:
