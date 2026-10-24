@@ -32,8 +32,8 @@ const dzial = ((await menuGlowne()) as any[]).find((m) => (m.grupy ?? []).some((
 const linkiDzialu: Link[] = dzial ? dzial.grupy.flatMap((g: any) => g.linki) : [];
 const rodzic = linkiDzialu.filter((l) => !isExternal(l.adres) && adres.startsWith(l.adres + '/')).sort((x, y) => y.adres.length - x.adres.length)[0];
 const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
-// Prawy pasek: w Studiach i Nauce domyślnie bez menu działu (tylko spis), gdzie indziej oba; pole „Prawy pasek” w CMS zmienia to dla strony.
-const pasek = d.pasek_boczny ?? (['/studia', '/nauka'].includes(dzial?.adres) ? 'spis' : 'oba');
+// Prawy pasek: domyślnie tylko spis „Na tej stronie”, bez menu działu (decyzja właściciela); pole „Prawy pasek” w CMS może to zmienić dla strony.
+const pasek = d.pasek_boczny ?? 'spis';
 ---
 <Baza tytul={tytul} opis={opis} opublikowany={d.opublikowany}>
   <NaglowekStrony tytul={tytul} lead={opis} lang={lang} okruszki={[...(dzial ? [{ etykieta: wybierz(dzial, 'etykieta', lang), adres: dzial.adres }] : []), ...(rodzic ? [{ etykieta: wybierz(rodzic, 'etykieta', lang), adres: rodzic.adres }] : []), { etykieta: tytul }]} />

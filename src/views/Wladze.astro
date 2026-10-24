@@ -10,7 +10,6 @@ import { u, isExternal } from '../lib/url';
 import { wJezyku, wybierz } from '../lib/i18n';
 import { zTytulem } from '../lib/osoby';
 import { renderMarkdown } from '../lib/markdown';
-import { menuGlowne } from '../lib/menu';
 import { pracownicy, zaklady, type Pracownik } from '../lib/tresci';
 import type { Lang } from '../lib/daty';
 import wladze from '../data/wladze.json';
@@ -100,11 +99,6 @@ const kadencjaHtml = await renderMarkdown(w(d, 'kadencja') || undefined);
 const radaHtml = await renderMarkdown(w(d.rada, 'opis') || undefined);
 const linki = (d.linki ?? []).filter((l) => l && l.adres && l.etykieta);
 
-// Boczne menu działu „Instytut” (jak na pozostałych stronach działu)
-const adres = '/instytut/wladze';
-type LinkMenu = { etykieta: string; etykieta_en?: string; adres: string };
-const dzial = ((await menuGlowne()) as any[]).find((m) => (m.grupy ?? []).some((g: any) => g.linki.some((l: LinkMenu) => l.adres === adres)));
-const linkiDzialu: LinkMenu[] = dzial ? dzial.grupy.flatMap((g: any) => g.linki) : [];
 ---
 <Baza tytul={tytul} opis={lead || undefined} obraz={dyrektor?.zdjecie || undefined}>
   <NaglowekStrony tytul={tytul} lead={lead || undefined} lang={lang} wstecz={{ etykieta: T('Instytut', 'Institute'), adres: '/instytut' }} />
@@ -263,20 +257,6 @@ const linkiDzialu: LinkMenu[] = dzial ? dzial.grupy.flatMap((g: any) => g.linki)
       )}
     </div>
 
-    <aside class="side" data-pagefind-ignore>
-      {linkiDzialu.length > 0 && (
-        <nav class="side-box side-nav" aria-label={w(dzial, 'etykieta')}>
-          <h2>{w(dzial, 'etykieta')}</h2>
-          <div style="display:flex;flex-direction:column">
-            {linkiDzialu.map((l) => (
-              <a href={href(l.adres)} aria-current={l.adres === adres ? 'page' : undefined}>
-                {w(l, 'etykieta')}{isExternal(l.adres) && <Ikona nazwa="zewnetrzny" rozmiar={13} />}
-              </a>
-            ))}
-          </div>
-        </nav>
-      )}
-    </aside>
   </div>
 </Baza>
 
