@@ -6,8 +6,14 @@ import rehypeBase from '../plugins/rehype-base.mjs';
 
 let processor: Awaited<ReturnType<typeof createMarkdownProcessor>> | undefined;
 
+export interface Naglowek { depth: number; slug: string; text: string }
+
 export async function renderMarkdown(src: string | undefined): Promise<string> {
-  if (!src) return '';
+  return (await renderMarkdownZNaglowkami(src)).html;
+}
+
+export async function renderMarkdownZNaglowkami(src: string | undefined): Promise<{ html: string; naglowki: Naglowek[] }> {
+  if (!src) return { html: '', naglowki: [] };
   if (!processor) {
     processor = await createMarkdownProcessor({
       remarkPlugins: [remarkMath],
@@ -15,5 +21,5 @@ export async function renderMarkdown(src: string | undefined): Promise<string> {
     } as any);
   }
   const result = await processor.render(src);
-  return result.code;
+  return { html: result.code, naglowki: ((result.metadata as any)?.headings ?? []) as Naglowek[] };
 }
