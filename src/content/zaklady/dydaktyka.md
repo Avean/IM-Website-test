@@ -5,7 +5,6 @@ nazwa_krotka: "Dydaktyka i popularyzacja"
 nazwa_krotka_en: "Education and outreach"
 nazwa_en: "Mathematics Education and Outreach Unit"
 kierownik: "Małgorzata Mikołajczyk"
-telefon: "71 375 7416"
 obszary:
   - "dydaktyka matematyki"
   - "popularyzacja"

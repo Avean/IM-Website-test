@@ -143,7 +143,6 @@ kontakt:
   rola_en: Programme coordinator
   osoba: dr hab. Michał Marcinkowski
   email: Michal.Marcinkowski@math.uni.wroc.pl
-  telefon: 71 375 7450
   pokoj: '713'
 - rola: Opiekun I roku
   rola_en: First-year coordinator
@@ -163,7 +162,6 @@ kontakt:
   rola_en: Deputy Director for Teaching
   osoba: dr Tomasz Elsner
   email: Tomasz.Elsner@math.uni.wroc.pl
-  telefon: 71 375 7417
   pokoj: '305'
 akty:
 - nazwa: Regulamin studiów

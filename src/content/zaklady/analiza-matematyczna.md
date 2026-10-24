@@ -5,7 +5,6 @@ nazwa_krotka: "Analiza matematyczna"
 nazwa_krotka_en: "Mathematical analysis"
 nazwa_en: "Department of Mathematical Analysis"
 kierownik: "Ryszard Szwarc"
-telefon: "71 375 7498"
 obszary:
   - "wielomiany ortogonalne"
   - "nieprzemienna probabilistyka"

@@ -5,7 +5,6 @@ nazwa_krotka: "Geometria"
 nazwa_krotka_en: "Geometry"
 nazwa_en: "Department of Geometry"
 kierownik: "Jacek Świątkowski"
-telefon: "71 375 7491"
 obszary:
   - "geometryczna teoria grup"
   - "topologia"

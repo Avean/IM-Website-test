@@ -365,7 +365,6 @@ kontakt:
   rola_en: Deputy Director for Teaching
   osoba: dr Tomasz Elsner
   email: Tomasz.Elsner@math.uni.wroc.pl
-  telefon: 71 375 7417
   pokoj: '305'
 - rola: Opiekun I roku
   rola_en: First-year coordinator

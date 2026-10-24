@@ -818,7 +818,7 @@ content:
             - { name: dydaktyka, label: Pracownia Dydaktyki i Popularyzacji Matematyki }
       - { name: rok_studiow, label: Rok studiów doktoranckich, type: number }
       - { name: email, label: E-mail, type: string }
-      - { name: telefon, label: "Telefon (np. 71 375 7401)", type: string }
+      - { name: telefon, label: "Telefon (tylko administracja — u pracowników naukowych nie podajemy)", type: string }
       - { name: pokoj, label: Pokój, type: string }
       - { name: strona, label: Strona domowa, type: string }
       - { name: opublikowany, label: Widoczny na stronie, type: boolean, default: true }

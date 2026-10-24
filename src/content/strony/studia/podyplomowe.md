@@ -65,7 +65,7 @@ tresc_en: |
 
   ## Contact
 
-  **Programme director:** Dr hab. Ziemowit Rzeszotnik, phone +48 71 375 74 21, [ziemowit.rzeszotnik@uwr.edu.pl](mailto:ziemowit.rzeszotnik@uwr.edu.pl)
+  **Programme director:** Dr hab. Ziemowit Rzeszotnik, [ziemowit.rzeszotnik@uwr.edu.pl](mailto:ziemowit.rzeszotnik@uwr.edu.pl)
 
   **Contact:** Mathematical Institute, University of Wrocław, pl. Grunwaldzki 2, 50-384 Wrocław, phone +48 71 375 74 94, [ewa.lamch@uwr.edu.pl](mailto:ewa.lamch@uwr.edu.pl)
 opublikowany: true
@@ -132,6 +132,6 @@ Dokumenty można złożyć drogą pocztową lub osobiście w Instytucie Matematy
 
 ## Kontakt
 
-**Kierownik studiów:** dr hab. Ziemowit Rzeszotnik, tel. +48 71 375 74 21, [ziemowit.rzeszotnik@uwr.edu.pl](mailto:ziemowit.rzeszotnik@uwr.edu.pl)
+**Kierownik studiów:** dr hab. Ziemowit Rzeszotnik, [ziemowit.rzeszotnik@uwr.edu.pl](mailto:ziemowit.rzeszotnik@uwr.edu.pl)
 
 **Kontakt:** Instytut Matematyczny UWr, pl. Grunwaldzki 2, 50-384 Wrocław, tel. +48 71 375 74 94, [ewa.lamch@uwr.edu.pl](mailto:ewa.lamch@uwr.edu.pl)

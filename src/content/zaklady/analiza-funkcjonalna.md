@@ -5,7 +5,6 @@ nazwa_krotka: "Analiza funkcjonalna"
 nazwa_krotka_en: "Functional analysis"
 nazwa_en: "Department of Functional Analysis"
 kierownik: "Ewa Damek"
-telefon: "71 375 7457"
 obszary:
   - "analiza harmoniczna"
   - "grupy Liego"

@@ -21,7 +21,7 @@ tresc_en: |
 
   The list of office hours at the Mathematical Institute is published for each semester, separately for staff and for PhD students (office hours and room numbers). The list for the winter semester 2026/27 will be posted here.
 
-  Contact details of staff and PhD students (e-mail, room, phone) are available in the [staff directory](/en/pracownicy).
+  Contact details of staff and PhD students (e-mail, room) are available in the [staff directory](/en/pracownicy).
 
   ## Course registration
 
@@ -87,7 +87,7 @@ opublikowany: true
 
 Wykaz konsultacji w Instytucie Matematycznym publikujemy na każdy semestr — osobno dla pracowników i dla doktorantów (godziny konsultacji i numery pokojów). Wykaz na semestr zimowy 2026/27 zamieścimy w tym miejscu.
 
-Dane kontaktowe pracowników i doktorantów (e-mail, pokój, telefon) są dostępne w [spisie pracowników](/pracownicy).
+Dane kontaktowe pracowników i doktorantów (e-mail, pokój) są dostępne w [spisie pracowników](/pracownicy).
 
 ## Rejestracja na zajęcia
 

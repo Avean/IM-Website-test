@@ -5,7 +5,6 @@ nazwa_krotka: "Statystyka"
 nazwa_krotka_en: "Statistics"
 nazwa_en: "Department of Statistics"
 kierownik: "Małgorzata Bogdan"
-telefon: "71 375 7466"
 obszary:
   - "statystyka wysokowymiarowa"
   - "selekcja zmiennych"

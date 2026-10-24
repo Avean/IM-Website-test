@@ -5,7 +5,6 @@ nazwa_krotka: "Teoria prawdopodobieństwa"
 nazwa_krotka_en: "Probability theory"
 nazwa_en: "Department of Probability Theory"
 kierownik: "Krzysztof Dębicki"
-telefon: "71 375 7425"
 obszary:
   - "procesy stochastyczne"
   - "procesy gaussowskie"
