@@ -39,17 +39,5 @@ const lead = lang === 'en'
     ))}
     <p class="muted">{t(lang, 'archiwumObron')} <a href={`${ustawienia.archiwum}postepowania-w-sprawie-nadania-stopnia-doktora-w-instytucie-matematycznym`}>{t(lang, 'archiwum')}</a>.</p>
     </div>
-    <aside class="side" data-pagefind-ignore>
-      <div class="side-box">
-        <h2>{t(lang, 'subskrypcja')}</h2>
-        <p style="margin:0;font-size:15px">{lang === 'en' ? 'Defences are included in the calendar of events.' : 'Obrony trafiają do kalendarza wydarzeń Instytutu.'}</p>
-        <a class="link-arrow" href={u(wJezyku('/kalendarz#subskrypcja', lang))}><Ikona nazwa="kalendarz" rozmiar={16} />{t(lang, 'subskrybuj')}</a>
-      </div>
-      <div class="side-box">
-        <h2>{lang === 'en' ? 'See also' : 'Zobacz też'}</h2>
-        <a class="link-arrow" href={u(wJezyku('/studia/szkola-doktorska', lang))}>{lang === 'en' ? 'Doctoral school' : 'Szkoła doktorska'}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-        <a class="link-arrow" href="https://bip.uni.wroc.pl/1436/237/sklad-rady-dyscypliny-naukowej-matematyka.html">{lang === 'en' ? 'Mathematics Discipline Council' : 'Rada Dyscypliny Matematyka'}<Ikona nazwa="zewnetrzny" rozmiar={14} /></a>
-      </div>
-    </aside>
   </div>
 </Baza>

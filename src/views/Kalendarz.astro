@@ -1,5 +1,5 @@
 ---
-// Kalendarz: nadchodzące wydarzenia, obrony i referaty + subskrypcja kanałów .ics.
+// Kalendarz: nadchodzące wydarzenia, obrony i referaty (subskrypcja kanałów .ics zdjęta ze strony — decyzja właściciela; pliki .ics nadal się generują).
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
 import Ikona from '../components/Ikona.astro';
@@ -40,7 +40,6 @@ const lead = lang === 'en'
         <button type="button" class="chip" aria-pressed="false" data-rodzaj="konferencja">{RODZAJE.konferencja[lang]}</button>
         <button type="button" class="chip" aria-pressed="false" data-rodzaj="referat">{t(lang, 'seminaria')}</button>
       </div>
-      <a class="link-arrow" href="#subskrypcja"><Ikona nazwa="kalendarz" rozmiar={16} />{t(lang, 'subskrybuj')}</a>
     </div>
   </NaglowekStrony>
 
@@ -71,21 +70,6 @@ const lead = lang === 'en'
       ))}
     </div>
 
-    <aside class="side" id="subskrypcja" data-pagefind-ignore>
-      <div class="side-box">
-        <h2>{t(lang, 'subskrypcja')}</h2>
-        <p style="margin:0;font-size:15px">{t(lang, 'jakSubskrybowac')}</p>
-        {kanaly.map((k) => (
-          <div style="display:flex;flex-direction:column;gap:6px;padding-top:12px;border-top:1px solid var(--line)">
-            <strong style="font-size:15px;color:var(--ink)">{k.nazwa}</strong>
-            <div style="display:flex;flex-wrap:wrap;gap:6px">
-              <button type="button" class="btn btn-small" data-kopiuj={absolute(adresIcs(k.plik), Astro.site)} data-ok={t(lang, 'skopiowano')}><Ikona nazwa="link" rozmiar={15} /><span>{t(lang, 'kopiuj')}</span></button>
-              <a class="btn btn-small" href={webcal(k.plik)}>Apple / Outlook</a>
-            </div>
-          </div>
-        ))}
-      </div>
-    </aside>
   </div>
 </Baza>
 

@@ -31,7 +31,6 @@ const lead = lang === 'en'
     <section aria-labelledby="h-tydzien">
       <div class="section-head" style="margin-bottom:14px">
         <h2 id="h-tydzien" style="font-size:24px">{t(lang, tydzien.przyszly ? 'seminariaPrzyszly' : 'seminariaTydzien')}</h2>
-        <a class="link-arrow" href={u(wJezyku('/kalendarz#subskrypcja', lang))}><Ikona nazwa="kalendarz" rozmiar={16} />{t(lang, 'subskrybuj')}</a>
       </div>
       <div style="border:1px solid var(--line);border-radius:var(--radius);overflow:hidden">
         <TabelaReferatow wiersze={wTygodniu} lang={lang} etykieta={t(lang, 'seminariaTydzien')} pusty={t(lang, tydzien.przyszly ? 'brakReferatowPrzyszly' : 'brakReferatow')} />
