@@ -955,6 +955,7 @@ content:
               - { name: kadr, label: "Kadrowanie (np. center 55%)", type: string }
           - { name: logo, label: Logo w nagłówku (opcjonalnie), type: image, options: { path: public/pliki } }
           - { name: tlo_strony, label: "Tło strony: delikatne fale zamiast białego (tryb jasny)", type: boolean, default: false }
+          - { name: wydarzenia_dni_robocze, label: "Wydarzenia na stronie głównej: ile dni roboczych przed początkiem się pojawiają (sekcja znika, gdy nic nie ma)", type: number, default: 5 }
           - { name: wstep, label: Tekst pod nazwą Instytutu, type: text }
           - { name: wstep_en, label: "EN: tekst pod nazwą", type: text }
           - name: przyciski

@@ -43,8 +43,6 @@ const naglowek = lang === 'en' ? 'Conferences' : 'Konferencje';
       {d.zdjecie && <figure class="article-figure"><img src={u(d.zdjecie)} alt="" /></figure>}
       <div class="prose"><Content /></div>
     </div>
-    <aside class="side" data-pagefind-ignore>
-      <a class="link-arrow" href={u(wJezyku('/nauka/konferencje', lang))}><Ikona nazwa="wstecz" rozmiar={16} />{lang === 'en' ? 'All conferences' : 'Wszystkie konferencje'}</a>
-    </aside>
+    <div class="side" aria-hidden="true"></div>
   </div>
 </Baza>

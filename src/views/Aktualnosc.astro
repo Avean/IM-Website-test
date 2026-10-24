@@ -144,7 +144,6 @@ const adres = absolute(wJezyku(`/aktualnosci/${slug}`, lang), Astro.site);
         <h2>{t(lang, 'najblizsze')}</h2>
         {najblizsze.length ? najblizsze.map((w) => <KartaWydarzenia w={w} lang={lang} maly />) : <p class="muted" style="margin:0">{t(lang, 'brakWydarzen')}</p>}
       </div>
-      <a class="link-arrow" href={u(wJezyku('/aktualnosci', lang))}><Ikona nazwa="wstecz" rozmiar={16} />{t(lang, 'wszystkieAktualnosci')}</a>
     </aside>
   </div>
 </Baza>

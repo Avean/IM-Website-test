@@ -13,7 +13,7 @@ import { u, isExternal } from '../lib/url';
 import { t, wJezyku, wybierz } from '../lib/i18n';
 import { range, type Lang } from '../lib/daty';
 import { listaKierunkow } from '../lib/menu';
-import { najblizszeWydarzenia, aktualnosciNaGlowna, wyroznionaAktualnosc, referatyWTygodniu, tydzienSeminariow } from '../lib/tresci';
+import { wydarzeniaNaGlowna, aktualnosciNaGlowna, wyroznionaAktualnosc, referatyWTygodniu, tydzienSeminariow } from '../lib/tresci';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -21,7 +21,9 @@ const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
 // Kafelek „Na skróty” z tym adresem pokazuje dzisiejszy kolor dnia (KafelekKoloryDni).
 const KOLORY_DNI = '/studia/kalendarz-zajec';
 
-const wydarzenia = await najblizszeWydarzenia(3, lang);
+// Wydarzenia tylko, gdy są blisko (domyślnie 5 dni roboczych przed początkiem) — inaczej sekcji nie ma.
+const dniWydarzen = Number((ustawienia as any).wydarzenia_dni_robocze ?? 5) || 5;
+const wydarzenia = await wydarzeniaNaGlowna(3, lang, dniWydarzen);
 const wyrozniona = await wyroznionaAktualnosc(lang);
 const lista = await aktualnosciNaGlowna(6, lang, wydarzenia.map((w) => w.href));
 // Pierwsza aktualność ze zdjęciem zajmuje dwie kolumny — wtedy pokazujemy o jedną mniej.
@@ -93,6 +95,20 @@ const kafelki = [
     </div>
   </section>
 
+  {wydarzenia.length > 0 && (
+    <section class="section wydarzenia-pas" aria-labelledby="h2-wyd" data-wydarzenia>
+      <div class="wrap">
+        <div class="section-head">
+          <h2 id="h2-wyd">{t(lang, 'najblizsze')}</h2>
+          <a class="link-arrow" href={href('/kalendarz')}>{t(lang, 'kalendarz')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
+        </div>
+        <div class="event-grid">
+          {wydarzenia.map((w) => <KartaWydarzenia w={w} lang={lang} />)}
+        </div>
+      </div>
+    </section>
+  )}
+
   <section class="section" aria-labelledby="h2-akt">
     <div class="wrap">
       <div class="section-head">
@@ -105,24 +121,12 @@ const kafelki = [
     </div>
   </section>
 
-  <section class="section section-alt" aria-labelledby="h2-wyd">
+  <section class="section section-alt" aria-labelledby="h3-sem">
     <div class="wrap">
-      <div class="section-head">
-        <h2 id="h2-wyd">{t(lang, 'najblizsze')}</h2>
-        <a class="link-arrow" href={href('/kalendarz')}>{t(lang, 'kalendarz')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-      </div>
-      {wydarzenia.length > 0 ? (
-        <div class="event-grid">
-          {wydarzenia.map((w) => <KartaWydarzenia w={w} lang={lang} />)}
-        </div>
-      ) : (
-        <p class="muted" style="margin:0">{t(lang, 'brakWydarzen')}</p>
-      )}
-
-      <div class="sem-week">
+      <div class="sem-week sem-week-sam">
         <div class="section-head" style="margin-bottom:14px">
           <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px">
-            <h3>{t(lang, tydzien.przyszly ? 'seminariaPrzyszly' : 'seminariaTydzien')}</h3>
+            <h2 id="h3-sem" class="sem-week-h">{t(lang, tydzien.przyszly ? 'seminariaPrzyszly' : 'seminariaTydzien')}</h2>
             <span class="muted" style="font-size:14px;font-weight:600">{range(tydzien.od, tydzien.do, lang)}</span>
           </div>
           <div style="display:flex;flex-wrap:wrap;gap:0 20px">
@@ -163,3 +167,19 @@ const kafelki = [
 
   <WartoWiedziec lang={lang} uklad="glowna" limit={4} />
 </Baza>
+
+<script>
+  // Strona przebudowuje się 2× dziennie — wydarzenia, które już się skończyły, chowamy od razu w przeglądarce.
+  import { now, today, hasTime } from '../lib/daty';
+  const sekcja = document.querySelector<HTMLElement>('[data-wydarzenia]');
+  if (sekcja) {
+    const n = now();
+    const d = today();
+    const karty = Array.from(sekcja.querySelectorAll<HTMLElement>('[data-koniec]'));
+    karty.forEach((k) => {
+      const koniec = k.dataset.koniec || '';
+      if (koniec && (hasTime(koniec) ? koniec < n : koniec < d)) k.remove();
+    });
+    if (!sekcja.querySelector('[data-koniec]')) sekcja.remove();
+  }
+</script>

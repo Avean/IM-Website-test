@@ -9,7 +9,7 @@ interface Props { w: Wydarzenie; lang: Lang; maly?: boolean; jasny?: boolean }
 const { w, lang, maly = false, jasny = false } = Astro.props;
 const meta = [range(w.poczatek, w.koniec, lang), w.miejsce].filter(Boolean).join(' · ');
 ---
-<a class="event" href={u(wJezyku(w.href, lang))}>
+<a class="event" href={u(wJezyku(w.href, lang))} data-koniec={w.koniec || w.koniecIcs || w.poczatek}>
   <span class={`datebox${maly ? ' small' : ''}${jasny ? ' light' : ''}`} aria-hidden="true">
     <span class="d">{dayNum(w.poczatek)}</span>
     <span class="m">{monthShort(w.poczatek, lang)}</span>

@@ -1,6 +1,7 @@
 // Wspólne zapytania do treści: aktualności, wydarzenia, seminaria, obrony.
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { now, today, weekRange, weekday, addDays, hasTime, plusMinutes, type Lang } from './daty';
+import { swietaPanstwowe } from './kolory-dni';
 
 export type Aktualnosc = CollectionEntry<'aktualnosci'>;
 export type Obrona = CollectionEntry<'obrony'>;
@@ -184,6 +185,24 @@ export async function najblizszeWydarzenia(limit = 4, lang: Lang = 'pl'): Promis
   // obrony ważne, ale za pozostałymi wydarzeniami (kolejność w grupie — chronologiczna)
   const nad = all.filter((w) => w.rodzaj !== 'referat' && trwaLubBedzie(w));
   return [...nad.filter((w) => w.rodzaj !== 'obrona'), ...nad.filter((w) => w.rodzaj === 'obrona')].slice(0, limit);
+}
+
+// Data po `n` dniach roboczych od `od` (pn–pt bez świąt państwowych).
+export function poDniachRoboczych(od: string, n: number): string {
+  let d = od;
+  for (let k = 0; k < n; ) {
+    d = addDays(d, 1);
+    const wd = weekday(d);
+    if (wd !== 0 && wd !== 6 && !swietaPanstwowe(Number(d.slice(0, 4))).has(d)) k++;
+  }
+  return d;
+}
+
+// Strona główna: tylko wydarzenia, które trwają albo zaczynają się w ciągu najbliższych `dniRoboczych` dni roboczych
+// (Ustawienia → „Wydarzenia na stronie głównej”). Gdy żadnego nie ma, sekcja się nie pokazuje.
+export async function wydarzeniaNaGlowna(limit = 3, lang: Lang = 'pl', dniRoboczych = 5): Promise<Wydarzenie[]> {
+  const granica = poDniachRoboczych(today(), dniRoboczych);
+  return (await najblizszeWydarzenia(100, lang)).filter((w) => w.poczatek.slice(0, 10) <= granica).slice(0, limit);
 }
 
 // Tydzień pokazywany na stronie głównej: bieżący, a od soboty — następny.

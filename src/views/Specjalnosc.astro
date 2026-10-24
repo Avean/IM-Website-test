@@ -221,7 +221,6 @@ const sekcje = [
         <h2>{T('Specjalności', 'Specialisations')}</h2>
         <div style="display:flex;flex-direction:column">
           {inne.map((s) => <a href={u(wJezyku(`/studia/${s.data.kierunek}/${s.id}`, lang))} aria-current={s.id === specjalnosc.id ? 'page' : undefined}>{wybierz(s.data, 'nazwa', lang)}</a>)}
-          <a href={u(wJezyku(`/studia/${d.kierunek}#specjalnosci`, lang))}><Ikona nazwa="wstecz" rozmiar={14} />{nazwaKierunku}</a>
         </div>
       </nav>
       <div class="side-box">

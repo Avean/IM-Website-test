@@ -57,9 +57,7 @@ const wszystkie = T('Warto wiedzieć', 'Highlights');
         </p>
       )}
     </div>
-    <aside class="side" data-pagefind-ignore>
-      <a class="link-arrow" href={href('/warto-wiedziec')}><Ikona nazwa="wstecz" rozmiar={16} />{wszystkie}</a>
-    </aside>
+    <div class="side" aria-hidden="true"></div>
   </div>
   <div class="wrap" style="padding-bottom:64px" data-pagefind-ignore>
     <WartoWiedziec lang={lang} pomin={slugOf(wpis.id)} naglowek={T('Zobacz też', 'See also')} />

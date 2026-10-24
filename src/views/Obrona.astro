@@ -63,8 +63,6 @@ const dokumenty = [
       {d.bip && <p class="article-block"><a class="link-arrow" href={d.bip}>{t(lang, 'bip')}<Ikona nazwa="zewnetrzny" rozmiar={14} /></a></p>}
       {d.data_ogloszenia && <p class="muted" style="font-size:14px;margin-top:24px">{t(lang, 'opublikowano')} {short(d.data_ogloszenia)}</p>}
     </div>
-    <aside class="side" data-pagefind-ignore>
-      <a class="link-arrow" href={u(wJezyku('/obrony-doktorskie', lang))}><Ikona nazwa="wstecz" rozmiar={16} />{t(lang, 'obrony')}</a>
-    </aside>
+    <div class="side" aria-hidden="true"></div>
   </div>
 </Baza>

@@ -56,5 +56,6 @@
   "powiadomienia": {
     "adres": ""
   },
-  "tlo_strony": false
+  "tlo_strony": false,
+  "wydarzenia_dni_robocze": 5
 }
