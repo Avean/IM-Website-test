@@ -1,0 +1,2699 @@
+{
+ "razem": {
+  "wystapienia": 2893,
+  "adresy": 287,
+  "strony": 259
+ },
+ "kategorie": {
+  "strony": {
+   "wystapienia": 1769,
+   "adresy": 67,
+   "strony": 259
+  },
+  "strony domowe (~)": {
+   "wystapienia": 898,
+   "adresy": 109,
+   "strony": 259
+  },
+  "pliki": {
+   "wystapienia": 226,
+   "adresy": 111,
+   "strony": 36
+  }
+ },
+ "top15": [
+  {
+   "url": "http://www.math.uni.wroc.pl/~jwr/trapez/",
+   "strony": 259,
+   "przyklady": [
+    "/",
+    "/404.html",
+    "/aktualnosci/"
+   ]
+  },
+  {
+   "url": "https://www.math.uni.wroc.pl/",
+   "strony": 259,
+   "przyklady": [
+    "/",
+    "/404.html",
+    "/aktualnosci/"
+   ]
+  },
+  {
+   "url": "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php",
+   "strony": 259,
+   "przyklady": [
+    "/",
+    "/404.html",
+    "/aktualnosci/"
+   ]
+  },
+  {
+   "url": "https://www.math.uni.wroc.pl/sukcesy",
+   "strony": 259,
+   "przyklady": [
+    "/",
+    "/404.html",
+    "/aktualnosci/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~pkowa/ln20.html",
+   "strony": 6,
+   "przyklady": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2020-model-theory-conference/",
+    "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/"
+   ]
+  },
+  {
+   "url": "https://www.math.uni.wroc.pl/users/wylupek",
+   "strony": 6,
+   "przyklady": [
+    "/en/instytut/wladze/",
+    "/en/instytut/zaklady/statystyka/",
+    "/en/pracownicy/"
+   ]
+  },
+  {
+   "url": "http://math.uni.wroc.pl/analysis2017/",
+   "strony": 4,
+   "przyklady": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+    "/nauka/konferencje/"
+   ]
+  },
+  {
+   "url": "http://math.uni.wroc.pl/~hejna/",
+   "strony": 4,
+   "przyklady": [
+    "/en/instytut/zaklady/analiza-funkcjonalna/",
+    "/en/pracownicy/",
+    "/instytut/zaklady/analiza-funkcjonalna/"
+   ]
+  },
+  {
+   "url": "http://math.uni.wroc.pl/~kkrystecki",
+   "strony": 4,
+   "przyklady": [
+    "/en/instytut/zaklady/geometria/",
+    "/en/pracownicy/",
+    "/instytut/zaklady/geometria/"
+   ]
+  },
+  {
+   "url": "http://math.uni.wroc.pl/~mbogdan/",
+   "strony": 4,
+   "przyklady": [
+    "/en/instytut/zaklady/statystyka/",
+    "/en/pracownicy/",
+    "/instytut/zaklady/statystyka/"
+   ]
+  },
+  {
+   "url": "http://math.uni.wroc.pl/~nadav",
+   "strony": 4,
+   "przyklady": [
+    "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+    "/en/pracownicy/",
+    "/instytut/zaklady/algebra-i-teoria-modeli/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/analiza/2014_Hartman/",
+   "strony": 4,
+   "przyklady": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+    "/nauka/konferencje/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/analiza/bedlewo16",
+   "strony": 4,
+   "przyklady": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+    "/nauka/konferencje/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/ggt/",
+   "strony": 4,
+   "przyklady": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+    "/nauka/konferencje/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/ivmrt2014",
+   "strony": 4,
+   "przyklady": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+    "/nauka/konferencje/"
+   ]
+  }
+ ],
+ "w_szablonie": [
+  "https://www.math.uni.wroc.pl/sukcesy",
+  "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php",
+  "http://www.math.uni.wroc.pl/~jwr/trapez/",
+  "https://www.math.uni.wroc.pl/"
+ ],
+ "sekcje": [
+  [
+   "/en/nauka/",
+   576
+  ],
+  [
+   "/nauka/",
+   576
+  ],
+  [
+   "/en/studia/",
+   237
+  ],
+  [
+   "/studia/",
+   237
+  ],
+  [
+   "/en/instytut/",
+   206
+  ],
+  [
+   "/instytut/",
+   206
+  ],
+  [
+   "/aktualnosci/",
+   145
+  ],
+  [
+   "/en/aktualnosci/",
+   145
+  ],
+  [
+   "/en/pracownicy/",
+   103
+  ],
+  [
+   "/pracownicy/",
+   103
+  ],
+  [
+   "/en/obrony-doktorskie/",
+   84
+  ],
+  [
+   "/obrony-doktorskie/",
+   84
+  ],
+  [
+   "/en/seminaria/",
+   50
+  ],
+  [
+   "/seminaria/",
+   50
+  ],
+  [
+   "/404.html/",
+   9
+  ],
+  [
+   "/en/",
+   9
+  ],
+  [
+   "/",
+   9
+  ],
+  [
+   "/deklaracja-dostepnosci/",
+   8
+  ],
+  [
+   "/en/deklaracja-dostepnosci/",
+   8
+  ],
+  [
+   "/en/kalendarz/",
+   8
+  ],
+  [
+   "/en/polityka-prywatnosci/",
+   8
+  ],
+  [
+   "/en/szukaj/",
+   8
+  ],
+  [
+   "/kalendarz/",
+   8
+  ],
+  [
+   "/polityka-prywatnosci/",
+   8
+  ],
+  [
+   "/szukaj/",
+   8
+  ]
+ ],
+ "subdomeny": [
+  [
+   "fmw.math.uni.wroc.pl",
+   520
+  ],
+  [
+   "ptm.math.uni.wroc.pl",
+   518
+  ],
+  [
+   "kamil.math.uni.wroc.pl",
+   4
+  ],
+  [
+   "hulanickiaward.math.uni.wroc.pl",
+   4
+  ],
+  [
+   "akula.math.uni.wroc.pl",
+   4
+  ],
+  [
+   "krawczyk.math.uni.wroc.pl",
+   4
+  ],
+  [
+   "korpalski.math.uni.wroc.pl",
+   4
+  ],
+  [
+   "magweb.math.uni.wroc.pl",
+   4
+  ],
+  [
+   "forum2019.math.uni.wroc.pl",
+   4
+  ],
+  [
+   "odkrywcy.math.uni.wroc.pl",
+   2
+  ],
+  [
+   "karolak.math.uni.wroc.pl",
+   2
+  ]
+ ],
+ "wszystkie": {
+  "http://math.uni.wroc.pl/analysis2017/": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/"
+  ],
+  "http://math.uni.wroc.pl/~hejna/": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "http://math.uni.wroc.pl/~kkrystecki": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "http://math.uni.wroc.pl/~krawiec/seminar/": [
+   "/en/seminaria/prawdopodobienstwo/",
+   "/seminaria/prawdopodobienstwo/"
+  ],
+  "http://math.uni.wroc.pl/~mbogdan/": [
+   "/en/instytut/zaklady/statystyka/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/statystyka/",
+   "/pracownicy/"
+  ],
+  "http://math.uni.wroc.pl/~nadav": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/analiza-1": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/analiza-2": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/analiza/2014_Hartman/": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/"
+  ],
+  "http://www.math.uni.wroc.pl/analiza/bedlewo16": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/"
+  ],
+  "http://www.math.uni.wroc.pl/ggt/": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2015-conference-on-geometric-group-theory/"
+  ],
+  "http://www.math.uni.wroc.pl/ivmrt2014": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/"
+  ],
+  "http://www.math.uni.wroc.pl/mathbank/preprinty/index.php": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "http://www.math.uni.wroc.pl/sesja_Urbanik": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/"
+  ],
+  "http://www.math.uni.wroc.pl/users/pblasz": [
+   "/en/pracownicy/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/users/staniak": [
+   "/en/instytut/zaklady/statystyka/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/statystyka/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/users/tfraczek": [
+   "/en/pracownicy/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~ahof/": [
+   "/en/pracownicy/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~aracz/": [
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~biler/": [
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~bozejko/": [
+   "/en/instytut/zaklady/analiza-matematyczna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-matematyczna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~cygan": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~dabr/": [
+   "/en/instytut/zaklady/statystyka/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/statystyka/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~dabr/dydaktyka.html": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~danielski": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~dbura": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~dbura/dydaktyka/wizualizacja.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~debicki": [
+   "/en/instytut/wladze/",
+   "/instytut/wladze/"
+  ],
+  "http://www.math.uni.wroc.pl/~debicki/": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~dobrowol": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~dosaj/": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~dymara/": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~edamek/": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~elakalin": [
+   "/en/instytut/zaklady/dydaktyka/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/dydaktyka/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~elsner": [
+   "/en/instytut/wladze/",
+   "/instytut/wladze/"
+  ],
+  "http://www.math.uni.wroc.pl/~elsner/": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~gismat/": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~glowacki/analizaB.html": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~gogolok": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~grzes/": [
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~grzes/analiza4.htm": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~grzes/dydaktyka13_14/fr_main.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~hebisch/": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~ibk/bk/": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~jagiella": [
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~jdziuban/": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~jwr/": [
+   "/en/instytut/zaklady/dydaktyka/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/dydaktyka/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~jwr/trapez/": [
+   "/",
+   "/404.html",
+   "/aktualnosci/",
+   "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
+   "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
+   "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
+   "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
+   "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
+   "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
+   "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
+   "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
+   "/aktualnosci/2026-06-16-seminarium-wydzialowe/",
+   "/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
+   "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
+   "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
+   "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
+   "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
+   "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
+   "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
+   "/aktualnosci/2026-10-17-rusza-tutornia/",
+   "/deklaracja-dostepnosci/",
+   "/en/",
+   "/en/aktualnosci/",
+   "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
+   "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
+   "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
+   "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
+   "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
+   "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
+   "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
+   "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
+   "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/",
+   "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
+   "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
+   "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
+   "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
+   "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
+   "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
+   "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
+   "/en/aktualnosci/2026-10-17-rusza-tutornia/",
+   "/en/deklaracja-dostepnosci/",
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/en/instytut/kontakt/",
+   "/en/instytut/struktura/",
+   "/en/instytut/wladze/",
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/instytut/zaklady/analiza-matematyczna/",
+   "/en/instytut/zaklady/dydaktyka/",
+   "/en/instytut/zaklady/geometria/",
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/instytut/zaklady/statystyka/",
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/kalendarz/",
+   "/en/nauka/granty/",
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+   "/en/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
+   "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+   "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
+   "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+   "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+   "/en/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
+   "/en/nauka/konferencje/2014-workshop-in-set-theory/",
+   "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+   "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+   "/en/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
+   "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
+   "/en/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
+   "/en/nauka/konferencje/2016-combinatorics-and-groups/",
+   "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+   "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2016-stochastic-models-v/",
+   "/en/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
+   "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+   "/en/nauka/konferencje/2017-model-theory-conference/",
+   "/en/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
+   "/en/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
+   "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
+   "/en/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
+   "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2018-stochastic-models-vi/",
+   "/en/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
+   "/en/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
+   "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
+   "/en/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
+   "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+   "/en/nauka/konferencje/2020-model-theory-conference/",
+   "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2020-random-models/",
+   "/en/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
+   "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
+   "/en/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2023-discrete-random-structures/",
+   "/en/nauka/konferencje/2023-model-theory-conference/",
+   "/en/nauka/konferencje/2023-model-theory-workshop/",
+   "/en/nauka/konferencje/2023-stochastic-models-vii/",
+   "/en/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
+   "/en/nauka/konferencje/2024-probability-and-analysis-2024/",
+   "/en/nauka/konferencje/2024-second-wroclaw-logic-conference/",
+   "/en/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
+   "/en/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
+   "/en/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
+   "/en/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
+   "/en/nauka/konferencje/2025-structures-in-banach-spaces/",
+   "/en/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
+   "/en/nauka/konferencje/2026-discrete-random-structures-ii/",
+   "/en/nauka/publikacje/",
+   "/en/obrony-doktorskie/",
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/en/polityka-prywatnosci/",
+   "/en/pracownicy/",
+   "/en/seminaria/",
+   "/en/seminaria/analiza-harmoniczna/",
+   "/en/seminaria/dyskretna-analiza-harmoniczna/",
+   "/en/seminaria/prawdopodobienstwo/",
+   "/en/seminaria/rownania-rozniczkowe/",
+   "/en/seminaria/statystyka/",
+   "/en/studia/egzaminy-i-dyplom/",
+   "/en/studia/matematyka/",
+   "/en/studia/matematyka/analiza-danych/",
+   "/en/studia/matematyka/matematyka-aktuarialno-finansowa/",
+   "/en/studia/matematyka/matematyka-nauczycielska/",
+   "/en/studia/matematyka/matematyka-stosowana/",
+   "/en/studia/matematyka/matematyka-teoretyczna/",
+   "/en/studia/pierwszy-rok/",
+   "/en/studia/podyplomowe/",
+   "/en/studia/procedura-dyplomowania/",
+   "/en/studia/rok-akademicki/",
+   "/en/studia/siad/",
+   "/en/studia/skrypty/",
+   "/en/studia/sprawy-studenckie/",
+   "/en/studia/szkola-doktorska/",
+   "/en/studia/zajecia/",
+   "/en/szukaj/",
+   "/instytut/infrastruktura-informatyczna/",
+   "/instytut/kontakt/",
+   "/instytut/struktura/",
+   "/instytut/wladze/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/instytut/zaklady/analiza-matematyczna/",
+   "/instytut/zaklady/dydaktyka/",
+   "/instytut/zaklady/geometria/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/instytut/zaklady/statystyka/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/kalendarz/",
+   "/nauka/granty/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+   "/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
+   "/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+   "/nauka/konferencje/2014-7th-young-set-theory-workshop/",
+   "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+   "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+   "/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+   "/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
+   "/nauka/konferencje/2014-workshop-in-set-theory/",
+   "/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+   "/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+   "/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
+   "/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
+   "/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
+   "/nauka/konferencje/2016-combinatorics-and-groups/",
+   "/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+   "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+   "/nauka/konferencje/2016-stochastic-models-v/",
+   "/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
+   "/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+   "/nauka/konferencje/2017-model-theory-conference/",
+   "/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
+   "/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
+   "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
+   "/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
+   "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+   "/nauka/konferencje/2018-stochastic-models-vi/",
+   "/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
+   "/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
+   "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
+   "/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
+   "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+   "/nauka/konferencje/2020-model-theory-conference/",
+   "/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
+   "/nauka/konferencje/2020-random-models/",
+   "/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
+   "/nauka/konferencje/2022-probability-and-analysis-2022/",
+   "/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2023-discrete-random-structures/",
+   "/nauka/konferencje/2023-model-theory-conference/",
+   "/nauka/konferencje/2023-model-theory-workshop/",
+   "/nauka/konferencje/2023-stochastic-models-vii/",
+   "/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
+   "/nauka/konferencje/2024-probability-and-analysis-2024/",
+   "/nauka/konferencje/2024-second-wroclaw-logic-conference/",
+   "/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
+   "/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
+   "/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
+   "/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
+   "/nauka/konferencje/2025-structures-in-banach-spaces/",
+   "/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
+   "/nauka/konferencje/2026-discrete-random-structures-ii/",
+   "/nauka/publikacje/",
+   "/obrony-doktorskie/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/polityka-prywatnosci/",
+   "/pracownicy/",
+   "/seminaria/",
+   "/seminaria/analiza-harmoniczna/",
+   "/seminaria/dyskretna-analiza-harmoniczna/",
+   "/seminaria/prawdopodobienstwo/",
+   "/seminaria/rownania-rozniczkowe/",
+   "/seminaria/statystyka/",
+   "/studia/egzaminy-i-dyplom/",
+   "/studia/matematyka/",
+   "/studia/matematyka/analiza-danych/",
+   "/studia/matematyka/matematyka-aktuarialno-finansowa/",
+   "/studia/matematyka/matematyka-nauczycielska/",
+   "/studia/matematyka/matematyka-stosowana/",
+   "/studia/matematyka/matematyka-teoretyczna/",
+   "/studia/pierwszy-rok/",
+   "/studia/podyplomowe/",
+   "/studia/procedura-dyplomowania/",
+   "/studia/rok-akademicki/",
+   "/studia/siad/",
+   "/studia/skrypty/",
+   "/studia/sprawy-studenckie/",
+   "/studia/szkola-doktorska/",
+   "/studia/zajecia/",
+   "/szukaj/"
+  ],
+  "http://www.math.uni.wroc.pl/~jwys/": [
+   "/en/instytut/zaklady/analiza-matematyczna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-matematyczna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~karch": [
+   "/en/instytut/wladze/",
+   "/instytut/wladze/"
+  ],
+  "http://www.math.uni.wroc.pl/~karch/": [
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~karch/pattern/": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2016-mathematics-of-pattern-formation/"
+  ],
+  "http://www.math.uni.wroc.pl/~kepczynski": [
+   "/en/pracownicy/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~kkrup/": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~kolodziej": [
+   "/en/pracownicy/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~komil/": [
+   "/en/instytut/zaklady/dydaktyka/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/dydaktyka/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~krakow/": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~kraszew": [
+   "/en/studia/pierwszy-rok/",
+   "/studia/pierwszy-rok/"
+  ],
+  "http://www.math.uni.wroc.pl/~kraszew/": [
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~kraszew/sources/Zadania_skrypt_140218.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~krawiec": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~kryakin/": [
+   "/en/instytut/zaklady/analiza-matematyczna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-matematyczna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~krzywick/": [
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~lorek/": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~lorek/bedlewo2014/": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/"
+  ],
+  "http://www.math.uni.wroc.pl/~lorek/bedlewo2016/": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2016-stochastic-models-v/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2016-stochastic-models-v/"
+  ],
+  "http://www.math.uni.wroc.pl/~marcinkow": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~marendar/index.html": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~mikolaj/": [
+   "/en/instytut/zaklady/dydaktyka/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/dydaktyka/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~mkos": [
+   "/en/instytut/zaklady/statystyka/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/statystyka/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~mkuchar": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~mlotkow/": [
+   "/en/instytut/zaklady/analiza-matematyczna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-matematyczna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~mpal/": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~msliw/": [
+   "/en/instytut/zaklady/dydaktyka/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/dydaktyka/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~musial/": [
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~narkiew/": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~newelski/": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~newelski/dydaktyka/alglin2A/skrypt2/skrypt/skrypt.html": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~newelski/dydaktyka/wdm-A/skrypt3/skrypt/skrypt.html": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~pborod": [
+   "/en/instytut/wladze/",
+   "/instytut/wladze/"
+  ],
+  "http://www.math.uni.wroc.pl/~pborod/": [
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~pezda/": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~pkawa/home/": [
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~pkowa/index.html": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~pkowa/ln20.html": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2020-model-theory-conference/",
+   "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2020-model-theory-conference/",
+   "/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/"
+  ],
+  "http://www.math.uni.wroc.pl/~pkowa/wroclaw17.html": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2017-model-theory-in-wroclaw-2017/"
+  ],
+  "http://www.math.uni.wroc.pl/~pms/": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "http://www.math.uni.wroc.pl/~preisner/": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~rmajsner/": [
+   "/en/instytut/zaklady/statystyka/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/statystyka/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~rolski/": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~rzepecki/": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~scygan": [
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~sgal": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~stanczr": [
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~stanczr/semin/semin.html": [
+   "/en/seminaria/rownania-rozniczkowe/",
+   "/seminaria/rownania-rozniczkowe/"
+  ],
+  "http://www.math.uni.wroc.pl/~swiatkow/": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~szczotka/": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~szekli/": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~szwarc/": [
+   "/en/instytut/zaklady/analiza-matematyczna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-matematyczna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~szwarc/pdf/AnalizaISIM1.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~szwarc/pdf/AnalizaISIM2.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~szwarc/pdf/anfun2007/analiza-funkcjonalna1.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~szwarc/pdf/anfun2007/analiza-funkcjonalna2p.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "http://www.math.uni.wroc.pl/~tabisz/": [
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~topolski/": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~urban/": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~zioma/": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "http://www.math.uni.wroc.pl/~zjjurek/": [
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/": [
+   "/",
+   "/404.html",
+   "/aktualnosci/",
+   "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
+   "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
+   "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
+   "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
+   "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
+   "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
+   "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
+   "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
+   "/aktualnosci/2026-06-16-seminarium-wydzialowe/",
+   "/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
+   "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
+   "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
+   "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
+   "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
+   "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
+   "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
+   "/aktualnosci/2026-10-17-rusza-tutornia/",
+   "/deklaracja-dostepnosci/",
+   "/en/",
+   "/en/aktualnosci/",
+   "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
+   "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
+   "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
+   "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
+   "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
+   "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
+   "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
+   "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
+   "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/",
+   "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
+   "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
+   "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
+   "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
+   "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
+   "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
+   "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
+   "/en/aktualnosci/2026-10-17-rusza-tutornia/",
+   "/en/deklaracja-dostepnosci/",
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/en/instytut/kontakt/",
+   "/en/instytut/struktura/",
+   "/en/instytut/wladze/",
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/instytut/zaklady/analiza-matematyczna/",
+   "/en/instytut/zaklady/dydaktyka/",
+   "/en/instytut/zaklady/geometria/",
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/instytut/zaklady/statystyka/",
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/kalendarz/",
+   "/en/nauka/granty/",
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+   "/en/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
+   "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+   "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
+   "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+   "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+   "/en/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
+   "/en/nauka/konferencje/2014-workshop-in-set-theory/",
+   "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+   "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+   "/en/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
+   "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
+   "/en/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
+   "/en/nauka/konferencje/2016-combinatorics-and-groups/",
+   "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+   "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2016-stochastic-models-v/",
+   "/en/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
+   "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+   "/en/nauka/konferencje/2017-model-theory-conference/",
+   "/en/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
+   "/en/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
+   "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
+   "/en/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
+   "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2018-stochastic-models-vi/",
+   "/en/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
+   "/en/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
+   "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
+   "/en/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
+   "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+   "/en/nauka/konferencje/2020-model-theory-conference/",
+   "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2020-random-models/",
+   "/en/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
+   "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
+   "/en/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2023-discrete-random-structures/",
+   "/en/nauka/konferencje/2023-model-theory-conference/",
+   "/en/nauka/konferencje/2023-model-theory-workshop/",
+   "/en/nauka/konferencje/2023-stochastic-models-vii/",
+   "/en/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
+   "/en/nauka/konferencje/2024-probability-and-analysis-2024/",
+   "/en/nauka/konferencje/2024-second-wroclaw-logic-conference/",
+   "/en/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
+   "/en/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
+   "/en/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
+   "/en/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
+   "/en/nauka/konferencje/2025-structures-in-banach-spaces/",
+   "/en/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
+   "/en/nauka/konferencje/2026-discrete-random-structures-ii/",
+   "/en/nauka/publikacje/",
+   "/en/obrony-doktorskie/",
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/en/polityka-prywatnosci/",
+   "/en/pracownicy/",
+   "/en/seminaria/",
+   "/en/seminaria/analiza-harmoniczna/",
+   "/en/seminaria/dyskretna-analiza-harmoniczna/",
+   "/en/seminaria/prawdopodobienstwo/",
+   "/en/seminaria/rownania-rozniczkowe/",
+   "/en/seminaria/statystyka/",
+   "/en/studia/egzaminy-i-dyplom/",
+   "/en/studia/matematyka/",
+   "/en/studia/matematyka/analiza-danych/",
+   "/en/studia/matematyka/matematyka-aktuarialno-finansowa/",
+   "/en/studia/matematyka/matematyka-nauczycielska/",
+   "/en/studia/matematyka/matematyka-stosowana/",
+   "/en/studia/matematyka/matematyka-teoretyczna/",
+   "/en/studia/pierwszy-rok/",
+   "/en/studia/podyplomowe/",
+   "/en/studia/procedura-dyplomowania/",
+   "/en/studia/rok-akademicki/",
+   "/en/studia/siad/",
+   "/en/studia/skrypty/",
+   "/en/studia/sprawy-studenckie/",
+   "/en/studia/szkola-doktorska/",
+   "/en/studia/zajecia/",
+   "/en/szukaj/",
+   "/instytut/infrastruktura-informatyczna/",
+   "/instytut/kontakt/",
+   "/instytut/struktura/",
+   "/instytut/wladze/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/instytut/zaklady/analiza-matematyczna/",
+   "/instytut/zaklady/dydaktyka/",
+   "/instytut/zaklady/geometria/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/instytut/zaklady/statystyka/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/kalendarz/",
+   "/nauka/granty/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+   "/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
+   "/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+   "/nauka/konferencje/2014-7th-young-set-theory-workshop/",
+   "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+   "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+   "/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+   "/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
+   "/nauka/konferencje/2014-workshop-in-set-theory/",
+   "/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+   "/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+   "/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
+   "/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
+   "/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
+   "/nauka/konferencje/2016-combinatorics-and-groups/",
+   "/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+   "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+   "/nauka/konferencje/2016-stochastic-models-v/",
+   "/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
+   "/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+   "/nauka/konferencje/2017-model-theory-conference/",
+   "/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
+   "/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
+   "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
+   "/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
+   "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+   "/nauka/konferencje/2018-stochastic-models-vi/",
+   "/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
+   "/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
+   "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
+   "/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
+   "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+   "/nauka/konferencje/2020-model-theory-conference/",
+   "/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
+   "/nauka/konferencje/2020-random-models/",
+   "/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
+   "/nauka/konferencje/2022-probability-and-analysis-2022/",
+   "/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2023-discrete-random-structures/",
+   "/nauka/konferencje/2023-model-theory-conference/",
+   "/nauka/konferencje/2023-model-theory-workshop/",
+   "/nauka/konferencje/2023-stochastic-models-vii/",
+   "/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
+   "/nauka/konferencje/2024-probability-and-analysis-2024/",
+   "/nauka/konferencje/2024-second-wroclaw-logic-conference/",
+   "/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
+   "/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
+   "/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
+   "/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
+   "/nauka/konferencje/2025-structures-in-banach-spaces/",
+   "/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
+   "/nauka/konferencje/2026-discrete-random-structures-ii/",
+   "/nauka/publikacje/",
+   "/obrony-doktorskie/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/polityka-prywatnosci/",
+   "/pracownicy/",
+   "/seminaria/",
+   "/seminaria/analiza-harmoniczna/",
+   "/seminaria/dyskretna-analiza-harmoniczna/",
+   "/seminaria/prawdopodobienstwo/",
+   "/seminaria/rownania-rozniczkowe/",
+   "/seminaria/statystyka/",
+   "/studia/egzaminy-i-dyplom/",
+   "/studia/matematyka/",
+   "/studia/matematyka/analiza-danych/",
+   "/studia/matematyka/matematyka-aktuarialno-finansowa/",
+   "/studia/matematyka/matematyka-nauczycielska/",
+   "/studia/matematyka/matematyka-stosowana/",
+   "/studia/matematyka/matematyka-teoretyczna/",
+   "/studia/pierwszy-rok/",
+   "/studia/podyplomowe/",
+   "/studia/procedura-dyplomowania/",
+   "/studia/rok-akademicki/",
+   "/studia/siad/",
+   "/studia/skrypty/",
+   "/studia/sprawy-studenckie/",
+   "/studia/szkola-doktorska/",
+   "/studia/zajecia/",
+   "/szukaj/"
+  ],
+  "https://www.math.uni.wroc.pl/archiwalne-programy-studiow-na-kierunku-matematyka": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/dostep-do-sieci-bezprzewodowej": [
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/instytut/infrastruktura-informatyczna/"
+  ],
+  "https://www.math.uni.wroc.pl/godziny-otwarcia-laboratorium-komputerowego": [
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/instytut/infrastruktura-informatyczna/"
+  ],
+  "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-dokumenty": [
+   "/en/studia/szkola-doktorska/",
+   "/studia/szkola-doktorska/"
+  ],
+  "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-informacje-ogolne": [
+   "/en/studia/szkola-doktorska/",
+   "/studia/szkola-doktorska/"
+  ],
+  "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-rekrutacja": [
+   "/en/studia/szkola-doktorska/",
+   "/studia/szkola-doktorska/"
+  ],
+  "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-stypendia-i-granty": [
+   "/en/studia/szkola-doktorska/",
+   "/studia/szkola-doktorska/"
+  ],
+  "https://www.math.uni.wroc.pl/kwalifikacyjne-studia-podyplomowe-nauczanie-matematyki": [
+   "/en/studia/podyplomowe/",
+   "/studia/podyplomowe/"
+  ],
+  "https://www.math.uni.wroc.pl/oferty-pracy": [
+   "/en/studia/sprawy-studenckie/",
+   "/studia/sprawy-studenckie/"
+  ],
+  "https://www.math.uni.wroc.pl/postepowania-w-sprawie-nadania-stopnia-doktora-w-instytucie-matematycznym": [
+   "/en/obrony-doktorskie/",
+   "/obrony-doktorskie/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2003": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2004": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2005": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2006": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2007": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2008": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2009": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2010": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2011": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2012": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2013": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2014": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/program-most": [
+   "/en/studia/sprawy-studenckie/",
+   "/studia/sprawy-studenckie/"
+  ],
+  "https://www.math.uni.wroc.pl/programy-dostepne-dla-studentow-i-pracownikow": [
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/instytut/infrastruktura-informatyczna/"
+  ],
+  "https://www.math.uni.wroc.pl/programy-dostepne-w-pracowniach-komputerowych": [
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/instytut/infrastruktura-informatyczna/"
+  ],
+  "https://www.math.uni.wroc.pl/regulamin-lokalnej-sieci-komputerowej-instytutu-matematycznego": [
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/instytut/infrastruktura-informatyczna/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/2026-27z-oznaczenia.pdf": [
+   "/en/studia/rok-akademicki/",
+   "/studia/rok-akademicki/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/46-2017.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/abstract_antasik.pdf": [
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/abstract_korpalski.pdf": [
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/abstract_mrowinska.pdf": [
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/abstract_tadej.pdf": [
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/abstract_zuchowski.pdf": [
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/adapt2026_matematyka.pdf": [
+   "/en/studia/pierwszy-rok/",
+   "/studia/pierwszy-rok/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/adapt2026_siad.pdf": [
+   "/en/studia/pierwszy-rok/",
+   "/studia/pierwszy-rok/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.docx": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/ckp.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/decyzje1rok1sem.pdf": [
+   "/en/studia/pierwszy-rok/",
+   "/studia/pierwszy-rok/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/decyzje1rok2sem.pdf": [
+   "/en/studia/pierwszy-rok/",
+   "/studia/pierwszy-rok/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/doktorat_antasik.pdf": [
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/doktorat_korpalski.pdf": [
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/doktorat_mrowinska.pdf": [
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/doktorat_tadej.pdf": [
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/doktorat_zuchowski.pdf": [
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/e-learnings.pdf": [
+   "/en/studia/zajecia/",
+   "/studia/zajecia/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/egzlic_zagadnienia.pdf": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/komentarz_do_wytycznych_dla_prac_dyplomowych.pdf": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/krupski.dvi": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/krupski.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/krupski.ps": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/mgr21-ad-zakres.pdf": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/mgr21-af-zakres.pdf": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/mgr21-ek-zakres.pdf": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/mgr21-st-zakres.pdf": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/mgr21-te-zakres.pdf": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/mgr22-na-zakres.pdf": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/momentw.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/plan_26_27z_popr3.pdf": [
+   "/en/studia/pierwszy-rok/",
+   "/studia/pierwszy-rok/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/poradnik_26_27.pdf": [
+   "/en/studia/pierwszy-rok/",
+   "/studia/pierwszy-rok/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/praktyka.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2015.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2016.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2017.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2018.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2019.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2020.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2021.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2022.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2023.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2024.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2025.pdf": [
+   "/en/nauka/publikacje/",
+   "/nauka/publikacje/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_akwela_zuchowski.pdf": [
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_awreid_antasik.pdf": [
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_izezula_mrowinska.pdf": [
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_jkakol_korpalski.pdf": [
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_leigentler_tadej.pdf": [
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_lsmaga_mrowinska.pdf": [
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_mbochenski_antasik.pdf": [
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_mhrusak_zuchowski.pdf": [
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_mwilczynski_mrowinska.pdf": [
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_okalenda_korpalski.pdf": [
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_pmucha_tadej.pdf": [
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_pzakrzewski_zuchowski.pdf": [
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_spetrovskiy_tadej.pdf": [
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_tkania_korpalski.pdf": [
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/recenzja_tmaszczyk_antasik.pdf": [
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/registering-at-hasselt-university.pdf": [
+   "/en/studia/zajecia/",
+   "/studia/zajecia/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/regulamin-praktyk-nauczycielskich-2026.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/repet.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/repetii.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/sesja2027luty.pdf": [
+   "/en/studia/zajecia/",
+   "/studia/zajecia/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/sesja_poprawkowa2027luty.pdf": [
+   "/en/studia/zajecia/",
+   "/studia/zajecia/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/siec_im_dla_pracownikow_i_doktorantow.pdf": [
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/instytut/infrastruktura-informatyczna/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/siec_studencka_i_laboratoria_komputerowe.pdf": [
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/instytut/infrastruktura-informatyczna/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/skrypt_af.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/skrypt_al1.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/skrypt_al2.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/skrypt_rr1.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/skrypt_rrcz.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/skrypt_symstoch.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/skryptn.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/skryptn.ps": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-nauczycielska.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-stosowana.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-teoretyczna.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-lic.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-mgr.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_antasik.pdf": [
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_korpalski.pdf": [
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_mrowinska.pdf": [
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_tadej.pdf": [
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_zuchowski.pdf": [
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.docx": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/tem7.pdf": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/wdsl.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/wdsl.ps": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/wykaz_kdinf_2025_2026.docx": [
+   "/en/studia/szkola-doktorska/",
+   "/studia/szkola-doktorska/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/wykaz_kdmat_2025_2026.pdf": [
+   "/en/studia/szkola-doktorska/",
+   "/studia/szkola-doktorska/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/wytyczne_prace_dyplomowe.pdf": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/xxx.program2.pdf": [
+   "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/xxxi_histmat_info.pdf": [
+   "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/xxxi_histmat_program2.pdf": [
+   "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/xxxii_konferencja_z_historii_matematyki_2018.pdf": [
+   "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/xxxii_konferencja_z_historii_matematyki_2018_program.pdf": [
+   "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/xxxiii_khm_info.pdf": [
+   "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/xxxiii_khm_program.pdf": [
+   "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/zasady-rejestracji.pdf": [
+   "/en/studia/zajecia/",
+   "/studia/zajecia/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_antasik.pdf": [
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_korpalski.pdf": [
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_mrowinska.pdf": [
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_tadej.pdf": [
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_zuchowski.pdf": [
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/"
+  ],
+  "https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf": [
+   "/en/studia/matematyka/",
+   "/studia/matematyka/"
+  ],
+  "https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php": [
+   "/en/studia/rok-akademicki/",
+   "/en/studia/zajecia/",
+   "/studia/rok-akademicki/",
+   "/studia/zajecia/"
+  ],
+  "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php": [
+   "/",
+   "/404.html",
+   "/aktualnosci/",
+   "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
+   "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
+   "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
+   "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
+   "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
+   "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
+   "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
+   "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
+   "/aktualnosci/2026-06-16-seminarium-wydzialowe/",
+   "/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
+   "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
+   "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
+   "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
+   "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
+   "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
+   "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
+   "/aktualnosci/2026-10-17-rusza-tutornia/",
+   "/deklaracja-dostepnosci/",
+   "/en/",
+   "/en/aktualnosci/",
+   "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
+   "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
+   "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
+   "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
+   "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
+   "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
+   "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
+   "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
+   "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/",
+   "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
+   "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
+   "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
+   "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
+   "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
+   "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
+   "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
+   "/en/aktualnosci/2026-10-17-rusza-tutornia/",
+   "/en/deklaracja-dostepnosci/",
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/en/instytut/kontakt/",
+   "/en/instytut/struktura/",
+   "/en/instytut/wladze/",
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/instytut/zaklady/analiza-matematyczna/",
+   "/en/instytut/zaklady/dydaktyka/",
+   "/en/instytut/zaklady/geometria/",
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/instytut/zaklady/statystyka/",
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/kalendarz/",
+   "/en/nauka/granty/",
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+   "/en/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
+   "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+   "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
+   "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+   "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+   "/en/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
+   "/en/nauka/konferencje/2014-workshop-in-set-theory/",
+   "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+   "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+   "/en/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
+   "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
+   "/en/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
+   "/en/nauka/konferencje/2016-combinatorics-and-groups/",
+   "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+   "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2016-stochastic-models-v/",
+   "/en/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
+   "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+   "/en/nauka/konferencje/2017-model-theory-conference/",
+   "/en/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
+   "/en/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
+   "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
+   "/en/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
+   "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2018-stochastic-models-vi/",
+   "/en/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
+   "/en/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
+   "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
+   "/en/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
+   "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+   "/en/nauka/konferencje/2020-model-theory-conference/",
+   "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2020-random-models/",
+   "/en/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
+   "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
+   "/en/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2023-discrete-random-structures/",
+   "/en/nauka/konferencje/2023-model-theory-conference/",
+   "/en/nauka/konferencje/2023-model-theory-workshop/",
+   "/en/nauka/konferencje/2023-stochastic-models-vii/",
+   "/en/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
+   "/en/nauka/konferencje/2024-probability-and-analysis-2024/",
+   "/en/nauka/konferencje/2024-second-wroclaw-logic-conference/",
+   "/en/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
+   "/en/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
+   "/en/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
+   "/en/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
+   "/en/nauka/konferencje/2025-structures-in-banach-spaces/",
+   "/en/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
+   "/en/nauka/konferencje/2026-discrete-random-structures-ii/",
+   "/en/nauka/publikacje/",
+   "/en/obrony-doktorskie/",
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/en/polityka-prywatnosci/",
+   "/en/pracownicy/",
+   "/en/seminaria/",
+   "/en/seminaria/analiza-harmoniczna/",
+   "/en/seminaria/dyskretna-analiza-harmoniczna/",
+   "/en/seminaria/prawdopodobienstwo/",
+   "/en/seminaria/rownania-rozniczkowe/",
+   "/en/seminaria/statystyka/",
+   "/en/studia/egzaminy-i-dyplom/",
+   "/en/studia/matematyka/",
+   "/en/studia/matematyka/analiza-danych/",
+   "/en/studia/matematyka/matematyka-aktuarialno-finansowa/",
+   "/en/studia/matematyka/matematyka-nauczycielska/",
+   "/en/studia/matematyka/matematyka-stosowana/",
+   "/en/studia/matematyka/matematyka-teoretyczna/",
+   "/en/studia/pierwszy-rok/",
+   "/en/studia/podyplomowe/",
+   "/en/studia/procedura-dyplomowania/",
+   "/en/studia/rok-akademicki/",
+   "/en/studia/siad/",
+   "/en/studia/skrypty/",
+   "/en/studia/sprawy-studenckie/",
+   "/en/studia/szkola-doktorska/",
+   "/en/studia/zajecia/",
+   "/en/szukaj/",
+   "/instytut/infrastruktura-informatyczna/",
+   "/instytut/kontakt/",
+   "/instytut/struktura/",
+   "/instytut/wladze/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/instytut/zaklady/analiza-matematyczna/",
+   "/instytut/zaklady/dydaktyka/",
+   "/instytut/zaklady/geometria/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/instytut/zaklady/statystyka/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/kalendarz/",
+   "/nauka/granty/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+   "/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
+   "/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+   "/nauka/konferencje/2014-7th-young-set-theory-workshop/",
+   "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+   "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+   "/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+   "/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
+   "/nauka/konferencje/2014-workshop-in-set-theory/",
+   "/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+   "/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+   "/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
+   "/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
+   "/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
+   "/nauka/konferencje/2016-combinatorics-and-groups/",
+   "/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+   "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+   "/nauka/konferencje/2016-stochastic-models-v/",
+   "/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
+   "/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+   "/nauka/konferencje/2017-model-theory-conference/",
+   "/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
+   "/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
+   "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
+   "/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
+   "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+   "/nauka/konferencje/2018-stochastic-models-vi/",
+   "/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
+   "/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
+   "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
+   "/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
+   "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+   "/nauka/konferencje/2020-model-theory-conference/",
+   "/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
+   "/nauka/konferencje/2020-random-models/",
+   "/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
+   "/nauka/konferencje/2022-probability-and-analysis-2022/",
+   "/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2023-discrete-random-structures/",
+   "/nauka/konferencje/2023-model-theory-conference/",
+   "/nauka/konferencje/2023-model-theory-workshop/",
+   "/nauka/konferencje/2023-stochastic-models-vii/",
+   "/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
+   "/nauka/konferencje/2024-probability-and-analysis-2024/",
+   "/nauka/konferencje/2024-second-wroclaw-logic-conference/",
+   "/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
+   "/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
+   "/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
+   "/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
+   "/nauka/konferencje/2025-structures-in-banach-spaces/",
+   "/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
+   "/nauka/konferencje/2026-discrete-random-structures-ii/",
+   "/nauka/publikacje/",
+   "/obrony-doktorskie/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/polityka-prywatnosci/",
+   "/pracownicy/",
+   "/seminaria/",
+   "/seminaria/analiza-harmoniczna/",
+   "/seminaria/dyskretna-analiza-harmoniczna/",
+   "/seminaria/prawdopodobienstwo/",
+   "/seminaria/rownania-rozniczkowe/",
+   "/seminaria/statystyka/",
+   "/studia/egzaminy-i-dyplom/",
+   "/studia/matematyka/",
+   "/studia/matematyka/analiza-danych/",
+   "/studia/matematyka/matematyka-aktuarialno-finansowa/",
+   "/studia/matematyka/matematyka-nauczycielska/",
+   "/studia/matematyka/matematyka-stosowana/",
+   "/studia/matematyka/matematyka-teoretyczna/",
+   "/studia/pierwszy-rok/",
+   "/studia/podyplomowe/",
+   "/studia/procedura-dyplomowania/",
+   "/studia/rok-akademicki/",
+   "/studia/siad/",
+   "/studia/skrypty/",
+   "/studia/sprawy-studenckie/",
+   "/studia/szkola-doktorska/",
+   "/studia/zajecia/",
+   "/szukaj/"
+  ],
+  "https://www.math.uni.wroc.pl/sukcesy": [
+   "/",
+   "/404.html",
+   "/aktualnosci/",
+   "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
+   "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
+   "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
+   "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
+   "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
+   "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
+   "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
+   "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
+   "/aktualnosci/2026-06-16-seminarium-wydzialowe/",
+   "/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
+   "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
+   "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
+   "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
+   "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
+   "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
+   "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
+   "/aktualnosci/2026-10-17-rusza-tutornia/",
+   "/deklaracja-dostepnosci/",
+   "/en/",
+   "/en/aktualnosci/",
+   "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
+   "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
+   "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
+   "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
+   "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
+   "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
+   "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
+   "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
+   "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/",
+   "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
+   "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
+   "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
+   "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
+   "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
+   "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
+   "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
+   "/en/aktualnosci/2026-10-17-rusza-tutornia/",
+   "/en/deklaracja-dostepnosci/",
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/en/instytut/kontakt/",
+   "/en/instytut/struktura/",
+   "/en/instytut/wladze/",
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/instytut/zaklady/analiza-matematyczna/",
+   "/en/instytut/zaklady/dydaktyka/",
+   "/en/instytut/zaklady/geometria/",
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/instytut/zaklady/statystyka/",
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/en/kalendarz/",
+   "/en/nauka/granty/",
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+   "/en/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
+   "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+   "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
+   "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+   "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+   "/en/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
+   "/en/nauka/konferencje/2014-workshop-in-set-theory/",
+   "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+   "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+   "/en/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
+   "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
+   "/en/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
+   "/en/nauka/konferencje/2016-combinatorics-and-groups/",
+   "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+   "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2016-stochastic-models-v/",
+   "/en/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
+   "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+   "/en/nauka/konferencje/2017-model-theory-conference/",
+   "/en/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
+   "/en/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
+   "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
+   "/en/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
+   "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2018-stochastic-models-vi/",
+   "/en/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
+   "/en/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
+   "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
+   "/en/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
+   "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+   "/en/nauka/konferencje/2020-model-theory-conference/",
+   "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
+   "/en/nauka/konferencje/2020-random-models/",
+   "/en/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
+   "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
+   "/en/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
+   "/en/nauka/konferencje/2023-discrete-random-structures/",
+   "/en/nauka/konferencje/2023-model-theory-conference/",
+   "/en/nauka/konferencje/2023-model-theory-workshop/",
+   "/en/nauka/konferencje/2023-stochastic-models-vii/",
+   "/en/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
+   "/en/nauka/konferencje/2024-probability-and-analysis-2024/",
+   "/en/nauka/konferencje/2024-second-wroclaw-logic-conference/",
+   "/en/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
+   "/en/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
+   "/en/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
+   "/en/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
+   "/en/nauka/konferencje/2025-structures-in-banach-spaces/",
+   "/en/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
+   "/en/nauka/konferencje/2026-discrete-random-structures-ii/",
+   "/en/nauka/publikacje/",
+   "/en/obrony-doktorskie/",
+   "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/en/polityka-prywatnosci/",
+   "/en/pracownicy/",
+   "/en/seminaria/",
+   "/en/seminaria/analiza-harmoniczna/",
+   "/en/seminaria/dyskretna-analiza-harmoniczna/",
+   "/en/seminaria/prawdopodobienstwo/",
+   "/en/seminaria/rownania-rozniczkowe/",
+   "/en/seminaria/statystyka/",
+   "/en/studia/egzaminy-i-dyplom/",
+   "/en/studia/matematyka/",
+   "/en/studia/matematyka/analiza-danych/",
+   "/en/studia/matematyka/matematyka-aktuarialno-finansowa/",
+   "/en/studia/matematyka/matematyka-nauczycielska/",
+   "/en/studia/matematyka/matematyka-stosowana/",
+   "/en/studia/matematyka/matematyka-teoretyczna/",
+   "/en/studia/pierwszy-rok/",
+   "/en/studia/podyplomowe/",
+   "/en/studia/procedura-dyplomowania/",
+   "/en/studia/rok-akademicki/",
+   "/en/studia/siad/",
+   "/en/studia/skrypty/",
+   "/en/studia/sprawy-studenckie/",
+   "/en/studia/szkola-doktorska/",
+   "/en/studia/zajecia/",
+   "/en/szukaj/",
+   "/instytut/infrastruktura-informatyczna/",
+   "/instytut/kontakt/",
+   "/instytut/struktura/",
+   "/instytut/wladze/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/instytut/zaklady/analiza-matematyczna/",
+   "/instytut/zaklady/dydaktyka/",
+   "/instytut/zaklady/geometria/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/instytut/zaklady/statystyka/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "/kalendarz/",
+   "/nauka/granty/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+   "/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
+   "/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+   "/nauka/konferencje/2014-7th-young-set-theory-workshop/",
+   "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+   "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+   "/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+   "/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
+   "/nauka/konferencje/2014-workshop-in-set-theory/",
+   "/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+   "/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+   "/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
+   "/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
+   "/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
+   "/nauka/konferencje/2016-combinatorics-and-groups/",
+   "/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+   "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+   "/nauka/konferencje/2016-stochastic-models-v/",
+   "/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
+   "/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+   "/nauka/konferencje/2017-model-theory-conference/",
+   "/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
+   "/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
+   "/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
+   "/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
+   "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+   "/nauka/konferencje/2018-stochastic-models-vi/",
+   "/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
+   "/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
+   "/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
+   "/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
+   "/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+   "/nauka/konferencje/2020-model-theory-conference/",
+   "/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
+   "/nauka/konferencje/2020-random-models/",
+   "/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
+   "/nauka/konferencje/2022-probability-and-analysis-2022/",
+   "/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
+   "/nauka/konferencje/2023-discrete-random-structures/",
+   "/nauka/konferencje/2023-model-theory-conference/",
+   "/nauka/konferencje/2023-model-theory-workshop/",
+   "/nauka/konferencje/2023-stochastic-models-vii/",
+   "/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
+   "/nauka/konferencje/2024-probability-and-analysis-2024/",
+   "/nauka/konferencje/2024-second-wroclaw-logic-conference/",
+   "/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
+   "/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
+   "/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
+   "/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
+   "/nauka/konferencje/2025-structures-in-banach-spaces/",
+   "/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
+   "/nauka/konferencje/2026-discrete-random-structures-ii/",
+   "/nauka/publikacje/",
+   "/obrony-doktorskie/",
+   "/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "/polityka-prywatnosci/",
+   "/pracownicy/",
+   "/seminaria/",
+   "/seminaria/analiza-harmoniczna/",
+   "/seminaria/dyskretna-analiza-harmoniczna/",
+   "/seminaria/prawdopodobienstwo/",
+   "/seminaria/rownania-rozniczkowe/",
+   "/seminaria/statystyka/",
+   "/studia/egzaminy-i-dyplom/",
+   "/studia/matematyka/",
+   "/studia/matematyka/analiza-danych/",
+   "/studia/matematyka/matematyka-aktuarialno-finansowa/",
+   "/studia/matematyka/matematyka-nauczycielska/",
+   "/studia/matematyka/matematyka-stosowana/",
+   "/studia/matematyka/matematyka-teoretyczna/",
+   "/studia/pierwszy-rok/",
+   "/studia/podyplomowe/",
+   "/studia/procedura-dyplomowania/",
+   "/studia/rok-akademicki/",
+   "/studia/siad/",
+   "/studia/skrypty/",
+   "/studia/sprawy-studenckie/",
+   "/studia/szkola-doktorska/",
+   "/studia/zajecia/",
+   "/szukaj/"
+  ],
+  "https://www.math.uni.wroc.pl/tablica-interaktywna": [
+   "/en/instytut/infrastruktura-informatyczna/",
+   "/instytut/infrastruktura-informatyczna/"
+  ],
+  "https://www.math.uni.wroc.pl/terminy": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/users/bendikov": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/diakow": [
+   "/en/pracownicy/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/duda": [
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/gappo": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/hajduk": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/hecht": [
+   "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/rownania-rozniczkowe/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/karrer": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/kkowa": [
+   "/en/pracownicy/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/miklos": [
+   "/en/pracownicy/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/mikrupski": [
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/pawlikowski": [
+   "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/slomian": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/sullivan": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/szarek": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/tjan": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/valiunas": [
+   "/en/instytut/zaklady/geometria/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/geometria/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/wswiatkowski": [
+   "/en/pracownicy/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/wylupek": [
+   "/en/instytut/wladze/",
+   "/en/instytut/zaklady/statystyka/",
+   "/en/pracownicy/",
+   "/instytut/wladze/",
+   "/instytut/zaklady/statystyka/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/zaitseva": [
+   "/en/pracownicy/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/users/zhang": [
+   "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/algebra-i-teoria-modeli/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/zadania-z-egzaminow-licencjackich": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/zadania-z-egzaminow-magisterskich": [
+   "/en/studia/egzaminy-i-dyplom/",
+   "/studia/egzaminy-i-dyplom/"
+  ],
+  "https://www.math.uni.wroc.pl/zajecia-w-im": [
+   "/en/studia/zajecia/",
+   "/studia/zajecia/"
+  ],
+  "https://www.math.uni.wroc.pl/~lorek/bedlewo2018/": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2018-stochastic-models-vi/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2018-stochastic-models-vi/"
+  ],
+  "https://www.math.uni.wroc.pl/~lorek/bedlewo2023/": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2023-stochastic-models-vii/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2023-stochastic-models-vii/"
+  ],
+  "https://www.math.uni.wroc.pl/~mirek": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ],
+  "https://www.math.uni.wroc.pl/~pkowa/conf23.html": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2023-model-theory-conference/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2023-model-theory-conference/"
+  ],
+  "https://www.math.uni.wroc.pl/~pkowa/work23.html": [
+   "/en/nauka/konferencje/",
+   "/en/nauka/konferencje/2023-model-theory-workshop/",
+   "/nauka/konferencje/",
+   "/nauka/konferencje/2023-model-theory-workshop/"
+  ],
+  "https://www.math.uni.wroc.pl/~sgal/szkola/Kombinatoryka/Zbior_zadan_z_kombinatoryki.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/~szekli/documents/mumio/mumio-16-trans/skrypt-16.pdf": [
+   "/en/studia/skrypty/",
+   "/studia/skrypty/"
+  ],
+  "https://www.math.uni.wroc.pl/~valiunas/erasmus/": [
+   "/en/studia/sprawy-studenckie/",
+   "/studia/sprawy-studenckie/"
+  ],
+  "https://www.math.uni.wroc.pl/~wrobel/": [
+   "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "/en/pracownicy/",
+   "/instytut/zaklady/analiza-funkcjonalna/",
+   "/pracownicy/"
+  ]
+ }
+}

@@ -1,0 +1,165 @@
+{
+ "defaults": {
+  "runners": [
+   "axe",
+   "htmlcs"
+  ],
+  "standard": "WCAG2AA",
+  "timeout": 90000,
+  "wait": 300,
+  "concurrency": 4,
+  "viewport": {
+   "width": 1280,
+   "height": 900
+  },
+  "chromeLaunchConfig": {
+   "args": [
+    "--no-sandbox",
+    "--disable-setuid-sandbox",
+    "--disable-dev-shm-usage"
+   ]
+  },
+  "reporters": [
+   "cli",
+   [
+    "json",
+    {
+     "fileName": "/home/runner/work/IM-Website-test/IM-Website-test/qa-wyniki/pa11y-wyniki.json"
+    }
+   ]
+  ]
+ },
+ "urls": [
+  "http://localhost:8080/",
+  "http://localhost:8080/aktualnosci/",
+  "http://localhost:8080/deklaracja-dostepnosci/",
+  "http://localhost:8080/kalendarz/",
+  "http://localhost:8080/obrony-doktorskie/",
+  "http://localhost:8080/polityka-prywatnosci/",
+  "http://localhost:8080/pracownicy/",
+  "http://localhost:8080/seminaria/",
+  "http://localhost:8080/szukaj/",
+  "http://localhost:8080/aktualnosci/2026-10-17-rusza-tutornia/",
+  "http://localhost:8080/instytut/wladze/",
+  "http://localhost:8080/instytut/zaklady/teoria-prawdopodobienstwa/",
+  "http://localhost:8080/nauka/granty/",
+  "http://localhost:8080/nauka/konferencje/",
+  "http://localhost:8080/nauka/publikacje/",
+  "http://localhost:8080/nauka/konferencje/2026-discrete-random-structures-ii/",
+  "http://localhost:8080/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+  "http://localhost:8080/seminaria/statystyka/",
+  "http://localhost:8080/studia/zajecia/",
+  "http://localhost:8080/studia/matematyka/",
+  "http://localhost:8080/studia/matematyka/matematyka-teoretyczna/",
+  "http://localhost:8080/instytut/infrastruktura-informatyczna/",
+  "http://localhost:8080/instytut/kontakt/",
+  "http://localhost:8080/studia/egzaminy-i-dyplom/",
+  "http://localhost:8080/studia/pierwszy-rok/",
+  "http://localhost:8080/studia/podyplomowe/",
+  "http://localhost:8080/studia/procedura-dyplomowania/",
+  "http://localhost:8080/studia/rok-akademicki/",
+  "http://localhost:8080/studia/siad/",
+  "http://localhost:8080/studia/skrypty/",
+  "http://localhost:8080/studia/sprawy-studenckie/",
+  "http://localhost:8080/studia/szkola-doktorska/",
+  "http://localhost:8080/en/",
+  "http://localhost:8080/en/aktualnosci/",
+  "http://localhost:8080/en/studia/matematyka/",
+  "http://localhost:8080/en/instytut/kontakt/",
+  "http://localhost:8080/en/pracownicy/",
+  "http://localhost:8080/404.html",
+  {
+   "url": "http://localhost:8080/?qa=ciemny",
+   "runners": [
+    "axe"
+   ],
+   "actions": [
+    "click element [data-motyw]",
+    "wait for element html[data-theme=dark] to be added"
+   ]
+  },
+  {
+   "url": "http://localhost:8080/studia/matematyka/?qa=ciemny",
+   "runners": [
+    "axe"
+   ],
+   "actions": [
+    "click element [data-motyw]",
+    "wait for element html[data-theme=dark] to be added"
+   ]
+  },
+  {
+   "url": "http://localhost:8080/aktualnosci/?qa=ciemny",
+   "runners": [
+    "axe"
+   ],
+   "actions": [
+    "click element [data-motyw]",
+    "wait for element html[data-theme=dark] to be added"
+   ]
+  },
+  {
+   "url": "http://localhost:8080/pracownicy/?qa=ciemny",
+   "runners": [
+    "axe"
+   ],
+   "actions": [
+    "click element [data-motyw]",
+    "wait for element html[data-theme=dark] to be added"
+   ]
+  },
+  {
+   "url": "http://localhost:8080/seminaria/?qa=ciemny",
+   "runners": [
+    "axe"
+   ],
+   "actions": [
+    "click element [data-motyw]",
+    "wait for element html[data-theme=dark] to be added"
+   ]
+  },
+  {
+   "url": "http://localhost:8080/instytut/zaklady/teoria-prawdopodobienstwa/?qa=ciemny",
+   "runners": [
+    "axe"
+   ],
+   "actions": [
+    "click element [data-motyw]",
+    "wait for element html[data-theme=dark] to be added"
+   ]
+  },
+  {
+   "url": "http://localhost:8080/?qa=telefon",
+   "runners": [
+    "axe"
+   ],
+   "viewport": {
+    "width": 390,
+    "height": 844,
+    "isMobile": true
+   }
+  },
+  {
+   "url": "http://localhost:8080/studia/matematyka/?qa=telefon",
+   "runners": [
+    "axe"
+   ],
+   "viewport": {
+    "width": 390,
+    "height": 844,
+    "isMobile": true
+   }
+  },
+  {
+   "url": "http://localhost:8080/pracownicy/?qa=telefon",
+   "runners": [
+    "axe"
+   ],
+   "viewport": {
+    "width": 390,
+    "height": 844,
+    "isMobile": true
+   }
+  }
+ ]
+}

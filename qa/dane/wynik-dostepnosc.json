@@ -1,0 +1,271 @@
+{
+ "przetestowane": 47,
+ "problemy": 52,
+ "reguly": [
+  {
+   "runner": "htmlcs",
+   "regula": "WCAG2AA.Principle3.Guideline3_2.3_2_2.H32.2",
+   "typ": "error",
+   "wplyw": null,
+   "opis": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or ",
+   "pomoc": null,
+   "wystapienia": 31,
+   "strony": [
+    "/kalendarz/",
+    "/deklaracja-dostepnosci/",
+    "/",
+    "/aktualnosci/",
+    "/szukaj/",
+    "/pracownicy/",
+    "/instytut/wladze/",
+    "/nauka/konferencje/2026-discrete-random-structures-ii/",
+    "/nauka/granty/",
+    "/seminaria/statystyka/",
+    "/studia/matematyka/matematyka-teoretyczna/",
+    "/instytut/kontakt/",
+    "/studia/pierwszy-rok/",
+    "/studia/rok-akademicki/",
+    "/studia/procedura-dyplomowania/",
+    "/studia/skrypty/",
+    "/studia/sprawy-studenckie/",
+    "/studia/szkola-doktorska/",
+    "/en/",
+    "/en/aktualnosci/",
+    "/en/studia/matematyka/",
+    "/en/instytut/kontakt/",
+    "/?qa=ciemny",
+    "/studia/matematyka/?qa=ciemny",
+    "/aktualnosci/?qa=ciemny",
+    "/pracownicy/?qa=ciemny",
+    "/seminaria/?qa=ciemny",
+    "/instytut/zaklady/teoria-prawdopodobienstwa/?qa=ciemny",
+    "/?qa=telefon",
+    "/studia/matematyka/?qa=telefon",
+    "/pracownicy/?qa=telefon"
+   ],
+   "przyklady": [
+    {
+     "strona": "/kalendarz/",
+     "selektor": "html > body > header > div > div > form",
+     "kontekst": "<form class=\"hdr-search\" role=\"search\" action=\"/szukaj\" method=\"get\"> <svg class=\"ico \" style=\"width...</form>",
+     "komunikat": "This form does not contain a submit button, which creates issues for those who cannot submit the form using the keyboard. Submit buttons are INPUT elements with type attribute \"submit\" or \"image\", or BUTTON elements with type \"submit\" or omitted/invalid."
+    }
+   ],
+   "pliki": "src/components/Naglowek.astro"
+  },
+  {
+   "runner": "axe",
+   "regula": "color-contrast",
+   "typ": "error",
+   "wplyw": "serious",
+   "opis": "Elements must meet minimum color contrast ratio thresholds",
+   "pomoc": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI",
+   "wystapienia": 11,
+   "strony": [
+    "/",
+    "/studia/procedura-dyplomowania/",
+    "/en/",
+    "/?qa=ciemny",
+    "/?qa=telefon"
+   ],
+   "przyklady": [
+    {
+     "strona": "/",
+     "selektor": "#tresc > section:nth-child(1) > figure > figcaption",
+     "kontekst": "<figcaption>Fot. fotopolska.eu</figcaption>",
+     "komunikat": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)"
+    },
+    {
+     "strona": "/",
+     "selektor": "#h1-glowna",
+     "kontekst": "<h1 id=\"h1-glowna\">Instytut Matematyczny</h1>",
+     "komunikat": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)"
+    },
+    {
+     "strona": "/studia/procedura-dyplomowania/",
+     "selektor": "#tresc > div:nth-child(2) > div > div > ul:nth-child(36) > li:nth-child(1) > span > span:nth-child(2) > span:nth-child(1) > span:nth-child(2) > span:nth-child(2) > span > span:nth-child(1) > span:nth-",
+     "kontekst": "<span class=\"mord\">4</span>",
+     "komunikat": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)"
+    },
+    {
+     "strona": "/studia/procedura-dyplomowania/",
+     "selektor": "#tresc > div:nth-child(2) > div > div > ul:nth-child(36) > li:nth-child(1) > span > span:nth-child(2) > span:nth-child(2) > span:nth-child(2) > span:nth-child(2) > span > span:nth-child(1) > span:nth-",
+     "kontekst": "<span class=\"mord\">8</span>",
+     "komunikat": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)"
+    }
+   ],
+   "pliki": "src/layouts/Baza.astro"
+  },
+  {
+   "runner": "axe",
+   "regula": "aria-allowed-attr",
+   "typ": "error",
+   "wplyw": "critical",
+   "opis": "Elements must only use supported ARIA attributes",
+   "pomoc": "https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI",
+   "wystapienia": 9,
+   "strony": [
+    "/en/studia/matematyka/",
+    "/studia/matematyka/?qa=ciemny",
+    "/studia/matematyka/?qa=telefon"
+   ],
+   "przyklady": [
+    {
+     "strona": "/en/studia/matematyka/",
+     "selektor": "#tab-0",
+     "kontekst": "<button type=\"button\" role=\"tab\" class=\"chip\" id=\"tab-0\" aria-controls=\"prog-0\" aria-selected=\"true\" aria-pressed=\"true\" data-od=\"2026\" data-do=\"2100\" tabindex=\"0\">New curriculum (from 2026/27)</button>",
+     "komunikat": "Elements must only use supported ARIA attributes (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)"
+    },
+    {
+     "strona": "/en/studia/matematyka/",
+     "selektor": "#tab-1",
+     "kontekst": "<button type=\"button\" role=\"tab\" class=\"chip\" id=\"tab-1\" aria-controls=\"prog-1\" aria-selected=\"false\" aria-pressed=\"false\" data-od=\"2022\" data-do=\"2025\" tabindex=\"-1\">Previous curriculum (2022–2025/...</button>",
+     "komunikat": "Elements must only use supported ARIA attributes (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)"
+    },
+    {
+     "strona": "/en/studia/matematyka/",
+     "selektor": "#tab-2",
+     "kontekst": "<button type=\"button\" role=\"tab\" class=\"chip\" id=\"tab-2\" aria-controls=\"prog-2\" aria-selected=\"false\" aria-pressed=\"false\" data-od=\"1990\" data-do=\"2021\" tabindex=\"-1\">Archived curricula (before 2022...</button>",
+     "komunikat": "Elements must only use supported ARIA attributes (https://dequeuniversity.com/rules/axe/4.11/aria-allowed-attr?application=axeAPI)"
+    }
+   ],
+   "pliki": "src/components/TabelaPracownikow.tsx, src/views/Kalendarz.astro, src/views/Kierunek.astro (+3)"
+  },
+  {
+   "runner": "axe",
+   "regula": "label-title-only",
+   "typ": "error",
+   "wplyw": "serious",
+   "opis": "Form elements should have a visible label",
+   "pomoc": "https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=axeAPI",
+   "wystapienia": 1,
+   "strony": [
+    "/szukaj/"
+   ],
+   "przyklady": [
+    {
+     "strona": "/szukaj/",
+     "selektor": "#szukajka > div > form > input",
+     "kontekst": "<input class=\"pagefind-ui__search-input svelte-e9gkc3\" type=\"text\" placeholder=\"Szukaj na stronie\" title=\"Szukaj na stronie\" autocapitalize=\"none\" enterkeyhint=\"search\" autofocus=\"\">",
+     "komunikat": "Form elements should have a visible label (https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=axeAPI)"
+    }
+   ],
+   "pliki": "src/views/Szukaj.astro"
+  }
+ ],
+ "nieudane": [
+  {
+   "strona": "/polityka-prywatnosci/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/seminaria/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/aktualnosci/2026-10-17-rusza-tutornia/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/nauka/konferencje/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/nauka/publikacje/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/studia/matematyka/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/instytut/infrastruktura-informatyczna/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/studia/egzaminy-i-dyplom/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/studia/podyplomowe/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/obrony-doktorskie/",
+   "blad": "Timed out after waiting 30000ms"
+  },
+  {
+   "strona": "/en/pracownicy/",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/404.html",
+   "blad": "Protocol error (Target.closeTarget): No target with given id found"
+  },
+  {
+   "strona": "/studia/zajecia/",
+   "blad": "Timed out after waiting 30000ms"
+  },
+  {
+   "strona": "/studia/siad/",
+   "blad": "Timed out after waiting 30000ms"
+  }
+ ],
+ "per_strona": {
+  "/kalendarz/": 1,
+  "/deklaracja-dostepnosci/": 1,
+  "/": 3,
+  "/polityka-prywatnosci/": 0,
+  "/aktualnosci/": 1,
+  "/seminaria/": 0,
+  "/szukaj/": 2,
+  "/aktualnosci/2026-10-17-rusza-tutornia/": 0,
+  "/pracownicy/": 1,
+  "/instytut/zaklady/teoria-prawdopodobienstwa/": 0,
+  "/instytut/wladze/": 1,
+  "/nauka/konferencje/": 0,
+  "/nauka/publikacje/": 0,
+  "/nauka/konferencje/2026-discrete-random-structures-ii/": 1,
+  "/obrony-doktorskie/2026-10-27-malwina-mrowinska/": 0,
+  "/nauka/granty/": 1,
+  "/seminaria/statystyka/": 1,
+  "/studia/matematyka/": 0,
+  "/studia/matematyka/matematyka-teoretyczna/": 1,
+  "/instytut/infrastruktura-informatyczna/": 0,
+  "/instytut/kontakt/": 1,
+  "/studia/egzaminy-i-dyplom/": 0,
+  "/studia/pierwszy-rok/": 1,
+  "/studia/podyplomowe/": 0,
+  "/studia/rok-akademicki/": 1,
+  "/studia/procedura-dyplomowania/": 5,
+  "/studia/skrypty/": 1,
+  "/studia/sprawy-studenckie/": 1,
+  "/studia/szkola-doktorska/": 1,
+  "/en/": 3,
+  "/en/aktualnosci/": 1,
+  "/en/studia/matematyka/": 4,
+  "/en/instytut/kontakt/": 1,
+  "/obrony-doktorskie/": 0,
+  "/en/pracownicy/": 0,
+  "/404.html": 0,
+  "/?qa=ciemny": 3,
+  "/studia/matematyka/?qa=ciemny": 4,
+  "/aktualnosci/?qa=ciemny": 1,
+  "/pracownicy/?qa=ciemny": 1,
+  "/seminaria/?qa=ciemny": 1,
+  "/studia/zajecia/": 0,
+  "/instytut/zaklady/teoria-prawdopodobienstwa/?qa=ciemny": 1,
+  "/?qa=telefon": 2,
+  "/studia/matematyka/?qa=telefon": 4,
+  "/pracownicy/?qa=telefon": 1,
+  "/studia/siad/": 0
+ }
+}

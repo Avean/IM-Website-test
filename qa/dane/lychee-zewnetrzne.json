@@ -1,0 +1,4362 @@
+{
+  "total": 443,
+  "unique": 443,
+  "successful": 192,
+  "unknown": 0,
+  "unsupported": 0,
+  "timeouts": 6,
+  "redirects": 90,
+  "remaps": 0,
+  "excludes": 0,
+  "errors": 245,
+  "cached": 0,
+  "success_map": {},
+  "error_map": {
+    "qa-wyniki/zewnetrzne.html": [
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.docx",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.docx))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 381,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 456458585
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2011",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2011))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 284,
+          "column": 10
+        },
+        "duration": {
+          "secs": 14,
+          "nanos": 529099352
+        }
+      },
+      {
+        "url": "http://bcc.impan.pl/14Young/",
+        "status": {
+          "text": "Rejected status code: 502 Bad Gateway",
+          "code": 502
+        },
+        "redirects": {
+          "origin": "http://bcc.impan.pl/14Young/",
+          "redirects": [
+            {
+              "url": "https://bcc.impan.pl/14Young/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 5,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 765036211
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_lsmaga_mrowinska.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_lsmaga_mrowinska.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 345,
+          "column": 10
+        },
+        "duration": {
+          "secs": 33,
+          "nanos": 800172024
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 254,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 450238842
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/repetii.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/repetii.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 358,
+          "column": 10
+        },
+        "duration": {
+          "secs": 5,
+          "nanos": 481043446
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_rr1.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_rr1.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 366,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 361933676
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_symstoch.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_symstoch.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 368,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 349375481
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_mbochenski_antasik.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_mbochenski_antasik.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 346,
+          "column": 10
+        },
+        "duration": {
+          "secs": 33,
+          "nanos": 765674416
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/szarek",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/szarek))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 421,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 212219786
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 235,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 129859839
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 255,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 209787512
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-workshop18",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/18-workshop18",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 260,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 272136742
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2009",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2009))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 282,
+          "column": 10
+        },
+        "duration": {
+          "secs": 5,
+          "nanos": 465059668
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/momentw.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/momentw.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 323,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 520873744
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxi_histmat_info.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxi_histmat_info.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 390,
+          "column": 10
+        },
+        "duration": {
+          "secs": 21,
+          "nanos": 956650756
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/~sgal/szkola/Kombinatoryka/Zbior_zadan_z_kombinatoryki.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~sgal/szkola/Kombinatoryka/Zbior_zadan_z_kombinatoryki.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 436,
+          "column": 10
+        },
+        "duration": {
+          "secs": 32,
+          "nanos": 400355103
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/tem7.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/tem7.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 383,
+          "column": 10
+        },
+        "duration": {
+          "secs": 34,
+          "nanos": 446875767
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-stosowana.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-stosowana.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 372,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 334347608
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/zadania-z-egzaminow-licencjackich",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/zadania-z-egzaminow-licencjackich))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 428,
+          "column": 10
+        },
+        "duration": {
+          "secs": 5,
+          "nanos": 349815022
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 327,
+          "column": 10
+        },
+        "duration": {
+          "secs": 15,
+          "nanos": 19002856
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/komentarz_do_wytycznych_dla_prac_dyplomowych.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/komentarz_do_wytycznych_dla_prac_dyplomowych.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 313,
+          "column": 10
+        },
+        "duration": {
+          "secs": 17,
+          "nanos": 284031358
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/krupski.ps",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/krupski.ps))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 316,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 385940854
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2019.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2019.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 333,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 672769292
+        }
+      },
+      {
+        "url": "http://bcc.impan.pl/13Levy/",
+        "status": {
+          "text": "Rejected status code: 502 Bad Gateway",
+          "code": 502
+        },
+        "redirects": {
+          "origin": "http://bcc.impan.pl/13Levy/",
+          "redirects": [
+            {
+              "url": "https://bcc.impan.pl/13Levy/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 3,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 780045496
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2023.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2023.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 337,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 674412153
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/sesja_poprawkowa2027luty.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/sesja_poprawkowa2027luty.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 360,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 385762969
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_okalenda_korpalski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_okalenda_korpalski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 349,
+          "column": 10
+        },
+        "duration": {
+          "secs": 32,
+          "nanos": 994394926
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/karrer",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/karrer))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 414,
+          "column": 10
+        },
+        "duration": {
+          "secs": 34,
+          "nanos": 273913268
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2005",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2005))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 278,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 407337052
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/tjan",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/tjan))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 422,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 206044928
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 243,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 874796151
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/krupski.dvi",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/krupski.dvi))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 314,
+          "column": 10
+        },
+        "duration": {
+          "secs": 17,
+          "nanos": 107495287
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_leigentler_tadej.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_leigentler_tadej.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 344,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 374470847
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 226,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 755562693
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_mwilczynski_mrowinska.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_mwilczynski_mrowinska.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 348,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 334357309
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf",
+          "redirects": [
+            {
+              "url": "https://dbura.math.uni.wroc.pl/dydaktyka/random_walks.pdf",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 49,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 430272505
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 265,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 510358221
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/archiwalne-programy-studiow-na-kierunku-matematyka",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/archiwalne-programy-studiow-na-kierunku-matematyka))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 266,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 456970696
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~hebisch/",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 66,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 301234749
+        }
+      },
+      {
+        "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+          "redirects": [
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 210,
+          "column": 10
+        },
+        "duration": {
+          "secs": 2,
+          "nanos": 702339081
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxiii_khm_info.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxiii_khm_info.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 394,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 164503165
+        }
+      },
+      {
+        "url": "http://bcc.impan.pl/14PAHA/",
+        "status": {
+          "text": "Rejected status code: 502 Bad Gateway",
+          "code": 502
+        },
+        "redirects": {
+          "origin": "http://bcc.impan.pl/14PAHA/",
+          "redirects": [
+            {
+              "url": "https://bcc.impan.pl/14PAHA/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 4,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 756201470
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2020.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2020.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 334,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 668800053
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_zuchowski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_zuchowski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 401,
+          "column": 10
+        },
+        "duration": {
+          "secs": 33,
+          "nanos": 348099711
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 234,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 214320919
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 249,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 818161236
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/postepowania-w-sprawie-nadania-stopnia-doktora-w-instytucie-matematycznym",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/postepowania-w-sprawie-nadania-stopnia-doktora-w-instytucie-matematycznym))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 275,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 356480948
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/abstract_tadej.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/abstract_tadej.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 297,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 3034813
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/tablica-interaktywna",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/tablica-interaktywna))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 406,
+          "column": 10
+        },
+        "duration": {
+          "secs": 20,
+          "nanos": 587632795
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/bendikov",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/bendikov))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 408,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 626193262
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2013",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2013))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 286,
+          "column": 10
+        },
+        "duration": {
+          "secs": 14,
+          "nanos": 359507761
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/46-2017.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/46-2017.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 293,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 802073489
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_pmucha_tadej.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_pmucha_tadej.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 350,
+          "column": 10
+        },
+        "duration": {
+          "secs": 21,
+          "nanos": 23248159
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_pzakrzewski_zuchowski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_pzakrzewski_zuchowski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 351,
+          "column": 10
+        },
+        "duration": {
+          "secs": 20,
+          "nanos": 874745846
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 244,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 102285483
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/skryptn.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skryptn.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 369,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 345227681
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 242,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 132061482
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-dokumenty",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-dokumenty))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 269,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 379386095
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/valiunas",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/valiunas))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 423,
+          "column": 10
+        },
+        "duration": {
+          "secs": 34,
+          "nanos": 62380448
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-mgr.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-mgr.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 375,
+          "column": 10
+        },
+        "duration": {
+          "secs": 22,
+          "nanos": 28608861
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-probabilistic",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/20-probabilistic",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 262,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 475151402
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2024.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2024.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 338,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 210008509
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr21-ad-zakres.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr21-ad-zakres.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 317,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 441385742
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/sesja2027luty.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/sesja2027luty.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 359,
+          "column": 10
+        },
+        "duration": {
+          "secs": 5,
+          "nanos": 192849559
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/krupski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/krupski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 315,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 387611006
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/doktorat_antasik.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/doktorat_antasik.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 306,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 997010589
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/siec_im_dla_pracownikow_i_doktorantow.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/siec_im_dla_pracownikow_i_doktorantow.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 361,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 437348582
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2006",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2006))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 279,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 358268613
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/wykaz_kdmat_2025_2026.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/wykaz_kdmat_2025_2026.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 387,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 450233611
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 402,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 315582264
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf",
+          "redirects": [
+            {
+              "url": "https://jdziuban.math.uni.wroc.pl/calki.pdf",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 70,
+          "column": 10
+        },
+        "duration": {
+          "secs": 2,
+          "nanos": 102543824
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/skryptn.ps",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skryptn.ps))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 370,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 335119132
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/~wrobel/",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~wrobel/))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 439,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 537632584
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2017.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2017.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 331,
+          "column": 10
+        },
+        "duration": {
+          "secs": 20,
+          "nanos": 927878900
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/egzlic_zagadnienia.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/egzlic_zagadnienia.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 312,
+          "column": 10
+        },
+        "duration": {
+          "secs": 17,
+          "nanos": 37649795
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/abstract_mrowinska.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/abstract_mrowinska.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 296,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 931387820
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 232,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 95388265
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/wdsl.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/wdsl.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 384,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 382107726
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-paha",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/18-paha",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 259,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 364229204
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2025.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2025.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 339,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 930095644
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 302,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 174204079
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr21-te-zakres.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr21-te-zakres.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 321,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 436772440
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 328,
+          "column": 10
+        },
+        "duration": {
+          "secs": 15,
+          "nanos": 225090519
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~pms/",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (http://www.math.uni.wroc.pl/~pms/))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~pms/",
+          "redirects": [
+            {
+              "url": "https://www.math.uni.wroc.pl/~pms/",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 112,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 326834433
+        }
+      },
+      {
+        "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+          "redirects": [
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 209,
+          "column": 10
+        },
+        "duration": {
+          "secs": 2,
+          "nanos": 917567661
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxii_konferencja_z_historii_matematyki_2018_program.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxii_konferencja_z_historii_matematyki_2018_program.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 393,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 595244306
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.docx",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.docx))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 301,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 5091839
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_tadej.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/streszczenie_tadej.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 379,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 567649778
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/oferty-pracy",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/oferty-pracy))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 274,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 354960014
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/mathbank/preprinty/index.php",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 34,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 402429043
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/slomian",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/slomian))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 419,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 211501837
+        }
+      },
+      {
+        "url": "https://www.facebook.com/IMUWr",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "redirects": {
+          "origin": "https://www.facebook.com/IMUWr",
+          "redirects": [
+            {
+              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIMUWr",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 219,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 460528940
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/kwalifikacyjne-studia-podyplomowe-nauczanie-matematyki",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/kwalifikacyjne-studia-podyplomowe-nauczanie-matematyki))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 273,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 474986851
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/doktorat_mrowinska.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/doktorat_mrowinska.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 308,
+          "column": 10
+        },
+        "duration": {
+          "secs": 15,
+          "nanos": 1007311
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_izezula_mrowinska.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_izezula_mrowinska.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 342,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 345168352
+        }
+      },
+      {
+        "url": "https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=harezlak",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 190,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 248332386
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/wytyczne_prace_dyplomowe.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/wytyczne_prace_dyplomowe.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 388,
+          "column": 10
+        },
+        "duration": {
+          "secs": 21,
+          "nanos": 539344788
+        }
+      },
+      {
+        "url": "http://www.impan.pl/~set_theory/dmvptm14/",
+        "status": {
+          "text": "Rejected status code: 403 Forbidden",
+          "code": 403
+        },
+        "redirects": {
+          "origin": "http://www.impan.pl/~set_theory/dmvptm14/",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/~set_theory/dmvptm14/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 26,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 583532160
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/decyzje1rok2sem.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/decyzje1rok2sem.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 305,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 999951152
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/siec_studencka_i_laboratoria_komputerowe.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/siec_studencka_i_laboratoria_komputerowe.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 362,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 528669867
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 246,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 831471965
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_akwela_zuchowski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_akwela_zuchowski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 340,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 683010097
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/zajecia-w-im",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/zajecia-w-im))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 430,
+          "column": 10
+        },
+        "duration": {
+          "secs": 15,
+          "nanos": 60091928
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-19thworkshop",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/20-19thworkshop",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 261,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 273501698
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sukcesy",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sukcesy))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 405,
+          "column": 10
+        },
+        "duration": {
+          "secs": 21,
+          "nanos": 540528086
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/plan_26_27z_popr3.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/plan_26_27z_popr3.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 324,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 511179300
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_al1.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_al1.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 364,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 435205912
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/doktorat_tadej.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/doktorat_tadej.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 309,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 1744162
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/diakow",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/diakow))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 409,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 151036633
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2007",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2007))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 280,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 339342872
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/abstract_korpalski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/abstract_korpalski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 295,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 930019942
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr22-na-zakres.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr22-na-zakres.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 322,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 437567143
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 228,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 528821813
+        }
+      },
+      {
+        "url": "http://bcc.impan.pl/16PAHA/",
+        "status": {
+          "text": "Rejected status code: 502 Bad Gateway",
+          "code": 502
+        },
+        "redirects": {
+          "origin": "http://bcc.impan.pl/16PAHA/",
+          "redirects": [
+            {
+              "url": "https://bcc.impan.pl/16PAHA/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 6,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 765135658
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2021.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2021.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 335,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 671391539
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/decyzje1rok1sem.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/decyzje1rok1sem.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 304,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 173657627
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 225,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 113635938
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_mhrusak_zuchowski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_mhrusak_zuchowski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 347,
+          "column": 10
+        },
+        "duration": {
+          "secs": 33,
+          "nanos": 638853884
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 229,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 117993408
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxiii_khm_program.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxiii_khm_program.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 395,
+          "column": 10
+        },
+        "duration": {
+          "secs": 34,
+          "nanos": 463870012
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2015.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2015.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 329,
+          "column": 10
+        },
+        "duration": {
+          "secs": 15,
+          "nanos": 224051444
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxi_histmat_program2.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxi_histmat_program2.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 391,
+          "column": 10
+        },
+        "duration": {
+          "secs": 21,
+          "nanos": 889366497
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/wswiatkowski",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/wswiatkowski))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 424,
+          "column": 10
+        },
+        "duration": {
+          "secs": 20,
+          "nanos": 388918052
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/ivmrt2014",
+        "status": {
+          "text": "Rejected status code: 403 Forbidden",
+          "code": 403
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/ivmrt2014",
+          "redirects": [
+            {
+              "url": "http://www.math.uni.wroc.pl/ivmrt2014/",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 33,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 123130798
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2018.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2018.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 332,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 343510099
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2014",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2014))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 287,
+          "column": 10
+        },
+        "duration": {
+          "secs": 14,
+          "nanos": 343534692
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-17-rusza-tutornia",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 256,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 211400676
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/programy-dostepne-dla-studentow-i-pracownikow",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/programy-dostepne-dla-studentow-i-pracownikow))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 289,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 336920218
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_antasik.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/streszczenie_antasik.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 376,
+          "column": 10
+        },
+        "duration": {
+          "secs": 21,
+          "nanos": 955590893
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_tadej.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_tadej.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 400,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 149344926
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 248,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 186403947
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 253,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 208716739
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 227,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 207919723
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2016.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2016.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 330,
+          "column": 10
+        },
+        "duration": {
+          "secs": 20,
+          "nanos": 790434666
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_antasik.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_antasik.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 397,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 161046178
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_spetrovskiy_tadej.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_spetrovskiy_tadej.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 352,
+          "column": 10
+        },
+        "duration": {
+          "secs": 20,
+          "nanos": 837033665
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_rrcz.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_rrcz.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 367,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 377759409
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/regulamin-praktyk-nauczycielskich-2026.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/regulamin-praktyk-nauczycielskich-2026.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 356,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 445598469
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/program-most",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/program-most))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 288,
+          "column": 10
+        },
+        "duration": {
+          "secs": 14,
+          "nanos": 542596060
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/22-19thworkshop",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/22-19thworkshop",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 264,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 290195512
+        }
+      },
+      {
+        "url": "https://www.ptm.org.pl/konkursy/wyklady-im-waclawa-sierpinskiego",
+        "status": {
+          "text": "Rejected status code: 503 Service Unavailable",
+          "code": 503
+        },
+        "span": {
+          "line": 441,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 803125178
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_korpalski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_korpalski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 398,
+          "column": 10
+        },
+        "duration": {
+          "secs": 34,
+          "nanos": 466628521
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/zadania-z-egzaminow-magisterskich",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/zadania-z-egzaminow-magisterskich))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 429,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 973050386
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/~pkowa/conf23.html",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~pkowa/conf23.html))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 434,
+          "column": 10
+        },
+        "duration": {
+          "secs": 32,
+          "nanos": 364085582
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/adapt2026_matematyka.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/adapt2026_matematyka.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 299,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 2010814
+        }
+      },
+      {
+        "url": "https://www.facebook.com/KNZM.UWr/",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "redirects": {
+          "origin": "https://www.facebook.com/KNZM.UWr/",
+          "redirects": [
+            {
+              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FKNZM.UWr%2F",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 220,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 490454880
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/godziny-otwarcia-laboratorium-komputerowego",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/godziny-otwarcia-laboratorium-komputerowego))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 268,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 331525237
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/17-modeltheory",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/17-modeltheory",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 258,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 426399640
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/e-learnings.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/e-learnings.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 311,
+          "column": 10
+        },
+        "duration": {
+          "secs": 6,
+          "nanos": 767631724
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/duda",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/duda))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 410,
+          "column": 10
+        },
+        "duration": {
+          "secs": 2,
+          "nanos": 168118852
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr21-af-zakres.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr21-af-zakres.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 318,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 376028455
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~karch/pattern/",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~karch/pattern/",
+          "redirects": [
+            {
+              "url": "https://karch.math.uni.wroc.pl/pattern/",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 77,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 569083205
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 240,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 131931228
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr21-ek-zakres.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr21-ek-zakres.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 319,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 577296078
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/praktyka.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/praktyka.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 326,
+          "column": 10
+        },
+        "duration": {
+          "secs": 14,
+          "nanos": 724303923
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/~mirek",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~mirek))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 433,
+          "column": 10
+        },
+        "duration": {
+          "secs": 32,
+          "nanos": 490897450
+        }
+      },
+      {
+        "url": "https://erc.europa.eu/",
+        "status": {
+          "text": "Rejected status code: 403 Forbidden",
+          "code": 403
+        },
+        "span": {
+          "line": 162,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 105645223
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_tkania_korpalski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_tkania_korpalski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 353,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 47043549
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/~pkowa/work23.html",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~pkowa/work23.html))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 435,
+          "column": 10
+        },
+        "duration": {
+          "secs": 32,
+          "nanos": 341229992
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/studia/plany_zajec/planL.php))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 403,
+          "column": 10
+        },
+        "duration": {
+          "secs": 21,
+          "nanos": 902345859
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/wylupek",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/wylupek))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 425,
+          "column": 10
+        },
+        "duration": {
+          "secs": 23,
+          "nanos": 725176445
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2012",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2012))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 285,
+          "column": 10
+        },
+        "duration": {
+          "secs": 14,
+          "nanos": 717333870
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/wizualizacja.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/wizualizacja.pdf",
+          "redirects": [
+            {
+              "url": "https://dbura.math.uni.wroc.pl/dydaktyka/wizualizacja.pdf",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 50,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 528657449
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/~lorek/bedlewo2018/",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~lorek/bedlewo2018/))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 431,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 958498757
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 231,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 517937437
+        }
+      },
+      {
+        "url": "https://panda.pwr.edu.pl/",
+        "status": {
+          "text": "Rejected status code: 503 Service Unavailable",
+          "code": 503
+        },
+        "span": {
+          "line": 185,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 696179086
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-nauczycielska.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-nauczycielska.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 371,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 343233853
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/wdsl.ps",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/wdsl.ps))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 385,
+          "column": 10
+        },
+        "duration": {
+          "secs": 34,
+          "nanos": 713452814
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 236,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 168396296
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_tmaszczyk_antasik.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_tmaszczyk_antasik.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 354,
+          "column": 10
+        },
+        "duration": {
+          "secs": 18,
+          "nanos": 32183949
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~grzes/dydaktyka13_14/fr_main.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 65,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 705447265
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 250,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 124946218
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 237,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 150292819
+        }
+      },
+      {
+        "url": "https://prac.im.pwr.edu.pl/~twowlc/",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://prac.im.pwr.edu.pl/~twowlc/))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 188,
+          "column": 10
+        },
+        "duration": {
+          "secs": 2,
+          "nanos": 507145303
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/adapt2026_siad.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/adapt2026_siad.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 300,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 171289464
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/gappo",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/gappo))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 411,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 170378482
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 238,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 154671233
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-stypendia-i-granty",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-stypendia-i-granty))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 272,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 533374605
+        }
+      },
+      {
+        "url": "https://www.facebook.com/WRSSWMI/",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "redirects": {
+          "origin": "https://www.facebook.com/WRSSWMI/",
+          "redirects": [
+            {
+              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FWRSSWMI%2F",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 221,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 273883506
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~stanczr/semin/semin.html",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 120,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 451476924
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_al2.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_al2.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 365,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 505727217
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/pawlikowski",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/pawlikowski))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 418,
+          "column": 10
+        },
+        "duration": {
+          "secs": 32,
+          "nanos": 744987654
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/zaitseva",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/zaitseva))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 426,
+          "column": 10
+        },
+        "duration": {
+          "secs": 4,
+          "nanos": 839556056
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 382,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 493590843
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 233,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 228356773
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/abstract_antasik.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/abstract_antasik.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 294,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 812119611
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_mrowinska.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/streszczenie_mrowinska.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 378,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 428323280
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/registering-at-hasselt-university.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/registering-at-hasselt-university.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 355,
+          "column": 10
+        },
+        "duration": {
+          "secs": 17,
+          "nanos": 863182431
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-17-rusza-tutornia",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 239,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 736905677
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2003",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2003))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 276,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 498166129
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/mikrupski",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/mikrupski))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 417,
+          "column": 10
+        },
+        "duration": {
+          "secs": 34,
+          "nanos": 601274587
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 247,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 135776521
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/miklos",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/miklos))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 416,
+          "column": 10
+        },
+        "duration": {
+          "secs": 20,
+          "nanos": 275743959
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_mrowinska.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zawiadomienie_mrowinska.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 399,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 143754359
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/~szekli/documents/mumio/mumio-16-trans/skrypt-16.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~szekli/documents/mumio/mumio-16-trans/skrypt-16.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 437,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 534801205
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_awreid_antasik.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_awreid_antasik.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 341,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 379997783
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/wykaz_kdinf_2025_2026.docx",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/wykaz_kdinf_2025_2026.docx))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 386,
+          "column": 10
+        },
+        "duration": {
+          "secs": 35,
+          "nanos": 562711935
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/repet.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/repet.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 357,
+          "column": 10
+        },
+        "duration": {
+          "secs": 17,
+          "nanos": 620281951
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/poradnik_26_27.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/poradnik_26_27.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 325,
+          "column": 10
+        },
+        "duration": {
+          "secs": 14,
+          "nanos": 439475083
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/mgr21-st-zakres.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/mgr21-st-zakres.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 320,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 433726951
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 245,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 666984103
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2004",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2004))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 277,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 468255641
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2008",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2008))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 281,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 346443909
+        }
+      },
+      {
+        "url": "http://math.uni.wroc.pl/~nadav",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 18,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 382962857
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 251,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 149017592
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-teoretyczna.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-teoretyczna.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 373,
+          "column": 10
+        },
+        "duration": {
+          "secs": 21,
+          "nanos": 528458409
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/zasady-rejestracji.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/zasady-rejestracji.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 396,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 155411574
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 230,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 766983762
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/abstract_zuchowski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/abstract_zuchowski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 298,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 5488976
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2022.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/publikacje_2022.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 336,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 674445177
+        }
+      },
+      {
+        "url": "https://www.facebook.com/knmtuwr",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "redirects": {
+          "origin": "https://www.facebook.com/knmtuwr",
+          "redirects": [
+            {
+              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fknmtuwr",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 222,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 295920298
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/recenzja_jkakol_korpalski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/recenzja_jkakol_korpalski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 343,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 356113692
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/skrypt_af.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/skrypt_af.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 363,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 381880041
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-rekrutacja",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-rekrutacja))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 271,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 327929726
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/programy-dostepne-w-pracowniach-komputerowych",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/programy-dostepne-w-pracowniach-komputerowych))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 290,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 512988898
+        }
+      },
+      {
+        "url": "http://www.impan.pl/~set_theory/Workshop2013/",
+        "status": {
+          "text": "Rejected status code: 403 Forbidden",
+          "code": 403
+        },
+        "redirects": {
+          "origin": "http://www.impan.pl/~set_theory/Workshop2013/",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/~set_theory/Workshop2013/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 25,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 561714603
+        }
+      },
+      {
+        "url": "http://forum2019.math.uni.wroc.pl/",
+        "status": {
+          "text": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://forum2019.math.uni.wroc.pl/))",
+          "details": "Connection failed. Check network connectivity and firewall settings"
+        },
+        "span": {
+          "line": 7,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 830617595
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 223,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 206483989
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-informacje-ogolne",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/kolegium-doktorskie-matematyki-informacje-ogolne))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 270,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 541081135
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_korpalski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/streszczenie_korpalski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 377,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 457888601
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/xxx.program2.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxx.program2.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 389,
+          "column": 10
+        },
+        "duration": {
+          "secs": 21,
+          "nanos": 529311635
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/zhang",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/zhang))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 427,
+          "column": 10
+        },
+        "duration": {
+          "secs": 20,
+          "nanos": 580859042
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/hajduk",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/hajduk))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 412,
+          "column": 10
+        },
+        "duration": {
+          "secs": 32,
+          "nanos": 843525620
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/doktorat_korpalski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/doktorat_korpalski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 307,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 996708564
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/dostep-do-sieci-bezprzewodowej",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/dostep-do-sieci-bezprzewodowej))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 267,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 390284901
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 404,
+          "column": 10
+        },
+        "duration": {
+          "secs": 21,
+          "nanos": 896813687
+        }
+      },
+      {
+        "url": "http://magweb.math.uni.wroc.pl/analiza/bedlewo17/",
+        "status": {
+          "text": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://magweb.math.uni.wroc.pl/analiza/bedlewo17/))",
+          "details": "Connection failed. Check network connectivity and firewall settings"
+        },
+        "span": {
+          "line": 12,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 836458114
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 241,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 130879627
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-random",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/20-random",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 263,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 261354696
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/kkowa",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/kkowa))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 415,
+          "column": 10
+        },
+        "duration": {
+          "secs": 20,
+          "nanos": 264233255
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/~valiunas/erasmus/",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~valiunas/erasmus/))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 438,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 475602088
+        }
+      },
+      {
+        "url": "http://www.matematyka.wroc.pl/",
+        "status": {
+          "text": "Rejected status code: 403 Forbidden",
+          "code": 403
+        },
+        "span": {
+          "line": 27,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 899176195
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/doktorat_zuchowski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/doktorat_zuchowski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 310,
+          "column": 10
+        },
+        "duration": {
+          "secs": 15,
+          "nanos": 348909514
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf",
+          "redirects": [
+            {
+              "url": "https://jdziuban.math.uni.wroc.pl/fourier.pdf",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 71,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 986826792
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/sullivan",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/users/sullivan))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 420,
+          "column": 10
+        },
+        "duration": {
+          "secs": 32,
+          "nanos": 544134078
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/~lorek/bedlewo2023/",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/~lorek/bedlewo2023/))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 432,
+          "column": 10
+        },
+        "duration": {
+          "secs": 32,
+          "nanos": 438165654
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/xxxii_konferencja_z_historii_matematyki_2018.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/xxxii_konferencja_z_historii_matematyki_2018.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 392,
+          "column": 10
+        },
+        "duration": {
+          "secs": 23,
+          "nanos": 840988642
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/ckp.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/ckp.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 303,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 1869927
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/terminy",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/terminy))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 407,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 663483225
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf",
+          "redirects": [
+            {
+              "url": "https://dbura.math.uni.wroc.pl/dydaktyka/fundacja8.pdf",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 48,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 542306290
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 252,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 216511240
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/streszczenie_zuchowski.pdf",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/sites/default/files/streszczenie_zuchowski.pdf))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 380,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 573083652
+        }
+      },
+      {
+        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "span": {
+          "line": 224,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 83327961
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2010",
+        "status": {
+          "text": "Network error: SSL certificate not trusted. Use --insecure if site is trusted (error sending request for url (https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2010))",
+          "details": "SSL certificate not trusted. Use --insecure if site is trusted"
+        },
+        "span": {
+          "line": 283,
+          "column": 10
+        },
+        "duration": {
+          "secs": 14,
+          "nanos": 482117190
+        }
+      }
+    ]
+  },
+  "timeout_map": {
+    "qa-wyniki/zewnetrzne.html": [
+      {
+        "url": "https://www.math.uni.wroc.pl/regulamin-lokalnej-sieci-komputerowej-instytutu-matematycznego",
+        "status": {
+          "text": "Timeout",
+          "details": "Request timed out"
+        },
+        "span": {
+          "line": 291,
+          "column": 10
+        },
+        "duration": {
+          "secs": 46,
+          "nanos": 223891139
+        }
+      },
+      {
+        "url": "http://www.iam.fmph.uniba.sk/institute/quittner/bedlewo20/",
+        "status": {
+          "text": "Timeout",
+          "details": "Request timed out"
+        },
+        "span": {
+          "line": 23,
+          "column": 10
+        },
+        "duration": {
+          "secs": 42,
+          "nanos": 5436143
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/2026-27z-oznaczenia.pdf",
+        "status": {
+          "text": "Timeout",
+          "details": "Request timed out"
+        },
+        "span": {
+          "line": 292,
+          "column": 10
+        },
+        "duration": {
+          "secs": 46,
+          "nanos": 240436539
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-lic.pdf",
+        "status": {
+          "text": "Timeout",
+          "details": "Request timed out"
+        },
+        "span": {
+          "line": 374,
+          "column": 10
+        },
+        "duration": {
+          "secs": 43,
+          "nanos": 134268609
+        }
+      },
+      {
+        "url": "https://www.math.uni.wroc.pl/users/hecht",
+        "status": {
+          "text": "Timeout",
+          "details": "Request timed out"
+        },
+        "span": {
+          "line": 413,
+          "column": 10
+        },
+        "duration": {
+          "secs": 42,
+          "nanos": 451346057
+        }
+      },
+      {
+        "url": "http://www.iam.fmph.uniba.sk/institute/quittner/bedlewo/",
+        "status": {
+          "text": "Timeout",
+          "details": "Request timed out"
+        },
+        "span": {
+          "line": 22,
+          "column": 10
+        },
+        "duration": {
+          "secs": 42,
+          "nanos": 6214629
+        }
+      }
+    ]
+  },
+  "suggestion_map": {},
+  "redirect_map": {},
+  "excluded_map": {},
+  "duration": {
+    "secs": 143,
+    "nanos": 630269634
+  },
+  "detailed_stats": false
+}

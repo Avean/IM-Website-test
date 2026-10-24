@@ -1,0 +1,799 @@
+{
+ "zepsute": [],
+ "kotwice": [
+  {
+   "strona": "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/2026-10-17-rusza-tutornia/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/aktualnosci/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/deklaracja-dostepnosci/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/infrastruktura-informatyczna/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/kontakt/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/struktura/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/wladze/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/zaklady/analiza-funkcjonalna/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/zaklady/analiza-matematyczna/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/zaklady/dydaktyka/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/zaklady/geometria/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/zaklady/rownania-rozniczkowe/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/zaklady/statystyka/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/zaklady/teoria-mnogosci-i-topologia/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/instytut/zaklady/teoria-prawdopodobienstwa/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/kalendarz/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/granty/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2013-workshop-on-set-theoretic-methods-in-compact-spaces-and-banach-spaces/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2014-16th-workshop-non-commutative-harmonic-analysis/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2014-7th-young-set-theory-workshop/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2014-sesja-poswiecona-100-leciu-urodzin-profesora-stanislawa-hartmana/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2014-stochastic-networks-and-risk-analysis-iv/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2014-workshop-in-set-theory/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2015-conference-on-geometric-group-theory/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2015-kazimierz-urbanik-1930-2005/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2015-winter-school-in-abstract-analysis-2015/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2016-17th-workshop-non-commutative-probability-levy-processes-and-operator-algebras-w/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2016-7th-euro-japanese-workshop-on-blow-up/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2016-combinatorics-and-groups/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2016-stochastic-models-v/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2016-winter-school-in-abstract-analysis-2016/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2016-xxx-konferencja-z-historii-matematyki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2017-analysis-and-applications-in-honor-of-professor-elias-m-stein/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2017-model-theory-conference/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2017-model-theory-in-wroclaw-2017/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2017-winter-school-in-abstract-analysis-2017/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2017-xxxi-konferencja-z-historii-matematyki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2018-international-quantitative-linguistics-conference-qualico-2018/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2018-stochastic-models-vi/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2018-umi-simai-ptm-joint-meeting/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2018-winter-school-in-abstract-analysis-2018/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2018-xxxii-konferencja-z-historii-matematyki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2019-winter-school-in-abstract-analysis-2019/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2019-xxxiii-konferencja-z-historii-matematyki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2020-9th-euro-japanese-workshop-on-blow-up/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2020-model-theory-conference/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2020-random-models/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2020-xxxiv-konferencja-z-historii-matematyki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2021-xxxiv-konferencja-z-historii-matematyki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2022-model-theory-conference-in-celebration-of-ludomir-newelski-s-60th-birthday/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2022-probability-and-analysis-2022/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2022-xxxiv-konferencja-z-historii-matematyki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2023-discrete-random-structures/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2023-model-theory-conference/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2023-model-theory-workshop/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2023-stochastic-models-vii/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2024-contemporary-harmonic-analysis-and-its-synergies/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2024-probability-and-analysis-2024/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2024-second-wroclaw-logic-conference/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2024-xiii-forum-of-partial-differential-equations/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2025-20th-workshop-noncommutative-probability-operator-algebras-and-related-topics-wi/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2025-perspectives-on-ergodic-theory-and-its-interactions/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2025-stochastic-processes-and-their-applications/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2025-structures-in-banach-spaces/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2026-chilijsko-polski-kongres-matematyczny/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/2026-discrete-random-structures-ii/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/konferencje/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/nauka/publikacje/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/obrony-doktorskie/2026-06-18-maciej-korpalski/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/obrony-doktorskie/2026-06-19-aleksander-antasik/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/obrony-doktorskie/2026-09-21-tomasz-zuchowski/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/obrony-doktorskie/2026-10-20-maciej-tadej/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/obrony-doktorskie/2026-10-27-malwina-mrowinska/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/obrony-doktorskie/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/polityka-prywatnosci/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/pracownicy/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/seminaria/analiza-harmoniczna/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/seminaria/dyskretna-analiza-harmoniczna/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/seminaria/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/seminaria/prawdopodobienstwo/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/seminaria/rownania-rozniczkowe/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/seminaria/statystyka/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/egzaminy-i-dyplom/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/matematyka/analiza-danych/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/matematyka/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/matematyka/matematyka-aktuarialno-finansowa/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/matematyka/matematyka-nauczycielska/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/matematyka/matematyka-stosowana/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/matematyka/matematyka-teoretyczna/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/pierwszy-rok/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/podyplomowe/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/procedura-dyplomowania/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/rok-akademicki/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/siad/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/skrypty/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/sprawy-studenckie/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/szkola-doktorska/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/studia/zajecia/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/en/szukaj/",
+   "cel": "/en/studia/zajecia#konsultacje",
+   "href": "/en/studia/zajecia#konsultacje",
+   "element": "a[href]"
+  },
+  {
+   "strona": "/instytut/zaklady/dydaktyka/",
+   "cel": "/studia/matematyka#praktyki-pedagogiczne",
+   "href": "/studia/matematyka#praktyki-pedagogiczne",
+   "element": "a[href]"
+  }
+ ],
+ "uwagi": [],
+ "lychee": {
+  "total": 30068,
+  "successful": 19748,
+  "errors": 0,
+  "excludes": 10320,
+  "unknown": 0
+ }
+}
