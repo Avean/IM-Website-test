@@ -915,9 +915,8 @@ content:
       - { name: opis, label: Krótki opis (pod tytułem i w Google), type: text }
       - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
       - name: pasek_boczny
-        label: "Prawy pasek: spis „Na tej stronie”, menu działu czy oba"
+        label: "Prawy pasek: spis „Na tej stronie”, menu działu czy oba (puste = domyślnie: w Studiach tylko spis, gdzie indziej oba)"
         type: select
-        default: oba
         options:
           values:
             - { name: oba, label: "Oba (spis i menu działu)" }

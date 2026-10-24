@@ -57,7 +57,8 @@ const strony = defineCollection({
     opis_en: optStr,
     tresc_en: optStr,
     // prawy pasek: spis „Na tej stronie”, menu działu (podstrony) albo oba
-    pasek_boczny: z.preprocess(empty, z.enum(['oba', 'spis', 'menu']).default('oba')),
+    // puste = domyślnie: w dziale Studia tylko spis „Na tej stronie”, w pozostałych spis i menu działu
+    pasek_boczny: z.preprocess(empty, z.enum(['oba', 'spis', 'menu']).optional()),
     opublikowany: published,
   }),
 });

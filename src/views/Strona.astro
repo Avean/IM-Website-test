@@ -32,20 +32,22 @@ const dzial = ((await menuGlowne()) as any[]).find((m) => (m.grupy ?? []).some((
 const linkiDzialu: Link[] = dzial ? dzial.grupy.flatMap((g: any) => g.linki) : [];
 const rodzic = linkiDzialu.filter((l) => !isExternal(l.adres) && adres.startsWith(l.adres + '/')).sort((x, y) => y.adres.length - x.adres.length)[0];
 const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
+// Prawy pasek: w Studiach domyślnie bez menu działu (tylko spis), gdzie indziej oba; pole „Prawy pasek” w CMS zmienia to dla strony.
+const pasek = d.pasek_boczny ?? (dzial?.adres === '/studia' ? 'spis' : 'oba');
 ---
 <Baza tytul={tytul} opis={opis} opublikowany={d.opublikowany}>
   <NaglowekStrony tytul={tytul} lead={opis} lang={lang} okruszki={[...(dzial ? [{ etykieta: wybierz(dzial, 'etykieta', lang), adres: dzial.adres }] : []), ...(rodzic ? [{ etykieta: wybierz(rodzic, 'etykieta', lang), adres: rodzic.adres }] : []), { etykieta: tytul }]} />
   <div class="wrap layout">
     <div class="main">
-      {d.pasek_boczny !== 'menu' && <SpisTresci naglowki={naglowki} lang={lang} wariant="gora" />}
+      {pasek !== 'menu' && <SpisTresci naglowki={naglowki} lang={lang} wariant="gora" />}
       {tylkoPolski && <p class="notice">{t('en', 'wersjaPolska')}</p>}
       <div class="prose" lang={tylkoPolski ? 'pl' : undefined}>
         {htmlEn ? <Fragment set:html={htmlEn} /> : <Content />}
       </div>
     </div>
     <aside class="side" data-pagefind-ignore>
-      {d.pasek_boczny !== 'menu' && <SpisTresci naglowki={naglowki} lang={lang} wariant="bok" />}
-      {d.pasek_boczny !== 'spis' && linkiDzialu.length > 0 && (
+      {pasek !== 'menu' && <SpisTresci naglowki={naglowki} lang={lang} wariant="bok" />}
+      {pasek !== 'spis' && linkiDzialu.length > 0 && (
         <nav class="side-box side-nav" aria-label={wybierz(dzial, 'etykieta', lang)}>
           <h2>{wybierz(dzial, 'etykieta', lang)}</h2>
           <div style="display:flex;flex-direction:column">

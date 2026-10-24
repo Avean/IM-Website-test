@@ -29,7 +29,6 @@ const umiejetnosci = lang === 'en' && d.umiejetnosci_en.length ? d.umiejetnosci_
 
 const kierunek = (await getCollection('kierunki')).find((k) => k.id === d.kierunek);
 const nazwaKierunku = kierunek ? wybierz(kierunek.data, 'nazwa', lang) : d.kierunek;
-const inne = (await getCollection('specjalnosci')).filter((s) => s.data.kierunek === d.kierunek && s.data.opublikowany !== false && !s.data.bez_podstrony).sort((a, b) => a.data.kolejnosc - b.data.kolejnosc || a.data.nazwa.localeCompare(b.data.nazwa, 'pl'));
 const zaklad = d.zaklad ? (await zaklady()).find((z) => z.id === d.zaklad) : undefined;
 const osoby = await pracownicy();
 // imię i nazwisko jak w spisie pracowników (bez tytułów) — wtedy pokazujemy e-mail, pokój (telefon tylko u administracji),
@@ -217,12 +216,6 @@ const sekcje = [
     </div>
 
     <aside class="side" data-pagefind-ignore>
-      <nav class="side-box side-nav" aria-label={T('Specjalności', 'Specialisations')}>
-        <h2>{T('Specjalności', 'Specialisations')}</h2>
-        <div style="display:flex;flex-direction:column">
-          {inne.map((s) => <a href={u(wJezyku(`/studia/${s.data.kierunek}/${s.id}`, lang))} aria-current={s.id === specjalnosc.id ? 'page' : undefined}>{wybierz(s.data, 'nazwa', lang)}</a>)}
-        </div>
-      </nav>
       <div class="side-box">
         <h2>{T('Wybór specjalności', 'Choosing a specialisation')}</h2>
         <p style="margin:0;font-size:15px">{T('Terminy deklaracji i formularze znajdziesz na stronie kierunku.', 'Declaration deadlines and forms are listed on the programme page.')}</p>
