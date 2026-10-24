@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Szybka kontrola plików treści bez budowania strony: czy frontmatter to poprawny YAML
 i czy są wymagane pola. Użycie: python3 skrypty/sprawdz_tresci.py [plik lub katalog ...]"""
-import sys, os, glob, yaml
+import sys, os, re, glob, yaml
 
 WYMAGANE = {
     'aktualnosci': ['tytul', 'data'], 'strony': ['tytul'], 'seminaria': ['nazwa'], 'referaty': ['tytul', 'prelegent', 'termin'],
