@@ -134,7 +134,7 @@ const logo = (ustawienia as any).logo as string | undefined;
     const przewiniety = window.scrollY > 40;
     hdr.classList.toggle('przewiniety', przewiniety);
     if (stopka) {
-      const naDole = przewiniety && (stopka.getBoundingClientRect().top < window.innerHeight * 0.6
+      const naDole = przewiniety && (stopka.getBoundingClientRect().top < window.innerHeight - 80
         || window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4);
       hdr.classList.toggle('hdr-stopka', naDole);
     }

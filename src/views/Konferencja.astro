@@ -21,7 +21,7 @@ const przyszla = !d.odwolana && trwaLubBedzie(w);
 const naglowek = lang === 'en' ? 'Conferences' : 'Konferencje';
 ---
 <Baza tytul={tytul} opis={`${range(d.poczatek, d.koniec, lang)}${d.miejsce ? ', ' + d.miejsce : ''}`} opublikowany={d.opublikowany} obraz={d.zdjecie}>
-  <NaglowekStrony tytul={tytul} lang={lang} okruszki={[{ etykieta: lang === 'en' ? 'Research' : 'Nauka', adres: '/nauka' }, { etykieta: naglowek, adres: '/nauka/konferencje' }]} />
+  <NaglowekStrony tytul={tytul} lang={lang} wstecz={{ etykieta: lang === 'en' ? 'All conferences' : 'Wszystkie konferencje', adres: '/nauka/konferencje' }} />
   <div class="wrap layout">
     <div class="main">
       <section class="event-box" aria-label={lang === 'en' ? 'Conference details' : 'Szczegóły konferencji'} style="margin-bottom:24px">

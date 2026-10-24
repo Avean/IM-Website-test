@@ -18,7 +18,7 @@ const naglowek = lang === 'en' ? 'Research projects and grants' : 'Projekty i gr
 const lata = d.rok_od && d.rok_do && d.rok_od !== d.rok_do ? `${d.rok_od}–${d.rok_do}` : String(d.rok_od ?? d.rok_do ?? '');
 ---
 <Baza tytul={tytul} opublikowany={d.opublikowany}>
-  <NaglowekStrony tytul={tytul} lang={lang} okruszki={[{ etykieta: lang === 'en' ? 'Research' : 'Nauka', adres: '/nauka' }, { etykieta: naglowek, adres: '/nauka/granty' }]} />
+  <NaglowekStrony tytul={tytul} lang={lang} wstecz={{ etykieta: lang === 'en' ? 'All projects and grants' : 'Wszystkie projekty i granty', adres: '/nauka/granty' }} />
   <div class="wrap layout">
     <div class="main">
       <dl class="info-list" style="margin-bottom:24px">

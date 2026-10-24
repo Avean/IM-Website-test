@@ -56,6 +56,8 @@ const strony = defineCollection({
     tytul_en: optStr,
     opis_en: optStr,
     tresc_en: optStr,
+    // prawy pasek: spis „Na tej stronie”, menu działu (podstrony) albo oba
+    pasek_boczny: z.preprocess(empty, z.enum(['oba', 'spis', 'menu']).default('oba')),
     opublikowany: published,
   }),
 });

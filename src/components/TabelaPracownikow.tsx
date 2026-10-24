@@ -182,7 +182,7 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
             <Fragment key={p.klucz}>
               {p.tytul && (
                 <h3 className="subhead staff-sub">
-                  {p.tytul} <span className="muted" style={{ fontWeight: 600 }}>({p.osoby.length})</span>
+                  {p.tytul}
                 </h3>
               )}
               <ul className="staff-list" role="list">

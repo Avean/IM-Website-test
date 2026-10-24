@@ -1,4 +1,5 @@
 ---
+import Wstecz from '../components/Wstecz.astro';
 // Pojedyncza aktualność: blok wydarzenia, zdjęcie, treść, galeria, załączniki, nowszy/starszy wpis.
 import { render } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
@@ -44,12 +45,7 @@ const adres = absolute(wJezyku(`/aktualnosci/${slug}`, lang), Astro.site);
 ---
 <Baza tytul={tytul} opis={zajawka} obraz={d.zdjecie} opublikowany={d.opublikowany} typ="article">
   <div class="wrap crumbs-inline">
-    <nav class="crumbs" aria-label={lang === 'en' ? 'Breadcrumbs' : 'Okruszki'}>
-      <ol>
-        <li><a href={u(wJezyku('/', lang))}>{t(lang, 'stronaGlowna')}</a></li>
-        <li><a href={u(wJezyku('/aktualnosci', lang))}>{t(lang, 'aktualnosci')}</a></li>
-      </ol>
-    </nav>
+    <Wstecz etykieta={t(lang, 'wszystkieAktualnosci')} adres="/aktualnosci" lang={lang} />
   </div>
 
   <div class="wrap layout" style="padding-top:16px">

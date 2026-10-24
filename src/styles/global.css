@@ -135,6 +135,7 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
 .nav-pill { gap: 0; }
 .nav-top, .nav-arrow { display: inline-flex; align-items: center; min-height: 44px; padding: 0; border: 0; background: transparent; color: inherit; font: inherit; text-decoration: none; cursor: pointer; }
 .nav-arrow { padding-left: 5px; }
+.nav-top:hover, .nav-top:focus { color: inherit; }
 .nav > a:hover, .nav-item:hover > .nav-pill, .nav-item.open > .nav-pill { background: var(--surface); color: var(--ink); }
 .nav > a[aria-current='page'], .nav .is-current > .nav-pill { background: var(--tint); color: var(--tint-ink); }
 .nav-item > .dropdown { visibility: hidden; opacity: 0; pointer-events: none; transition: opacity .12s, visibility 0s linear .18s; }
@@ -216,7 +217,7 @@ details[open] > summary .chev { transform: rotate(180deg); }
 @media (max-width: 800px) { .news-card.featured { grid-column: auto; } }
 
 /* ---------- wydarzenia i seminaria ---------- */
-.event-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 16px; }
+.event-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 16px; }
 .event { display: flex; gap: 18px; padding: 18px; border-radius: var(--radius-l); background: var(--bg); text-decoration: none; color: var(--text); }
 .event:hover { color: var(--text); box-shadow: inset 0 0 0 1.5px var(--line); }
 .datebox { flex: 0 0 72px; height: 80px; display: flex; flex-direction: column; align-items: center; justify-content: center; border-radius: 14px; background: var(--primary); color: var(--primary-ink); }
@@ -283,6 +284,17 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .page-head .wrap { padding-top: clamp(24px, 4vw, 44px); padding-bottom: clamp(20px, 3vw, 32px); display: flex; flex-direction: column; gap: 12px; }
 .page-head h1 { margin: 0; font-size: clamp(32px, 5vw, 50px); font-weight: 800; letter-spacing: -0.03em; line-height: 1.06; }
 .page-head .lead { margin: 0; max-width: 760px; font-size: 18px; color: var(--muted); }
+.wstecz { margin-bottom: 10px; }
+/* Seminarium: termin, prowadzący, kontakt i strona pod tytułem (zamiast osobnej ramki) */
+.sem-meta { display: flex; flex-wrap: wrap; gap: 8px 24px; margin: 14px 0 0; padding: 0; list-style: none; font-size: 16px; }
+.sem-meta li { display: inline-flex; align-items: center; gap: 8px; min-width: 0; overflow-wrap: anywhere; }
+.sem-meta svg { flex: none; color: var(--primary); }
+:root[data-theme='dark'] .sem-meta svg { color: var(--accent); }
+.wstecz a { display: inline-flex; align-items: center; gap: 8px; min-height: 36px; font-size: 15px; font-weight: 700; color: var(--ink); text-decoration: none; }
+.wstecz a:hover { color: var(--primary); }
+.wstecz a:hover svg { transform: translateX(-3px); }
+.wstecz svg { transition: transform .15s; }
+:root[data-theme='dark'] .wstecz a:hover { color: var(--accent); }
 .crumbs { font-size: 14px; color: var(--muted); }
 .crumbs a { color: var(--muted); }
 .crumbs ol { display: flex; flex-wrap: wrap; gap: 4px 8px; margin: 0; padding: 0; list-style: none; }

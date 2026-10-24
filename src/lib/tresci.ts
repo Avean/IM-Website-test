@@ -133,7 +133,7 @@ export async function wszystkieWydarzenia(lang: Lang = 'pl'): Promise<Wydarzenie
   }
   for (const o of obr) {
     out.push({
-      rodzaj: 'obrona', tytul: `${lang === 'en' ? 'PhD defence' : 'Obrona doktoratu'}: ${o.data.kandydat}`, podtytul: o.data.tytul_rozprawy, poczatek: o.data.termin,
+      rodzaj: 'obrona', tytul: o.data.kandydat, podtytul: o.data.tytul_rozprawy, poczatek: o.data.termin,
       koniecIcs: koniecDomyslny(o.data.termin, 120), miejsce: o.data.miejsce, href: `/obrony-doktorskie/${slugOf(o.id)}`, uid: `obr-${slugOf(o.id)}`,
     });
   }
@@ -165,7 +165,9 @@ export function trwaLubBedzie(w: { poczatek: string; koniec?: string; koniecIcs?
 
 export async function najblizszeWydarzenia(limit = 4, lang: Lang = 'pl'): Promise<Wydarzenie[]> {
   const all = await wszystkieWydarzenia(lang);
-  return all.filter((w) => w.rodzaj !== 'referat' && trwaLubBedzie(w)).slice(0, limit);
+  // obrony ważne, ale za pozostałymi wydarzeniami (kolejność w grupie — chronologiczna)
+  const nad = all.filter((w) => w.rodzaj !== 'referat' && trwaLubBedzie(w));
+  return [...nad.filter((w) => w.rodzaj !== 'obrona'), ...nad.filter((w) => w.rodzaj === 'obrona')].slice(0, limit);
 }
 
 // Tydzień pokazywany na stronie głównej: bieżący, a od soboty — następny.
@@ -220,7 +222,7 @@ export async function listaAktualnosci(lang: Lang = 'pl'): Promise<PozycjaListy[
   for (const o of obr) {
     if (o.data.w_aktualnosciach === false) continue;
     items.push({
-      rodzaj: 'obrona', tytul: `${lang === 'en' ? 'PhD defence' : 'Obrona doktoratu'}: ${o.data.kandydat}`, data: o.data.data_ogloszenia || o.data.termin.slice(0, 10),
+      rodzaj: 'obrona', tytul: o.data.kandydat, data: o.data.data_ogloszenia || o.data.termin.slice(0, 10),
       zajawka: o.data.tytul_rozprawy, dla: [], href: `/obrony-doktorskie/${slugOf(o.id)}`, wydarzenie: o.data.termin, id: `obr-${slugOf(o.id)}`,
     });
   }
@@ -234,7 +236,8 @@ export async function aktualnosciNaGlowna(limit = 6, lang: Lang = 'pl', wNajbliz
   const d = today();
   const wyroznione = lista.filter((p) => p.wyroznij_do && p.wyroznij_do >= d);
   const reszta = lista.filter((p) => !(p.wyroznij_do && p.wyroznij_do >= d) && !pominiete.has(p.href));
-  return [...wyroznione, ...reszta].slice(0, limit);
+  // obrony doktorskie na dalszym planie: po zwykłych aktualnościach
+  return [...wyroznione, ...reszta.filter((p) => p.rodzaj !== 'obrona'), ...reszta.filter((p) => p.rodzaj === 'obrona')].slice(0, limit);
 }
 
 export async function wyroznionaAktualnosc(lang: Lang = 'pl'): Promise<PozycjaListy | undefined> {

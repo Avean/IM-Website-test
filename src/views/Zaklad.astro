@@ -5,7 +5,6 @@ import { render } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
 import Ikona from '../components/Ikona.astro';
-import SpisTresci from '../components/SpisTresci.astro';
 import { u } from '../lib/url';
 import { t, wJezyku, wybierz, RODZAJE_GRANTOW } from '../lib/i18n';
 import { range, long, short, now, today, hasTime, type Lang } from '../lib/daty';
@@ -75,7 +74,6 @@ const wszystkieZaklady = await zaklady();
 
   <div class="wrap layout">
     <div class="main">
-      <SpisTresci naglowki={naglowki} lang={lang} wariant="gora" />
 
       <section class="zsec" aria-labelledby="o-zakladzie">
         <h2 id="o-zakladzie">{T('O zakładzie', 'About')}</h2>
@@ -210,7 +208,6 @@ const wszystkieZaklady = await zaklady();
           ))}
         </div>
       </nav>
-      <SpisTresci naglowki={naglowki} lang={lang} wariant="bok" />
     </aside>
   </div>
 </Baza>

@@ -31,7 +31,7 @@ const lead = lang === 'en'
   : 'Nadchodzące wydarzenia, obrony doktorskie i referaty seminaryjne w Instytucie Matematycznym.';
 ---
 <Baza tytul={t(lang, 'kalendarz')} opis={lead}>
-  <NaglowekStrony tytul={t(lang, 'kalendarz')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'kalendarz') }]}>
+  <NaglowekStrony tytul={t(lang, 'kalendarz')} lead={lead} lang={lang} wstecz={{ etykieta: lang === 'en' ? 'Research' : 'Nauka', adres: '/nauka' }}>
     <div class="filters">
       <div class="chips" role="group" aria-label={lang === 'en' ? 'Filter' : 'Filtruj'}>
         <button type="button" class="chip" aria-pressed="true" data-rodzaj="">{t(lang, 'wszystkie')}</button>

@@ -31,7 +31,7 @@ const dokumenty = [
 ].filter(Boolean) as { nazwa: string; plik: string }[];
 ---
 <Baza tytul={tytul} opis={d.tytul_rozprawy} opublikowany={d.opublikowany} typ="article">
-  <NaglowekStrony tytul={d.kandydat} lang={lang} okruszki={[{ etykieta: t(lang, 'obrony'), adres: '/obrony-doktorskie' }]}>
+  <NaglowekStrony tytul={d.kandydat} lang={lang} wstecz={{ etykieta: lang === 'en' ? 'All PhD defences' : 'Wszystkie obrony doktorskie', adres: '/obrony-doktorskie' }}>
     <p class="lead" lang="en" style="font-weight:600;color:var(--ink)">{d.tytul_rozprawy}</p>
   </NaglowekStrony>
   <div class="wrap layout">

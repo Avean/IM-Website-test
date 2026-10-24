@@ -1,21 +1,18 @@
 ---
 // Pasek tytułu podstrony z okruszkami.
-import { u, isExternal } from '../lib/url';
-import { t, wJezyku } from '../lib/i18n';
+import Wstecz from './Wstecz.astro';
+import { t } from '../lib/i18n';
 import type { Lang } from '../lib/daty';
 
-interface Props { tytul: string; lead?: string; lang: Lang; okruszki?: { etykieta: string; adres?: string }[] }
-const { tytul, lead, lang, okruszki = [] } = Astro.props;
-const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
+// Nad tytułem: link „← poziom wyżej”. Cel: `wstecz` albo ostatni z `okruszki`, który ma adres, albo strona główna.
+interface Props { tytul: string; lead?: string; lang: Lang; okruszki?: { etykieta: string; adres?: string }[]; wstecz?: { etykieta: string; adres: string } }
+const { tytul, lead, lang, okruszki = [], wstecz } = Astro.props;
+const zOkruszkow = [...okruszki].reverse().find((o) => o.adres) as { etykieta: string; adres: string } | undefined;
+const cel = wstecz ?? zOkruszkow ?? { etykieta: t(lang, 'stronaGlowna'), adres: '/' };
 ---
 <div class="page-head">
   <div class="wrap">
-    <nav class="crumbs" aria-label={lang === 'en' ? 'Breadcrumbs' : 'Okruszki'}>
-      <ol>
-        <li><a href={href('/')}>{t(lang, 'stronaGlowna')}</a></li>
-        {okruszki.map((o) => <li>{o.adres ? <a href={href(o.adres)}>{o.etykieta}</a> : o.etykieta}</li>)}
-      </ol>
-    </nav>
+    <Wstecz etykieta={cel.etykieta} adres={cel.adres} lang={lang} />
     <h1>{tytul}</h1>
     {lead && <p class="lead">{lead}</p>}
     <slot />

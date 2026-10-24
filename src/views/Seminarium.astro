@@ -5,9 +5,9 @@ import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
 import Ikona from '../components/Ikona.astro';
 import { u, isExternal } from '../lib/url';
-import { t, wJezyku, RODZAJE } from '../lib/i18n';
+import { t, wJezyku, wybierz, RODZAJE } from '../lib/i18n';
 import { longWithDay, short, time, now, today, hasTime, type Lang } from '../lib/daty';
-import { referaty, seminariumReferatu, slugOf, sala, type Seminarium } from '../lib/tresci';
+import { referaty, seminariumReferatu, slugOf, sala, zaklady, type Seminarium } from '../lib/tresci';
 import ustawienia from '../data/ustawienia.json';
 
 interface Props { seminarium: Seminarium; lang: Lang }
@@ -22,11 +22,22 @@ const nadchodzace = await Promise.all(wszystkie.filter(przyszle).map(async (r) =
 const minione = await Promise.all(wszystkie.filter((r) => !przyszle(r)).reverse().map(async (r) => ({ r, C: (await render(r)).Content })));
 const href = (a: string) => (isExternal(a) ? a : u(a));
 const T = (pl: string, en: string) => (lang === 'en' ? en : pl);
+// zakład(y), do których należy seminarium — link zamiast listy prowadzących (skład jest na stronie zakładu)
+const zakladySem = (await zaklady()).filter((z) => d.zaklad.includes(z.id));
 // Adres automatu listy mailingowej (Google Apps Script, patrz README → „Powiadomienia e-mail”); pusty = zapisy wyłączone.
 const adresListy = ((ustawienia as any).powiadomienia?.adres ?? '') as string;
 ---
 <Baza tytul={nazwa} opis={`${RODZAJE.referat[lang]}: ${nazwa}`} opublikowany={d.opublikowany}>
-  <NaglowekStrony tytul={nazwa} lang={lang} okruszki={[{ etykieta: t(lang, 'seminaria'), adres: '/seminaria' }]} />
+  <NaglowekStrony tytul={nazwa} lang={lang} wstecz={{ etykieta: t(lang, 'wszystkieSeminaria'), adres: '/seminaria' }}>
+    {(d.termin || zakladySem.length > 0 || d.kontakt || d.strona) && (
+      <ul class="sem-meta">
+        {d.termin && <li><Ikona nazwa="zegar" rozmiar={18} /><span><span class="sr-only">{t(lang, 'termin')}: </span>{d.termin}</span></li>}
+        {zakladySem.map((z) => <li><Ikona nazwa="ludzie" rozmiar={18} /><a href={u(wJezyku(`/instytut/zaklady/${z.id}`, lang))}>{wybierz(z.data, 'nazwa', lang)}</a></li>)}
+        {d.kontakt && <li><Ikona nazwa="mail" rozmiar={18} /><a href={`mailto:${d.kontakt}`}>{d.kontakt}</a></li>}
+        {d.strona && <li><Ikona nazwa="zewnetrzny" rozmiar={18} /><a href={d.strona}>{t(lang, 'stronaSeminarium')}</a></li>}
+      </ul>
+    )}
+  </NaglowekStrony>
   <div class="wrap layout">
     <div class="main">
       <div class="prose"><Content /></div>
@@ -75,14 +86,6 @@ const adresListy = ((ustawienia as any).powiadomienia?.adres ?? '') as string;
     </div>
 
     <aside class="side" data-pagefind-ignore>
-      <div class="side-box">
-        <dl class="info-list">
-          {d.termin && <><dt>{t(lang, 'termin')}</dt><dd>{d.termin}</dd></>}
-          {d.prowadzacy.length > 0 && <><dt>{t(lang, 'prowadzacy')}</dt><dd>{d.prowadzacy.join(', ')}</dd></>}
-          {d.kontakt && <><dt>{t(lang, 'kontaktowy')}</dt><dd><a href={`mailto:${d.kontakt}`}>{d.kontakt}</a></dd></>}
-        </dl>
-        {d.strona && <a class="link-arrow" href={d.strona}>{t(lang, 'stronaSeminarium')}<Ikona nazwa="zewnetrzny" rozmiar={14} /></a>}
-      </div>
       <div class="side-box" id="powiadomienia">
         <h2>{T('Powiadomienia e-mail', 'Email notifications')}</h2>
         <p style="margin:0;font-size:15px">{T('Zostaw adres, a o każdym nowym referacie tego seminarium dostaniesz wiadomość (po angielsku). Z listy wypiszesz się jednym kliknięciem w każdej wiadomości.', 'Leave your address to get an email about every new talk in this seminar. Every message has a one-click unsubscribe link.')}</p>
@@ -102,7 +105,6 @@ const adresListy = ((ustawienia as any).powiadomienia?.adres ?? '') as string;
         )}
         <p class="muted" style="font-size:13px;margin:0">{T('Adres służy wyłącznie do tych powiadomień —', 'Your address is used only for these notifications —')} <a href={u(wJezyku('/polityka-prywatnosci', lang))}>{T('polityka prywatności', 'privacy policy')}</a>.</p>
       </div>
-      <a class="link-arrow" href={u(wJezyku('/seminaria', lang))}><Ikona nazwa="wstecz" rozmiar={16} />{t(lang, 'wszystkieSeminaria')}</a>
     </aside>
   </div>
 </Baza>

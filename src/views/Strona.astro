@@ -37,15 +37,15 @@ const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
   <NaglowekStrony tytul={tytul} lead={opis} lang={lang} okruszki={[...(dzial ? [{ etykieta: wybierz(dzial, 'etykieta', lang), adres: dzial.adres }] : []), ...(rodzic ? [{ etykieta: wybierz(rodzic, 'etykieta', lang), adres: rodzic.adres }] : []), { etykieta: tytul }]} />
   <div class="wrap layout">
     <div class="main">
-      <SpisTresci naglowki={naglowki} lang={lang} wariant="gora" />
+      {d.pasek_boczny !== 'menu' && <SpisTresci naglowki={naglowki} lang={lang} wariant="gora" />}
       {tylkoPolski && <p class="notice">{t('en', 'wersjaPolska')}</p>}
       <div class="prose" lang={tylkoPolski ? 'pl' : undefined}>
         {htmlEn ? <Fragment set:html={htmlEn} /> : <Content />}
       </div>
     </div>
     <aside class="side" data-pagefind-ignore>
-      <SpisTresci naglowki={naglowki} lang={lang} wariant="bok" />
-      {linkiDzialu.length > 0 && (
+      {d.pasek_boczny !== 'menu' && <SpisTresci naglowki={naglowki} lang={lang} wariant="bok" />}
+      {d.pasek_boczny !== 'spis' && linkiDzialu.length > 0 && (
         <nav class="side-box side-nav" aria-label={wybierz(dzial, 'etykieta', lang)}>
           <h2>{wybierz(dzial, 'etykieta', lang)}</h2>
           <div style="display:flex;flex-direction:column">

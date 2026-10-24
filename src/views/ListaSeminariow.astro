@@ -26,7 +26,7 @@ const lead = lang === 'en'
   : 'Seminaria naukowe Instytutu Matematycznego. Zapraszamy wszystkich zainteresowanych.';
 ---
 <Baza tytul={t(lang, 'seminaria')} opis={lead}>
-  <NaglowekStrony tytul={t(lang, 'seminaria')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'seminaria') }]} />
+  <NaglowekStrony tytul={t(lang, 'seminaria')} lead={lead} lang={lang} wstecz={{ etykieta: lang === 'en' ? 'Research' : 'Nauka', adres: '/nauka' }} />
   <div class="wrap" style="padding-top:32px;padding-bottom:64px;display:flex;flex-direction:column;gap:40px">
     <section aria-labelledby="h-tydzien">
       <div class="section-head" style="margin-bottom:14px">
@@ -47,7 +47,6 @@ const lead = lang === 'en'
             <a class="sem-card" href={u(wJezyku(`/seminaria/${s.id}`, lang))}>
               <span class="t">{nazwa(s)}</span>
               {s.data.termin && <span class="news-meta"><Ikona nazwa="zegar" rozmiar={15} />{s.data.termin}</span>}
-              {s.data.prowadzacy.length > 0 && <span style="font-size:15px">{t(lang, 'prowadzacy')}: {s.data.prowadzacy.join(', ')}</span>}
               {r ? (
                 <span style="font-size:15px;padding-top:10px;border-top:1px solid var(--line)">
                   <strong style="color:var(--ink)">{long(r.data.termin, lang)}</strong> — {r.data.tytul} <span class="muted">({r.data.prelegent})</span>
