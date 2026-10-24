@@ -55,6 +55,11 @@ jobs:
             echo "::error title=Błąd budowania::${msg}"
             exit 1
           fi
+          # Ostrzeżenia z budowania — też jako adnotacja.
+          warn=$(sed -e 's/\x1b\[[0-9;]*m//g' build.log | grep -iE 'warn|error|failed|not found' | head -40 | sed -e 's/%/%25/g' | awk '{printf "%s%%0A", $0}')
+          if [ -n "$warn" ]; then echo "::warning title=Ostrzeżenia budowania::${warn}"; fi
+          # Statystyka: ile stron powstało.
+          echo "::notice title=Wynik budowania::$(find dist -name '*.html' | wc -l) stron HTML, $(du -sh dist | cut -f1)"
 
       - uses: actions/upload-pages-artifact@v4
         with:
