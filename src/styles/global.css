@@ -128,13 +128,6 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
 .hdr-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 70px; }
 /* nagłówek szerszy niż treść strony, żeby logotyp, nazwa i menu miały oddech */
 .hdr > .wrap.hdr-row { max-width: 1520px; }
-@media (min-width: 1400px) {
-  .hdr-row { gap: 24px; }
-  .nav { gap: 4px; }
-  .nav > a, .nav-pill { padding: 0 12px; }
-  .hdr-search input { width: 110px; }
-  .brand-name { font-size: 18px; }
-}
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
 .brand img { width: auto; height: 44px; }
 /* pełny logotyp UWr (orzeł + napis) jako maska w kolorze UWr; na zdjęciu i przy stopce — biały; na telefonie samo godło */
@@ -466,6 +459,14 @@ details[open] > summary .chev { transform: rotate(180deg); }
 @media (max-width: 1299px) {
   .hdr-search { display: none; }
   .search-narrow { display: inline-flex; }
+}
+/* duże ekrany: luźniej (po regułach podstawowych, żeby je nadpisać) */
+@media (min-width: 1400px) {
+  .hdr-row { gap: 24px; }
+  .nav { gap: 4px; }
+  .nav > a, .nav-pill { padding: 0 12px; }
+  .hdr-search input { width: 110px; }
+  .brand-name { font-size: 18px; }
 }
 :root[data-theme='dark'] .when-light, :root:not([data-theme='dark']) .when-dark { display: none; }
 .burger .when-open { display: none; }
