@@ -248,9 +248,10 @@ content:
       - { name: grupa_google, label: Link do zapisu na listę (Google Groups), type: string }
       - { name: archiwum, label: Link do archiwum referatów, type: string }
       - name: zaklad
-        label: Zakład
+        label: Zakład (można wybrać kilka)
         type: select
         options:
+          multiple: true
           values:
             - { name: algebra-i-teoria-modeli, label: Algebra i teoria modeli }
             - { name: analiza-funkcjonalna, label: Analiza funkcjonalna }

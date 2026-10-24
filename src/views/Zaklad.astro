@@ -38,7 +38,7 @@ const grupySkladu = [
 ].filter((g) => g.osoby.length);
 
 // Seminaria z najbliższym referatem
-const sem = (await seminaria()).filter((s) => s.data.zaklad === id);
+const sem = (await seminaria()).filter((s) => s.data.zaklad.includes(id));
 const ref = await referaty();
 const n = now();
 const nastepny = (sid: string) => ref.find((r) => seminariumReferatu(r) === sid && (hasTime(r.data.termin) ? r.data.termin >= n : r.data.termin >= today()));

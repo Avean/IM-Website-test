@@ -88,7 +88,8 @@ const seminaria = defineCollection({
     strona: optStr,
     grupa_google: optStr,
     archiwum: optStr,
-    zaklad: optStr,
+    // seminarium może należeć do jednego albo kilku zakładów
+    zaklad: z.preprocess((v) => (v == null || v === '' ? [] : Array.isArray(v) ? v : [v]), z.array(z.string())),
     aktywne: published,
     opublikowany: published,
   }),
