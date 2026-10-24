@@ -196,6 +196,12 @@ details[open] > summary .chev { transform: rotate(180deg); }
   .brand-sub { font-size: 12px; }
   .brand-name { font-size: 16px; }
 }
+/* najwęższe telefony: nazwa w dwóch liniach, bez podtytułu (inaczej nie mieści się obok przycisków) */
+@media (max-width: 420px) {
+  .brand-name { white-space: normal; line-height: 1.1; }
+  .brand-sub { display: none; }
+  .brand-name { font-size: 16px; }
+}
 
 /* ---------- baner (strona główna) ---------- */
 .hero-fig { position: relative; margin: 0; height: clamp(260px, 34vw, 480px); background: var(--photo); overflow: hidden; }
