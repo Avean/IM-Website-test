@@ -5,6 +5,7 @@
    ========================================================================== */
 
 :root {
+  --uwr: #05649c;
   /* paleta „zmierzch” (granat + bursztyn) */
   --bg: #ffffff;
   --surface: #f2f5fb;
@@ -36,6 +37,7 @@
 }
 
 :root[data-theme='dark'] {
+  --uwr: #d9e6f2;
   --bg: #0a1020;
   --surface: #111a2e;
   --ink: #ecf0f7;
@@ -113,17 +115,25 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
 .js .hdr.hdr-stopka:not(.menu-otwarte) .burger { background: rgb(255 255 255 / .14); }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-name, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav > a, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav-pill, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .icon-btn:not(.burger), .js .hdr.hdr-stopka:not(.menu-otwarte) .brand-name, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav > a, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav-pill, .js .hdr.hdr-stopka:not(.menu-otwarte) .icon-btn:not(.burger) { color: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-sub, .js .hdr.hdr-stopka:not(.menu-otwarte) .brand-sub { color: rgb(255 255 255 / .82); }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-uwr, .js .hdr.hdr-stopka:not(.menu-otwarte) .brand-uwr { color: #fff; border-right-color: rgb(255 255 255 / .35); }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-godlo, .js .hdr.hdr-stopka:not(.menu-otwarte) .brand-godlo { background: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav > a:hover, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav-item:hover > .nav-pill, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav-item.open > .nav-pill, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .icon-btn:not(.burger):hover, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav > a:hover, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav-item:hover > .nav-pill, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav-item.open > .nav-pill, .js .hdr.hdr-stopka:not(.menu-otwarte) .icon-btn:not(.burger):hover { background: rgb(255 255 255 / .16); color: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav > a[aria-current='page'], .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav .is-current > .nav-pill, .js .hdr.hdr-stopka:not(.menu-otwarte) .nav > a[aria-current='page'], .js .hdr.hdr-stopka:not(.menu-otwarte) .nav .is-current > .nav-pill { background: rgb(255 255 255 / .22); color: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search, .js .hdr.hdr-stopka:not(.menu-otwarte) .hdr-search { background: rgb(0 0 0 / .62); color: rgb(255 255 255 / .9); }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search input, .js .hdr.hdr-stopka:not(.menu-otwarte) .hdr-search input { color: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search input::placeholder, .js .hdr.hdr-stopka:not(.menu-otwarte) .hdr-search input::placeholder { color: rgb(255 255 255 / .8); }
-.hdr .brand-name, .hdr .brand-sub, .hdr .nav > a, .hdr .nav-pill, .hdr .icon-btn, .hdr-search { transition: color .25s, background-color .25s; }
+.hdr .brand-name, .hdr .brand-sub, .hdr .brand-uwr, .hdr .nav > a, .hdr .nav-pill, .hdr .icon-btn, .hdr-search { transition: color .25s, background-color .25s; }
 .js .hdr-foto ~ main .hero-fig::after { content: ''; position: absolute; inset: 0 0 auto 0; height: max(45%, 190px); background: linear-gradient(rgb(6 11 22 / .74), rgb(6 11 22 / .38) 55%, rgb(6 11 22 / 0)); pointer-events: none; }
 .js .hdr-foto ~ main .hero-fig figcaption { top: calc(var(--hdr-h) + 12px); z-index: 1; }
 .hdr-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 70px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
 .brand img { width: auto; height: 44px; }
+/* godło UWr (maska z public/pliki/uwr-godlo.png) w kolorze UWr; na zdjęciu i przy stopce — białe */
+.brand-godlo { flex: none; width: 46px; height: 46px; background: var(--uwr); -webkit-mask: var(--godlo) center / contain no-repeat; mask: var(--godlo) center / contain no-repeat; transition: background-color .25s; }
+.brand-uwr { display: flex; flex-direction: column; justify-content: center; padding-right: 12px; margin-left: -2px; border-right: 1px solid var(--line); font-size: 15.5px; font-weight: 500; line-height: 1.1; letter-spacing: .005em; color: var(--uwr); white-space: nowrap; transition: color .25s, border-color .25s; }
+.brand-uwr > span { display: block; }
+@media (min-width: 1081px) and (max-width: 1379px) { .brand-uwr { display: none; } }
+@media (max-width: 640px) { .brand-uwr { display: none; } }
 .brand-txt { display: flex; flex-direction: column; line-height: 1.15; min-width: 0; }
 .brand-name { font-size: 18px; font-weight: 800; letter-spacing: -0.01em; color: var(--ink); }
 .brand-sub { font-size: 13px; font-weight: 500; color: var(--muted); }
@@ -174,6 +184,9 @@ details[open] > summary .chev { transform: rotate(180deg); }
 @media (max-width: 560px) {
   .hide-narrow { display: none !important; }
   .brand img { height: 38px; }
+  .brand-godlo { width: 40px; height: 40px; }
+  .brand { gap: 10px; }
+  .brand-sub { font-size: 12px; }
   .brand-name { font-size: 16px; }
 }
 
