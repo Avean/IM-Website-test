@@ -1132,6 +1132,36 @@ content:
               - { name: email, label: "E-mail — tylko gdy osoby nie ma w Pracownikach", type: string }
               - { name: pokoj, label: "Pokój — tylko gdy osoby nie ma w Pracownikach", type: string }
               - { name: strona, label: "Strona domowa — tylko gdy osoby nie ma w Pracownikach", type: string }
+          - name: wydzial
+            label: Władze Wydziału (dziekan, prodziekan)
+            type: object
+            fields:
+              - { name: tytul, label: Nagłówek sekcji, type: string }
+              - { name: tytul_en, label: "EN: nagłówek", type: string }
+              - { name: opis, label: Zdanie pod nagłówkiem, type: string }
+              - { name: opis_en, label: "EN: zdanie pod nagłówkiem", type: string }
+              - name: osoby
+                label: Osoby
+                type: object
+                list: true
+                fields:
+                  - { name: rola, label: "Funkcja (np. Dziekan Wydziału Matematyki i Informatyki)", type: string, required: true }
+                  - { name: imie_nazwisko, label: "Imię i nazwisko (dokładnie jak w Pracownikach)", type: string, required: true }
+                  - { name: email, label: "E-mail (jeśli inny niż w Pracownikach, np. wydziałowy)", type: string }
+                  - { name: dyzur, label: "Dyżur / godziny przyjęć (opcjonalnie)", type: string }
+                  - { name: zdjecie, label: "Zdjęcie (portret pionowy 4:5)", type: image, options: { path: public/pliki/wladze } }
+                  - { name: zakres, label: "Zakres obowiązków (opcjonalnie)", type: text }
+                  - { name: pokoj, label: "Pokój / biuro (opcjonalnie)", type: string }
+                  - { name: rola_en, label: "EN: funkcja", type: string }
+                  - { name: dyzur_en, label: "EN: dyżur", type: string }
+                  - { name: zakres_en, label: "EN: zakres obowiązków", type: text }
+              - name: link
+                label: Link do pełnej listy władz Wydziału
+                type: object
+                fields:
+                  - { name: etykieta, label: Tekst linku, type: string }
+                  - { name: etykieta_en, label: "EN: tekst linku", type: string }
+                  - { name: adres, label: Adres, type: string }
           - name: sekretariat
             label: Sekretariat
             type: object

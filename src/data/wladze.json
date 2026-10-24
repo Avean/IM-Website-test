@@ -61,13 +61,19 @@
     "opis": "",
     "opis_en": "",
     "email": "dyrekcja@math.uni.wroc.pl",
-    "telefony": ["+48 71 375 74 01", "+48 71 328 07 17"],
+    "telefony": [
+      "+48 71 375 74 01",
+      "+48 71 328 07 17"
+    ],
     "adres": "pl. Grunwaldzki 2, 50-384 Wrocław",
     "adres_en": "pl. Grunwaldzki 2, 50-384 Wrocław, Poland",
     "pokoj": "",
     "godziny": "",
     "godziny_en": "",
-    "osoby": ["Ilona Ciechanowska", "Alicja Dąbrowa-Ferfecka"]
+    "osoby": [
+      "Ilona Ciechanowska",
+      "Alicja Dąbrowa-Ferfecka"
+    ]
   },
   "kadencja": "Dyrektora Instytutu powołuje Rektor na okres kadencji Rektora. Zadania dyrektora określa Statut Uniwersytetu Wrocławskiego.\n\nProf. dr hab. Grzegorz Karch kieruje Instytutem od 1 września 2016 r. Wcześniej, przez wiele lat, dyrektorem Instytutu był prof. dr hab. Ludomir Newelski.",
   "kadencja_en": "The Director of the Institute is appointed by the Rector for the Rector's term of office. The Director's duties are set out in the Statutes of the University of Wrocław.\n\nProf. Grzegorz Karch has headed the Institute since 1 September 2016. For many years before that, the Director of the Institute was Prof. Ludomir Newelski.",
@@ -107,12 +113,43 @@
     "https://www.math.uni.wroc.pl/kontakt (e-mail i telefony Instytutu)",
     "https://www.math.uni.wroc.pl/regulamin-instytutu-matematycznego-uniwersytetu-wroclawskiego (kadencja, Rada Instytutu)",
     "https://www.math.uni.wroc.pl/news/zmiany-we-wladzach-instytutu-matematycznego (zmiana dyrekcji 2016)",
-    "https://www.math.uni.wroc.pl/procedura-dyplomowania (Komisja Prac Dyplomowych)"
+    "https://www.math.uni.wroc.pl/procedura-dyplomowania (Komisja Prac Dyplomowych)",
+    "Władze Wydziału: https://wmi.uwr.edu.pl/wladze-wydzialu/ (stan z 24.10.2026); zdjęcia dziekana i prodziekana ze starej strony IM (buraczewski_succ.jpg, andrzej_raczynski.png)."
   ],
   "do_uzupelnienia": [
     "Zakres obowiązków zastępców dyrektora ds. ogólnych, ds. naukowych i ds. promocji (stara strona podaje tylko nazwy funkcji).",
     "Godziny przyjęć (dyżury) dyrekcji — brak w źródłach.",
     "Numer pokoju i godziny pracy sekretariatu — brak w źródłach.",
-    "Zdjęcia w lepszej rozdzielczości (zwłaszcza T. Elsner — oryginał 100×130 px, K. Dębicki — 150×150 px)."
-  ]
+    "Zdjęcia w lepszej rozdzielczości (zwłaszcza T. Elsner — oryginał 100×130 px, K. Dębicki — 150×150 px).",
+    "Dyżur prodziekana ds. dydaktyki matematyki: na stronie WMI „zawieszony do września” — uzupełnić aktualny."
+  ],
+  "wydzial": {
+    "tytul": "Władze Wydziału",
+    "tytul_en": "Faculty authorities",
+    "opis": "Instytut Matematyczny należy do Wydziału Matematyki i Informatyki UWr.",
+    "opis_en": "The Mathematical Institute is part of the Faculty of Mathematics and Computer Science, University of Wrocław.",
+    "osoby": [
+      {
+        "rola": "Dziekan Wydziału Matematyki i Informatyki",
+        "rola_en": "Dean of the Faculty of Mathematics and Computer Science",
+        "imie_nazwisko": "Dariusz Buraczewski",
+        "email": "Dariusz.Buraczewski@uwr.edu.pl",
+        "dyzur": "po wcześniejszym umówieniu się",
+        "dyzur_en": "by appointment",
+        "zdjecie": "/pliki/wladze/dariusz-buraczewski.jpg"
+      },
+      {
+        "rola": "Prodziekan ds. dydaktyki matematyki i spraw studenckich",
+        "rola_en": "Vice-Dean for Mathematics Teaching and Student Affairs",
+        "imie_nazwisko": "Andrzej Raczyński",
+        "email": "Andrzej.Raczynski@uwr.edu.pl",
+        "zdjecie": "/pliki/wladze/andrzej-raczynski.jpg"
+      }
+    ],
+    "link": {
+      "etykieta": "Wszystkie władze Wydziału (wmi.uwr.edu.pl)",
+      "etykieta_en": "All Faculty authorities (in Polish)",
+      "adres": "https://wmi.uwr.edu.pl/wladze-wydzialu/"
+    }
+  }
 }

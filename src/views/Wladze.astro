@@ -30,6 +30,7 @@ type Dane = {
     nazwa?: Tekst; nazwa_en?: Tekst; opis?: Tekst; opis_en?: Tekst; email?: Tekst; telefony?: string[] | null;
     adres?: Tekst; adres_en?: Tekst; pokoj?: Tekst; godziny?: Tekst; godziny_en?: Tekst; osoby?: string[] | null;
   } | null;
+  wydzial?: { tytul?: Tekst; tytul_en?: Tekst; opis?: Tekst; opis_en?: Tekst; osoby?: Osoba[] | null; link?: Link | null } | null;
   kadencja?: Tekst; kadencja_en?: Tekst;
   rada?: { tytul?: Tekst; tytul_en?: Tekst; opis?: Tekst; opis_en?: Tekst } | null;
   linki?: Link[] | null;
@@ -60,24 +61,29 @@ const href = (a: string) => (isExternal(a) ? a : u(a.startsWith('/pliki/') ? a :
 const esc = (s: string) => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const mail = (e: string) => esc(e).replace('@', '@<wbr>');
 
-const osoby = (d.osoby ?? [])
-  .filter((o) => o && o.imie_nazwisko?.trim())
-  .map((o) => {
-    const p = znajdz(o.imie_nazwisko);
-    const z = p?.data.zaklad ? listaZakladow.find((x) => x.id === p.data.zaklad) : undefined;
-    return {
-      rola: w(o, 'rola'),
-      nazwa: zTytulem(p?.data.stopien ?? o.stopien, o.imie_nazwisko),
-      inicjaly: inicjaly(o.imie_nazwisko),
-      email: p?.data.email || o.email || '',
-      pokoj: p?.data.pokoj || o.pokoj || '',
-      strona: p?.data.strona || o.strona || '',
-      zakres: w(o, 'zakres'),
-      dyzur: w(o, 'dyzur'),
-      zdjecie: o.zdjecie || '',
-      zaklad: z ? { nazwa: w(z.data, 'nazwa'), adres: `/instytut/zaklady/${z.id}` } : undefined,
-    };
-  });
+// Dane wpisane przy osobie (e-mail, pokój, strona) mają pierwszeństwo przed spisem pracowników.
+// zeSpisuPokoj = false: pokój tylko z wpisu (np. dziekan — pokój w IM to nie biuro dziekana).
+const osobaZ = (o: Osoba, zeSpisuPokoj = true) => {
+  const p = znajdz(o.imie_nazwisko);
+  const z = p?.data.zaklad ? listaZakladow.find((x) => x.id === p.data.zaklad) : undefined;
+  return {
+    rola: w(o, 'rola'),
+    nazwa: zTytulem(o.stopien || p?.data.stopien, o.imie_nazwisko),
+    inicjaly: inicjaly(o.imie_nazwisko),
+    email: o.email || p?.data.email || '',
+    pokoj: o.pokoj || (zeSpisuPokoj ? p?.data.pokoj : '') || '',
+    strona: o.strona || p?.data.strona || '',
+    zakres: w(o, 'zakres'),
+    dyzur: w(o, 'dyzur'),
+    zdjecie: o.zdjecie || '',
+    zaklad: z ? { nazwa: w(z.data, 'nazwa'), adres: `/instytut/zaklady/${z.id}` } : undefined,
+  };
+};
+const osoby = (d.osoby ?? []).filter((o) => o && o.imie_nazwisko?.trim()).map((o) => osobaZ(o));
+// Władze Wydziału Matematyki i Informatyki (dziekan i prodziekan ds. matematyki)
+const wyd = d.wydzial ?? undefined;
+const osobyWydzialu = (wyd?.osoby ?? []).filter((o) => o && o.imie_nazwisko?.trim()).map((o) => osobaZ(o, false));
+const linkWydzialu = wyd?.link?.adres && wyd.link.etykieta ? wyd.link : undefined;
 const [dyrektor, ...zastepcy] = osoby;
 
 // Sekretariat
@@ -163,6 +169,40 @@ const linkiDzialu: LinkMenu[] = dzial ? dzial.grupy.flatMap((g: any) => g.linki)
               </li>
             ))}
           </ul>
+        </section>
+      )}
+
+      {osobyWydzialu.length > 0 && (
+        <section class="zsec wl-sec" aria-labelledby="wydzial">
+          <h2 id="wydzial">{w(wyd, 'tytul') || T('Władze Wydziału', 'Faculty authorities')}</h2>
+          {w(wyd, 'opis') && <p class="wl-opis">{w(wyd, 'opis')}</p>}
+          <ul class="wl-grid">
+            {osobyWydzialu.map((o) => (
+              <li class={o.strona ? 'wl-karta os-link' : 'wl-karta'}>
+                <div class="wl-foto">
+                  {o.zdjecie
+                    ? <img src={u(o.zdjecie)} alt="" loading="lazy" decoding="async" />
+                    : <span class="wl-ini" aria-hidden="true">{o.inicjaly}</span>}
+                </div>
+                <div class="wl-karta-tresc">
+                  {o.rola && <p class="wl-rola">{o.rola}</p>}
+                  <h3 class="wl-n">
+                    {o.strona
+                      ? <a class="os-a" href={o.strona}>{o.nazwa}<span class="sr-only"> — {T('strona domowa', 'personal website')}</span><Ikona nazwa="zewnetrzny" rozmiar={14} /></a>
+                      : o.nazwa}
+                  </h3>
+                  {o.zaklad && <p class="wl-zaklad"><a href={href(o.zaklad.adres)}>{o.zaklad.nazwa}</a></p>}
+                  {o.zakres && <p class="wl-zakres">{o.zakres}</p>}
+                  <ul class="wl-kontakt">
+                    {o.email && <li><Ikona nazwa="mail" rozmiar={14} /><a href={`mailto:${o.email}`} set:html={mail(o.email)} /></li>}
+                    {o.pokoj && <li><Ikona nazwa="pinezka" rozmiar={14} /><span>{T('pok.', 'room')} {o.pokoj}</span></li>}
+                    {o.dyzur && <li><Ikona nazwa="zegar" rozmiar={14} /><span>{T('Dyżur:', 'Office hours:')} {o.dyzur}</span></li>}
+                  </ul>
+                </div>
+              </li>
+            ))}
+          </ul>
+          {linkWydzialu && <p style="margin:16px 0 0"><a class="link-arrow" href={href(linkWydzialu.adres)}>{w(linkWydzialu, 'etykieta')}<Ikona nazwa={isExternal(linkWydzialu.adres) ? 'zewnetrzny' : 'strzalka'} rozmiar={15} /></a></p>}
         </section>
       )}
 
