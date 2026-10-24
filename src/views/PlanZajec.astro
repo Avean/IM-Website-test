@@ -1,0 +1,127 @@
+---
+// Plan zajęć Instytutu: /studia/plan-zajec (EN: /en/studia/plan-zajec).
+// Dane: src/data/plan/plan.json — pobierane automatycznie z USOS (anonimowo) przez skrypty/plan/pobierz_plan.py,
+// uruchamiany przez workflow .github/workflows/plan-zajec.yml (kilka razy dziennie). Plików danych nie edytuje się ręcznie.
+// Interaktywny plan (filtry, widok tygodnia, lista dzień po dniu) to wyspa React src/components/PlanZajec.tsx;
+// bez JavaScriptu strona pokazuje statyczną listę przedmiotów z tabelami terminów (.pz-nojs).
+import { getCollection } from 'astro:content';
+import Baza from '../layouts/Baza.astro';
+import NaglowekStrony from '../components/NaglowekStrony.astro';
+import PlanZajec, { TEKSTY, rodzina, data, nazwaPrzedmiotu, type DanePlanu, type Zajecie } from '../components/PlanZajec.tsx';
+import surowe from '../data/plan/plan.json';
+import { u } from '../lib/url';
+import { wybierz, wJezyku } from '../lib/i18n';
+import type { Lang } from '../lib/daty';
+import '../styles/plan.css';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const T = TEKSTY[lang];
+const dane = surowe as unknown as DanePlanu;
+dane.semestry = dane.semestry || [];
+
+// Oznaczenia kierunków w danych (z uwag USOS) → kierunki z kolekcji src/content/kierunki
+const KIERUNKI: Record<string, string> = { MT: 'matematyka', SIAD: 'siad', ISIM: 'isim' };
+const zKolekcji = await getCollection('kierunki');
+const kierunki = Object.entries(KIERUNKI)
+  .map(([kod, id]) => {
+    const k = zKolekcji.find((x) => x.id === id && (x.data as any).opublikowany !== false);
+    return { id: kod, nazwa: k ? wybierz(k.data as any, 'nazwa', lang) : kod, href: k ? u(wJezyku(`/studia/${id}`, lang)) : '', kolejnosc: k?.data.kolejnosc ?? 99 };
+  })
+  .sort((a, b) => a.kolejnosc - b.kolejnosc)
+  .map(({ kolejnosc, ...k }) => k);
+
+const tytul = lang === 'en' ? 'Timetable' : 'Plan zajęć';
+const lead = lang === 'en'
+  ? 'Timetable of the Mathematical Institute, downloaded automatically from USOS. Choose a programme, teacher or room to see your week.'
+  : 'Plan zajęć Instytutu Matematycznego pobierany automatycznie z USOS. Wybierz kierunek, prowadzącego albo salę, aby zobaczyć swój tydzień.';
+const okruszki = [{ etykieta: lang === 'en' ? 'Study' : 'Studia', adres: '/studia' }, { etykieta: tytul }];
+
+// JSON do wyspy (znaki < zamienione, żeby nie zamknąć znacznika <script>)
+const json = JSON.stringify(dane).replace(/</g, '\\u003c');
+
+// ---- lista bez JavaScriptu: przedmioty według rodzaju, w każdym tabela terminów
+const typNazwa = (typ: string) => dane.typy?.[typ]?.[lang] || typ;
+const termin = (z: Zajecie) => (z.dzien != null && z.od ? `${T.dniKrotko[z.dzien]} ${z.od}–${z.do}` : '—');
+const czest = (z: Zajecie) => (z.czestotliwosc ? T.czestotliwosc[z.czestotliwosc] ?? '' : '');
+const semestryNoJs = dane.semestry.map((s) => {
+  const po = Object.fromEntries(s.przedmioty.map((p) => [p.kod, p]));
+  return {
+    s,
+    kategorie: (dane.kategorie || [])
+      .map((k) => ({ k, przedmioty: s.przedmioty.filter((p) => p.kategoria === k.id).map((p) => ({ p, zajecia: s.zajecia.filter((z) => z.kod === p.kod) })) }))
+      .filter((k) => k.przedmioty.length),
+    po,
+  };
+});
+const naglowki = lang === 'en'
+  ? { typ: 'Type', gr: 'Group', prow: 'Teacher', kiedy: 'When', sala: 'Room', uwagi: 'Notes' }
+  : { typ: 'Typ', gr: 'Grupa', prow: 'Prowadzący', kiedy: 'Termin', sala: 'Sala', uwagi: 'Uwagi' };
+const uwagiOgolne = lang === 'en'
+  ? ['Click a course name to open its description in USOSweb.', 'Groups 99 are intended for students repeating a course who have already passed its classes.']
+  : ['Kliknij nazwę przedmiotu, by zobaczyć jego opis w USOSweb.', 'Grupy 99 przeznaczone są dla powtarzających przedmiot mających zaliczenia ćwiczeń.'];
+---
+<Baza tytul={tytul} opis={lead}>
+  <NaglowekStrony tytul={tytul} lead={lead} lang={lang} okruszki={okruszki} />
+  <div class="wrap plan-strona" style="padding-top:24px;padding-bottom:64px">
+    <script is:inline type="application/json" id="plan-zajec-dane" set:html={json}></script>
+
+    <div class="pz-app">
+      <PlanZajec client:load lang={lang} kierunki={kierunki} daneId="plan-zajec-dane" />
+    </div>
+
+    <div class="pz-nojs">
+      {dane.semestry.length === 0 && <p class="pz-stan">{T.brakDanych}</p>}
+      {semestryNoJs.map(({ s, kategorie, po }) => (
+        <section class="pz-sekcja">
+          <h2>{(lang === 'en' && s.nazwa_en) || s.nazwa}</h2>
+          <p class="pz-info">
+            {s.od && s.do && <>{data(s.od, lang)} – {data(s.do, lang)}</>}
+            {s.zaktualizowano && <> · {T.aktualizacja}: {data(s.zaktualizowano, lang, true)}</>}
+          </p>
+          {kategorie.length === 0 && <p class="pz-stan">{T.brakPlanu}</p>}
+          {kategorie.map(({ k, przedmioty }) => (
+            <>
+              <h3 class="pz-dzien-tytul">{lang === 'en' ? k.en : k.pl}</h3>
+              {przedmioty.map(({ p, zajecia }) => (
+                <article class="pz-przedmiot">
+                  <h4><a href={p.usos}>{nazwaPrzedmiotu(po[p.kod], p.kod, lang)}</a> <span class="pz-kod">{p.kod}</span></h4>
+                  <div class="table-wrap">
+                    <table class="pz-tabela">
+                      <thead><tr><th>{naglowki.typ}</th><th>{naglowki.gr}</th><th>{naglowki.prow}</th><th>{naglowki.kiedy}</th><th>{naglowki.sala}</th><th>{naglowki.uwagi}</th></tr></thead>
+                      <tbody>
+                        {zajecia.map((z) => (
+                          <tr class={`pz-${rodzina(z.typ)}`}>
+                            <td>{typNazwa(z.typ)}</td>
+                            <td>{z.grupa ?? ''}</td>
+                            <td>{(z.prowadzacy || []).join(', ')}</td>
+                            <td class="pz-nowrap">{termin(z)}{czest(z) && <><br /><small>{czest(z)}</small></>}</td>
+                            <td>{z.sala ?? ''}</td>
+                            <td class="pz-uwagi">{(z.uwagi || []).map((f) => (typeof f === 'string' ? f : <a href={f.a}>{f.t}</a>))}</td>
+                          </tr>
+                        ))}
+                      </tbody>
+                    </table>
+                  </div>
+                </article>
+              ))}
+            </>
+          ))}
+        </section>
+      ))}
+    </div>
+
+    <aside class="side-box pz-o-planie">
+      <h2>{lang === 'en' ? 'About the timetable' : 'O planie'}</h2>
+      <ul>
+        {uwagiOgolne.map((x) => <li>{x}</li>)}
+        <li>
+          {lang === 'en'
+            ? 'The data come from USOS, the University of Wrocław study management system, and are refreshed automatically several times a day — changes are made in USOS.'
+            : 'Dane pochodzą z USOS (Uniwersyteckiego Systemu Obsługi Studiów) i odświeżają się automatycznie kilka razy dziennie — zmiany wprowadza się w USOS.'}
+          {' '}<a href="https://usosweb.uwr.edu.pl/">USOSweb</a>
+        </li>
+      </ul>
+    </aside>
+  </div>
+</Baza>
