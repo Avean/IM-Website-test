@@ -50,6 +50,8 @@ const gr = (await granty()).filter((g) => zakladGrantu(g, osoby) === id);
 const grTrwa = gr.filter((g) => (g.data.rok_do ?? 0) >= rok);
 const grKon = gr.filter((g) => (g.data.rok_do ?? 0) < rok);
 const lata = (g: (typeof gr)[number]) => (g.data.rok_od && g.data.rok_do && g.data.rok_od !== g.data.rok_do ? `${g.data.rok_od}–${g.data.rok_do}` : String(g.data.rok_od ?? g.data.rok_do ?? ''));
+const tytulGrantu = (g: (typeof gr)[number]) => (lang === 'en' && g.data.tytul_en) || g.data.tytul;
+const adresGrantu = (g: (typeof gr)[number]) => u(wJezyku(`/nauka/granty/${slugOf(g.id)}`, lang));
 
 const konf = (await konferencje()).filter((k) => k.data.zaklad === id);
 const obr = (await obrony()).filter((o) => o.data.zaklad === id);
@@ -145,7 +147,7 @@ const wszystkieZaklady = await zaklady();
           {grTrwa.map((g) => (
             <article class="grant">
               <div class="news-meta"><span class="badge badge-wydarzenie">{RODZAJE_GRANTOW[g.data.rodzaj][lang]}</span><span>{lata(g)}</span>{g.data.kod && <span>· {g.data.kod}</span>}</div>
-              <h3>{g.data.tytul}</h3>
+              <h3><a href={adresGrantu(g)}>{tytulGrantu(g)}</a></h3>
               {g.data.kierownik && <p class="who"><span class="muted">{T('Kierownik', 'PI')}:</span> {g.data.kierownik}</p>}
             </article>
           ))}
@@ -155,7 +157,7 @@ const wszystkieZaklady = await zaklady();
               {grKon.map((g) => (
                 <article class="grant">
                   <div class="news-meta"><span class="badge">{RODZAJE_GRANTOW[g.data.rodzaj][lang]}</span><span>{lata(g)}</span>{g.data.kod && <span>· {g.data.kod}</span>}</div>
-                  <h3 style="font-size:16px">{g.data.tytul}</h3>
+                  <h3 style="font-size:16px"><a href={adresGrantu(g)}>{tytulGrantu(g)}</a></h3>
                   {g.data.kierownik && <p class="who muted" style="font-size:14px">{g.data.kierownik}</p>}
                 </article>
               ))}

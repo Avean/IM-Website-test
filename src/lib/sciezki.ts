@@ -34,10 +34,10 @@ export async function sciezkiKonferencji() {
   return k.map((konferencja) => ({ params: { slug: slugOf(konferencja.id) }, props: { konferencja } }));
 }
 
-// Strona projektu powstaje tylko wtedy, gdy projekt ma opis.
+// Strona dla każdego projektu — także bez opisu (wtedy same metadane z karty projektu).
 export async function sciezkiGrantow() {
   const g = await granty(true);
-  return g.filter((x) => x.body?.trim()).map((grant) => ({ params: { slug: slugOf(grant.id) }, props: { grant } }));
+  return g.map((grant) => ({ params: { slug: slugOf(grant.id) }, props: { grant } }));
 }
 
 export async function sciezkiZakladow() {

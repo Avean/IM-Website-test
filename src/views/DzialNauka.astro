@@ -38,7 +38,7 @@ const rok = Number(dzis.slice(0, 4));
 // Projekty realizowane — tak samo jak na /nauka/granty: rok zakończenia ≥ bieżący rok.
 const realizowane = listaGrantow.filter((g) => (g.data.rok_do ?? 0) >= rok);
 const maOpis = (g: Grant) => !!g.body?.trim();
-// Przykłady: najpierw projekty z własną podstroną (z opisem), potem najnowsze.
+// Przykłady: najpierw projekty z opisem, potem najnowsze (każdy ma własną podstronę).
 const przyklady = [...realizowane.filter(maOpis), ...realizowane.filter((g) => !maOpis(g))].slice(0, 4);
 const lata = (g: Grant) => (g.data.rok_od && g.data.rok_do && g.data.rok_od !== g.data.rok_do ? `${g.data.rok_od}–${g.data.rok_do}` : String(g.data.rok_od ?? g.data.rok_do ?? ''));
 const tytulGrantu = (g: Grant) => (lang === 'en' && g.data.tytul_en) || g.data.tytul;
@@ -182,13 +182,13 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
       {przyklady.length > 0 && (
         <div class="dz-granty">
           {przyklady.map((g) => (
-            <article class={`spec${maOpis(g) ? ' spec-link' : ''}`}>
+            <article class="spec spec-link">
               <div class="news-meta">
                 <span class={`badge${g.data.rodzaj === 'ncn' ? ' badge-wydarzenie' : g.data.rodzaj === 'ue' ? ' badge-sukces' : ''}`}>{RODZAJE_GRANTOW[g.data.rodzaj][lang]}</span>
                 {g.data.program && <span class="badge">{g.data.program}</span>}
                 {lata(g) && <span>{lata(g)}</span>}
               </div>
-              <h3>{maOpis(g) ? <a href={href(`/nauka/granty/${slugOf(g.id)}`)}>{tytulGrantu(g)}</a> : tytulGrantu(g)}</h3>
+              <h3><a href={href(`/nauka/granty/${slugOf(g.id)}`)}>{tytulGrantu(g)}</a></h3>
               {g.data.kierownik && <p><span class="lbl">{T('Kierownik', 'Principal investigator')}</span>{g.data.kierownik}</p>}
               {(g.data.kod || g.data.strona) && (
                 <p class="foot">
