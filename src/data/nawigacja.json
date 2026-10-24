@@ -60,8 +60,8 @@
       "etykieta_en": "Research",
       "grupy": [
         {
-          "nazwa": "Badania",
-          "nazwa_en": "Research",
+          "nazwa": "Seminaria i wydarzenia",
+          "nazwa_en": "Seminars and events",
           "linki": [
             {
               "etykieta": "Seminaria",
@@ -77,7 +77,13 @@
               "etykieta": "Konferencje",
               "etykieta_en": "Conferences",
               "adres": "/nauka/konferencje"
-            },
+            }
+          ]
+        },
+        {
+          "nazwa": "Badania",
+          "nazwa_en": "Research",
+          "linki": [
             {
               "etykieta": "Projekty i granty",
               "etykieta_en": "Grants",
@@ -87,6 +93,11 @@
               "etykieta": "Publikacje",
               "etykieta_en": "Publications",
               "adres": "/nauka/publikacje"
+            },
+            {
+              "etykieta": "Sukcesy",
+              "etykieta_en": "Achievements",
+              "adres": "/nauka/sukcesy"
             }
           ]
         },
@@ -95,14 +106,14 @@
           "nazwa_en": "Degrees",
           "linki": [
             {
-              "etykieta": "Sukcesy",
-              "etykieta_en": "Achievements",
-              "adres": "/nauka/sukcesy"
-            },
-            {
               "etykieta": "Obrony doktorskie",
               "etykieta_en": "PhD defences",
               "adres": "/obrony-doktorskie"
+            },
+            {
+              "etykieta": "Szkoła doktorska",
+              "etykieta_en": "Doctoral school",
+              "adres": "/studia/szkola-doktorska"
             },
             {
               "etykieta": "Rada Dyscypliny Matematyka",
