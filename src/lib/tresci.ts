@@ -2,6 +2,7 @@
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { now, today, weekRange, weekday, addDays, hasTime, plusMinutes, type Lang } from './daty';
 import { swietaPanstwowe, pozycjeZamianDni } from './kolory-dni';
+import { zTytulem } from './osoby';
 
 export type Aktualnosc = CollectionEntry<'aktualnosci'>;
 export type Obrona = CollectionEntry<'obrony'>;
@@ -90,6 +91,33 @@ export function osobaGrantu(zapis: string | undefined, osoby: Pracownik[]): Prac
 // Zakład projektu: pole „zakład”, a gdy puste — zakład kierownika (pierwszej osoby) znalezionego w spisie pracowników.
 export function zakladGrantu(g: Grant, osoby: Pracownik[]): string | undefined {
   return g.data.zaklad || osobaGrantu(g.data.kierownik, osoby)?.data.zaklad;
+}
+
+// Lata realizacji projektu do wyświetlenia: „2019–2023”, „2010” (początek = koniec albo tylko jeden rok), '' gdy brak.
+export const lataGrantu = (g: Grant) => {
+  const { rok_od: od, rok_do: d } = g.data;
+  return od && d && od !== d ? `${od}–${d}` : String(od ?? d ?? '');
+};
+
+// Kierownicy projektu z pola „kierownik” (kilka osób rozdzielonych przecinkami lub średnikami), każdy dopasowany do spisu pracowników.
+// Fragment z samym tytułem („dr hab. Jan Dymara, prof. UWr”, „dr hab., prof. UWr Jan Dymara”) zostaje przy sąsiedniej osobie.
+// `tekst` — zapis z pola; `nazwa` — imię i nazwisko z tytułem ze spisu (zTytulem), a gdy osoby nie ma w spisie lub nie ma tam tytułu — `tekst`.
+export interface KierownikGrantu { tekst: string; nazwa: string; osoba?: Pracownik }
+export function kierownicyGrantu(zapis: string | undefined, osoby: Pracownik[]): KierownikGrantu[] {
+  const czesci: { tekst: string; osoba?: Pracownik }[] = [];
+  let przedrostek = '';
+  for (const czesc of (zapis ?? '').split(/[,;]/).map((s) => s.trim()).filter(Boolean)) {
+    const zImieniem = czesc.split(/[\s.]+/).some((w) => /\p{L}/u.test(w) && !TYTULY.has(w.replace(/[^\p{L}]/gu, '').toLowerCase()));
+    if (!zImieniem) {
+      if (czesci.length) czesci[czesci.length - 1].tekst += `, ${czesc}`;
+      else przedrostek += `${czesc}, `;
+      continue;
+    }
+    czesci.push({ tekst: przedrostek + czesc, osoba: osobaGrantu(czesc, osoby) });
+    przedrostek = '';
+  }
+  if (!czesci.length && zapis?.trim()) czesci.push({ tekst: zapis.trim() });
+  return czesci.map((k) => ({ ...k, nazwa: k.osoba?.data.stopien ? zTytulem(k.osoba.data.stopien, k.osoba.data.imie_nazwisko) : k.tekst }));
 }
 
 // Kolejność na liście składu: profesorowie, doktorzy habilitowani, doktorzy, magistrzy.
