@@ -1009,3 +1009,19 @@ content:
                   - { name: etykieta, label: Etykieta, type: string }
                   - { name: etykieta_en, label: "EN: etykieta", type: string }
                   - { name: adres, label: Adres, type: string }
+
+      - name: dzial-instytut
+        label: Strona działu „Instytut”
+        description: "Teksty na stronie /instytut. Liczby, kafelki (z menu „Instytut”), zakłady i sukcesy budują się same z danych."
+        type: file
+        path: src/data/dzialy/instytut.json
+        format: json
+        fields:
+          - { name: wstep, label: "Wstęp pod tytułem (1–3 zdania)", type: text }
+          - { name: wstep_en, label: "EN: wstęp", type: text }
+          - { name: zaklady_opis, label: "Zdanie nad kartami zakładów (opcjonalnie)", type: text }
+          - { name: zaklady_opis_en, label: "EN: zdanie nad kartami zakładów", type: text }
+          - { name: sukcesy_opis, label: "Zdanie nad ostatnimi sukcesami (opcjonalnie)", type: text }
+          - { name: sukcesy_opis_en, label: "EN: zdanie nad sukcesami", type: text }
+          - { name: kontakt_godziny, label: "Godziny pracy sekretariatu (opcjonalnie — puste = nie wyświetla się)", type: string }
+          - { name: kontakt_godziny_en, label: "EN: godziny pracy sekretariatu", type: string }

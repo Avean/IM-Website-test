@@ -22,7 +22,7 @@ const liczby = [
   { n: osoby.filter((o) => o.data.grupa === 'doktorant').length, l: T('doktorantów', 'PhD students') },
 ];
 const naglowek = T('Struktura i zakłady', 'Structure and departments');
-const lead = T('Instytut tworzy osiem zakładów naukowych i Pracownia Dydaktyki i Popularyzacji Matematyki.', 'The Institute consists of eight research departments and the Mathematics Education and Outreach Unit.');
+const lead = T('W skład Instytutu wchodzi osiem zakładów naukowych i Pracownia Dydaktyki i Popularyzacji Matematyki.', 'The Institute consists of eight research departments and the Mathematics Education and Outreach Unit.');
 ---
 <Baza tytul={naglowek} opis={lead}>
   <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut'), adres: '/instytut' }, { etykieta: naglowek }]} />
