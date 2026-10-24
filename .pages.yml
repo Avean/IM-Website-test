@@ -370,7 +370,7 @@ content:
             label: Stopień
             type: select
             options:
-              values: [I, II]
+              values: [I, II, III]
           - { name: kiedy, label: "Kiedy (np. Semestry 1–2)", type: string }
           - { name: tytul, label: Tytuł etapu, type: string }
           - { name: opis, label: Opis, type: text }

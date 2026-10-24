@@ -251,7 +251,8 @@ export function jezykZeSciezki(pathname: string): Lang {
 }
 
 export function wJezyku(path: string, lang: Lang): string {
-  if (lang === 'pl' || /^(https?:|mailto:|tel:|#)/.test(path)) return path;
+  // pliki (/pliki/…) i kanały (.ics, .xml, .json) nie mają wersji językowych
+  if (lang === 'pl' || /^(https?:|mailto:|tel:|#)/.test(path) || /^\/pliki\//.test(path) || /\.(ics|xml|json)$/.test(path)) return path;
   if (/^\/en(\/|$)/.test(path)) return path;
   return path === '/' ? '/en/' : '/en' + (path.startsWith('/') ? path : '/' + path);
 }
