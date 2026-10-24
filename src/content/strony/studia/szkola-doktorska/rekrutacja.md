@@ -4,8 +4,6 @@ opis: "Jak dostać się do Szkoły Doktorskiej UWr w dyscyplinie matematyka: pro
 tytul_en: "Admission to the Doctoral College of Mathematics"
 opis_en: "How to join the UWr Doctoral School in mathematics: supervisor, IRKa registration, entrance exam and required documents."
 tresc_en: |
-  [← Doctoral school](/en/studia/szkola-doktorska)
-
   Admission to the Doctoral School of the University of Wrocław is by competition and takes place within doctoral colleges. Candidates in mathematics apply to the **Doctoral College of Mathematics**. The admission rules are adopted each year by the University Senate, and the schedule and number of places are set by orders of the Rector. This page describes the rules of the most recent admission round (for 2026/27).
 
   ## Key information
@@ -93,8 +91,6 @@ tresc_en: |
   See also: [Stipends and grants](/en/studia/szkola-doktorska/stypendia-i-granty) · [Documents and forms](/en/studia/szkola-doktorska/dokumenty) · [UWr Doctoral School](https://szd.uwr.edu.pl/)
 opublikowany: true
 ---
-
-[← Szkoła doktorska](/studia/szkola-doktorska)
 
 Rekrutacja do Szkoły Doktorskiej Uniwersytetu Wrocławskiego odbywa się w drodze konkursu, w ramach kolegiów doktorskich. Kandydaci w dyscyplinie matematyka ubiegają się o przyjęcie do **Kolegium Doktorskiego Matematyki**. Zasady rekrutacji uchwala co roku Senat UWr, a harmonogram i limity przyjęć określają zarządzenia Rektora. Na tej stronie opisujemy zasady ostatniej rekrutacji (na rok 2026/27).
 

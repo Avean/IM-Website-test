@@ -4,8 +4,6 @@ opis: "Wzory wniosków i oświadczeń, dokumenty oceny śródokresowej i rozpraw
 tytul_en: "Documents and forms for doctoral students"
 opis_en: "Application and declaration forms, mid-term evaluation and thesis documents, regulations and course syllabi of the Doctoral College of Mathematics."
 tresc_en: |
-  [← Doctoral school](/en/studia/szkola-doktorska)
-
   Most forms are available only in Polish. Programmes of study for each cohort are listed on the [main doctoral school page](/en/studia/szkola-doktorska#program); regulations and orders are under [Regulations](/en/studia/szkola-doktorska#akty).
 
   ## Forms for everyday matters
@@ -83,8 +81,6 @@ tresc_en: |
   See also: [Admissions](/en/studia/szkola-doktorska/rekrutacja) · [Stipends and grants](/en/studia/szkola-doktorska/stypendia-i-granty) · [Thesis and the doctoral degree](/en/studia/szkola-doktorska/stopien-doktora)
 opublikowany: true
 ---
-
-[← Szkoła doktorska](/studia/szkola-doktorska)
 
 Programy kształcenia dla poszczególnych roczników są na [stronie głównej szkoły doktorskiej](/studia/szkola-doktorska#program), a regulaminy i zarządzenia — w sekcji [Akty prawne](/studia/szkola-doktorska#akty).
 

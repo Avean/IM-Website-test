@@ -4,8 +4,6 @@ opis: "Jak złożyć rozprawę doktorską w dyscyplinie matematyka: system APD, 
 tytul_en: "Doctoral thesis and the conferral of the degree"
 opis_en: "How to submit a doctoral thesis in mathematics: the APD system, the application to start the proceedings, reviews and the public defence."
 tresc_en: |
-  [← Doctoral school](/en/studia/szkola-doktorska)
-
   Training at the Doctoral School ends with the submission of the doctoral thesis. The date of submission is the day on which the application to start the doctoral degree proceedings is filed, together with the thesis and the supervisor's positive opinion. The thesis must be submitted by the date set in the individual research plan (IPB). The proceedings in mathematics are conducted by the **Mathematics Discipline Council**.
 
   ## Before submitting the thesis
@@ -47,8 +45,6 @@ tresc_en: |
   Doctoral School secretary at the Institute: Ewa Lamch, MA, room 303, phone 71 375 7494, [ewa.lamch@math.uni.wroc.pl](mailto:ewa.lamch@math.uni.wroc.pl).
 opublikowany: true
 ---
-
-[← Szkoła doktorska](/studia/szkola-doktorska)
 
 Kształcenie w Szkole Doktorskiej kończy się złożeniem rozprawy doktorskiej. Za datę jej złożenia przyjmuje się dzień złożenia wniosku o wszczęcie postępowania w sprawie nadania stopnia doktora, do którego dołączono rozprawę wraz z pozytywną opinią promotora. Rozprawę składa się w terminie określonym w indywidualnym planie badawczym (IPB). Postępowanie w dyscyplinie matematyka prowadzi **Rada Dyscypliny Matematyka**.
 
