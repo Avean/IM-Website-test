@@ -1025,3 +1025,66 @@ content:
           - { name: sukcesy_opis_en, label: "EN: zdanie nad sukcesami", type: text }
           - { name: kontakt_godziny, label: "Godziny pracy sekretariatu (opcjonalnie — puste = nie wyświetla się)", type: string }
           - { name: kontakt_godziny_en, label: "EN: godziny pracy sekretariatu", type: string }
+      - name: dzial-nauka
+        label: Strona działu „Nauka”
+        description: "Teksty na stronie /nauka. Liczby, kafelki (z menu „Nauka”), obszary badań (z zakładów), seminaria, konferencje, projekty i obrony budują się same z danych."
+        type: file
+        path: src/data/dzialy/nauka.json
+        format: json
+        fields:
+          - { name: wstep, label: "Wstęp pod tytułem (1–3 zdania)", type: text }
+          - { name: wstep_en, label: "EN: wstęp", type: text }
+          - { name: obszary_opis, label: "Zdanie nad kartami „Obszary badań” (opcjonalnie)", type: text }
+          - { name: obszary_opis_en, label: "EN: zdanie nad obszarami badań", type: text }
+
+      - name: dzial-studia
+        label: Strona działu „Studia”
+        description: "Teksty na stronie /studia. Kierunki, liczby, ścieżki (z menu „Studia”), aktualności i kontakt budują się same z danych."
+        type: file
+        path: src/data/dzialy/studia.json
+        format: json
+        fields:
+          - { name: wstep, label: "Wstęp pod tytułem (1–3 zdania)", type: text }
+          - { name: wstep_en, label: "EN: wstęp", type: text }
+          - { name: chce_studiowac, label: "Opis ścieżki „Chcę studiować”", type: string }
+          - { name: chce_studiowac_en, label: "EN: opis ścieżki „Chcę studiować”", type: string }
+          - { name: juz_studiuje, label: "Opis ścieżki „Już studiuję”", type: string }
+          - { name: juz_studiuje_en, label: "EN: opis ścieżki „Już studiuję”", type: string }
+          - { name: sekretariat_zakres, label: "Kontakt: czym zajmuje się sekretariat dydaktyczny", type: string }
+          - { name: sekretariat_zakres_en, label: "EN: zakres sekretariatu", type: string }
+
+      - name: popularyzacja
+        label: Popularyzacja (strona /popularyzacja)
+        type: file
+        path: src/data/popularyzacja.json
+        format: json
+        fields:
+          - { name: tytul, label: Tytuł strony, type: string, required: true }
+          - { name: tytul_en, label: "EN: tytuł", type: string }
+          - { name: wstep, label: Tekst pod tytułem, type: text }
+          - { name: wstep_en, label: "EN: tekst pod tytułem", type: text }
+          - name: grupy
+            label: Grupy (sekcje strony, np. Dla uczniów)
+            type: object
+            list: true
+            fields:
+              - { name: nazwa, label: Nazwa grupy, type: string, required: true }
+              - { name: nazwa_en, label: "EN: nazwa grupy", type: string }
+              - { name: opis, label: Jedno zdanie pod nazwą grupy (opcjonalnie), type: string }
+              - { name: opis_en, label: "EN: zdanie pod nazwą", type: string }
+              - name: pozycje
+                label: Inicjatywy (karty)
+                type: object
+                list: true
+                fields:
+                  - { name: nazwa, label: Nazwa, type: string, required: true }
+                  - { name: opis, label: "Opis (2–3 zdania)", type: text }
+                  - { name: dla, label: "Dla kogo (np. uczniowie szkół średnich)", type: string }
+                  - { name: adres, label: "Adres strony (https://… albo /ścieżka na naszej stronie)", type: string }
+                  - { name: przycisk, label: "Napis przycisku (np. Strona olimpiady)", type: string }
+                  - { name: zdjecie, label: "Zdjęcie (opcjonalnie, poziome)", type: image, options: { path: public/pliki/popularyzacja } }
+                  - { name: archiwalne, label: "Archiwum (inicjatywa zakończona — plakietka „archiwum”)", type: boolean }
+                  - { name: nazwa_en, label: "EN: nazwa", type: string }
+                  - { name: opis_en, label: "EN: opis", type: text }
+                  - { name: dla_en, label: "EN: dla kogo", type: string }
+                  - { name: przycisk_en, label: "EN: napis przycisku", type: string }

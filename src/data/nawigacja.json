@@ -52,7 +52,8 @@
             }
           ]
         }
-      ]
+      ],
+      "adres": "/instytut"
     },
     {
       "etykieta": "Nauka",
@@ -110,7 +111,8 @@
             }
           ]
         }
-      ]
+      ],
+      "adres": "/nauka"
     },
     {
       "etykieta": "Studia",
@@ -190,7 +192,8 @@
             }
           ]
         }
-      ]
+      ],
+      "adres": "/studia"
     },
     {
       "etykieta": "Aktualności",
@@ -200,34 +203,7 @@
     {
       "etykieta": "Popularyzacja",
       "etykieta_en": "Outreach",
-      "grupy": [
-        {
-          "nazwa": "Dla szkół i nie tylko",
-          "nazwa_en": "For schools and the public",
-          "linki": [
-            {
-              "etykieta": "Fundacja Matematyków Wrocławskich",
-              "etykieta_en": "Wrocław Mathematicians Foundation",
-              "adres": "https://fmw.math.uni.wroc.pl/"
-            },
-            {
-              "etykieta": "Wrocławski Portal Matematyczny",
-              "etykieta_en": "Wrocław Mathematical Portal",
-              "adres": "http://www.matematyka.wroc.pl/"
-            },
-            {
-              "etykieta": "Wrocławski Oddział PTM",
-              "etykieta_en": "Polish Mathematical Society, Wrocław",
-              "adres": "https://ptm.math.uni.wroc.pl/"
-            },
-            {
-              "etykieta": "Tygodnik „Trapez”",
-              "etykieta_en": "„Trapez” weekly",
-              "adres": "http://www.math.uni.wroc.pl/~jwr/trapez/"
-            }
-          ]
-        }
-      ]
+      "adres": "/popularyzacja"
     },
     {
       "etykieta": "Rekrutacja",
