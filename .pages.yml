@@ -758,7 +758,7 @@ content:
       - { name: rok_do, label: Rok zakończenia, type: number }
       - { name: kwota, label: Kwota (opcjonalnie), type: string }
       - name: zaklad
-        label: Zakład (opcjonalnie)
+        label: "Zakład (puste = zakład kierownika ze spisu pracowników)"
         type: select
         options:
           values:
@@ -774,7 +774,7 @@ content:
       - { name: strona, label: Strona projektu, type: string }
       - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
       - name: body
-        label: Opis projektu (opcjonalnie; z opisem projekt dostaje własną podstronę)
+        label: Opis projektu (opcjonalnie; pokazuje się na podstronie projektu pod danymi)
         type: rich-text
         options:
           format: markdown
