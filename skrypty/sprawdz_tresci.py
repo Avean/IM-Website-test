@@ -8,7 +8,7 @@ WYMAGANE = {
     'obrony': ['kandydat', 'tytul_rozprawy', 'termin'], 'konferencje': ['tytul', 'poczatek'], 'granty': ['tytul'],
     'zaklady': ['nazwa'], 'kierunki': ['nazwa'], 'specjalnosci': ['nazwa'], 'pracownicy': ['imie_nazwisko'],
 }
-LISTY_OBIEKTOW = {'specjalnosci': ['opiekunowie', 'przedmioty', 'tematy_prac', 'dokumenty', 'linki', 'faq'],
+LISTY_OBIEKTOW = {'specjalnosci': ['opiekunowie', 'dlaczego', 'etapy', 'seminaria', 'przedmioty', 'tematy_prac', 'dokumenty', 'linki', 'faq'],
                   'kierunki': ['fakty', 'przyciski', 'dlaczego', 'etapy', 'specjalnosci', 'programy', 'terminy', 'faq', 'kontakt', 'akty']}
 
 def sprawdz(p):
@@ -37,6 +37,17 @@ def sprawdz(p):
         v = dane.get(k)
         if v is not None and not isinstance(v, list):
             bledy.append(f'{p}: pole „{k}” musi być listą')
+    for k in ('umiejetnosci', 'umiejetnosci_en', 'zrodla', 'do_uzupelnienia', 'obszary', 'obszary_en', 'prowadzacy', 'promotorzy'):
+        v = dane.get(k)
+        if isinstance(v, list):
+            for el in v:
+                if not isinstance(el, str):
+                    bledy.append(f'{p}: element listy „{k}” nie jest tekstem (np. „: ” w środku — weź tekst w cudzysłów): {el!r}'[:300])
+    if kol == 'specjalnosci':
+        katalog = p.split('src/content/')[0] + 'src/content/seminaria/'
+        for sid in dane.get('seminaria') or []:
+            if not os.path.exists(f'{katalog}{sid}.md'):
+                bledy.append(f'{p}: seminarium „{sid}” nie istnieje (brak pliku {katalog}{sid}.md)')
     return bledy
 
 pliki = []

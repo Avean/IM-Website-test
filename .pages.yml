@@ -245,7 +245,6 @@ content:
       - { name: termin, label: "Stały termin (np. czwartek 12:15–14:00, sala 711)", type: string }
       - { name: kontakt, label: E-mail kontaktowy, type: string }
       - { name: strona, label: Zewnętrzna strona seminarium, type: string }
-      - { name: grupa_google, label: Link do zapisu na listę (Google Groups), type: string }
       - { name: archiwum, label: Link do archiwum referatów, type: string }
       - name: zaklad
         label: Zakład (można wybrać kilka)
@@ -418,6 +417,7 @@ content:
               - { name: plik, label: Plik lub link, type: string }
               - { name: opis, label: Krótki opis (opcjonalnie), type: string }
               - { name: nazwa_en, label: "EN: nazwa", type: string }
+              - { name: opis_en, label: "EN: krótki opis", type: string }
           - { name: nazwa_en, label: "EN: nazwa zakładki", type: string }
           - { name: dotyczy_en, label: "EN: kogo dotyczy", type: string }
       - name: terminy
@@ -524,6 +524,35 @@ content:
         options:
           format: markdown
       - { name: dla_kogo, label: "Dla kogo (Markdown)", type: text }
+      - name: dlaczego
+        label: Co wyróżnia specjalność (kafelki)
+        type: object
+        list: true
+        fields:
+          - { name: tytul, label: Tytuł, type: string }
+          - { name: opis, label: Opis, type: text }
+          - name: ikona
+            label: Ikona
+            type: select
+            options:
+              values: [flaga, czapka, ludzie, zewnetrzny, kalendarz, tablica, zegar, plik]
+          - { name: tytul_en, label: "EN: tytuł", type: string }
+          - { name: opis_en, label: "EN: opis", type: text }
+      - name: etapy
+        label: Jak przebiega specjalność (oś semestrów)
+        type: object
+        list: true
+        fields:
+          - { name: kiedy, label: "Kiedy (np. Semestr 5)", type: string }
+          - { name: tytul, label: Tytuł, type: string }
+          - { name: opis, label: Opis, type: text }
+          - { name: kiedy_en, label: "EN: kiedy", type: string }
+          - { name: tytul_en, label: "EN: tytuł", type: string }
+          - { name: opis_en, label: "EN: opis", type: text }
+      - name: seminaria
+        label: "Seminaria związane ze specjalnością (nazwy plików z sekcji Seminaria)"
+        type: string
+        list: true
       - name: przedmioty
         label: Czego się uczysz (grupy przedmiotów)
         type: object
@@ -538,6 +567,7 @@ content:
               - { name: nazwa, label: Nazwa przedmiotu, type: string }
               - { name: opis, label: Krótki opis (opcjonalnie), type: string }
               - { name: nazwa_en, label: "EN: nazwa", type: string }
+              - { name: opis_en, label: "EN: krótki opis", type: string }
           - { name: grupa_en, label: "EN: grupa", type: string }
       - { name: umiejetnosci, label: Co będziesz umieć, type: string, list: true }
       - { name: kariera, label: "Po studiach (Markdown)", type: text }
@@ -557,6 +587,7 @@ content:
           - { name: plik, label: Plik lub link, type: string }
           - { name: opis, label: Krótki opis, type: string }
           - { name: nazwa_en, label: "EN: nazwa", type: string }
+          - { name: opis_en, label: "EN: krótki opis", type: string }
       - name: linki
         label: Przyciski z linkami (np. koło naukowe)
         type: object
@@ -871,6 +902,11 @@ content:
           - { name: facebook, label: Facebook, type: string }
           - { name: youtube, label: YouTube, type: string }
           - { name: archiwum, label: Adres archiwum starej strony, type: string }
+          - name: powiadomienia
+            label: Powiadomienia e-mail o referatach
+            type: object
+            fields:
+              - { name: adres, label: "Adres automatu listy mailingowej (Google Apps Script, …/exec; puste = zapisy wyłączone)", type: string }
           - name: partnerzy
             label: Partnerzy (logotypy w stopce)
             type: object

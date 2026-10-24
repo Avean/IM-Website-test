@@ -1,4 +1,5 @@
 ---
+import Ikona from './Ikona.astro';
 // „Na tej stronie” — odnośniki do sekcji (nagłówków ##) bieżącej strony.
 // Wariant "bok" to przyklejony panel po prawej, "gora" to rozwijana lista nad treścią na telefonie.
 interface Props { naglowki: { depth: number; slug: string; text: string }[]; lang: 'pl' | 'en'; wariant: 'bok' | 'gora' }
@@ -16,7 +17,7 @@ const tytul = lang === 'en' ? 'On this page' : 'Na tej stronie';
     </nav>
   ) : (
     <details class="toc toc-top">
-      <summary>{tytul}</summary>
+      <summary>{tytul}<Ikona nazwa="dol" class="chev" rozmiar={18} /></summary>
       <ol>
         {sekcje.map((h) => <li><a href={`#${h.slug}`}>{h.text}</a></li>)}
       </ol>

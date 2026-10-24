@@ -8,7 +8,7 @@ import { u, isExternal } from '../lib/url';
 import { t, wJezyku } from '../lib/i18n';
 import { longWithDay, short, dayNum, monthShort, plusMinutes, type Lang } from '../lib/daty';
 import { slugOf, trwaLubBedzie, type Obrona, type Wydarzenie } from '../lib/tresci';
-import { linkGoogle, adresIcs } from '../lib/kalendarz';
+import { adresIcs } from '../lib/kalendarz';
 
 interface Props { obrona: Obrona; lang: Lang }
 const { obrona, lang } = Astro.props;
@@ -47,7 +47,6 @@ const dokumenty = [
           {przyszla ? (
             <>
               <a class="btn btn-small" href={u(adresIcs(w.uid))} download><Ikona nazwa="kalendarz" rozmiar={16} />{t(lang, 'dodajDoKalendarza')}</a>
-              <a class="btn btn-small" href={linkGoogle(w, Astro.site)}>Google</a>
             </>
           ) : <span class="status">{t(lang, 'odbylo')}</span>}
         </div>

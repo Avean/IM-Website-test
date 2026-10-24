@@ -156,7 +156,7 @@ const zaklady = defineCollection({
 // Kierunek studiów (np. matematyka): treść w polach, a wygląd w szablonie src/views/Kierunek.astro.
 const lista = <T extends z.ZodTypeAny>(item: T) => z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(item));
 const link = z.object({ etykieta: z.string(), etykieta_en: optStr, adres: z.string() });
-const dokument = z.object({ nazwa: z.string(), nazwa_en: optStr, plik: z.string(), opis: optStr });
+const dokument = z.object({ nazwa: z.string(), nazwa_en: optStr, plik: z.string(), opis: optStr, opis_en: optStr });
 
 const kierunki = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/kierunki' }),
@@ -247,6 +247,12 @@ const specjalnosci = defineCollection({
     wygaszana: z.preprocess((v) => (v == null || v === '' ? false : v), z.boolean()),
     dla_kogo: optStr,
     dla_kogo_en: optStr,
+    // „Co wyróżnia specjalność” — kafelki jak na stronie kierunku
+    dlaczego: lista(z.object({ tytul: z.string(), tytul_en: optStr, opis: z.string(), opis_en: optStr, ikona: optStr })),
+    // „Jak przebiega specjalność” — oś semestrów/etapów
+    etapy: lista(z.object({ kiedy: z.string(), kiedy_en: optStr, tytul: z.string(), tytul_en: optStr, opis: optStr, opis_en: optStr })),
+    // identyfikatory seminariów (pliki z src/content/seminaria) związanych ze specjalnością
+    seminaria: strList,
     przedmioty: lista(z.object({
       grupa: z.string(),
       grupa_en: optStr,

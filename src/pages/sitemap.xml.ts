@@ -6,7 +6,7 @@ import { absolute } from '../lib/url';
 import { wJezyku } from '../lib/i18n';
 
 export async function GET(context: APIContext) {
-  const sciezki: string[] = ['/', '/aktualnosci', '/kalendarz', '/seminaria', '/pracownicy', '/obrony-doktorskie', '/nauka/konferencje', '/nauka/granty'];
+  const sciezki: string[] = ['/', '/aktualnosci', '/kalendarz', '/seminaria', '/pracownicy', '/obrony-doktorskie', '/nauka/konferencje', '/nauka/granty', '/nauka/sukcesy'];
   for (const a of await aktualnosci()) sciezki.push(`/aktualnosci/${slugOf(a.id)}`);
   for (const o of await obrony()) sciezki.push(`/obrony-doktorskie/${slugOf(o.id)}`);
   for (const s of await seminaria()) sciezki.push(`/seminaria/${s.id}`);
@@ -16,6 +16,7 @@ export async function GET(context: APIContext) {
   for (const k of await getCollection('kierunki')) if (k.data.opublikowany !== false) sciezki.push(`/studia/${k.id}`);
   for (const z of await getCollection('zaklady')) if (z.data.opublikowany !== false) sciezki.push(`/instytut/zaklady/${z.id}`);
   sciezki.push('/instytut/struktura');
+  for (const s of await getCollection('specjalnosci')) if (s.data.opublikowany !== false) sciezki.push(`/studia/${s.data.kierunek}/${s.id}`);
   const url = (p: string) => absolute(p, context.site);
   const wpisy = sciezki
     .map((p) => {

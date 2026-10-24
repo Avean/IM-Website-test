@@ -113,5 +113,7 @@ const lead = lang === 'en' ? 'Announcements, events and achievements of the Math
     const p = new URLSearchParams(location.search);
     const d = p.get('dla');
     if (d) dlaBtn.find((b) => b.dataset.dla === d)?.click();
+    const r = p.get('rodzaj');
+    if (r) rodzajBtn.find((b) => b.dataset.rodzaj === r)?.click();
   }
 </script>

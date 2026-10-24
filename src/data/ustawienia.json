@@ -46,10 +46,19 @@
         "poziom": "Kierunek",
         "poziom_en": "Programme",
         "nazwa": "Sztuczna inteligencja w analizie danych",
-        "nazwa_en": "AI in Data Analysis",
-        "opis": "Program studiów i dokumenty.",
-        "opis_en": "Curriculum and documents.",
+        "nazwa_en": "AI in Data Science",
+        "opis": "Studia I stopnia od 2025/26.",
+        "opis_en": "Bachelor's programme since 2025/26.",
         "adres": "/studia/siad"
+      },
+      {
+        "poziom": "Kierunek",
+        "poziom_en": "Programme",
+        "nazwa": "ISIM",
+        "nazwa_en": "ISIM",
+        "opis": "Studia I stopnia wspólnie z Instytutem Informatyki.",
+        "opis_en": "Bachelor's programme run jointly with the Institute of Computer Science.",
+        "adres": "/studia/isim"
       },
       {
         "poziom": "III stopień",
@@ -79,5 +88,8 @@
   "facebook": "https://www.facebook.com/IMUWr",
   "youtube": "https://www.youtube.com/channel/UCO0NMxdgMe2ZISJAbEcKH4w",
   "archiwum": "https://www.math.uni.wroc.pl/",
-  "partnerzy": []
+  "partnerzy": [],
+  "powiadomienia": {
+    "adres": ""
+  }
 }

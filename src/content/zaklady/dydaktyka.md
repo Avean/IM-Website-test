@@ -27,4 +27,4 @@ opublikowany: true
 
 Pracownia zajmuje się dydaktyką matematyki i kształceniem przyszłych nauczycieli, w tym praktykami pedagogicznymi studentów specjalności nauczycielskiej, a także popularyzacją matematyki wśród uczniów i nauczycieli.
 
-Zobacz też [praktyki pedagogiczne](/studia/matematyka#praktyki-pedagogiczne) na kierunku matematyka i inicjatywy [Fundacji Matematyków Wrocławskich](https://fmw.math.uni.wroc.pl/).
+Zobacz też [praktyki pedagogiczne](/studia/matematyka#praktyki) na kierunku matematyka i inicjatywy [Fundacji Matematyków Wrocławskich](https://fmw.math.uni.wroc.pl/).

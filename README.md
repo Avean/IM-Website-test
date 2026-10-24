@@ -59,6 +59,28 @@ npm run preview
 - `/kalendarz/wydarzenia.ics` — bez seminariów
 - `/kalendarz/seminarium-<nazwa>.ics` — jedno seminarium
 
+## Powiadomienia e-mail o referatach
+
+Na stronie każdego seminarium jest formularz „Powiadomienia e-mail”. Zapisani dostają elegancką wiadomość po angielsku o każdym nowym referacie, z linkiem do wypisania się. Obsługuje to skrypt Google Apps Script z katalogu `skrypty/powiadomienia/` (lista adresów w arkuszu Google, wysyłka z konta Google, które uruchomi skrypt).
+
+- Zapis z podwójnym potwierdzeniem: adres trafia na listę dopiero po kliknięciu linku w e-mailu (nikt nie zapisze cudzego adresu).
+- Duplikaty: wielkość liter jest ignorowana zawsze; kropki i dopiski `+coś` — tylko w adresach Gmaila (`gmail.com`, `googlemail.com`), bo tylko Gmail je ignoruje. Ten sam adres w kilku wersjach dostanie wiadomość raz.
+- Wysyłka: skrypt co 10 minut czyta `/seminaria/powiadomienia.json` (generowany przez stronę). Nowy, przyszły i opublikowany referat → wiadomość do zapisanych (po 15 minutach od pojawienia się, żeby zdążyć poprawić literówki). Referaty dodane po fakcie nie są ogłaszane.
+- Linki z wiadomości prowadzą na stronę `/powiadomienia/` (potwierdzenie zapisu, wypisanie przyciskiem).
+- Limity Google: konto Gmail ok. 100 odbiorców dziennie, konto Google Workspace ok. 1500. Gdy limit się skończy, skrypt dokończy wysyłkę następnego dnia. Do większych list najlepiej osobne konto Workspace Instytutu (np. seminaria@…).
+
+### Instalacja (jednorazowo, ok. 10 minut)
+
+1. Zaloguj się na konto Google, z którego mają wychodzić wiadomości, i otwórz https://script.google.com → **Nowy projekt** (nazwa np. „Powiadomienia seminaria IM UWr”).
+2. Wklej zawartość `skrypty/powiadomienia/Code.gs` zamiast domyślnego kodu. W **Ustawieniach projektu** zaznacz „Pokaż plik manifestu appsscript.json” i wklej do niego `skrypty/powiadomienia/appsscript.json`.
+3. Na górze `Code.gs` w `KONFIG` sprawdź: `KANAL` (adres strony + `/seminaria/powiadomienia.json`), `NADAWCA`, `ODPOWIEDZ_DO` (np. adres sekretariatu).
+4. Wybierz funkcję **ustaw** i kliknij **Uruchom** → zezwól na dostęp. Funkcja tworzy arkusz „Powiadomienia seminaria IM UWr” na Dysku, zapamiętuje obecne referaty (żeby nie rozesłać starych) i włącza sprawdzanie co 10 minut.
+5. **Wdróż → Nowe wdrożenie → Aplikacja internetowa**: „Wykonaj jako: ja”, „Kto ma dostęp: każdy”. Skopiuj adres kończący się na `/exec`.
+6. W Pages CMS: **Ustawienia → Ustawienia ogólne → Powiadomienia e-mail o referatach → Adres automatu** — wklej adres i zapisz. Po przebudowie formularze na stronach seminariów zaczną działać.
+7. Test: zapisz się na stronie seminarium, kliknij link w e-mailu. Funkcja **wyslijTest** wysyła podgląd wiadomości o referacie na Twój adres, **podsumowanie** pokazuje liczbę zapisanych.
+
+Po zmianie kodu skryptu: **Wdróż → Zarządzaj wdrożeniami → Edytuj → Nowa wersja** (adres `/exec` się nie zmienia). Po przeniesieniu strony na domenę UWr zmień `KANAL` w `KONFIG`.
+
 ## Repozytoria seminariów (plan)
 
 Każde seminarium może mieć osobne repozytorium z własnym Pages CMS. Po zmianie w takim repozytorium jego workflow wysyła do tego repozytorium zdarzenie `repository_dispatch` typu `seminaria`, które uruchamia przebudowę strony:

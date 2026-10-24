@@ -46,11 +46,6 @@
               "adres": "/instytut/infrastruktura-informatyczna"
             },
             {
-              "etykieta": "Sukcesy",
-              "etykieta_en": "Achievements",
-              "adres": "https://www.math.uni.wroc.pl/sukcesy"
-            },
-            {
               "etykieta": "Biblioteka",
               "etykieta_en": "Library",
               "adres": "https://wmi.uwr.edu.pl/biblioteka-wydzialowa/"
@@ -99,6 +94,11 @@
           "nazwa_en": "Degrees",
           "linki": [
             {
+              "etykieta": "Sukcesy",
+              "etykieta_en": "Achievements",
+              "adres": "/nauka/sukcesy"
+            },
+            {
               "etykieta": "Obrony doktorskie",
               "etykieta_en": "PhD defences",
               "adres": "/obrony-doktorskie"
@@ -127,13 +127,13 @@
             },
             {
               "etykieta": "Sztuczna inteligencja w analizie danych",
-              "etykieta_en": "AI in Data Analysis",
+              "etykieta_en": "AI in Data Science",
               "adres": "/studia/siad"
             },
             {
               "etykieta": "ISIM",
               "etykieta_en": "ISIM",
-              "adres": "https://wmi.uwr.edu.pl/isim-studenci/"
+              "adres": "/studia/isim"
             },
             {
               "etykieta": "Szkoła doktorska",
@@ -193,8 +193,13 @@
               "adres": "/studia/sprawy-studenckie"
             },
             {
-              "etykieta": "Skrypty",
-              "etykieta_en": "Lecture notes",
+              "etykieta": "Program MOST",
+              "etykieta_en": "MOST programme",
+              "adres": "/studia/program-most"
+            },
+            {
+              "etykieta": "Skrypty i materiały",
+              "etykieta_en": "Lecture notes and materials",
               "adres": "/studia/skrypty"
             }
           ]

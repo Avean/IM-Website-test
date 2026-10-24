@@ -80,7 +80,6 @@ const lead = lang === 'en'
             <strong style="font-size:15px;color:var(--ink)">{k.nazwa}</strong>
             <div style="display:flex;flex-wrap:wrap;gap:6px">
               <button type="button" class="btn btn-small" data-kopiuj={absolute(adresIcs(k.plik), Astro.site)} data-ok={t(lang, 'skopiowano')}><Ikona nazwa="link" rozmiar={15} /><span>{t(lang, 'kopiuj')}</span></button>
-              <a class="btn btn-small" href={`https://calendar.google.com/calendar/render?cid=${encodeURIComponent(webcal(k.plik))}`}>Google</a>
               <a class="btn btn-small" href={webcal(k.plik)}>Apple / Outlook</a>
             </div>
           </div>

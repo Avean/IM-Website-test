@@ -82,6 +82,11 @@
           "adres": "/nauka/publikacje"
         },
         {
+          "etykieta": "Sukcesy",
+          "etykieta_en": "Achievements",
+          "adres": "/nauka/sukcesy"
+        },
+        {
           "etykieta": "Obrony doktorskie",
           "etykieta_en": "PhD defences",
           "adres": "/obrony-doktorskie"
