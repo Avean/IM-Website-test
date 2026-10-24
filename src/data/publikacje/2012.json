@@ -1,0 +1,399 @@
+{
+  "rok": 2012,
+  "pochodzenie": "strona",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2012"
+  ],
+  "uwagi": "W oryginalnym wykazie część prac była powtórzona przy nazwiskach kolejnych współautorów; powtórzenia pominięto.",
+  "uwagi_en": "In the original list some papers were repeated under the names of further co-authors; the repetitions have been omitted.",
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "M. Arendarczyk, K. Dębicki",
+          "opis": "Exact asymptotics of supremum of a stationary Gaussian process over a random interval Statistics and Probability Letters 82 (2012) 645-652."
+        },
+        {
+          "autorzy": "J. Bartoszewicz, M. Frąszczak",
+          "opis": "Continuity of scale parameter estimators with respect to stochastic orders Probability and Mathematical Statistics 32 (2012) 57-67."
+        },
+        {
+          "autorzy": "A. Bendikov, A. Grigoryan, C. Pittet",
+          "opis": "On a class of Markov Semigroups on Discrete UltraMetric Spaces Potential Analysis 37, no. 2 (2012) 125-169."
+        },
+        {
+          "autorzy": "A. Bendikov, L. Saloff-Coste",
+          "opis": "Random walks driven by low moment measures Annals of Probability 40, no. 6 (2012) 2539-2588."
+        },
+        {
+          "autorzy": "A. Bendikov, L. Saloff-Coste",
+          "opis": "Random walks on groups and discrete subordination Mathematische Nachrichten 285, no. 5-6 (2012) 580-605."
+        },
+        {
+          "autorzy": "A. Bendikov, C. Pittet, C. Sauer",
+          "opis": "Spectral distribution and L^2-isoperimetric profile of Laplace operators on groups Mathematische Annalen 354, no. 1 (2012) 43-72."
+        },
+        {
+          "autorzy": "P. Biler, E.E. Espejo, I.A. Guerra",
+          "opis": "Blowup and self-similar solutions for two-component driftdiffusion systems Nonlinear Analysis:Theory, Methods and Applications 75 (2012) 5186-5193."
+        },
+        {
+          "autorzy": "M. Bożejko",
+          "opis": "Deformed Fock spaces, Hecke Operators and Monotone Fock space of Muraki Demonstratio Mathematica 45 (2012) 399-413."
+        },
+        {
+          "autorzy": "M. Bożejko, A.D. Krystek, Ł.J. Wojakowski",
+          "opis": "Non-commutative Harmonic Analysis with Applications to Probability III Banach Center Publications Warszawa (2012) 317."
+        },
+        {
+          "autorzy": "M. Bożejko, E. Lytvynov, J. Wysoczański",
+          "opis": "Non-commutative Levy processes for generalized (particularly anyon) statistics Communications in Mathematical Physics 313 (2012) 535-569."
+        },
+        {
+          "autorzy": "P. Borodulin-Nadzieja, B. Farkas",
+          "opis": "Cardinal coefficients associated to certain orders on ideals Archive for Mathematical Logic 51(1) (2012) 187-202."
+        },
+        {
+          "autorzy": "P. Borodulin-Nadzieja, O. Selim",
+          "opis": "Sequential closure in the space of measures Topology and Its Applications 159, no. 17 (2012) 3624-3637."
+        },
+        {
+          "autorzy": "D. Buraczewski, E. Damek, M. Mirek",
+          "opis": "Asymptotics of stationary solutions of multivariate stochastic recursions with heavy tailed inputs and related limit theorems Stochastic Processes and Their Applications 122(1) (2012) 42-67."
+        },
+        {
+          "autorzy": "D. Buraczewski, M. Letachowicz",
+          "opis": "Limit theorems for stochastic recursions with Markov dependent coefficients Colloquium Mathematicum 128 (2012) 263-276."
+        },
+        {
+          "autorzy": "D. Buraczewski, S. Brofferio, E. Damek",
+          "opis": "On the invariant measure of the random difference equation Xn=AnXn-1+Bn in the critical case Annales de L ' Institut Henri PoincareProbabilites et Statistiques 48, no. 2 (2012) 377-395."
+        },
+        {
+          "autorzy": "D. Buraczewski, K. Kolesko",
+          "opis": "Random walks on the affine group of a homogeneous tree in the drift-free case Journal of Theoretical Probability 25(1) (2012) 189-204."
+        },
+        {
+          "autorzy": "R. Celiński",
+          "opis": "Asymptotic behaviour in a one dimensional model of interacting particles Nonlinear Analysis:Theory, Methods and Applications 75 (2012) 1972-1979."
+        },
+        {
+          "autorzy": "I. Czarna, Z. Palmowski",
+          "opis": "Porównanie prawdopodobieństw paryskiej i klasycznej ruiny dla procesu ryzyka typu Levy'ego Prace Naukowe Uniwersytetu Ekonomicznego we Wrocławiu 207 (2012) 9-21."
+        },
+        {
+          "autorzy": "I. Czarna, Z. Palmowski",
+          "opis": "Problem wyboru optymalnej paryskiej dywidendy dla procesu ryzyka typu Levy'ego: numeryczna analiza Prace Naukowe Uniwersytetu Ekonomicznego we Wrocławiu 207 (2012) 22-37."
+        },
+        {
+          "autorzy": "J. Dobrowolski, K. Krupiński",
+          "opis": "On omega-categorical, generically stable groups Journal of Symbolic Logic 77 (2012) 1047-1056."
+        },
+        {
+          "autorzy": "K. Duszenko",
+          "opis": "Reflection length in non-affine Coxeter groups Bulletin of the London Mathematical Society 44,no.3 (2012) 571-577."
+        },
+        {
+          "autorzy": "J. Dziubański, M. Preisner",
+          "opis": "Hardy spaces related to Schroedinger operators with potentials which are sums of L^p-functions Journal of Mathematical Analysis and Applications 396, no. 1 (2012) 173-188."
+        },
+        {
+          "autorzy": "J. Dziubański, J. Zienkiewicz",
+          "opis": "On Hardy space associated with certain Schroedinger operators in dimension 2 Revista Matematica Iberoamericana 28, no. 4 (2012) 1035-1060."
+        },
+        {
+          "autorzy": "K. Dębicki, K. Kosiński, M. Mandjes",
+          "opis": "Gaussian queues in light and heavy traffic Queueing Systems 71 (2012) 137-149."
+        },
+        {
+          "autorzy": "K. Dębicki, M. Mandjes",
+          "opis": "Levy-driven queues Surveys in Operations Research and Management Science 17 (2012) 15-37."
+        },
+        {
+          "autorzy": "K. Dębicki, K. Kosiński, M. Mandjes",
+          "opis": "On the infimum attained by a reflected Levy process Queueing Systems 70 (2012) 23-35."
+        },
+        {
+          "autorzy": "W. Ejsmont",
+          "opis": "Laha-Lukacs properties of some free processes. Electronic Comunications in Probability 17 (13) (2012) 1-8."
+        },
+        {
+          "autorzy": "W. Ejsmont",
+          "opis": "Remarks of conditional moments of the free deformed Poisson random variables Banach Center Publications 96 (2012) 135-145."
+        },
+        {
+          "autorzy": "Ś.R. Gal, J. Kędra",
+          "opis": "A two-cocycle on the group of symplectic diffeomorphisms Mathematische Zeitschrift 271,no. 3-4 (2012) 693-706."
+        },
+        {
+          "autorzy": "A. Hoffmann",
+          "opis": "Could we see more in it? Generalization in mathematics at all educational levels. The Conference Proceedings Abstracts, 2-5.07.2012 Rzeszów (2012)."
+        },
+        {
+          "autorzy": "A. Hoffmann",
+          "opis": "Jak to zrobić? XXI Krajowa Konferencja Stowarzyszenia Nauczycieli Matematyki, Kraków (2012)."
+        },
+        {
+          "autorzy": "A. Hoffmann",
+          "opis": "Wrocławskie krasnoludki i matematyka Matematyka 7 (2012)."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "opis": "Degrees of isomorphism types and countably categorical groups Archive for Mathematical Logic 51 (2012) 93-98."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "opis": "Products of loxodromic automorphisms of pretrees Beitrage zur Algebra und Geometrie/Contributions to Algebra and Geometry 53, no. 1 (2012) 105-112."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "opis": "The complexity of countable categoricity in finite languages Mathematical Logic Quarterly 58, no. 1-2 (2012) 105-112."
+        },
+        {
+          "autorzy": "L. Jankowski, Z.J. Jurek",
+          "opis": "Remarks on Restricted Nevanlinna Transforms Demonstratio Mathematica 45, no. 2 (2012) 297-307."
+        },
+        {
+          "autorzy": "B.H. Jasiulis-Gołdyn, A. Kula",
+          "opis": "The Urbanik generalized convolutions in the noncommutative probability and a new method of constructing generalized convolution Proceedings of the Indian Academy of Sciences - Mathematical Sciences 122(3) (2012) 437-458."
+        },
+        {
+          "autorzy": "G. Karch, A. Marciniak-Czochra, K. Suzuki",
+          "opis": "Unstable patterns in reaction-diffusion model of early carcinogenesis Journal de Mathematiques Pures et Appliquees (2012) 1-35."
+        },
+        {
+          "autorzy": "P. Kowalski, A. Pillay",
+          "opis": "On the isotriviality of projective iterative delta-varieties Journal of Pure and Applied Algebra 216(1) (2012) 20-27."
+        },
+        {
+          "autorzy": "P. Kowalski",
+          "opis": "Schanuel property for additive power series Israel Journal of Mathematics 190 (1) (2012) 349--363."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "opis": "Longimetr Steinhausa Matematyka 1 (2012) 11-12."
+        },
+        {
+          "autorzy": "J. Kraszewski, M. Bolanowska, J. Wójtowicz-Popławska",
+          "opis": "Matura 2012-CKE wyciągnęła wniosek ? Matematyka 8 (2012) 32-43."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "opis": "Na przestrzeni dziejów. Jak liczyli dawni Arabowie-zadania Matematyka 4 (2012) 24-25."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "opis": "Na przestrzeni dziejów. Jak liczyli starożytni Rzymianie Matematyka 2 (2012) 33-34."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "opis": "Na przestrzeni dziejów. Jak liczyli dawni Arabowie Matematyka 4 (2012) 22-23."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "opis": "Na przestrzeni dziejów. Jak liczyli starożytni Grecy Matematyka 1 (2012) 25-26."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "opis": "Na przestrzeni dziejów. Jak liczyli starożytni Żydzi Matematyka 3 (2012) 31-32."
+        },
+        {
+          "autorzy": "K. Krupiński",
+          "opis": "On omega-categorical groups and rings with NIP Proceedings of the American Mathematical Society 140 (2012) 2501-2512."
+        },
+        {
+          "autorzy": "P. Krupski, A. Karassev, V. Todorov, V. Valov",
+          "opis": "Generalized Cantor manifolds and homogeneity Houston Journal of Mathematics 38 (2012) 583-609."
+        },
+        {
+          "autorzy": "Y. Kryakin, A.G. Babenko, N.V. Dolmatova",
+          "opis": "Exact Jackson inequality with a special modulus of continuity Trudy Instituta Matematiki i Mekhaniki 18, no. 4 (2012) 51-67."
+        },
+        {
+          "autorzy": "Y. Kryakin, A.G. Babenko, V.A. Yudin",
+          "opis": "One-sides approximation in L of the characteristic function of an interval by trigonometric polynomials Trudy Instituta Matematiki i Mekhaniki 18, no. 1 (2012) 82-95."
+        },
+        {
+          "autorzy": "A.D. Krystek, Ł.J. Wojakowski",
+          "opis": "Remarks on Catalan and Super-Catalan numbers Banach Center Publications, Non-commutative Harmonic Analysis with Applications to Probability III 96 (2012) 237-244."
+        },
+        {
+          "autorzy": "B. Majcher-Iwanow",
+          "opis": "Eventually open actions Mathematical Logic Quarterly 58, no. 1-2 (2012) 95-104."
+        },
+        {
+          "autorzy": "B. Majcher-Iwanow",
+          "opis": "Polish group actions and effectivity Archive for Mathematical Logic 51, no. 5-6 (2012) 563-573."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. C, Groups Matematyka 5 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. CI Permutation Groups Matematyka 6 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. CII Isomorphism of Groups Matematyka 7 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. CIII Algebra of Groups Matematyka 8 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. CIV Graphs Matematyka 9 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. CV Graphs Matematyka 10 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. CVI Graph Theory Matematyka 11 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XC IX Application of Matrices to Algebra Matematyka 4 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XCVI Matrices 2 Matematyka 1 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XCVII Diagonalization Matematyka 2 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XCVIII Application of Matrices to Geometry Matematyka 3 (2012) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Żuraw matematyczny Delta 5(1) (2012)."
+        },
+        {
+          "autorzy": "K. Musiał, B. Bongiorno, L. Di Piazza",
+          "opis": "A decomposition theorem for the fuzzy Henstock integral Fuzzy Sets and Systems 200 (2012) 36-47."
+        },
+        {
+          "autorzy": "K. Musiał, B. Bongiorno, L. Di Piazza",
+          "opis": "Radon-Nikodym Derivatives of Finitely Additive Interval Measures Taking Values in a Banach Space with Basis Acta Mathematica SinicaEnglish Series 28 (2012) 219-234."
+        },
+        {
+          "autorzy": "W. Młotkowski, M. Anshelevich",
+          "opis": "Semigroups of distributions with linear Jacobi parameters Journal of Theoretical Probability 25 (2012) 1173-1206."
+        },
+        {
+          "autorzy": "W. Młotkowski, N. Sakuma",
+          "opis": "Symmetrization of probability measures, pushforward of order 2 and the boolean convolution Banach Center Publications, Non-commutative Harmonic Analysis with Applications to Probability III 96 (2012) 271-276."
+        },
+        {
+          "autorzy": "L. Newelski",
+          "opis": "Bounded orbits and measures on a group Israel Journal of Mathematics 187 (2012) 209-229."
+        },
+        {
+          "autorzy": "L. Newelski",
+          "opis": "Bounded orbits and strongly generic sets Journal of the London Mathematical Society 86, no. 1 (2012) 63-86."
+        },
+        {
+          "autorzy": "L. Newelski",
+          "opis": "Model theoretic aspect of the Ellis semigroup Israel Journal of Mathematics 190 (2012) 477-507."
+        },
+        {
+          "autorzy": "Z. Palmowski, J. Ivanovs",
+          "opis": "Occupation densities in solving exit problems for Markov additive processes and their reflections Stochastic Processes and Their Applications 122(9) (2012) 3342-3360."
+        },
+        {
+          "autorzy": "Z. Palmowski, M. Mandjes, T. Rolski",
+          "opis": "Quasi-stationary workload in a Levy-driven storage system Stochastic Models 28(3) (2012) 413-432."
+        },
+        {
+          "autorzy": "Z. Palmowski, G. Latouche, G. Nguyen",
+          "opis": "Two-buffer fluid models with multiple on-off inputs and threshold assistance VALUETOOLS'11: Proceedings of the Fifth ICST Workshop on Tools for Solving Markov Chains (2012)."
+        },
+        {
+          "autorzy": "Ł. Paszkowski",
+          "opis": "Self-similar solutions for the two-dimensional Nernst-Planck-Debye system Applicationes Mathematicae 39 (2012) 329-338."
+        },
+        {
+          "autorzy": "J. Pawlikowski, M. Sabok",
+          "opis": "Decomposing Borel functions and structure at finite levels of the Baire hierarchy Annals of Pure and Applied Logic 163 (2012) 1748-1764."
+        },
+        {
+          "autorzy": "G. Plebanek, A. Aviles, J. Rodriguez",
+          "opis": "On Baire measurability in spaces of continuous functions Journal of Mathematical Analysis and Applications 398 (2012) 230-238."
+        },
+        {
+          "autorzy": "G. Plebanek, W. Marciszewski",
+          "opis": "On measures on Rosenthal compacta Journal of Mathematical Analysis and Applications 385 (2012) 185-193."
+        },
+        {
+          "autorzy": "T. Rolski, M. Polak",
+          "opis": "A note on the speed of convergence to the quasi-stationary distribution Demonstratio Mathematica 45(2) (2012) 385-397."
+        },
+        {
+          "autorzy": "M. Sabok",
+          "opis": "Complexity of Ramsey null sets Advances in Mathematics 45 (2012) 1184-1195."
+        },
+        {
+          "autorzy": "M. Sabok",
+          "opis": "Extreme amenability of abelian Lo groups Journal of Functional Analysis 263 (2012) 2978-2992."
+        },
+        {
+          "autorzy": "M. Sabok",
+          "opis": "Forcing, games and families of closed sets Transactions of the American Mathematical Society 364(8) (2012) 4011-4039."
+        },
+        {
+          "autorzy": "W. Stadnicki",
+          "opis": "The dimension of hyperspaces of non-metric continua Colloquium Mathematicum 128 (2012) 101-107."
+        },
+        {
+          "autorzy": "D. Sydor",
+          "opis": "Estimates of perturbation series for kernels Journal of Evolution Equations 12 (2012) 973-984."
+        },
+        {
+          "autorzy": "W. Szczotka, M. Magdziarz, P. Żebrowski",
+          "opis": "Langevin picture of Levy walks and their extensions Journal of Statistical Physics 147(1) (2012) 74-96."
+        },
+        {
+          "autorzy": "W. Szczotka, P. Żebrowski",
+          "opis": "On fully coupled continuous time random walks Applicationes Mathematicae 39, no. 1 (2012) 87-102."
+        },
+        {
+          "autorzy": "R. Urban, R. Penney",
+          "opis": "Estimates for the Poisson kernel and the evolution kernel on the Heisenberg group Journal of Evolution Equations 12, no. 2 (2012) 327-351."
+        },
+        {
+          "autorzy": "R. Urban",
+          "opis": "Markov processes on the adeles and Dedekind's zeta function Statistics and Probability Letters 82(8) (2012) 1583-1589."
+        },
+        {
+          "autorzy": "R. Wencel",
+          "opis": "Groups, group actions and fields definable in first-order topological structures Mathematical Logic Quarterly 58 (2012) 449-467."
+        },
+        {
+          "autorzy": "R. Wencel",
+          "opis": "Imaginaries in Boolean algebras Mathematical Logic Quarterly 58 (2012) 217-235."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "opis": "Dzieje matematyki polskiej Wrocław (2012) 311."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "opis": "Towarzystwo Nauk Ścisłych w Paryżu I. Dokumenty (w tomie: Dzieje matematyki polskiej. Praca zbiorowa pod redakcją Witolda Więsława, Inst. Mat. UWr.) Dzieje matematyki polskiej Wrocław (2012) 285-298."
+        },
+        {
+          "autorzy": "B. Wróbel",
+          "opis": "Multivariate spectral multipliers for tensor product orthogonal expansions Monatshefte fur Mathematik (1) 168 (2012) 124-149."
+        },
+        {
+          "autorzy": "P. Śniady, M. Dołęga",
+          "opis": "Asymptotics of characters of symmetric groups: Structure of Kerov character polynomials Journal of Combinatorial Theory Series A 119 (6) (2012) 1174-1193."
+        }
+      ]
+    }
+  ]
+}

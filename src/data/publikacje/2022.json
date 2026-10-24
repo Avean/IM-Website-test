@@ -1,0 +1,474 @@
+{
+  "rok": 2022,
+  "pochodzenie": "pdf",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2022.pdf"
+  ],
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "Antasik Aleksander",
+          "tytul": "Sampling C<sup>1</sup>-submanifolds of H<sup>n</sup>",
+          "zrodlo": "Colloq. Math., 2022, 168, 211-228.",
+          "if": "0.631"
+        },
+        {
+          "autorzy": "Arendarczyk Marek, Kozubowski Tomasz, Panorska Anna",
+          "tytul": "The Greenwood statistic, stochastic dominance, clustering and heavy tails",
+          "zrodlo": "Scandinavian Journal of Statistics, 2022, 49, 331-352.",
+          "if": "1.04"
+        },
+        {
+          "autorzy": "Arici Francesca, D'Andrea Francesco, Hajac Piotr M., Tobolski Mariusz",
+          "tytul": "An equivariant pullback structure of trimmable graph C<sup>∗</sup>-algebras",
+          "zrodlo": "Journal of Noncommutative Geometry, 2022, 16, 761-785.",
+          "if": "0.768"
+        },
+        {
+          "autorzy": "Avilés Antonio, Martínez-Cervantes Gonzalo, Plebanek Grzegorz",
+          "tytul": "Abundance of independent sequences in compact spaces and Boolean algebras",
+          "zrodlo": "Rev. Real Acad. Cienc. Exactas Fis., 2022, 116, 1-19.",
+          "if": "2.276"
+        },
+        {
+          "autorzy": "Berg Christian, Szwarc Ryszard",
+          "tytul": "Self-adjoint operators associated with Hankel moment matrices",
+          "zrodlo": "J. Funct. Anal., 2022, 283, 1-29.",
+          "if": "1.891"
+        },
+        {
+          "autorzy": "Biler Piotr, Boritchev Alexandre, Karch Grzegorz, Laurencot Philippe",
+          "tytul": "Sharp Sobolev estimates for concentration of solutions to an aggregation-diffusion equation",
+          "zrodlo": "J. Dyn. Differ. Equ., 2022, 34, 3131-3141.",
+          "if": "1.819"
+        },
+        {
+          "autorzy": "Bisewski Krzysztof, Dębicki Krzysztof, Rolski Tomasz",
+          "tytul": "Derivative of the expected supremum of fractional Brownian motion at H=1",
+          "zrodlo": "Queueing Syst., 2022, 102, 53-68.",
+          "if": "1.402"
+        },
+        {
+          "autorzy": "Bisewski Krzysztof, Dębicki Krzysztof, Rolski Tomasz",
+          "tytul": "Derivatives of sup-functionals of fractional Brownian motion evaluated at H= 1/2",
+          "zrodlo": "Electron. J. Probab., 2022, 27, 1-36.",
+          "if": "1.134"
+        },
+        {
+          "autorzy": "Bogdan Małgorzata, Frommlet Florian",
+          "tytul": "Identifying important predictors in large data bases - multiple testing and model selection",
+          "zrodlo": "in: Handbook of multiple comparisons / red.Xinping Cui, Ying Ding, Jason C. Hsu, Thorsten Dickhaus, Taylor and Francis Group, Boca Raton, 2022, 139-182."
+        },
+        {
+          "autorzy": "Brandenbursky Michael, Marcinkowski Michał",
+          "tytul": "Bounded cohomology of transformation groups",
+          "zrodlo": "Math. Ann., 2022, 382, 1181-1197.",
+          "if": "1.334"
+        },
+        {
+          "autorzy": "Brandenbursky Michael, Marcinkowski Michał, Shelukhin Egor",
+          "tytul": "The Schwarz-Milnor lemma for braids and area-preserving diffeomorphisms",
+          "zrodlo": "Sel. Math.-New Ser., 2022, 28, 1-20.",
+          "if": "1.172"
+        },
+        {
+          "autorzy": "Brofferio Sara, Buraczewski Dariusz, Szarek Tomasz",
+          "tytul": "On uniqueness of invariant measures for random walks on HOMEO+ (R)",
+          "zrodlo": "Ergod. Theory Dyn. Syst., 2022, 42, 2207-2238.",
+          "if": "1.066"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Damek Ewa",
+          "tytul": "Limit theorems for supercritical branching processes in random environment",
+          "zrodlo": "Bernoulli, 2022, 28, 1602-1624.",
+          "if": "1.822"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Dyszewski Piotr",
+          "tytul": "Precise large deviation estimates for branching process in random environment",
+          "zrodlo": "Ann. Inst. Henri Poincare-Probab. Stat., 2022, 58, 1669 -1700.",
+          "if": "1.484"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Iksanov Oleksandr, Marynych Alexander",
+          "tytul": "Central limit theorem for the least common multiple of a uniformly sampled m-tuple of integers",
+          "zrodlo": "J. Number Theory, 2022, 233, 301-336.",
+          "if": "0.679"
+        },
+        {
+          "autorzy": "Cadena Meitner, Jasiulis-Gołdyn Barbara, Omey Edward",
+          "tytul": "Asymptotics for Kendall’s renewal function",
+          "zrodlo": "ALEA-Latin Am. J. Probab. Math., 2022, 19, 1401-1420.",
+          "if": "0.732"
+        },
+        {
+          "autorzy": "Cannone Marco, Karch Grzegorz, Pilarczyk Dominika, Wu Gang",
+          "tytul": "Stability of singular solutions to the Navier-Stokes system",
+          "zrodlo": "J. Differ. Equ, 2022, 314, 316-339.",
+          "if": "2.615"
+        },
+        {
+          "autorzy": "Chirvasitu Alexandru, Dąbrowski Ludwik, Tobolski Mariusz",
+          "tytul": "The Bestvina-Edwards theorem and the Hilbert-Smith conjecture",
+          "zrodlo": "Kyoto J. Math., 2022, 62, 523-545.",
+          "if": "0.778"
+        },
+        {
+          "autorzy": "Couto Oliver, Wróblewski Jarosław",
+          "tytul": "Sum of two sixth powers equal to difference of two fourth powers",
+          "zrodlo": "Bull. Math. Stat. Res., 2022, 10, 42-44.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Kaleta Kamil, Śliwiński Mateusz",
+          "tytul": "Decay of harmonic functions for discrete time Feynman-Kac operators with confining potentials",
+          "zrodlo": "ALEA-Latin Am. J. Probab. Math., 2022, 19, 1071-1101.",
+          "if": "0.732"
+        },
+        {
+          "autorzy": "Cygan Szymon, Marciniak-Czochra Anna, Karch Grzegorz",
+          "tytul": "Discontinuous stationary solutions to certain reaction-diffusion systems",
+          "zrodlo": "PDEA, 2022, 3, 1-15.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Cygan Szymon, Marciniak-Czochra Anna, Karch Grzegorz, Suzuki Kanako",
+          "tytul": "Instability of all regular stationary solutions to reaction-diffusion-ODE systems",
+          "zrodlo": "J. Differ. Equ, 2022, 337, 460-482.",
+          "if": "2.615"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Sandrić Nikola, Šebek Stjepan",
+          "tytul": "Convex hulls of stable random walks",
+          "zrodlo": "Electron. J. Probab., 2022, 27, 1-30.",
+          "if": "1.134"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Sandrić Nikola, Šebek Stjepan",
+          "tytul": "Central limit theorem for the capacity of the range of stable random walks",
+          "zrodlo": "Stochastics, 2022, 94, 226-247.",
+          "if": "1"
+        },
+        {
+          "autorzy": "Dainotti Maria Giovanna, De Simone Biagio, Schiavone Tiziano, Montani Giovanni, Lambiase Gaetano, Bogdan Małgorzata, Ugale Sahil",
+          "tytul": "On the evolution of the Hubble constant with the SNe Ia Pantheon Sample and Baryon Acoustic Oscillations: a feasibility study for GRB-cosmology in 2030",
+          "zrodlo": "Galaxies, 2022, 10, 1-41.",
+          "if": "0.34"
+        },
+        {
+          "autorzy": "Damek Ewa, Matsui Muneya",
+          "tytul": "Tails of bivariate stochastic recurrence equation with triangular matrices",
+          "zrodlo": "Stoch. Process. Their Appl., 2022, 150, 147-191.",
+          "if": "1.43"
+        },
+        {
+          "autorzy": "Danielski Daniel Wojciech",
+          "tytul": "Right‐angled Coxeter groups with Menger curve boundary",
+          "zrodlo": "Bulletin of the London Mathematical Society, 2022, 54, 977-995.",
+          "if": "1.036"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof",
+          "tytul": "Exact asymptotics of Gaussian-driven tandem queues",
+          "zrodlo": "Queueing Syst., 2022, 100, 285-287.",
+          "if": "1.402"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Kriukov Nikolai",
+          "tytul": "Pandemic-type failures in multivariate Brownian risk models",
+          "zrodlo": "Extremes, 2022, 25, 1-23.",
+          "if": "1.318"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Michna Zbigniew",
+          "tytul": "On the continuity of Pickands constants",
+          "zrodlo": "J. Appl. Probab., 2022, 59, 187-201.",
+          "if": "1.116"
+        },
+        {
+          "autorzy": "Dobrowolski Jan, Kamsma Mark",
+          "tytul": "Kim-independence in positive logic",
+          "zrodlo": "Model Theory, 2022, 1, 55-113.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Dobrowolski Jan, Kim Byunghan, Ramsey Nicholas",
+          "tytul": "Independence over arbitrary sets in NSOP1 theories",
+          "zrodlo": "Ann. Pure Appl. Log., 2022, 173, 1-20.",
+          "if": "0.776"
+        },
+        {
+          "autorzy": "Doucha Michał, Gismatullin Jakub",
+          "tytul": "On dual surjunctivity and applications",
+          "zrodlo": "Group. Geom. Dyn., 2022, 16, 943-961.",
+          "if": "0.541"
+        },
+        {
+          "autorzy": "Duda Karol, Iwanow Aleksander",
+          "tytul": "On decidability of amenability in computable groups",
+          "zrodlo": "Arch. Math. Log., 2022, 61, 891-902.",
+          "if": "0.492"
+        },
+        {
+          "autorzy": "Duda Karol, Iwanow Aleksander",
+          "tytul": "Computable paradoxical decompositions",
+          "zrodlo": "Int. J. Algebr. Comput., 2022, 32, 953-967.",
+          "if": "0.722"
+        },
+        {
+          "autorzy": "Dyszewski Piotr, Gantert Nina, Johnston Samuel G. G., Prochno Joscha",
+          "tytul": "Sharp concentration for the largest and smallest fragment in a k-regular self-similar fragmentation",
+          "zrodlo": "Annals of Probability, 2022, 50, 1173 -1203.",
+          "if": "2.288"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Hejna Agnieszka",
+          "tytul": "Upper and lower bounds for Littlewood-Paley square functions in the Dunkl setting",
+          "zrodlo": "Studia Math., 2022, 262, 275-303.",
+          "if": "0.914"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Hejna Agnieszka",
+          "tytul": "Singular integrals in the rational Dunkl setting",
+          "zrodlo": "Rev. Mat. Complut., 2022, 35, 711-737.",
+          "if": "1.009"
+        },
+        {
+          "autorzy": "Frommlet Florian, Szulc Piotr, Koenig Franz, Bogdan Małgorzata",
+          "tytul": "Selecting predictive biomarkers from genomic data",
+          "zrodlo": "PLoS One, 2022, 17, 1-21.",
+          "if": "3.752"
+        },
+        {
+          "autorzy": "Gibson Spencer James, Narendra Aditya, Dainotti Maria Giovanna, Bogdan Małgorzata, Pollo Agnieszka, Poliszczuk Artem, Rinaldi Enrico, Liodakis Ioannis",
+          "tytul": "Using multivariate imputation by chained equations to predict redshifts of active galactic nuclei",
+          "zrodlo": "Front. Astron. Space Sci., 2022, 9, 1-16.",
+          "if": "4.055"
+        },
+        {
+          "autorzy": "Gogolok Jakub, Kowalski Piotr",
+          "tytul": "Operators coming from ring schemes",
+          "zrodlo": "J. Lond. Math. Soc., 2022, 106, 1725-1758.",
+          "if": "0.88"
+        },
+        {
+          "autorzy": "Hebisch Waldemar, Kuhn Gabriella M., Steger Tim",
+          "tytul": "Free group representations : duplicity and oddity on the boundary",
+          "zrodlo": "Trans. Am. Math. Soc., 2022, 375, 1825-1860.",
+          "if": "1.351"
+        },
+        {
+          "autorzy": "Hrushovski Ehud, Krupiński Krzysztof, Pillay Anand",
+          "tytul": "Amenability, connected components, and definable actions",
+          "zrodlo": "Sel. Math.-New Ser., 2022, 28, 1-56.",
+          "if": "1.172"
+        },
+        {
+          "autorzy": "Jagiełło Adrianna, Lisowski Piotr Kamil, Urban Roman",
+          "tytul": "Type-2 fuzzy sets and Newton’s fuzzy potential in an algorithm of classification objects of a conceptual space",
+          "zrodlo": "J. Log. Lang. Inf., 2022, 31, 389-408.",
+          "if": "0.617"
+        },
+        {
+          "autorzy": "Jiang Wei, Bogdan Małgorzata, Josse Julie, Majewski Szymon, Miasojedow Błażej, Ročková Veronika, Group TraumaBase®",
+          "tytul": "Adaptive Bayesian SLOPE: model selection with incomplete data",
+          "zrodlo": "J. Comput. Graph. Stat., 2022, 31, 113-137.",
+          "if": "1.884"
+        },
+        {
+          "autorzy": "Jurek Zbigniew",
+          "tytul": "Background driving distribution functions and series representation for log-gamma selfdecomposable random variables",
+          "zrodlo": "Theory of Probability and Its Applications, 2022, 67, 105-117.",
+          "if": "0.56"
+        },
+        {
+          "autorzy": "Jurek Zbigniew",
+          "tytul": "Urbanik type subclasses of the free-infinitely divisible transforms",
+          "zrodlo": "Prob. Math. Stat., 2022, 42, 23–39.",
+          "if": "0.522"
+        },
+        {
+          "autorzy": "Kania-Strojec Edyta, Preisner Marcin",
+          "tytul": "Riesz transform characterizations for multidimensional Hardy spaces",
+          "zrodlo": "Journal of Geometric Analysis, 2022, 32, 1-37.",
+          "if": "1.002"
+        },
+        {
+          "autorzy": "Kępczyński Krzysztof",
+          "tytul": "Running supremum of Brownian motion in dimension 2: exact and asymptotic results",
+          "zrodlo": "Stochastic Models, 2022, 38, 116-129.",
+          "if": "0.613"
+        },
+        {
+          "autorzy": "Krause Ben, Mirek Mariusz, Tao Terence",
+          "tytul": "Pointwise ergodic theorems for non-conventional bilinear polynomial averages",
+          "zrodlo": "Ann. Math., 2022, 195, 997-1109.",
+          "if": "4.795"
+        },
+        {
+          "autorzy": "Kremer Philipp J., Brzyski Damian, Bogdan Małgorzata, Paterlini Sandra",
+          "tytul": "Sparse index clones via the sorted ℓ1-Norm",
+          "zrodlo": "Quant. Financ., 2022, 22, 349-366.",
+          "if": "1.986"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof, Lee Junguk, Moconja Slavko",
+          "tytul": "Ramsey theory and topological dynamics for first order theories",
+          "zrodlo": "Trans. Am. Math. Soc., 2022, 375, 2553-2596.",
+          "if": "1.351"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof, Portillo Fernandez Adrian",
+          "tytul": "On stable quotients",
+          "zrodlo": "Notre Dame J. Form. Log., 2022, 63, 373-394.",
+          "if": "0.652"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof, Rzepecki Tomasz",
+          "tytul": "Generating ideals by additive subgroups of rings",
+          "zrodlo": "Ann. Pure Appl. Log., 2022, 173, 1-27.",
+          "if": "0.776"
+        },
+        {
+          "autorzy": "Krystecki Konrad",
+          "tytul": "Parisian ruin probability for two-dimensional Brownian risk model",
+          "zrodlo": "Stat. Probab. Lett., 2022, 182, 1-10.",
+          "if": "0.718"
+        },
+        {
+          "autorzy": "Lorek Paweł, Markowski Piotr",
+          "tytul": "Absorption time and absorption probabilities for a family of multidimensional gambler models",
+          "zrodlo": "ALEA-Latin Am. J. Probab. Math., 2022, 19, 125-150.",
+          "if": "0.732"
+        },
+        {
+          "autorzy": "Magdziarz Marcin, Szczotka Władysław",
+          "tytul": "Lévy walks with rests: Long-time analysis",
+          "zrodlo": "Physical Review. E, 2022, 105, 1-8.",
+          "if": "2.707"
+        },
+        {
+          "autorzy": "Meir Nadav",
+          "tytul": "Infinite lexicographic products",
+          "zrodlo": "Ann. Pure Appl. Log., 2022, 173, 1-23.",
+          "if": "0.776"
+        },
+        {
+          "autorzy": "Mirek Mariusz, Szarek Tomasz Zachary, Wright James",
+          "tytul": "Oscillation inequalities in ergodic theory and analysis: one-parameter and multi-parameter perspectives",
+          "zrodlo": "Revista Matemática Iberoamericana, 2022, 38, 2249-2284.",
+          "if": "1.457"
+        },
+        {
+          "autorzy": "Młotkowski Wojciech",
+          "tytul": "Quadratic embedding constants of path graphs",
+          "zrodlo": "Linear Alg. Appl., 2022, 644, 95-107.",
+          "if": "1.307"
+        },
+        {
+          "autorzy": "Moconja Slavko, Tanović Predrag",
+          "tytul": "Does weak quasi-o-minimality behave better than weak o-minimality?",
+          "zrodlo": "Arch. Math. Log., 2022, 61, 81-103.",
+          "if": "0.492"
+        },
+        {
+          "autorzy": "Munro Zachary, Osajda Damian, Przytycki Piotr",
+          "tytul": "2-dimensional Coxeter groups are biautomatic",
+          "zrodlo": "Proc. R. Soc. Edinb. Sect. A-Math., 2022, 152, 382-401.",
+          "if": "1.327"
+        },
+        {
+          "autorzy": "Narendra Aditya, Gibson Spencer James, Dainotti Maria Giovanna, Bogdan Małgorzata, Pollo Agnieszka, Liodakis Ioannis, Poliszczuk Artem, Rinaldi Enrico",
+          "tytul": "Predicting the redshift of gamma-ray loud AGNs using Supervised Machine LearningII",
+          "zrodlo": "Astrophys. J., 2022, 259, 1-16.",
+          "if": "5.521"
+        },
+        {
+          "autorzy": "Norin Sergey, Osajda Damian, Przytycki Piotr",
+          "tytul": "Torsion groups do not act on 2-dimensional CAT(0) complexes",
+          "zrodlo": "Duke Mathematical Journal, 2022, 171, 1379 -1415.",
+          "if": "2.377"
+        },
+        {
+          "autorzy": "Osajda Damian, Przytycki Piotr, Schwer Petra",
+          "tytul": "Nonpositively curved complexes",
+          "zrodlo": "Oberwolfach Reports, 2022, 18, 383-417.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Oussi Lahcen",
+          "tytul": "(p,q)-analogues of the generalized Touchard polynomials and Stirling numbers",
+          "zrodlo": "Indag. Math., 2022, 33, 664-681.",
+          "if": "0.827"
+        },
+        {
+          "autorzy": "Paluszyński Maciej, Zienkiewicz Jacek",
+          "tytul": "Dimension independent atomic decoposition for dyadic martingale H<sup>1</sup>",
+          "zrodlo": "J. Fourier Anal. Appl., 2022, 28, 1-18.",
+          "if": "1.273"
+        },
+        {
+          "autorzy": "Penney Richard C, Urban Roman",
+          "tytul": "Poisson measures on semi-direct products of infinite-dimensional Hilbert spaces",
+          "zrodlo": "Electron. J. Differ. Equ., 2022, 2022, 1-15.",
+          "if": "1.129"
+        },
+        {
+          "autorzy": "Preisner Marcin, Sikora Adam, Yan Lixin",
+          "tytul": "Hardy spaces meet harmonic weights",
+          "zrodlo": "Trans. Am. Math. Soc., 2022, 375, 6417-6451.",
+          "if": "1.351"
+        },
+        {
+          "autorzy": "Schneider Ulrike, Tardivel Patrick",
+          "tytul": "The geometry of uniqueness, sparsity and clustering in penalized estimation",
+          "zrodlo": "JMLR, 2022, 23, 1-36.",
+          "if": "5.177"
+        },
+        {
+          "autorzy": "Świątkowski Witold, Latała Rafał",
+          "tytul": "Norms of randomized circulant matrices",
+          "zrodlo": "Electron. J. Probab., 2022, 27, 1-23.",
+          "if": "1.134"
+        },
+        {
+          "autorzy": "Świderski Grzegorz, Trojan Bartosz",
+          "tytul": "About essential spectra of unbounded Jacobi matrices",
+          "zrodlo": "J. Approx. Theory, 2022, 278, 1-47.",
+          "if": "0.993"
+        },
+        {
+          "autorzy": "Świderski Grzegorz, Van Assche Walter",
+          "tytul": "Christoffel functions for multiple orthogonal polynomials",
+          "zrodlo": "J. Approx. Theory, 2022, 283, 1-22.",
+          "if": "0.993"
+        },
+        {
+          "autorzy": "Tardivel Patrick, Bogdan Małgorzata",
+          "tytul": "On the sign recovery by least absolute shrinkage and selection operator, thresholded least absolute shrinkage and selection operator, and thresholded basis pursuit denoising",
+          "zrodlo": "Scandinavian Journal of Statistics, 2022, 49, 1636-1668.",
+          "if": "1.04"
+        },
+        {
+          "autorzy": "Urban Roman",
+          "tytul": "A note on Lévy subordinators in cones of fuzzy sets in Banach spaces",
+          "zrodlo": "Mathematica Slovaca, 2022, 72, 787-796.",
+          "if": "0.996"
+        },
+        {
+          "autorzy": "Urban Roman",
+          "tytul": "On a diffusion on finite adeles and the Feynman-Kac integral",
+          "zrodlo": "J. Math. Phys., 2022, 63, 1-18.",
+          "if": "1.469"
+        },
+        {
+          "autorzy": "Valiunas Motiejus",
+          "tytul": "Isomorphism classification of Leary-Minasyan groups",
+          "zrodlo": "Journal of Group Theory, 2022, 25, 265-291.",
+          "if": "0.638"
+        }
+      ]
+    }
+  ]
+}

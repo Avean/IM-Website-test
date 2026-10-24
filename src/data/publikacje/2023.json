@@ -1,0 +1,564 @@
+{
+  "rok": 2023,
+  "pochodzenie": "pdf",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2023.pdf"
+  ],
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "Alsmeyer Gerold, Brofferio Sara, Buraczewski Dariusz",
+          "tytul": "Asymptotically linear iterated function systems on the real line",
+          "zrodlo": "Ann. Appl. Probab., 2023, 33, 161–199.",
+          "if": "2.038"
+        },
+        {
+          "autorzy": "Arendarczyk Marek, Jasiulis-Gołdyn Barbara, Omey Edward",
+          "tytul": "Asymptotic properties of extremal Markov processes driven by Kendall convolution",
+          "zrodlo": "J. Theor. Probab., 2023, 36, 2040-2065.",
+          "if": "0.733"
+        },
+        {
+          "autorzy": "Arendarczyk Marek, Kozubowski Tomasz, Panorska Anna",
+          "tytul": "A computational approach to confidence intervals and testing for generalized Pareto index using the Greenwood statistic",
+          "zrodlo": "REVSTAT-Stat. J., 2023, 21, 367-388.",
+          "if": "0.985"
+        },
+        {
+          "autorzy": "Arendarczyk Marek, Kozubowski Tomasz, Panorska Anna",
+          "tytul": "Preparing students for the future: extreme events and power tails",
+          "zrodlo": "J. Stat. Data Sci. Educ., 2023, 31, 305-309.",
+          "if": "1.7"
+        },
+        {
+          "autorzy": "Arendarczyk Marek, Kozubowski Tomasz, Panorska Anna",
+          "tytul": "Slash distributions, generalized convolutions, and extremes",
+          "zrodlo": "Ann. Inst. Stat. Math., 2023, 75, 593-617.",
+          "if": "1.18"
+        },
+        {
+          "autorzy": "Bays Martin, Dobrowolski Jan, Zou Tingxiang",
+          "tytul": "Elekes-Szabó for groups, and approximate subgroups in weak general position",
+          "zrodlo": "Discrete Anal., 2023, 6, 1-28.",
+          "if": "1.1"
+        },
+        {
+          "autorzy": "Beyarslan Özlem, Kowalski Piotr",
+          "tytul": "Galois actions of finitely generated groups rarely have model companions",
+          "zrodlo": "Bulletin of the London Mathematical Society, 2023, Early View, 1-13.",
+          "if": "1.036"
+        },
+        {
+          "autorzy": "Beyarslan Özlem, Kowalski Piotr",
+          "tytul": "Model theory of Galois actions of torsion Abelian groups",
+          "zrodlo": "J. Inst. Math. Jussieu, 2023, 22, 2943-2985.",
+          "if": "1.286"
+        },
+        {
+          "autorzy": "Biler Piotr, Boritchev Alexandre, Brandolese Lorenzo",
+          "tytul": "Sharp well-posedness and blowup results for parabolic systems of the Keller–Segel type",
+          "zrodlo": "Methods and Applications of Analysis, 2023, 30, 53-76.",
+          "if": "0.3"
+        },
+        {
+          "autorzy": "Biler Piotr, Boritchev Alexandre, Brandolese Lorenzo",
+          "tytul": "Large global solutions of the parabolic-parabolic Keller–Segel system in higher dimensions",
+          "zrodlo": "J. Differ. Equ, 2023, 344, 891-914.",
+          "if": "2.615"
+        },
+        {
+          "autorzy": "Biler Piotr, Karch Grzegorz, Wakui Hiroshi",
+          "tytul": "Large self-similar solutions of the parabolic-elliptic Keller-Segel model",
+          "zrodlo": "Indiana University Mathematics Journal, 2023, 72, 1027-1054.",
+          "if": "1.059"
+        },
+        {
+          "autorzy": "Bisewski Krzysztof, Dębicki Krzysztof, Kriukov Nikolai",
+          "tytul": "Simultaneous ruin probability for multivariate Gaussian risk model",
+          "zrodlo": "Stoch. Process. Their Appl., 2023, 160, 386-408.",
+          "if": "1.43"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Cegiełka Katarzyna",
+          "tytul": "On measures induced by forcing names for ultrafilters",
+          "zrodlo": "Topology Appl., 2023, 323, 1-14.",
+          "if": "0.583"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Sobota Damian",
+          "tytul": "There is a P-measure in the random model",
+          "zrodlo": "Fundam. Math., 2023, 262, 235-257.",
+          "if": "0.589"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Sobota Damian",
+          "tytul": "On sequences of homomorphisms into measure algebras and the Efimov problem",
+          "zrodlo": "J. Symb. Log., 2023, 88, 191-218.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Bors Dorota, Stańczy Robert",
+          "tytul": "Mathematical model for Sagittarius A* and related Tolman-Oppenheimer-Volkoff equations",
+          "zrodlo": "Math. Meth. Appl. Sci., 2023, 46, 12052-12063.",
+          "if": "3.007"
+        },
+        {
+          "autorzy": "Bors Dorota, Stańczy Robert",
+          "tytul": "Dynamical system describing cloud of particles",
+          "zrodlo": "J. Differ. Equ, 2023, 342, 21-33.",
+          "if": "2.615"
+        },
+        {
+          "autorzy": "Bourgain Jean, Mirek Mariusz, Stein Elias, Wright James",
+          "tytul": "On a multi-parameter variant of the Bellow–Furstenberg problem",
+          "zrodlo": "Forum Math. Pi, 2023, 11, 1-64.",
+          "if": "2.3"
+        },
+        {
+          "autorzy": "Bożejko Marek, Dołęga Maciej, Ejsmont Wiktor, Gal Światosław",
+          "tytul": "Reflection length with two parameters in the asymptotic representation theory of type B/C and applications",
+          "zrodlo": "J. Funct. Anal., 2023, 284, 1-46.",
+          "if": "1.891"
+        },
+        {
+          "autorzy": "Bożejko Marek, Ejsmont Wiktor",
+          "tytul": "The Double Fock Space of Type B",
+          "zrodlo": "Symmetry, Integrability and Geometry - Methods and Applications, 2023, 19, 1-22.",
+          "if": "0.817"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Dong Congzao, Iksanov Oleksandr, Marynych Alexander",
+          "tytul": "Critical branching processes in a sparse random environment",
+          "zrodlo": "Mod. Stoch.-THeory Appl., 2023, 10, 397-411.",
+          "if": "0.4"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Dong Congzao, Iksanov Oleksandr, Marynych Alexander",
+          "tytul": "Limit theorems for random Dirichlet series",
+          "zrodlo": "Stoch. Process. Their Appl., 2023, 165, 246-274.",
+          "if": "1.43"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Dyszewski Piotr, Marynych Alexander",
+          "tytul": "Solutions of kinetic-type equations with perturbed collisions",
+          "zrodlo": "Stoch. Process. Their Appl., 2023, 159, 199-224.",
+          "if": "1.43"
+        },
+        {
+          "autorzy": "Chałupnik Marcin, Kowalski Piotr",
+          "tytul": "Difference sheaves and torsors",
+          "zrodlo": "Fundam. Math., 2023, 260, 111-161.",
+          "if": "0.589"
+        },
+        {
+          "autorzy": "Chernikov Artem, Hrushovski Ehud, Kruckman Alex, Krupiński Krzysztof, Moconja Slavko, Pillay Anand, Ramsey Nicholas",
+          "tytul": "Invariant measures in simple and in small theories",
+          "zrodlo": "J. Math. Log., 2023, 23, 1-32.",
+          "if": "1.229"
+        },
+        {
+          "autorzy": "Cooper Nathaniel, Dainotti Maria Giovanna, Narendra Aditya, Liodakis Ioannis, Bogdan Małgorzata",
+          "tytul": "Fermi LAT AGN classification using supervised machine learning",
+          "zrodlo": "Mon. Not. Roy. Astron. Soc., 2023, 525, 1731-1745.",
+          "if": "5.235"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Grzywny Tomasz",
+          "tytul": "Asymptotics of non-local perimeters",
+          "zrodlo": "Ann. Mat. Pura Appl., 2023, 202, 2629-2651.",
+          "if": "0.986"
+        },
+        {
+          "autorzy": "Cygan Szymon, Marciniak-Czochra Anna, Karch Grzegorz, Suzuki Kanako",
+          "tytul": "Stable discontinuous stationary solutions to reaction-diffusion-ODE systems",
+          "zrodlo": "Commun. Partial Differ. Equ., 2023, 48, 478-510.",
+          "if": "1.95"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Sandrić Nikola, Šebek Stjepan",
+          "tytul": "Invariance principle for the capacity and the cardinality of the range of stable random walks",
+          "zrodlo": "Stoch. Process. Their Appl., 2023, 163, 61-84.",
+          "if": "1.43"
+        },
+        {
+          "autorzy": "Dainotti Maria Giovanna, Bargiacchi Giada, Bogdan Małgorzata, Lenart Aleksander Ł., Iwasaki Kazunari, Capozziello Salvatore, Fraija Nissim",
+          "tytul": "Reducing the Uncertainty on the Hubble Constant up to 35% with an Improved Statistical Analysis: Different Best-fit Likelihoods for Type Ia Supernovae, Baryon Acoustic Oscillations, Quasars, and Gamma-Ray Bursts",
+          "zrodlo": "Astrophys. J., 2023, 951, 1-24.",
+          "if": "5.521"
+        },
+        {
+          "autorzy": "Dainotti Maria Giovanna, Lenart Aleksander Ł., Chraya Ashley, Sarracino Giuseppe, Nagataki Shigehiro, Fraija Nissim, Capozziello Salvatore, Bogdan Małgorzata",
+          "tytul": "The gamma-ray bursts fundamental plane correlation as a cosmological tool",
+          "zrodlo": "Mon. Not. Roy. Astron. Soc., 2023, 518, 2201-2240.",
+          "if": "5.235"
+        },
+        {
+          "autorzy": "Damek Ewa, Mikosch Thomas, Zhao Yuwei, Zienkiewicz Jacek",
+          "tytul": "Whittle estimation based on the extremal spectral density of a heavy-tailed random field",
+          "zrodlo": "Stoch. Process. Their Appl., 2023, 155, 232-267.",
+          "if": "1.43"
+        },
+        {
+          "autorzy": "Das Biswarup, Franz Uwe, Wysoczańska-Kula Anna, Skalski Adam",
+          "tytul": "Second cohomology groups of the Hopf * -algebras associated to universal unitary quantum groups",
+          "zrodlo": "Ann. Inst. Fourier, 2023, 73, 479-509.",
+          "if": "0.978"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Liu Peng",
+          "tytul": "Sojourns of fractional Brownian motion queues: transient asymptotics",
+          "zrodlo": "Queueing Syst., 2023, 105, 139-170.",
+          "if": "1.402"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Liu Peng, Michna Zbigniew",
+          "tytul": "Sojourn times of Gaussian and related random fields",
+          "zrodlo": "ALEA-Latin Am. J. Probab. Math., 2023, 20, 249-289.",
+          "if": "0.732"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Mandjes Michel",
+          "tytul": "Editorial introduction: special issue on Gaussian queues",
+          "zrodlo": "Queueing Syst., 2023, 105, 1-4.",
+          "if": "1.402"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Peng Xiaofan",
+          "tytul": "Sojourns of stationary Gaussian processes over a random interval",
+          "zrodlo": "ALEA-Latin Am. J. Probab. Math., 2023, 20, 1017–1039.",
+          "if": "0.732"
+        },
+        {
+          "autorzy": "Di Piazza Luisa, Marraffa Valeria, Musiał Kazimierz, Sambucini Anna Rita",
+          "tytul": "Convergence for varying measures",
+          "zrodlo": "J. Math. Anal. Appl., 2023, 518, 1-22.",
+          "if": "1.417"
+        },
+        {
+          "autorzy": "Dobrowolski Jan",
+          "tytul": "Sets, groups, and fields definable in vector spaces with a bilinear form",
+          "zrodlo": "Ann. Inst. Fourier, 2023, 73, 1795-1841.",
+          "if": "0.978"
+        },
+        {
+          "autorzy": "Dyszewski Piotr, Gantert Nina, Höfelsauer Thomas",
+          "tytul": "The maximum of a branching random walk with stretched exponential tails",
+          "zrodlo": "Ann. Inst. Henri Poincare-Probab. Stat., 2023, 59, 539-562.",
+          "if": "1.484"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Hejna Agnieszka",
+          "tytul": "Remarks on Dunkl translations of non-radial kernels",
+          "zrodlo": "J. Fourier Anal. Appl., 2023, 29, 1-35.",
+          "if": "1.273"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Hejna Agnieszka",
+          "tytul": "Upper and lower bounds for the Dunkl heat kernel",
+          "zrodlo": "Calc. Var. Partial Differ. Equ., 2023, 62, 1-18.",
+          "if": "2.079"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Hejna Agnieszka",
+          "tytul": "A note on commutators of singular integrals with BMO and VMO functions in the Dunkl setting",
+          "zrodlo": "Math. Nachr., 2023, Early View, 1-15.",
+          "if": "1.199"
+        },
+        {
+          "autorzy": "Franz Uwe, Wysoczańska-Kula Anna, Lindsay J. Martin, Skeide Michael",
+          "tytul": "Hunt’s formula for SUq(N) and Uq(N)",
+          "zrodlo": "Indiana University Mathematics Journal, 2023, 72, 1717-1748.",
+          "if": "1.059"
+        },
+        {
+          "autorzy": "Gal Światosław, Kędra Jarosław, Trost Alexander Alois",
+          "tytul": "Finite index subgroups in Chevalley groups are bounded: An addendum to “On Bi-Invariant Word Metrics”",
+          "zrodlo": "Journal of Topology and Analysis, 2023, Online Ready, 1-8.",
+          "if": "0.641"
+        },
+        {
+          "autorzy": "Gismatullin Jakub",
+          "tytul": "On model-theoretic connected groups",
+          "zrodlo": "J. Symb. Log., 2023, Accepted manuscript, 1-25.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Gismatullin Jakub",
+          "tytul": "On model-theoretic connected components in some group extensions",
+          "zrodlo": "J. Symb. Log., 2023, FirstView, 1-30.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Gismatullin Jakub, Jagiella Grzegorz, Krupiński Krzysztof",
+          "tytul": "Bohr compactifications of groups and rings",
+          "zrodlo": "J. Symb. Log., 2023, 88, 1103-1137.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Gismatullin Jakub, Tarasek Katarzyna",
+          "tytul": "On binomials and algebraic closure of some pseudofinite fields",
+          "zrodlo": "Commun. Algebr., 2023, 51, 95-97.",
+          "if": "0.617"
+        },
+        {
+          "autorzy": "Gogolok Jakub",
+          "tytul": "Model theory of derivations of the Frobenius map revisited",
+          "zrodlo": "J. Symb. Log., 2023, 88, 1213-1229.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Hejna Agnieszka",
+          "tytul": "Dimension-free L<sup>p</sup>-estimates for vectors of Riesz transforms in the rational Dunkl setting",
+          "zrodlo": "J. Anal. Math., 2023, 150, 485-528.",
+          "if": "1.132"
+        },
+        {
+          "autorzy": "Hoffmann Daniel, Kowalski Piotr",
+          "tytul": "PAC structures as invariants of finite group actions",
+          "zrodlo": "J. Symb. Log., 2023, \"preproof\" accepted article, 1-34.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Hoffmann Daniel, Kowalski Piotr",
+          "tytul": "Model theory of fields with finite group scheme actions",
+          "zrodlo": "J. Symb. Log., 2023, 88, 1443-1468.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Hotta Ikkei, Młotkowski Wojciech, Sakuma Noriyoshi, Ueda Yuki",
+          "tytul": "On freely quasi-infinitely divisible distributions",
+          "zrodlo": "ALEA-Latin Am. J. Probab. Math., 2023, 20, 941-971.",
+          "if": "0.732"
+        },
+        {
+          "autorzy": "Huang Ting, Staniak Mateusz, Leprevost Felipe da Veiga, Figueroa-Navedo Amanda M., Ivanov Alexander R., Nesvizhskii Alexey I., Choi Meena, Vitek Olga",
+          "tytul": "Statistical detection of differentially abundant proteins in experiments with repeated measures designs and isobaric labeling",
+          "zrodlo": "J. Proteome Res., 2023, 22, 2641-2659.",
+          "if": "4.4"
+        },
+        {
+          "autorzy": "Ionescu Alex, Magyar Akos, Mirek Mariusz, Szarek Tomasz Zachary",
+          "tytul": "Polynomial sequences in discrete nilpotent groups of step 2",
+          "zrodlo": "Adv. Nonlinear Stud., 2023, 23, 1-24.",
+          "if": "1.8"
+        },
+        {
+          "autorzy": "Ionescu Alex, Magyar Akos, Mirek Mariusz, Szarek Tomasz Zachary",
+          "tytul": "Polynomial averages and pointwise ergodic theorems on nilpotent groups",
+          "zrodlo": "Invent. Math., 2023, 231, 1023–1140.",
+          "if": "3.128"
+        },
+        {
+          "autorzy": "Iosevich Alex, Langowski Bartosz, Mirek Mariusz, Szarek Tomasz Zachary",
+          "tytul": "Lattice points problem, equidistribution and ergodic theorems for certain arithmetic spheres",
+          "zrodlo": "Math. Ann., 2023, Online first articles, 1-80.",
+          "if": "1.334"
+        },
+        {
+          "autorzy": "Jasiulis-Gołdyn Barbara, Lechańska Alicja, Misiewicz Jolanta Krystyna",
+          "tytul": "Cramér–Lundberg model for some classes of extremal Markov sequences",
+          "zrodlo": "Lith. Math. J., 2023, 63, 272-290.",
+          "if": "0.704"
+        },
+        {
+          "autorzy": "Jasiulis-Gołdyn Barbara, Misiewicz Jolanta Krystyna, Omey Edward, Wesołowski Jacek",
+          "tytul": "How exceptional is the extremal Kendall and Kendall-type convolution",
+          "zrodlo": "Results Math., 2023, 78, 1-37.",
+          "if": "2.2"
+        },
+        {
+          "autorzy": "Jurek Zbigniew",
+          "tytul": "Which Urbanik class Lk, do the hyperbolic and the generalized logistic characteristic functions belong to?",
+          "zrodlo": "Stat. Probab. Lett., 2023, 197, 1-8.",
+          "if": "0.718"
+        },
+        {
+          "autorzy": "Jurek Zbigniew",
+          "tytul": "Some definite integrals arising from selfdecomposable characteristic functions",
+          "zrodlo": "Lith. Math. J., 2023, 63, 291-304.",
+          "if": "0.704"
+        },
+        {
+          "autorzy": "Kohler Devon, Kaza Maanasa, Pasi Cristina, Huang Ting, Staniak Mateusz, Mohandas Dhaval, Sabido Eduard, Choi Meena, Vitek Olga",
+          "tytul": "MSstatsShiny: a GUI for versatile, scalable, and reproducible statistical analyses of quantitative proteomic experiments",
+          "zrodlo": "J. Proteome Res., 2023, 22, 551-556.",
+          "if": "4.4"
+        },
+        {
+          "autorzy": "Kohler Devon, Staniak Mateusz, Tsai Tsung-Heng, Huang Ting, Shulman Nicholas, Bernhardt Oliver M., MacLean Brendan X., Nesvizhskii Alexey I., Reiter Lukas, Sabido Eduard, Choi Meena, Vitek Olga",
+          "tytul": "MSstats version 4.0: statistical analyses of quantitative mass spectrometry-based proteomic experiments with chromatography-based quantification at scale",
+          "zrodlo": "J. Proteome Res., 2023, 22, 1466-1482.",
+          "if": "4.4"
+        },
+        {
+          "autorzy": "Kolesko Konrad, Sava-Huss Ecaterina",
+          "tytul": "Limit theorems for discrete multitype branching processes counted with a characteristic",
+          "zrodlo": "Stoch. Process. Their Appl., 2023, 162, 49-75.",
+          "if": "1.43"
+        },
+        {
+          "autorzy": "Kosz Dariusz, Mirek Mariusz, Plewa Paweł, Wróbel Błażej",
+          "tytul": "Some remarks on dimension-free estimates for the discrete Hardy-Littlewood maximal functions",
+          "zrodlo": "Isr. J. Math., 2023, 254, 1-38.",
+          "if": "1.089"
+        },
+        {
+          "autorzy": "Krawiec Michał, Palmowski Zbigniew",
+          "tytul": "Multivariate Lévy-type drift change detection and mortality modeling",
+          "zrodlo": "Eur. Actuar. J., 2023, Online first articles, 1-29.",
+          "if": "1.2"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof",
+          "tytul": "Locally compact models for approximate rings",
+          "zrodlo": "Math. Ann., 2023, Online first articles, 1-25.",
+          "if": "1.334"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof, Pillay Anand",
+          "tytul": "On the topological dynamics of automorphism groups: a model-theoretic perspective",
+          "zrodlo": "Arch. Math. Log., 2023, 62, 505-529.",
+          "if": "0.492"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof, Portillo Fernandez Adrian",
+          "tytul": "Maximal stable quotients of invariant types in NIP theories",
+          "zrodlo": "J. Symb. Log., 2023, FirstView, 1-25.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Krystecki Konrad",
+          "tytul": "Cumulative Parisian ruin probability for two-dimensional Brownian risk model",
+          "zrodlo": "Prob. Math. Stat., 2023, 43, 63-81.",
+          "if": "0.522"
+        },
+        {
+          "autorzy": "Kucharski Maciej Tomasz, Wróbel Błażej",
+          "tytul": "A dimension-free estimate on L<sup>2</sup> for the maximal Riesz transform in terms of the Riesz transform",
+          "zrodlo": "Math. Ann., 2023, 386, 1017-1039.",
+          "if": "1.334"
+        },
+        {
+          "autorzy": "Lorek Paweł, Nowak Rafał, Trzciński Tomasz, Zięba Maciej",
+          "tytul": "FlowHMM: Flow-based continuous hidden Markov models",
+          "zrodlo": "in: 36th Conference on Neural Information Processing Systems, NeurIPS 2022, New Orleans, LA, USA / red.Sanmi Koyejo, S. Mohamed, A. Agarwal, D. Belgrave, K. Cho, A. Oh, Curran Associates, Inc., New York, 2023, 8773-8784."
+        },
+        {
+          "autorzy": "Malinowski Adam Marek, Newelski Ludomir",
+          "tytul": "Weak heirs, coheirs and the Ellis semigroups",
+          "zrodlo": "J. Symb. Log., 2023, FirstView, 1-22.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Marcinkowski Michał",
+          "tytul": "A short proof that the L<sup>p</sup>–diameter of Diff0(S,area) is infinite",
+          "zrodlo": "Algebraic and Geometric Topology, 2023, 23, 883-893.",
+          "if": "0.76"
+        },
+        {
+          "autorzy": "Mirek Mariusz, Słomian Wojciech, Szarek Tomasz Zachary",
+          "tytul": "Some remarks on oscillation inequalities",
+          "zrodlo": "Ergod. Theory Dyn. Syst., 2023, 43, 3383-3412.",
+          "if": "1.066"
+        },
+        {
+          "autorzy": "Mirek Mariusz, Szarek Tomasz Zachary, Wróbel Błażej",
+          "tytul": "Dimension-free estimates for the discrete spherical maximal functions",
+          "zrodlo": "Int. Math. Res. Notices, 2023, Early Access, 1-63.",
+          "if": "1.53"
+        },
+        {
+          "autorzy": "Mirek Jarosław, Wróbel Błażej, Słomian Wojciech",
+          "tytul": "On the solution of Waring problem with a multiplicative error term: dimension-free estimates",
+          "zrodlo": "Proc. Amer. Math. Soc., 2023, 151, 3365-3379.",
+          "if": "0.971"
+        },
+        {
+          "autorzy": "Nowak Adam, Roncal Luz, Szarek Tomasz Zachary",
+          "tytul": "Endpoint estimates and optimality for the generalized spherical maximal operator on radial functions",
+          "zrodlo": "Communications on Pure and Applied Analysis, 2023, 22, 2233-2277.",
+          "if": "1.273"
+        },
+        {
+          "autorzy": "Osajda Damian",
+          "tytul": "Normal subgroups of SimpHAtic groups",
+          "zrodlo": "Journal of Topology and Analysis, 2023, 15, 845-864.",
+          "if": "0.641"
+        },
+        {
+          "autorzy": "Oussi Lahcen",
+          "tytul": "Distribution for non symmetric position operators on the free toy Fock space and its approximation on the full Fock space",
+          "zrodlo": "Complex Anal. Oper. Theory, 2023, 17, 1-20.",
+          "if": "0.819"
+        },
+        {
+          "autorzy": "Oussi Lahcen",
+          "tytul": "On degenerate Simsek and Stirling numbers",
+          "zrodlo": "J. Integer Seq., 2023, 26, 1-21.",
+          "if": "0.5"
+        },
+        {
+          "autorzy": "Oussi Lahcen, Wysoczański Janusz",
+          "tytul": "Analogues of Poisson-type limit theorems in discrete bm-Fock spaces",
+          "zrodlo": "Infin. Dimens. Anal. Quantum, 2023, Online Ready, 1-23.",
+          "if": "0.828"
+        },
+        {
+          "autorzy": "Paluszyński Maciej, Zienkiewicz Jacek",
+          "tytul": "On maximal function of discrete rough truncated Hilbert transforms",
+          "zrodlo": "Ann. Mat. Pura Appl., 2023, 202, 2785-2801.",
+          "if": "0.986"
+        },
+        {
+          "autorzy": "Plebanek Grzegorz",
+          "tytul": "Musing on Kunen's compact L-space",
+          "zrodlo": "Topology Appl., 2023, 323, 1-10.",
+          "if": "0.583"
+        },
+        {
+          "autorzy": "Plebanek Grzegorz, Alarcón Alberto Salguero",
+          "tytul": "The complemented subspace problem for C(K)-spaces: a counterexample",
+          "zrodlo": "Adv. Math., 2023, 426, 1-20.",
+          "if": "1.675"
+        },
+        {
+          "autorzy": "Świderski Grzegorz, Trojan Bartosz",
+          "tytul": "Orthogonal polynomials with periodically modulated recurrence coefficients in the Jordan block case II",
+          "zrodlo": "Constr. Approx., 2023, 58, 615-686.",
+          "if": "1.779"
+        },
+        {
+          "autorzy": "Trost Alexander Alois",
+          "tytul": "Conjugation-invariant norms on SL 2 ( R ) for rings of S-algebraic integers with infinitely many units",
+          "zrodlo": "Commun. Algebr., 2023, 51, 4329-4346.",
+          "if": "0.617"
+        },
+        {
+          "autorzy": "Urban Roman",
+          "tytul": "Matrix-valued Schrödinger operators over finite adeles",
+          "zrodlo": "Infin. Dimens. Anal. Quantum, 2023, 26, 1-21.",
+          "if": "0.828"
+        },
+        {
+          "autorzy": "Valiunas Motiejus",
+          "tytul": "Commensurators of abelian subgroups of biautomatic groups",
+          "zrodlo": "Geod. Dedic., 2023, 217, 1-17.",
+          "if": "0.516"
+        },
+        {
+          "autorzy": "Weinstein Asaf, Su Weijie J., Bogdan Małgorzata, Foygel Barber Rina, Candes Emmanuel",
+          "tytul": "A power analysis for model-X knockoffs with ℓp-regularized statistics",
+          "zrodlo": "Ann. Stat., 2023, 51, 1005-1029.",
+          "if": "4.904"
+        },
+        {
+          "autorzy": "Wyłupek Grzegorz",
+          "tytul": "A nonparametric test for paired data",
+          "zrodlo": "J. Multivar. Anal., 2023, 198, 1-12.",
+          "if": "1.387"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,490 @@
+{
+  "rok": 2019,
+  "pochodzenie": "pdf",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2019.pdf"
+  ],
+  "grupy": [
+    {
+      "naglowek": "Monografie",
+      "naglowek_en": "Monographs",
+      "prace": [
+        {
+          "autorzy": "Duda Roman",
+          "tytul": "Historia matematyki w Polsce na tle dziejów nauki i kultury",
+          "zrodlo": "Warszawa : Instytut Historii Nauki Polskiej PAN, 2019. - 625 s. - Bibliografia na stronach 493-548.",
+          "uwagi": "jęz. polski, wydawnictwo krajowe, praca recenzowana, afiliacja UWr"
+        }
+      ]
+    },
+    {
+      "naglowek": "Rozdziały w książkach – opracowania problemowe",
+      "naglowek_en": "Book chapters – research studies",
+      "prace": [
+        {
+          "autorzy": "Kryakin Yuriy",
+          "tytul": "Special difference operators and the constants in the classical Jackson-type theorems",
+          "zrodlo": "W: Topics in classical and modern analysis / pod redakcją Martha Abell, Emil Iacob, Alex Stokolos, Sharon Taylor, Sergey Tikhonov, Jiehua Zhu. - Cham : Springer, 2019. - (Applied and Numerical Harmonic Analysis). - S. 35-46",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, afiliacja UWr"
+        }
+      ]
+    },
+    {
+      "naglowek": "Artykuły problemowe",
+      "naglowek_en": "Research articles",
+      "prace": [
+        {
+          "autorzy": "Bendikov Alexander, Cygan Wojciech",
+          "tytul": "On the rate of convergence in the central limit theorem for hierarchical Laplacians",
+          "zrodlo": "ESAIM-Probability and Statistics. - Vol. 23 (2019), s. 68-81. - Dostęp do abstraktu: https://doi.org/10.1051/ps/2018010. - . - Przy nazwisku Wojciech Cygan podwójna afiliacja : Instytut Matematyczny, Uniwersytet Wrocławski, Poland oraz Institut für Diskrete Mathematik, Technische Universität Graz, Austria.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.493, afiliacja UWr"
+        },
+        {
+          "autorzy": "Bendikov Alexander, Cygan Wojciech",
+          "tytul": "Oscillating heat kernels on ultrametric spaces",
+          "zrodlo": "Journal of Spectral Theory. - Vol. 9, iss. 1 (2019), s. 195-226. - Dostęp: https://doi.org/10.4171/jst/245. - . - Przy nazwisku Wojciech Cygan podwójna afiliacja: University of Wrocław and Technische Universität Graz, Austria.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.844, afiliacja UWr"
+        },
+        {
+          "autorzy": "Biler Piotr",
+          "tytul": "Around a singular solution of a nonlocal nonlinear heat equation",
+          "zrodlo": "NoDEA-Nonlinear Differential Equations and Applications. - Vol. 26, iss. 1 (2019), nr art. 5, s. 1-26. - Dostęp: https://doi.org/10.1007/s00030-019-0552-z. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.048, afiliacja UWr"
+        },
+        {
+          "autorzy": "Biler Piotr, Zienkiewicz Jacek",
+          "tytul": "Blowing up radial solutions in the minimal Keller-Segel model of chemotaxis",
+          "zrodlo": "Journal of Evolution Equations. - Vol. 19, iss. 1 (2019), s. 71-90. - Dostęp: https://doi.org/10.1007/s00028-018-0469-8. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.025, afiliacja UWr"
+        },
+        {
+          "autorzy": "Biler Piotr",
+          "tytul": "Blowup of solutions for nonlinear nonlocal heat equations",
+          "zrodlo": "Monatshefte für Mathematik. - Vol. 189, iss. 4 (2019), s. 611-624. - Dostęp: https://doi.org/10.1007/s00605-019-01269-7. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.807, afiliacja UWr"
+        },
+        {
+          "autorzy": "Biler Piotr, Karch Grzegorz",
+          "tytul": "Global radial solutions in classical Keller-Segel model of chemotaxis",
+          "zrodlo": "Journal of Differential Equations. - Vol. 267, iss. 11 (2019), s. 6352-6369. - Dostęp do abstraktu: https://doi.org/10.1016/j.jde.2019.06.024. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.938, afiliacja UWr"
+        },
+        {
+          "autorzy": "Bogdan Małgorzata",
+          "tytul": "Group SLOPE - adaptive selection of groups of predictors",
+          "zrodlo": "Journal of the American Statistical Association. - Vol. 114, nr 525 (2019), s. 419-433. - Dostęp do abstraktu: https://doi.org/10.1080/01621459.2017.1411269. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=3.412, afiliacja UWr"
+        },
+        {
+          "autorzy": "Bogdan Małgorzata",
+          "tytul": "Structure learning of Gaussian Markov random fields with false discovery rate control",
+          "zrodlo": "Symmetry. - Vol. 11, nr 10 (2019), nr art. 1311, s. 1-17. - Dostęp: https://doi.org/10.3390/sym11101311. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=2.143, afiliacja UWr"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Dyszewski Piotr, Kolesko Konrad",
+          "tytul": "Local fluctuations of critical Mandelbrot cascades",
+          "zrodlo": "Annales de l'Institut Henri Poincaré (B): Probability and Statistics. - Vol. 55, nr 2 (2019), s. 1179-1202. - Dostęp do abstraktu: https://doi.org/10.1214/18-AIHP915. - . - Przy nazwisku Konrad Kolesko podwójna afiliacja: Mathematical Institute, University of Wrocław, Wrocław, Poland oraz Institut für Mathematik, Universität Innsbruck, Innsbruck, Austria.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, afiliacja UWr"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Maślanka Mariusz",
+          "tytul": "Precise large deviations for the first passage time of a random walk with negative drift",
+          "zrodlo": "Proceedings of the American Mathematical Society. - Vol. 147, iss. 9 (2019), s. 4045-4054. - Dostęp do abstraktu: https://doi.org/10.1090/proc/13632. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.813, afiliacja UWr"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Dyszewski Piotr",
+          "tytul": "Random walks in a moderately sparse random environment",
+          "zrodlo": "Electronic Journal of Probability. - Vol. 24 (2019), nr art. 69, s. 1-44. - Dostęp: https://doi.org/10.1214/19-EJP330. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.994, afiliacja UWr"
+        },
+        {
+          "autorzy": "Damek Ewa, Kolesko Konrad",
+          "tytul": "Absolute continuity of the martingale limit in branching processes in random environment",
+          "zrodlo": "Electronic Communications in Probability. - Vol. 24 (2019), nr art. 42, s. 1-13. - Dostęp: https://doi.org/10.1214/19-ECP229. - . - Przy nazwisku Konrad Kolesko podwójna afiliacja: Mathematical Institute, University of Wrocław, Wrocław, Poland oraz Institut für Mathematik, Universität Innsbruck, Innsbruck, Austria.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.623, afiliacja UWr"
+        },
+        {
+          "autorzy": "Damek Ewa, Świątkowski Witold",
+          "tytul": "Componentwise different tail solutions for bivariate stochastic recurrence equations with application to GARCH(1,1) processes",
+          "zrodlo": "Colloquium Mathematicum. - Vol. 155, nr 2 (2019), s. 227-254. - Dostęp do abstraktu: https://doi.org/10.4064/cm7313A-5-2018. -",
+          "uwagi": "jęz. angielski, wydawnictwo krajowe, praca recenzowana, JCR IF=0.42, afiliacja UWr"
+        },
+        {
+          "autorzy": "Damek Ewa",
+          "tytul": "Large versus bounded solutions to sublinear elliptic problems",
+          "zrodlo": "Bulletin of the Polish Academy of Sciences. Mathematics. - T. 67, nr 1 (2019), s. 69-82. - Dostęp do abstraktu: https://doi.org/10.4064/ba8180-12-2018. -",
+          "uwagi": "jęz. angielski, wydawnictwo krajowe, praca recenzowana, afiliacja UWr"
+        },
+        {
+          "autorzy": "Damek Ewa",
+          "tytul": "Sublinear elliptic problems under radiality. Harmonic NA groups and Euclidean spaces",
+          "zrodlo": "Forum Mathematicum. - Vol. 31, iss. 4 (2019), s. 1007-1026. - Dostęp do abstraktu: https://doi.org/10.1515/forum-2019-0014. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.867, afiliacja UWr"
+        },
+        {
+          "autorzy": "Das Biswarup",
+          "tytul": "Admissibility conjecture and Kazhdan's Property (T) for quantum groups",
+          "zrodlo": "Journal of Functional Analysis. - Vol. 276, iss. 11 (2019), s. 3484-3510. - Dostęp: https://doi.org/10.1016/j.jfa.2018.09.001. - . - Przy nazwisku Biswarup Das podwójna afiliacja: Department of Mathematical Sciences, University of Oulu, Finnland oraz Instytut Matematyczny, Uniwersytet Wrocławski, Wrocław, Poland.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.326, afiliacja UWr"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof",
+          "tytul": "Approximation of sojourn times of Gaussian processes",
+          "zrodlo": "Methodology and Computing in Applied Probability. - Vol. 21, iss. 4 (2019), s. 1183-1213. - Dostęp do abstraktu: https://doi.org/10.1007/s11009-018-9667-7. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.746, afiliacja UWr"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof",
+          "tytul": "The time of ultimate recovery in Gaussian risk model",
+          "zrodlo": "Extremes. - Vol. 22, iss. 3 (2019), s. 499-521. - Dostęp do abstraktu: http://dx.doi.org/10.1007/s10687-019-00343-5. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.778, afiliacja UWr"
+        },
+        {
+          "autorzy": "Dobrowolski Jan",
+          "tytul": "Some remarks on inp-minimal and finite burden groups",
+          "zrodlo": "Archive for Mathematical Logic. - Vol. 58, iss. 3-4 (2019), s. 267-274. - Dostęp https://doi.org/10.1007/s00153-018-0634-3. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, afiliacja UWr"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Hejna Agnieszka",
+          "tytul": "Harmonic functions, conjugate harmonic functions and the Hardy space H1 in the rational Dunkl setting",
+          "zrodlo": "Journal of Fourier Analysis and Applications. - Vol. 25, iss. 5 (2019), s. 2356-2418. - Dostęp: https://doi.org/10.1007/s00041-019-09666-0. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.394, afiliacja UWr"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Hejna Agnieszka",
+          "tytul": "Hörmander's multiplier theorem for the Dunkl transform",
+          "zrodlo": "Journal of Functional Analysis. - Vol. 277, iss. 7 (2019), s. 2133-2159. - Dostęp do abstraktu: https://doi.org/10.1016/j.jfa.2019.03.002. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.637, afiliacja UWr"
+        },
+        {
+          "autorzy": "Dziubański Jacek",
+          "tytul": "Sharp Gaussian estimates for heat kernels of Schrödinger operators",
+          "zrodlo": "Integral Equations and Operator Theory. - Vol. 91, iss. 1 (2019), nr art. 3, s. 1-20. - Dostęp: https://doi.org/10.1007/s00020-019-2501-y. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.652, afiliacja UWr"
+        },
+        {
+          "autorzy": "Ejsmont Wiktor",
+          "tytul": "Type B Gaussian statistics as noncommutative central limits",
+          "zrodlo": "Journal of Mathematical Analysis and Applications. - Vol. 480, iss. 2 (2019), s. 1-13. - Dostęp do abstraktu: https://doi.org/10.1016/j.jmaa.2019.06.065. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.188, afiliacja UWr"
+        },
+        {
+          "autorzy": "Elsner Tomasz",
+          "tytul": "Quasi-flats in systolic complexes",
+          "zrodlo": "Proceedings of the American Mathematical Society. - Vol. 147, iss. 6 (2019), s. 2365-2374. - Dostęp do abstraktu: https://doi.org/10.1090/proc/14427. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.813, afiliacja UWr"
+        },
+        {
+          "autorzy": "Ghardallou Zeineb",
+          "tytul": "Positive solutions to sublinear elliptic problems",
+          "zrodlo": "Colloquium Mathematicum. - Vol. 155, nr 1 (2019), s. 107-125. - Dostęp do abstraktu: https://doi.org/10.4064/cm7340-2-2018. -",
+          "uwagi": "jęz. angielski, wydawnictwo krajowe, praca recenzowana, JCR IF=0.54, afiliacja UWr"
+        },
+        {
+          "autorzy": "Głowacki Paweł",
+          "tytul": "Lp-multipliers sensitive to the group structure on nilpotent Lie groups",
+          "zrodlo": "Journal of Fourier Analysis and Applications. - Vol. 25, iss. 4 (2019), s. 1632-1672. - Dostęp do abstraktu: https://doi.org/10.1007/s00041-018-9640-4. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.394, afiliacja UWr"
+        },
+        {
+          "autorzy": "Grech Mariusz, Kisielewicz Andrzej",
+          "tytul": "Cyclic permutation groups that are automorphism groups of graphs",
+          "zrodlo": "Graphs and Combinatorics. - Vol. 35, iss. 6 (2019), s. 1405-1432. - Dostęp: https://doi.org/10.1007/s00373-019-02096-1. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.488, afiliacja UWr"
+        },
+        {
+          "autorzy": "Grech Mariusz",
+          "tytul": "Direct product of automorphism groups of digraphs",
+          "zrodlo": "Ars Mathematica Contemporanea. - Vol. 17, nr 1 (2019), s. 89-101. - Dostęp: https://doi.org/10.26493/1855-3974.1498.77b. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.91, afiliacja UWr"
+        },
+        {
+          "autorzy": "Hoffmann Daniel",
+          "tytul": "On existence of canonical G-bases",
+          "zrodlo": "Nagoya Mathematical Journal. - Vol. 233 (2019), s. 1-31. - Dostęp do abstraktu: https://doi.org/10.1017/nmj.2017.25. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.776, afiliacja UWr"
+        },
+        {
+          "autorzy": "Kolesko Konrad",
+          "tytul": "Stable-like fluctuations of Biggins' martingales",
+          "zrodlo": "Stochastic Processes and their Applications. - Vol. 129, iss. 11 (2019), s. 4480-4499. - Dostęp do abstraktu: https://doi.org/10.1016/j.spa.2018.11.022. - . - Przy nazwisku Konrad Kolesko podwójna afiliacja: Universität Innsbruck, Austria oraz Uniwersytet Wrocławski, Wrocław, Poland.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.342, afiliacja UWr"
+        },
+        {
+          "autorzy": "Kowalski Piotr",
+          "tytul": "Ax-Schanuel condition in arbitrary characteristic",
+          "zrodlo": "Journal of the Institute of Mathematics of Jussieu. - Vol. 18, iss. 6 (2019), s. 1157-1213. - Dostęp: https://doi.org/10.1017/S1474748017000378. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.63, afiliacja UWr"
+        },
+        {
+          "autorzy": "Kowalski Piotr",
+          "tytul": "Model theory of fields with free operators in positive characteristic",
+          "zrodlo": "Transactions of the American Mathematical Society. - Vol. 372, iss. 8 (2019), s. 5991-6016. - Dostęp do abstraktu: https://doi.org/10.1090/tran/7896. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.318, afiliacja UWr"
+        },
+        {
+          "autorzy": "Kowalski Piotr",
+          "tytul": "Model theory of fields with virtually free group actions",
+          "zrodlo": "Proceedings of the London Mathematical Society. - Vol. 118, iss. 2 (2019), s. 221-256. - Dostęp: https://doi.org/10.1112/plms.12180. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.189, afiliacja UWr"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof",
+          "tytul": "Amenability, definable groups, and automorphism groups",
+          "zrodlo": "Advances in Mathematics. - Vol. 345 (2019), s. 1253-1299. - Dostęp do abstraktu: https://doi.org/10.1016/j.aim.2019.01.033. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.435, afiliacja UWr"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof, Newelski Ludomir",
+          "tytul": "Boundedness and absoluteness of some dynamical invariants in model theory",
+          "zrodlo": "Journal of Mathematical Logic. - Vol. 19, nr 2 (2019), nr art. 1950012, s. 1-55. - Dostęp do abstraktu: https://doi.org/10.1142/S0219061319500120. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1., afiliacja UWr"
+        },
+        {
+          "autorzy": "Krupski Miłosz",
+          "tytul": "Convection-diffusion equations with random initial conditions",
+          "zrodlo": "Journal of Mathematical Analysis and Applications. - Vol. 470, iss. 2 (2019), s. 1194-1221. - Dostęp do abstraktu: https://doi.org/10.1016/j.jmaa.2018.10.060. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.138, afiliacja UWr"
+        },
+        {
+          "autorzy": "Kwiatkowska Aleksandra",
+          "tytul": "Automorphism groups of countable structures and groups of measurable functions",
+          "zrodlo": "Israel Journal of Mathematics. - Vol. 230, iss. 1 (2019), s. 335-360. - Dostęp do abstraktu: https://doi.org/10.1007/s11856-018-1825-7. - . - Przy nazwisku Aleksandra Kwiatkowska podwójna afiliacja: Universität Münster, Germany oraz Instytut Matematyczny, Uniwersytet Wrocławski, Wrocław, Poland.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.764, afiliacja UWr"
+        },
+        {
+          "autorzy": "Kwiatkowska Aleksandra",
+          "tytul": "The universal minimal flow of the homeomorphism group of the Lelek fan",
+          "zrodlo": "Transactions of the American Mathematical Society. - Vol. 371, iss. 10 (2019), s. 6995-7027. - Dostęp: https://doi.org/10.1090/tran/7548. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.496, afiliacja UWr"
+        },
+        {
+          "autorzy": "Lee Junguk",
+          "tytul": "Geometric stability theory for μ-structures",
+          "zrodlo": "Annals of Pure and Applied Logic. - Vol. 170, iss. 8 (2019), s. 843-866. - Dostęp do abstraktu: https://doi.org/10.1016/j.apal.2019.03.001. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.829, afiliacja UWr"
+        },
+        {
+          "autorzy": "Lorek Paweł",
+          "tytul": "Antiduality and Möbius monotonicity: generalized coupon collector problem",
+          "zrodlo": "ESAIM-Probability and Statistics. - Vol. 23 (2019), s. 739-769. - Dostęp https://doi.org/10.1051/ps/2019004. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, afiliacja UWr"
+        },
+        {
+          "autorzy": "Lorek Paweł",
+          "tytul": "Strong stationary times and its use in cryptography",
+          "zrodlo": "IEEE Transactions on Dependable and Secure Computing. - Vol. 16, iss. 5 (2019), s. 805-818. - Dostęp https://doi.org/10.1109/TDSC.2017.2751475. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, afiliacja UWr"
+        },
+        {
+          "autorzy": "Marcinkowski Michał",
+          "tytul": "Entropy and quasimorphisms",
+          "zrodlo": "Journal of Modern Dynamics. - Vol. 15 (2019), s. 143-163. - Dostęp: https://doi.org/10.3934/jmd.2019017. - . - Przy nazwisku Michał Marcinkowski podwójna afiliacja: University of Regenburg, Regensburg, Germany oraz University of Wrocław, Wrocław, Poland.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.295, afiliacja UWr"
+        },
+        {
+          "autorzy": "Mirek Mariusz, Wróbel Błażej",
+          "tytul": "Dimension-free estimates for discrete Hardy-Littlewood averaging operators over the cubes in Z<sup>d</sup>",
+          "zrodlo": "American Journal of Mathematics. - Vol. 141, nr 4 (2019), s. 857-905. - Dostęp: https://doi.org/10.1353/ajm.2019.0023. - . - Przy nazwisku Mariusz Mirek podwójna afiliacja: Rutgers University, Piscataway, NJ, USA oraz Uniwersytet Wrocławski, Wrocław, Poland.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.527, afiliacja UWr"
+        },
+        {
+          "autorzy": "Mirek Mariusz",
+          "tytul": "l<sup>p</sup>(Z<sup>d</sup>)-estimates for discrete operators of Radon type: Maximal functions and vector-valued estimates",
+          "zrodlo": "Journal of Functional Analysis. - Vol. 277, iss. 8 (2019), s. 2471-2521. - Dostęp do abstraktu: https://doi.org/10.1016/j.jfa.2018.10.020. - . - Przy nazwisku Mariusz Mirek podwójna afiliacja: Rutgers University, Piscataway, NJ, USA oraz Uniwersytet WRocławski, Wrocław, Poland.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.637, afiliacja UWr"
+        },
+        {
+          "autorzy": "Młotkowski Wojciech",
+          "tytul": "Cauchy-Stieltjes families with polynomial variance functions and generalized orthogonality",
+          "zrodlo": "Probability and Mathematical Statistics. - Vol. 39, fasc. 2 (2019), s. 237-258. - Dostęp https://doi.org/10.19195/0208-4147.39.2.1. -",
+          "uwagi": "jęz. angielski, wydawnictwo krajowe, praca recenzowana, afiliacja UWr"
+        },
+        {
+          "autorzy": "Kril Katarzyna, Młotkowski Wojciech",
+          "tytul": "Permutations of type B with fixed number of descents and minus signs",
+          "zrodlo": "Electronic Journal of Combinatorics. - Vol. 26, iss. 1 (2019), s. 1-14. - Dostęp: https://www.combinatorics.org/ojs/index.php/eljc/article/view/v26i1p27/7786. - link zweryfikowany 11.06.2019",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.762, afiliacja UWr"
+        },
+        {
+          "autorzy": "Morawiec Adam",
+          "tytul": "On rooks, marriages, and matchings or Steinhaus via Hall",
+          "zrodlo": "Graphs and Combinatorics. - Vol. 35, iss. 2 (2019), s. 503-511. - Dostęp: https://doi.org/10.1007/s00373-019-02015-4. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.481, afiliacja UWr"
+        },
+        {
+          "autorzy": "Musiał Kazimierz",
+          "tytul": "Multifunctions determined by integrable functions",
+          "zrodlo": "International Journal of Approximate Reasoning. - Vol. 112 (2019), s. 140-148. - Dostęp do abstraktu: https://doi.org/10.1016/j.ijar.2019.06.002. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.982, afiliacja UWr"
+        },
+        {
+          "autorzy": "Musiał Kazimierz",
+          "tytul": "On the Riesz integral representation of additive set-valued maps (II)",
+          "zrodlo": "Journal of Convex Analysis. - Vol. 26, nr 4 (2019), s. 1053-1058. - Dostęp do abstraktu: http://www.heldermann.de/JCA/JCA26/JCA264/jca26056.htm. - link zweryfikowany 13.12.2019",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.794, afiliacja UWr"
+        },
+        {
+          "autorzy": "Osajda Damian",
+          "tytul": "Metric systolicity and two-dimensional Artin groups",
+          "zrodlo": "Mathematische Annalen. - Vol. 374, nr 3-4 (2019), s. 1311-1352. - Dostęp: https://doi.org/10.1007/s00208-019-01823-6. - . - Przy nazwisku Damian Osajda podwójna afiliacja: Instytut Matematyczny, Uniwersytet Wrocławski, Wrocław, Poland oraz Institute of Mathematics, Polish Academy of Sciences, Warszawa, Poland.",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.356, afiliacja wielokrotna"
+        },
+        {
+          "autorzy": "Paluszyński Maciej, Zienkiewicz Jacek",
+          "tytul": "Weak type (1,1) estimates for inverses of discrete rough singular integral operators",
+          "zrodlo": "Annali della Scuola Normale Superiore di Pisa - Classe di Scienze. - Vol. 19, iss. 2 (2019), s. 679-704. - Dostęp: https://doi.org/10.2422/2036-2145.201612_005. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.802, afiliacja UWr"
+        },
+        {
+          "autorzy": "Plebanek Grzegorz",
+          "tytul": "Hyper-Stonean envelopes of compact spaces",
+          "zrodlo": "Studia Mathematica. - T. 246, nr 1 (2019), s. 31-46. - Dostęp do abstraktu: https://doi.org/10.4064/sm170815-14-2. -",
+          "uwagi": "jęz. angielski, wydawnictwo krajowe, praca recenzowana, JCR IF=0.617, afiliacja UWr"
+        },
+        {
+          "autorzy": "Plebanek Grzegorz",
+          "tytul": "On fragmentable compact lines",
+          "zrodlo": "Mediterranean Journal of Mathematics. - Vol. 16, iss. 3 (2019), nr art. 65, s. 1-8. - Dostęp do abstraktu: https://doi.org/10.1007/s00009-019-1345-7. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.181, afiliacja UWr"
+        },
+        {
+          "autorzy": "Plebanek Grzegorz",
+          "tytul": "The Mardešić conjecture and free products of Boolean algebras",
+          "zrodlo": "Proceedings of the American Mathematical Society. - Vol. 147, iss. 4 (2019), s. 1763-1772. - Dostęp: https://doi.org/10.1090/proc/14313. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.707, afiliacja UWr"
+        },
+        {
+          "autorzy": "Preisner Marcin",
+          "tytul": "Kinetic energy represented in terms of moments of vorticity and applications",
+          "zrodlo": "Journal of Mathematical Fluid Mechanics. - Vol. 21, iss. 4 (2019), nr art. 53, s. 1-19. - Dostęp: https://doi.org/10.1007/s00021-019-0456-z. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.532, afiliacja UWr"
+        },
+        {
+          "autorzy": "Kania Edyta, Preisner Marcin",
+          "tytul": "Sharp multiplier theorem for multidimensional Bessel operators",
+          "zrodlo": "Journal of Fourier Analysis and Applications. - Vol. 25, iss. 5 (2019), s. 2419-2446. - Dostęp: https://doi.org/10.1007/s00041-019-09667-z. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.394, afiliacja UWr"
+        },
+        {
+          "autorzy": "Rolski Tomasz",
+          "tytul": "Fluctuation theory for level-dependent Lévy risk processes",
+          "zrodlo": "Stochastic Processes and their Applications. - Vol. 129, iss. 12 (2019), s. 5406-5449. - Dostęp do abstraktu: https://doi.org/10.1016/j.spa.2019.03.006. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.342, afiliacja UWr"
+        },
+        {
+          "autorzy": "Rolski Tomasz, Dębicki Krzysztof",
+          "tytul": "Logarithmic asymptotics for probability of component-wise ruin in a two-dimensional Brownian model",
+          "zrodlo": "Risks. - Vol. 7, iss. 3 (2019), nr art. 83, s. 1-21. - Dostęp: https://doi.org/10.3390/risks7030083. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, afiliacja UWr"
+        },
+        {
+          "autorzy": "Stańczy Robert",
+          "tytul": "Existence and continuous dependence on parameters of radially symmetric solutions to astrophysical model of self-gravitating particles",
+          "zrodlo": "Mathematical Methods in the Applied Sciences. - Vol. 42, iss. 18 (2019), s. 7381-7394. - Dostęp do abstraktu: https://doi.org/10.1002/mma.5856. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.533, afiliacja UWr"
+        },
+        {
+          "autorzy": "Szekli Ryszard",
+          "tytul": "On negative association of some finite point processes on general state spaces",
+          "zrodlo": "Journal of Applied Probability. - Vol. 56, iss. 1 (2019), s. 139-152. - Dostęp do abstraktu: https://doi.org/10.1017/jpr.2019.10. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.61, afiliacja UWr"
+        },
+        {
+          "autorzy": "Szwarc Ryszard",
+          "tytul": "On a property of random walk polynomials involving Christoffel functions",
+          "zrodlo": "Journal of Mathematical Analysis and Applications. - Vol. 477, iss. 1 (2019), s. 85-103. - Dostęp do abstraktu: https://doi.org/10.1016/j.jmaa.2019.04.012. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=1.188, afiliacja UWr"
+        },
+        {
+          "autorzy": "Tardivel Patrick",
+          "tytul": "ASICS: an R package for a whole analysis workflow of 1D 1H NMR spectra",
+          "zrodlo": "Bioinformatics. - Vol. 35, iss. 21 (2019), s. 4356-4363. - Dostęp do abstraktu: https://doi.org/10.1093/bioinformatics/btz248. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=4.531, afiliacja UWr"
+        },
+        {
+          "autorzy": "Urban Roman, Mróz Simona",
+          "tytul": "A class of conceptual spaces consisting of boundaries of infinite p-ary trees",
+          "zrodlo": "Journal of Logic, Language and Information. - Vol. 28, iss. 1 (2019), s. 73-95. - Dostęp: https://doi.org/10.1007/s10849-018-9273-7. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.536, afiliacja UWr"
+        },
+        {
+          "autorzy": "Urban Roman, Anisimowicz Hubert",
+          "tytul": "A note on the Durda, Caron, and Buchanan word ambiguity detection algorithm",
+          "zrodlo": "Fundamenta Informaticae. - Vol. 168, nr 1 (2019), s. 79-88. - Dostęp do abstraktu: https://doi.org/10.3233/FI-2019-1825. -",
+          "uwagi": "jęz. angielski, wydawnictwo krajowe, praca recenzowana, JCR IF=1.204, afiliacja UWr"
+        },
+        {
+          "autorzy": "Urban Roman",
+          "tytul": "Lévy subordinators in cones of fuzzy sets",
+          "zrodlo": "Journal of Theoretical Probability. - Vol. 32, iss. 4 (2019), s. 1909-1924. - Dostęp do abstraktu: https://doi.org/10.1007/s10959-018-0853-x. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.689, afiliacja UWr"
+        },
+        {
+          "autorzy": "Wróbel Błażej",
+          "tytul": "Lp spherical multipliers on homogeneous trees",
+          "zrodlo": "Studia Mathematica. - Vol. 247, nr 2 (2019), s. 175-190. - Dostęp do abstraktu: https://doi.org/10.4064/sm170626-23-2. - . - Przy nazwisku Błażej Wróbel podwójna afiliacja: Mathematisches Institut, Universität Bonn, Bonn, Germany oraz Instytut Matematyczny, Uniwersytet Wrocławski, Wrocław, Poland.",
+          "uwagi": "jęz. angielski, wydawnictwo krajowe, praca recenzowana, JCR IF=0.75, afiliacja UWr"
+        },
+        {
+          "autorzy": "Wróblewski Bartosz",
+          "tytul": "Regular solutions to the fractional Euler alignment system in the Besov spaces framework",
+          "zrodlo": "Mathematical Models and Methods in Applied Sciences. - Vol. 29, nr 01 (2019), s. 89-119. - Dostęp do abstraktu: https://doi.org/10.1142/s0218202519500040. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=3.127, afiliacja UWr"
+        },
+        {
+          "autorzy": "Wysoczański Janusz",
+          "tytul": "bm-central limit theorems associated with non-symmetric positive cones",
+          "zrodlo": "Probability and Mathematical Statistics. - Vol. 39, fasc. 1 (2019), s. 183-197 - Dostęp: https://doi.org/10.19195/0208-4147.39.1.12. -",
+          "uwagi": "jęz. angielski, wydawnictwo własne, praca recenzowana, JCR IF=0.6, afiliacja UWr"
+        }
+      ]
+    },
+    {
+      "naglowek": "Inne artykuły (komunikaty, streszczenia, wywiady, dyskusje)",
+      "naglowek_en": "Other articles (communications, abstracts, interviews, discussions)",
+      "prace": [
+        {
+          "autorzy": "Morawiec Adam",
+          "tytul": "Chińskie mutanty liczb złożonych",
+          "zrodlo": "Matematyka. - 2019, nr 3, s. 30-33",
+          "uwagi": "jęz. polski, wydawnictwo krajowe, praca recenzowana, afiliacja UWr"
+        },
+        {
+          "autorzy": "Morawiec Adam",
+          "tytul": "Liczby złożone i ich \"mutacje\"",
+          "zrodlo": "Matematyka. - 2019, nr 1, s. 25-27",
+          "uwagi": "jęz. angielski, wydawnictwo krajowe, praca recenzowana, afiliacja UWr"
+        },
+        {
+          "autorzy": "Morawiec Adam",
+          "tytul": "Liczby złożone i ich \"mutacje\" i Chińczycy",
+          "zrodlo": "Matematyka. - 2019, nr 2, s. 25-27",
+          "uwagi": "jęz. polski, wydawnictwo krajowe, praca recenzowana, afiliacja UWr"
+        },
+        {
+          "autorzy": "Morawiec Adam",
+          "tytul": "Sto lat, sto lat...",
+          "zrodlo": "Matematyka. - Nr 39 (2019), s. 28-31. - Dostęp do początku artykułu: https://czasopismomatematyka.pl/artykul/sto-lat-sto-lat. - link zweryfikowany 16.12.2019",
+          "uwagi": "jęz. polski, wydawnictwo krajowe, praca recenzowana, afiliacja UWr"
+        }
+      ]
+    },
+    {
+      "naglowek": "Artykuły problemowe",
+      "naglowek_en": "Research articles",
+      "rok_wydania": 2018,
+      "prace": [
+        {
+          "autorzy": "Kryakin Yuriy",
+          "tytul": "On constants in the Jackson Stechkin theorem in the case of approximation by algebraic polynomials",
+          "zrodlo": "Proceedings of the Steklov Institute of Mathematics. - Vol. 303, nr 1 (2018), s. 18-30. - Dostęp: https://doi.org/10.1134/S0081543818080035. -",
+          "uwagi": "jęz. angielski, wydawnictwo zagraniczne, praca recenzowana, JCR IF=0.7, afiliacja UWr"
+        }
+      ]
+    }
+  ]
+}

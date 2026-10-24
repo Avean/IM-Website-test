@@ -1,0 +1,493 @@
+{
+  "rok": 2017,
+  "pochodzenie": "pdf",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2017.pdf"
+  ],
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "Ackerman Nathanael, Freer Cameron, Kwiatkowska Aleksandra, Patel Rehana",
+          "tytul": "A classification of orbits admitting a unique invariant measure",
+          "zrodlo": "Ann. Pure Appl. Log., 2017, 168, 19-36.",
+          "if": "1"
+        },
+        {
+          "autorzy": "Alsmeyer Gerold, Buraczewski Dariusz, Iksanov Oleksandr",
+          "tytul": "Null recurrence and transience of random difference equations in the contractive case",
+          "zrodlo": "J. Appl. Probab., 2017, 54, 1089-1110.",
+          "if": "0.83"
+        },
+        {
+          "autorzy": "Alsmeyer Gerold, Dyszewski Piotr",
+          "tytul": "Thin tails of fixed points of the nonhomogeneous smoothing transform",
+          "zrodlo": "Stoch. Process. Their Appl., 2017, 127, 3014-3041.",
+          "if": "1.051"
+        },
+        {
+          "autorzy": "Arendarczyk Marek",
+          "tytul": "On the asymptotics of supremum distribution for some iterated processes",
+          "zrodlo": "Extremes, 2017, 20, 451-474.",
+          "if": "1.368"
+        },
+        {
+          "autorzy": "Avilés Antonio, Plebanek Grzegorz",
+          "tytul": "On disconnected images of connected spaces",
+          "zrodlo": "Topology Appl., 2017, 228, 108-124.",
+          "if": "0.549"
+        },
+        {
+          "autorzy": "Avilés Antonio, Plebanek Grzegorz",
+          "tytul": "A little ado about rectangles",
+          "zrodlo": "Am. Math. Mon., 2017, 124, 345-350.",
+          "if": "0.306"
+        },
+        {
+          "autorzy": "Avilés Antonio, Plebanek Grzegorz, Rodríguez José",
+          "tytul": "Tukey classification of some ideals on w and the lattices of weakly compact sets in Banach spaces",
+          "zrodlo": "Adv. Math., 2017, 310, 696-758.",
+          "if": "1.372"
+        },
+        {
+          "autorzy": "Babenko Alexander, Kryakin Yuriy",
+          "tytul": "Modified Bernstein function and a uniform approximation of some rational fractions by polynomials",
+          "zrodlo": "Trudy Instituta Matematiki i Mekhaniki UrO RAN, 2017, 23, 43-57.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Bartošová Dana, Kwiatkowska Aleksandra",
+          "tytul": "Gowers' Ramsey theorem with multiple operations and dynamics of the homeomorphism group of the Lelek fan",
+          "zrodlo": "J. Comb. Theory Ser. A, 2017, 150, 108-136.",
+          "if": "0.93"
+        },
+        {
+          "autorzy": "Bendikov Alexander, Cygan Wojciech, Trojan Bartosz",
+          "tytul": "Limit theorems for random walks",
+          "zrodlo": "Stoch. Process. Their Appl., 2017, 127, 3268-3290.",
+          "if": "1.051"
+        },
+        {
+          "autorzy": "Bendikov Alexander, Saloff-Coste Laurent",
+          "tytul": "Random walks on some countable groups",
+          "zrodlo": "in: Groups, graphs, and random walks, Cambridge University Press, Cambridge, 2017, 77-103."
+        },
+        {
+          "autorzy": "Biler Piotr",
+          "tytul": "Dariusz Wrzosek - laureat Nagrody Głównej PTM im. Hugona Steinhausa za 2016 rok",
+          "zrodlo": "Wiadomości Matematyczne, 2017, 53, 380-382.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Biler Piotr, Buraczewski Dariusz",
+          "tytul": "Matematyczni nobliści we Wrocławiu",
+          "zrodlo": "Wszystko Co Najważniejsze, 2017, , dokument elektroniczny.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Biler Piotr, Cieślak Tomasz, Karch Grzegorz, Zienkiewicz Jacek",
+          "tytul": "Local criteria for blowup in two-dimensional chemotaxis models",
+          "zrodlo": "Discret. Contin. Dyn. Syst.-Ser.A, 2017, 37, 1841-1856.",
+          "if": "1.126"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Buraczewski Dariusz",
+          "tytul": "Wykład Terence'a Tao i konferencja Analysis and Applications na Uniwersytecie Wrocławskim",
+          "zrodlo": "Wiadomości Matematyczne, 2017, 53, 123-127.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Inamdar Tanmay",
+          "tytul": "Measures and slaloms",
+          "zrodlo": "Fundam. Math., 2017, 239, 149-176.",
+          "if": "0.561"
+        },
+        {
+          "autorzy": "Bożejko Marek, Lytvynov Eugene, Wysoczański Janusz",
+          "tytul": "Fock representations of Q-deformed commutation relations",
+          "zrodlo": "J. Math. Phys., 2017, 58, 1-19.",
+          "if": "1.165"
+        },
+        {
+          "autorzy": "Brzyski Damian, Peterson Christine, Sobczyk Piotr, Candes Emmanuel, Bogdan Małgorzata, Sabatti Chiara",
+          "tytul": "Controlling the rate of GWAS false discoveries",
+          "zrodlo": "Genetics, 2017, 205, 61-75.",
+          "if": "4.075"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Damek Ewa",
+          "tytul": "A simple proof of heavy tail estimates for affine type Lipschitz recursions",
+          "zrodlo": "Stoch. Process. Their Appl., 2017, 127, 657-668.",
+          "if": "1.051"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Mentemeier Sebastian",
+          "tytul": "Precise tail asymptotics for attracting fixed points of multivariate smoothing transformations",
+          "zrodlo": "Markov Process. Relat. Fields, 2017, 23, 147-170.",
+          "if": "0.414"
+        },
+        {
+          "autorzy": "Choudhry Ajai, Wróblewski Jarosław",
+          "tytul": "Triads of integers with equal sums of squares and equal products and a related multigrade chain",
+          "zrodlo": "Acta Arith., 2017, 178, 87-100.",
+          "if": "0.476"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Grzywny Tomasz",
+          "tytul": "Heat content for convolution semigroups",
+          "zrodlo": "J. Math. Anal. Appl., 2017, 446, 1393-1414.",
+          "if": "1.138"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Grzywny Tomasz, Trojan Bartosz",
+          "tytul": "Asymptotic behavior of densities of unimodal convolution semigroups",
+          "zrodlo": "Trans. Am. Math. Soc., 2017, 369, 5623-5644.",
+          "if": "1.496"
+        },
+        {
+          "autorzy": "Czarna Irmina, Li Yanhong, Palmowski Zbigniew, Zhao Chunming",
+          "tytul": "The joint distribution of the Parisian ruin time and the number of claims until Parisian ruin in the classical risk model",
+          "zrodlo": "J. Comput. Appl. Math., 2017, 313, 499-514.",
+          "if": "1.632"
+        },
+        {
+          "autorzy": "Czarna Irmina, Palmowski Zbigniew",
+          "tytul": "Parisian quasi-stationary distributions for asymmetric Lévy processes",
+          "zrodlo": "Stat. Probab. Lett., 2017, 127, 75-84.",
+          "if": "0.533"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Engelke Sebastian, Hashorva Enkelejd",
+          "tytul": "Generalized Pickands constants and stationary max-stable processes",
+          "zrodlo": "Extremes, 2017, 20, 493-517.",
+          "if": "1.368"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd",
+          "tytul": "On extremal index of max-stable stationary processes",
+          "zrodlo": "Prob. Math. Stat., 2017, 37, 299-317.",
+          "if": "0.286"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Ji Lanpeng, Ling Chengxiu",
+          "tytul": "Comparison inequalities for order statistics of Gaussian arrays",
+          "zrodlo": "ALEA-Latin Am. J. Probab. Math., 2017, 14, 93-116.",
+          "if": "0.644"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Liu Peng",
+          "tytul": "Extremes of γ-reflected Gaussian processes with stationary increments",
+          "zrodlo": "ESAIM-Prob. Stat., 2017, 21, 495-535.",
+          "if": "0.493"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Liu Peng",
+          "tytul": "Extremes of Gaussian random fields with regularly varying dependence structure",
+          "zrodlo": "Extremes, 2017, 20, 333-392.",
+          "if": "1.368"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Peng Liu",
+          "tytul": "Uniform tail approximation of homogenous functionals of Gaussian fields",
+          "zrodlo": "Adv. Appl. Probab., 2017, 49, 1037-1066.",
+          "if": "0.711"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Kosiński Kamil",
+          "tytul": "An Erdös-Révész type law of the iterated logarithm for reflected fractional Brownian motion",
+          "zrodlo": "Extremes, 2017, 20, 729-749.",
+          "if": "1.368"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Liu Peng, Mandjes Michel, Sierpińska Iwona",
+          "tytul": "Lévy-driven GPS queues with heavy-tailed input",
+          "zrodlo": "Queueing Syst., 2017, 85, 249-267.",
+          "if": "1.171"
+        },
+        {
+          "autorzy": "Dobrowolski Jan, Kim Byunghan, Lee Junguk",
+          "tytul": "The Lascar groups and the first homology groups in model theory",
+          "zrodlo": "Ann. Pure Appl. Log., 2017, 168, 2129-2151.",
+          "if": "1"
+        },
+        {
+          "autorzy": "Drygier Piotr, Plebanek Grzegorz",
+          "tytul": "Compactifications of ω and the Banach space c0",
+          "zrodlo": "Fundam. Math., 2017, 237, 165-186.",
+          "if": "0.561"
+        },
+        {
+          "autorzy": "Foss Sergey, Korshunov Dmitry, Palmowski Zbigniew, Rolski Tomasz",
+          "tytul": "Two-dimensional ruin probability for subexponential claim size",
+          "zrodlo": "Prob. Math. Stat., 2017, 37, 319-335.",
+          "if": "0.286"
+        },
+        {
+          "autorzy": "Gal Światosław, Gismatullin Jakub, Lazarovich Nir",
+          "tytul": "Uniform simplicity of groups with proximal action",
+          "zrodlo": "Trans. Am. Math. Soc. Series B, 2017, 4, 110-130.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Głowacki Paweł",
+          "tytul": "The algebra of Calderón-Zygmund kernels on a homogeneous group is inverse-closed",
+          "zrodlo": "J. Anal. Math., 2017, 131, 337-365.",
+          "if": "0.592"
+        },
+        {
+          "autorzy": "Hilgers Ralf-Dieter, Bogdan Małgorzata, Fredirk Burman Carl, Dette Holger, Karlsson Mats, Koenig Franz, Male Christoph, Mentré France, Molenberghs Geert, Senn Stephen",
+          "tytul": "Integrated Design and Analysis of small population group trials - IDEAL - FP7",
+          "zrodlo": "Impact, 2017, 4, 14-16.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Jasiulis-Gołdyn Barbara, Misiewicz Jolanta Krystyna",
+          "tytul": "Kendall random walk, Williamson transform, and the corresponding Wiener-Hopf factorization",
+          "zrodlo": "Lith. Math. J., 2017, 57, 479-489.",
+          "if": "0.487"
+        },
+        {
+          "autorzy": "Karch Grzegorz, Pilarczyk Dominika, Schonbek Maria Elena",
+          "tytul": "L2-asymptotic stability of singular solutions to the Navier–Stokes system of equations in R3",
+          "zrodlo": "J. Math. Pures Appl., 2017, 108, 14-40.",
+          "if": "1.848"
+        },
+        {
+          "autorzy": "Kisielewicz Andrzej",
+          "tytul": "Logika i argumentacja : praktyczny kurs krytycznego myślenia",
+          "zrodlo": "Wydawnictwo Naukowe PWN, Warszawa, 2017, 302., ISBN 9788301192570"
+        },
+        {
+          "autorzy": "Kowalski Jakub, Żarczyński Łukasz, Kisielewicz Andrzej",
+          "tytul": "Evaluating chess-like games using generated natural language descriptions",
+          "zrodlo": "in: Advances in Computer Games : 15th International Conferences, ACG 2017, Leiden, The Netherlands, July 3-5, 2017, Revised Selected Papers / red.Mark H.M. Winands, H. Jaap van den Herik, Walter A. Kosters, Springer, Cham, 2017, 127-139."
+        },
+        {
+          "autorzy": "Krawiec Michał, Palmowski Zbigniew",
+          "tytul": "Detekcja zmiany dryfu w modelowaniu natężenia śmiertelności = Drift change detection in mortality rate models",
+          "zrodlo": "Śląski Przegląd Statystyczny, 2017, 1521, 147-167.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof",
+          "tytul": "Definable topological dynamics",
+          "zrodlo": "J. Symb. Log., 2017, 82, 1080-1105.",
+          "if": "0.793"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof, Pillay Anand",
+          "tytul": "Generalised Bohr compactification and model-theoretic connected components",
+          "zrodlo": "Math. Proc. Camb. Philos. Soc., 2017, 163, 219-249.",
+          "if": "0.691"
+        },
+        {
+          "autorzy": "Krupski Miłosz",
+          "tytul": "Scaling limits of solutions of linear evolution equations with random initial conditions",
+          "zrodlo": "Stoch. Dyn., 2017, 17, 1-24.",
+          "if": "0.486"
+        },
+        {
+          "autorzy": "Kubiś Wiesław, Kwiatkowska Aleksandra",
+          "tytul": "The Lelek fan and the Poulsen simplex as Fraïssé limits",
+          "zrodlo": "Rev. Real Acad. Cienc. Exactas Fis., 2017, 111, 967-981.",
+          "if": "1.074"
+        },
+        {
+          "autorzy": "Kulis Michał, Lorek Paweł, Zagórski Filip",
+          "tytul": "Randomized stopping times and provably secure pseudorandom permutation generators",
+          "zrodlo": "in: Paradigms in cryptology – Mycrypt 2016 : malicious and exploratory cryptology / red.Raphaël C.-W. Phan, Moti Yung, Springer, Cham, 2017, 145-167."
+        },
+        {
+          "autorzy": "Ledwina Teresa, Wyłupek Grzegorz",
+          "tytul": "On Charlier polynomials in testing Poissonity",
+          "zrodlo": "Commun. Stat.-Simul. Comput., 2017, 46, 1918-1932.",
+          "if": "0.501"
+        },
+        {
+          "autorzy": "Lorek Paweł",
+          "tytul": "Generalized Gambler's ruin problem : explicit formulas via Siegmund duality",
+          "zrodlo": "Methodol. Comput. Appl. Probab., 2017, 19, 603-613.",
+          "if": "0.885"
+        },
+        {
+          "autorzy": "Lorek Paweł, Kulis Michał, Zagórski Filip",
+          "tytul": "Leakage-resilient riffle shuffle",
+          "zrodlo": "in: Mathematical Aspects of Computer and Information Sciences : 7th International Conference, MACIS 2017, Vienna, Austria, November 15-17, 2017, Proceedings / red.Johannes Blömer, Ilias S. Kotsireas, Temu Kutsia, Dimitris E. Simos, Springer, Cham, 2017, 395-408."
+        },
+        {
+          "autorzy": "Lorek Paweł, Markowski Piotr",
+          "tytul": "Monotonicity requirements for efficient exact sampling with Markov chain",
+          "zrodlo": "Markov Process. Relat. Fields, 2017, 23, 485-514.",
+          "if": "0.414"
+        },
+        {
+          "autorzy": "Lorek Paweł, Słowik Marcin, Zagórski Filip",
+          "tytul": "Statistical testing of PRNG : generalized gambler's ruin problem",
+          "zrodlo": "in: Mathematical Aspects of Computer and Information Sciences : 7th International Conference, MACIS 2017, Vienna, Austria, November 15-17, 2017, Proceedings / red.Johannes Blömer, Ilias S. Kotsireas, Temu Kutsia, Dimitris E. Simos, Springer, Cham, 2017, 425-437."
+        },
+        {
+          "autorzy": "Magidor Menachem, Plebanek Grzegorz",
+          "tytul": "On properties of compacta that do not reflect in small continuous images",
+          "zrodlo": "Topology Appl., 2017, 220, 131-139.",
+          "if": "0.549"
+        },
+        {
+          "autorzy": "Marciniak-Czochra Anna, Karch Grzegorz, Suzuki Kanako",
+          "tytul": "Instability of turing patterns in reaction-diffusion-ODE systems",
+          "zrodlo": "J. Math. Biol., 2017, 74, 583-618.",
+          "if": "1.786"
+        },
+        {
+          "autorzy": "Meiners Matthias, Kolesko Konrad",
+          "tytul": "Convergence of complex martingales in the branching random walk : the boundary",
+          "zrodlo": "Electron. Commun. Probab., 2017, 22, 1-14.",
+          "if": "0.531"
+        },
+        {
+          "autorzy": "Mirek Mariusz, Stein Elias, Trojan Bartosz",
+          "tytul": "lp(Zd)-estimates for discrete operators of Radon type: variational estimates",
+          "zrodlo": "Invent. Math., 2017, 209, 665-748.",
+          "if": "2.767"
+        },
+        {
+          "autorzy": "Mirek Mariusz, Thiele Christoph",
+          "tytul": "A local T(b) theorem for perfect multilinear Calderón-Zygmund operators",
+          "zrodlo": "Proc. London Math. Soc., 2017, 114, 35-59.",
+          "if": "1.189"
+        },
+        {
+          "autorzy": "Mirek Mariusz, Trojan Bartosz, Zorin-Kranich Pavel",
+          "tytul": "Variational estimates for averages and truncated singular integrals along the prime numbers",
+          "zrodlo": "Trans. Am. Math. Soc., 2017, 369, 5403-5423.",
+          "if": "1.496"
+        },
+        {
+          "autorzy": "Morawiec Adam",
+          "tytul": "Na marginesie rozwiązań zadania 494 : o \"rozwiązaniu\" Paszkowskiego",
+          "zrodlo": "Matematyka, 2017, 6, 37-39.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Morawiec Adam",
+          "tytul": "Rozwiązujmy już rozwiązane!",
+          "zrodlo": "Matematyka, 2017, 5, 30-31.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Palmowski Zbigniew, Tumilewicz Joanna Beata",
+          "tytul": "Insurance drawdown-type contracts for a phase-type risk process perturbed by Brownian motion",
+          "zrodlo": "Śląski Przegląd Statystyczny, 2017, 15, 201-225.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Pawlikowski Janusz",
+          "tytul": "A characterization of Σ12 sets",
+          "zrodlo": "Fundam. Math., 2017, 236, 45-49.",
+          "if": "0.561"
+        },
+        {
+          "autorzy": "Plebanek Grzegorz",
+          "tytul": "Czesław Ryll-Nardzewski i teoria miary",
+          "zrodlo": "Wiadomości Matematyczne, 2017, 53, 245-255.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Preisner Marcin",
+          "tytul": "Atomic decompositions for Hardy spaces related to Schrödinger operators",
+          "zrodlo": "Studia Math., 2017, 239, 101-122.",
+          "if": "0.617"
+        },
+        {
+          "autorzy": "Rolski Tomasz",
+          "tytul": "In memoriam : Czesław Ryll-Nardzewski's contributions to probablity theory",
+          "zrodlo": "Prob. Math. Stat., 2017, 37, 1-20.",
+          "if": "0.286"
+        },
+        {
+          "autorzy": "Rolski Tomasz, Woyczyński Wojbor Andrzej",
+          "tytul": "Wkład Czesława Ryll-Nardzewskiego do teorii prawdopodobieństwa",
+          "zrodlo": "Wiadomości Matematyczne, 2017, 53, 213-233.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Sobczyk Piotr, Bogdan Małgorzata, Josse Julie",
+          "tytul": "Bayesian dimensionality reduction with PCA using penalized semi-integrated likelihood",
+          "zrodlo": "J. Comput. Graph. Stat., 2017, 26, 826-839.",
+          "if": "1.79"
+        },
+        {
+          "autorzy": "Su Weijie, Bogdan Małgorzata, Candes Emmanuel",
+          "tytul": "False discoveries occur early on the Lasso path",
+          "zrodlo": "Ann. Stat., 2017, 45, 2133-2150.",
+          "if": "2.522"
+        },
+        {
+          "autorzy": "Szulc Piotr, Bogdan Małgorzata, Frommlet Florian, Tang Hua",
+          "tytul": "Joint genotype- and ancestry-based genome-wide association studies in admixed populations",
+          "zrodlo": "Genet. Epidemiol., 2017, 41, 555-566.",
+          "if": "2.544"
+        },
+        {
+          "autorzy": "Szwarc Ryszard, Berg Christian",
+          "tytul": "Symmetric moment problems and a conjecture of Valent",
+          "zrodlo": "Sb. Math., 2017, 208, 335-359.",
+          "if": "0.865"
+        },
+        {
+          "autorzy": "Świątkowski Jacek",
+          "tytul": "Right‐angled Coxeter groups with the n‐dimensional Sierpiński compacta as boundaries",
+          "zrodlo": "J. Topol., 2017, 10, 970-994.",
+          "if": "0.878"
+        },
+        {
+          "autorzy": "Świątkowski Witold",
+          "tytul": "Absolute continuity of solutions to the affine stochastic equation",
+          "zrodlo": "Colloq. Math., 2017, 149, 125-136.",
+          "if": "0.42"
+        },
+        {
+          "autorzy": "Świderski Grzegorz",
+          "tytul": "Periodic perturbations of unbounded Jacobi matrices II : formulas for density",
+          "zrodlo": "J. Approx. Theory, 2017, 216, 67-85.",
+          "if": "0.939"
+        },
+        {
+          "autorzy": "Świderski Grzegorz, Trojan Bartosz",
+          "tytul": "Periodic perturbations of unbounded Jacobi matrices I : asymptotics of generalized eigenvectors",
+          "zrodlo": "J. Approx. Theory, 2017, 216, 38-66.",
+          "if": "0.939"
+        },
+        {
+          "autorzy": "Topolski Krzysztof",
+          "tytul": "Ilona Kopocińska (1938 - 2016)",
+          "zrodlo": "Wiadomości Matematyczne, 2017, 53, 162-167.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Urban Roman, Grzelińska Magdalena",
+          "tytul": "A potential theory approach to an algorithm of conceptual space partitioning",
+          "zrodlo": "Cognitive Studies/ Études cognitives, 2017, 17, 1-10.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Wróbel Błażej",
+          "tytul": "Joint spectral multipliers for mixed systems of operators",
+          "zrodlo": "J. Differ. Equ. Appl., 2017, 23, 245-287.",
+          "if": "1.525"
+        },
+        {
+          "autorzy": "Wróbel Błażej",
+          "tytul": "On the consequences of a Mihlin-Hörmander functional calculus : maximal and square function estimates",
+          "zrodlo": "Math. Z., 2017, 287, 143-153.",
+          "if": "0.874"
+        },
+        {
+          "autorzy": "Wysoczańska-Kula Anna, Wojtylak Michał, Wysoczański Janusz",
+          "tytul": "Rank two perturbations of matrices and operators and operator model for t-transformation of probability measures",
+          "zrodlo": "J. Funct. Anal., 2017, 272, 1147-1181.",
+          "if": "1.326"
+        }
+      ]
+    }
+  ]
+}

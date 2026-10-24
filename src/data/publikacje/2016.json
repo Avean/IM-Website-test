@@ -1,0 +1,449 @@
+{
+  "rok": 2016,
+  "pochodzenie": "pdf",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2016.pdf"
+  ],
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "Asai Nobuhiro, Krystek Anna, Wojakowski Łukasz",
+          "tytul": "Interpolations of Bargmann type measures",
+          "zrodlo": "Demonstratio Mathematica, 2016, 49, 293-301.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Bader Uri, Dymara Jan",
+          "tytul": "Boundary unitary representations - right-angled hyperbolic buildings",
+          "zrodlo": "Journal of Modern Dynamics, 2016, 10, 413-437.",
+          "if": "0.706"
+        },
+        {
+          "autorzy": "Bekała Krystian",
+          "tytul": "Leibniz's rule on two-step nilpotent Lie groups",
+          "zrodlo": "Colloq. Math., 2016, 145, 137-148.",
+          "if": "0.555"
+        },
+        {
+          "autorzy": "Bendikov Alexander, Saloff-Coste Laurent, Salvatori Maura, Woess Wolfgang",
+          "tytul": "Brownian motion on treebolic space : positive harmonic functions",
+          "zrodlo": "Ann. Inst. Fourier, 2016, 66, 1691-1731.",
+          "if": "0.47"
+        },
+        {
+          "autorzy": "Biler Piotr, Karch Grzegorz, Zienkiewicz Jacek",
+          "tytul": "Morrey spaces norms and criteria for blowup in chemotaxis models",
+          "zrodlo": "Networks and Heterogeneous Media, 2016, 11, 239-250.",
+          "if": "1.2"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr",
+          "tytul": "Measures and fibers",
+          "zrodlo": "Topology Appl., 2016, 210, 201-215.",
+          "if": "0.377"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Plebanek Grzegorz",
+          "tytul": "Measures on Suslinean spaces",
+          "zrodlo": "Fundam. Math., 2016, 235, 287-302.",
+          "if": "0.609"
+        },
+        {
+          "autorzy": "Borowiec Anna Małgorzata, Młotkowski Wojciech",
+          "tytul": "New Eulerian numbers of type D",
+          "zrodlo": "Electron. J. Comb., 2016, 23, 38-1-38-13.",
+          "if": "0.543"
+        },
+        {
+          "autorzy": "Bradley Richard C., Jurek Zbigniew",
+          "tytul": "Strong mixing and operator-selfdecomposability",
+          "zrodlo": "J. Theor. Probab., 2016, 29, 292-306.",
+          "if": "0.854"
+        },
+        {
+          "autorzy": "Brandenbursky Michael, Kędra Jarosław, Gal Światosław, Marcinkowski Michał",
+          "tytul": "The cancellation norm and the geometry of bi-invariant word metrics",
+          "zrodlo": "Glasgow Mathematical Journal, 2016, 58, 153-176.",
+          "if": "0.505"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Collamore Jeffrey F, Damek Ewa, Zienkiewicz Jacek",
+          "tytul": "Large deviation estimates for exceedance times of perpetuity sequences and their dual processes",
+          "zrodlo": "Annals of Probability, 2016, 44, 3688-3739.",
+          "if": "1.94"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Damek Ewa, Mikosch Thomas",
+          "tytul": "Stochastic models with power-law tails : the equation X=AX+B",
+          "zrodlo": "Springer, Cham, 2016, 320., ISBN 9783319296784"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Damek Ewa, Zienkiewicz Jacek",
+          "tytul": "On the Kesten-Goldie constant",
+          "zrodlo": "J. Differ. Equ. Appl., 2016, 22, 1646-1662.",
+          "if": "0.762"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Mentemeier Sebastian",
+          "tytul": "Precise large deviation results for products of random matrices",
+          "zrodlo": "Ann. Inst. Henri Poincare-Probab. Stat., 2016, 52, 1474-1513.",
+          "if": "1.08"
+        },
+        {
+          "autorzy": "Candeloro Domenico, Di Piazza Luisa, Musiał Kazimierz, Sambucini Anna Rita",
+          "tytul": "Gauge integrals and selections of weakly compact valued multifunctions",
+          "zrodlo": "J. Math. Anal. Appl., 2016, 441, 293-308.",
+          "if": "1.064"
+        },
+        {
+          "autorzy": "Chen Peng, Hebisch Waldemar, Sikora Adam",
+          "zrodlo": "J. Funct. Anal., 2016, 271, 3186-3241.",
+          "if": "1.254"
+        },
+        {
+          "autorzy": "Cherubini Alessandra, Kisielewicz Andrzej",
+          "tytul": "Recognizing 3-collapsing words over a binary alphabet",
+          "zrodlo": "Theor. Comput. Sci., 2016, 629, 64-79.",
+          "if": "0.643"
+        },
+        {
+          "autorzy": "Czarna Irmina",
+          "tytul": "Parisian ruin probability with a lower ultimate bankrupt barrier",
+          "zrodlo": "Scandinavian Actuarial Journal, 2016, 2016, 319-337.",
+          "if": "1.347"
+        },
+        {
+          "autorzy": "Czarna Irmina, Renaud Jean-Francois",
+          "tytul": "A note on Parisian ruin with an ultimate bankruptcy level for Lévy insurance risk processes",
+          "zrodlo": "Stat. Probab. Lett., 2016, 113, 54-61.",
+          "if": "0.506"
+        },
+        {
+          "autorzy": "Daduna Hans, Szekli Ryszard",
+          "tytul": "Correlation formulas for Markovian network processes in a random environment",
+          "zrodlo": "Adv. Appl. Probab., 2016, 48, 176-198.",
+          "if": "0.955"
+        },
+        {
+          "autorzy": "Damek Ewa, Kumar Pratyoosh",
+          "tytul": "Eigenfunctions of the Laplace-Beltrami operator on harmonic N A groups",
+          "zrodlo": "Journal of Geometric Analysis, 2016, 26, 1913-1924.",
+          "if": "0.87"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Ji Lanpeng",
+          "tytul": "Extremes of a class of nonhomogeneous Gaussian random fields",
+          "zrodlo": "Annals of Probability, 2016, 44, 984-1012.",
+          "if": "1.94"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Ji Lanpeng",
+          "tytul": "Parisian ruin over a finite-time horizon",
+          "zrodlo": "Sci. China-Math., 2016, 59, 557-572.",
+          "if": "0.956"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Liu Peng",
+          "tytul": "Extremes of stationary Gaussian storage models",
+          "zrodlo": "Extremes, 2016, 19, 273-302.",
+          "if": "1.679"
+        },
+        {
+          "autorzy": "Di Piazza Luisa, Marraffa Valeria, Musiał Kazimierz",
+          "tytul": "Variational Henstock integrability of Banach space valued functions",
+          "zrodlo": "Mathematica Bohemica, 2016, 141, 287-296.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Dołęga Maciej, Féray Valentin",
+          "tytul": "Gaussian fluctuations of Young diagrams and structure constants of Jack characters",
+          "zrodlo": "Duke Mathematical Journal, 2016, 165, 1193-1282.",
+          "if": "2.171"
+        },
+        {
+          "autorzy": "Dziubański Jacek",
+          "tytul": "Riesz transforms characterizations of Hardy spaces H1 for the rational Dunkl setting and multidimensional Bessel operators",
+          "zrodlo": "Journal of Geometric Analysis, 2016, 26, 2639-2663.",
+          "if": "0.87"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Jotsaroop Kaur",
+          "tytul": "On Hardy and BMO spaces for Grushin operator",
+          "zrodlo": "J. Differ. Equ. Appl., 2016, 22, 954-995.",
+          "if": "1.095"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Preisner Marcin, Roncal Luz, Stinga Pablo Raúl",
+          "tytul": "Hardy spaces for Fourier-Bessel expansions",
+          "zrodlo": "J. Anal. Math., 2016, 128, 261-287.",
+          "if": "1.071"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Wróbel Błażej",
+          "tytul": "Strong continuity on Hardy spaces",
+          "zrodlo": "J. Approx. Theory, 2016, 211, 85-93.",
+          "if": "0.931"
+        },
+        {
+          "autorzy": "Dziwisz Artur, Szczotka Władysław",
+          "tytul": "Functional central limit theorems for seeds in a linear birth and growth model",
+          "zrodlo": "Appl. Math., 2016, 43, 1-24.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Franz Uwe, Wysoczańska-Kula Anna, Skalski Adam",
+          "tytul": "Lévy processes on quantum permutation groups",
+          "zrodlo": "in: Noncommutative analysis, operator theory and applications, Springer, Cham, 2016, 193-259."
+        },
+        {
+          "autorzy": "Frommlet Florian, Bogdan Małgorzata, Ramsey David",
+          "tytul": "Phenotypes and genotypes : the search for influential genes",
+          "zrodlo": "Springer, London, 2016, 222., ISBN 9781447153092"
+        },
+        {
+          "autorzy": "Gabriyelyan Saak S., Kąkol Jerzy, Plebanek Grzegorz",
+          "tytul": "The Ascoli property for function spaces and the weak topology of Banach and Fréchet spaces",
+          "zrodlo": "Studia Math., 2016, 233, 119-139.",
+          "if": "0.535"
+        },
+        {
+          "autorzy": "Garncarek Łukasz",
+          "tytul": "Factoriality of Hecke-von Neumann algebras of right-angled Coxeter groups",
+          "zrodlo": "J. Funct. Anal., 2016, 270, 1202-1219.",
+          "if": "1.254"
+        },
+        {
+          "autorzy": "Grech Mariusz, Kisielewicz Andrzej",
+          "tytul": "Černý conjecture for edge-colored digraphs with few junctions",
+          "zrodlo": "Electronic Notes in Discrete Mathematics, 2016, 54, 115-120.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Hoffmann Daniel, Kowalski Piotr",
+          "tytul": "Existentially closed fields with G-derivations",
+          "zrodlo": "J. Lond. Math. Soc., 2016, 93, 590-618.",
+          "if": "0.895"
+        },
+        {
+          "autorzy": "Hoffmann Daniel, Kowalski Piotr",
+          "tytul": "A note on extending actions of infinitesimal group schemes",
+          "zrodlo": "Journal of Algebra, 2016, 446, 275-290.",
+          "if": "0.61"
+        },
+        {
+          "autorzy": "Hughes Kevin, Krause Ben, Trojan Bartosz",
+          "tytul": "The maximal function and conditional square function control the variation : an elementary proof",
+          "zrodlo": "Proc. Amer. Math. Soc., 2016, 144, 3583-3588.",
+          "if": "0.679"
+        },
+        {
+          "autorzy": "Jasiulis-Gołdyn Barbara",
+          "tytul": "Kendall random walks",
+          "zrodlo": "Prob. Math. Stat., 2016, 36, 165-185.",
+          "if": "0.15"
+        },
+        {
+          "autorzy": "Jasiulis-Gołdyn Barbara, Misiewicz Jolanta Krystyna",
+          "tytul": "Weak Lévy-Khintchine representation for weak infinite divisibility",
+          "zrodlo": "Theory of Probability and Its Applications, 2016, 60, 45-60.",
+          "if": "0.479"
+        },
+        {
+          "autorzy": "Jurek Zbigniew",
+          "tytul": "On a method of introducing free-infinitely divisible probability measures",
+          "zrodlo": "Demonstratio Mathematica, 2016, 49, 236-251.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Karch Grzegorz, Marciniak-Czochra Anna, Suzuki Kanako, Zienkiewicz Jacek",
+          "tytul": "Diffusion-driven blowup of nonnegative solutions to reaction-diffusion-ODE systems",
+          "zrodlo": "Differential and Integral Equations, 2016, 29, 715-730.",
+          "if": "0.565"
+        },
+        {
+          "autorzy": "Karch Grzegorz, Suzuki Kanako, Zienkiewicz Jacek",
+          "tytul": "Finite-time blowup of solutions to some activator-inhibitor systems",
+          "zrodlo": "Discret. Contin. Dyn. Syst.-Ser.A, 2016, 36, 4997-5010.",
+          "if": "1.099"
+        },
+        {
+          "autorzy": "Kępa Grzegorz",
+          "tytul": "Invertibility in the flag kernels algebra on the Heisenberg group",
+          "zrodlo": "J. Differ. Equ. Appl., 2016, 22, 1076-1096.",
+          "if": "1.095"
+        },
+        {
+          "autorzy": "Kisielewicz Andrzej",
+          "tytul": "A new approach to argumentation and reasoning based on mathematical practice",
+          "zrodlo": "in: Argumentation and reasoned action : proceedings of the 1st European Conference on Argumentation, Lisbon 2015. Vol. 1, College Publications, London, 2016, 269-285."
+        },
+        {
+          "autorzy": "Kisielewicz Andrzej, Kowalski Jakub, Szykuła Marek",
+          "tytul": "Experiments with synchronizing automata",
+          "zrodlo": "in: Implementation and Application of Automata : 21st International Conference, CIAA 2016, Seoul, South Korea, July 19-22, 2016, Proceedings, Springer, Cham, 2016, 176-188."
+        },
+        {
+          "autorzy": "Kowalski Jakub, Kisielewicz Andrzej",
+          "tytul": "Towards a real-time game description language",
+          "zrodlo": "in: ICAART 2016 : 8th International Conference on Agents and Artificial Intelligence, February 24-26, 2016, in Rome, Italy, Proceedings, Vol.2, SCITEPRESS, Setúbal, 2016, 494-499."
+        },
+        {
+          "autorzy": "Kowalski Piotr, Randriambololona Serge",
+          "tytul": "Strongly minimal reducts of valued fields",
+          "zrodlo": "J. Symb. Log., 2016, 81, 510-523.",
+          "if": "0.511"
+        },
+        {
+          "autorzy": "Krause Ben, Mirek Mariusz, Trojan Bartosz",
+          "tytul": "On the Hardy-Littlewood majorant problem for arithmetic sets",
+          "zrodlo": "J. Funct. Anal., 2016, 271, 164-181.",
+          "if": "1.254"
+        },
+        {
+          "autorzy": "Krawiec Michał",
+          "tytul": "Detekcja zmiany dryfu w modelowaniu natężenia śmiertelności",
+          "zrodlo": "in: Zagadnienia aktuarialne - teoria i praktyka : materiały na XI Ogólnopolską Konferencję Aktuarialną, Wrocław, 19-21 września 2016 roku. -, Wydawnictwo Uniwersytetu Ekonomicznego we Wrocławiu, Wrocław, 2016."
+        },
+        {
+          "autorzy": "Krupiński Krzysztof, Rzepecki Tomasz",
+          "tytul": "Smoothness of bounded invariant equivalence relations",
+          "zrodlo": "J. Symb. Log., 2016, 81, 326-356.",
+          "if": "0.511"
+        },
+        {
+          "autorzy": "Krupski Paweł, Omiljanowski Krzysztof, Ungeheuer Konrad",
+          "tytul": "Chain recurrent sets of generic mappings on compact spaces",
+          "zrodlo": "Topology Appl., 2016, 202, 251-268.",
+          "if": "0.377"
+        },
+        {
+          "autorzy": "Kulis Michał, Lorek Paweł, Zagórski Filip",
+          "tytul": "Randomized stopping times and provably secure pseudorandom permutation generators",
+          "zrodlo": "Cryptology ePrint Archive, 2016, , 1049-1.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Lee Sangkyun, Brzyski Damian, Bogdan Małgorzata",
+          "tytul": "Fast saddle-point algorithm for generalized dantzig selector and FDR control with ordered L1-norm",
+          "zrodlo": "PMLR, 2016, 51, 780-789.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Lorek Paweł, Szekli Ryszard",
+          "tytul": "Strong stationary duality for Möbius monotone Markov Chains : examples",
+          "zrodlo": "Prob. Math. Stat., 2016, 36, 75-97.",
+          "if": "0.15"
+        },
+        {
+          "autorzy": "Magdziarz Marcin, Szczotka Władysław",
+          "tytul": "Quenched trap model for Lévy flights",
+          "zrodlo": "Commun. Nonlinear Sci. Numer. Simul., 2016, 30, 5-14.",
+          "if": "2.784"
+        },
+        {
+          "autorzy": "Marcinkowski Michał",
+          "tytul": "Gromov positive scalar curvature conjecture and rationally inessential macroscopically large manifolds",
+          "zrodlo": "J. Topol., 2016, 9, 105-116.",
+          "if": "0.988"
+        },
+        {
+          "autorzy": "Matsui Muneya, Rolski Tomasz",
+          "tytul": "Prediction in a mixed Poisson cluster model",
+          "zrodlo": "Stochastic Models, 2016, 32, 460-480.",
+          "if": "0.38"
+        },
+        {
+          "autorzy": "Mirek Mariusz, Trojan Bartosz",
+          "tytul": "Discrete maximal functions in higher dimensions and applications to ergodic theory",
+          "zrodlo": "American Journal of Mathematics, 2016, 138, 1495-1532.",
+          "if": "1.056"
+        },
+        {
+          "autorzy": "Morawiec Adam",
+          "tytul": "W obronie Paula Witticha albo oddajcież, co wrocławskie, Wrocławiowi",
+          "zrodlo": "Śląski Kwartalnik Historyczny Sobótka, 2016, 71, 121-125.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Pawlikowski Janusz",
+          "tytul": "The diamond covering property axiom",
+          "zrodlo": "Mathematical Logic Quarterly, 2016, 62, 407-411.",
+          "if": "0.25"
+        },
+        {
+          "autorzy": "Pawlikowski Janusz, Stadnicki Wojciech",
+          "tytul": "Mathias forcing and ultrafilters",
+          "zrodlo": "Arch. Math. Log., 2016, 55, 857-865.",
+          "if": "0.394"
+        },
+        {
+          "autorzy": "Penney Richard, Urban Roman",
+          "tytul": "Poisson kernels on semi-direct products of abelian groups",
+          "zrodlo": "Mathematica Slovaca, 2016, 66, 1375-1386.",
+          "if": "0.346"
+        },
+        {
+          "autorzy": "Penney Richard, Urban Roman",
+          "tytul": "Poisson kernels on nilpotent, 3-meta-abelian groups",
+          "zrodlo": "Ann. Mat. Pura Appl., 2016, 195, 293-307.",
+          "if": "0.864"
+        },
+        {
+          "autorzy": "Penney Richard, Urban Roman",
+          "tytul": "Gaussian-type upper bound for the evolution kernels on nilpotent meta-abelian groups",
+          "zrodlo": "Positivity, 2016, 20, 257-281.",
+          "if": "0.661"
+        },
+        {
+          "autorzy": "Speicher Roland, Wysoczański Janusz",
+          "tytul": "Mixtures of classical and free independence",
+          "zrodlo": "Arch. Math., 2016, 107, 445-453.",
+          "if": "0.591"
+        },
+        {
+          "autorzy": "Stańczy Robert",
+          "tytul": "On stationary and radially symmetric solutions to some drift-diffusion equations with nonlocal term",
+          "zrodlo": "Applicable Analysis, 2016, 95, 97-104.",
+          "if": "0.923"
+        },
+        {
+          "autorzy": "Szczotka Władysław",
+          "tytul": "GI/GI/1 queues with infinite means of service time and interarrival time",
+          "zrodlo": "Prob. Math. Stat., 2016, 36, 279-293.",
+          "if": "0.15"
+        },
+        {
+          "autorzy": "Świątkowski Jacek",
+          "tytul": "Hyperbolic Coxeter groups with Sierpiński carpet boundary",
+          "zrodlo": "Bulletin of the London Mathematical Society, 2016, 48, 708-716.",
+          "if": "0.707"
+        },
+        {
+          "autorzy": "Świątkowski Jacek",
+          "tytul": "The dense amalgam of metric compacta and topological characterization of boundaries of free products of groups",
+          "zrodlo": "Group. Geom. Dyn., 2016, 10, 407-471.",
+          "if": "0.833"
+        },
+        {
+          "autorzy": "Świderski Grzegorz",
+          "tytul": "Spectral properties of unbounded Jacobi matrices with almost monotonic weights",
+          "zrodlo": "Constr. Approx., 2016, 44, 141-157.",
+          "if": "0.964"
+        },
+        {
+          "autorzy": "Urban Roman",
+          "tytul": "Szkic historii lingwistyki matematycznej w Rosji i ZSRR, ze szczególnym uwzględnieniem tłumaczenia maszynowego",
+          "zrodlo": "LingVaria, 2016, 11, 249-267.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Wyłupek Grzegorz",
+          "tytul": "An automatic test for the umbrella alternatives",
+          "zrodlo": "Scandinavian Journal of Statistics, 2016, 43, 1103-1123.",
+          "if": "0.908"
+        }
+      ]
+    }
+  ]
+}

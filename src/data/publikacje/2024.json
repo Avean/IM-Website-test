@@ -1,0 +1,328 @@
+{
+  "rok": 2024,
+  "pochodzenie": "pdf",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2024.pdf"
+  ],
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "Avilés Antonio, Korpalski Maciej",
+          "tytul": "Barely alternating real almost chains and extension operators for compact lines",
+          "zrodlo": "Rev. Real Acad. Cienc. Exactas Fis., 2024, 118, 1-7."
+        },
+        {
+          "autorzy": "Baraquin Isabelle, Franz Uwe, Gerhold Malte, Wysoczańska-Kula Anna, Tobolski Mariusz",
+          "tytul": "Free resolutions for free unitary quantum groups and universal cosovereign Hopf algebras",
+          "zrodlo": "J. Lond. Math. Soc., 2024, 109, 1-50."
+        },
+        {
+          "autorzy": "Beyarslan Özlem, Kowalski Piotr",
+          "tytul": "Galois actions of finitely generated groups rarely have model companions",
+          "zrodlo": "Bulletin of the London Mathematical Society, 2024, 56, 847-859."
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Ranchynski Artsiom",
+          "tytul": "On points avoiding measures",
+          "zrodlo": "Topology Appl., 2024, 354, 1-14."
+        },
+        {
+          "autorzy": "Bożejko Marek, Bożejko Wojciech",
+          "tytul": "Deformations and q-convolutions. Old and new results",
+          "zrodlo": "Complex Anal. Oper. Theory, 2024, 18, 1-13."
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Dyszewski Piotr, Kołodziejska Alicja",
+          "tytul": "Weak quenched limit theorems for a random walk in a sparse random environment",
+          "zrodlo": "Electron. J. Probab., 2024, 29, 1-30."
+        },
+        {
+          "autorzy": "Cardona Juan-Esteban Suarez, Hofmann Phil-Alexander, Hecht Michael",
+          "tytul": "Negative order sobolev cubatures: preconditioners of partial differential equation learning tasks circumventing numerical stiffness",
+          "zrodlo": "Mach. Learn.-Sci. Technol., 2024, 5, 1-24."
+        },
+        {
+          "autorzy": "Che Mauricio, Galaz-García Fernando, Guijarro Luis, Membrillo Solis Ingrid, Valiunas Motiejus",
+          "tytul": "Basic metric geometry of the bottleneck distance",
+          "zrodlo": "Proc. Amer. Math. Soc., 2024, 152, 3575-3591."
+        },
+        {
+          "autorzy": "Chowdhury Indranil, Jakobsen Espen R., Krupski Miłosz",
+          "tytul": "On fully nonlinear parabolic mean field games with nonlocal and local diffusions",
+          "zrodlo": "SIAM Journal on Mathematical Analysis, 2024, 56, 6302-6336."
+        },
+        {
+          "autorzy": "Codenotti Alessandro, Kwiatkowska Aleksandra",
+          "tytul": "Projective Fraïssé limits and generalized Ważewski dendrites",
+          "zrodlo": "Fundam. Math., 2024, 265, 35-73."
+        },
+        {
+          "autorzy": "Crismale Vitonofrio, Del Vecchio Simone, Rossi Stefano, Wysoczański Janusz",
+          "tytul": "Weakly-monotone C<sup>∗</sup>-algebras as Exel–Laca algebras",
+          "zrodlo": "Ann. Mat. Pura Appl., 2024, FirstView, 1-20."
+        },
+        {
+          "autorzy": "Cygan Wojciech, Sandrić Nikola, Šebek Stjepan",
+          "tytul": "Iterated-logarithm laws for convex hulls of random walks with drift",
+          "zrodlo": "Trans. Am. Math. Soc., 2024, 377, 6695-6724."
+        },
+        {
+          "autorzy": "Dainotti Maria Giovanna, Bargiacchi Giada, Bogdan Małgorzata, Capozziello Salvatore, Nagataki Shigehiro",
+          "tytul": "On the statistical assumption on the distance moduli of Supernovae Ia and its impact on the determination of cosmological parameters",
+          "zrodlo": "J. High Energy Astrophys., 2024, 41, 30-41."
+        },
+        {
+          "autorzy": "Dainotti Maria Giovanna, Narendra Aditya, Pollo Agnieszka, Petrosian Vahe, Bogdan Małgorzata, Iwasaki Kazunari, Prochaska Jason Xavier, Rinaldi Enrico",
+          "tytul": "Gamma-ray bursts as distance indicators by a statistical learning approach",
+          "zrodlo": "Astrophys. J. Lett., 2024, 967, 1-14."
+        },
+        {
+          "autorzy": "Dainotti Maria Giovanna, Taira Elias, Wang Eric, Lehman Elias, Narendra Aditya, Pollo Agnieszka, Madejski Grzegorz M., Petrosian Vahe, Bogdan Małgorzata, Dey Apratim, Bhardwaj Shubham",
+          "tytul": "Inferring the redshift of more than 150 GRBs with a Machine Learning Ensemble model",
+          "zrodlo": "Astrophys. J. Suppl. Ser., 2024, 271, 1-15."
+        },
+        {
+          "autorzy": "Danielski Daniel Wojciech, Kapovich Michael, Świątkowski Jacek",
+          "tytul": "Complete characterizations of hyperbolic Coxeter groups with Sierpiński curve boundary and with Menger curve boundary",
+          "zrodlo": "Fundam. Math., 2024, 267, 117-128."
+        },
+        {
+          "autorzy": "Delgado Jordi, Ventura Enric, Zakharov Alexander",
+          "tytul": "Relative order and spectrum in free and related groups",
+          "zrodlo": "Commun. Contemp. Math., 2024, 26, 1-44."
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Michna Zbigniew",
+          "tytul": "On Berman functions",
+          "zrodlo": "Methodol. Comput. Appl. Probab., 2024, 26, 1-27."
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Jasnovidov Grigori",
+          "tytul": "Extremes of reflecting Gaussian processes on discrete grid",
+          "zrodlo": "J. Math. Anal. Appl., 2024, 532, 1-25."
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Ji Lanpeng, Novikov Svyatoslav",
+          "tytul": "Probability of entering an orthant by correlated fractional Brownian motion with drift: exact asymptotics",
+          "zrodlo": "Extremes, 2024, 27, 613-641."
+        },
+        {
+          "autorzy": "Di Piazza Luisa, Marraffa Valeria, Musiał Kazimierz, Sambucini Anna Rita",
+          "tytul": "Convergence for varying measures in the topological case",
+          "zrodlo": "Ann. Mat. Pura Appl., 2024, 203, 71-86."
+        },
+        {
+          "autorzy": "Dobrowolski Jan",
+          "tytul": "The Amalgamation Property for automorphisms of ordered abelian groups",
+          "zrodlo": "Trans. Am. Math. Soc., 2024, 377, 7037-7079."
+        },
+        {
+          "autorzy": "Dobrowolski Jan, Hoffmann Daniel",
+          "tytul": "On rank not only in NSOP1 theories",
+          "zrodlo": "J. Symb. Log., 2024, 89, 1669-1702."
+        },
+        {
+          "autorzy": "Dymara Jan, Januszkiewicz Lech Tadeusz",
+          "tytul": "Tautological characteristic classes I",
+          "zrodlo": "Algebraic and Geometric Topology, 2024, 24, 2889-2932."
+        },
+        {
+          "autorzy": "Dymara Jan, Januszkiewicz Lech Tadeusz",
+          "tytul": "Tautological characteristic classes II: the Witt class",
+          "zrodlo": "Math. Ann., 2024, 390, 4463-4496."
+        },
+        {
+          "autorzy": "Dziubański Jacek, Hejna Agnieszka",
+          "tytul": "A note on commutators of singular integrals with BMO and VMO functions in the Dunkl setting",
+          "zrodlo": "Math. Nachr., 2024, 297, 629-643."
+        },
+        {
+          "autorzy": "Gismatullin Jakub",
+          "tytul": "On model-theoretic connected groups",
+          "zrodlo": "J. Symb. Log., 2024, 89, 50-79."
+        },
+        {
+          "autorzy": "Gismatullin Jakub, Tardivel Patrick",
+          "tytul": "Beta distribution and associated Stirling numbers of the second kind",
+          "zrodlo": "Prob. Math. Stat., 2024, 44, 119-132."
+        },
+        {
+          "autorzy": "Griseta Maria Elena, Wysoczański Janusz",
+          "tytul": "Finitely generated weakly monotone C<sup>∗</sup>-algebra",
+          "zrodlo": "Infin. Dimens. Anal. Quantum, 2024, Online Ready, 1-22."
+        },
+        {
+          "autorzy": "Hajac Piotr M., Tobolski Mariusz",
+          "tytul": "The covariant functoriality of graph algebras",
+          "zrodlo": "Bulletin of the London Mathematical Society, 2024, 56, 3269-3288."
+        },
+        {
+          "autorzy": "Hebisch Waldemar",
+          "tytul": "On irreducible representations of the free group",
+          "zrodlo": "Colloq. Math., 2024, 175, 237-243."
+        },
+        {
+          "autorzy": "Hughes Sam, Valiunas Motiejus",
+          "tytul": "Commensurating HNN-extensions: hierarchical hyperbolicity and biautomaticity",
+          "zrodlo": "Commentarii Mathematici Helvetici, 2024, 99, 397-436."
+        },
+        {
+          "autorzy": "Iksanov Oleksandr, Kolesko Konrad, Meiners Matthias",
+          "tytul": "Asymptotic fluctuations in supercritical Crump-Mode-Jagers processes",
+          "zrodlo": "Annals of Probability, 2024, 52, 1538-1606."
+        },
+        {
+          "autorzy": "Iosevich Alex, Langowski Bartosz, Mirek Mariusz, Szarek Tomasz Zachary",
+          "tytul": "Lattice points problem, equidistribution and ergodic theorems for certain arithmetic spheres",
+          "zrodlo": "Math. Ann., 2024, 388, 2041-2120."
+        },
+        {
+          "autorzy": "Klyachko Anton A., Zakharov Alexander",
+          "tytul": "An analogue of the strengthened Hanna Neumann conjecture for virtually free groups and virtually free products",
+          "zrodlo": "Michigan Mathematical Journal, 2024, 74, 347-356."
+        },
+        {
+          "autorzy": "Kohler Devon, Staniak Mateusz, Yu Fengchao, Nesvizhskii Alexey I., Vitek Olga",
+          "tytul": "An MSstats workflow for detecting differentially abundant proteins in large-scale data-independent acquisition mass spectrometry experiments with FragPipe processing",
+          "zrodlo": "Nat. Protoc., 2024, 19, 2915-2938."
+        },
+        {
+          "autorzy": "Kolesko Konrad, Sava-Huss Ecaterina",
+          "tytul": "Gaussian fluctuations for the two-urn model",
+          "zrodlo": "Adv. Appl. Probab., 2024, FirstView, 1-35."
+        },
+        {
+          "autorzy": "Korpalski Maciej, Plebanek Grzegorz",
+          "tytul": "Countable discrete extensions of compact lines",
+          "zrodlo": "Fundam. Math., 2024, 265, 75-93."
+        },
+        {
+          "autorzy": "Kowalski Krzysztof",
+          "tytul": "Branching random walks with regularly varying perturbations",
+          "zrodlo": "ESAIM-Prob. Stat., 2024, 28, 379-391."
+        },
+        {
+          "autorzy": "Kowalski Piotr",
+          "tytul": "Positive characteristic Ax–Schanuel",
+          "zrodlo": "Model Theory, 2024, 3, 685-700."
+        },
+        {
+          "autorzy": "Kowalski Piotr, Beyarslan Özlem",
+          "tytul": "Corrigendum: Model theory of fields with virtually free group actions",
+          "zrodlo": "Proc. London Math. Soc., 2024, 128, 1-2."
+        },
+        {
+          "autorzy": "Krawiec Michał, Palmowski Zbigniew",
+          "tytul": "Multivariate Lévy-type drift change detection and mortality modeling",
+          "zrodlo": "Eur. Actuar. J., 2024, 14, 175-203."
+        },
+        {
+          "autorzy": "Krupiński Krzysztof",
+          "tytul": "Locally compact models for approximate rings",
+          "zrodlo": "Math. Ann., 2024, 389, 719-743."
+        },
+        {
+          "autorzy": "Lisowski Piotr Kamil, Urban Roman",
+          "tytul": "On some dynamics in conceptual spaces",
+          "zrodlo": "J. Log. Lang. Inf., 2024, 33, 339–361."
+        },
+        {
+          "autorzy": "Lorek Paweł, Yung Moti, Zagórski Filip",
+          "tytul": "Mirrored commitment: fixing “randomized partial checking” and applications",
+          "zrodlo": "in: Applied Cryptography and Network Security : 22nd International Conference, ACNS 2024, Abu Dhabi, United Arab Emirates, March 5–8, 2024, Proceedings, Part III / red.Christina Pöpper, Lejla Batina, Springer, Cham, 2024, 3–27."
+        },
+        {
+          "autorzy": "Martinez Celis Rodriguez Arturo",
+          "tytul": "Michael spaces and ultrafilters",
+          "zrodlo": "Topology Appl., 2024, 346, 1-12."
+        },
+        {
+          "autorzy": "Mehlhop Nathan, Słomian Wojciech",
+          "tytul": "Oscillation and jump inequalities for the polynomial ergodic averages along multi-dimensional subsets of primes",
+          "zrodlo": "Math. Ann., 2024, 388, 2807-2842."
+        },
+        {
+          "autorzy": "Mirek Mariusz, Szarek Tomasz Zachary, Wróbel Błażej",
+          "tytul": "Dimension-free estimates for the discrete spherical maximal functions",
+          "zrodlo": "Int. Math. Res. Notices, 2024, 2024, 901-963."
+        },
+        {
+          "autorzy": "Musiał Kazimierz",
+          "tytul": "Lifting approach to integral representations of rich multimeasures with values in Banach spaces I",
+          "zrodlo": "Journal of Convex Analysis, 2024, 31, 179-193."
+        },
+        {
+          "autorzy": "Musiał Kazimierz",
+          "tytul": "Splitting of conditional expectations and liftings in product spaces",
+          "zrodlo": "Positivity, 2024, 28, 1-16."
+        },
+        {
+          "autorzy": "Musiał Kazimierz",
+          "tytul": "Lifting approach to integral representations of rich multimeasures with values in Banach spaces II",
+          "zrodlo": "Journal of Convex Analysis, 2024, 31, 867-888."
+        },
+        {
+          "autorzy": "Osajda Damian, Valiunas Motiejus",
+          "tytul": "Helly groups, coarsely Helly groups, and relative hyperbolicity",
+          "zrodlo": "Trans. Am. Math. Soc., 2024, 377, 1505-1542."
+        },
+        {
+          "autorzy": "Oussi Lahcen, Wysoczański Janusz",
+          "tytul": "Analogues of Poisson-type limit theorems in discrete bm-Fock spaces",
+          "zrodlo": "Infin. Dimens. Anal. Quantum, 2024, 27, 1-23."
+        },
+        {
+          "autorzy": "Plebanek Grzegorz",
+          "tytul": "A survey on topological properties of P(K) spaces",
+          "zrodlo": "Jap. J. Math., 2024, 19, 143-180."
+        },
+        {
+          "autorzy": "Ramanaik Chethan Krishnamurthy, Willmann Anna, Hanfeld Pia, Hoffmann Nico, Hecht Michael",
+          "tytul": "Ensuring topological data-structure preservation under autoencoder compression due to latent space regularization in Gauss–Legendre nodes",
+          "zrodlo": "Axioms, 2024, 13, 1-18."
+        },
+        {
+          "autorzy": "Skowronek Katarzyna, Arendarczyk Marek, Zimroz Radosław, Wyłomańska Agnieszka",
+          "tytul": "Modified Greenwood statistic and its application for statistical testing",
+          "zrodlo": "J. Comput. Appl. Math., 2024, 452, 1-16."
+        },
+        {
+          "autorzy": "Świderski Grzegorz, Trojan Bartosz",
+          "tytul": "Orthogonal polynomials with periodically modulated recurrence coefficients in the Jordan block case",
+          "zrodlo": "Ann. Inst. Fourier, 2024, 74, 1521-1601."
+        },
+        {
+          "autorzy": "Tarnowicz‐Staniak Nina, Staniak Mateusz, Dudek Marta, Grzelczak Marek, Matczyszyn Katarzyna",
+          "tytul": "Thermoplasmonic effect enables indirect ON–OFF control over the Z‐E isomerization of azobenzene‐based photoswitch",
+          "zrodlo": "Small, 2024, 20, 1-12."
+        },
+        {
+          "autorzy": "Tobolski Mariusz",
+          "tytul": "Noncommutative numerable principal bundles from group actions on C<sup>⁎</sup>-algebras",
+          "zrodlo": "J. Geom. Phys., 2024, 200, 1-20."
+        },
+        {
+          "autorzy": "Urban Roman",
+          "tytul": "The Vladimirov operator with variable coefficients on finite adeles and the Feynman formulas for the Schrödinger equation",
+          "zrodlo": "J. Math. Phys., 2024, 65, 1-20."
+        },
+        {
+          "autorzy": "Urban Roman",
+          "tytul": "Feynman formulas for qp- and pq-quantization of some Vladimirov type time-dependent Hamiltonians on finite adeles",
+          "zrodlo": "Anal. Math. Phys., 2024, 14, 1-38."
+        },
+        {
+          "autorzy": "Wyłupek Grzegorz",
+          "tytul": "Verifying the validity of exponentiality",
+          "zrodlo": "ALEA-Latin Am. J. Probab. Math., 2024, 21, 1807-1822."
+        },
+        {
+          "autorzy": "Zavalani Gentian, Shehu Elima, Hecht Michael",
+          "tytul": "A note on the rate of convergence of integration schemes for closed surfaces",
+          "zrodlo": "Comput. Appl. Math., 2024, 43, 1-17."
+        }
+      ]
+    }
+  ]
+}

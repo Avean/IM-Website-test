@@ -1,0 +1,580 @@
+{
+  "rok": 2010,
+  "pochodzenie": "strona",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2010"
+  ],
+  "uwagi": "W oryginalnym wykazie część prac była powtórzona przy nazwiskach kolejnych współautorów; powtórzenia pominięto.",
+  "uwagi_en": "In the original list some papers were repeated under the names of further co-authors; the repetitions have been omitted.",
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "A. Bendikov, B. Bobikau",
+          "tytul": "Long time behavior of random walks on Abelian groups",
+          "zrodlo": "Colloquium Mathematicum 118(2) (2010) 445-464."
+        },
+        {
+          "autorzy": "P. Biler, G. Karch, R. Monneau",
+          "tytul": "A nonlinear diffusion of dislocation density and self-similar solutions",
+          "zrodlo": "Communications in Mathematical Physics 294 (2010) 145-168."
+        },
+        {
+          "autorzy": "P. Biler, G. Karch",
+          "tytul": "Blowup of solutions to generalized Keller-Segel model",
+          "zrodlo": "Journal of Evolution Equations 10(2) (2010) 247-262."
+        },
+        {
+          "autorzy": "P. Biler, T. Nadzieja",
+          "tytul": "Nonexistence of solutions of the heat diffusion problem on a punctured disc",
+          "zrodlo": "Monatshefte fur Mathematik 159 (2010) 329-334Monatshefte fur Mathematik 159 (2010) 329-334."
+        },
+        {
+          "autorzy": "M. Bożejko, V. Anshelevich, A. Belinschi, F. Lehner, R. Speicher",
+          "tytul": "Free infinitely divisibility for q-Gaussians",
+          "zrodlo": "Mathematical Research Letters 17 (2010) 905-916."
+        },
+        {
+          "autorzy": "M. Bożejko, A.D. Krystek, Ł.J. Wojakowski",
+          "tytul": "Noncommutative Harmonic Analysis with Application to Probability II",
+          "zrodlo": "Banach Center Publications Warszawa (2010) 327."
+        },
+        {
+          "autorzy": "M. Bożejko, N. Demni",
+          "tytul": "Topics on Meixner families",
+          "zrodlo": "Banach Center Publications 89 (2010) 61-74."
+        },
+        {
+          "autorzy": "P. Borodulin-Nadzieja, G. Plebanek",
+          "tytul": "On sequential properties of Banach spaces, spaces of measures and densities",
+          "zrodlo": "Czechoslovak Mathematical Journal 60(2) (2010) 381-399."
+        },
+        {
+          "autorzy": "D. Buraczewski, E. Damek, Y. Guivarc'h",
+          "tytul": "Convergence to stable laws for a class of multidimensional stochastic recursions",
+          "zrodlo": "Probability Theory and Related Fields 148(3-4) (2010) 333-402."
+        },
+        {
+          "autorzy": "D. Buraczewski, E. Damek",
+          "tytul": "Regular behavior at infinity of stationary measures of stochastic recursions on NA groups",
+          "zrodlo": "Colloquium Mathematicum 118 (2010) 499-523."
+        },
+        {
+          "autorzy": "A. Czyżewska-Jankowska, Z.J. Jurek",
+          "tytul": "Factorization property of generalized s-selfdecomposable measures and class L^f distributions",
+          "zrodlo": "Teoria Verojatnostiej i primieni 55(4) (2010) 810-812."
+        },
+        {
+          "autorzy": "M. Czystołowski, W. Szczotka",
+          "tytul": "Queueing approximation of suprema of spectrally positive Levy process",
+          "zrodlo": "Queueing Systems 64(4) (2010) 305-323."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Statystyka użyteczna prawie wszędzie?",
+          "zrodlo": "Matematyka, Społeczeństwo, Nauczanie 45 (2010) 14-18."
+        },
+        {
+          "autorzy": "J. Dymara, M.W. Davis, T. Januszkiewicz, J. Meier, B. Okun",
+          "tytul": "Compactly supported cohomology of buildings",
+          "zrodlo": "Commentarii Mathematici Helvetici 85(3) (2010) 551-582."
+        },
+        {
+          "autorzy": "J. Dziubański, M. Preisner",
+          "tytul": "Multiplier theorem for Hankel transform on Hardy spaces",
+          "zrodlo": "Monatshefte fur Mathematik 159(1-2) (2010) 1-12."
+        },
+        {
+          "autorzy": "J. Dziubański, J.J. Betancor, G. Garrigos",
+          "tytul": "Riesz transform characterization of Hardy spaces asosociated with certain Laguerre expansions",
+          "zrodlo": "Tohoku Mathematical Journal 62(2) (2010) 215-231."
+        },
+        {
+          "autorzy": "J. Dziubański, M. Preisner",
+          "tytul": "Riesz transform characterization of Hardy spaces associated with Schroedinger operators with compactly supported potentials",
+          "zrodlo": "Arkiv for Matematik 48(2) (2010) 301-310."
+        },
+        {
+          "autorzy": "K. Dębicki, K. Kosiński, M. Mandjes, T. Rolski",
+          "tytul": "Extremes of multidimensional Gaussian processes",
+          "zrodlo": "Stochastic Processes and Their Applications 120 (2010) 2289-2301."
+        },
+        {
+          "autorzy": "K. Dębicki, A. Es-Saghouani, M. Mandjes",
+          "tytul": "Transient asymptotics of Levy-driven queues",
+          "zrodlo": "Journal of Applied Probability 47(1) (2010) 109-129."
+        },
+        {
+          "autorzy": "M. Frąszczak",
+          "tytul": "Some properties of the proportional odds model",
+          "zrodlo": "Applicationes Mathematicae 37(2) (2010) 247-256."
+        },
+        {
+          "autorzy": "Ś.R. Gal, T. Januszkiewicz",
+          "tytul": "Odd-dimensional Charney-Davis Conjecture",
+          "zrodlo": "Discrete and Computational Geometry 44(4) (2010) 802-804."
+        },
+        {
+          "autorzy": "M. Grech",
+          "tytul": "Regular symmetric groups of boolean functions",
+          "zrodlo": "Discrete Mathematics 310 (2010) 2877-2882."
+        },
+        {
+          "autorzy": "P. Głowacki",
+          "tytul": "Composition and $L^2$-boundedness of flag kernels",
+          "zrodlo": "Colloquium Mathematicum 118(2) (2010) 581-585."
+        },
+        {
+          "autorzy": "W. Hebisch",
+          "tytul": "Hoermander type multiplier theorem on complex Iwasawa AN groups",
+          "zrodlo": "Colloquium Mathematicum 118(2) (2010) 587-591."
+        },
+        {
+          "autorzy": "W. Hebisch, W. Młotkowski",
+          "tytul": "Irreducible representations of the free product of groups",
+          "zrodlo": "Indiana University Mathematics Journal 59(1) (2010) 131-182."
+        },
+        {
+          "autorzy": "M. Hinz, W. Młotkowski",
+          "tytul": "Multiplicative free square of the free Poisson measure and examples of free symmetrization",
+          "zrodlo": "Colloquium Mathematicum 119(1) (2010) 127-136."
+        },
+        {
+          "autorzy": "A. Hoffmann",
+          "tytul": "Perpetuum Mobile-Mathematics as a Motivational Factor of Teaching-Learning Mathematics? Motivation via Natural Differentiation in Mathematics",
+          "zrodlo": "The Conference Proceedings Abstracts CME'2010 (2010) 48-52."
+        },
+        {
+          "autorzy": "A. Hoffmann",
+          "tytul": "Wrocławskie krasnoludki i matematyka",
+          "zrodlo": "XIX Krajowa Konferencja SNM, Bielsko Biała (2010) 167-180."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "tytul": "A countably categorical theory which is not G-compact",
+          "zrodlo": "Siberian Advances in Mathematics 20 (2010) 75-82."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "tytul": "Isometry types of profinite groups",
+          "zrodlo": "Geometriae Dedicata 147 (2010) 87-106."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "tytul": "Non-nesting actions of Polish groups on real trees",
+          "zrodlo": "Journal of Pure and Applied Algebra 214 (2010) 2074-2077."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "tytul": "On omega-categorical groups and their completions",
+          "zrodlo": "Journal of Graph Theory 13(2) (2010) 295-317."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, P. Kropholler, I. Leary",
+          "tytul": "Groups possesing extensive hierarchical decompositions",
+          "zrodlo": "Bulletin of the London Mathematical Society 42(5) (2010) 896-904."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, J. Świątkowski",
+          "tytul": "Non-positively curved developments of billiards",
+          "zrodlo": "Journal of Topology 3 (2010) 63-80."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, J. Behrstock, W. Neumann",
+          "tytul": "Quasi-isometric classification of some high dimensional right-angled Artin groups Groups",
+          "zrodlo": "Geometry and Dynamics 4(4) (2010) 681-692."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, A. Derdziński",
+          "tytul": "Totally real immersions of surfaces",
+          "zrodlo": "Transactions of the American Mathematical Society 362(1) (2010) 53-115."
+        },
+        {
+          "autorzy": "B. Jasiulis",
+          "tytul": "Limit property for regular and weak generalized convolution",
+          "zrodlo": "Journal of Theoretical Probability 23(1) (2010) 315-327."
+        },
+        {
+          "autorzy": "G. Karch, N. Alibaud, C. Imbert",
+          "tytul": "Asymptotic properties of entropy solutions to fractal Burgers equation",
+          "zrodlo": "SIAM Journal on Mathematical Analysis 42 (2010) 354-376."
+        },
+        {
+          "autorzy": "G. Karch, A. Fino",
+          "tytul": "Decay of mass for nonlinear equation with fractional Laplacian",
+          "zrodlo": "Monatshefte fur Mathematik 160(4) (2010) 375-384."
+        },
+        {
+          "autorzy": "G. Karch, M. Cannone",
+          "tytul": "Infinite energy solutions to the homogeneous Boltzmann equation",
+          "zrodlo": "Communications on Pure and Applied Mathematics 63 (2010) 747-778."
+        },
+        {
+          "autorzy": "G. Karch, K. Suzuki",
+          "tytul": "Spikes and diffusion waves in a one-dimensional model of chemotaxis",
+          "zrodlo": "Nonlinearity 23(12) (2010) 3119-3137."
+        },
+        {
+          "autorzy": "P. Kawa, J. Pawlikowski",
+          "tytul": "Extending Baire Property by uncountably many sets",
+          "zrodlo": "Journal of Symbolic Logic 75(3) (2010) 896-904."
+        },
+        {
+          "autorzy": "A. Kazun, R. Szwarc",
+          "tytul": "Jacobi matrices on trees",
+          "zrodlo": "Colloquium Mathematicum 118(2) (2010) 465-497."
+        },
+        {
+          "autorzy": "A. Kisielewicz, P. Gawrychowski, M. Gutan",
+          "tytul": "On the problem of freeness of multiplicative matrix semigroups",
+          "zrodlo": "Theoretical Computer Science 411 (2010) 1115-1120."
+        },
+        {
+          "autorzy": "P. Klusik, Z. Palmowski, J. Zwierz",
+          "tytul": "Quantile hedging for an insider",
+          "zrodlo": "Probability and Mathematical Statistics 30(2) (2010) 247-258."
+        },
+        {
+          "autorzy": "K. Kolesko",
+          "tytul": "Asymptotic properties of harmonic measures on homogeneous trees",
+          "zrodlo": "Colloquium Mathematicum 118(2) (2010) 525-537."
+        },
+        {
+          "autorzy": "J. Kraszewski, R. Rałowski, P. Szczepaniak, S. Żeberski",
+          "tytul": "Bernstein sets and $kappa$-coverings",
+          "zrodlo": "Mathematical Logic Quarterly 56(2) (2010) 216-224."
+        },
+        {
+          "autorzy": "J. Kraszewski, T. Kajdanowicz, P. Kazienko",
+          "tytul": "Boosting Algorithm with Sequence-loss Cost Function for Structured Prediction",
+          "zrodlo": "Lecture Notes in Artificial Intelligence I (2010) 573-580."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Co wynika z wyników próbnej matury?",
+          "zrodlo": "Matematyka 3 (2010) 147-148."
+        },
+        {
+          "autorzy": "J. Kraszewski, W. Kowalska",
+          "tytul": "Matura 2010 - za prosta?",
+          "zrodlo": "Matematyka 8 (2010) 483-491."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Nowa nowa matura",
+          "zrodlo": "Matematyka 6 (2010) 358-359."
+        },
+        {
+          "autorzy": "J. Kraszewski, M. Bolanowska",
+          "tytul": "Pierwsza taka próbna matura...",
+          "zrodlo": "Matematyka 1 (2010) 21-26."
+        },
+        {
+          "autorzy": "K. Krupiński",
+          "tytul": "Fields interpretable in rosy theories",
+          "zrodlo": "Israel Journal of Mathematics 175 (2010) 421-444."
+        },
+        {
+          "autorzy": "K. Krupiński",
+          "tytul": "Fields interpretable in superrosy groups with NIP (the non-solvable case)",
+          "zrodlo": "Journal of Symbolic Logic 75 (2010) 372-386."
+        },
+        {
+          "autorzy": "K. Krupiński",
+          "tytul": "Generalizations of small profinite structures",
+          "zrodlo": "Journal of Symbolic Logic 75 (2010) 1147-1175."
+        },
+        {
+          "autorzy": "K. Krupiński",
+          "tytul": "Some model theory of Polish structures",
+          "zrodlo": "Transactions of the American Mathematical Society 362 (2010) 3499-3533."
+        },
+        {
+          "autorzy": "Y. Kryakin, A.G. Babenko, V.A. Yudin",
+          "tytul": "On a result of Geronimus",
+          "zrodlo": "Trudy Instituta Matematiki i Mekhaniki 16(4) (2010) 54-64."
+        },
+        {
+          "autorzy": "I. Królak",
+          "tytul": "Optimal Holomorphic Hypercontractivity for CAR algebras",
+          "zrodlo": "Bulletin of the Polish Academy of Sciences: Mathematics 58(1) (2010) 79-90."
+        },
+        {
+          "autorzy": "R. Kulik, P. Lorek",
+          "tytul": "Some results on random design regression with long memory errors and predictors",
+          "zrodlo": "Journal of Statistical Planning and Inference 141 (2010) 508-523."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Cyfrowy zegar słoneczny",
+          "zrodlo": "Magazyn Miłośników Matematyki 1 (2010) 28-29."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Krótka historia zegara",
+          "zrodlo": "Magazyn Miłośników Matematyki 1 (2010) 1-14."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "MR MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXIV Relation Properties",
+          "zrodlo": "Matematyka 1 (2010) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXIX Discrete Probability Distributions",
+          "zrodlo": "Matematyka 6 (2010) 382-383."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXV Combinatorics",
+          "zrodlo": "Matematyka 2 (2010) 126-127."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXVI Probability",
+          "zrodlo": "Matematyka 3 (2010) 190-191."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXVII Conditional Probability",
+          "zrodlo": "Matematyka 4 (2010) 254-255."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXVIII Discrete Random Variables",
+          "zrodlo": "Matematyka 5 (2010) 318-319."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXX Continuous Random Variables",
+          "zrodlo": "Matematyka 7 (2010) 446-447."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXXI Continuous Probability Distributions",
+          "zrodlo": "Matematyka 8 (2010) 510-511."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXXII Normal Distribution",
+          "zrodlo": "Matematyka 9 (2010) 574-575."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXXIII Normal Distribution Applications",
+          "zrodlo": "Matematyka 10 (2010) 638-639."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXXIV Statistical Data Display",
+          "zrodlo": "Matematyka 11 (2010) 702-703."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Skąd się biorą cechy podzielności?",
+          "zrodlo": "Magazyn Miłośników Matematyki 2 (2010)."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Włoskie godziny",
+          "zrodlo": "Magazyn Miłośników Matematyki 1 (2010) 30-32."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Zrób sobie analemmę",
+          "zrodlo": "Magazyn Miłośników Matematyki 1 (2010) 24-27."
+        },
+        {
+          "autorzy": "M. Mirek",
+          "tytul": "Convergence to stable laws and a local limit theorem for stochatic recursions",
+          "zrodlo": "Colloquium Mathematicum 118(2) (2010) 705-720."
+        },
+        {
+          "autorzy": "W. Młotkowski",
+          "tytul": "Fuss-Catalan numbers in noncommutative probability",
+          "zrodlo": "Documenta Mathematica 15 (2010) 939-955."
+        },
+        {
+          "autorzy": "W. Młotkowski",
+          "tytul": "Nonnegative linearization for orthogonal polynomials with eventually constant Jacobi parameters",
+          "zrodlo": "Banach Center Publications 89 (2010) 223-230."
+        },
+        {
+          "autorzy": "W. Narkiewicz",
+          "tytul": "Cycle-lengths of a class of monic binomials",
+          "zrodlo": "Functiones et Approximatio Commentarii Mathematici 9 (2010) 163-168."
+        },
+        {
+          "autorzy": "W. Narkiewicz",
+          "tytul": "Hardy i Ramanujan",
+          "zrodlo": "Matematyka 63 (2010) 387-393."
+        },
+        {
+          "autorzy": "M. Olech, R. Eymard, D. Hilhorst, H. Murakawa",
+          "tytul": "Numerical approximation of a reaction-diffusion system with fast reversible reaction",
+          "zrodlo": "Chinese Annals of Mathematics - Series B 31(5) (2010) 631-654."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "An extension theorem for strongly locally homogeneous continua",
+          "zrodlo": "Topology and Its Applications 157 (2010) 2373-2375."
+        },
+        {
+          "autorzy": "Z. Palmowski, M. Vlasiou",
+          "tytul": "Large deviations for a random sign Lindley recursion",
+          "zrodlo": "Journal of Applied Probability 47(1) (2010) 72-83."
+        },
+        {
+          "autorzy": "M. Paluszyński",
+          "tytul": "A note on integer translates of a square integrable function on R",
+          "zrodlo": "Colloquium Mathematicum 118(2) (2010) 593-597."
+        },
+        {
+          "autorzy": "G. Plebanek, W. Marciszewski",
+          "tytul": "On Corson compacta and embeddings of C(K) spaces",
+          "zrodlo": "Proceedings of the American Mathematical Society 138 (2010) 4281-4289."
+        },
+        {
+          "autorzy": "G. Plebanek, A. Aviles, J. Rodriguez",
+          "tytul": "The McShane integral in weakly compactly generated spaces",
+          "zrodlo": "Journal of Functional Analysis 259 (2010) 2776-2792."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "tytul": "Sticky particles on the line under harmonic interactions",
+          "zrodlo": "Reports on Mathematical Physics 65(2) (2010) 189-202."
+        },
+        {
+          "autorzy": "Z. Rzeszotnik, K. Grochenig, T. Strohmer",
+          "tytul": "Convergence Analysis of the Finite Section Method and Banach Algebras of Matrices",
+          "zrodlo": "Integral Equations and Operator Theory 67(2) (2010) 183-202."
+        },
+        {
+          "autorzy": "Z. Rzeszotnik, J. Gilbert",
+          "tytul": "The norm of the Fourier transform on finite abelian groups",
+          "zrodlo": "Annales de l'Institut Fourier 60(4) (2010) 1317-1346."
+        },
+        {
+          "autorzy": "R. Stańczy, J. Dolbeault",
+          "tytul": "Non-existence and uniqueness results for supercritical semilinear elliptic equations",
+          "zrodlo": "Annales Henri Poincare 10(7) (2010) 1311-1333."
+        },
+        {
+          "autorzy": "R. Szwarc, U. Haagerup, T. Steenstrup",
+          "tytul": "Schur multipliers and Spherical Functions on Homogeneous Trees International",
+          "zrodlo": "Journal of Mathematics 21(10) (2010) 1337-1382."
+        },
+        {
+          "autorzy": "P. Śniady",
+          "tytul": "Asymptotyczna teoria reprezentacji grup permutacji",
+          "zrodlo": "Wiadomości Matematyczne 45(2) (2010) 171-193."
+        },
+        {
+          "autorzy": "P. Śniady, M. Dołęga, V. Feray",
+          "tytul": "Explicit combinatorial interpretation of Kerov character polynomials as numbers of permutation factorizations",
+          "zrodlo": "Advances in Mathematics 225(1) (2010) 81-120."
+        },
+        {
+          "autorzy": "P. Śniady, C. Moore, A. Russell",
+          "tytul": "On the Impossibility of a Quantum Sieve Algorithm for Graph Isomorphism",
+          "zrodlo": "SIAM Journal on Computing 39(6) (2010) 2377-2396."
+        },
+        {
+          "autorzy": "K. Topolski",
+          "tytul": "Markow processes on p-adics and hierarchical system dynamics",
+          "zrodlo": "Proc. of the Sixteenth National Conference on Application of Mathematics in Biology and Medicine (2010) 105-110."
+        },
+        {
+          "autorzy": "K. Topolski, K. Lukierska-Walasek",
+          "tytul": "Statistical description of domains in Potts model",
+          "zrodlo": "Reviews on Advanced Materials Sciences 23 (2010) 141-146."
+        },
+        {
+          "autorzy": "K. Topolski, K. Lukierska-Walasek",
+          "tytul": "Statistical Description of Magnetic Domains in the Two Dimensional Ising Model",
+          "zrodlo": "Computational Methods in Science and Technology 16(2) (2010) 173-176."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "A note on density modulo 1 of certain sets of sums",
+          "zrodlo": "Functiones et Approximatio Commentarii Mathematici 42(1) (2010) 29-35."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "Algebraic numbers and density modulo 1, II",
+          "zrodlo": "Uniform Distribution Theory 5(1) (2010) 111-132."
+        },
+        {
+          "autorzy": "R. Urban, R. Penney",
+          "tytul": "Estimates for the Poisson kernel on higher rank NA groups",
+          "zrodlo": "Colloquium Mathematicum 118(1) (2010) 259-281."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "On the factorization of the Haar measure on finite Coxeter groups",
+          "zrodlo": "Probability and Mathematical Statistics 31(1) (2010) 141-148."
+        },
+        {
+          "autorzy": "R. Wencel",
+          "tytul": "Topological properties of sets definable in weakly o-minimal structures",
+          "zrodlo": "Journal of Symbolic Logic 75 (2010) 841-867."
+        },
+        {
+          "autorzy": "J. Wieszaczewski",
+          "tytul": "Stożkowe rzutowo",
+          "zrodlo": "Magazyn Miłośników Matematyki 29 (2010) 2-13."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Hermann Minkowski (1864-1909) - przyjaciel Dawida Hilberta",
+          "zrodlo": "Matematyka 5 (2010) 259-268."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Matematyka na ziemiach Polski w epoce Oświecenie",
+          "zrodlo": "w tomie: 31. Mezinarodni Konference Historie Matematiky, Velke Mezirici, 18.az 22.8.2010, Praha 2010 (2010) 51-76."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Problemy Hilberta - program badań w wieku XX",
+          "zrodlo": "Matematyka 4 (2010) 210-222."
+        },
+        {
+          "autorzy": "Ł.J. Wojakowski",
+          "tytul": "Two-level t-deformation",
+          "zrodlo": "Banach Center Publications 89 (2010) 313-322."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "tytul": "bm-independence and bm-central limit theorems associated with symmetric cones",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 13(3) (2010) 461-488."
+        },
+        {
+          "autorzy": "J. Wysoczański, A. Kula",
+          "tytul": "Non-commutative Brownian motions related to partially ordered sets",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 13(4) (2010) 629-661."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "tytul": "Non-commutative independence of algebras and applications to probability",
+          "zrodlo": "Operators and Matrices 4(4) (2010) 519-532."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "tytul": "On a cubic Hecke algebra associated with the quantum group Uq(2)",
+          "zrodlo": "Banach Center Publications 89 (2010) 323-327."
+        },
+        {
+          "autorzy": "P. Zawiślak",
+          "tytul": "Trees of manifolds and boundaries of systolic groups",
+          "zrodlo": "Fundamenta Mathematicae 207 (2010) 71-99."
+        },
+        {
+          "autorzy": "J. Zubik",
+          "tytul": "Asymptotic hereditary asphericity of metric spaces of asymptotic dimension 1",
+          "zrodlo": "Topology and Its Applications 157 (2010) 2815-2818."
+        }
+      ]
+    }
+  ]
+}

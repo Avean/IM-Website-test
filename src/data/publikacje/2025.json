@@ -1,0 +1,436 @@
+{
+  "rok": 2025,
+  "pochodzenie": "pdf",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2025.pdf"
+  ],
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "Skowronek Katarzyna, Arendarczyk Marek, Panorska Anna [i in.]",
+          "tytul": "Testing and estimation of the index of stability of univariate and bivariate symmetric α-stable distributions via modified Greenwood statistic",
+          "zrodlo": "Journal of Computational and Applied Mathematics, 2025, vol. 467, s.1-15, Numer artykułu:116587.",
+          "doi": "10.1016/j.cam.2025.116587"
+        },
+        {
+          "autorzy": "Dainotti M.G., De Simone B., Garg A. [i in.]",
+          "tytul": "A New Master Supernovae Ia sample and the investigation of the Hubble tension",
+          "zrodlo": "Journal of High Energy Astrophysics, 2025, vol. 48, s.1-38, Numer artykułu:100405.",
+          "doi": "10.1016/j.jheap.2025.100405"
+        },
+        {
+          "autorzy": "Dainotti Maria Giovanna, Bhardwaj Shubham, Cook Christopher [i in.]",
+          "tytul": "GRB redshift classifier to follow up high-redshift GRBs using supervised machine learning",
+          "zrodlo": "Astrophysical Journal Supplement Series, 2025, vol. 277, nr 1, s.1-34.",
+          "doi": "10.3847/1538-4365/adafa9"
+        },
+        {
+          "autorzy": "Manchanda A., Kaushal A., Dainotti M. G. [i in.]",
+          "tytul": "Gamma-ray burst light-curve reconstruction: a comparative machine and deep learning analysis",
+          "zrodlo": "Astrophysical Journal Supplement Series, 2025, vol. 281, nr 2, s.1-27, Numer artykułu:35.",
+          "doi": "10.3847/1538-4365/ade851"
+        },
+        {
+          "autorzy": "Narendra Aditya, Dainotti Maria Giovanna, Sarkar Milind [i in.]",
+          "tytul": "Gamma-ray burst redshift estimation using machine learning and the associated web app",
+          "zrodlo": "Astronomy & Astrophysics, 2025, vol. 698, s.1-24, Numer artykułu:A92.",
+          "doi": "10.1051/0004-6361/202452651"
+        },
+        {
+          "autorzy": "Riccobello Riccardo, Bonaccolto Giovanni, Kremer Philipp J. [i in.]",
+          "tytul": "Sparse graphical modelling for global minimum variance portfolio",
+          "zrodlo": "Computational Management Science, 2025, vol. 22, nr 8, s.1-32, Numer artykułu:8.",
+          "doi": "10.1007/s10287-025-00535-4"
+        },
+        {
+          "autorzy": "Hejný Ivan, Wallin Jonas, Bogdan Małgorzata [i in.]",
+          "tytul": "Unveiling low-dimensional patterns induced by convex non-differentiable regularizers",
+          "zrodlo": "Annals of the Institute of Statistical Mathematics, 2025, vol. FirstView, s.1-36.",
+          "doi": "10.1007/s10463-025-00957-6",
+          "uwagi": "w druku"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Cancino-Manríquez Jonathan, Morawski Adam",
+          "tytul": "P-measures in models without P-points",
+          "zrodlo": "Annals of Pure and Applied Logic, 2025, vol. 176, nr 7, s.1-27, Numer artykułu: 103579.",
+          "doi": "10.1016/j.apal.2025.103579"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Jachimek Sebastian, Pelczar-Barwacz Anna",
+          "tytul": "On the spaces dual to combinatorial Banach spaces",
+          "zrodlo": "Mathematische Nachrichten, 2025, vol. 298, nr 3, s.998-1017.",
+          "doi": "10.1002/mana.202300303"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Farkas Barnabás, Jachimek Sebastian [i in.]",
+          "tytul": "The zoo of combinatorial Banach spaces",
+          "zrodlo": "Studia Mathematica, 2025, vol. 282, nr 2, s.101-132.",
+          "doi": "10.4064/sm240407-14-1"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Iksanov Oleksandr, Marynych Alexander",
+          "tytul": "Convolution powers of unbounded measures on the positive half-line",
+          "zrodlo": "Journal of Mathematical Analysis and Applications, 2025, vol. 546, nr 2, s.1-22, Numer artykułu:129232.",
+          "doi": "10.1016/j.jmaa.2025.129232"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Iksanov Oleksandr, Valeriya Kotelnikova",
+          "tytul": "Laws of the iterated and single logarithm for sums of independent indicators, with applications to the Ginibre point process and Karlin’s occupancy scheme",
+          "zrodlo": "Stochastic Processes and their Applications, 2025, vol. 183, s.1-32, Numer artykułu:104597.",
+          "doi": "10.1016/j.spa.2025.104597"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Biernacka Małgorzata, Rychlikowski Paweł (red.)",
+          "tytul": "Bad AI. Nauka w erze sztucznej inteligencji",
+          "zrodlo": "Acta Universitatis Wratislaviensis, nr 4384, 2025, Wrocław, Uniwersytet Wrocławski, 277 s., ISBN 978-83-68619-87-4"
+        },
+        {
+          "autorzy": "Chudy Filip, Woźny Paweł",
+          "tytul": "Efficient evaluation of Bernstein-Bézier coefficients of B-spline basis functions over one knot span",
+          "zrodlo": "Computer-Aided Design, 2025, vol. 178, s.1-6, Numer artykułu:103804.",
+          "doi": "10.1016/j.cad.2024.103804"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Panzo Hugo, Šebek Stjepan",
+          "tytul": "Bounds on the size of the convex hull of planar Brownian motion and related inverse processes",
+          "zrodlo": "Journal of the Korean Mathematical Society, 2025, vol. 62, nr 5, s.1265-1295.",
+          "doi": "10.4134/JKMS.J240444"
+        },
+        {
+          "autorzy": "Damek Ewa",
+          "tytul": "Stochastic difference equation with diagonal matrices",
+          "zrodlo": "Annales de l Institut Henri Poincare-Probabilites et Statistiques, 2025, vol. 61, nr 1, s.185-212.",
+          "doi": "10.1214/23-aihp1414"
+        },
+        {
+          "autorzy": "Bhattacharya Ayan, Dyszewski Piotr, Gantert Nina [i in.]",
+          "tytul": "Branching random walk and log-slowly varying tails",
+          "zrodlo": "ALEA-Latin American Journal of Probability and Mathematical Statistics, 2025, vol. 22, nr 1, s.473-491.",
+          "doi": "10.30757/alea.v22-17"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Hejna Agnieszka",
+          "tytul": "On Dunkl Schrödinger semigroups with green bounded potentials",
+          "zrodlo": "Constructive Approximation, 2025, vol. 61, nr 3, s.481-509.",
+          "doi": "10.1007/s00365-025-09706-7"
+        },
+        {
+          "autorzy": "Elsner Tomasz",
+          "tytul": "Thin-tetrahedra property for systolic complexes",
+          "zrodlo": "Colloquium Mathematicum, 2025, vol. 178, nr 1, s.65-76.",
+          "doi": "10.4064/cm9608-4-2025"
+        },
+        {
+          "autorzy": "Gal Światosław, Kędra Jarosław, Trost Alexander Alois",
+          "tytul": "Finite index subgroups in Chevalley groups are bounded: an addendum to “On Bi-Invariant Word Metrics”",
+          "zrodlo": "Journal of Topology and Analysis, 2025, vol. 17, nr 1, s.167-174.",
+          "doi": "10.1142/s1793525323500115"
+        },
+        {
+          "autorzy": "Gismatullin Jakub, Majcher Krzysztof, Ziegler Martin",
+          "tytul": "Metric ultraproducts of groups - simplicity, perfectness and torsion",
+          "zrodlo": "Journal of Algebra, 2025, vol. 663, s.171-209.",
+          "doi": "10.1016/j.jalgebra.2024.09.005"
+        },
+        {
+          "autorzy": "Carvalho Vitor, Liu Mintao, Harezlak Jaroslaw [i in.]",
+          "tytul": "Functional connectome fingerprinting through Tucker tensor decomposition",
+          "zrodlo": "Applied Sciences-Basel, 2025, vol. 15, nr 9, s.1-24, Numer artykułu:4821.",
+          "doi": "10.3390/app15094821"
+        },
+        {
+          "autorzy": "Zavalani Gentian, Hecht Michael",
+          "tytul": "High-order numerical integration on regular embedded surfaces",
+          "zrodlo": "W: Numerical Mathematics and Advanced Applications ENUMATH 2023, Volume 2 / Sequeira Adélia [i in.] (red.), Lecture Notes in Computational Science and Engineering, 2025, vol. 154, Cham, Springer, Springer Nature Switzerland, s.494-504, ISBN 9783031861680.",
+          "doi": "10.1007/978-3-031-86169-7_51"
+        },
+        {
+          "autorzy": "Jain Saiyam, Shao Zongru, Hecht Michael",
+          "tytul": "Automated detection of potential artifacts in machine learning based bio-image segmentation",
+          "zrodlo": "Machine Learning : Science and Technology, 2025, vol. 6, nr 045029, s.1-24.",
+          "doi": "10.1088/2632-2153/ae1546"
+        },
+        {
+          "autorzy": "Wicaksono Damar, Acosta Uwe Hernandez, Veettil Sachin Krishnan Thekke [i in.]",
+          "tytul": "Minterpy: multivariate polynomial interpolation in Python",
+          "zrodlo": "Journal of Open Research Software, 2025, vol. 10, nr 109, s.1-7, Numer artykułu:7702.",
+          "doi": "10.21105/joss.07702"
+        },
+        {
+          "autorzy": "Zavalani Gentian, Sander Oliver, Hecht Michael",
+          "tytul": "High-order integration on regular triangulated manifolds reaches superalgebraic approximation rates through cubical reparametrizations",
+          "zrodlo": "SIAM Journal on Numerical Analysis, 2025, vol. 63, nr 6, s.2454-2482.",
+          "doi": "10.1137/24m1707274"
+        },
+        {
+          "autorzy": "Hoffmann Daniel, Kowalski Piotr",
+          "tytul": "PAC structures as invariants of finite group actions",
+          "zrodlo": "Journal of Symbolic Logic, 2025, vol. 90, nr 3, s.1340-1375.",
+          "doi": "10.1017/jsl.2023.76"
+        },
+        {
+          "autorzy": "Bogdan Krzysztof, Jastrzębski Kajetan, Kassmann Moritz [i in.]",
+          "tytul": "Shot-down stable processes",
+          "zrodlo": "Studia Mathematica, 2025, vol. 280, nr 3, s.205-245.",
+          "doi": "10.4064/sm230703-14-1"
+        },
+        {
+          "autorzy": "Jurek Zbigniew",
+          "tytul": "Note on the innovation variable of hyperbolic characteristic functions",
+          "zrodlo": "Matematyka Stosowana, 2025, vol. 53, nr 1, s.3-15.",
+          "doi": "10.14708/ma.v53i1.7343"
+        },
+        {
+          "autorzy": "Brandolese Lorenzo, Karch Grzegorz",
+          "tytul": "Large self-similar solutions to Oberbeck– Boussinesq system with Newtonian gravitational field",
+          "zrodlo": "Journal of Differential Equations, 2025, vol. 424, s.139-158.",
+          "doi": "10.1016/j.jde.2024.12.041"
+        },
+        {
+          "autorzy": "Kolesko Konrad, Sava-Huss Ecaterina",
+          "tytul": "Gaussian fluctuations for the two-urn model",
+          "zrodlo": "Advances in Applied Probability, 2025, vol. 57, nr 2, s.607-641.",
+          "doi": "10.1017/apr.2024.37"
+        },
+        {
+          "autorzy": "Kołodziejska Alicja",
+          "tytul": "On favourite sites of a random walk in moderately sparse random environment",
+          "zrodlo": "Stochastic Processes and their Applications, 2025, vol. 190, s.1-23, Numer artykułu:104760.",
+          "doi": "10.1016/j.spa.2025.104760"
+        },
+        {
+          "autorzy": "Kowalski Piotr, Błaszkiewicz Piotr",
+          "tytul": "The class of Krasner hyperfields is not elementary",
+          "zrodlo": "Journal of Symbolic Logic, 2025, vol. FirstView, s.1-12.",
+          "doi": "10.1017/jsl.2025.10127",
+          "uwagi": "w druku"
+        },
+        {
+          "autorzy": "Krupiński Krzysztof, Portillo Fernandez Adrian",
+          "tytul": "Maximal stable quotients of invariant types in NIP theories",
+          "zrodlo": "Journal of Symbolic Logic, 2025, vol. 90, nr 2, s.918-942.",
+          "doi": "10.1017/jsl.2023.78"
+        },
+        {
+          "autorzy": "Chowdhury Indranil, Jakobsen Espen R., Krupski Miłosz",
+          "tytul": "A strongly degenerate fully nonlinear mean field game with nonlocal diffusion",
+          "zrodlo": "Journal of Differential Equations, 2025, vol. 440, nr 1, s.1-27, Numer artykułu:113436.",
+          "doi": "10.1016/j.jde.2025.113436"
+        },
+        {
+          "autorzy": "Charatonik Włodzimierz Janusz, Kwiatkowska Aleksandra, Roe Robert",
+          "tytul": "The projective Fraïssé limit of the family of all connected finite graphs with confluent epimorphisms",
+          "zrodlo": "Transactions of the American Mathematical Society, 2025, vol. 378, nr 2, s.1081–1126.",
+          "doi": "10.1090/tran/9258"
+        },
+        {
+          "autorzy": "Kwiatkowska Aleksandra",
+          "tytul": "Erratum to: \"Large conjugacy classes, projective Fraïssé limits and the pseudo-arc\"",
+          "zrodlo": "Israel Journal of Mathematics, 2025, vol. 270, nr 1, s.487–500.",
+          "doi": "10.1007/s11856-025-2781-7"
+        },
+        {
+          "autorzy": "Lorek Paweł, Markowski Piotr",
+          "tytul": "Conditional Gambler’s ruin problem with arbitrary winning and losing probabilities with applications",
+          "zrodlo": "Methodology and Computing in Applied Probability, 2025, vol. 27, nr 54, s.1-31.",
+          "doi": "10.1007/s11009-025-10181-7"
+        },
+        {
+          "autorzy": "Lorek Paweł, Rolski Tomasz",
+          "tytul": "Lectures on Monte Carlo theory",
+          "zrodlo": "Probability Theory and Stochastic Modelling, vol. 108, 2025, Cham, Springer, 632 s., ISBN 9783032011893.",
+          "doi": "10.1007/978-3-032-01190-9"
+        },
+        {
+          "autorzy": "Malinowski Adam Marek, Newelski Ludomir",
+          "tytul": "Weak heirs, coheirs and the Ellis semigroups",
+          "zrodlo": "Journal of Symbolic Logic, 2025, vol. 90, nr 1, s.166-187.",
+          "doi": "10.1017/jsl.2023.58"
+        },
+        {
+          "autorzy": "Brandenbursky Michael, Marcinkowski Michał",
+          "tytul": "Volume and Euler classes in bounded cohomology of transformation groups",
+          "zrodlo": "Glasgow Mathematical Journal, 2025, vol. 67, nr 1, s.34-49.",
+          "doi": "10.1017/s0017089524000223"
+        },
+        {
+          "autorzy": "Meir Nadav, Sullivan Rob",
+          "tytul": "The externally definable Ramsey property and fixed points on type spaces",
+          "zrodlo": "Archive for Mathematical Logic, 2025, vol. 64, nr 3-4, s.605-635.",
+          "doi": "10.1007/s00153-024-00950-5"
+        },
+        {
+          "autorzy": "Młotkowski Wojciech, Obata Nobuaki",
+          "tytul": "Partial Chebyshev polynomials and fan graphs",
+          "zrodlo": "Philosophical Transactions of the Royal Society A-Mathematical Physical and Engineering Sciences, 2025, vol. 383, nr 2306, s.1-25, Numer artykułu:20240417.",
+          "doi": "10.1098/rsta.2024.0417"
+        },
+        {
+          "autorzy": "Młotkowski Wojciech, Obata Nobuaki",
+          "tytul": "Quadratic embedding constants of fan graphs and graph joins",
+          "zrodlo": "Linear Algebra and Its Applications, 2025, vol. 709, s.58-91.",
+          "doi": "10.1016/j.laa.2025.01.001"
+        },
+        {
+          "autorzy": "Chalopin Jérémie, Chepoi Victor, Genevois Anthony [i in.]",
+          "tytul": "Helly groups",
+          "zrodlo": "Geometry & Topology, 2025, vol. 29, nr 1, s.1-70.",
+          "doi": "10.2140/gt.2025.29.1"
+        },
+        {
+          "autorzy": "Osajda Damian, Przytycki Piotr",
+          "tytul": "Coxeter groups are biautomatic",
+          "zrodlo": "Inventiones Mathematicae, 2025, vol. 242, nr 3, s.627-637.",
+          "doi": "10.1007/s00222-025-01365-6"
+        },
+        {
+          "autorzy": "Marciszewski Witold, Plebanek Grzegorz, Zakrzewski Krzysztof",
+          "tytul": "Digging into the classes of κ-Corson compact spaces",
+          "zrodlo": "Israel Journal of Mathematics, 2025, vol. FirstView, s.1-44.",
+          "doi": "10.1007/s11856-025-2817-z",
+          "uwagi": "w druku"
+        },
+        {
+          "autorzy": "Raczyński Andrzej",
+          "tytul": "Global existence vs shock formation in the one-dimensional fractal Burgers equation",
+          "zrodlo": "Colloquium Mathematicum, 2025, vol. 178, nr 1, s. 49-64.",
+          "doi": "10.4064/cm9602-4-2025"
+        },
+        {
+          "autorzy": "Cieślak Aleksander, Martinez Celis Rodriguez Arturo Antonio",
+          "tytul": "On ideals related to Laver and Miller trees",
+          "zrodlo": "Journal of Symbolic Logic, 2025, vol. FirstView, s.1-19.",
+          "doi": "10.1017/jsl.2025.10130",
+          "uwagi": "w druku"
+        },
+        {
+          "autorzy": "Martinez Celis Rodriguez Arturo Antonio, Żuchowski Tomasz",
+          "tytul": "On cardinal invariants related to Rosenthal families and large-scale topology",
+          "zrodlo": "Annals of Pure and Applied Logic, 2025, vol. 176, nr 8, s.1-17, Numer artykułu:103607.",
+          "doi": "10.1016/j.apal.2025.103607"
+        },
+        {
+          "autorzy": "Rzeszotnik Ziemowit",
+          "tytul": "The point-and-line case of the HRT conjecture",
+          "zrodlo": "Colloquium Mathematicum, 2025, vol. 178, nr 1, s.1-10.",
+          "doi": "10.4064/cm9553-2-2025"
+        },
+        {
+          "autorzy": "Słomian Wojciech",
+          "tytul": "Oscillation inequalities for Carleson–Dunkl operator",
+          "zrodlo": "Rendiconti del Circolo Matematico di Palermo, 2025, vol. 74, nr 4, s.1-18, Numer artykułu:124.",
+          "doi": "10.1007/s12215-025-01237-1"
+        },
+        {
+          "autorzy": "Staniak Mateusz, Huang Ting, Figueroa-Navedo Amanda M. [i in.]",
+          "tytul": "Relative quantification of proteins and post-translational modifications in proteomic experiments with shared peptides: a weight-based approach",
+          "zrodlo": "Bioinformatics, 2025, vol. 41, nr 3, s.1-14, Numer artykułu:btaf046.",
+          "doi": "10.1093/bioinformatics/btaf046"
+        },
+        {
+          "autorzy": "Stańczy Robert, Bors Dorota",
+          "tytul": "Dynamical system for Tolman–Oppenheimer–Volkoff equation",
+          "zrodlo": "Discrete and Continuous Dynamical Systems-Series B, 2025, vol. 30, nr 11, s.4482-4497.",
+          "doi": "10.3934/dcdsb.2025032"
+        },
+        {
+          "autorzy": "Magdziarz Marcin, Szczotka Władysław",
+          "tytul": "Weighted scheduled traffic process with asymptotic fractional dynamics",
+          "zrodlo": "Chaos: An Interdisciplinary Journal of Nonlinear Science, 2025, vol. 35, s.1-10, Numer artykułu:103145.",
+          "doi": "10.1063/5.0294488"
+        },
+        {
+          "autorzy": "Berg Christian, Szwarc Ryszard",
+          "tytul": "Indeterminate Jacobi operators",
+          "zrodlo": "Journal of Operator Theory, 2025, vol. 93, nr 1, s.123-145.",
+          "doi": "10.7900/jot.2023ian02.2404"
+        },
+        {
+          "autorzy": "Kahler Stefan, Szwarc Ryszard",
+          "tytul": "Dual spaces vs. Haar measures of polynomial hypergroups",
+          "zrodlo": "Journal of Approximation Theory, 2025, vol. 305, s.1-15, Numer artykułu:106099.",
+          "doi": "10.1016/j.jat.2024.106099"
+        },
+        {
+          "autorzy": "Tadej Maciej",
+          "tytul": "Long time behaviour of solutions to non-local and non-linear dispersal problems",
+          "zrodlo": "Journal of Differential Equations, 2025, vol. 416, nr 3, s.2043-2064.",
+          "doi": "10.1016/j.jde.2024.10.046"
+        },
+        {
+          "autorzy": "Hall Lucas, Huang Leonard, Krajczok Jacek [i in.]",
+          "tytul": "The covariant Stone–von Neumann theorem for locally compact quantum groups",
+          "zrodlo": "Letters in Mathematical Physics, 2025, vol. 115, nr 1, s.1-24, Numer artykułu:2.",
+          "doi": "10.1007/s11005-024-01886-w"
+        },
+        {
+          "autorzy": "Urban Roman",
+          "tytul": "A Dyson-type series solution to some time-dependent Schrödinger equations on finite adeles",
+          "zrodlo": "Journal of Pseudo-Differential Operators and Applications, 2025, vol. 16, nr 1, s.1-14, Numer artykułu:24.",
+          "doi": "10.1007/s11868-025-00683-w"
+        },
+        {
+          "autorzy": "Urban Roman",
+          "tytul": "Feynman-Kac integral and Dyson-type series representations for the Schrödinger equation on finite adeles",
+          "zrodlo": "Reports on Mathematical Physics, 2025, vol. 96, nr 2, s.189-199.",
+          "doi": "10.1016/s0034-4877(25)00062-x"
+        },
+        {
+          "autorzy": "Kudlinska Monika, Valiunas Motiejus",
+          "tytul": "Free-by-cyclic groups are equationally Noetherian",
+          "zrodlo": "Mathematische Annalen, 2025, vol. 392, nr 1, s.525-546.",
+          "doi": "10.1007/s00208-025-03096-8"
+        },
+        {
+          "autorzy": "Shepherd Sam, Valiunas Motiejus",
+          "tytul": "Higher-rank GBS groups: non-positive curvature and biautomaticity",
+          "zrodlo": "Geometriae Dedicata, 2025, vol. 219, nr 5, s.1-8.",
+          "doi": "10.1007/s10711-025-01037-y"
+        },
+        {
+          "autorzy": "Domelevo Komla, Durcik Polona, Fragkiadaki Valentia [i in.]",
+          "tytul": "Dimension-free estimates for low degree functions on the Hamming cube",
+          "zrodlo": "Studia Mathematica, 2025, vol. 280, nr 2, s.161-173.",
+          "doi": "10.4064/sm240417-27-11"
+        },
+        {
+          "autorzy": "Oliveira e Silva Diogo, Wróbel Błażej",
+          "tytul": "Dimension‐free Fourier restriction inequalities",
+          "zrodlo": "Bulletin of the London Mathematical Society, 2025, vol. 57, nr 8, s.2336-2353.",
+          "doi": "10.1112/blms.70098"
+        },
+        {
+          "autorzy": "Wróbel Błażej",
+          "tytul": "An improved multiplier theorem on rank one noncompact symmetric spaces",
+          "zrodlo": "Journal of Functional Analysis, 2025, vol. 289, nr 9, s.1-23, Numer artykułu:111082.",
+          "doi": "10.1016/j.jfa.2025.111082"
+        },
+        {
+          "autorzy": "Crismale Vitonofrio, Del Vecchio Simone, Rossi Stefano [i in.]",
+          "tytul": "Weakly-monotone C∗-algebras as Exel–Laca algebras",
+          "zrodlo": "Annali di Matematica Pura ed Applicata, 2025, vol. 204, nr 3, s.1075-1094.",
+          "doi": "10.1007/s10231-024-01519-y"
+        },
+        {
+          "autorzy": "Griseta Maria Elena, Wysoczański Janusz",
+          "tytul": "Finitely generated weakly monotone C∗-algebra",
+          "zrodlo": "Infinite Dimensional Analysis Quantum Probability and Related Topics, 2025, vol. 28, nr 4, s.1-22, Numer artykułu:2450004.",
+          "doi": "10.1142/s0219025724500048"
+        },
+        {
+          "autorzy": "Jekel David, Oussi Lahcen, Wysoczański Janusz",
+          "tytul": "General limit theorems for mixtures of free, monotone, and Boolean independence",
+          "zrodlo": "Electronic Journal of Probability, 2025, vol. 30, s.1-50, Numer artykułu:145.",
+          "doi": "10.1214/25-ejp1407"
+        },
+        {
+          "autorzy": "Żuchowski Tomasz",
+          "tytul": "The Nikodym property and filters on ω",
+          "zrodlo": "Archive for Mathematical Logic, 2025, vol. 64, nr 5-6, s.705-735.",
+          "doi": "10.1007/s00153-024-00964-z"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,559 @@
+{
+  "rok": 2005,
+  "pochodzenie": "strona",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2005"
+  ],
+  "uwagi": "W oryginalnym wykazie część prac była powtórzona przy nazwiskach kolejnych współautorów; powtórzenia pominięto.",
+  "uwagi_en": "In the original list some papers were repeated under the names of further co-authors; the repetitions have been omitted.",
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "W. Bąk, J. Bąk, K. Kędzierski",
+          "tytul": "Przeczytał(e/a)m w pewnej książce",
+          "zrodlo": "Magazyn Miłośników Matematyki 3(12) (2005)."
+        },
+        {
+          "autorzy": "A. Bendikov, L. Saloff-Coste",
+          "tytul": "Some properties of the sample paths of sub-elliptic diffusions",
+          "zrodlo": "Osaka Journal of Mathematics 42, no.3 (2005) 677-722."
+        },
+        {
+          "autorzy": "P. Biler, R. Stańczy",
+          "tytul": "Mean field models for self-gravitating particles",
+          "zrodlo": "Proc. 4th. Symp. Nonlinear Analysis, Folia Math. (2005) 1-24."
+        },
+        {
+          "autorzy": "P. Biler, G. Karch, P. Laurencot, T. Nadzieja",
+          "tytul": "The 8 pi-problem for radially symmetric solutions of a chemotaxis model in a disc",
+          "zrodlo": "Topological Methods in Nonlinear Analysis (2005) 1-20."
+        },
+        {
+          "autorzy": "P. Borodulin-Nadzieja, G. Plebanek",
+          "tytul": "On compactness of measures on Polish spaces",
+          "zrodlo": "Illinois Journal of Mathematics 49 (2005) 531-545."
+        },
+        {
+          "autorzy": "M. Broszkiewicz, A. Janicki",
+          "tytul": "Exotic Option Process Simulated by Monte Carlo Method on Market Driven by Diffusion with Poisson Jumps and Stochastic Volatility",
+          "zrodlo": "Lecture Notes in Computer Science 3516 (2005) 1112-1115."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, R. Schott",
+          "tytul": "Approximations of functionals of some modulated-Poisson Voronoi tessellations with applications to modeling of communication networks",
+          "zrodlo": "Japan Journal of Industrial and Applied Mathematics 22 (2) (2005) 179-204."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, F. Bacelli, M.K. Karray",
+          "tytul": "Blocking Rates in Large CDMA Networks via a Spatial Erlang Formula",
+          "zrodlo": "Proceedings of IEEE INFOCOM(2005) 58-63."
+        },
+        {
+          "autorzy": "A. Dąbrowski, W. Bartol, W. Sadowski",
+          "opis": "O twierdzeniach i hipotezach aaąą (2005)."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Kolorowe czapeczki",
+          "zrodlo": "Delta 7 (2005) 374."
+        },
+        {
+          "autorzy": "A. Dąbrowski, W. Bartol, W. Sadowski",
+          "tytul": "Sondaże",
+          "zrodlo": "Matematyka w Szkole 20 (2005) 34-37."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Determinizm a matematyka",
+          "zrodlo": "M. Heller, J. Mączka (red.) Informacja a rozumienie, Kraków (2005) 11-31."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Hugo Steinhaus",
+          "zrodlo": "Polski Słownik Biograficzny XLIII/2 (2005)."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Ideał wiedzy pewnej a wiedza prawnicza",
+          "zrodlo": "Nauka wobec prawdy sądowej, Księga pamiątkowa ku czci Profesora Zdzisława Kegla Wrocław (2005) 109-115."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Matematyczne paradygmaty poznawania świata",
+          "zrodlo": "w książce:A. Latawiec, G.Bugajak Filozoficzne i naukowo-przyrodnicze elementy poznawania świata 5-6 Warszawa (2005) 61-72."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Mathematics as a universal language of knowledge in relations beetween West and East: the case of universities in Cracow and Vilnius",
+          "zrodlo": "XXII International Congress of History of Science, Book of Abstracts Beijing (2005) 79."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "On the origins of Functional Analysis and the Lvov school",
+          "zrodlo": "Commentationes Mathematicae, Tomus specialis in honorem Iuliani Musielak (2005) 5-45."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Początki analizy matematycznej na świecie i w Polsce",
+          "zrodlo": "w książce W. Więsława Matematyka abelowa - w dwóchsetlecie urodzin Nielsa Henrika Abela (1802-1829) Nowy Sącz (2005) 61-72."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Początki matematyki w powojennym Wrocławiu",
+          "zrodlo": "Przegląd Uniwersytecki 7 (2005) 22-26."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "The discovery of Banach spaces",
+          "zrodlo": "w książce: W. Więsław \"European Mathematics in the Last Centuries\", Conference held in Będlewo (2005) 37-46."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Wiedza pewna i niepewna",
+          "zrodlo": "Alma Mater 70 (kwiecień) (2005) 17-19."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Znaczenie monografii \"Felix Hausdorff, Grundzuge der Mengenlehre\"",
+          "zrodlo": "Sławne dzieła matematyczne i rocznice, Materiały XVIII Szkoły Historii Matematyki, Białystok-Supraśl (2005) 33-43."
+        },
+        {
+          "autorzy": "J. Dziubański, G. Garrigos, T. Martinez, J. Torrea, J. Zienkiewicz",
+          "tytul": "BMO spaces related to Schroedinger operators with potentials satisfying reverse Holder inequality",
+          "zrodlo": "Mathematische Zeitschrift 249 (2005) 329-356."
+        },
+        {
+          "autorzy": "J. Dziubański, J. Zienkiewicz",
+          "tytul": "Hardy spaces H^1 for Schroedinger operators with compactly supported potentials",
+          "zrodlo": "Annali di Matematica Pura ed Applicata 184.3 (2005) 315-326."
+        },
+        {
+          "autorzy": "J. Dziubański",
+          "tytul": "Note on $H^1$ spaces related to degenerate Schroedinger operators",
+          "zrodlo": "Illinois Journal of Mathematics 15 (2005) 1271-1297."
+        },
+        {
+          "autorzy": "K. Dębicki, S. Borst, A. Zwart",
+          "tytul": "Reduced load equivalence for Gaussian processes",
+          "zrodlo": "Operations Research Letters 33 (2005) 502-510."
+        },
+        {
+          "autorzy": "K. Dębicki, S. Borst, A. Zwart",
+          "tytul": "Subexponential asymptotics of hybrid fluid and ruin models",
+          "zrodlo": "Annals of Applied Probability 15A (2005) 500-517."
+        },
+        {
+          "autorzy": "Ś.R. Gal",
+          "tytul": "Normal subgroups of Coxeter groups",
+          "zrodlo": "Geometriae Dedicata 115 (2005) 65-78."
+        },
+        {
+          "autorzy": "Ś.R. Gal",
+          "tytul": "Real Root Conjecture fails for five and higher dimensional spheres",
+          "zrodlo": "Discrete and Computational Geometry 34, number 2 (2005) 269-284."
+        },
+        {
+          "autorzy": "W. Hebisch, J. Ludwig, D. Muller",
+          "tytul": "Sub-Laplacians for holomorphic L^p - type on exponential solvable groups",
+          "zrodlo": "Journal of the London Mathematical Society 72 (2005) 364-390."
+        },
+        {
+          "autorzy": "W. Hebisch, G. Kuhn",
+          "tytul": "Transference for amenable actions",
+          "zrodlo": "Proceedings of the American Mathematical Society 133 (2005) 1733-1740."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "tytul": "Automorphisms of homogenous structures",
+          "zrodlo": "Notre Dame Journal of Formal Logic 46, no. 4 (2005) 419-424."
+        },
+        {
+          "autorzy": "A. Janicki, J. Wybraniec",
+          "tytul": "Bounds for the Range of American Comtingent Claim Prices in the Jump-Diffusion Model",
+          "zrodlo": "Applicationes Mathematicae 32.1 (2005) 103-108."
+        },
+        {
+          "autorzy": "Z.J. Jurek, J. Rosiński, W.A. Woyczyński",
+          "tytul": "Kazimierz Urbanik (1930-2005)",
+          "zrodlo": "Probability and Mathematical Statistics 25 (1) (2005) 1-22."
+        },
+        {
+          "autorzy": "G. Karch, M. Cannone",
+          "tytul": "About the regularized Navier-Stokes equations",
+          "zrodlo": "Journal of Mathematical Fluid Mechanics 7, No.1 (2005) 1-28."
+        },
+        {
+          "autorzy": "G. Karch, M. Cannone",
+          "tytul": "On the validity of Picard algorithm for nonlinear parabolic equations",
+          "zrodlo": "Proceedings of the Royal Society of Edinburgh 135A (2005) 947-958."
+        },
+        {
+          "autorzy": "P. Kowalski",
+          "tytul": "Derivations of the Frobenius map",
+          "zrodlo": "Journal of Symbolic Logic (1) 70 (2005) 99-110."
+        },
+        {
+          "autorzy": "P. Kowalski",
+          "tytul": "Geometric axioms for existentially closed Hasse fields",
+          "zrodlo": "Annals of Pure and Applied Logic 135 (2005) 286-302."
+        },
+        {
+          "autorzy": "P. Kowalski",
+          "tytul": "Jet operators on fields",
+          "zrodlo": "Journal of Algebra 289 (2005) 312-319."
+        },
+        {
+          "autorzy": "P. Kowalski, A. Pillay",
+          "tytul": "Quantifier elimination for algebraic D-groups",
+          "zrodlo": "Transactions American Mathematical Society 358 (2005) 167-181."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "On invariant CCC-sigma-ideals",
+          "zrodlo": "Acta Universitatis Carolinae - Mathematica et Physica 46 (2) (2005)."
+        },
+        {
+          "autorzy": "K. Krupiński, T. Blossier",
+          "tytul": "A special thin type",
+          "zrodlo": "Illinois Journal of Mathematics 49 (2005) 281-290."
+        },
+        {
+          "autorzy": "K. Krupiński",
+          "tytul": "Abelian profinite groups",
+          "zrodlo": "Fundamenta Mathematicae 185 (2005) 41-59."
+        },
+        {
+          "autorzy": "K. Krupiński",
+          "tytul": "Products of finite abelian groups as profinite groups",
+          "zrodlo": "Journal of Algebra 288 (2005) 556-582."
+        },
+        {
+          "autorzy": "A.D. Krystek, Ł.J. Wojakowski",
+          "tytul": "Associative convolutions arising from the conditionally free convolution",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 8,3 (2005) 515-545."
+        },
+        {
+          "autorzy": "A.D. Krystek, Ł.J. Wojakowski",
+          "tytul": "Convolution and central limit theorem arising from addition of field operators in one mode type Interacting Fock Spaces",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 8,4 (2005) 651-657."
+        },
+        {
+          "autorzy": "A.D. Krystek",
+          "tytul": "Deformations of free and conditionally free convolutions",
+          "zrodlo": "Proceedings of the 4th Workshop: Free Probability and Random Matrices, Sendai, Japonia (2005)."
+        },
+        {
+          "autorzy": "I. Królak",
+          "tytul": "Contractivity properties of Ornstein-Uhlenbeck semigroup for general commutation relations",
+          "zrodlo": "Mathematische Zeitschrift 250, no. 4 (2005) 915-937."
+        },
+        {
+          "autorzy": "R. Kulik, Z. Palmowski",
+          "tytul": "Tail behaviour of the area under queue length process of a single server queue with regularly varying service times",
+          "zrodlo": "Queueing Systems 50 (2005) 299-323."
+        },
+        {
+          "autorzy": "B. Majcher-Iwanow",
+          "tytul": "Equivalence relations induced by some locally compact groups of homeomorphisms of 2 ^ N",
+          "zrodlo": "Colloquium Mathematicum 103, No. 2 (2005) 287-301."
+        },
+        {
+          "autorzy": "B. Majcher-Iwanow",
+          "tytul": "G - delta pieces of canonical partitions of G-spaces",
+          "zrodlo": "Mathematical Logic Quarterly 51, No. 5 (2005) 450-461."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Cudowny rok",
+          "zrodlo": "Magazyn Miłośników Matematyki 3/05 (2005) 26-27."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, L. Dindorf, L. Stawikowski",
+          "tytul": "Jak fizyka pomaga matematyce ?",
+          "zrodlo": "Magazyn Miłośników Matematyki 3/05 (2005) 17-21."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Kalkulatorowe oszustwa",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/05 (2005) 19-21."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Szendera",
+          "tytul": "Kwadrat w trójkącie",
+          "zrodlo": "Magazyn Miłośników Matematyki 1/05 (2005) 20-21."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, W. Bednarek",
+          "tytul": "Liczbowe rodzeństwa",
+          "zrodlo": "Magazyn Miłośników Matematyki 1/05 (2005) 22-24."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Liczbowe zabobony",
+          "zrodlo": "Magazyn Miłośników Matematyki 4/05 (2005) 8-14."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, M. Śmiech",
+          "tytul": "Matematyczny alfabet",
+          "zrodlo": "Magazyn Miłośników Matematyki 4/05 (2005) 22-29."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, M. Trąd",
+          "tytul": "Mecze matematyczne",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/05 (2005) 7-9."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Metody klasyczne i współczesne w nauczaniu matematyki",
+          "zrodlo": "Matematyka, Społeczeństwo, Nauczanie 35 (2005) 30-42."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "MiniMaraton Matematyczny",
+          "zrodlo": "Mała Delta 12/05 (2005) 7-9, 11-13."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych cz. XXVII Limits",
+          "zrodlo": "Matematyka 1/2005 (2005) 61-61."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany Słownik terminów matematycznych cz. XXXI Numerical Systems",
+          "zrodlo": "Matematyka 5/2005 (2005) 317-318."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany Słownik terminów matematycznych cz. XXXII Fractions",
+          "zrodlo": "Matematyka 6/2005 (2005) 376-377."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXIX Function Series",
+          "zrodlo": "Matematyka 3/2005 (2005) 188-189."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXVIII Number Series",
+          "zrodlo": "Matematyka 2/2005 (2005) 125-126."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXX Numbers & Operations",
+          "zrodlo": "Matematyka 4/2005 (2005) 253-254."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, M. Trąd",
+          "tytul": "Zliczanki",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/05 (2005) 22-25."
+        },
+        {
+          "autorzy": "K. Musiał, M.R. Burke, N.D. Macheras, W. Strauss",
+          "tytul": "Category productdensitiesand liftings",
+          "zrodlo": "Topology and Its Applications 153 (2005) 1164-1191."
+        },
+        {
+          "autorzy": "K. Musiał, N.D. Macheras, W. Strauss",
+          "tytul": "Liftings for topological products of measures",
+          "zrodlo": "Atti Sem. Mat. Fis. Modena Emilia (2005) 69-72."
+        },
+        {
+          "autorzy": "K. Musiał, L. Di Piazza",
+          "tytul": "Set valued Kurzweil-Henstock-Pettis integral",
+          "zrodlo": "Set-Valued Analysis 13 (2005) 167-179."
+        },
+        {
+          "autorzy": "L. Newelski, M. Petrykowski",
+          "tytul": "Coverings of groups and types",
+          "zrodlo": "Journal of the London Mathematical Society (2) 71 (2005) 1-21."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Pod schodami",
+          "zrodlo": "Matematyka 2 (2005) 97-98."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Przez żołądek ... do wiedzy",
+          "zrodlo": "Matematyka 6 (2005) 343-347."
+        },
+        {
+          "autorzy": "K. Omiljanowski, S. Zafiridou",
+          "tytul": "Universal completely regular dendrites",
+          "zrodlo": "Colloquium Mathematicum 103 (2005) 149-154."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Z nitek",
+          "zrodlo": "Matematyka 5 (2005) 273-275."
+        },
+        {
+          "autorzy": "Z. Palmowski, S. Foss, S. Zachary",
+          "tytul": "The probability of exceeding a high boundary on a random time interval for a heavy-tailed random walk",
+          "zrodlo": "Annals of Applied Probability 15 (3) (2005) 1936-1957."
+        },
+        {
+          "autorzy": "J. Pawlikowski, K. Ciesielski",
+          "tytul": "Small coverings with smooth functions under the Covering Property Axiom",
+          "zrodlo": "Canadian Journal of Mathematics 57 (3) (2005) 471-493."
+        },
+        {
+          "autorzy": "T. Pezda",
+          "tytul": "Cycles of polynomial mappings in several variables over rings of integers in finite extensions of the rationals (II)",
+          "zrodlo": "Monatshefte fur Mathematik 145 (2005) 321-331."
+        },
+        {
+          "autorzy": "Z. Puchała",
+          "tytul": "A Proof of Grabiner's theorem on non-colliding particles",
+          "zrodlo": "Probability and Mathematical Statistics Vol. 25, Fasc. 1 (2005) 129-132."
+        },
+        {
+          "autorzy": "Z. Puchała, T. Rolski",
+          "tytul": "The exact asymptotic of the time to collision",
+          "zrodlo": "Electronic Journal of Probability 10, no.40 (2005) 1359-1380."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "tytul": "A model of evolution of temperature and density of ions in an electrolyte",
+          "zrodlo": "Applicationes Mathematicae 32 (2005) 225-241."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "tytul": "A singular problem with non-constant temperature",
+          "zrodlo": "Proceedings of the conference Equadiff 2003, Hasselt, Belgium (2005) 389-392."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "tytul": "Steady States for polytropic equation of self-gravitating gas",
+          "zrodlo": "Mathematical Methods in the Applied Sciences 28 (2005) 1881-1896."
+        },
+        {
+          "autorzy": "T. Rolski",
+          "tytul": "A note on increasing directionally concave monotonicity in queues",
+          "zrodlo": "Probability in the Engineering and Informational Sciences 19 (2005) 33-43."
+        },
+        {
+          "autorzy": "T. Rolski",
+          "tytul": "Aproksymacje prawdopodobieństwa niewypłacalności portfela",
+          "zrodlo": "Matematyka Stosowana 6 (2005) 148-169."
+        },
+        {
+          "autorzy": "Z. Rzeszotnik",
+          "tytul": "On the existence of multiresolution analysis for framelets",
+          "zrodlo": "Mathematische Annalen 332 (2005) 705-720."
+        },
+        {
+          "autorzy": "R. Stańczy",
+          "tytul": "On some elliptic equation with nonlocal nonlinearity",
+          "zrodlo": "\" Equadiff ' 03 \" (Hassselt, Belgia) (2005) 310-312."
+        },
+        {
+          "autorzy": "R. Stańczy",
+          "tytul": "Self-attracting Fermi-Dirac particles in canonical and microcanonical setting",
+          "zrodlo": "Mathematical Methods in the Applied Sciences 28 (2005) 975-990."
+        },
+        {
+          "autorzy": "R. Stańczy",
+          "tytul": "Steady states for a system describing self-gravitating Fermi-Dirac particles",
+          "zrodlo": "Differential and Integral Equations 18 (2005) 567-582."
+        },
+        {
+          "autorzy": "R. Szwarc, F. Filbir, R. Lasser",
+          "tytul": "Hypergroups of compact type hypergroups",
+          "zrodlo": "Journal of Computational and Applied Mathematics 178 No. 1-2 (2005) 205-214."
+        },
+        {
+          "autorzy": "R. Szwarc, R. Haller",
+          "tytul": "Kaczmarz algorithm in Hilbert space",
+          "zrodlo": "Studia Mathematica 169.2 (2005) 123-132."
+        },
+        {
+          "autorzy": "R. Szwarc",
+          "tytul": "Orthogonal polynomials and Banach algebras, \"Inzell Lectures on Orthogonal Polynomials\"",
+          "zrodlo": "Advances in the Theory of Special Functions and Orthogonal Polynomials 2 (2005) 103-139."
+        },
+        {
+          "autorzy": "R. Szwarc, J. Obermaier",
+          "tytul": "Polynomial bases for continuous function spaces",
+          "zrodlo": "Internat. Series of Numerical Mathematics, in Trends and Applications in Constructive Approximation 151 (2005) 195-205."
+        },
+        {
+          "autorzy": "R. Szwarc, F. Filbir, W. zu Castell",
+          "tytul": "Strictly positive definite functions in R^d",
+          "zrodlo": "Journal of Approximation Theory 137 no. 2 (2005) 277-280."
+        },
+        {
+          "autorzy": "R. Szwarc",
+          "tytul": "Strong nonnegative linearization of orthogonal polynomials, \"Theory and Applications of Special Functions. A Volume Dedicated to Mizan Rahman\"",
+          "zrodlo": "Developments in Mathematics 13 (2005) 461-477."
+        },
+        {
+          "autorzy": "K. Topolski, K. Lukierska-Walasek",
+          "tytul": "p-adic description of hierarchical systems dynamics",
+          "zrodlo": "Proceedings of the 2nd International Conference on p-Adic Mathematical Physics (2005)."
+        },
+        {
+          "autorzy": "R. Urban, Y. Guivarc'h",
+          "tytul": "Semigroup actions on tori and stationary measures on projective spaces",
+          "zrodlo": "Studia Mathematica 171, No. 1 (2005) 33-66."
+        },
+        {
+          "autorzy": "R. Wencel",
+          "tytul": "Weak elimination of imaginaries in Boolean Algebras",
+          "zrodlo": "Annals of Pure and Applied Logic 132, no. 2-3 (2005) 247-270."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Blaise Pascal (1632-1662) - nie tylko matematyk",
+          "zrodlo": "Matematyka 6 (2005) 324-328."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Franciscus Vieta - co po nim pozostało ?",
+          "zrodlo": "Sławne dzieła matematyczne i rocznice, mat. XVIII Ogólnopolskiej Szkoły Historii Matematyki (2005) 189-202."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Nieznane mowy Jana Śniadeckiego z lat 1784-1785",
+          "zrodlo": "Kwartalnik Historii Nauki i Techniki 50 (2005) 149-181."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Pierre de Fermat - co po nim pozostało ?",
+          "zrodlo": "Matematyka 5 (2005) 260-265."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Początki grup abelowych",
+          "zrodlo": "Matematyka abelowa - w dwóchsetlecie urodzin Nielsa-Henrika Abela(1802-1829) (2005) 55-60."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Quatercentenary Francois Viete's death",
+          "zrodlo": "European mathematics in the last centuries (2005) 149-159."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Twierdzenie Ruffiniego-Abela",
+          "zrodlo": "Matematyka abelowa - w dwóchsetlecie urodzin Nielsa-Henrika Abela(1802-1829) (2005) 49-54."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Znaczenie historii w nauczaniu matematyki",
+          "zrodlo": "XVIII Szkoła Dydaktyki Matematyki, 8-10 września 2004, Białystok (2005) 1-17."
+        },
+        {
+          "autorzy": "Ł.J. Wojakowski",
+          "tytul": "Interacting Fock spaces and the universal convolution",
+          "zrodlo": "Proceedings of the 4th Workshop: Free Probability and Random Matrices, Sendai, Japonia (2005)."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "tytul": "Monotonic independence on the weakly monotone Fock soace and related Poisson type theorem",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 8 No. 2 (2005) 259-275."
+        }
+      ]
+    }
+  ]
+}
