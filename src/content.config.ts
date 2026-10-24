@@ -99,6 +99,10 @@ const seminaria = defineCollection({
     zaklad: idList,
     aktywne: published,
     do_uzupelnienia: strList,
+    // osobne repozytorium seminarium z własnym Pages CMS (tylko referaty) — README, „Repozytoria seminariów”
+    osobne_repozytorium: z.preprocess((v) => (v == null || v === '' ? false : v), z.boolean()),
+    // „właściciel/nazwa” — wpisuje automat; referaty pobiera przy budowaniu skrypty/seminaria/pobierz_referaty.py
+    repozytorium: optStr,
     opublikowany: published,
   }),
 });

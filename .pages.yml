@@ -244,6 +244,15 @@ content:
           search: nazwa
       - { name: aktywne, label: Aktywne, type: boolean, default: true }
       - { name: do_uzupelnienia, label: "Do uzupełnienia (notatka redakcyjna, niewyświetlana)", type: string, list: true }
+      - name: osobne_repozytorium
+        label: "Osobne repozytorium dla organizatora (automat założy je po zapisaniu)"
+        description: "Organizator dostanie własny panel Pages CMS tylko z referatami tego seminarium. Automat przeniesie tam referaty z folderu seminarium w „Referatach seminaryjnych”. Potem zaproś organizatora w Pages CMS do nowego repozytorium (README, „Repozytoria seminariów”)."
+        type: boolean
+        default: false
+      - name: repozytorium
+        label: "Repozytorium (uzupełnia automat)"
+        description: "Np. Avean/seminarium-topologia. Nie zmieniaj ręcznie — wyczyść tylko przy przywracaniu seminarium do tego repozytorium (README)."
+        type: string
       - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
       - name: body
         label: Opis (Markdown, wzory w $...$)
