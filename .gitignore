@@ -5,3 +5,6 @@ dist/
 Thumbs.db
 *.log
 .env
+__pycache__/
+# referaty pobrane z repozytoriów seminariów (skrypty/seminaria/pobierz_referaty.py)
+.cache/
