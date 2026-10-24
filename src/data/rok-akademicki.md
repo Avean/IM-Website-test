@@ -24,26 +24,12 @@ tresc_en: |
 
   For students in the final year of studies of a given level, the Dean, in agreement with the student government, may shift the dates of the exam sessions.
 dalej: |
-  ## Plan zajęć i inne terminy
-
-  - Plan zajęć: [semestr zimowy 2026/27](/studia/plan-zajec#zimowy), [semestr letni 2026/27](/studia/plan-zajec#letni) (wersje robocze).
-  - Harmonogramy egzaminów w sesji, konsultacje i rejestracja na zajęcia: [Zajęcia i konsultacje](/studia/zajecia).
-  - Deklaracje, terminy i formularze dla studentów matematyki: [Terminy i formularze](/studia/matematyka#terminy).
-  - Egzaminy dyplomowe: [Egzaminy i dyplom](/studia/egzaminy-i-dyplom).
-
   ## Podstawa prawna
 
   - [Zarządzenie Nr 121/2026 Rektora Uniwersytetu Wrocławskiego z dnia 25 czerwca 2026 r. w sprawie organizacji roku akademickiego 2026/2027 w Uniwersytecie Wrocławskim (PDF, BIP)](https://bip.uni.wroc.pl/download/attachment/52562/nr-121-2026-z-dnia-25-czerwca-2026_zmina-do-organizacja-roku-akademickiego-2026-2027-plus-juwenalia.pdf?v=1782386043)
   - Zarządzenie Nr 121/2026 zastąpiło [zarządzenie Nr 42/2026 z 18 marca 2026 r.](https://bip.uni.wroc.pl/download/attachment/51534/nr-42-2026-z-dnia-18032026-organizacja-roku-akademickiego-2026-2027.pdf?v=1773824208) — ustalono w nim m.in. termin Juwenaliów i zmieniono zamiany dni. Jeśli trafisz na wcześniejszą wersję kalendarza, kieruj się zarządzeniem Nr 121/2026.
   - [Wszystkie zarządzenia Rektora z 2026 r. w BIP UWr](https://bip.uni.wroc.pl/4636/zarzadzenia-rektora-uniwersytetu-wroclawskiego-z-2026-roku.html)
 dalej_en: |
-  ## Timetable and other dates
-
-  - Timetable: [winter semester 2026/27](/en/studia/plan-zajec#zimowy), [summer semester 2026/27](/en/studia/plan-zajec#letni) (working versions).
-  - Exam session schedules, office hours and course registration: [Classes and office hours](/en/studia/zajecia).
-  - Declarations, deadlines and forms for mathematics students: [Deadlines and forms](/en/studia/matematyka#terminy).
-  - Diploma examinations: [Exams and diploma](/en/studia/egzaminy-i-dyplom).
-
   ## Legal basis
 
   - [Order No. 121/2026 of the Rector of the University of Wrocław of 25 June 2026 on the organisation of the academic year 2026/2027 at the University of Wrocław (PDF, Public Information Bulletin)](https://bip.uni.wroc.pl/download/attachment/52562/nr-121-2026-z-dnia-25-czerwca-2026_zmina-do-organizacja-roku-akademickiego-2026-2027-plus-juwenalia.pdf?v=1782386043)
