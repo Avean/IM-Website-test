@@ -195,6 +195,7 @@ const kierunki = defineCollection({
       kariera_en: optStr,
       opiekunowie: optStr,
       zaklad: optStr,
+      strona: optStr,
       wygaszana: z.preprocess((v) => (v == null || v === '' ? false : v), z.boolean()),
     })),
     programy: lista(z.object({
@@ -225,6 +226,43 @@ const kierunki = defineCollection({
     kontakt: lista(z.object({ rola: z.string(), rola_en: optStr, osoba: z.string(), email: optStr, telefon: optStr, pokoj: optStr })),
     akty: lista(dokument),
     tresc_en: optStr,
+    opublikowany: published,
+  }),
+});
+
+// Podstrona specjalności (np. /studia/matematyka/analiza-danych).
+const specjalnosci = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/specjalnosci' }),
+  schema: z.object({
+    nazwa: z.string(),
+    nazwa_en: optStr,
+    kierunek: z.preprocess(empty, z.string().default('matematyka')),
+    skrot: optStr,
+    poziom: optStr,
+    poziom_en: optStr,
+    opis: optStr,
+    opis_en: optStr,
+    zaklad: optStr,
+    opiekunowie: lista(z.object({ imie_nazwisko: z.string(), rola: optStr, rola_en: optStr })),
+    wygaszana: z.preprocess((v) => (v == null || v === '' ? false : v), z.boolean()),
+    dla_kogo: optStr,
+    dla_kogo_en: optStr,
+    przedmioty: lista(z.object({
+      grupa: z.string(),
+      grupa_en: optStr,
+      lista: lista(z.object({ nazwa: z.string(), nazwa_en: optStr, opis: optStr, opis_en: optStr })),
+    })),
+    umiejetnosci: strList,
+    umiejetnosci_en: strList,
+    kariera: optStr,
+    kariera_en: optStr,
+    tematy_prac: lista(z.object({ tytul: z.string(), opis: optStr })),
+    dokumenty: lista(dokument),
+    linki: lista(link),
+    faq: lista(z.object({ pytanie: z.string(), pytanie_en: optStr, odpowiedz: z.string(), odpowiedz_en: optStr })),
+    tresc_en: optStr,
+    zrodla: strList,
+    do_uzupelnienia: strList,
     opublikowany: published,
   }),
 });
@@ -265,4 +303,4 @@ const granty = defineCollection({
   }),
 });
 
-export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony, konferencje, granty, zaklady, kierunki };
+export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony, konferencje, granty, zaklady, kierunki, specjalnosci };

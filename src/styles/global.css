@@ -500,3 +500,20 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .faq summary { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 52px; cursor: pointer; font-weight: 700; color: var(--ink); list-style: none; }
 .faq summary::-webkit-details-marker { display: none; }
 .faq .prose { padding-bottom: 12px; }
+
+/* specjalność */
+.callout { margin-top: 18px; padding: 16px 18px; border-radius: var(--radius); background: var(--tint); color: var(--tint-ink); }
+.callout strong { display: block; margin-bottom: 4px; }
+.callout .prose { color: var(--text); }
+.course-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 14px; }
+.course-group { padding: 18px 20px; border-radius: var(--radius-l); border: 1px solid var(--line); }
+.course-group h3 { margin: 0 0 8px; font-size: 16px; font-weight: 800; }
+.course-group ul { margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 8px; }
+.course-group li { display: flex; flex-direction: column; font-size: 15px; line-height: 1.45; }
+.course-group li strong { color: var(--ink); font-weight: 700; }
+.course-group li span { color: var(--muted); font-size: 14px; }
+.checks { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr)); gap: 8px 20px; }
+.checks li { position: relative; padding-left: 28px; font-size: 16px; line-height: 1.5; }
+.checks li::before { content: ''; position: absolute; left: 4px; top: 6px; width: 12px; height: 7px; border-left: 2.5px solid var(--accent); border-bottom: 2.5px solid var(--accent); transform: rotate(-45deg); }
+.spec h3 a { color: var(--ink); text-decoration: none; }
+.spec h3 a:hover { text-decoration: underline; }

@@ -141,10 +141,11 @@ const sekcje = [
                   {s.skrot && <span class="badge">{s.skrot}</span>}
                   {s.wygaszana && <span class="badge">{T('wygaszana', 'phased out')}</span>}
                 </div>
-                <h3>{w(s, 'nazwa')}</h3>
+                <h3>{s.strona ? <a href={u(wJezyku(`/studia/${kierunek.id}/${s.strona}`, lang))}>{w(s, 'nazwa')}</a> : w(s, 'nazwa')}</h3>
                 {s.opis && <p>{w(s, 'opis')}</p>}
                 {s.dla_kogo && <p><span class="lbl">{T('Dla kogo', 'For whom')}</span>{w(s, 'dla_kogo')}</p>}
                 {s.kariera && <p><span class="lbl">{T('Po studiach', 'Careers')}</span>{w(s, 'kariera')}</p>}
+                {s.strona && <a class="link-arrow" style="min-height:32px" href={u(wJezyku(`/studia/${kierunek.id}/${s.strona}`, lang))}>{T('Więcej o specjalności', 'More about this specialisation')}<Ikona nazwa="strzalka" rozmiar={15} /></a>}
                 {(s.opiekunowie || (s.zaklad && nazwyZakladow[s.zaklad])) && (
                   <p class="foot">
                     {s.opiekunowie && <span><span class="muted">{T('Opiekun', 'Coordinator')}:</span> {s.opiekunowie}</span>}

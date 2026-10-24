@@ -109,6 +109,7 @@ etapy:
   opis_en: 'Master''s thesis and exam: a written part covering the specialisation and an oral part with a presentation of the thesis.'
 specjalnosci:
 - nazwa: Analiza danych
+  strona: analiza-danych
   nazwa_en: Data analysis
   skrot: AD
   zaklad: statystyka
@@ -120,6 +121,7 @@ specjalnosci:
   kariera_en: Data analysis and data science in companies, banks, research centres and medicine.
   opiekunowie: prof. dr hab. Małgorzata Bogdan, dr Grzegorz Wyłupek
 - nazwa: Matematyka stosowana
+  strona: matematyka-stosowana
   nazwa_en: Applied mathematics
   skrot: MS
   zaklad: rownania-rozniczkowe
@@ -131,6 +133,7 @@ specjalnosci:
   kariera_en: Modelling and computation in industry, research centres and tech companies.
   opiekunowie: prof. dr hab. Grzegorz Karch
 - nazwa: Matematyka aktuarialno-finansowa
+  strona: matematyka-aktuarialno-finansowa
   nazwa_en: Actuarial and financial mathematics
   skrot: MAF
   zaklad: teoria-prawdopodobienstwa
@@ -142,6 +145,7 @@ specjalnosci:
   kariera_en: Insurance, banking, risk management, a path towards the actuarial profession.
   opiekunowie: dr Marek Arendarczyk
 - nazwa: Matematyka teoretyczna
+  strona: matematyka-teoretyczna
   nazwa_en: Theoretical mathematics
   zaklad: geometria
   opis: Pogłębione studia z algebry, analizy, geometrii i topologii, blisko aktualnych badań prowadzonych w Instytucie.
@@ -152,6 +156,7 @@ specjalnosci:
   kariera_en: Doctoral school and an academic career, as well as jobs that call for deep abstract thinking.
   opiekunowie: dr hab. Jan Dymara
 - nazwa: Matematyka nauczycielska
+  strona: matematyka-nauczycielska
   nazwa_en: Mathematics teaching
   zaklad: dydaktyka
   opis: Matematyka razem z przygotowaniem pedagogicznym i praktykami w szkołach.

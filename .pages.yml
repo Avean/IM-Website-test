@@ -394,6 +394,7 @@ content:
           - { name: kariera, label: Po studiach, type: text }
           - { name: opiekunowie, label: Opiekun(owie), type: string }
           - { name: zaklad, label: "Zakład (identyfikator, np. statystyka)", type: string }
+          - { name: strona, label: "Podstrona specjalności (nazwa pliku z sekcji Specjalności, np. analiza-danych)", type: string }
           - { name: wygaszana, label: Wygaszana, type: boolean }
           - { name: nazwa_en, label: "EN: nazwa", type: string }
           - { name: opis_en, label: "EN: czego się uczysz", type: text }
@@ -476,6 +477,112 @@ content:
       - { name: tresc_en, label: "EN: o kierunku (Markdown)", type: text }
       - { name: praktyki_en, label: "EN: praktyki (Markdown)", type: text }
       - { name: kariera_en, label: "EN: po studiach (Markdown)", type: text }
+
+  # ---------------------------------------------------------------- SPECJALNOŚCI
+  - name: specjalnosci
+    label: Specjalności
+    description: Podstrona specjalności, np. /studia/matematyka/analiza-danych. Na stronie kierunku w karcie specjalności wpisz nazwę pliku w polu „Podstrona specjalności”.
+    type: collection
+    path: src/content/specjalnosci
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [nazwa, kierunek, opublikowany]
+      primary: nazwa
+    fields:
+      - { name: nazwa, label: Nazwa specjalności, type: string, required: true }
+      - { name: kierunek, label: "Kierunek (nazwa pliku z sekcji Kierunki, np. matematyka)", type: string, default: matematyka }
+      - { name: skrot, label: "Skrót (np. AD)", type: string }
+      - { name: poziom, label: "Poziom (np. studia I i II stopnia)", type: string }
+      - { name: opis, label: Jedno zdanie pod nazwą, type: text }
+      - name: zaklad
+        label: Zakład
+        type: select
+        options:
+          values:
+            - { name: algebra-i-teoria-modeli, label: Algebra i teoria modeli }
+            - { name: analiza-funkcjonalna, label: Analiza funkcjonalna }
+            - { name: analiza-matematyczna, label: Analiza matematyczna }
+            - { name: geometria, label: Geometria }
+            - { name: rownania-rozniczkowe, label: Równania różniczkowe }
+            - { name: teoria-mnogosci-i-topologia, label: Teoria mnogości i topologia }
+            - { name: teoria-prawdopodobienstwa, label: Teoria prawdopodobieństwa }
+            - { name: statystyka, label: Statystyka }
+            - { name: dydaktyka, label: Pracownia Dydaktyki i Popularyzacji Matematyki }
+      - name: opiekunowie
+        label: Opiekunowie (imię i nazwisko jak w spisie pracowników, bez tytułów)
+        type: object
+        list: true
+        fields:
+          - { name: imie_nazwisko, label: Imię i nazwisko, type: string }
+          - { name: rola, label: "Rola (opcjonalnie)", type: string }
+      - { name: wygaszana, label: Wygaszana, type: boolean }
+      - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
+      - name: body
+        label: O specjalności
+        type: rich-text
+        options:
+          format: markdown
+      - { name: dla_kogo, label: "Dla kogo (Markdown)", type: text }
+      - name: przedmioty
+        label: Czego się uczysz (grupy przedmiotów)
+        type: object
+        list: true
+        fields:
+          - { name: grupa, label: "Grupa (np. Przedmioty obowiązkowe specjalności)", type: string }
+          - name: lista
+            label: Przedmioty
+            type: object
+            list: true
+            fields:
+              - { name: nazwa, label: Nazwa przedmiotu, type: string }
+              - { name: opis, label: Krótki opis (opcjonalnie), type: string }
+              - { name: nazwa_en, label: "EN: nazwa", type: string }
+          - { name: grupa_en, label: "EN: grupa", type: string }
+      - { name: umiejetnosci, label: Co będziesz umieć, type: string, list: true }
+      - { name: kariera, label: "Po studiach (Markdown)", type: text }
+      - name: tematy_prac
+        label: Przykładowe tematy prac
+        type: object
+        list: true
+        fields:
+          - { name: tytul, label: Temat, type: string }
+          - { name: opis, label: "Dopisek (np. rok, poziom)", type: string }
+      - name: dokumenty
+        label: Dokumenty
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: plik, label: Plik lub link, type: string }
+          - { name: opis, label: Krótki opis, type: string }
+          - { name: nazwa_en, label: "EN: nazwa", type: string }
+      - name: linki
+        label: Przyciski z linkami (np. koło naukowe)
+        type: object
+        list: true
+        fields:
+          - { name: etykieta, label: Etykieta, type: string }
+          - { name: adres, label: Adres, type: string }
+          - { name: etykieta_en, label: "EN: etykieta", type: string }
+      - name: faq
+        label: Pytania i odpowiedzi
+        type: object
+        list: true
+        fields:
+          - { name: pytanie, label: Pytanie, type: string }
+          - { name: odpowiedz, label: "Odpowiedź (Markdown)", type: text }
+          - { name: pytanie_en, label: "EN: pytanie", type: string }
+          - { name: odpowiedz_en, label: "EN: odpowiedź", type: text }
+      - { name: do_uzupelnienia, label: "Do uzupełnienia (notatki dla redakcji, niewidoczne)", type: string, list: true }
+      - { name: zrodla, label: "Źródła treści (notatki, niewidoczne)", type: string, list: true }
+      - { name: nazwa_en, label: "EN: nazwa", type: string }
+      - { name: poziom_en, label: "EN: poziom", type: string }
+      - { name: opis_en, label: "EN: zdanie pod nazwą", type: text }
+      - { name: dla_kogo_en, label: "EN: dla kogo", type: text }
+      - { name: umiejetnosci_en, label: "EN: co będziesz umieć", type: string, list: true }
+      - { name: kariera_en, label: "EN: po studiach", type: text }
+      - { name: tresc_en, label: "EN: o specjalności (Markdown)", type: text }
 
   # ---------------------------------------------------------------- ZAKŁADY
   - name: zaklady
