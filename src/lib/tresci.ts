@@ -60,19 +60,35 @@ export async function pracownicy(): Promise<Pracownik[]> {
   return (await getCollection('pracownicy')).filter(opublikowane);
 }
 
-// Nazwisko z zapisu typu „prof. dr hab. P. Borodulin-Nadzieja” albo „prof. Piotr Biler, prof. Grzegorz Karch” (bierzemy pierwszą osobę).
-const nazwiskoZ = (s: string) => {
-  const pierwsza = s.split(/[,;]/)[0].trim();
-  return pierwsza.split(/\s+/).pop()!.replace(/[^\p{L}-]/gu, '');
+// Pierwsza osoba z zapisu typu „prof. dr hab. P. Borodulin-Nadzieja”, „dr Ś. R. Gal” albo „prof. Piotr Biler, prof. Grzegorz Karch”:
+// nazwisko (ostatni wyraz) i inicjał imienia (pierwszy wyraz), bez tytułów naukowych.
+const TYTULY = new Set(['prof', 'dr', 'hab', 'inż', 'mgr', 'uwr']);
+const osobaZ = (s: string): { nazwisko: string; inicjal?: string } | undefined => {
+  for (const czesc of s.split(/[,;]/)) {
+    const slowa = czesc.split(/[\s.]+/).map((w) => w.replace(/[^\p{L}-]/gu, '')).filter((w) => /\p{L}/u.test(w) && !TYTULY.has(w.toLowerCase()));
+    if (slowa.length) return { nazwisko: slowa[slowa.length - 1], inicjal: slowa.length > 1 ? slowa[0][0] : undefined };
+  }
+  return undefined;
 };
+const duze = (s: string) => s.toLocaleUpperCase('pl');
 
-// Zakład projektu: pole „zakład”, a gdy puste — zakład kierownika znalezionego w spisie pracowników.
+// Osoba ze spisu pracowników pasująca do zapisu (nazwisko + inicjał imienia, jeśli podany).
+// Brak dopasowania albo kilka różnych osób (np. dwóch Cyganów przy zapisie bez imienia) → undefined.
+// Ta sama osoba bywa w spisie dwa razy (np. w administracji i w zakładzie) — wtedy wpis z zakładem.
+export function osobaGrantu(zapis: string | undefined, osoby: Pracownik[]): Pracownik | undefined {
+  const k = zapis ? osobaZ(zapis) : undefined;
+  if (!k) return undefined;
+  const pasujace = osoby.filter((o) => {
+    const w = o.data.imie_nazwisko.trim().split(/\s+/);
+    return w[w.length - 1] === k.nazwisko && (!k.inicjal || duze(w[0][0]) === duze(k.inicjal));
+  });
+  if (new Set(pasujace.map((o) => o.data.imie_nazwisko)).size !== 1) return undefined;
+  return pasujace.find((o) => o.data.zaklad) ?? pasujace[0];
+}
+
+// Zakład projektu: pole „zakład”, a gdy puste — zakład kierownika (pierwszej osoby) znalezionego w spisie pracowników.
 export function zakladGrantu(g: Grant, osoby: Pracownik[]): string | undefined {
-  if (g.data.zaklad) return g.data.zaklad;
-  if (!g.data.kierownik) return undefined;
-  const n = nazwiskoZ(g.data.kierownik);
-  const pasujace = osoby.filter((o) => o.data.imie_nazwisko.split(/\s+/).pop() === n);
-  return pasujace.length === 1 ? pasujace[0].data.zaklad : undefined;
+  return g.data.zaklad || osobaGrantu(g.data.kierownik, osoby)?.data.zaklad;
 }
 
 // Kolejność na liście składu: profesorowie, doktorzy habilitowani, doktorzy, magistrzy.

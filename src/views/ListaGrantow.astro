@@ -1,6 +1,5 @@
 ---
 // Projekty i granty: realizowane i zakończone, z filtrem rodzaju i wyszukiwarką.
-import { render } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
 import Ikona from '../components/Ikona.astro';
@@ -16,7 +15,6 @@ const rok = Number(today().slice(0, 4));
 const trwa = (g: Grant) => (g.data.rok_do ?? 0) >= rok;
 const realizowane = wszystkie.filter(trwa);
 const zakonczone = wszystkie.filter((g) => !trwa(g));
-const zOpisem = new Set(wszystkie.filter((g) => g.body?.trim()).map((g) => g.id));
 const rodzaje = (['ncn', 'ue', 'wewnetrzny', 'inny'] as const).filter((r) => wszystkie.some((g) => g.data.rodzaj === r));
 const lata = (g: Grant) => (g.data.rok_od && g.data.rok_do && g.data.rok_od !== g.data.rok_do ? `${g.data.rok_od}–${g.data.rok_do}` : String(g.data.rok_od ?? g.data.rok_do ?? ''));
 const tytul = (g: Grant) => (lang === 'en' && g.data.tytul_en) || g.data.tytul;
@@ -53,7 +51,7 @@ const lead = lang === 'en'
                 <span>{lata(g)}</span>
                 {g.data.kod && <span style="font-variant-numeric:tabular-nums">· {g.data.kod}</span>}
               </div>
-              <h3>{zOpisem.has(g.id) ? <a href={u(wJezyku(`/nauka/granty/${slugOf(g.id)}`, lang))}>{tytul(g)}</a> : tytul(g)}</h3>
+              <h3><a href={u(wJezyku(`/nauka/granty/${slugOf(g.id)}`, lang))}>{tytul(g)}</a></h3>
               {g.data.kierownik && <p class="who"><span class="muted">{lang === 'en' ? 'Principal investigator' : 'Kierownik'}:</span> {g.data.kierownik}</p>}
               {g.data.wykonawcy && <p class="who muted" style="font-size:14px">{lang === 'en' ? 'Team' : 'Wykonawcy'}: {g.data.wykonawcy}</p>}
               {g.data.strona && <a class="link-arrow" style="min-height:32px;font-size:14px" href={g.data.strona}>{lang === 'en' ? 'Project website' : 'Strona projektu'}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>}

@@ -11,7 +11,7 @@ export async function GET(context: APIContext) {
   for (const o of await obrony()) sciezki.push(`/obrony-doktorskie/${slugOf(o.id)}`);
   for (const s of await seminaria()) sciezki.push(`/seminaria/${s.id}`);
   for (const k of await konferencje()) sciezki.push(`/nauka/konferencje/${slugOf(k.id)}`);
-  for (const g of await granty()) if (g.body?.trim()) sciezki.push(`/nauka/granty/${slugOf(g.id)}`);
+  for (const g of await granty()) sciezki.push(`/nauka/granty/${slugOf(g.id)}`);
   for (const s of await getCollection('strony')) if (s.data.opublikowany !== false) sciezki.push(`/${s.id}`);
   for (const k of await getCollection('kierunki')) if (k.data.opublikowany !== false) sciezki.push(`/studia/${k.id}`);
   for (const z of await getCollection('zaklady')) if (z.data.opublikowany !== false) sciezki.push(`/instytut/zaklady/${z.id}`);
