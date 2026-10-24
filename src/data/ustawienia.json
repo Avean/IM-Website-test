@@ -1,6 +1,7 @@
 {
   "baner": {
     "zdjecie": "/pliki/baner/kampus-zmierzch.jpg",
+    "zdjecie_male": "/pliki/baner/kampus-zmierzch-1200.jpg",
     "opis": "Kampus przy placu Grunwaldzkim o zmierzchu: budynki Instytutu, drzewa, Most Grunwaldzki i Odra",
     "podpis": "Fot. fotopolska.eu",
     "kadr": "center 40%"

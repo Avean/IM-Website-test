@@ -427,7 +427,8 @@ content:
             label: Baner na stronie głównej
             type: object
             fields:
-              - { name: zdjecie, label: Zdjęcie, type: image, options: { path: public/pliki/baner } }
+              - { name: zdjecie, label: "Zdjęcie (poziome, ok. 2400 px szerokości)", type: image, options: { path: public/pliki/baner } }
+              - { name: zdjecie_male, label: "Mniejsza wersja na telefony (opcjonalnie, ok. 1200 px)", type: image, options: { path: public/pliki/baner } }
               - { name: opis, label: Opis zdjęcia (dla niewidomych), type: string }
               - { name: podpis, label: "Podpis (np. Fot. Jan Kowalski)", type: string }
               - { name: kadr, label: "Kadrowanie (np. center 55%)", type: string }
