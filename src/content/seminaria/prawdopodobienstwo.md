@@ -5,7 +5,7 @@ prowadzacy:
   - "Ryszard Szekli"
   - "Krzysztof Dębicki"
 kontakt: "michal.krawiec@math.uni.wroc.pl"
-strona: "http://math.uni.wroc.pl/~krawiec/seminar/"
+archiwum: "http://math.uni.wroc.pl/~krawiec/seminar/"
 zaklad: "teoria-prawdopodobienstwa"
 aktywne: true
 opublikowany: true

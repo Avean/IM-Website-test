@@ -8,7 +8,7 @@ prowadzacy:
   - "Błażej Wróbel"
   - "Maciej Paluszyński"
 kontakt: "Jacek.Dziubanski@math.uni.wroc.pl"
-strona: "http://www.impan.pl/~anowak/seminarium_AH.html"
+archiwum: "http://www.impan.pl/~anowak/seminarium_AH.html"
 zaklad: "analiza-funkcjonalna"
 aktywne: true
 opublikowany: true

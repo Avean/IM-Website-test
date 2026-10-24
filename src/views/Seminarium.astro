@@ -38,7 +38,7 @@ const adresListy = ((ustawienia as any).powiadomienia?.adres ?? '') as string;
 ---
 <Baza tytul={nazwa} opis={`${RODZAJE.referat[lang]}: ${nazwa}`} opublikowany={d.opublikowany}>
   <NaglowekStrony tytul={nazwa} lang={lang} wstecz={{ etykieta: t(lang, 'wszystkieSeminaria'), adres: '/seminaria' }}>
-    {(koordynatorzy.length > 0 || zakladySem.length > 0 || d.kontakt || d.strona) && (
+    {(koordynatorzy.length > 0 || zakladySem.length > 0 || d.kontakt) && (
       <div class="sem-koord">
         {koordynatorzy.length > 0 && (
           <p class="sem-koord-osoby">
@@ -46,11 +46,10 @@ const adresListy = ((ustawienia as any).powiadomienia?.adres ?? '') as string;
             <span class="sem-koord-n">{koordynatorzy.map((k, i) => <>{i > 0 && ', '}{k.strona ? <a href={k.strona}>{k.nazwa}</a> : k.nazwa}</>)}</span>
           </p>
         )}
-        {(d.kontakt || zakladySem.length > 0 || d.strona) && (
+        {(d.kontakt || zakladySem.length > 0) && (
           <ul class="sem-meta">
             {d.kontakt && <li><Ikona nazwa="mail" rozmiar={18} /><a href={`mailto:${d.kontakt}`}>{d.kontakt}</a></li>}
             {zakladySem.map((z) => <li><Ikona nazwa="ludzie" rozmiar={18} /><a href={u(wJezyku(`/instytut/zaklady/${z.id}`, lang))}>{wybierz(z.data, 'nazwa', lang)}</a></li>)}
-            {d.strona && <li><Ikona nazwa="zewnetrzny" rozmiar={18} /><a href={d.strona}>{t(lang, 'stronaSeminarium')}</a></li>}
           </ul>
         )}
       </div>

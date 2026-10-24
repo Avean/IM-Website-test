@@ -6,7 +6,7 @@ prowadzacy:
   - "Piotr Biler"
   - "Grzegorz Karch"
 kontakt: "Robert.Stanczy@math.uni.wroc.pl"
-strona: "http://www.math.uni.wroc.pl/~stanczr/semin/semin.html"
+archiwum: "http://www.math.uni.wroc.pl/~stanczr/semin/semin.html"
 zaklad: "rownania-rozniczkowe"
 aktywne: true
 opublikowany: true

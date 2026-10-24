@@ -244,8 +244,7 @@ content:
         type: string
         list: true
       - { name: kontakt, label: E-mail kontaktowy (pod nazwiskiem koordynatora), type: string }
-      - { name: strona, label: Zewnętrzna strona seminarium, type: string }
-      - { name: archiwum, label: Link do archiwum referatów, type: string }
+      - { name: archiwum, label: "Link do archiwum referatów (np. dawna strona seminarium; pokazuje się pod minionymi referatami)", type: string }
       - name: zaklad
         label: Zakład (można wybrać kilka)
         type: select
