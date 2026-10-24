@@ -103,6 +103,7 @@ html:not(.js) .pz-app { display: none; }
 .pz-tytul a { font-weight: 800; color: var(--ink); text-decoration: none; }
 .pz-tytul a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .pz-typ { font-size: 14px; font-weight: 700; color: var(--muted); }
+.pz-typ-glowny { font-weight: 800; color: var(--ink); }
 .pz-meta { display: flex; flex-wrap: wrap; gap: 2px 14px; font-size: 14px; color: var(--text); }
 .pz-czest { font-weight: 700; }
 .pz-kier { padding: 0 8px; border-radius: 999px; background: var(--bg); font-size: 12px; font-weight: 800; letter-spacing: .03em; color: var(--muted); }

@@ -358,8 +358,14 @@ export default function PlanZajec({ lang, kierunki, daneId }: Props) {
         </div>
         <div className="pz-tresc">
           <div className="pz-tytul">
-            <a href={p?.usos} title={T.otworzUsos}>{nazwaPrzedmiotu(p, z.kod, lang)}</a>
-            <span className="pz-typ">{typNazwa(z.typ)}{wieleGrup(z) ? `, ${T.gr} ${z.grupa}` : ''}</span>
+            {zDniem ? (
+              <strong className="pz-typ-glowny">{typNazwa(z.typ)}{wieleGrup(z) ? `, ${T.gr} ${z.grupa}` : ''}</strong>
+            ) : (
+              <>
+                <a href={p?.usos} title={T.otworzUsos}>{nazwaPrzedmiotu(p, z.kod, lang)}</a>
+                <span className="pz-typ">{typNazwa(z.typ)}{wieleGrup(z) ? `, ${T.gr} ${z.grupa}` : ''}</span>
+              </>
+            )}
           </div>
           <div className="pz-meta">
             {(z.prowadzacy || []).length > 0 && <span>{(z.prowadzacy || []).join(', ')}</span>}
@@ -591,7 +597,7 @@ export default function PlanZajec({ lang, kierunki, daneId }: Props) {
           {wybor('prowadzacy', T.prowadzacy, T.wszyscyProwadzacy, opcje.prowadzacy.map((o) => ({ v: o, t: o })))}
           {wybor('sala', T.sala, T.wszystkieSale, opcje.sale.map((s) => ({ v: s, t: s })))}
         </div>
-        {f.kierunek && <p className="pz-opis">{T.kierunekPodpowiedz}</p>}
+        {f.kierunek && (!waski || filtryOtwarte) && <p className="pz-opis">{T.kierunekPodpowiedz}</p>}
         <div className="pz-pasek">
           <div className="chips pz-widoki" role="group" aria-label={T.widok}>
             {!waski && (
