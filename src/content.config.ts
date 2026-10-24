@@ -156,7 +156,7 @@ const zaklady = defineCollection({
 // Kierunek studiów (np. matematyka): treść w polach, a wygląd w szablonie src/views/Kierunek.astro.
 const lista = <T extends z.ZodTypeAny>(item: T) => z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(item));
 const link = z.object({ etykieta: z.string(), etykieta_en: optStr, adres: z.string() });
-const dokument = z.object({ nazwa: z.string(), nazwa_en: optStr, plik: z.string(), opis: optStr });
+const dokument = z.object({ nazwa: z.string(), nazwa_en: optStr, plik: z.string(), opis: optStr, opis_en: optStr });
 
 const kierunki = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/kierunki' }),

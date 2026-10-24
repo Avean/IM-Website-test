@@ -26,12 +26,15 @@ const tylkoPolski = lang === 'en' && !d.tresc_en;
 // Dział menu, do którego należy strona — do okruszków i bocznej nawigacji.
 const adres = '/' + strona.id;
 type Link = { etykieta: string; etykieta_en?: string; adres: string };
-const dzial = (nawigacja.menu as any[]).find((m) => (m.grupy ?? []).some((g: any) => g.linki.some((l: Link) => l.adres === adres)));
+// Podstrona (np. /instytut/infrastruktura-informatyczna/regulamin-sieci) należy do działu swojej strony nadrzędnej.
+const wDziale = (l: Link) => l.adres === adres || adres.startsWith(l.adres + '/');
+const dzial = (nawigacja.menu as any[]).find((m) => (m.grupy ?? []).some((g: any) => g.linki.some(wDziale)));
 const linkiDzialu: Link[] = dzial ? dzial.grupy.flatMap((g: any) => g.linki) : [];
+const rodzic = linkiDzialu.filter((l) => !isExternal(l.adres) && adres.startsWith(l.adres + '/')).sort((x, y) => y.adres.length - x.adres.length)[0];
 const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
 ---
 <Baza tytul={tytul} opis={opis} opublikowany={d.opublikowany}>
-  <NaglowekStrony tytul={tytul} lead={opis} lang={lang} okruszki={[...(dzial ? [{ etykieta: wybierz(dzial, 'etykieta', lang) }] : []), { etykieta: tytul }]} />
+  <NaglowekStrony tytul={tytul} lead={opis} lang={lang} okruszki={[...(dzial ? [{ etykieta: wybierz(dzial, 'etykieta', lang) }] : []), ...(rodzic ? [{ etykieta: wybierz(rodzic, 'etykieta', lang), adres: rodzic.adres }] : []), { etykieta: tytul }]} />
   <div class="wrap layout">
     <div class="main">
       <SpisTresci naglowki={naglowki} lang={lang} wariant="gora" />
@@ -47,7 +50,7 @@ const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
           <h2>{wybierz(dzial, 'etykieta', lang)}</h2>
           <div style="display:flex;flex-direction:column">
             {linkiDzialu.map((l) => (
-              <a href={href(l.adres)} aria-current={l.adres === adres ? 'page' : undefined}>
+              <a href={href(l.adres)} aria-current={l.adres === adres ? 'page' : l === rodzic ? 'true' : undefined}>
                 {wybierz(l, 'etykieta', lang)}{isExternal(l.adres) && <Ikona nazwa="zewnetrzny" rozmiar={13} />}
               </a>
             ))}

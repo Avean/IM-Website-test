@@ -202,12 +202,12 @@ faq:
 zrodla:
 - https://www.math.uni.wroc.pl/matematyka (sekcja „Specjalności” — lista specjalności i opiekunowie)
 - https://www.math.uni.wroc.pl/specjalnosci-0 (opiekunowie specjalności)
-- https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf (rozdz. III–IX, Tabele 2b–6, 7, 13)
-- https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf (rozdz. I–II, Tabela 2)
+- /pliki/studia/przewodnik-mt-lic.pdf (rozdz. III–IX, Tabele 2b–6, 7, 13)
+- /pliki/studia/przewodnik-mt-mgr.pdf (rozdz. I–II, Tabela 2)
 - https://bip.uni.wroc.pl/download/attachment/52226/uchwala-nr-48_2026-senatu-uwr-z-2026-05-27-w-sprawie-programu-studiow-dla-kierunku-matematyka-stacjonarne-i-i-ii-stopnia.pdf (sylwetka absolwenta, treści programowe przedmiotów, plan II stopnia AD)
-- https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-mgr.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf (część A i D)
-- https://www.math.uni.wroc.pl/sites/default/files/mgr21-ad-zakres.pdf
+- /pliki/studia/stary-program-mt-mgr.pdf
+- /pliki/studia/zmiany2026.pdf (część A i D)
+- /pliki/studia/mgr21-ad-zakres.pdf
 - https://www.math.uni.wroc.pl/egzamin-magisterski
 - https://www.math.uni.wroc.pl/news/wyniki-konkursu-na-najlepsza-prace-dyplomowa (2022)
 - https://www.math.uni.wroc.pl/news/wyniki-konkursu-na-najlepsza-prace-dyplomowa-0 (2023)

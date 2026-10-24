@@ -418,6 +418,7 @@ content:
               - { name: plik, label: Plik lub link, type: string }
               - { name: opis, label: Krótki opis (opcjonalnie), type: string }
               - { name: nazwa_en, label: "EN: nazwa", type: string }
+              - { name: opis_en, label: "EN: krótki opis", type: string }
           - { name: nazwa_en, label: "EN: nazwa zakładki", type: string }
           - { name: dotyczy_en, label: "EN: kogo dotyczy", type: string }
       - name: terminy
@@ -538,6 +539,7 @@ content:
               - { name: nazwa, label: Nazwa przedmiotu, type: string }
               - { name: opis, label: Krótki opis (opcjonalnie), type: string }
               - { name: nazwa_en, label: "EN: nazwa", type: string }
+              - { name: opis_en, label: "EN: krótki opis", type: string }
           - { name: grupa_en, label: "EN: grupa", type: string }
       - { name: umiejetnosci, label: Co będziesz umieć, type: string, list: true }
       - { name: kariera, label: "Po studiach (Markdown)", type: text }
@@ -557,6 +559,7 @@ content:
           - { name: plik, label: Plik lub link, type: string }
           - { name: opis, label: Krótki opis, type: string }
           - { name: nazwa_en, label: "EN: nazwa", type: string }
+          - { name: opis_en, label: "EN: krótki opis", type: string }
       - name: linki
         label: Przyciski z linkami (np. koło naukowe)
         type: object

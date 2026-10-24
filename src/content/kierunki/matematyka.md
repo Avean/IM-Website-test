@@ -113,24 +113,24 @@ specjalnosci:
   nazwa_en: Data analysis
   skrot: AD
   zaklad: statystyka
-  opis: Statystyka, metody analizy dużych zbiorów danych i uczenia maszynowego oraz programowanie potrzebne do pracy z danymi.
-  opis_en: Statistics, methods for analysing large data sets and machine learning, and the programming needed to work with data.
+  opis: Statystyka matematyczna, modele liniowe, uczenie maszynowe i metody analizy dużych zbiorów danych, a do tego programowanie w R, Pythonie i SQL.
+  opis_en: Mathematical statistics, linear models, machine learning and methods for analysing large data sets, together with programming in R, Python and SQL.
   dla_kogo: Dla osób, które chcą łączyć matematykę z praktyczną analizą danych.
   dla_kogo_en: For those who want to combine mathematics with practical data analysis.
-  kariera: Analiza danych i data science w firmach, bankach, ośrodkach badawczych i medycynie.
-  kariera_en: Data analysis and data science in companies, banks, research centres and medicine.
+  kariera: 'Np. analityk danych (po I stopniu) lub Data Scientist (po II stopniu), także w przemyśle i startupach korzystających z narzędzi data science.'
+  kariera_en: 'For example data analyst (after the first cycle) or Data Scientist (after the second cycle), including in industry and start-ups that rely on data science tools.'
   opiekunowie: prof. dr hab. Małgorzata Bogdan, dr Grzegorz Wyłupek
 - nazwa: Matematyka stosowana
   strona: matematyka-stosowana
   nazwa_en: Applied mathematics
   skrot: MS
   zaklad: rownania-rozniczkowe
-  opis: 'Modelowanie matematyczne zjawisk z fizyki, biologii i techniki: równania różniczkowe, metody numeryczne i symulacje.'
-  opis_en: 'Mathematical modelling in physics, biology and engineering: differential equations, numerical methods and simulations.'
+  opis: 'Modelowanie zjawisk deterministycznych i losowych: równania różniczkowe, procesy stochastyczne, metody numeryczne i symulacje, z elementami analizy danych i nauk przyrodniczych.'
+  opis_en: 'Modelling deterministic and random phenomena: differential equations, stochastic processes, numerical methods and simulations, combined with data analysis and the natural sciences.'
   dla_kogo: Dla osób, które chcą zrozumieć świat przez modele matematyczne.
   dla_kogo_en: For those who want to understand the world through mathematical models.
-  kariera: Modelowanie i obliczenia w przemyśle, ośrodkach badawczych i firmach technologicznych.
-  kariera_en: Modelling and computation in industry, research centres and tech companies.
+  kariera: Praca w sektorach wymagających wysokich kompetencji, krytycznego myślenia i rozwiązywania nietypowych problemów — m.in. w przemyśle i innowacyjnych startupach.
+  kariera_en: Work in sectors requiring high competence, critical thinking and non-standard problem solving — e.g. industry and innovative start-ups.
   opiekunowie: prof. dr hab. Grzegorz Karch
 - nazwa: Matematyka aktuarialno-finansowa
   strona: matematyka-aktuarialno-finansowa
@@ -141,19 +141,19 @@ specjalnosci:
   opis_en: Probability and stochastic processes applied to insurance and finance.
   dla_kogo: Dla osób zainteresowanych ryzykiem, ubezpieczeniami i rynkami finansowymi.
   dla_kogo_en: For those interested in risk, insurance and financial markets.
-  kariera: Ubezpieczenia, banki, zarządzanie ryzykiem, ścieżka do zawodu aktuariusza.
-  kariera_en: Insurance, banking, risk management, a path towards the actuarial profession.
+  kariera: Sektor finansowy i ubezpieczeniowy, np. praca aktuariusza lub specjalisty ds. ryzyka.
+  kariera_en: The financial and insurance sector, e.g. as an actuary or a risk specialist.
   opiekunowie: dr Marek Arendarczyk
 - nazwa: Matematyka teoretyczna
   strona: matematyka-teoretyczna
   nazwa_en: Theoretical mathematics
-  zaklad: geometria
-  opis: Pogłębione studia z algebry, analizy, geometrii i topologii, blisko aktualnych badań prowadzonych w Instytucie.
-  opis_en: In-depth study of algebra, analysis, geometry and topology, close to current research at the Institute.
-  dla_kogo: Dla osób, które myślą o pracy naukowej i doktoracie.
-  dla_kogo_en: For those considering research and a PhD.
-  kariera: Szkoła doktorska i kariera naukowa, a także zawody wymagające głębokiego myślenia abstrakcyjnego.
-  kariera_en: Doctoral school and an academic career, as well as jobs that call for deep abstract thinking.
+  skrot: TEOR
+  opis: Uporządkowana i pogłębiona wiedza z kluczowych teorii matematycznych oraz biegłość w rygorystycznym dowodzeniu twierdzeń.
+  opis_en: Organised, in-depth knowledge of key mathematical theories and fluency in rigorous proofs.
+  dla_kogo: Dla osób, które chcą poznać matematykę od strony teorii i dowodów oraz myślą o zaawansowanych studiach i pracy badawczej.
+  dla_kogo_en: For those who want to learn mathematics through theory and proofs and are thinking about advanced study and research.
+  kariera: Przygotowanie do zaawansowanych studiów magisterskich i pracy badawczej; naturalne zaplecze kadr naukowych i dydaktycznych uczelni.
+  kariera_en: Preparation for advanced master's studies and research; a natural talent pool for university teaching and research staff.
   opiekunowie: dr hab. Jan Dymara
 - nazwa: Matematyka nauczycielska
   strona: matematyka-nauczycielska
@@ -165,6 +165,7 @@ specjalnosci:
   dla_kogo_en: For future mathematics teachers.
   kariera: Praca nauczyciela matematyki w szkołach.
   kariera_en: Teaching mathematics in schools.
+  opiekunowie: dr Elżbieta Kalinowska, prof. dr hab. Jacek Świątkowski
 - nazwa: Matematyka w ekonomii
   nazwa_en: Mathematics in economics
   wygaszana: true
@@ -183,10 +184,10 @@ programy:
     plik: https://bip.uni.wroc.pl/download/attachment/52226/uchwala-nr-48_2026-senatu-uwr-z-2026-05-27-w-sprawie-programu-studiow-dla-kierunku-matematyka-stacjonarne-i-i-ii-stopnia.pdf?v=1779865106
   - nazwa: Przewodnik po programie studiów I stopnia
     nazwa_en: Guide to the bachelor's curriculum (Polish)
-    plik: https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf
+    plik: /pliki/studia/przewodnik-mt-lic.pdf
   - nazwa: Przewodnik po programie studiów II stopnia
     nazwa_en: Guide to the master's curriculum (Polish)
-    plik: https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf
+    plik: /pliki/studia/przewodnik-mt-mgr.pdf
 - nazwa: Stary program (2022–2025/26)
   nazwa_en: Previous curriculum (2022–2025/26)
   od_roku: 2022
@@ -199,22 +200,22 @@ programy:
     plik: https://bip.uni.wroc.pl/download/attachment/33011/uchwala-nr-40_2022-senatu-uwr-z-dnia-2022-04-20-w-sprawie-programu-studiow-dla-kierunku-matematyka-i-i-ii-stopnia.pdf
   - nazwa: Uwagi do programu studiów licencjackich
     nazwa_en: Notes on the bachelor's curriculum
-    plik: https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-lic.pdf
+    plik: /pliki/studia/stary-program-mt-lic.pdf
   - nazwa: Matematyka teoretyczna — przedmioty podstawowe do wyboru
     nazwa_en: Theoretical mathematics — core electives
-    plik: https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-teoretyczna.pdf
+    plik: /pliki/studia/spec-matematyka-teoretyczna.pdf
   - nazwa: Matematyka nauczycielska — zasady realizacji kształcenia
     nazwa_en: Mathematics teaching — rules
-    plik: https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-nauczycielska.pdf
+    plik: /pliki/studia/spec-matematyka-nauczycielska.pdf
   - nazwa: Matematyka stosowana — przedmioty z podstaw nauk ścisłych i przyrodniczych
     nazwa_en: Applied mathematics — science courses
-    plik: https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-stosowana.pdf
+    plik: /pliki/studia/spec-matematyka-stosowana.pdf
   - nazwa: Uwagi do programu studiów magisterskich
     nazwa_en: Notes on the master's curriculum
-    plik: https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-mgr.pdf
+    plik: /pliki/studia/stary-program-mt-mgr.pdf
   - nazwa: Harmonogram wygaszania przedmiotów
     nazwa_en: Schedule for phasing out courses
-    plik: https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf
+    plik: /pliki/studia/zmiany2026.pdf
     opis: Niektóre dotychczasowe przedmioty są wygaszane w związku ze zmianą programu.
 - nazwa: Programy archiwalne (przed 2022)
   nazwa_en: Archived curricula (before 2022)
@@ -303,19 +304,19 @@ praktyki_en: Teaching placements are compulsory for students of the *mathematics
 praktyki_dokumenty:
 - nazwa: Program i regulamin praktyk pedagogicznych
   nazwa_en: Placement programme and regulations (Polish)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/regulamin-praktyk-nauczycielskich-2026.pdf
+  plik: /pliki/studia/regulamin-praktyk-nauczycielskich-2026.pdf
 - nazwa: Arkusz oceny kompetencji dydaktycznych praktykanta (PDF)
   nazwa_en: Trainee assessment sheet (PDF)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.pdf
+  plik: /pliki/studia/arkusz_oceny_kompetencji_2015.pdf
 - nazwa: Arkusz oceny kompetencji dydaktycznych praktykanta (DOCX)
   nazwa_en: Trainee assessment sheet (DOCX)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/arkusz_oceny_kompetencji_2015.docx
+  plik: /pliki/studia/arkusz_oceny_kompetencji_2015.docx
 - nazwa: Karta zaliczenia praktyki (PDF)
   nazwa_en: Placement completion form (PDF)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.pdf
+  plik: /pliki/studia/szkolna_karta_zaliczenia_praktyki_2015.pdf
 - nazwa: Karta zaliczenia praktyki (DOCX)
   nazwa_en: Placement completion form (DOCX)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/szkolna_karta_zaliczenia_praktyki_2015.docx
+  plik: /pliki/studia/szkolna_karta_zaliczenia_praktyki_2015.docx
 kariera: 'Matematyka uczy precyzyjnego myślenia i rozwiązywania problemów, dlatego absolwenci znajdują pracę w wielu miejscach: w analizie danych i IT, w bankach i ubezpieczeniach, w ośrodkach badawczych, w szkołach i na uczelniach.
 
 
@@ -387,7 +388,7 @@ akty:
   plik: https://bip.uni.wroc.pl/download/attachment/37997/uchwala-nr-11-w-sprawie-okreslenia-warunkow-wymaganych-na-powtorny-wpis-na-semestr-na-kierunku-matematyka.pdf
 - nazwa: Wytyczne dla prac dyplomowych
   nazwa_en: Thesis guidelines
-  plik: https://www.math.uni.wroc.pl/sites/default/files/46-2017.pdf
+  plik: /pliki/studia/46-2017.pdf
 - nazwa: Lektoraty (nowy program)
   nazwa_en: Foreign language courses (new curriculum)
   plik: https://bip.uni.wroc.pl/download/attachment/52874/nr-138-2026-z-dnia-27072026-lektoraty-jezykow-obcych.pdf?v=1785144437

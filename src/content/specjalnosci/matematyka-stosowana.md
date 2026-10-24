@@ -212,7 +212,7 @@ dokumenty:
   plik: /pliki/studia/spec-matematyka-stosowana.pdf
 - nazwa: Uwagi do dotychczasowego programu studiów II stopnia
   nazwa_en: Notes on the previous second-cycle curriculum
-  plik: https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-mgr.pdf
+  plik: /pliki/studia/stary-program-mt-mgr.pdf
   opis: Listy przedmiotów wszystkich specjalności II stopnia (studia rozpoczęte w latach 2022/23–2025/26).
 - nazwa: Zakres egzaminu magisterskiego — matematyka stosowana
   nazwa_en: Scope of the master's examination — applied mathematics
@@ -250,12 +250,12 @@ faq:
 zrodla:
 - https://www.math.uni.wroc.pl/matematyka (sekcja „Specjalności”, opiekun specjalności)
 - https://www.math.uni.wroc.pl/specjalnosci-0 (opiekunowie specjalności)
-- https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf (Tabele 2b–6, 7, 15; rozdz. IX–XI)
-- https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf (rozdz. I–III, Tabele 1, 4, 12)
-- https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-stosowana.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-mgr.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/mgr21-st-zakres.pdf
+- /pliki/studia/przewodnik-mt-lic.pdf (Tabele 2b–6, 7, 15; rozdz. IX–XI)
+- /pliki/studia/przewodnik-mt-mgr.pdf (rozdz. I–III, Tabele 1, 4, 12)
+- /pliki/studia/spec-matematyka-stosowana.pdf
+- /pliki/studia/stary-program-mt-mgr.pdf
+- /pliki/studia/zmiany2026.pdf
+- /pliki/studia/mgr21-st-zakres.pdf
 - https://www.math.uni.wroc.pl/egzamin-magisterski
 - https://bip.uni.wroc.pl/download/attachment/52226/uchwala-nr-48_2026-senatu-uwr-z-2026-05-27-w-sprawie-programu-studiow-dla-kierunku-matematyka-stacjonarne-i-i-ii-stopnia.pdf (sylwetka absolwenta, potrzeby społeczno-gospodarcze, treści przedmiotu Analiza numeryczna)
 do_uzupelnienia:

@@ -206,11 +206,11 @@ faq:
 zrodla:
   - https://www.math.uni.wroc.pl/matematyka (sekcja „Specjalności”, opiekun, formularze C2/C3)
   - https://www.math.uni.wroc.pl/specjalnosci-0 (opiekunowie specjalności)
-  - https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf (wersja z 25.09.2026; rozdz. II–IX, Tabele 2b, 3b, 4b, 7, 8, 14)
-  - https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf (wersja z 25.09.2026; rozdz. I, Tabele 1, 3, 9)
-  - https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-mgr.pdf (przedmioty specjalności w starym programie II stopnia)
-  - https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf (zasady przejścia na nowy program)
-  - https://www.math.uni.wroc.pl/sites/default/files/mgr21-af-zakres.pdf (zakres egzaminu magisterskiego MAF)
+  - /pliki/studia/przewodnik-mt-lic.pdf (wersja z 25.09.2026; rozdz. II–IX, Tabele 2b, 3b, 4b, 7, 8, 14)
+  - /pliki/studia/przewodnik-mt-mgr.pdf (wersja z 25.09.2026; rozdz. I, Tabele 1, 3, 9)
+  - /pliki/studia/stary-program-mt-mgr.pdf (przedmioty specjalności w starym programie II stopnia)
+  - /pliki/studia/zmiany2026.pdf (zasady przejścia na nowy program)
+  - /pliki/studia/mgr21-af-zakres.pdf (zakres egzaminu magisterskiego MAF)
   - https://www.math.uni.wroc.pl/sites/default/files/tem7.pdf oraz tem6.pdf (lista tematów prac dyplomowych zatwierdzonych przez Komisję Prac Dyplomowych)
   - Uchwała Senatu UWr nr 48/2026 — program studiów od 2026/27, s. 4 (sylwetka absolwenta, uzasadnienie programu)
   - USOSweb UWr, katalog przedmiotów — opisy przedmiotów 28-MT-S-t123, -tRPrawd2R, -tWMatUbezp, -TAnStoch, -TWProcStoch, -tWDSymMMC, -tMUZnew, -tInzFinan, -tMUMIO

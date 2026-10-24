@@ -207,19 +207,19 @@ dokumenty:
   plik: /pliki/studia/spec-matematyka-teoretyczna.pdf
 - nazwa: Przewodnik po programie studiów I stopnia (od 2026/27)
   nazwa_en: Guide to the bachelor's curriculum (from 2026/27, Polish)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf
+  plik: /pliki/studia/przewodnik-mt-lic.pdf
 - nazwa: Przewodnik po programie studiów II stopnia (od 2026/27)
   nazwa_en: Guide to the master's curriculum (from 2026/27, Polish)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf
+  plik: /pliki/studia/przewodnik-mt-mgr.pdf
 - nazwa: Program studiów I i II stopnia — uchwała Senatu UWr nr 48/2026
   nazwa_en: Bachelor's and master's curriculum — UWr Senate resolution no. 48/2026 (Polish)
   plik: https://bip.uni.wroc.pl/download/attachment/52226/uchwala-nr-48_2026-senatu-uwr-z-2026-05-27-w-sprawie-programu-studiow-dla-kierunku-matematyka-stacjonarne-i-i-ii-stopnia.pdf
 - nazwa: Zmiany w ofercie dydaktycznej w związku z nowym programem (2026)
   nazwa_en: Changes in the course offer due to the new curriculum (2026, Polish)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf
+  plik: /pliki/studia/zmiany2026.pdf
 - nazwa: Zakres egzaminu magisterskiego — matematyka teoretyczna (dla programu z 2019 r. lub późniejszego)
   nazwa_en: Master's exam syllabus — theoretical mathematics (for curricula from 2019 onwards, Polish)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/mgr21-te-zakres.pdf
+  plik: /pliki/studia/mgr21-te-zakres.pdf
 - nazwa: Stary program studiów I i II stopnia — uchwała Senatu UWr nr 40/2022
   nazwa_en: Previous curriculum — UWr Senate resolution no. 40/2022 (Polish)
   plik: https://bip.uni.wroc.pl/download/attachment/33011/uchwala-nr-40_2022-senatu-uwr-z-dnia-2022-04-20-w-sprawie-programu-studiow-dla-kierunku-matematyka-i-i-ii-stopnia.pdf
@@ -278,12 +278,12 @@ faq:
     The exam has a written and an oral part. According to the specialisation rules, the written part consists of 4 problems, 2 of which concern two group A courses of your choice — so it is worth passing at least two group A courses during your studies. You choose the problem areas when registering for the exam. The oral part concerns the topic of your master's thesis. Details: [Exams and diploma](/studia/egzaminy-i-dyplom#egzamin-magisterski).
 zrodla:
 - https://www.math.uni.wroc.pl/matematyka
-- https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-teoretyczna.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf (wersja z 25.09.2026)
-- https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/stary-program-mt-lic.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/mgr21-te-zakres.pdf
+- /pliki/studia/spec-matematyka-teoretyczna.pdf
+- /pliki/studia/przewodnik-mt-lic.pdf (wersja z 25.09.2026)
+- /pliki/studia/przewodnik-mt-mgr.pdf
+- /pliki/studia/zmiany2026.pdf
+- /pliki/studia/stary-program-mt-lic.pdf
+- /pliki/studia/mgr21-te-zakres.pdf
 - Strona „Egzamin magisterski” (stara strona IM, kopia w strony.json)
 - Uchwała Senatu UWr nr 48/2026 (BIP) — sylwetka absolwenta i opis potrzeb społeczno-gospodarczych dla specjalności matematyka teoretyczna (I stopień)
 do_uzupelnienia:

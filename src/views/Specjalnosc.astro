@@ -31,7 +31,12 @@ const inne = (await getCollection('specjalnosci')).filter((s) => s.data.kierunek
 const zaklad = d.zaklad ? (await zaklady()).find((z) => z.id === d.zaklad) : undefined;
 const osoby = await pracownicy();
 // imię i nazwisko jak w spisie pracowników (bez tytułów) — wtedy pokazujemy e-mail, pokój i telefon
-const opiekunowie = d.opiekunowie.map((o) => ({ ...o, osoba: osoby.find((p) => p.data.imie_nazwisko === o.imie_nazwisko.trim()) }));
+// (przy dwóch wpisach o tym samym nazwisku pierwszeństwo ma nauczyciel akademicki, nie administracja)
+const znajdz = (n: string) => {
+  const kand = osoby.filter((p) => p.data.imie_nazwisko === n.trim());
+  return kand.find((p) => p.data.grupa === 'nauczyciel') ?? kand.find((p) => p.data.grupa !== 'administracja') ?? kand[0];
+};
+const opiekunowie = d.opiekunowie.map((o) => ({ ...o, osoba: znajdz(o.imie_nazwisko) }));
 const nazwa = w(d, 'nazwa');
 
 const sekcje = [
@@ -125,7 +130,7 @@ const sekcje = [
         <section class="zsec" aria-labelledby="dokumenty">
           <h2 id="dokumenty">{T('Dokumenty', 'Documents')}</h2>
           <ul class="files">
-            {d.dokumenty.map((x) => <li><a href={href(x.plik)}><Ikona nazwa="plik" /><span>{w(x, 'nazwa')}{x.opis && <small class="muted" style="display:block;font-weight:500">{x.opis}</small>}</span></a></li>)}
+            {d.dokumenty.map((x) => <li><a href={href(x.plik)}><Ikona nazwa="plik" /><span>{w(x, 'nazwa')}{x.opis && <small class="muted" style="display:block;font-weight:500">{w(x, 'opis')}</small>}</span></a></li>)}
           </ul>
         </section>
       )}

@@ -233,15 +233,15 @@ dokumenty:
   opis: Wymagane pojęcia i przykładowe zadania; dotyczy programu z 1 października 2022 r. lub późniejszego.
 - nazwa: Przewodnik po programie studiów I stopnia (od 2026/27)
   nazwa_en: Guide to the bachelor's curriculum from 2026/27 (Polish)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf
+  plik: /pliki/studia/przewodnik-mt-lic.pdf
   opis: Plan specjalności — Tabela 17; wybór specjalności — rozdział IX.
 - nazwa: Przewodnik po programie studiów II stopnia (od 2026/27)
   nazwa_en: Guide to the master's curriculum from 2026/27 (Polish)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf
+  plik: /pliki/studia/przewodnik-mt-mgr.pdf
   opis: Plan specjalności — Tabela 6; wymagania wstępne — rozdział I.
 - nazwa: Harmonogram zmian w ofercie przedmiotów (2026)
   nazwa_en: Schedule of changes in the course offer (2026, Polish)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf
+  plik: /pliki/studia/zmiany2026.pdf
   opis: Część C — zmiany w harmonogramie przedmiotów kształcenia nauczycielskiego, dotyczące także starego programu.
 - nazwa: Zarządzenie nr 13/2021 Rektora UWr — tryb kształcenia przygotowującego do wykonywania zawodu nauczyciela
   nazwa_en: Rector's Ordinance No. 13/2021 on teacher training at the University of Wrocław (Polish)
@@ -291,14 +291,14 @@ zrodla:
 - https://www.math.uni.wroc.pl/specjalnosci-0
 - https://www.math.uni.wroc.pl/pracownia-dydaktyki-matematyki
 - https://www.math.uni.wroc.pl/egzamin-magisterski
-- https://www.math.uni.wroc.pl/sites/default/files/spec-matematyka-nauczycielska.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-lic.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/przewodnik-mt-mgr.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/regulamin-praktyk-nauczycielskich-2026.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/mgr22-na-zakres.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/prace_lic3.pdf
-- https://www.math.uni.wroc.pl/sites/default/files/tem6.pdf
+- /pliki/studia/spec-matematyka-nauczycielska.pdf
+- /pliki/studia/przewodnik-mt-lic.pdf
+- /pliki/studia/przewodnik-mt-mgr.pdf
+- /pliki/studia/zmiany2026.pdf
+- /pliki/studia/regulamin-praktyk-nauczycielskich-2026.pdf
+- /pliki/studia/mgr22-na-zakres.pdf
+- /pliki/studia/prace_lic3.pdf
+- /pliki/studia/tem6.pdf
 - https://bip.uni.wroc.pl/download/attachment/52226/uchwala-nr-48_2026-senatu-uwr-z-2026-05-27-w-sprawie-programu-studiow-dla-kierunku-matematyka-stacjonarne-i-i-ii-stopnia.pdf
 - https://bip.uni.wroc.pl/download/attachment/33781/tekst-ujednolicony-13-2021-ksztalcenie-nauczycieli.pdf
 do_uzupelnienia:
@@ -330,7 +330,7 @@ tresc_en: |
 
   ### 2022 curriculum (studies started 2022/23–2025/26)
 
-  If you started your studies between 2022/23 and 2025/26, the [rules for teacher training under the 2022 curriculum](/pliki/studia/spec-matematyka-nauczycielska.pdf) apply (Polish; among other things, declaration on form D by 31 December of the 1st semester, and the option of obtaining teacher training without the specialisation). With the new curriculum from 2026/27, the recommended schedule of some teacher-training courses has changed — also for students following the old curriculum (for example, *Methods of teaching mathematics I* and *Placement – teaching mathematics I* are not offered in 2026/27). Details: [schedule of changes](https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf) (Polish).
+  If you started your studies between 2022/23 and 2025/26, the [rules for teacher training under the 2022 curriculum](/pliki/studia/spec-matematyka-nauczycielska.pdf) apply (Polish; among other things, declaration on form D by 31 December of the 1st semester, and the option of obtaining teacher training without the specialisation). With the new curriculum from 2026/27, the recommended schedule of some teacher-training courses has changed — also for students following the old curriculum (for example, *Methods of teaching mathematics I* and *Placement – teaching mathematics I* are not offered in 2026/27). Details: [schedule of changes](/pliki/studia/zmiany2026.pdf) (Polish).
 ---
 
 Specjalność *matematyka nauczycielska* przygotowuje do pracy nauczyciela matematyki w szkole. Obok matematyki poznajesz psychologię, pedagogikę i dydaktykę, a umiejętności sprawdzasz podczas praktyk w szkołach. Kształcenie nauczycielskie podlega standardowi kształcenia przygotowującego do wykonywania zawodu nauczyciela (rozporządzenie Ministra Nauki i Szkolnictwa Wyższego z 25 lipca 2019 r.), który określa wymagania niezbędne do uzyskania uprawnień do nauczania w szkole; na Uniwersytecie Wrocławskim tryb tego kształcenia określa zarządzenie Rektora nr 13/2021. Kształcenie obejmuje przygotowanie merytoryczne, psychologiczno-pedagogiczne i dydaktyczne (w tym podstawy dydaktyki i emisję głosu).
@@ -351,4 +351,4 @@ Praktyki są obowiązkową częścią specjalności: na studiach I stopnia prakt
 
 ### Program z 2022 r. (studia rozpoczęte 2022/23–2025/26)
 
-Jeśli rozpocząłeś/rozpoczęłaś studia w latach 2022/23–2025/26, obowiązują Cię [zasady realizacji kształcenia nauczycielskiego według programu z 2022 r.](/pliki/studia/spec-matematyka-nauczycielska.pdf) (m.in. deklaracja na formularzu D do 31 grudnia 1. semestru oraz możliwość uzyskania przygotowania do zawodu nauczyciela bez realizacji specjalności). W związku z nowym programem od 2026/27 zmienił się zalecany harmonogram niektórych przedmiotów kształcenia nauczycielskiego — także dla studiujących według starego programu (np. w roku 2026/27 nie są oferowane *Metodyka nauczania matematyki I* ani *Praktyka – nauczanie matematyki I*). Szczegóły: [harmonogram zmian](https://www.math.uni.wroc.pl/sites/default/files/zmiany2026.pdf).
+Jeśli rozpocząłeś/rozpoczęłaś studia w latach 2022/23–2025/26, obowiązują Cię [zasady realizacji kształcenia nauczycielskiego według programu z 2022 r.](/pliki/studia/spec-matematyka-nauczycielska.pdf) (m.in. deklaracja na formularzu D do 31 grudnia 1. semestru oraz możliwość uzyskania przygotowania do zawodu nauczyciela bez realizacji specjalności). W związku z nowym programem od 2026/27 zmienił się zalecany harmonogram niektórych przedmiotów kształcenia nauczycielskiego — także dla studiujących według starego programu (np. w roku 2026/27 nie są oferowane *Metodyka nauczania matematyki I* ani *Praktyka – nauczanie matematyki I*). Szczegóły: [harmonogram zmian](/pliki/studia/zmiany2026.pdf).
