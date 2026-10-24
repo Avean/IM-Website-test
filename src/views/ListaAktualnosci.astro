@@ -60,7 +60,7 @@ const lead = lang === 'en' ? 'Announcements, events and achievements of the Math
       </p>
     </div>
 
-    <aside class="side">
+    <aside class="side" data-pagefind-ignore>
       <div class="side-box">
         <h2>{t(lang, 'najblizsze')}</h2>
         {wydarzenia.length ? wydarzenia.map((w) => <KartaWydarzenia w={w} lang={lang} maly />) : <p class="muted" style="margin:0">{t(lang, 'brakWydarzen')}</p>}

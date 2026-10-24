@@ -7,7 +7,7 @@ import KartaWydarzenia from '../components/KartaWydarzenia.astro';
 import Galeria from '../components/Galeria.tsx';
 import { u, isExternal, absolute } from '../lib/url';
 import { t, wJezyku, RODZAJE, ODBIORCY } from '../lib/i18n';
-import { short, longWithDay, range, dayNum, monthShort, now, today, hasTime, type Lang } from '../lib/daty';
+import { short, longWithDay, range, dayNum, monthShort, now, today, hasTime, plusMinutes, type Lang } from '../lib/daty';
 import { slugOf, najblizszeWydarzenia, trwaLubBedzie, type Aktualnosc, type Wydarzenie } from '../lib/tresci';
 import { renderMarkdown } from '../lib/markdown';
 import { linkGoogle, adresIcs } from '../lib/kalendarz';
@@ -31,7 +31,8 @@ const tylkoPolski = lang === 'en' && !d.tresc_en;
 
 const wydarzenie: Wydarzenie | undefined = d.wydarzenie_poczatek
   ? {
-      rodzaj: 'wydarzenie', tytul, poczatek: d.wydarzenie_poczatek, koniec: d.wydarzenie_koniec, miejsce: d.wydarzenie_miejsce,
+      rodzaj: 'wydarzenie', tytul, poczatek: d.wydarzenie_poczatek, koniec: d.wydarzenie_koniec,
+      koniecIcs: d.wydarzenie_koniec || (hasTime(d.wydarzenie_poczatek) ? plusMinutes(d.wydarzenie_poczatek, 120) : undefined), miejsce: d.wydarzenie_miejsce,
       href: `/aktualnosci/${slug}`, uid: `akt-${slug}`, opis: zajawka,
     }
   : undefined;
@@ -144,7 +145,7 @@ const adres = absolute(wJezyku(`/aktualnosci/${slug}`, lang), Astro.site);
       )}
     </article>
 
-    <aside class="side">
+    <aside class="side" data-pagefind-ignore>
       <div class="side-box">
         <h2>{t(lang, 'najblizsze')}</h2>
         {najblizsze.length ? najblizsze.map((w) => <KartaWydarzenia w={w} lang={lang} maly />) : <p class="muted" style="margin:0">{t(lang, 'brakWydarzen')}</p>}

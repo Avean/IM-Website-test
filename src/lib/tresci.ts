@@ -55,7 +55,10 @@ export interface Wydarzenie {
   tytul: string;
   podtytul?: string;
   poczatek: string;
+  // koniec podany przez redaktora (wyświetlany na stronie)
   koniec?: string;
+  // koniec do kalendarza .ics i do ustalania, czy wydarzenie trwa (domyślnie +2 h / +1,5 h)
+  koniecIcs?: string;
   miejsce?: string;
   href: string;
   uid: string;
@@ -72,14 +75,14 @@ export async function wszystkieWydarzenia(lang: Lang = 'pl'): Promise<Wydarzenie
     if (!a.data.wydarzenie_poczatek) continue;
     out.push({
       rodzaj: 'wydarzenie', tytul: (lang === 'en' && a.data.tytul_en) || a.data.tytul, poczatek: a.data.wydarzenie_poczatek,
-      koniec: a.data.wydarzenie_koniec || koniecDomyslny(a.data.wydarzenie_poczatek, 120),
+      koniec: a.data.wydarzenie_koniec, koniecIcs: a.data.wydarzenie_koniec || koniecDomyslny(a.data.wydarzenie_poczatek, 120),
       miejsce: a.data.wydarzenie_miejsce, href: `/aktualnosci/${slugOf(a.id)}`, uid: `akt-${slugOf(a.id)}`, opis: (lang === 'en' && a.data.zajawka_en) || a.data.zajawka,
     });
   }
   for (const o of obr) {
     out.push({
       rodzaj: 'obrona', tytul: `${lang === 'en' ? 'PhD defence' : 'Obrona doktoratu'}: ${o.data.kandydat}`, podtytul: o.data.tytul_rozprawy, poczatek: o.data.termin,
-      koniec: koniecDomyslny(o.data.termin, 120), miejsce: o.data.miejsce, href: `/obrony-doktorskie/${slugOf(o.id)}`, uid: `obr-${slugOf(o.id)}`,
+      koniecIcs: koniecDomyslny(o.data.termin, 120), miejsce: o.data.miejsce, href: `/obrony-doktorskie/${slugOf(o.id)}`, uid: `obr-${slugOf(o.id)}`,
     });
   }
   for (const r of ref) {
@@ -87,7 +90,7 @@ export async function wszystkieWydarzenia(lang: Lang = 'pl'): Promise<Wydarzenie
     if (!nazwy.has(semId)) continue;
     out.push({
       rodzaj: 'referat', tytul: r.data.tytul, podtytul: `${r.data.prelegent}${r.data.afiliacja ? ` (${r.data.afiliacja})` : ''}`,
-      poczatek: r.data.termin, koniec: koniecDomyslny(r.data.termin, 90), miejsce: sala(r.data.sala, lang),
+      poczatek: r.data.termin, koniecIcs: koniecDomyslny(r.data.termin, 90), miejsce: sala(r.data.sala, lang),
       href: `/seminaria/${semId}#${slugOf(r.id)}`, uid: `ref-${semId}-${slugOf(r.id)}`, opis: `${lang === 'en' ? 'Seminar' : 'Seminarium'}: ${nazwy.get(semId)}`,
     });
   }
@@ -95,9 +98,9 @@ export async function wszystkieWydarzenia(lang: Lang = 'pl'): Promise<Wydarzenie
 }
 
 // Czy wydarzenie jeszcze się nie skończyło.
-export function trwaLubBedzie(w: { poczatek: string; koniec?: string }): boolean {
+export function trwaLubBedzie(w: { poczatek: string; koniec?: string; koniecIcs?: string }): boolean {
   const n = now();
-  const end = w.koniec || w.poczatek;
+  const end = w.koniec || w.koniecIcs || w.poczatek;
   return hasTime(end) ? end >= n : end >= today();
 }
 

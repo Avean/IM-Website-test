@@ -6,7 +6,7 @@ import NaglowekStrony from '../components/NaglowekStrony.astro';
 import Ikona from '../components/Ikona.astro';
 import { u, isExternal } from '../lib/url';
 import { t, wJezyku } from '../lib/i18n';
-import { longWithDay, short, dayNum, monthShort, type Lang } from '../lib/daty';
+import { longWithDay, short, dayNum, monthShort, plusMinutes, type Lang } from '../lib/daty';
 import { slugOf, trwaLubBedzie, type Obrona, type Wydarzenie } from '../lib/tresci';
 import { linkGoogle, adresIcs } from '../lib/kalendarz';
 
@@ -18,7 +18,7 @@ const { Content } = await render(obrona);
 const href = (a: string) => (isExternal(a) ? a : u(a));
 const tytul = `${lang === 'en' ? 'PhD defence' : 'Obrona doktoratu'}: ${d.kandydat}`;
 const w: Wydarzenie = {
-  rodzaj: 'obrona', tytul, podtytul: d.tytul_rozprawy, poczatek: d.termin, miejsce: d.miejsce,
+  rodzaj: 'obrona', tytul, podtytul: d.tytul_rozprawy, poczatek: d.termin, koniecIcs: plusMinutes(d.termin, 120), miejsce: d.miejsce,
   href: `/obrony-doktorskie/${slug}`, uid: `obr-${slug}`,
 };
 const przyszla = trwaLubBedzie(w);
@@ -64,7 +64,7 @@ const dokumenty = [
       {d.bip && <p class="article-block"><a class="link-arrow" href={d.bip}>{t(lang, 'bip')}<Ikona nazwa="zewnetrzny" rozmiar={14} /></a></p>}
       {d.data_ogloszenia && <p class="muted" style="font-size:14px;margin-top:24px">{t(lang, 'opublikowano')} {short(d.data_ogloszenia)}</p>}
     </div>
-    <aside class="side">
+    <aside class="side" data-pagefind-ignore>
       <a class="link-arrow" href={u(wJezyku('/obrony-doktorskie', lang))}><Ikona nazwa="wstecz" rozmiar={16} />{t(lang, 'obrony')}</a>
     </aside>
   </div>

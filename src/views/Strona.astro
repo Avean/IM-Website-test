@@ -37,7 +37,7 @@ const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
       </div>
     </div>
     {linkiDzialu.length > 0 && (
-      <aside class="side">
+      <aside class="side" data-pagefind-ignore>
         <nav class="side-box" aria-label={wybierz(dzial, 'etykieta', lang)}>
           <h2>{wybierz(dzial, 'etykieta', lang)}</h2>
           <div style="display:flex;flex-direction:column">

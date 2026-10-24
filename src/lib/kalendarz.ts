@@ -45,7 +45,7 @@ const dzien = (s: string) => s.slice(0, 10).replace(/-/g, '');
 
 function zakres(w: Wydarzenie): string[] {
   if (hasTime(w.poczatek)) {
-    const koniec = w.koniec && hasTime(w.koniec) ? w.koniec : plusMinutes(w.poczatek, 90);
+    const koniec = w.koniec && hasTime(w.koniec) ? w.koniec : w.koniecIcs && hasTime(w.koniecIcs) ? w.koniecIcs : plusMinutes(w.poczatek, 90);
     return [`DTSTART;TZID=Europe/Warsaw:${ics(w.poczatek)}`, `DTEND;TZID=Europe/Warsaw:${ics(koniec)}`];
   }
   const ostatni = w.koniec ? w.koniec.slice(0, 10) : w.poczatek.slice(0, 10);
@@ -88,7 +88,7 @@ export function plikIcs(wydarzenia: Wydarzenie[], nazwa: string, site: URL | und
 export function linkGoogle(w: Wydarzenie, site: URL | undefined): string {
   let dates: string;
   if (hasTime(w.poczatek)) {
-    const koniec = w.koniec && hasTime(w.koniec) ? w.koniec : plusMinutes(w.poczatek, 90);
+    const koniec = w.koniec && hasTime(w.koniec) ? w.koniec : w.koniecIcs && hasTime(w.koniecIcs) ? w.koniecIcs : plusMinutes(w.poczatek, 90);
     dates = `${ics(w.poczatek)}/${ics(koniec)}`;
   } else {
     const ostatni = w.koniec ? w.koniec.slice(0, 10) : w.poczatek.slice(0, 10);

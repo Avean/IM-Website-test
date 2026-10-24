@@ -73,7 +73,7 @@ const webcal = absolute(feed, Astro.site).replace(/^https?:/, 'webcal:');
       {d.archiwum && <p style="margin-top:28px"><a class="link-arrow" href={d.archiwum}>{t(lang, 'archiwumSem')}<Ikona nazwa="zewnetrzny" rozmiar={14} /></a></p>}
     </div>
 
-    <aside class="side">
+    <aside class="side" data-pagefind-ignore>
       <div class="side-box">
         <dl class="info-list">
           {d.termin && <><dt>{t(lang, 'termin')}</dt><dd>{d.termin}</dd></>}
