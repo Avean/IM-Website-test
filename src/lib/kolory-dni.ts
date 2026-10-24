@@ -16,11 +16,23 @@ export type Kolor = 'niebieski' | 'pomaranczowy';
 export interface Wolne { od: string; do?: string | null; opis?: string | null; opis_en?: string | null }
 export interface Zamiana { data: string; jak_dzien: string }
 export interface Wyjatek { data: string; kolor: string }
+// Terminy semestru do tabeli „Rok w skrócie” (zajęcia = poczatek–koniec). Wszystkie pola opcjonalne.
+export interface TerminySemestru {
+  semestr_od?: string | null;
+  semestr_do?: string | null;
+  inauguracja?: string | null;
+  sesja_od?: string | null;
+  sesja_do?: string | null;
+  poprawkowa_od?: string | null;
+  poprawkowa_do?: string | null;
+  przerwy?: { od?: string | null; do?: string | null }[] | null;
+}
 export interface Semestr {
   nazwa: string;
   nazwa_en?: string | null;
   poczatek: string;
   koniec: string;
+  terminy?: TerminySemestru | null;
   pdf?: string | null;
   uwagi?: string | null;
   uwagi_en?: string | null;
@@ -478,4 +490,34 @@ export function pozycjeZamianDni(lang: Lang, dzis: string) {
       rodzaj: 'ogloszenie', tytul: a.tytul, data: a.od, zajawka: a.zajawka, dla: ['studenci', 'pracownicy'],
       href: a.href, wydarzenie: a.data, id: `zam-${a.data}`, pilne: true,
     }));
+}
+
+// ---------- „Rok w skrócie”: terminy semestru ----------
+export interface WierszTerminow { etykieta: string; wartosc: string; wazne: boolean }
+
+const MIES_EN = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+// „1.10.2026” / „1 Oct 2026” (w angielskiej dacie twarde spacje — zakres łamie się tylko przy „–”)
+export function dataKrotka(d: string, lang: Lang = 'pl'): string {
+  const [y, m, dd] = d.split('-').map(Number);
+  return lang === 'en' ? `${dd}\u00a0${MIES_EN[m - 1]}\u00a0${y}` : `${dd}.${String(m).padStart(2, '0')}.${y}`;
+}
+const okres = (od: unknown, d: unknown, lang: Lang): string => {
+  const a = dzien(od), b = dzien(d);
+  if (!poprawna(a)) return '';
+  return poprawna(b) && b !== a ? `${dataKrotka(a, lang)} – ${dataKrotka(b, lang)}` : dataKrotka(a, lang);
+};
+
+// Wiersze tabeli terminów semestru; puste pola są pomijane. Zajęcia zawsze z okresu zajęć semestru.
+export function terminySemestru(s: Semestr, lang: Lang = 'pl'): WierszTerminow[] {
+  const T = (pl: string, en: string) => (lang === 'en' ? en : pl);
+  const t = s.terminy ?? {};
+  const przerwy = (t.przerwy ?? []).map((p) => okres(p?.od, p?.do, lang)).filter(Boolean);
+  return [
+    { etykieta: T('Semestr', 'Semester'), wartosc: okres(t.semestr_od, t.semestr_do, lang), wazne: false },
+    { etykieta: T('Uroczysta inauguracja roku', 'Inauguration of the academic year'), wartosc: okres(t.inauguracja, null, lang), wazne: false },
+    { etykieta: T('Zajęcia dydaktyczne', 'Classes'), wartosc: okres(s.poczatek, s.koniec, lang), wazne: true },
+    { etykieta: T('Sesja egzaminacyjna', 'Exam session'), wartosc: okres(t.sesja_od, t.sesja_do, lang), wazne: true },
+    { etykieta: T('Sesja poprawkowa', 'Resit session'), wartosc: okres(t.poprawkowa_od, t.poprawkowa_do, lang), wazne: true },
+    { etykieta: T('Przerwa semestralna (wakacje)', 'Semester break (holidays)'), wartosc: przerwy.join(T(' oraz ', ' and ')), wazne: false },
+  ].filter((w) => w.wartosc);
 }
