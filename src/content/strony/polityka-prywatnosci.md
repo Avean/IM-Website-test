@@ -12,6 +12,7 @@ tresc_en: |
   - The site is hosted on GitHub Pages; the host may keep technical server logs (e.g. IP address) for security purposes.
   - Links to external services (Facebook, USOSweb and others) lead to sites with their own privacy policies.
   - The theme choice (light or dark) is stored only in your browser (localStorage) and is never sent anywhere.
+  - The Google map on the Institute page (Contact and getting here) loads only after you click „Show Google map”; from then on Google (Google Maps) may set its own cookies. The choice is remembered in your browser (localStorage).
 
   ## Seminar email notifications
 
@@ -33,6 +34,7 @@ opublikowany: true
 - Strona jest hostowana w serwisie GitHub Pages; dostawca może przechowywać techniczne logi serwera (np. adres IP) w celach bezpieczeństwa.
 - Odnośniki do usług zewnętrznych (Facebook, USOSweb i inne) prowadzą do serwisów z własnymi zasadami prywatności.
 - Wybór trybu jasnego lub ciemnego jest zapisywany wyłącznie w Twojej przeglądarce (localStorage) i nigdzie nie jest wysyłany.
+- Mapa Google na stronie Instytutu (Kontakt i dojazd) ładuje się dopiero po kliknięciu „Pokaż mapę Google”; od tej chwili Google (Google Maps) może zapisywać własne pliki cookies. Wybór jest zapamiętywany w Twojej przeglądarce (localStorage).
 
 ## Powiadomienia e-mail o seminariach
 

@@ -28,14 +28,12 @@ const odm = (n: number, pl: [string, string, string], en: [string, string]) => {
 
 const listaZakladow = await zaklady();
 const osoby = await pracownicy();
-const aktywneSeminaria = (await seminaria()).filter((s) => s.data.aktywne !== false);
 const ileNauczycieli = osoby.filter((o) => o.data.grupa === 'nauczyciel').length;
 const ileDoktorantow = osoby.filter((o) => o.data.grupa === 'doktorant').length;
 const liczby = [
   { n: ileNauczycieli, l: odm(ileNauczycieli, ['nauczyciel akademicki', 'nauczycieli akademickich', 'nauczycieli akademickich'], ['academic staff member', 'academic staff']) },
   { n: ileDoktorantow, l: odm(ileDoktorantow, ['doktorant', 'doktorantów', 'doktorantów'], ['PhD student', 'PhD students']) },
   { n: listaZakladow.length, l: odm(listaZakladow.length, ['zakład lub pracownia', 'zakłady i pracownie', 'zakładów i pracowni'], ['department or unit', 'departments and units']) },
-  { n: aktywneSeminaria.length, l: odm(aktywneSeminaria.length, ['aktywne seminarium', 'aktywne seminaria', 'aktywnych seminariów'], ['active seminar', 'active seminars']) },
 ].filter((x) => x.n > 0);
 
 // Kafelki: grupy i linki z menu „Instytut” (nowy link w menu sam pojawi się tutaj).
@@ -53,7 +51,9 @@ const sukcesy = (await aktualnosci()).filter((a) => a.data.rodzaj === 'sukces').
 
 const k = ustawienia.kontakt;
 const godziny = wybierz(dzial, 'kontakt_godziny', lang);
-const mapa = k.adres ? `https://www.openstreetmap.org/search?query=${encodeURIComponent(k.adres)}` : undefined;
+const mapa = k.adres ? `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`Instytut Matematyczny Uniwersytetu Wrocławskiego, ${k.adres}`)}` : undefined;
+// Mapa Google osadzana dopiero po kliknięciu (bez cookies Google do czasu zgody — patrz Polityka prywatności)
+const mapaEmbed = k.adres ? `https://www.google.com/maps?q=${encodeURIComponent(`Instytut Matematyczny Uniwersytetu Wrocławskiego, ${k.adres}`)}&output=embed&hl=${lang}` : undefined;
 
 const naglowek = T('Instytut', 'Institute');
 const lead = wybierz(dzial, 'wstep', lang);
@@ -140,6 +140,7 @@ const sukcesyOpis = wybierz(dzial, 'sukcesy_opis', lang);
 
     <section class="zsec" aria-labelledby="kontakt">
       <h2 id="kontakt">{T('Kontakt i dojazd', 'Contact and getting here')}</h2>
+      <div class="dz-kontakt-uklad">
       <div class="dz-card">
         <p class="dz-name">{t(lang, 'instytut')}, {t(lang, 'uwr')}</p>
         <ul class="dz-kontakt">
@@ -148,6 +149,16 @@ const sukcesyOpis = wybierz(dzial, 'sukcesy_opis', lang);
           {k.email && <li><Ikona nazwa="mail" rozmiar={20} /><a href={`mailto:${k.email}`}>{k.email}</a></li>}
           {godziny && <li><Ikona nazwa="zegar" rozmiar={20} /><span>{godziny}</span></li>}
         </ul>
+      </div>
+      {mapaEmbed && (
+        <div class="dz-mapa" data-mapa={mapaEmbed} data-tytul={T('Mapa: Instytut Matematyczny, pl. Grunwaldzki 2, Wrocław', 'Map: Mathematical Institute, pl. Grunwaldzki 2, Wrocław')}>
+          <button type="button" class="dz-mapa-btn" data-mapa-pokaz>
+            <Ikona nazwa="pinezka" rozmiar={30} />
+            <span class="t">{T('Pokaż mapę Google', 'Show Google map')}</span>
+            <span class="s">{T('Mapa załaduje się z serwisu Google Maps — Google może zapisać pliki cookies.', 'The map loads from Google Maps — Google may set cookies.')}</span>
+          </button>
+        </div>
+      )}
       </div>
       <p class="dz-more">
         <a class="link-arrow" href={href('/instytut/kontakt')}>{T('Wszystkie dane kontaktowe', 'Full contact details')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
@@ -165,10 +176,41 @@ const sukcesyOpis = wybierz(dzial, 'sukcesy_opis', lang);
   .dz-tiles { grid-template-columns: 1fr; gap: 8px; padding-top: 0; }
   .dz-tile { flex-direction: row; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; }
   .dz-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-  .dz-card { max-width: 560px; padding: 20px 22px; border-radius: var(--radius-l); background: var(--surface); }
+  .dz-kontakt-uklad { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 16px; align-items: stretch; }
+  .dz-card { padding: 20px 22px; border-radius: var(--radius-l); background: var(--surface); }
+  .dz-mapa { position: relative; min-height: 300px; border-radius: var(--radius-l); overflow: hidden; background: var(--surface); background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px); background-size: 32px 32px; }
+  .dz-mapa :global(iframe) { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+  .dz-mapa-btn { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; padding: 24px; border: 0; background: transparent; color: var(--ink); font: inherit; text-align: center; cursor: pointer; }
+  .dz-mapa-btn :global(svg) { color: var(--primary); }
+  :global(:root[data-theme='dark']) .dz-mapa-btn :global(svg) { color: var(--accent); }
+  .dz-mapa-btn .t { padding: 10px 18px; border-radius: 999px; background: var(--bg); font-weight: 700; box-shadow: var(--shadow); }
+  .dz-mapa-btn:hover .t { background: var(--primary); color: var(--primary-ink); }
+  .dz-mapa-btn .s { max-width: 320px; font-size: 13px; color: var(--muted); }
   .dz-name { margin: 0 0 12px; font-weight: 800; color: var(--ink); }
   .dz-kontakt { display: grid; gap: 10px; margin: 0; padding: 0; list-style: none; font-size: 17px; }
   .dz-kontakt li { display: flex; align-items: flex-start; gap: 12px; }
   .dz-kontakt li :global(svg) { flex: 0 0 auto; margin-top: 2px; color: var(--primary); }
   :global(:root[data-theme='dark']) .dz-kontakt li :global(svg) { color: var(--accent); }
 </style>
+
+<script>
+  // Mapa Google: ładowana dopiero po kliknięciu; wybór zapamiętany w tej przeglądarce
+  const pokaz = (box: HTMLElement) => {
+    const f = document.createElement('iframe');
+    f.src = box.dataset.mapa || '';
+    f.title = box.dataset.tytul || 'Mapa';
+    f.loading = 'lazy';
+    f.referrerPolicy = 'no-referrer-when-downgrade';
+    f.allowFullscreen = true;
+    box.replaceChildren(f);
+  };
+  document.querySelectorAll<HTMLElement>('[data-mapa]').forEach((box) => {
+    let zgoda = false;
+    try { zgoda = localStorage.getItem('mapa-google') === '1'; } catch (e) {}
+    if (zgoda) pokaz(box);
+    box.querySelector('[data-mapa-pokaz]')?.addEventListener('click', () => {
+      try { localStorage.setItem('mapa-google', '1'); } catch (e) {}
+      pokaz(box);
+    });
+  });
+</script>
