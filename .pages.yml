@@ -233,17 +233,17 @@ content:
     format: yaml-frontmatter
     filename: "{primary}.md"
     view:
-      fields: [nazwa, termin, aktywne]
+      fields: [nazwa, prowadzacy, aktywne]
       primary: nazwa
     fields:
       - { name: nazwa, label: Nazwa seminarium, type: string, required: true }
       - { name: nazwa_en, label: "EN: nazwa", type: string }
       - name: prowadzacy
-        label: Prowadzący
+        label: "Koordynator (imię i nazwisko jak w spisie pracowników; tytuł doda się sam)"
+        description: "Termin i salę wpisuje się przy każdym referacie osobno."
         type: string
         list: true
-      - { name: termin, label: "Stały termin (np. czwartek 12:15–14:00, sala 711)", type: string }
-      - { name: kontakt, label: E-mail kontaktowy, type: string }
+      - { name: kontakt, label: E-mail kontaktowy (pod nazwiskiem koordynatora), type: string }
       - { name: strona, label: Zewnętrzna strona seminarium, type: string }
       - { name: archiwum, label: Link do archiwum referatów, type: string }
       - name: zaklad
@@ -758,7 +758,7 @@ content:
       - { name: rok_do, label: Rok zakończenia, type: number }
       - { name: kwota, label: Kwota (opcjonalnie), type: string }
       - name: zaklad
-        label: Zakład (opcjonalnie)
+        label: "Zakład (puste = zakład kierownika ze spisu pracowników)"
         type: select
         options:
           values:
@@ -774,7 +774,7 @@ content:
       - { name: strona, label: Strona projektu, type: string }
       - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
       - name: body
-        label: Opis projektu (opcjonalnie; z opisem projekt dostaje własną podstronę)
+        label: Opis projektu (opcjonalnie; pokazuje się na podstronie projektu pod danymi)
         type: rich-text
         options:
           format: markdown
@@ -826,6 +826,48 @@ content:
       - { name: opublikowany, label: Widoczny na stronie, type: boolean, default: true }
 
   # ---------------------------------------------------------------- STRONY
+  - name: kolory-dni
+    label: Kalendarz zajęć (kolory dni)
+    description: "Kolory liczą się same: wpisz okres zajęć, dni wolne (dni rektorskie, przerwy) i zamiany dni z zarządzenia o organizacji roku. Święta ustawowe są uwzględniane automatycznie. Podgląd: /studia/kalendarz-zajec (każdy dzień tygodnia powinien wypaść 15 razy)."
+    type: file
+    path: src/data/kolory-dni.json
+    format: json
+    fields:
+      - name: semestry
+        label: Semestry
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: "Nazwa (np. Semestr zimowy 2027/28)", type: string, required: true }
+          - { name: nazwa_en, label: "EN: nazwa", type: string }
+          - { name: poczatek, label: Pierwszy dzień zajęć, type: date, required: true, options: { format: yyyy-MM-dd } }
+          - { name: koniec, label: Ostatni dzień zajęć, type: date, required: true, options: { format: yyyy-MM-dd } }
+          - name: wolne
+            label: "Dni wolne od zajęć (święta ustawowe dodają się same)"
+            type: object
+            list: true
+            fields:
+              - { name: od, label: Od, type: date, options: { format: yyyy-MM-dd } }
+              - { name: do, label: "Do (puste = jeden dzień)", type: date, options: { format: yyyy-MM-dd } }
+              - { name: opis, label: "Opis (np. Przerwa świąteczna)", type: string }
+              - { name: opis_en, label: "EN: opis", type: string }
+          - name: zamiany
+            label: "Zamiany dni (np. w piątek zajęcia środowe)"
+            type: object
+            list: true
+            fields:
+              - { name: data, label: Data, type: date, options: { format: yyyy-MM-dd } }
+              - { name: jak_dzien, label: Zajęcia według planu, type: select, options: { values: [{ name: pon, label: poniedziałku }, { name: wt, label: wtorku }, { name: sr, label: środy }, { name: czw, label: czwartku }, { name: pt, label: piątku }] } }
+          - name: wyjatki
+            label: "Wyjątki: ręczny kolor jednego dnia (normalnie puste)"
+            type: object
+            list: true
+            fields:
+              - { name: data, label: Data, type: date, options: { format: yyyy-MM-dd } }
+              - { name: kolor, label: Kolor, type: select, options: { values: [{ name: niebieski, label: niebieski }, { name: pomaranczowy, label: pomarańczowy }] } }
+          - { name: pdf, label: "Kalendarz PDF (opcjonalnie)", type: file, options: { path: public/pliki/studia/kolory-dni } }
+          - { name: uwagi, label: "Uwaga nad kalendarzem (opcjonalnie)", type: text }
+          - { name: uwagi_en, label: "EN: uwaga", type: text }
   - name: strony
     label: Strony stałe
     description: Adres strony = ścieżka pliku, np. studia/matematyka.md → /studia/matematyka
@@ -1061,6 +1103,71 @@ content:
           - { name: juz_studiuje_en, label: "EN: opis ścieżki „Już studiuję”", type: string }
           - { name: sekretariat_zakres, label: "Kontakt: czym zajmuje się sekretariat dydaktyczny", type: string }
           - { name: sekretariat_zakres_en, label: "EN: zakres sekretariatu", type: string }
+
+      - name: wladze
+        label: Władze Instytutu (strona /instytut/wladze)
+        description: "Pierwsza osoba na liście = dyrektor (duża karta). Tytuł, e-mail, pokój, stronę domową i zakład strona bierze z „Pracowników” — imię i nazwisko wpisz dokładnie jak tam. Telefonów pracowników naukowych nie podajemy."
+        type: file
+        path: src/data/wladze.json
+        format: json
+        fields:
+          - { name: tytul, label: Tytuł strony, type: string }
+          - { name: tytul_en, label: "EN: tytuł", type: string }
+          - { name: wstep, label: Tekst pod tytułem, type: text }
+          - { name: wstep_en, label: "EN: tekst pod tytułem", type: text }
+          - name: osoby
+            label: Dyrekcja (pierwsza osoba = dyrektor)
+            type: object
+            list: true
+            fields:
+              - { name: rola, label: "Funkcja (np. Zastępca dyrektora ds. dydaktycznych)", type: string, required: true }
+              - { name: imie_nazwisko, label: "Imię i nazwisko (dokładnie jak w Pracownikach)", type: string, required: true }
+              - { name: zakres, label: "Zakres obowiązków (1–2 zdania, opcjonalnie)", type: text }
+              - { name: dyzur, label: "Dyżur / godziny przyjęć (opcjonalnie)", type: string }
+              - { name: zdjecie, label: "Zdjęcie (portret pionowy 4:5, np. 600×750 px)", type: image, options: { path: public/pliki/wladze } }
+              - { name: rola_en, label: "EN: funkcja", type: string }
+              - { name: zakres_en, label: "EN: zakres obowiązków", type: text }
+              - { name: dyzur_en, label: "EN: dyżur", type: string }
+              - { name: stopien, label: "Tytuł/stopień — tylko gdy osoby nie ma w Pracownikach", type: string }
+              - { name: email, label: "E-mail — tylko gdy osoby nie ma w Pracownikach", type: string }
+              - { name: pokoj, label: "Pokój — tylko gdy osoby nie ma w Pracownikach", type: string }
+              - { name: strona, label: "Strona domowa — tylko gdy osoby nie ma w Pracownikach", type: string }
+          - name: sekretariat
+            label: Sekretariat
+            type: object
+            fields:
+              - { name: nazwa, label: Nazwa sekcji, type: string }
+              - { name: opis, label: "Zdanie pod nazwą (opcjonalnie)", type: string }
+              - { name: email, label: E-mail, type: string }
+              - { name: telefony, label: "Telefony (np. +48 71 375 74 01)", type: string, list: true }
+              - { name: adres, label: Adres, type: string }
+              - { name: pokoj, label: Pokój, type: string }
+              - { name: godziny, label: Godziny pracy, type: string }
+              - { name: osoby, label: "Osoby (imię i nazwisko jak w Pracownikach — e-mail i telefon dobiorą się same)", type: string, list: true }
+              - { name: nazwa_en, label: "EN: nazwa sekcji", type: string }
+              - { name: opis_en, label: "EN: zdanie pod nazwą", type: string }
+              - { name: adres_en, label: "EN: adres", type: string }
+              - { name: godziny_en, label: "EN: godziny pracy", type: string }
+          - { name: kadencja, label: "Kadencja (Markdown; puste = sekcja ukryta)", type: text }
+          - { name: kadencja_en, label: "EN: kadencja", type: text }
+          - name: rada
+            label: Rada Instytutu
+            type: object
+            fields:
+              - { name: tytul, label: Nagłówek, type: string }
+              - { name: opis, label: "Opis (Markdown; puste = sekcja ukryta)", type: text }
+              - { name: tytul_en, label: "EN: nagłówek", type: string }
+              - { name: opis_en, label: "EN: opis", type: text }
+          - name: linki
+            label: Zobacz też (linki na dole strony)
+            type: object
+            list: true
+            fields:
+              - { name: etykieta, label: Napis, type: string, required: true }
+              - { name: adres, label: "Adres (https://… albo /ścieżka)", type: string, required: true }
+              - { name: etykieta_en, label: "EN: napis", type: string }
+          - { name: zrodla, label: Źródła (nie wyświetlają się), type: string, list: true }
+          - { name: do_uzupelnienia, label: Do uzupełnienia (nie wyświetla się), type: string, list: true }
 
       - name: popularyzacja
         label: Popularyzacja (strona /popularyzacja)

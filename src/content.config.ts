@@ -86,7 +86,6 @@ const seminaria = defineCollection({
     nazwa_en: optStr,
     prowadzacy: strList,
     kontakt: optStr,
-    termin: optStr,
     strona: optStr,
     grupa_google: optStr,
     archiwum: optStr,

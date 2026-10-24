@@ -28,7 +28,6 @@ export const GET: APIRoute = async ({ site }) => {
     id: s.id,
     nazwa: s.data.nazwa,
     nazwa_en: s.data.nazwa_en || s.data.nazwa,
-    termin: s.data.termin ?? '',
     adres: absolute(`/en/seminaria/${s.id}`, site),
   }));
   const znane = new Set(sem.map((s) => s.id));

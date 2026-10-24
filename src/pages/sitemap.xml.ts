@@ -6,16 +6,16 @@ import { absolute } from '../lib/url';
 import { wJezyku } from '../lib/i18n';
 
 export async function GET(context: APIContext) {
-  const sciezki: string[] = ['/', '/instytut', '/nauka', '/studia', '/popularyzacja', '/aktualnosci', '/kalendarz', '/seminaria', '/pracownicy', '/obrony-doktorskie', '/nauka/konferencje', '/nauka/granty', '/nauka/sukcesy'];
+  const sciezki: string[] = ['/', '/instytut', '/nauka', '/studia', '/popularyzacja', '/aktualnosci', '/kalendarz', '/seminaria', '/pracownicy', '/obrony-doktorskie', '/nauka/konferencje', '/nauka/granty', '/nauka/sukcesy', '/studia/kalendarz-zajec'];
   for (const a of await aktualnosci()) sciezki.push(`/aktualnosci/${slugOf(a.id)}`);
   for (const o of await obrony()) sciezki.push(`/obrony-doktorskie/${slugOf(o.id)}`);
   for (const s of await seminaria()) sciezki.push(`/seminaria/${s.id}`);
   for (const k of await konferencje()) sciezki.push(`/nauka/konferencje/${slugOf(k.id)}`);
-  for (const g of await granty()) if (g.body?.trim()) sciezki.push(`/nauka/granty/${slugOf(g.id)}`);
+  for (const g of await granty()) sciezki.push(`/nauka/granty/${slugOf(g.id)}`);
   for (const s of await getCollection('strony')) if (s.data.opublikowany !== false) sciezki.push(`/${s.id}`);
   for (const k of await getCollection('kierunki')) if (k.data.opublikowany !== false) sciezki.push(`/studia/${k.id}`);
   for (const z of await getCollection('zaklady')) if (z.data.opublikowany !== false) sciezki.push(`/instytut/zaklady/${z.id}`);
-  sciezki.push('/instytut/struktura');
+  sciezki.push('/instytut/struktura', '/instytut/wladze');
   for (const s of await getCollection('specjalnosci')) if (s.data.opublikowany !== false && !s.data.bez_podstrony) sciezki.push(`/studia/${s.data.kierunek}/${s.id}`);
   const url = (p: string) => absolute(p, context.site);
   const wpisy = sciezki

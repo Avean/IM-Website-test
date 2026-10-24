@@ -36,6 +36,11 @@
           "adres": "https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php"
         },
         {
+          "etykieta": "Kalendarz zajęć",
+          "etykieta_en": "Class calendar",
+          "adres": "/studia/kalendarz-zajec"
+        },
+        {
           "etykieta": "Konsultacje",
           "etykieta_en": "Office hours",
           "adres": "/studia/zajecia#konsultacje"

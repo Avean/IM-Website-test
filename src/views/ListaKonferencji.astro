@@ -77,11 +77,6 @@ const lead = lang === 'en'
           {lata.map((g) => <li><a href={`#rok-${g.rok}`} class="chip" style="display:inline-flex;align-items:center;border-left:1.5px solid var(--line);padding:0 12px;min-height:36px">{g.rok}</a></li>)}
         </ol>
       </nav>
-      <div class="side-box">
-        <h2>{t(lang, 'kalendarz')}</h2>
-        <p style="margin:0;font-size:15px">{lang === 'en' ? 'Upcoming conferences also appear in the Institute calendar.' : 'Nadchodzące konferencje trafiają też do kalendarza Instytutu.'}</p>
-        <a class="link-arrow" href={u(wJezyku('/kalendarz#subskrypcja', lang))}><Ikona nazwa="kalendarz" rozmiar={16} />{t(lang, 'subskrybuj')}</a>
-      </div>
     </aside>
   </div>
 </Baza>

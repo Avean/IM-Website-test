@@ -7,7 +7,7 @@ import Ikona from '../components/Ikona.astro';
 import { u } from '../lib/url';
 import { t, wJezyku } from '../lib/i18n';
 import { long, now, today, hasTime, type Lang } from '../lib/daty';
-import { seminaria, referaty, seminariumReferatu, referatyWTygodniu, tydzienSeminariow, slugOf } from '../lib/tresci';
+import { seminaria, referaty, seminariumReferatu, referatyWTygodniu, tydzienSeminariow, slugOf, sala } from '../lib/tresci';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
@@ -46,10 +46,9 @@ const lead = lang === 'en'
           return (
             <a class="sem-card" href={u(wJezyku(`/seminaria/${s.id}`, lang))}>
               <span class="t">{nazwa(s)}</span>
-              {s.data.termin && <span class="news-meta"><Ikona nazwa="zegar" rozmiar={15} />{s.data.termin}</span>}
               {r ? (
                 <span style="font-size:15px;padding-top:10px;border-top:1px solid var(--line)">
-                  <strong style="color:var(--ink)">{long(r.data.termin, lang)}</strong> — {r.data.tytul} <span class="muted">({r.data.prelegent})</span>
+                  <strong style="color:var(--ink)">{long(r.data.termin, lang)}{r.data.sala && `, ${sala(r.data.sala, lang)}`}</strong> — {r.data.tytul} <span class="muted">({r.data.prelegent})</span>
                 </span>
               ) : (
                 <span class="muted" style="font-size:14px;padding-top:10px;border-top:1px solid var(--line)">{t(lang, 'brakNadchodzacych')}</span>

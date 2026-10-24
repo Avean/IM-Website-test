@@ -1,0 +1,192 @@
+---
+// Kalendarz zajęć (/studia/kalendarz-zajec): dzisiejszy kolor dnia, zamiany dni, dni wolne, legenda i kalendarze semestrów.
+// Dane: src/data/kolory-dni.json (Pages CMS), kolory liczy src/lib/kolory-dni.ts — ta strona jest też podglądem dla redaktora.
+import Baza from '../layouts/Baza.astro';
+import NaglowekStrony from '../components/NaglowekStrony.astro';
+import Ikona from '../components/Ikona.astro';
+import KoloryDniSemestr from './KoloryDniSemestr.astro';
+import { u, isExternal } from '../lib/url';
+import { wJezyku } from '../lib/i18n';
+import { today, longWithDay, type Lang } from '../lib/daty';
+import { semestry, nazwaSemestru, tekstDnia, LITERA, DNI_SKROT } from '../lib/kolory-dni';
+
+interface Props { lang: Lang }
+const { lang } = Astro.props;
+const T = (pl: string, en: string) => (lang === 'en' ? en : pl);
+const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
+const wielka = (s: string) => s.charAt(0).toUpperCase() + s.slice(1);
+
+const dzis = today();
+const t0 = tekstDnia(dzis, lang);
+const naglowek = T('Kalendarz zajęć', 'Class calendar');
+const lead = T(
+  'Kolory dni, zamiany dni i dni wolne od zajęć w bieżącym semestrze. W Instytucie nie obowiązuje parzystość tygodni podawana przez USOS, tylko kolory dni: w przypadku zajęć odbywających się co drugi tydzień jedna grupa ma zajęcia w dni pomarańczowe, a druga w niebieskie.',
+  'Day colours, swapped days and days without classes in the current semester. At the Institute we do not use the week parity shown in USOS, but day colours: for classes held every other week, one group meets on orange days and the other on blue days.',
+);
+
+// Semestry trwające i przyszłe na górze, zakończone — w zwijanym archiwum.
+const wszystkie = semestry();
+const biezace = wszystkie.filter((s) => s.koniec >= dzis);
+const minione = wszystkie.filter((s) => s.koniec < dzis).reverse();
+const pdfy = [...biezace, ...minione].filter((s) => s.pdf);
+
+---
+<Baza tytul={naglowek} opis={lead}>
+  <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: T('Studia', 'Study'), adres: '/studia' }, { etykieta: naglowek }]} />
+  <div class="wrap layout kd">
+    <div class="main">
+      <section class="kd-dzis" data-kd-dzis data-dzien={dzis} data-kolor={t0.kolor ?? 'brak'} data-nastepny={t0.nastepnyKolor ?? ''} aria-labelledby="kd-dzis-h" data-pagefind-ignore>
+        <span class="kd-kolko" aria-hidden="true" data-kd-litera>{t0.litera}</span>
+        <div class="kd-dzis-txt">
+          <p class="kd-data" data-kd-data>{wielka(longWithDay(dzis, lang))}</p>
+          <h2 id="kd-dzis-h" class="kd-tytul" data-kd-tytul>{t0.tytul}</h2>
+          <p class="kd-opis" data-kd-opis hidden={!t0.opisDlugi}>{t0.opisDlugi}</p>
+        </div>
+      </section>
+
+      <ul class="kd-legenda" aria-label={T('Legenda', 'Legend')}>
+        <li><span class="kd-wzor niebieski" aria-hidden="true">{LITERA[lang].niebieski}</span><span><strong>{T('Dzień niebieski', 'Blue day')}</strong> — {T('dzień tygodnia występuje w semestrze po raz nieparzysty', 'the weekday occurs in the semester for an odd time')}</span></li>
+        <li><span class="kd-wzor pomaranczowy" aria-hidden="true">{LITERA[lang].pomaranczowy}</span><span><strong>{T('Dzień pomarańczowy', 'Orange day')}</strong> — {T('dzień tygodnia występuje w semestrze po raz parzysty', 'the weekday occurs in the semester for an even time')}</span></li>
+        <li><span class="kd-wzor wolne" aria-hidden="true"></span><span>{T('Dzień wolny od zajęć (święto, przerwa, dzień rektorski)', 'No classes (public holiday, break, Rector’s day off)')}</span></li>
+        <li><span class="kd-wzor weekend" aria-hidden="true"></span><span>{T('Sobota i niedziela', 'Saturday and Sunday')}</span></li>
+        <li><span class="kd-wzor niebieski kd-wzor-zam" aria-hidden="true"><span>{DNI_SKROT[lang][3].replace('.', '')}</span></span><span>{T('Zajęcia według planu innego dnia (np. „śr” — zajęcia środowe)', 'Classes follow another day’s timetable (e.g. “Wed” — Wednesday classes)')}</span></li>
+        <li><span class="kd-wzor kd-wzor-dzis" aria-hidden="true"></span><span>{T('Dziś', 'Today')}</span></li>
+      </ul>
+
+      {wszystkie.length === 0 && <p class="muted">{T('Brak danych o kolorach dni.', 'No day colour data yet.')}</p>}
+
+      {biezace.map((s) => <KoloryDniSemestr s={s} lang={lang} dzis={dzis} />)}
+      {minione.length > 0 && (
+        <details class="kd-archiwum">
+          <summary>{T('Zakończone semestry', 'Past semesters')} ({minione.length})</summary>
+          {minione.map((s) => <KoloryDniSemestr s={s} lang={lang} dzis={dzis} />)}
+        </details>
+      )}
+    </div>
+
+    <aside class="side">
+      <div class="side-box">
+        <h2>{T('Jak to działa', 'How it works')}</h2>
+        <p class="kd-side-p">{T(
+          'Każdy dzień tygodnia liczymy osobno. Gdy dany dzień tygodnia występuje w semestrze po raz nieparzysty (1., 3., 5. …), jest dniem niebieskim, a gdy po raz parzysty (2., 4., 6. …) — pomarańczowym.',
+          'Each weekday is counted separately. When a weekday occurs in the semester for an odd time (1st, 3rd, 5th …), it is a blue day; when it occurs for an even time (2nd, 4th, 6th …), it is an orange day.',
+        )}</p>
+        <p class="kd-side-p">{T(
+          'Dni wolnych od zajęć się nie liczy. Gdy w danym dniu obowiązuje plan innego dnia (np. w piątek zajęcia środowe), liczy się on jak ten drugi dzień.',
+          'Days without classes are not counted. When a day follows another day’s timetable (e.g. Wednesday classes on a Friday), it counts as that other day.',
+        )}</p>
+      </div>
+      {pdfy.length > 0 && (
+        <div class="side-box">
+          <h2>{T('Do pobrania', 'Downloads')}</h2>
+          <ul class="kd-pliki">
+            {pdfy.map((s) => (
+              <li><a href={href(s.pdf!)}><Ikona nazwa="plik" rozmiar={18} /><span>{nazwaSemestru(s, lang)} (PDF)</span></a></li>
+            ))}
+          </ul>
+        </div>
+      )}
+      <div class="side-box">
+        <h2>{T('Zobacz też', 'See also')}</h2>
+        <ul class="kd-pliki">
+          <li><a href="https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php"><Ikona nazwa="kalendarz" rozmiar={18} /><span>{T('Plan zajęć', 'Timetable')}</span></a></li>
+          <li><a href={href('/studia/rok-akademicki')}><Ikona nazwa="flaga" rozmiar={18} /><span>{T('Rok akademicki — terminy', 'Academic year — key dates')}</span></a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</Baza>
+
+<script>
+  import { tekstDnia } from '../lib/kolory-dni';
+  import { today, longWithDay } from '../lib/daty';
+
+  // Dzisiejsza data w strefie Europe/Warsaw — HTML ma wartość z dnia budowania, tu ją odświeżamy.
+  const lang = document.documentElement.lang === 'en' ? 'en' : 'pl';
+  const dzis = today();
+  const box = document.querySelector<HTMLElement>('[data-kd-dzis]');
+  if (box && box.dataset.dzien !== dzis) {
+    const t = tekstDnia(dzis, lang);
+    const d = longWithDay(dzis, lang);
+    box.dataset.dzien = dzis;
+    box.dataset.kolor = t.kolor ?? 'brak';
+    box.dataset.nastepny = t.nastepnyKolor ?? '';
+    const ust = (sel: string, txt: string) => {
+      const el = box.querySelector<HTMLElement>(sel);
+      if (el) { el.textContent = txt; el.hidden = !txt; }
+    };
+    ust('[data-kd-litera]', t.litera);
+    ust('[data-kd-data]', d.charAt(0).toUpperCase() + d.slice(1));
+    ust('[data-kd-tytul]', t.tytul);
+    ust('[data-kd-opis]', t.opisDlugi);
+  }
+  document.querySelectorAll<HTMLElement>('.kd-mies td.dzis').forEach((td) => {
+    if (td.dataset.data === dzis) return;
+    td.classList.remove('dzis');
+    td.removeAttribute('aria-current');
+  });
+  const td = document.querySelector<HTMLElement>(`.kd-mies td[data-data="${dzis}"]`);
+  if (td) {
+    td.classList.add('dzis');
+    td.setAttribute('aria-current', 'date');
+  }
+</script>
+
+<style>
+  /* Kolory dni — jasny i ciemny tryb. Kolor nie jest jedyną informacją: litera N/P (B/O), opis dla czytników. */
+  .kd {
+    --kd-n: #a3ebf8; --kd-n-ink: #053947; --kd-n-mocny: #0e9cbc;
+    --kd-p: #ffd699; --kd-p-ink: #4a2900; --kd-p-mocny: #e0841b;
+    --kd-kreski: rgb(17 26 46 / .12);
+  }
+  :global(:root[data-theme='dark']) .kd {
+    --kd-n: #0d4a58; --kd-n-ink: #cdf5fe; --kd-n-mocny: #3cc8e6;
+    --kd-p: #5c3708; --kd-p-ink: #ffe1b3; --kd-p-mocny: #f2a33a;
+    --kd-kreski: rgb(255 255 255 / .12);
+  }
+
+  /* --- dziś --- */
+  .kd-dzis { display: flex; align-items: center; gap: 20px; padding: 22px 24px; margin-bottom: 22px; border-radius: var(--radius-l); border: 2px solid var(--line); background: var(--surface); color: var(--ink); }
+  .kd-dzis[data-kolor='niebieski'] { background: var(--kd-n); border-color: var(--kd-n-mocny); color: var(--kd-n-ink); }
+  .kd-dzis[data-kolor='pomaranczowy'] { background: var(--kd-p); border-color: var(--kd-p-mocny); color: var(--kd-p-ink); }
+  .kd-kolko { flex: none; display: grid; place-items: center; width: 76px; height: 76px; border-radius: 50%; border: 3px dashed var(--line); background: var(--bg); color: var(--muted); font-size: 36px; font-weight: 800; line-height: 1; }
+  [data-kolor='niebieski'] > .kd-kolko { border: 5px solid var(--kd-n-mocny); color: var(--kd-n-ink); }
+  [data-kolor='pomaranczowy'] > .kd-kolko { border: 5px solid var(--kd-p-mocny); color: var(--kd-p-ink); }
+  :global(:root[data-theme='dark']) [data-kolor='niebieski'] > .kd-kolko { color: var(--kd-n-mocny); }
+  :global(:root[data-theme='dark']) [data-kolor='pomaranczowy'] > .kd-kolko { color: var(--kd-p-mocny); }
+  .kd-dzis-txt { min-width: 0; }
+  .kd-data { margin: 0; font-size: 13px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+  .kd-tytul { margin: 2px 0 0; font-size: clamp(26px, 4vw, 36px); font-weight: 800; letter-spacing: -0.02em; color: inherit; }
+  .kd-opis { margin: 6px 0 0; font-size: 16px; line-height: 1.5; }
+  .kd-dzis[data-kolor='brak'][data-nastepny] .kd-opis::before { content: ''; display: inline-block; width: 12px; height: 12px; margin-right: 8px; border-radius: 50%; vertical-align: -1px; }
+  .kd-dzis[data-kolor='brak'][data-nastepny='niebieski'] .kd-opis::before { background: var(--kd-n-mocny); }
+  .kd-dzis[data-kolor='brak'][data-nastepny='pomaranczowy'] .kd-opis::before { background: var(--kd-p-mocny); }
+  .kd-dzis[data-kolor='brak'][data-nastepny=''] .kd-opis::before { display: none; }
+  @media (max-width: 520px) {
+    .kd-dzis { align-items: flex-start; gap: 14px; padding: 18px; }
+    .kd-kolko { width: 56px; height: 56px; font-size: 26px; }
+  }
+
+  /* --- legenda --- */
+  .kd-legenda { list-style: none; margin: 0 0 8px; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); gap: 10px 24px; font-size: 15px; line-height: 1.45; }
+  .kd-legenda li { display: flex; align-items: flex-start; gap: 10px; }
+  .kd-wzor { position: relative; flex: none; display: grid; place-items: center; width: 30px; height: 30px; border-radius: 8px; font-size: 13px; font-weight: 800; }
+  .kd-wzor-zam span { position: absolute; left: 3px; bottom: 1px; font-size: 10px; }
+  .kd-wzor-dzis { outline: 2.5px solid var(--ink); outline-offset: -2.5px; }
+
+  /* --- wzory w legendzie (te same kolory co w kalendarzu: KoloryDniSemestr.astro) --- */
+  .niebieski { background: var(--kd-n); color: var(--kd-n-ink); }
+  .pomaranczowy { background: var(--kd-p); color: var(--kd-p-ink); }
+  .wolne { background: repeating-linear-gradient(135deg, var(--surface) 0 5px, var(--kd-kreski) 5px 7px); background-color: var(--surface); }
+  .weekend { background: var(--surface); }
+  .kd-archiwum { margin-top: 34px; border-top: 1px solid var(--line); padding-top: 14px; }
+  .kd-archiwum summary { min-height: 44px; display: flex; align-items: center; font-weight: 800; color: var(--ink); cursor: pointer; }
+
+  /* --- panel boczny --- */
+  .kd-side-p { margin: 0; font-size: 15px; }
+  .kd-pliki { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 2px; }
+  .kd-pliki a { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 15px; font-weight: 700; color: var(--ink); text-decoration: none; }
+  .kd-pliki a:hover { text-decoration: underline; }
+  .kd-pliki :global(svg) { flex: none; color: var(--primary); }
+  :global(:root[data-theme='dark']) .kd-pliki :global(svg) { color: var(--accent); }
+</style>
