@@ -1,0 +1,118 @@
+{
+  "tytul": "Władze Instytutu",
+  "tytul_en": "Institute management",
+  "wstep": "Dyrektor, zastępcy dyrektora i sekretariat Instytutu Matematycznego.",
+  "wstep_en": "The Director, Deputy Directors and office of the Mathematical Institute.",
+  "osoby": [
+    {
+      "rola": "Dyrektor Instytutu",
+      "rola_en": "Director of the Institute",
+      "imie_nazwisko": "Grzegorz Karch",
+      "zakres": "Kieruje Instytutem i przewodniczy Radzie Instytutu.",
+      "zakres_en": "Heads the Institute and chairs the Institute Council.",
+      "dyzur": "",
+      "dyzur_en": "",
+      "zdjecie": "/pliki/wladze/grzegorz-karch.jpg"
+    },
+    {
+      "rola": "Zastępca dyrektora ds. dydaktycznych",
+      "rola_en": "Deputy Director for Teaching",
+      "imie_nazwisko": "Tomasz Elsner",
+      "zakres": "Wchodzi w skład Komisji Prac Dyplomowych, która nadzoruje ofertę tematów i jakość prac dyplomowych.",
+      "zakres_en": "Member of the Diploma Theses Committee, which oversees the range of thesis topics and the quality of theses.",
+      "dyzur": "",
+      "dyzur_en": "",
+      "zdjecie": "/pliki/wladze/tomasz-elsner.jpg"
+    },
+    {
+      "rola": "Zastępca dyrektora ds. ogólnych",
+      "rola_en": "Deputy Director for General Affairs",
+      "imie_nazwisko": "Grzegorz Wyłupek",
+      "zakres": "",
+      "zakres_en": "",
+      "dyzur": "",
+      "dyzur_en": "",
+      "zdjecie": "/pliki/wladze/grzegorz-wylupek.jpg"
+    },
+    {
+      "rola": "Zastępca dyrektora ds. naukowych",
+      "rola_en": "Deputy Director for Research",
+      "imie_nazwisko": "Krzysztof Dębicki",
+      "zakres": "",
+      "zakres_en": "",
+      "dyzur": "",
+      "dyzur_en": "",
+      "zdjecie": "/pliki/wladze/krzysztof-debicki.jpg"
+    },
+    {
+      "rola": "Zastępca dyrektora ds. promocji",
+      "rola_en": "Deputy Director for Promotion",
+      "imie_nazwisko": "Piotr Borodulin-Nadzieja",
+      "zakres": "",
+      "zakres_en": "",
+      "dyzur": "",
+      "dyzur_en": "",
+      "zdjecie": "/pliki/wladze/piotr-borodulin-nadzieja.jpg"
+    }
+  ],
+  "sekretariat": {
+    "nazwa": "Sekretariat Instytutu",
+    "nazwa_en": "Institute office",
+    "opis": "",
+    "opis_en": "",
+    "email": "dyrekcja@math.uni.wroc.pl",
+    "telefony": ["+48 71 375 74 01", "+48 71 328 07 17"],
+    "adres": "pl. Grunwaldzki 2, 50-384 Wrocław",
+    "adres_en": "pl. Grunwaldzki 2, 50-384 Wrocław, Poland",
+    "pokoj": "",
+    "godziny": "",
+    "godziny_en": "",
+    "osoby": ["Ilona Ciechanowska", "Alicja Dąbrowa-Ferfecka"]
+  },
+  "kadencja": "Dyrektora Instytutu powołuje Rektor na okres kadencji Rektora. Zadania dyrektora określa Statut Uniwersytetu Wrocławskiego.\n\nProf. dr hab. Grzegorz Karch kieruje Instytutem od 1 września 2016 r. Wcześniej, przez wiele lat, dyrektorem Instytutu był prof. dr hab. Ludomir Newelski.",
+  "kadencja_en": "The Director of the Institute is appointed by the Rector for the Rector's term of office. The Director's duties are set out in the Statutes of the University of Wrocław.\n\nProf. Grzegorz Karch has headed the Institute since 1 September 2016. For many years before that, the Director of the Institute was Prof. Ludomir Newelski.",
+  "rada": {
+    "tytul": "Rada Instytutu",
+    "tytul_en": "Institute Council",
+    "opis": "W Instytucie działa Rada Instytutu. Przewodniczy jej dyrektor, który zwołuje posiedzenia w zależności od potrzeb lub na wniosek trzech członków Rady. W skład Rady wchodzą:\n\n- dyrektor Instytutu (przewodniczący),\n- zastępcy dyrektora,\n- profesorowie, profesorowie Uniwersytetu i doktorzy habilitowani zatrudnieni w Instytucie,\n- czterej przedstawiciele pozostałych nauczycieli akademickich zatrudnionych w Instytucie,\n- jeden przedstawiciel pracowników Instytutu niebędących nauczycielami akademickimi.\n\nPrzedstawicieli z dwóch ostatnich grup wybiera się na okres kadencji Rektora. W posiedzeniach mogą też uczestniczyć z głosem doradczym m.in. profesorowie wizytujący, emerytowani profesorowie Instytutu, przedstawiciele związków zawodowych oraz osoby zaproszone przez dyrektora.",
+    "opis_en": "The Institute has an Institute Council. It is chaired by the Director, who convenes its meetings as needed or at the request of three Council members. The Council consists of:\n\n- the Director of the Institute (chair),\n- the Deputy Directors,\n- professors, university professors and holders of the habilitation employed at the Institute,\n- four representatives of the other academic teachers employed at the Institute,\n- one representative of the Institute's staff who are not academic teachers.\n\nRepresentatives of the last two groups are elected for the Rector's term of office. Visiting professors, retired professors of the Institute, trade union representatives and persons invited by the Director, among others, may also take part in meetings in an advisory capacity."
+  },
+  "linki": [
+    {
+      "etykieta": "Regulamin Instytutu Matematycznego",
+      "etykieta_en": "Rules of the Mathematical Institute (in Polish)",
+      "adres": "https://www.math.uni.wroc.pl/regulamin-instytutu-matematycznego-uniwersytetu-wroclawskiego"
+    },
+    {
+      "etykieta": "Rada Dyscypliny Naukowej Matematyka — skład (BIP UWr)",
+      "etykieta_en": "Council of the Scientific Discipline of Mathematics — members (in Polish)",
+      "adres": "https://bip.uni.wroc.pl/1436/237/sklad-rady-dyscypliny-naukowej-matematyka.html"
+    },
+    {
+      "etykieta": "Pracownicy — e-maile i pokoje",
+      "etykieta_en": "Staff directory",
+      "adres": "/pracownicy"
+    },
+    {
+      "etykieta": "Kontakt",
+      "etykieta_en": "Contact",
+      "adres": "/instytut/kontakt"
+    }
+  ],
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/wladze-instytutu (skład dyrekcji, zdjęcia)",
+    "https://www.math.uni.wroc.pl/en/node/1113 (angielskie nazwy funkcji)",
+    "https://www.math.uni.wroc.pl/sukcesy (większa wersja zdjęcia G. Wyłupka)",
+    "https://www.math.uni.wroc.pl/administracja-i-pracownicy-techniczni (sekretariat)",
+    "https://www.math.uni.wroc.pl/kontakt (e-mail i telefony Instytutu)",
+    "https://www.math.uni.wroc.pl/regulamin-instytutu-matematycznego-uniwersytetu-wroclawskiego (kadencja, Rada Instytutu)",
+    "https://www.math.uni.wroc.pl/news/zmiany-we-wladzach-instytutu-matematycznego (zmiana dyrekcji 2016)",
+    "https://www.math.uni.wroc.pl/procedura-dyplomowania (Komisja Prac Dyplomowych)"
+  ],
+  "do_uzupelnienia": [
+    "Zakres obowiązków zastępców dyrektora ds. ogólnych, ds. naukowych i ds. promocji (stara strona podaje tylko nazwy funkcji).",
+    "Godziny przyjęć (dyżury) dyrekcji — brak w źródłach.",
+    "Numer pokoju i godziny pracy sekretariatu — brak w źródłach.",
+    "Zdjęcia w lepszej rozdzielczości (zwłaszcza T. Elsner — oryginał 100×130 px, K. Dębicki — 150×150 px)."
+  ]
+}
