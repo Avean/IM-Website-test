@@ -1,5 +1,5 @@
 ---
-// Lista aktualności z filtrem rodzaju, odbiorców i szukaniem (filtrowanie w przeglądarce).
+// Lista aktualności z filtrem rodzaju i szukaniem (filtrowanie w przeglądarce); ?dla=studenci itp. z linków zawęża listę (z przyciskiem „pokaż wszystkie”).
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
 import WierszAktualnosci from '../components/WierszAktualnosci.astro';
@@ -9,12 +9,13 @@ import ustawienia from '../data/ustawienia.json';
 import { u } from '../lib/url';
 import { t, wJezyku, RODZAJE, ODBIORCY } from '../lib/i18n';
 import { monthYear, type Lang } from '../lib/daty';
-import { listaAktualnosci, najblizszeWydarzenia } from '../lib/tresci';
+import { listaAktualnosci, wydarzeniaNaGlowna } from '../lib/tresci';
 
 interface Props { lang: Lang }
 const { lang } = Astro.props;
 const lista = await listaAktualnosci(lang);
-const wydarzenia = await najblizszeWydarzenia(3, lang);
+// Najbliższe wydarzenia jak na stronie głównej: tylko gdy są blisko (Ustawienia → dni robocze); gdy brak — bez prawego paska, lista szersza.
+const wydarzenia = await wydarzeniaNaGlowna(3, lang, Number((ustawienia as any).wydarzenia_dni_robocze ?? 5) || 5);
 
 // Grupowanie po miesiącach
 const grupy: { miesiac: string; pozycje: typeof lista }[] = [];
@@ -42,6 +43,10 @@ const lead = lang === 'en' ? 'Announcements, events and achievements of the Math
         </label>
       </div>
     </div>
+    <p class="dla-info" data-dla-info hidden>
+      <span>{lang === 'en' ? 'Showing posts for:' : 'Pokazuję wpisy dla:'} {Object.entries(ODBIORCY).map(([k, v]) => <strong data-dla-etykieta={k} hidden>{v[lang].toLowerCase()}</strong>)}</span>
+      <button type="button" class="chip" data-dla-wyczysc>{lang === 'en' ? 'Show all' : 'Pokaż wszystkie'}</button>
+    </p>
   </NaglowekStrony>
 
   <div class="wrap layout">
@@ -59,19 +64,14 @@ const lead = lang === 'en' ? 'Announcements, events and achievements of the Math
       </p>
     </div>
 
-    <aside class="side" data-pagefind-ignore>
-      <div class="side-box">
-        <h2>{t(lang, 'najblizsze')}</h2>
-        {wydarzenia.length ? wydarzenia.map((w) => <KartaWydarzenia w={w} lang={lang} maly />) : <p class="muted" style="margin:0">{t(lang, 'brakWydarzen')}</p>}
-        <a class="link-arrow" href={u(wJezyku('/kalendarz', lang))}>{t(lang, 'kalendarz')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-      </div>
-      <div class="side-box">
-        <h2>{lang === 'en' ? 'For whom' : 'Dla kogo'}</h2>
-        <div class="chips" style="display:flex;flex-wrap:wrap;gap:8px" role="group" aria-label={lang === 'en' ? 'Filter by audience' : 'Filtruj według odbiorców'}>
-          {Object.entries(ODBIORCY).map(([k, v]) => <button type="button" class="chip" aria-pressed="false" data-dla={k}>{v[lang]}</button>)}
+    {wydarzenia.length > 0 && (
+      <aside class="side" data-pagefind-ignore data-wydarzenia>
+        <div class="side-box side-plywajacy">
+          <h2>{t(lang, 'najblizsze')}</h2>
+          {wydarzenia.map((w) => <KartaWydarzenia w={w} lang={lang} maly />)}
         </div>
-      </div>
-    </aside>
+      </aside>
+    )}
   </div>
 </Baza>
 
@@ -82,7 +82,7 @@ const lead = lang === 'en' ? 'Announcements, events and achievements of the Math
   const pusto = document.querySelector<HTMLElement>('[data-pusto]');
   const szukaj = document.querySelector<HTMLInputElement>('[data-szukaj]');
   const rodzajBtn = Array.from(document.querySelectorAll<HTMLButtonElement>('button[data-rodzaj]'));
-  const dlaBtn = Array.from(document.querySelectorAll<HTMLButtonElement>('button[data-dla]'));
+  const dlaInfo = document.querySelector<HTMLElement>('[data-dla-info]');
   let rodzaj = '';
   let dla = '';
   const norm = (s: string) => s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ł/g, 'l');
@@ -103,17 +103,39 @@ const lead = lang === 'en' ? 'Announcements, events and achievements of the Math
     rodzajBtn.forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
     filtruj();
   }));
-  dlaBtn.forEach((b) => b.addEventListener('click', () => {
-    dla = dla === b.dataset.dla ? '' : (b.dataset.dla ?? '');
-    dlaBtn.forEach((o) => o.setAttribute('aria-pressed', String(o.dataset.dla === dla)));
+  // ?dla=… z linku (np. „Aktualności dla studentów”): zawężenie z informacją i przyciskiem „Pokaż wszystkie”
+  const ustawDla = (d: string) => {
+    const znane = !!d && !!dlaInfo?.querySelector(`[data-dla-etykieta="${CSS.escape(d)}"]`);
+    dla = znane ? d : '';
+    if (dlaInfo) {
+      dlaInfo.hidden = !dla;
+      dlaInfo.querySelectorAll<HTMLElement>('[data-dla-etykieta]').forEach((e) => (e.hidden = e.dataset.dlaEtykieta !== dla));
+    }
     filtruj();
-  }));
+  };
+  dlaInfo?.querySelector('[data-dla-wyczysc]')?.addEventListener('click', () => {
+    ustawDla('');
+    const url = new URL(location.href);
+    url.searchParams.delete('dla');
+    history.replaceState(history.state, '', url);
+  });
   szukaj?.addEventListener('input', filtruj);
   if (lista) {
     const p = new URLSearchParams(location.search);
     const d = p.get('dla');
-    if (d) dlaBtn.find((b) => b.dataset.dla === d)?.click();
+    if (d) ustawDla(d);
     const r = p.get('rodzaj');
     if (r) rodzajBtn.find((b) => b.dataset.rodzaj === r)?.click();
+  }
+
+  // Zakończone wydarzenia chowamy od razu (strona przebudowuje się 2× dziennie); bez wydarzeń — bez paska.
+  import { now as teraz, today as dzis, hasTime as zGodzina } from '../lib/daty';
+  const pasek = document.querySelector<HTMLElement>('[data-wydarzenia]');
+  if (pasek) {
+    pasek.querySelectorAll<HTMLElement>('[data-koniec]').forEach((k) => {
+      const kon = k.dataset.koniec || '';
+      if (kon && (zGodzina(kon) ? kon < teraz() : kon < dzis())) k.remove();
+    });
+    if (!pasek.querySelector('[data-koniec]')) pasek.remove();
   }
 </script>

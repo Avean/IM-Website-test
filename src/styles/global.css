@@ -463,6 +463,10 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .toc a:hover { color: var(--ink); border-left-color: var(--ink); }
 .toc a[aria-current] { color: var(--ink); border-left-color: var(--accent); font-weight: 800; }
 .toc-side { position: sticky; top: calc(var(--hdr-h) + 16px); z-index: 2; box-shadow: 0 0 0 8px var(--bg); }
+/* ramka w prawym pasku, która „płynie” przy przewijaniu (np. Najbliższe wydarzenia przy aktualnościach) */
+.side-plywajacy { position: sticky; top: calc(var(--hdr-h) + 16px); }
+@media (max-width: 900px) { .side-plywajacy { position: static; } }
+.dla-info { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; margin: 14px 0 0; font-size: 15px; }
 .toc-top { display: none; margin-bottom: 20px; padding: 12px 16px; border-radius: var(--radius); background: var(--surface); }
 .toc-top summary { cursor: pointer; font-weight: 800; color: var(--ink); min-height: 32px; display: flex; align-items: center; justify-content: space-between; gap: 10px; list-style: none; }
 .toc-top summary::-webkit-details-marker { display: none; }
