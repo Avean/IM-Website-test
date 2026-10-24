@@ -2,6 +2,11 @@
 nazwa: Analiza danych
 nazwa_en: Data analysis
 kierunek: matematyka
+kolejnosc: 1
+kafelek_dla_kogo: "Dla osób, które chcą łączyć matematykę z praktyczną analizą danych."
+kafelek_dla_kogo_en: "For those who want to combine mathematics with practical data analysis."
+kafelek_kariera: "Np. analityk danych (po I stopniu) lub Data Scientist (po II stopniu), także w przemyśle i startupach korzystających z narzędzi data science."
+kafelek_kariera_en: "For example data analyst (after the first cycle) or Data Scientist (after the second cycle), including in industry and start-ups that rely on data science tools."
 skrot: AD
 poziom: studia I i II stopnia
 poziom_en: first- and second-cycle studies

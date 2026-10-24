@@ -156,13 +156,27 @@ const zaklady = defineCollection({
 // Kierunek studiów (np. matematyka): treść w polach, a wygląd w szablonie src/views/Kierunek.astro.
 const lista = <T extends z.ZodTypeAny>(item: T) => z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(item));
 const link = z.object({ etykieta: z.string(), etykieta_en: optStr, adres: z.string() });
-const dokument = z.object({ nazwa: z.string(), nazwa_en: optStr, plik: z.string(), opis: optStr, opis_en: optStr });
+// Dokument: plik wgrany w CMS (pole „wgraj”) albo link (pole „plik”, np. do BIP). Szablony używają zawsze „plik”.
+const dokument = z
+  .object({ nazwa: z.string(), nazwa_en: optStr, wgraj: optStr, plik: optStr, opis: optStr, opis_en: optStr })
+  .refine((d) => !!(d.wgraj || d.plik), { message: 'Dokument: wgraj plik albo podaj link' })
+  .transform((d) => ({ ...d, plik: (d.wgraj || d.plik) as string }));
 
 const kierunki = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/kierunki' }),
   schema: z.object({
     nazwa: z.string(),
     nazwa_en: optStr,
+    // gdzie kierunek pojawia się automatycznie: menu „Studia” i kafelki na stronie głównej (kolejność rosnąco)
+    kolejnosc: z.preprocess(empty, z.coerce.number().default(99)),
+    w_menu: z.preprocess((v) => (v == null || v === '' ? true : v), z.boolean()),
+    menu_etykieta: optStr,
+    menu_etykieta_en: optStr,
+    na_stronie_glownej: z.preprocess((v) => (v == null || v === '' ? true : v), z.boolean()),
+    kafelek_poziom: optStr,
+    kafelek_poziom_en: optStr,
+    kafelek_opis: optStr,
+    kafelek_opis_en: optStr,
     podtytul: optStr,
     podtytul_en: optStr,
     opis: optStr,
@@ -182,21 +196,6 @@ const kierunki = defineCollection({
       termin_en: optStr,
       formularz: optStr,
       formularz_adres: optStr,
-    })),
-    specjalnosci: lista(z.object({
-      nazwa: z.string(),
-      nazwa_en: optStr,
-      skrot: optStr,
-      opis: optStr,
-      opis_en: optStr,
-      dla_kogo: optStr,
-      dla_kogo_en: optStr,
-      kariera: optStr,
-      kariera_en: optStr,
-      opiekunowie: optStr,
-      zaklad: optStr,
-      strona: optStr,
-      wygaszana: z.preprocess((v) => (v == null || v === '' ? false : v), z.boolean()),
     })),
     programy: lista(z.object({
       nazwa: z.string(),
@@ -237,6 +236,14 @@ const specjalnosci = defineCollection({
     nazwa: z.string(),
     nazwa_en: optStr,
     kierunek: z.preprocess(empty, z.string().default('matematyka')),
+    // kafelek na stronie kierunku budowany z tego pliku (jedno miejsce edycji)
+    kolejnosc: z.preprocess(empty, z.coerce.number().default(99)),
+    na_stronie_kierunku: z.preprocess((v) => (v == null || v === '' ? true : v), z.boolean()),
+    bez_podstrony: z.preprocess((v) => (v == null || v === '' ? false : v), z.boolean()),
+    kafelek_dla_kogo: optStr,
+    kafelek_dla_kogo_en: optStr,
+    kafelek_kariera: optStr,
+    kafelek_kariera_en: optStr,
     skrot: optStr,
     poziom: optStr,
     poziom_en: optStr,

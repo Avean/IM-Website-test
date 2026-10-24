@@ -43,6 +43,17 @@ def sprawdz(p):
             for el in v:
                 if not isinstance(el, str):
                     bledy.append(f'{p}: element listy „{k}” nie jest tekstem (np. „: ” w środku — weź tekst w cudzysłów): {el!r}'[:300])
+    # dokumenty: wgrany plik albo link
+    dok = []
+    if kol == 'kierunki':
+        for pr in dane.get('programy') or []:
+            dok += (pr or {}).get('dokumenty') or []
+        dok += (dane.get('praktyki_dokumenty') or []) + (dane.get('akty') or [])
+    if kol == 'specjalnosci':
+        dok += dane.get('dokumenty') or []
+    for x in dok:
+        if isinstance(x, dict) and not (x.get('wgraj') or x.get('plik')):
+            bledy.append(f'{p}: dokument „{x.get("nazwa", "?")}” nie ma pliku ani linku')
     if kol == 'specjalnosci':
         katalog = p.split('src/content/')[0] + 'src/content/seminaria/'
         for sid in dane.get('seminaria') or []:

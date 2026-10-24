@@ -1,6 +1,13 @@
 ---
 nazwa: Sztuczna inteligencja w analizie danych
 nazwa_en: Artificial Intelligence in Data Science
+kolejnosc: 2
+menu_etykieta: "Sztuczna inteligencja w analizie danych"
+menu_etykieta_en: "AI in Data Science"
+kafelek_poziom: "Kierunek"
+kafelek_poziom_en: "Programme"
+kafelek_opis: "Studia I stopnia od 2025/26."
+kafelek_opis_en: "Bachelor's programme since 2025/26."
 podtytul: Studia I stopnia (licencjackie)
 podtytul_en: Bachelor's studies
 opis: Trzyletnie studia licencjackie łączące matematykę i informatykę z metodami sztucznej inteligencji. Kierunek prowadzi Instytut Matematyczny UWr od roku akademickiego 2025/26.

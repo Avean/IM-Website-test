@@ -1,6 +1,13 @@
 ---
 nazwa: Indywidualne Studia Informatyczno-Matematyczne
 nazwa_en: Individual Studies in Computer Science and Mathematics
+kolejnosc: 3
+menu_etykieta: "ISIM"
+menu_etykieta_en: "ISIM"
+kafelek_poziom: "Kierunek"
+kafelek_poziom_en: "Programme"
+kafelek_opis: "Studia I stopnia wspólnie z Instytutem Informatyki."
+kafelek_opis_en: "Bachelor's programme run jointly with the Institute of Computer Science."
 podtytul: ISIM · studia I stopnia (licencjackie)
 podtytul_en: ISIM · bachelor's studies
 opis: Trzyletnie studia licencjackie łączące informatykę i matematykę, prowadzone wspólnie przez Instytut Informatyki i Instytut Matematyczny UWr — z indywidualnym planem studiów i opieką tutora.

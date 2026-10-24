@@ -2,6 +2,11 @@
 nazwa: Matematyka nauczycielska
 nazwa_en: Mathematics teaching
 kierunek: matematyka
+kolejnosc: 5
+kafelek_dla_kogo: "Dla przyszłych nauczycielek i nauczycieli matematyki."
+kafelek_dla_kogo_en: "For future mathematics teachers."
+kafelek_kariera: "Praca nauczyciela matematyki w szkołach wszystkich typów (pełne kwalifikacje po studiach II stopnia)."
+kafelek_kariera_en: "Teaching mathematics in all types of schools (full qualifications after the master's degree)."
 poziom: studia I i II stopnia
 poziom_en: bachelor's and master's studies
 opis: Matematyka połączona z przygotowaniem psychologicznym, pedagogicznym i dydaktycznym oraz praktykami w szkołach. Po studiach II stopnia masz pełne kwalifikacje do nauczania matematyki w szkołach.

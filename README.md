@@ -59,6 +59,16 @@ npm run preview
 - `/kalendarz/wydarzenia.ics` — bez seminariów
 - `/kalendarz/seminarium-<nazwa>.ics` — jedno seminarium
 
+## Kierunki, specjalności i programy studiów — jak edytować
+
+Wszystko jest w Pages CMS, bez zaglądania do kodu. Każda informacja jest wpisana w jednym miejscu.
+
+- **Kierunek** (np. Matematyka, SIAD, ISIM, Szkoła doktorska): sekcja **Kierunki studiów**. Pola są ułożone jak sekcje strony (① nagłówek … ⑦ menu i strona główna). Kierunek sam pojawia się w menu „Studia” i jako kafelek na stronie głównej (pola ⑦: kolejność, krótka nazwa, napis i zdanie na kafelku).
+- **Nowy program studiów** (np. od 2027/28): w kierunku, pole ③ *Programy studiów* → dodaj pozycję z „od roku” = 2027 i dokumentami (przycisk *Wgraj plik* albo link do BIP); staremu programowi wpisz „do roku” = 2026. Uaktualnij ③ *Jak wyglądają studia* (semestry, ECTS, terminy) i ③ *Terminy i formularze*.
+- **Specjalność**: sekcja **Specjalności** — podstrona i kafelek na stronie kierunku budują się z tego samego wpisu (nazwa, skrót, zdanie pod nazwą, opiekunowie, zakład; na kafelek dodatkowo jedno zdanie „Dla kogo” i „Po studiach”). Specjalność bez podstrony (np. wygaszana): zaznacz *Bez własnej podstrony*.
+- **Opiekunowie**: wpisuj imię i nazwisko dokładnie jak w spisie pracowników — tytuł, e-mail i pokój dobiorą się same.
+- **Dodatkowe kafelki** na stronie głównej (np. studia podyplomowe): Ustawienia → Ustawienia ogólne → Sekcja „Studiuj matematykę”.
+
 ## Powiadomienia e-mail o referatach
 
 Na stronie każdego seminarium jest formularz „Powiadomienia e-mail”. Zapisani dostają elegancką wiadomość po angielsku o każdym nowym referacie, z linkiem do wypisania się. Obsługuje to skrypt Google Apps Script z katalogu `skrypty/powiadomienia/` (lista adresów w arkuszu Google, wysyłka z konta Google, które uruchomi skrypt).

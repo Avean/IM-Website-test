@@ -34,42 +34,6 @@
     "rekrutacja": "https://studia-wmi.uwr.edu.pl/",
     "kierunki": [
       {
-        "poziom": "I i II stopień",
-        "poziom_en": "BSc and MSc",
-        "nazwa": "Matematyka",
-        "nazwa_en": "Mathematics",
-        "opis": "Nowy program studiów od roku 2026/27.",
-        "opis_en": "New curriculum from 2026/27.",
-        "adres": "/studia/matematyka"
-      },
-      {
-        "poziom": "Kierunek",
-        "poziom_en": "Programme",
-        "nazwa": "Sztuczna inteligencja w analizie danych",
-        "nazwa_en": "AI in Data Science",
-        "opis": "Studia I stopnia od 2025/26.",
-        "opis_en": "Bachelor's programme since 2025/26.",
-        "adres": "/studia/siad"
-      },
-      {
-        "poziom": "Kierunek",
-        "poziom_en": "Programme",
-        "nazwa": "ISIM",
-        "nazwa_en": "ISIM",
-        "opis": "Studia I stopnia wspólnie z Instytutem Informatyki.",
-        "opis_en": "Bachelor's programme run jointly with the Institute of Computer Science.",
-        "adres": "/studia/isim"
-      },
-      {
-        "poziom": "III stopień",
-        "poziom_en": "PhD",
-        "nazwa": "Szkoła doktorska",
-        "nazwa_en": "Doctoral school",
-        "opis": "Kolegium Doktorskie Matematyki.",
-        "opis_en": "Doctoral College of Mathematics.",
-        "adres": "/studia/szkola-doktorska"
-      },
-      {
         "poziom": "Podyplomowe",
         "poziom_en": "Postgraduate",
         "nazwa": "Nauczanie matematyki",

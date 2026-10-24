@@ -27,7 +27,7 @@ const umiejetnosci = lang === 'en' && d.umiejetnosci_en.length ? d.umiejetnosci_
 
 const kierunek = (await getCollection('kierunki')).find((k) => k.id === d.kierunek);
 const nazwaKierunku = kierunek ? wybierz(kierunek.data, 'nazwa', lang) : d.kierunek;
-const inne = (await getCollection('specjalnosci')).filter((s) => s.data.kierunek === d.kierunek && s.data.opublikowany !== false).sort((a, b) => a.data.nazwa.localeCompare(b.data.nazwa, 'pl'));
+const inne = (await getCollection('specjalnosci')).filter((s) => s.data.kierunek === d.kierunek && s.data.opublikowany !== false && !s.data.bez_podstrony).sort((a, b) => a.data.kolejnosc - b.data.kolejnosc || a.data.nazwa.localeCompare(b.data.nazwa, 'pl'));
 const zaklad = d.zaklad ? (await zaklady()).find((z) => z.id === d.zaklad) : undefined;
 const osoby = await pracownicy();
 // imię i nazwisko jak w spisie pracowników (bez tytułów) — wtedy pokazujemy e-mail, pokój (telefon tylko u administracji),

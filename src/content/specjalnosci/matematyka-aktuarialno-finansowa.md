@@ -2,6 +2,11 @@
 nazwa: Matematyka aktuarialno-finansowa
 nazwa_en: Actuarial and financial mathematics
 kierunek: matematyka
+kolejnosc: 3
+kafelek_dla_kogo: "Dla osób zainteresowanych ryzykiem, ubezpieczeniami i rynkami finansowymi."
+kafelek_dla_kogo_en: "For those interested in risk, insurance and financial markets."
+kafelek_kariera: "Sektor finansowy i ubezpieczeniowy, np. praca aktuariusza lub specjalisty ds. ryzyka."
+kafelek_kariera_en: "The financial and insurance sector, e.g. as an actuary or a risk specialist."
 skrot: MAF
 poziom: studia I i II stopnia
 poziom_en: first- and second-cycle studies

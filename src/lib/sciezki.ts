@@ -52,5 +52,5 @@ export async function sciezkiKierunkow() {
 
 export async function sciezkiSpecjalnosci() {
   const s = await getCollection('specjalnosci');
-  return s.map((specjalnosc) => ({ params: { kierunek: specjalnosc.data.kierunek, specjalnosc: specjalnosc.id }, props: { specjalnosc } }));
+  return s.filter((x) => !x.data.bez_podstrony).map((specjalnosc) => ({ params: { kierunek: specjalnosc.data.kierunek, specjalnosc: specjalnosc.id }, props: { specjalnosc } }));
 }

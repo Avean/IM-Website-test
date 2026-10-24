@@ -2,6 +2,11 @@
 nazwa: Matematyka stosowana
 nazwa_en: Applied mathematics
 kierunek: matematyka
+kolejnosc: 2
+kafelek_dla_kogo: "Dla osób, które lubią równania różniczkowe i rachunek prawdopodobieństwa, chcą łączyć matematykę z programowaniem i obliczeniami oraz interesują się zastosowaniami w naukach przyrodniczych."
+kafelek_dla_kogo_en: "For those who enjoy differential equations and probability, want to combine mathematics with programming and computation, and are interested in applications in the natural sciences."
+kafelek_kariera: "Praca w sektorach wymagających wysokich kompetencji, krytycznego myślenia i rozwiązywania nietypowych problemów — m.in. w przemyśle i innowacyjnych startupach."
+kafelek_kariera_en: "Work in sectors requiring high competence, critical thinking and non-standard problem solving — e.g. industry and innovative start-ups."
 skrot: MS
 poziom: studia I i II stopnia
 poziom_en: first- and second-cycle studies

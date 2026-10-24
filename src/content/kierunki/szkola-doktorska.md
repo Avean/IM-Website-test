@@ -1,6 +1,13 @@
 ---
 nazwa: Szkoła doktorska
 nazwa_en: Doctoral school
+kolejnosc: 4
+menu_etykieta: "Szkoła doktorska"
+menu_etykieta_en: "Doctoral school"
+kafelek_poziom: "III stopień"
+kafelek_poziom_en: "PhD"
+kafelek_opis: "Kolegium Doktorskie Matematyki."
+kafelek_opis_en: "Doctoral College of Mathematics."
 podtytul: Kolegium Doktorskie Matematyki · Szkoła Doktorska Uniwersytetu Wrocławskiego
 podtytul_en: Doctoral College of Mathematics · Doctoral School of the University of Wrocław
 opis: "Kształcenie doktorantów w dyscyplinie matematyka: badania pod opieką promotora, indywidualny plan badawczy, zajęcia, praktyki dydaktyczne i stypendium doktoranckie."

@@ -2,7 +2,7 @@
 // Nagłówek: logo, menu z rozwijanymi grupami (dane w src/data/nawigacja.json),
 // wyszukiwarka, przełącznik języka i trybu ciemnego, menu na telefon.
 import Ikona from './Ikona.astro';
-import nawigacja from '../data/nawigacja.json';
+import { menuGlowne, type Pozycja } from '../lib/menu';
 import ustawienia from '../data/ustawienia.json';
 import { u, isExternal } from '../lib/url';
 import { t, wJezyku, wybierz } from '../lib/i18n';
@@ -12,10 +12,7 @@ import type { Lang } from '../lib/daty';
 interface Props { lang: Lang; sciezka: string; inny: string | null; naZdjeciu?: boolean }
 const { lang, sciezka, inny, naZdjeciu = false } = Astro.props;
 
-type Link = { etykieta: string; etykieta_en?: string; adres: string };
-type Grupa = { nazwa: string; nazwa_en?: string; linki: Link[] };
-type Pozycja = { etykieta: string; etykieta_en?: string; adres?: string; grupy?: Grupa[] };
-const menu = nawigacja.menu as Pozycja[];
+const menu: Pozycja[] = await menuGlowne();
 
 const bezJezyka = sciezka.replace(/^\/en(?=\/|$)/, '') || '/';
 const pasuje = (adres: string) => !isExternal(adres) && adres !== '/' && (bezJezyka === adres || bezJezyka.startsWith(adres.replace(/#.*$/, '') + '/'));
@@ -122,12 +119,20 @@ const logo = (ustawienia as any).logo as string | undefined;
   );
 
   // Pływający nagłówek: cień po przewinięciu; na stronie głównej przezroczysty na zdjęciu tylko u góry strony
+  // a na samym dole strony głównej przyjmuje kolor stopki
   const hdr = document.querySelector<HTMLElement>('.hdr');
-  const odswiezNaglowek = () => hdr?.classList.toggle('przewiniety', window.scrollY > 40);
-  let ramka = 0;
-  window.addEventListener('scroll', () => {
-    if (!ramka) ramka = requestAnimationFrame(() => { ramka = 0; odswiezNaglowek(); });
-  }, { passive: true });
+  const stopka = hdr?.classList.contains('hdr-foto') ? document.querySelector<HTMLElement>('.ftr') : null;
+  const odswiezNaglowek = () => {
+    if (!hdr) return;
+    hdr.classList.toggle('przewiniety', window.scrollY > 40);
+    if (stopka) {
+      const naDole = stopka.getBoundingClientRect().top < window.innerHeight * 0.6
+        || window.innerHeight + window.scrollY >= document.documentElement.scrollHeight - 4;
+      hdr.classList.toggle('hdr-stopka', naDole);
+    }
+  };
+  window.addEventListener('scroll', odswiezNaglowek, { passive: true });
+  window.addEventListener('resize', odswiezNaglowek, { passive: true });
   odswiezNaglowek();
 
   // Menu na telefon

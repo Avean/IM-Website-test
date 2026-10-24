@@ -2,6 +2,11 @@
 nazwa: Matematyka teoretyczna
 nazwa_en: Theoretical mathematics
 kierunek: matematyka
+kolejnosc: 4
+kafelek_dla_kogo: "Dla osób, które chcą poznać matematykę od strony teorii i dowodów oraz myślą o zaawansowanych studiach i pracy badawczej."
+kafelek_dla_kogo_en: "For those who want to learn mathematics through theory and proofs and are thinking about advanced study and research."
+kafelek_kariera: "Przygotowanie do zaawansowanych studiów magisterskich i pracy badawczej; naturalne zaplecze kadr naukowych i dydaktycznych uczelni."
+kafelek_kariera_en: "Preparation for advanced master's studies and research; a natural talent pool for university teaching and research staff."
 skrot: TEOR
 poziom: studia I i II stopnia
 poziom_en: Bachelor's and master's level

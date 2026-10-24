@@ -121,31 +121,12 @@
           "nazwa_en": "Programmes",
           "linki": [
             {
-              "etykieta": "Matematyka",
-              "etykieta_en": "Mathematics",
-              "adres": "/studia/matematyka"
-            },
-            {
-              "etykieta": "Sztuczna inteligencja w analizie danych",
-              "etykieta_en": "AI in Data Science",
-              "adres": "/studia/siad"
-            },
-            {
-              "etykieta": "ISIM",
-              "etykieta_en": "ISIM",
-              "adres": "/studia/isim"
-            },
-            {
-              "etykieta": "Szkoła doktorska",
-              "etykieta_en": "Doctoral school",
-              "adres": "/studia/szkola-doktorska"
-            },
-            {
               "etykieta": "Studia podyplomowe",
               "etykieta_en": "Postgraduate studies",
               "adres": "/studia/podyplomowe"
             }
-          ]
+          ],
+          "kierunki": true
         },
         {
           "nazwa": "Na co dzień",

@@ -1,6 +1,13 @@
 ---
 nazwa: Matematyka
 nazwa_en: Mathematics
+kolejnosc: 1
+menu_etykieta: "Matematyka"
+menu_etykieta_en: "Mathematics"
+kafelek_poziom: "I i II stopień"
+kafelek_poziom_en: "BSc and MSc"
+kafelek_opis: "Nowy program studiów od roku 2026/27."
+kafelek_opis_en: "New curriculum from 2026/27."
 podtytul: Studia I i II stopnia
 podtytul_en: Bachelor's and master's studies
 opis: Trzyletnie studia licencjackie i dwuletnie magisterskie w Instytucie Matematycznym Uniwersytetu Wrocławskiego.
@@ -107,70 +114,6 @@ etapy:
   tytul_en: Master's thesis and exam
   opis: 'Praca magisterska i egzamin: część pisemna z zakresu specjalności oraz ustna z prezentacją pracy.'
   opis_en: 'Master''s thesis and exam: a written part covering the specialisation and an oral part with a presentation of the thesis.'
-specjalnosci:
-- nazwa: Analiza danych
-  strona: analiza-danych
-  nazwa_en: Data analysis
-  skrot: AD
-  zaklad: statystyka
-  opis: Statystyka matematyczna, modele liniowe, uczenie maszynowe i metody analizy dużych zbiorów danych, a do tego programowanie w R, Pythonie i SQL.
-  opis_en: Mathematical statistics, linear models, machine learning and methods for analysing large data sets, together with programming in R, Python and SQL.
-  dla_kogo: Dla osób, które chcą łączyć matematykę z praktyczną analizą danych.
-  dla_kogo_en: For those who want to combine mathematics with practical data analysis.
-  kariera: 'Np. analityk danych (po I stopniu) lub Data Scientist (po II stopniu), także w przemyśle i startupach korzystających z narzędzi data science.'
-  kariera_en: 'For example data analyst (after the first cycle) or Data Scientist (after the second cycle), including in industry and start-ups that rely on data science tools.'
-  opiekunowie: prof. dr hab. Małgorzata Bogdan, dr Grzegorz Wyłupek
-- nazwa: Matematyka stosowana
-  strona: matematyka-stosowana
-  nazwa_en: Applied mathematics
-  skrot: MS
-  zaklad: rownania-rozniczkowe
-  opis: 'Modelowanie zjawisk deterministycznych i losowych: równania różniczkowe, procesy stochastyczne, metody numeryczne i symulacje, z elementami analizy danych i nauk przyrodniczych.'
-  opis_en: 'Modelling deterministic and random phenomena: differential equations, stochastic processes, numerical methods and simulations, combined with data analysis and the natural sciences.'
-  dla_kogo: Dla osób, które lubią równania różniczkowe i rachunek prawdopodobieństwa, chcą łączyć matematykę z programowaniem i obliczeniami oraz interesują się zastosowaniami w naukach przyrodniczych.
-  dla_kogo_en: For those who enjoy differential equations and probability, want to combine mathematics with programming and computation, and are interested in applications in the natural sciences.
-  kariera: Praca w sektorach wymagających wysokich kompetencji, krytycznego myślenia i rozwiązywania nietypowych problemów — m.in. w przemyśle i innowacyjnych startupach.
-  kariera_en: Work in sectors requiring high competence, critical thinking and non-standard problem solving — e.g. industry and innovative start-ups.
-  opiekunowie: prof. dr hab. Grzegorz Karch
-- nazwa: Matematyka aktuarialno-finansowa
-  strona: matematyka-aktuarialno-finansowa
-  nazwa_en: Actuarial and financial mathematics
-  skrot: MAF
-  zaklad: teoria-prawdopodobienstwa
-  opis: Rachunek prawdopodobieństwa i procesy stochastyczne w zastosowaniu do ubezpieczeń i finansów.
-  opis_en: Probability and stochastic processes applied to insurance and finance.
-  dla_kogo: Dla osób zainteresowanych ryzykiem, ubezpieczeniami i rynkami finansowymi.
-  dla_kogo_en: For those interested in risk, insurance and financial markets.
-  kariera: Sektor finansowy i ubezpieczeniowy, np. praca aktuariusza lub specjalisty ds. ryzyka.
-  kariera_en: The financial and insurance sector, e.g. as an actuary or a risk specialist.
-  opiekunowie: dr Marek Arendarczyk
-- nazwa: Matematyka teoretyczna
-  strona: matematyka-teoretyczna
-  nazwa_en: Theoretical mathematics
-  skrot: TEOR
-  opis: Uporządkowana i pogłębiona wiedza z kluczowych teorii matematycznych oraz biegłość w rygorystycznym dowodzeniu twierdzeń.
-  opis_en: Organised, in-depth knowledge of key mathematical theories and fluency in rigorous proofs.
-  dla_kogo: Dla osób, które chcą poznać matematykę od strony teorii i dowodów oraz myślą o zaawansowanych studiach i pracy badawczej.
-  dla_kogo_en: For those who want to learn mathematics through theory and proofs and are thinking about advanced study and research.
-  kariera: Przygotowanie do zaawansowanych studiów magisterskich i pracy badawczej; naturalne zaplecze kadr naukowych i dydaktycznych uczelni.
-  kariera_en: Preparation for advanced master's studies and research; a natural talent pool for university teaching and research staff.
-  opiekunowie: dr hab. Jan Dymara
-- nazwa: Matematyka nauczycielska
-  strona: matematyka-nauczycielska
-  nazwa_en: Mathematics teaching
-  zaklad: dydaktyka
-  opis: Matematyka z przygotowaniem psychologicznym, pedagogicznym i dydaktycznym oraz praktykami w szkołach — po studiach II stopnia pełne kwalifikacje do nauczania matematyki.
-  opis_en: Mathematics with psychological, pedagogical and didactic training and school placements — full qualifications to teach mathematics after the master's degree.
-  dla_kogo: Dla przyszłych nauczycielek i nauczycieli matematyki.
-  dla_kogo_en: For future mathematics teachers.
-  kariera: Praca nauczyciela matematyki w szkołach wszystkich typów (pełne kwalifikacje po studiach II stopnia).
-  kariera_en: Teaching mathematics in all types of schools (full qualifications after the master's degree).
-  opiekunowie: dr Elżbieta Kalinowska, prof. dr hab. Jacek Świątkowski
-- nazwa: Matematyka w ekonomii
-  nazwa_en: Mathematics in economics
-  wygaszana: true
-  opis: Specjalność wygaszana — dostępna wyłącznie dla studentów studiujących według starego programu.
-  opis_en: Being phased out — available only to students following the previous curriculum.
 programy:
 - nazwa: Nowy program (od 2026/27)
   nazwa_en: New curriculum (from 2026/27)

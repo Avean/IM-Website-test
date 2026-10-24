@@ -1,6 +1,6 @@
 ---
 // Strona kierunku studiów (np. Matematyka). Treść: src/content/kierunki/<kierunek>.md (edycja w Pages CMS).
-import { render } from 'astro:content';
+import { render, getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
 import Ikona from '../components/Ikona.astro';
@@ -9,7 +9,7 @@ import { u, isExternal } from '../lib/url';
 import { t, wJezyku, wybierz } from '../lib/i18n';
 import { today, type Lang } from '../lib/daty';
 import { renderMarkdown } from '../lib/markdown';
-import { zaklady } from '../lib/tresci';
+import { zaklady, pracownicy } from '../lib/tresci';
 
 interface Props { kierunek: CollectionEntry<'kierunki'>; lang: Lang }
 const { kierunek, lang } = Astro.props;
@@ -25,6 +25,25 @@ const kariera = await md(d.kariera, d.kariera_en);
 const praktyki = await md(d.praktyki, d.praktyki_en);
 const faq = await Promise.all(d.faq.map(async (f) => ({ q: w(f, 'pytanie'), a: await md(f.odpowiedz, f.odpowiedz_en) })));
 const nazwyZakladow = Object.fromEntries((await zaklady()).map((z) => [z.id, z]));
+// Kafelki specjalności budują się z plików specjalności (src/content/specjalnosci) — jedno miejsce edycji.
+const osoby = await pracownicy();
+const zTytulem = (n: string) => {
+  const kand = osoby.filter((p) => p.data.imie_nazwisko === n.trim());
+  const o = kand.find((p) => p.data.grupa === 'nauczyciel') ?? kand.find((p) => p.data.grupa !== 'administracja') ?? kand[0];
+  return o?.data.stopien ? `${o.data.stopien} ${n.trim()}` : n.trim();
+};
+const specjalnosci = (await getCollection('specjalnosci'))
+  .filter((s) => s.data.kierunek === kierunek.id && s.data.opublikowany !== false && s.data.na_stronie_kierunku)
+  .sort((a, b) => Number(a.data.wygaszana) - Number(b.data.wygaszana) || a.data.kolejnosc - b.data.kolejnosc || a.data.nazwa.localeCompare(b.data.nazwa, 'pl'))
+  .map((s) => ({
+    ...s.data,
+    strona: s.data.bez_podstrony ? undefined : s.id,
+    opiekunowie: s.data.opiekunowie.map((o) => zTytulem(o.imie_nazwisko)).join(', '),
+    dla_kogo: s.data.kafelek_dla_kogo,
+    dla_kogo_en: s.data.kafelek_dla_kogo_en,
+    kariera: s.data.kafelek_kariera,
+    kariera_en: s.data.kafelek_kariera_en,
+  }));
 
 const nazwa = w(d, 'nazwa');
 const etapyI = d.etapy.filter((e) => e.stopien === 'I');
@@ -47,7 +66,7 @@ const linkDyplom = kierunek.id === 'matematyka';
 const sekcje = [
   { slug: 'o-kierunku', text: N.o },
   ...(d.etapy.length ? [{ slug: 'przebieg', text: N.przebieg }] : []),
-  ...(d.specjalnosci.length ? [{ slug: 'specjalnosci', text: T('Specjalności', 'Specialisations') }] : []),
+  ...(specjalnosci.length ? [{ slug: 'specjalnosci', text: T('Specjalności', 'Specialisations') }] : []),
   ...(d.programy.length ? [{ slug: 'program', text: N.program }] : []),
   ...(d.terminy.length ? [{ slug: 'terminy', text: T('Terminy i formularze', 'Deadlines and forms') }] : []),
   ...(praktyki ? [{ slug: 'praktyki', text: T('Praktyki pedagogiczne', 'Teaching placements') }] : []),
@@ -92,7 +111,7 @@ const sekcje = [
           <Ikona nazwa="czapka" rozmiar={26} />
           {doktorat
             ? <span><strong>{T('Chcę zrobić doktorat', 'I want to do a PhD')}</strong><span>{T('O Kolegium, rekrutacja i stypendia', 'About the College, admissions and stipends')}</span></span>
-            : <span><strong>{T('Chcę studiować', 'I want to study here')}</strong><span>{d.specjalnosci.length ? T('O kierunku, specjalności i perspektywy po studiach', 'About the programme, specialisations and careers') : T('O kierunku i perspektywy po studiach', 'About the programme and careers')}</span></span>}
+            : <span><strong>{T('Chcę studiować', 'I want to study here')}</strong><span>{specjalnosci.length ? T('O kierunku, specjalności i perspektywy po studiach', 'About the programme, specialisations and careers') : T('O kierunku i perspektywy po studiach', 'About the programme and careers')}</span></span>}
         </a>
         <a class="entry" href="#przebieg">
           <Ikona nazwa="kalendarz" rozmiar={26} />
@@ -148,11 +167,11 @@ const sekcje = [
         </section>
       )}
 
-      {d.specjalnosci.length > 0 && (
+      {specjalnosci.length > 0 && (
         <section class="zsec" aria-labelledby="specjalnosci">
           <h2 id="specjalnosci">{T('Specjalności', 'Specialisations')}</h2>
           <div class="spec-grid">
-            {d.specjalnosci.map((s) => (
+            {specjalnosci.map((s) => (
               <article class={`spec${s.wygaszana ? ' spec-off' : ''}${s.strona ? ' spec-link' : ''}`}>
                 <div class="news-meta">
                   {s.skrot && <span class="badge">{s.skrot}</span>}
