@@ -126,6 +126,15 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
 .js .hdr-foto ~ main .hero-fig::after { content: ''; position: absolute; inset: 0 0 auto 0; height: max(45%, 190px); background: linear-gradient(rgb(6 11 22 / .74), rgb(6 11 22 / .38) 55%, rgb(6 11 22 / 0)); pointer-events: none; }
 .js .hdr-foto ~ main .hero-fig figcaption { top: calc(var(--hdr-h) + 12px); z-index: 1; }
 .hdr-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 70px; }
+/* nagłówek szerszy niż treść strony, żeby logotyp, nazwa i menu miały oddech */
+.hdr > .wrap.hdr-row { max-width: 1520px; }
+@media (min-width: 1400px) {
+  .hdr-row { gap: 24px; }
+  .nav { gap: 4px; }
+  .nav > a, .nav-pill { padding: 0 12px; }
+  .hdr-search input { width: 110px; }
+  .brand-name { font-size: 18px; }
+}
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
 .brand img { width: auto; height: 44px; }
 /* pełny logotyp UWr (orzeł + napis) jako maska w kolorze UWr; na zdjęciu i przy stopce — biały; na telefonie samo godło */
