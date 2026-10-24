@@ -241,7 +241,8 @@ def klonuj(repo, cel):
     except subprocess.TimeoutExpired:
         return False, 'przekroczony czas pobierania (180 s)'
     if r.returncode != 0:
-        opis = (r.stderr.strip().splitlines() or ['nieznany błąd git'])[-1]
+        linie = [x.strip() for x in r.stderr.splitlines() if x.strip()]
+        opis = next((x for x in linie if x.lower().startswith(('fatal:', 'error:', 'remote:'))), linie[-1] if linie else 'nieznany błąd git')
         if token:
             opis = opis.replace(token, '***')
         return False, f'{opis} (repozytorium nie istnieje, jest prywatne bez tokenu albo GitHub jest niedostępny)'
@@ -278,7 +279,12 @@ def wczytaj_stan(kat):
 def wstaw(korzen, sid, referaty, pliki):
     """Zastępuje src/content/referaty/<sid>/ pobranymi referatami; pliki dokłada do public/pliki/seminaria/<sid>/."""
     folder = korzen / 'src' / 'content' / 'referaty' / sid
-    stare = sorted(p.relative_to(folder).as_posix() for p in folder.rglob('*.md')) if folder.is_dir() else []
+    # referaty tego seminarium zapisane w głównym repozytorium (śledzone przez git; bez gita — wszystkie .md)
+    r = subprocess.run(['git', '-C', str(korzen), 'ls-files', '-z', '--', f'src/content/referaty/{sid}/'], capture_output=True, text=True)
+    if r.returncode == 0:
+        stare = sorted(Path(x).relative_to(f'src/content/referaty/{sid}').as_posix() for x in r.stdout.split('\0') if x.endswith('.md'))
+    else:
+        stare = sorted(p.relative_to(folder).as_posix() for p in folder.rglob('*.md')) if folder.is_dir() else []
     tmp = folder.with_name(folder.name + '.pobrane')
     shutil.rmtree(tmp, ignore_errors=True)
     for rel, tekst in referaty.items():
@@ -359,7 +365,7 @@ def pobierz(korzen, tylko=None):
                           f'Seminarium ma osobne repozytorium {repo}, a w src/content/referaty/{sid}/ głównego repozytorium są pliki ({len(stare)}): '
                           + ', '.join(stare[:10]) + (' …' if len(stare) > 10 else '')
                           + '. Na stronie są tylko referaty z repozytorium seminarium — przenieś te pliki tam albo usuń je z głównego repozytorium.')
-            podsumowanie.append(f'{sid}: {len(referaty)} referatów, {len(pliki)} plików z {zrodlo}')
+            podsumowanie.append(f'{sid}: referaty {len(referaty)}, pliki {len(pliki)} — z {zrodlo}')
         except Exception as e:  # jeden zepsuty przypadek nie może zatrzymać pozostałych ani budowania
             adnotacja('warning', f'Seminarium {sid}: nieoczekiwany błąd', f'{e.__class__.__name__}: {e}')
             podsumowanie.append(f'{sid}: nieoczekiwany błąd')
