@@ -4,6 +4,7 @@ poczatek: "2019-01-26"
 koniec: "2019-02-02"
 miejsce: "Hejnice"
 strona: "https://www.winterschool.eu/"
+zaklad: "teoria-mnogosci-i-topologia"
 opublikowany: true
 ---
 

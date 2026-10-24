@@ -21,6 +21,57 @@
           ]
         },
         {
+          "nazwa": "Zakłady",
+          "nazwa_en": "Departments",
+          "linki": [
+            {
+              "etykieta": "Algebra i teoria modeli",
+              "etykieta_en": "Algebra and model theory",
+              "adres": "/instytut/zaklady/algebra-i-teoria-modeli"
+            },
+            {
+              "etykieta": "Analiza funkcjonalna",
+              "etykieta_en": "Functional analysis",
+              "adres": "/instytut/zaklady/analiza-funkcjonalna"
+            },
+            {
+              "etykieta": "Analiza matematyczna",
+              "etykieta_en": "Mathematical analysis",
+              "adres": "/instytut/zaklady/analiza-matematyczna"
+            },
+            {
+              "etykieta": "Geometria",
+              "etykieta_en": "Geometry",
+              "adres": "/instytut/zaklady/geometria"
+            },
+            {
+              "etykieta": "Równania różniczkowe",
+              "etykieta_en": "Differential equations",
+              "adres": "/instytut/zaklady/rownania-rozniczkowe"
+            },
+            {
+              "etykieta": "Teoria mnogości i topologia",
+              "etykieta_en": "Set theory and topology",
+              "adres": "/instytut/zaklady/teoria-mnogosci-i-topologia"
+            },
+            {
+              "etykieta": "Teoria prawdopodobieństwa",
+              "etykieta_en": "Probability theory",
+              "adres": "/instytut/zaklady/teoria-prawdopodobienstwa"
+            },
+            {
+              "etykieta": "Statystyka",
+              "etykieta_en": "Statistics",
+              "adres": "/instytut/zaklady/statystyka"
+            },
+            {
+              "etykieta": "Dydaktyka i popularyzacja",
+              "etykieta_en": "Education and outreach",
+              "adres": "/instytut/zaklady/dydaktyka"
+            }
+          ]
+        },
+        {
           "nazwa": "Organizacja",
           "nazwa_en": "Organisation",
           "linki": [

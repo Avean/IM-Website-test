@@ -4,6 +4,7 @@ poczatek: "2016-09-11"
 koniec: "2016-09-16"
 miejsce: "Będlewo"
 strona: "http://www.math.uni.wroc.pl/~karch/pattern/"
+zaklad: "rownania-rozniczkowe"
 opublikowany: true
 ---
 

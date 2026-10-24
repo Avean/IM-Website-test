@@ -7,6 +7,7 @@ prowadzacy:
 kontakt: "michal.krawiec@math.uni.wroc.pl"
 termin: "czwartek 12:15–14:00, sala 602"
 strona: "http://math.uni.wroc.pl/~krawiec/seminar/"
+zaklad: "teoria-prawdopodobienstwa"
 aktywne: true
 opublikowany: true
 ---

@@ -8,6 +8,7 @@ prowadzacy:
 kontakt: "Robert.Stanczy@math.uni.wroc.pl"
 termin: "poniedziałek 15:15–17:00, sala 603"
 strona: "http://www.math.uni.wroc.pl/~stanczr/semin/semin.html"
+zaklad: "rownania-rozniczkowe"
 aktywne: true
 opublikowany: true
 ---

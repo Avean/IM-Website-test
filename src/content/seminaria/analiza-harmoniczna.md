@@ -10,6 +10,7 @@ prowadzacy:
 kontakt: "Jacek.Dziubanski@math.uni.wroc.pl"
 termin: "środa 10:15–12:00, sala 601"
 strona: "http://www.impan.pl/~anowak/seminarium_AH.html"
+zaklad: "analiza-funkcjonalna"
 aktywne: true
 opublikowany: true
 ---

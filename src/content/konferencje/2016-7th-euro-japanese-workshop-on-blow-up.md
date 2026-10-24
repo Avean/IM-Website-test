@@ -4,6 +4,7 @@ poczatek: "2016-09-04"
 koniec: "2016-09-09"
 miejsce: "Będlewo"
 strona: "http://www.iam.fmph.uniba.sk/institute/quittner/bedlewo/"
+zaklad: "rownania-rozniczkowe"
 opublikowany: true
 ---
 

@@ -6,6 +6,7 @@ prowadzacy:
   - "Marek Bożejko"
 kontakt: "mariusz.tobolski@math.uni.wroc.pl"
 termin: "czwartek 10:15–12:00, sala 604"
+zaklad: "analiza-matematyczna"
 aktywne: true
 opublikowany: true
 ---

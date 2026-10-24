@@ -1,6 +1,6 @@
 // Listy adresów do wygenerowania (getStaticPaths) — wspólne dla wersji PL i EN.
 import { getCollection } from 'astro:content';
-import { aktualnosci, obrony, seminaria, konferencje, granty, slugOf, opublikowane } from './tresci';
+import { aktualnosci, obrony, seminaria, konferencje, granty, zaklady, slugOf, opublikowane } from './tresci';
 
 export async function sciezkiAktualnosci() {
   const wszystkie = await aktualnosci(true);
@@ -38,4 +38,9 @@ export async function sciezkiKonferencji() {
 export async function sciezkiGrantow() {
   const g = await granty(true);
   return g.filter((x) => x.body?.trim()).map((grant) => ({ params: { slug: slugOf(grant.id) }, props: { grant } }));
+}
+
+export async function sciezkiZakladow() {
+  const z = await zaklady(true);
+  return z.map((zaklad) => ({ params: { slug: zaklad.id }, props: { zaklad } }));
 }

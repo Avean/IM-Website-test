@@ -4,7 +4,9 @@ import { getCollection } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
 import TabelaPracownikow, { type Osoba } from '../components/TabelaPracownikow.tsx';
-import { t } from '../lib/i18n';
+import { t, wybierz, wJezyku } from '../lib/i18n';
+import { u } from '../lib/url';
+import { zaklady as pobierzZaklady } from '../lib/tresci';
 import type { Lang } from '../lib/daty';
 
 interface Props { lang: Lang }
@@ -18,6 +20,7 @@ const osoby: Osoba[] = (await getCollection('pracownicy'))
 const grupy = (['nauczyciel', 'doktorant', 'administracja', 'emeryt'] as const)
   .filter((g) => osoby.some((o) => o.grupa === g))
   .map((g) => ({ id: g, nazwa: t(lang, `g_${g}`) }));
+const zaklady = (await pobierzZaklady()).map((z) => ({ id: z.id, nazwa: wybierz(z.data, 'nazwa_krotka', lang) || wybierz(z.data, 'nazwa', lang), href: u(wJezyku(`/instytut/zaklady/${z.id}`, lang)) }));
 const napisy = {
   szukaj: lang === 'en' ? 'Search by name, room, e-mail…' : 'Szukaj: nazwisko, pokój, e-mail…',
   grupa: lang === 'en' ? 'Group' : 'Grupa',
@@ -31,6 +34,8 @@ const napisy = {
   strona: t(lang, 'strona'),
   link: 'WWW',
   brak: lang === 'en' ? 'Nobody matches the search.' : 'Nikogo nie znaleziono.',
+  zaklad: lang === 'en' ? 'Department' : 'Zakład',
+  wszystkieZaklady: lang === 'en' ? 'All departments' : 'Wszystkie zakłady',
 };
 const lead = lang === 'en'
   ? 'Contact details of the staff, PhD students and administration of the Mathematical Institute.'
@@ -39,6 +44,6 @@ const lead = lang === 'en'
 <Baza tytul={t(lang, 'pracownicy')} opis={lead}>
   <NaglowekStrony tytul={t(lang, 'pracownicy')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut') }, { etykieta: t(lang, 'pracownicy') }]} />
   <div class="wrap" style="padding-top:28px;padding-bottom:64px">
-    <TabelaPracownikow client:load osoby={osoby} grupy={grupy} napisy={napisy} />
+    <TabelaPracownikow client:load osoby={osoby} grupy={grupy} zaklady={zaklady} napisy={napisy} />
   </div>
 </Baza>

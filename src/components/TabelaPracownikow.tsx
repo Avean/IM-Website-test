@@ -18,24 +18,29 @@ export interface Osoba {
 interface Props {
   osoby: Osoba[];
   grupy: { id: string; nazwa: string }[];
+  zaklady: { id: string; nazwa: string; href: string }[];
   napisy: Record<string, string>;
 }
 
 const norm = (s: string) =>
   s.toLowerCase().normalize('NFD').replace(/[̀-ͯ]/g, '').replace(/ł/g, 'l');
 
-export default function TabelaPracownikow({ osoby, grupy, napisy }: Props) {
+export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Props) {
   const [q, setQ] = useState('');
   const [grupa, setGrupa] = useState('');
+  const [zaklad, setZaklad] = useState('');
+  const nazwyZakladow = useMemo(() => Object.fromEntries(zaklady.map((z) => [z.id, z.nazwa])), [zaklady]);
+  const linkiZakladow = useMemo(() => Object.fromEntries(zaklady.map((z) => [z.id, z.href])), [zaklady]);
 
   const widoczne = useMemo(() => {
     const nq = norm(q.trim());
     return osoby.filter(
       (o) =>
         (!grupa || o.grupa === grupa) &&
-        (!nq || norm([o.imie_nazwisko, o.stopien, o.funkcja, o.zaklad, o.email, o.pokoj].filter(Boolean).join(' ')).includes(nq))
+        (!zaklad || o.zaklad === zaklad) &&
+        (!nq || norm([o.imie_nazwisko, o.stopien, o.funkcja, o.zaklad && nazwyZakladow[o.zaklad], o.email, o.pokoj].filter(Boolean).join(' ')).includes(nq))
     );
-  }, [osoby, q, grupa]);
+  }, [osoby, q, grupa, zaklad, nazwyZakladow]);
 
   const sekcje = grupy
     .map((g) => ({ ...g, osoby: widoczne.filter((o) => o.grupa === g.id) }))
@@ -51,6 +56,15 @@ export default function TabelaPracownikow({ osoby, grupy, napisy }: Props) {
           </svg>
           <span className="sr-only">{napisy.szukaj}</span>
           <input type="search" value={q} placeholder={napisy.szukaj} onChange={(e) => setQ(e.target.value)} />
+        </label>
+        <label className="search" style={{ minWidth: 0 }}>
+          <span className="sr-only">{napisy.zaklad}</span>
+          <select value={zaklad} onChange={(e) => setZaklad(e.target.value)} style={{ border: 0, background: 'transparent', font: 'inherit', fontSize: 15, color: 'var(--ink)', outline: 'none', maxWidth: 260 }}>
+            <option value="">{napisy.wszystkieZaklady}</option>
+            {zaklady.map((z) => (
+              <option key={z.id} value={z.id}>{z.nazwa}</option>
+            ))}
+          </select>
         </label>
         <div className="chips" role="group" aria-label={napisy.grupa} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
           <button type="button" className="chip" aria-pressed={grupa === ''} onClick={() => setGrupa('')}>
@@ -88,7 +102,13 @@ export default function TabelaPracownikow({ osoby, grupy, napisy }: Props) {
                   <td className="n" data-l={napisy.imie}>
                     {o.stopien ? `${o.stopien} ` : ''}
                     {o.imie_nazwisko}
-                    {(o.funkcja || o.zaklad) && <small>{[o.funkcja, o.zaklad].filter(Boolean).join(' · ')}</small>}
+                    {(o.funkcja || o.zaklad) && (
+                      <small>
+                        {o.funkcja}
+                        {o.funkcja && o.zaklad && ' · '}
+                        {o.zaklad && linkiZakladow[o.zaklad] && <a href={linkiZakladow[o.zaklad]} style={{ color: 'inherit' }}>{nazwyZakladow[o.zaklad]}</a>}
+                      </small>
+                    )}
                   </td>
                   {g.id === 'doktorant' && <td data-l={napisy.rok}>{o.rok_studiow ?? ''}</td>}
                   <td data-l={napisy.email}>{o.email ? <a href={`mailto:${o.email}`}>{o.email}</a> : ''}</td>

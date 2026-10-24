@@ -4,6 +4,7 @@ poczatek: "2016-01-30"
 koniec: "2016-02-06"
 miejsce: "Hejnice"
 strona: "http://www.winterschool.eu/"
+zaklad: "teoria-mnogosci-i-topologia"
 opublikowany: true
 ---
 

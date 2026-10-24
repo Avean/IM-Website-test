@@ -4,6 +4,7 @@ poczatek: "2016-04-11"
 koniec: "2016-04-14"
 miejsce: "Będlewo"
 strona: "https://combandgroups.wordpress.com/"
+zaklad: "geometria"
 opublikowany: true
 ---
 

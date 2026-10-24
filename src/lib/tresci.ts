@@ -8,6 +8,8 @@ export type Referat = CollectionEntry<'referaty'>;
 export type Seminarium = CollectionEntry<'seminaria'>;
 export type Konferencja = CollectionEntry<'konferencje'>;
 export type Grant = CollectionEntry<'granty'>;
+export type Zaklad = CollectionEntry<'zaklady'>;
+export type Pracownik = CollectionEntry<'pracownicy'>;
 
 export const opublikowane = <T extends { data: { opublikowany?: boolean } }>(e: T) => e.data.opublikowany !== false;
 
@@ -47,6 +49,40 @@ export async function granty(wszystkie = false): Promise<Grant[]> {
   return items
     .filter((e) => wszystkie || opublikowane(e))
     .sort((a, b) => (b.data.rok_od ?? 0) - (a.data.rok_od ?? 0) || (b.data.rok_do ?? 0) - (a.data.rok_do ?? 0) || a.data.tytul.localeCompare(b.data.tytul, 'pl'));
+}
+
+export async function zaklady(wszystkie = false): Promise<Zaklad[]> {
+  const items = await getCollection('zaklady');
+  return items.filter((e) => wszystkie || opublikowane(e)).sort((a, b) => a.data.kolejnosc - b.data.kolejnosc || a.data.nazwa.localeCompare(b.data.nazwa, 'pl'));
+}
+
+export async function pracownicy(): Promise<Pracownik[]> {
+  return (await getCollection('pracownicy')).filter(opublikowane);
+}
+
+// Nazwisko z zapisu typu „prof. dr hab. P. Borodulin-Nadzieja” albo „prof. Piotr Biler, prof. Grzegorz Karch” (bierzemy pierwszą osobę).
+const nazwiskoZ = (s: string) => {
+  const pierwsza = s.split(/[,;]/)[0].trim();
+  return pierwsza.split(/\s+/).pop()!.replace(/[^\p{L}-]/gu, '');
+};
+
+// Zakład projektu: pole „zakład”, a gdy puste — zakład kierownika znalezionego w spisie pracowników.
+export function zakladGrantu(g: Grant, osoby: Pracownik[]): string | undefined {
+  if (g.data.zaklad) return g.data.zaklad;
+  if (!g.data.kierownik) return undefined;
+  const n = nazwiskoZ(g.data.kierownik);
+  const pasujace = osoby.filter((o) => o.data.imie_nazwisko.split(/\s+/).pop() === n);
+  return pasujace.length === 1 ? pasujace[0].data.zaklad : undefined;
+}
+
+// Kolejność na liście składu: profesorowie, doktorzy habilitowani, doktorzy, magistrzy.
+export function rangaStopnia(stopien?: string): number {
+  const s = (stopien ?? '').toLowerCase();
+  if (s.includes('prof. dr hab') || s.startsWith('prof')) return 0;
+  if (s.includes('hab')) return 1;
+  if (s.startsWith('dr')) return 2;
+  if (s.startsWith('mgr')) return 3;
+  return 4;
 }
 
 // Folder referatu = identyfikator seminarium (np. referaty/statystyka/2026-10-13-x.md).

@@ -5,6 +5,7 @@ prowadzacy:
   - "Grzegorz Wyłupek"
 kontakt: "wylupek@math.uni.wroc.pl"
 termin: "czwartek 12:15–14:00, sala 711"
+zaklad: "statystyka"
 aktywne: true
 opublikowany: true
 ---

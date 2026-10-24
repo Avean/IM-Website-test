@@ -127,6 +127,20 @@ content:
             type: file
             options:
               path: public/pliki/aktualnosci
+      - name: zaklad
+        label: Zakład (opcjonalnie — wpis pojawi się też na stronie zakładu)
+        type: select
+        options:
+          values:
+            - { name: algebra-i-teoria-modeli, label: Algebra i teoria modeli }
+            - { name: analiza-funkcjonalna, label: Analiza funkcjonalna }
+            - { name: analiza-matematyczna, label: Analiza matematyczna }
+            - { name: geometria, label: Geometria }
+            - { name: rownania-rozniczkowe, label: Równania różniczkowe }
+            - { name: teoria-mnogosci-i-topologia, label: Teoria mnogości i topologia }
+            - { name: teoria-prawdopodobienstwa, label: Teoria prawdopodobieństwa }
+            - { name: statystyka, label: Statystyka }
+            - { name: dydaktyka, label: Pracownia Dydaktyki i Popularyzacji Matematyki }
       - name: tytul_en
         label: "EN: tytuł"
         type: string
@@ -191,6 +205,20 @@ content:
           - { name: recenzent, label: "Recenzent (np. prof. dr hab. Jan Kowalski)", type: string }
           - { name: plik, label: Recenzja (PDF), type: file, options: { path: public/pliki/obrony } }
       - { name: bip, label: Link do ogłoszenia w BIP (opcjonalnie), type: string }
+      - name: zaklad
+        label: Zakład (opcjonalnie)
+        type: select
+        options:
+          values:
+            - { name: algebra-i-teoria-modeli, label: Algebra i teoria modeli }
+            - { name: analiza-funkcjonalna, label: Analiza funkcjonalna }
+            - { name: analiza-matematyczna, label: Analiza matematyczna }
+            - { name: geometria, label: Geometria }
+            - { name: rownania-rozniczkowe, label: Równania różniczkowe }
+            - { name: teoria-mnogosci-i-topologia, label: Teoria mnogości i topologia }
+            - { name: teoria-prawdopodobienstwa, label: Teoria prawdopodobieństwa }
+            - { name: statystyka, label: Statystyka }
+            - { name: dydaktyka, label: Pracownia Dydaktyki i Popularyzacji Matematyki }
       - name: body
         label: Dodatkowy opis (opcjonalnie)
         type: rich-text
@@ -219,6 +247,20 @@ content:
       - { name: strona, label: Zewnętrzna strona seminarium, type: string }
       - { name: grupa_google, label: Link do zapisu na listę (Google Groups), type: string }
       - { name: archiwum, label: Link do archiwum referatów, type: string }
+      - name: zaklad
+        label: Zakład
+        type: select
+        options:
+          values:
+            - { name: algebra-i-teoria-modeli, label: Algebra i teoria modeli }
+            - { name: analiza-funkcjonalna, label: Analiza funkcjonalna }
+            - { name: analiza-matematyczna, label: Analiza matematyczna }
+            - { name: geometria, label: Geometria }
+            - { name: rownania-rozniczkowe, label: Równania różniczkowe }
+            - { name: teoria-mnogosci-i-topologia, label: Teoria mnogości i topologia }
+            - { name: teoria-prawdopodobienstwa, label: Teoria prawdopodobieństwa }
+            - { name: statystyka, label: Statystyka }
+            - { name: dydaktyka, label: Pracownia Dydaktyki i Popularyzacji Matematyki }
       - { name: aktywne, label: Aktywne, type: boolean, default: true }
       - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
       - name: body
@@ -268,6 +310,48 @@ content:
         options:
           format: markdown
 
+  # ---------------------------------------------------------------- ZAKŁADY
+  - name: zaklady
+    label: Zakłady
+    description: Skład zakładu bierze się z pola „Zakład” w kartach pracowników; seminaria, granty i konferencje — z ich pola „Zakład”.
+    type: collection
+    path: src/content/zaklady
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [nazwa, kierownik]
+      primary: nazwa
+      sort: kolejnosc
+    fields:
+      - { name: nazwa, label: Pełna nazwa, type: string, required: true }
+      - { name: nazwa_krotka, label: "Krótka nazwa (np. Geometria)", type: string }
+      - { name: kierownik, label: "Kierownik (imię i nazwisko jak w spisie pracowników)", type: string }
+      - { name: telefon, label: Telefon kierownika, type: string }
+      - { name: opis, label: Jedno zdanie o zakładzie, type: text }
+      - name: obszary
+        label: Obszary badań (tagi)
+        type: string
+        list: true
+      - { name: strona, label: Zewnętrzna strona zespołu, type: string }
+      - { name: zdjecie, label: Zdjęcie zespołu, type: image, options: { path: public/pliki/zaklady } }
+      - { name: zdjecie_opis, label: Podpis zdjęcia, type: string }
+      - { name: kolejnosc, label: Kolejność na liście, type: number }
+      - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
+      - name: body
+        label: Opis zakładu (czym się zajmuje, historia, tematy prac dla studentów)
+        type: rich-text
+        options:
+          format: markdown
+          path: public/pliki/zaklady
+      - { name: nazwa_en, label: "EN: pełna nazwa", type: string }
+      - { name: nazwa_krotka_en, label: "EN: krótka nazwa", type: string }
+      - { name: opis_en, label: "EN: jedno zdanie", type: text }
+      - name: obszary_en
+        label: "EN: obszary badań"
+        type: string
+        list: true
+      - { name: tresc_en, label: "EN: opis (Markdown)", type: text }
+
   # ---------------------------------------------------------------- KONFERENCJE
   - name: konferencje
     label: Konferencje
@@ -299,7 +383,20 @@ content:
       - { name: miejsce, label: "Miejsce (np. Wrocław, Będlewo)", type: string }
       - { name: strona, label: Strona internetowa konferencji, type: string }
       - { name: organizatorzy, label: Organizatorzy z Instytutu, type: string }
-      - { name: zaklad, label: Zakład (opcjonalnie), type: string }
+      - name: zaklad
+        label: Zakład (opcjonalnie)
+        type: select
+        options:
+          values:
+            - { name: algebra-i-teoria-modeli, label: Algebra i teoria modeli }
+            - { name: analiza-funkcjonalna, label: Analiza funkcjonalna }
+            - { name: analiza-matematyczna, label: Analiza matematyczna }
+            - { name: geometria, label: Geometria }
+            - { name: rownania-rozniczkowe, label: Równania różniczkowe }
+            - { name: teoria-mnogosci-i-topologia, label: Teoria mnogości i topologia }
+            - { name: teoria-prawdopodobienstwa, label: Teoria prawdopodobieństwa }
+            - { name: statystyka, label: Statystyka }
+            - { name: dydaktyka, label: Pracownia Dydaktyki i Popularyzacji Matematyki }
       - { name: zdjecie, label: Plakat lub zdjęcie (opcjonalnie), type: image, options: { path: public/pliki/konferencje } }
       - { name: odwolana, label: Odwołana, type: boolean, default: false }
       - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
@@ -344,7 +441,20 @@ content:
       - { name: rok_od, label: Rok rozpoczęcia, type: number }
       - { name: rok_do, label: Rok zakończenia, type: number }
       - { name: kwota, label: Kwota (opcjonalnie), type: string }
-      - { name: zaklad, label: Zakład (opcjonalnie), type: string }
+      - name: zaklad
+        label: Zakład (opcjonalnie)
+        type: select
+        options:
+          values:
+            - { name: algebra-i-teoria-modeli, label: Algebra i teoria modeli }
+            - { name: analiza-funkcjonalna, label: Analiza funkcjonalna }
+            - { name: analiza-matematyczna, label: Analiza matematyczna }
+            - { name: geometria, label: Geometria }
+            - { name: rownania-rozniczkowe, label: Równania różniczkowe }
+            - { name: teoria-mnogosci-i-topologia, label: Teoria mnogości i topologia }
+            - { name: teoria-prawdopodobienstwa, label: Teoria prawdopodobieństwa }
+            - { name: statystyka, label: Statystyka }
+            - { name: dydaktyka, label: Pracownia Dydaktyki i Popularyzacji Matematyki }
       - { name: strona, label: Strona projektu, type: string }
       - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
       - name: body
@@ -378,7 +488,20 @@ content:
             - { name: administracja, label: Administracja }
             - { name: emeryt, label: Emerytowani pracownicy }
       - { name: funkcja, label: "Funkcja (np. Sekretariat dydaktyczny)", type: string }
-      - { name: zaklad, label: Zakład, type: string }
+      - name: zaklad
+        label: Zakład
+        type: select
+        options:
+          values:
+            - { name: algebra-i-teoria-modeli, label: Algebra i teoria modeli }
+            - { name: analiza-funkcjonalna, label: Analiza funkcjonalna }
+            - { name: analiza-matematyczna, label: Analiza matematyczna }
+            - { name: geometria, label: Geometria }
+            - { name: rownania-rozniczkowe, label: Równania różniczkowe }
+            - { name: teoria-mnogosci-i-topologia, label: Teoria mnogości i topologia }
+            - { name: teoria-prawdopodobienstwa, label: Teoria prawdopodobieństwa }
+            - { name: statystyka, label: Statystyka }
+            - { name: dydaktyka, label: Pracownia Dydaktyki i Popularyzacji Matematyki }
       - { name: rok_studiow, label: Rok studiów doktoranckich, type: number }
       - { name: email, label: E-mail, type: string }
       - { name: telefon, label: "Telefon (np. 71 375 7401)", type: string }

@@ -43,6 +43,7 @@ const aktualnosci = defineCollection({
     tytul_en: optStr,
     zajawka_en: optStr,
     tresc_en: optStr,
+    zaklad: optStr,
     opublikowany: published,
   }),
 });
@@ -87,6 +88,7 @@ const seminaria = defineCollection({
     strona: optStr,
     grupa_google: optStr,
     archiwum: optStr,
+    zaklad: optStr,
     aktywne: published,
     opublikowany: published,
   }),
@@ -120,12 +122,35 @@ const obrony = defineCollection({
     streszczenie_en: optStr,
     recenzje: z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(z.object({ recenzent: z.string(), plik: z.string() }))),
     bip: optStr,
+    zaklad: optStr,
     w_aktualnosciach: published,
     opublikowany: published,
   }),
 });
 
 const rok = z.preprocess(empty, z.coerce.number().int().optional());
+
+const zaklady = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/zaklady' }),
+  schema: z.object({
+    nazwa: z.string(),
+    nazwa_en: optStr,
+    nazwa_krotka: optStr,
+    nazwa_krotka_en: optStr,
+    kolejnosc: z.preprocess(empty, z.coerce.number().default(99)),
+    kierownik: optStr,
+    telefon: optStr,
+    opis: optStr,
+    opis_en: optStr,
+    obszary: strList,
+    obszary_en: strList,
+    strona: optStr,
+    zdjecie: optStr,
+    zdjecie_opis: optStr,
+    tresc_en: optStr,
+    opublikowany: published,
+  }),
+});
 
 const konferencje = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/konferencje' }),
@@ -163,4 +188,4 @@ const granty = defineCollection({
   }),
 });
 
-export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony, konferencje, granty };
+export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony, konferencje, granty, zaklady };
