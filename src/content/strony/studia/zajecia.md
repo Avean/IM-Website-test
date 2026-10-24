@@ -22,7 +22,7 @@ tresc_en: |
   ## Timetable and course offer
 
   - **Timetable:** [winter semester 2026/27](/en/studia/plan-zajec#zimowy), [summer semester 2026/27](/en/studia/plan-zajec#letni). Together with the timetable, the full list of courses offered in the semester (by category, including one-off courses) is published before the semester starts.
-  - **Day colours:** classes held every other week follow the day colours, not the week parity shown in USOS — see [Class calendar](/en/studia/kalendarz-zajec).
+  - **Day colours:** classes held every other week follow the day colours, not the week parity shown in USOS — see [Day colours](/en/studia/rok-akademicki#day-colours).
   - **Course descriptions:** [course catalogue in USOSweb](https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT) — syllabuses, including prerequisites (the “Założenia” section).
   - **First-year timetable** and information for new students: [First year](/en/studia/pierwszy-rok).
 
@@ -254,7 +254,7 @@ Pełny kalendarz roku jest na stronie [Rok akademicki](/studia/rok-akademicki).
 ## Plan zajęć i oferta przedmiotów
 
 - **Plan zajęć:** [semestr zimowy 2026/27](/studia/plan-zajec#zimowy), [semestr letni 2026/27](/studia/plan-zajec#letni). Razem z planem przed początkiem semestru publikowana jest pełna lista przedmiotów oferowanych w danym semestrze (z podziałem na kategorie, także przedmioty oferowane jednorazowo).
-- **Kolory dni:** zajęcia odbywające się co drugi tydzień planowane są według kolorów dni, a nie parzystości tygodni podawanej w USOS — zob. [Kalendarz zajęć](/studia/kalendarz-zajec).
+- **Kolory dni:** zajęcia odbywające się co drugi tydzień planowane są według kolorów dni, a nie parzystości tygodni podawanej w USOS — zob. [Kolory dni](/studia/rok-akademicki#kolory-dni).
 - **Opisy przedmiotów:** [katalog przedmiotów w USOSweb](https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT) — sylabusy, w tym wymagania wstępne (sekcja „Założenia”).
 - **Plan zajęć 1. roku** i informacje dla nowych studentów: [Pierwszy rok](/studia/pierwszy-rok).
 

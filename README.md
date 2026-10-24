@@ -103,7 +103,7 @@ Strona `/studia/plan-zajec` ma układ dawnego planZ.php / planL.php: alfabetyczn
 
 ## Kalendarz zajęć (kolory dni)
 
-Strona `/studia/kalendarz-zajec` i kafelek na stronie głównej liczą kolory dni same (reguła sprawdzona na PDF-ach z lat 2021–2027). W CMS: **Kalendarz zajęć (kolory dni)** → semestr → okres zajęć, dni wolne i zamiany dni z zarządzenia o organizacji roku; święta ustawowe dodają się same. Kontrola: na stronie każdy dzień tygodnia powinien wypaść 15 razy.
+Strona `/studia/rok-akademicki` (scalona z dawnym kalendarzem zajęć; stary adres przekierowuje) i kafelek na stronie głównej liczą kolory dni same (reguła sprawdzona na PDF-ach z lat 2021–2027). W CMS: **Kalendarz zajęć (kolory dni)** → semestr → okres zajęć, dni wolne i zamiany dni z zarządzenia o organizacji roku; święta ustawowe dodają się same. Kontrola: na stronie każdy dzień tygodnia powinien wypaść 15 razy. Ogłoszenia o zamianach dni tworzą się same (5 dni roboczych przed, znikają po dniu zamiany); szablon tekstu: ten sam wpis → „Automatyczne ogłoszenia o zamianach dni”. Tekst strony (sesje, terminy): CMS → „Rok akademicki — tekst strony”.
 
 ## Repozytoria seminariów (plan)
 

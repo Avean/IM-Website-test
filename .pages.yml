@@ -858,11 +858,22 @@ content:
   # ---------------------------------------------------------------- STRONY
   - name: kolory-dni
     label: Kalendarz zajęć (kolory dni)
-    description: "Kolory liczą się same: wpisz okres zajęć, dni wolne (dni rektorskie, przerwy) i zamiany dni z zarządzenia o organizacji roku. Święta ustawowe są uwzględniane automatycznie. Podgląd: /studia/kalendarz-zajec (każdy dzień tygodnia powinien wypaść 15 razy)."
+    description: "Kolory liczą się same: wpisz okres zajęć, dni wolne (dni rektorskie, przerwy) i zamiany dni z zarządzenia o organizacji roku. Święta ustawowe są uwzględniane automatycznie. Podgląd: /studia/rok-akademicki (każdy dzień tygodnia powinien wypaść 15 razy)."
     type: file
     path: src/data/kolory-dni.json
     format: json
     fields:
+      - name: aktualnosci
+        label: Automatyczne ogłoszenia o zamianach dni
+        description: "Pola: {data} (18 grudnia 2026), {dzien_tygodnia} (piątek), {w_dniu} (w piątek), {plan_dnia} (środy), {jak_w_dniu} (jak w środę), {kolor} (niebieski). Wielka litera w nazwie, np. {W_dniu}, daje wielką literę w tekście. Puste pole = tekst domyślny."
+        type: object
+        fields:
+          - { name: wlaczone, label: Pokazuj ogłoszenia o zamianach dni, type: boolean, default: true }
+          - { name: dni_robocze_przed, label: "Ile dni roboczych przed zamianą (domyślnie 5)", type: number, default: 5 }
+          - { name: tytul, label: Tytuł (szablon), type: string }
+          - { name: tresc, label: "Treść (szablon, Markdown)", type: text }
+          - { name: tytul_en, label: "EN: tytuł (szablon)", type: string }
+          - { name: tresc_en, label: "EN: treść (szablon)", type: text }
       - name: semestry
         label: Semestry
         type: object
@@ -898,6 +909,21 @@ content:
           - { name: pdf, label: "Kalendarz PDF (opcjonalnie)", type: file, options: { path: public/pliki/studia/kolory-dni } }
           - { name: uwagi, label: "Uwaga nad kalendarzem (opcjonalnie)", type: text }
           - { name: uwagi_en, label: "EN: uwaga", type: text }
+  - name: rok-akademicki
+    label: Rok akademicki — tekst strony
+    description: "Kolory, dni wolne i zamiany dni wpisuje się w „Kalendarz zajęć (kolory dni)”; tu tylko tekst."
+    type: file
+    path: src/data/rok-akademicki.md
+    format: yaml-frontmatter
+    fields:
+      - { name: tytul, label: Tytuł, type: string, required: true }
+      - { name: opis, label: Krótki opis, type: text }
+      - { name: body, label: "Treść pod kalendarzem (rok w skrócie, sesje)", type: rich-text, options: { format: markdown, path: public/pliki/strony } }
+      - { name: dalej, label: "Koniec strony (linki, podstawa prawna)", type: rich-text, options: { format: markdown } }
+      - { name: tytul_en, label: "EN: tytuł", type: string }
+      - { name: opis_en, label: "EN: opis", type: text }
+      - { name: tresc_en, label: "EN: treść (Markdown)", type: text }
+      - { name: dalej_en, label: "EN: koniec strony (Markdown)", type: text }
   - name: strony
     label: Strony stałe
     description: Adres strony = ścieżka pliku, np. studia/matematyka.md → /studia/matematyka

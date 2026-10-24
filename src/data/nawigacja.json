@@ -60,8 +60,8 @@
       "etykieta_en": "Research",
       "grupy": [
         {
-          "nazwa": "Seminaria i wydarzenia",
-          "nazwa_en": "Seminars and events",
+          "nazwa": "Wydarzenia naukowe",
+          "nazwa_en": "Research events",
           "linki": [
             {
               "etykieta": "Seminaria",
@@ -69,14 +69,14 @@
               "adres": "/seminaria"
             },
             {
-              "etykieta": "Kalendarz",
-              "etykieta_en": "Calendar",
-              "adres": "/kalendarz"
-            },
-            {
               "etykieta": "Konferencje",
               "etykieta_en": "Conferences",
               "adres": "/nauka/konferencje"
+            },
+            {
+              "etykieta": "Obrony doktorskie",
+              "etykieta_en": "PhD defences",
+              "adres": "/obrony-doktorskie"
             }
           ]
         },
@@ -105,11 +105,6 @@
           "nazwa": "Stopnie naukowe",
           "nazwa_en": "Degrees",
           "linki": [
-            {
-              "etykieta": "Obrony doktorskie",
-              "etykieta_en": "PhD defences",
-              "adres": "/obrony-doktorskie"
-            },
             {
               "etykieta": "Szkoła doktorska",
               "etykieta_en": "Doctoral school",
@@ -149,11 +144,6 @@
               "etykieta": "Plan zajęć",
               "etykieta_en": "Timetable",
               "adres": "/studia/plan-zajec"
-            },
-            {
-              "etykieta": "Kalendarz zajęć",
-              "etykieta_en": "Class calendar",
-              "adres": "/studia/kalendarz-zajec"
             },
             {
               "etykieta": "USOSweb",

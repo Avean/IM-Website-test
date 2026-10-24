@@ -6,7 +6,7 @@ import { absolute } from '../lib/url';
 import { wJezyku } from '../lib/i18n';
 
 export async function GET(context: APIContext) {
-  const sciezki: string[] = ['/', '/instytut', '/nauka', '/studia', '/popularyzacja', '/aktualnosci', '/kalendarz', '/seminaria', '/pracownicy', '/obrony-doktorskie', '/nauka/konferencje', '/nauka/granty', '/nauka/sukcesy', '/studia/kalendarz-zajec'];
+  const sciezki: string[] = ['/', '/instytut', '/nauka', '/studia', '/popularyzacja', '/aktualnosci', '/kalendarz', '/seminaria', '/pracownicy', '/obrony-doktorskie', '/nauka/konferencje', '/nauka/granty', '/nauka/sukcesy', '/studia/rok-akademicki'];
   for (const a of await aktualnosci()) sciezki.push(`/aktualnosci/${slugOf(a.id)}`);
   for (const o of await obrony()) sciezki.push(`/obrony-doktorskie/${slugOf(o.id)}`);
   for (const s of await seminaria()) sciezki.push(`/seminaria/${s.id}`);

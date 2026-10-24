@@ -36,18 +36,13 @@
           "adres": "/studia/plan-zajec"
         },
         {
-          "etykieta": "Kalendarz zajęć",
-          "etykieta_en": "Class calendar",
-          "adres": "/studia/kalendarz-zajec"
-        },
-        {
           "etykieta": "Konsultacje",
           "etykieta_en": "Office hours",
           "adres": "/studia/zajecia#konsultacje"
         },
         {
-          "etykieta": "Terminy",
-          "etykieta_en": "Key dates",
+          "etykieta": "Rok akademicki",
+          "etykieta_en": "Academic year",
           "adres": "/studia/rok-akademicki"
         },
         {
@@ -65,11 +60,6 @@
           "etykieta": "Seminaria",
           "etykieta_en": "Seminars",
           "adres": "/seminaria"
-        },
-        {
-          "etykieta": "Kalendarz",
-          "etykieta_en": "Calendar",
-          "adres": "/kalendarz"
         },
         {
           "etykieta": "Konferencje",
