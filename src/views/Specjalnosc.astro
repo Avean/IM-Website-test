@@ -9,7 +9,7 @@ import { u, isExternal } from '../lib/url';
 import { t, wJezyku, wybierz } from '../lib/i18n';
 import type { Lang } from '../lib/daty';
 import { renderMarkdown } from '../lib/markdown';
-import { zaklady, pracownicy } from '../lib/tresci';
+import { zaklady, pracownicy, seminaria } from '../lib/tresci';
 
 interface Props { specjalnosc: CollectionEntry<'specjalnosci'>; lang: Lang }
 const { specjalnosc, lang } = Astro.props;
@@ -38,13 +38,16 @@ const znajdz = (n: string) => {
 };
 const opiekunowie = d.opiekunowie.map((o) => ({ ...o, osoba: znajdz(o.imie_nazwisko) }));
 const nazwa = w(d, 'nazwa');
+const sem = d.seminaria.length ? (await seminaria()).filter((s) => d.seminaria.includes(s.id)).sort((a, b) => d.seminaria.indexOf(a.id) - d.seminaria.indexOf(b.id)) : [];
 
 const sekcje = [
   { slug: 'o-specjalnosci', text: T('O specjalności', 'About') },
+  ...(d.etapy.length ? [{ slug: 'przebieg', text: T('Jak przebiega', 'How it works') }] : []),
   ...(d.przedmioty.length ? [{ slug: 'przedmioty', text: T('Czego się uczysz', 'What you will learn') }] : []),
   ...(umiejetnosci.length ? [{ slug: 'umiejetnosci', text: T('Co będziesz umieć', 'Skills') }] : []),
   ...(kariera ? [{ slug: 'po-studiach', text: T('Po studiach', 'Careers') }] : []),
   ...(d.tematy_prac.length ? [{ slug: 'tematy', text: T('Przykładowe tematy prac', 'Sample thesis topics') }] : []),
+  ...(sem.length ? [{ slug: 'seminaria', text: T('Seminaria', 'Seminars') }] : []),
   ...(d.dokumenty.length ? [{ slug: 'dokumenty', text: T('Dokumenty', 'Documents') }] : []),
   ...(faq.length ? [{ slug: 'pytania', text: T('Pytania i odpowiedzi', 'FAQ') }] : []),
   ...(opiekunowie.length ? [{ slug: 'opiekun', text: T('Opiekun specjalności', 'Coordinator') }] : []),
@@ -79,6 +82,17 @@ const sekcje = [
       <section class="zsec" aria-labelledby="o-specjalnosci">
         <h2 id="o-specjalnosci">{T('O specjalności', 'About')}</h2>
         <div class="prose">{htmlEn ? <Fragment set:html={htmlEn} /> : <Content />}</div>
+        {d.dlaczego.length > 0 && (
+          <div class="why-grid">
+            {d.dlaczego.map((x) => (
+              <div class="why">
+                <Ikona nazwa={x.ikona || 'flaga'} rozmiar={24} />
+                <strong>{w(x, 'tytul')}</strong>
+                <span>{w(x, 'opis')}</span>
+              </div>
+            ))}
+          </div>
+        )}
         {dlaKogo && (
           <div class="callout">
             <strong>{T('Dla kogo', 'Who is it for')}</strong>
@@ -86,6 +100,21 @@ const sekcje = [
           </div>
         )}
       </section>
+
+      {d.etapy.length > 0 && (
+        <section class="zsec" aria-labelledby="przebieg">
+          <h2 id="przebieg">{T('Jak przebiega specjalność', 'How the specialisation works')}</h2>
+          <ol class="steps">
+            {d.etapy.map((e) => (
+              <li class="step">
+                <span class="when">{w(e, 'kiedy')}</span>
+                <strong>{w(e, 'tytul')}</strong>
+                {e.opis && <span class="desc">{w(e, 'opis')}</span>}
+              </li>
+            ))}
+          </ol>
+        </section>
+      )}
 
       {d.przedmioty.length > 0 && (
         <section class="zsec" aria-labelledby="przedmioty">
@@ -123,6 +152,20 @@ const sekcje = [
         <section class="zsec" aria-labelledby="tematy">
           <h2 id="tematy">{T('Przykładowe tematy prac', 'Sample thesis topics')}</h2>
           <ul class="plain-list">{d.tematy_prac.map((x) => <li>{x.tytul}{x.opis && <span class="muted"> — {x.opis}</span>}</li>)}</ul>
+        </section>
+      )}
+
+      {sem.length > 0 && (
+        <section class="zsec" aria-labelledby="seminaria">
+          <h2 id="seminaria">{T('Seminaria', 'Seminars')}</h2>
+          <div class="sem-cards">
+            {sem.map((s) => (
+              <a class="sem-card" href={u(wJezyku(`/seminaria/${s.id}`, lang))}>
+                <span class="t">{wybierz(s.data, 'nazwa', lang)}</span>
+                {s.data.termin && <span class="news-meta"><Ikona nazwa="zegar" rozmiar={15} />{s.data.termin}</span>}
+              </a>
+            ))}
+          </div>
         </section>
       )}
 

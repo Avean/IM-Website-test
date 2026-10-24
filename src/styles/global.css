@@ -516,4 +516,14 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .checks li { position: relative; padding-left: 28px; font-size: 16px; line-height: 1.5; }
 .checks li::before { content: ''; position: absolute; left: 4px; top: 6px; width: 12px; height: 7px; border-left: 2.5px solid var(--accent); border-bottom: 2.5px solid var(--accent); transform: rotate(-45deg); }
 .spec h3 a { color: var(--ink); text-decoration: none; }
-.spec h3 a:hover { text-decoration: underline; }
+/* Karta z podstroną: cała klikalna (link w tytule rozciągnięty na kartę), podświetlenie po najechaniu */
+.spec-link { position: relative; transition: border-color .15s, box-shadow .15s, background-color .15s, transform .15s; }
+.spec-link h3 a::after { content: ''; position: absolute; inset: 0; border-radius: inherit; }
+.spec-link .foot a { position: relative; z-index: 1; }
+.spec-link:hover, .spec-link:focus-within { border-color: var(--ink); background: var(--tint); box-shadow: 0 6px 20px rgb(0 0 0 / .08); transform: translateY(-2px); }
+.spec-link:hover h3 a { text-decoration: underline; text-underline-offset: 4px; }
+.spec-link:hover .link-arrow svg { transform: translateX(3px); }
+.spec-link .link-arrow svg { transition: transform .15s; }
+.spec-link h3 a:focus-visible { outline: none; }
+.spec-link:has(h3 a:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { .spec-link, .spec-link .link-arrow svg { transition: none; transform: none !important; } }

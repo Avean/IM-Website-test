@@ -525,6 +525,35 @@ content:
         options:
           format: markdown
       - { name: dla_kogo, label: "Dla kogo (Markdown)", type: text }
+      - name: dlaczego
+        label: Co wyróżnia specjalność (kafelki)
+        type: object
+        list: true
+        fields:
+          - { name: tytul, label: Tytuł, type: string }
+          - { name: opis, label: Opis, type: text }
+          - name: ikona
+            label: Ikona
+            type: select
+            options:
+              values: [flaga, czapka, ludzie, zewnetrzny, kalendarz, tablica, zegar, plik]
+          - { name: tytul_en, label: "EN: tytuł", type: string }
+          - { name: opis_en, label: "EN: opis", type: text }
+      - name: etapy
+        label: Jak przebiega specjalność (oś semestrów)
+        type: object
+        list: true
+        fields:
+          - { name: kiedy, label: "Kiedy (np. Semestr 5)", type: string }
+          - { name: tytul, label: Tytuł, type: string }
+          - { name: opis, label: Opis, type: text }
+          - { name: kiedy_en, label: "EN: kiedy", type: string }
+          - { name: tytul_en, label: "EN: tytuł", type: string }
+          - { name: opis_en, label: "EN: opis", type: text }
+      - name: seminaria
+        label: "Seminaria związane ze specjalnością (nazwy plików z sekcji Seminaria)"
+        type: string
+        list: true
       - name: przedmioty
         label: Czego się uczysz (grupy przedmiotów)
         type: object
