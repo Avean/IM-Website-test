@@ -1,0 +1,64 @@
+name: Plan zajęć z USOS
+
+# Pobiera plan zajęć z USOS (anonimowo — bez klucza API i bez logowania) do src/data/plan/plan.json.
+# Na main: gdy plan się zmienił, commituje plik i zleca przebudowę strony (repository_dispatch „przebuduj”,
+# bo commit zrobiony tokenem GITHUB_TOKEN sam nie uruchamia innych workflowów).
+# Na innych gałęziach (zmiana skryptu): tylko próbne pobranie — wynik do obejrzenia jako artefakt „plan-json”.
+on:
+  schedule:
+    # 3 razy dziennie (czas UTC; w Polsce +1/+2 h), tuż przed porannym i popołudniowym przebudowaniem strony
+    - cron: '47 1 * * *'
+    - cron: '37 9 * * *'
+    - cron: '47 15 * * *'
+  workflow_dispatch:
+  push:
+    branches-ignore: [main]
+    paths:
+      - 'skrypty/plan/**'
+      - '.github/workflows/plan-zajec.yml'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: plan-zajec-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  plan:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v5
+
+      - name: Pobranie planu z USOS
+        run: python3 skrypty/plan/pobierz_plan.py
+
+      - name: Wynik próbny (gałęzie robocze)
+        if: github.ref != 'refs/heads/main'
+        uses: actions/upload-artifact@v4
+        with:
+          name: plan-json
+          path: src/data/plan/plan.json
+          retention-days: 7
+
+      - name: Zapis zmian i przebudowa strony (main)
+        if: github.ref == 'refs/heads/main'
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- src/data/plan/plan.json; then
+            echo "::notice title=Plan zajęć::Bez zmian w USOS — nic do zapisania."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add src/data/plan/plan.json
+          git commit -m "Plan zajęć: aktualizacja z USOS"
+          for i in 1 2 3; do
+            if git push; then break; fi
+            git pull --rebase
+          done
+          gh api "repos/${{ github.repository }}/dispatches" -f event_type=przebuduj \
+            || echo "::warning title=Plan zajęć::Nie udało się zlecić przebudowy — strona odświeży się przy najbliższym planowym budowaniu."
+          echo "::notice title=Plan zajęć::Zapisano nowy plan i zlecono przebudowę strony."
