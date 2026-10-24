@@ -35,10 +35,12 @@ const logo = (ustawienia as any).logo as string | undefined;
       {menu.map((p, i) =>
         p.grupy ? (
           <div class:list={['nav-item', { 'is-current': aktywna(p) }]}>
-            {p.adres
-              ? <a class="nav-top" href={href(p.adres)} aria-current={tuJestem(p.adres) ? 'page' : undefined}>{wybierz(p, 'etykieta', lang)}</a>
-              : <button type="button" class="nav-top" data-rozwin aria-expanded="false" aria-controls={`menu-${i}`}>{wybierz(p, 'etykieta', lang)}</button>}
-            <button type="button" class="nav-arrow" data-rozwin aria-expanded="false" aria-controls={`menu-${i}`} aria-label={`${wybierz(p, 'etykieta', lang)}: ${lang === 'en' ? 'show links' : 'pokaż listę'}`}><Ikona nazwa="dol" class="chev" rozmiar={14} /></button>
+            <span class="nav-pill">
+              {p.adres
+                ? <a class="nav-top" href={href(p.adres)} aria-current={tuJestem(p.adres) ? 'page' : undefined}>{wybierz(p, 'etykieta', lang)}</a>
+                : <button type="button" class="nav-top" data-rozwin aria-expanded="false" aria-controls={`menu-${i}`}>{wybierz(p, 'etykieta', lang)}</button>}
+              <button type="button" class="nav-arrow" data-rozwin aria-expanded="false" aria-controls={`menu-${i}`} aria-label={`${wybierz(p, 'etykieta', lang)}: ${lang === 'en' ? 'show links' : 'pokaż listę'}`}><Ikona nazwa="dol" class="chev" rozmiar={14} /></button>
+            </span>
             <div class="dropdown" id={`menu-${i}`}>
               {p.grupy.map((g) => (
                 <div class="dropdown-group">
