@@ -233,17 +233,17 @@ content:
     format: yaml-frontmatter
     filename: "{primary}.md"
     view:
-      fields: [nazwa, termin, aktywne]
+      fields: [nazwa, prowadzacy, aktywne]
       primary: nazwa
     fields:
       - { name: nazwa, label: Nazwa seminarium, type: string, required: true }
       - { name: nazwa_en, label: "EN: nazwa", type: string }
       - name: prowadzacy
-        label: Prowadzący
+        label: "Koordynator (imię i nazwisko jak w spisie pracowników; tytuł doda się sam)"
+        description: "Termin i salę wpisuje się przy każdym referacie osobno."
         type: string
         list: true
-      - { name: termin, label: "Stały termin (np. czwartek 12:15–14:00, sala 711)", type: string }
-      - { name: kontakt, label: E-mail kontaktowy, type: string }
+      - { name: kontakt, label: E-mail kontaktowy (pod nazwiskiem koordynatora), type: string }
       - { name: strona, label: Zewnętrzna strona seminarium, type: string }
       - { name: archiwum, label: Link do archiwum referatów, type: string }
       - name: zaklad

@@ -158,7 +158,6 @@ const sekcje = [
             {sem.map((s) => (
               <a class="sem-card" href={u(wJezyku(`/seminaria/${s.id}`, lang))}>
                 <span class="t">{wybierz(s.data, 'nazwa', lang)}</span>
-                {s.data.termin && <span class="news-meta"><Ikona nazwa="zegar" rozmiar={15} />{s.data.termin}</span>}
               </a>
             ))}
           </div>

@@ -11,7 +11,7 @@ import { range, long, short, now, today, hasTime, type Lang } from '../lib/daty'
 import { renderMarkdown } from '../lib/markdown';
 import {
   zaklady, pracownicy, seminaria, referaty, granty, konferencje, obrony, aktualnosci,
-  seminariumReferatu, slugOf, zakladGrantu, rangaStopnia, trwaLubBedzie, type Zaklad, type Pracownik,
+  seminariumReferatu, slugOf, sala, zakladGrantu, rangaStopnia, trwaLubBedzie, type Zaklad, type Pracownik,
 } from '../lib/tresci';
 
 interface Props { zaklad: Zaklad; lang: Lang }
@@ -125,9 +125,8 @@ const wszystkieZaklady = await zaklady();
               return (
                 <a class="sem-card" href={u(wJezyku(`/seminaria/${s.id}`, lang))}>
                   <span class="t">{wybierz(s.data, 'nazwa', lang)}</span>
-                  {s.data.termin && <span class="news-meta"><Ikona nazwa="zegar" rozmiar={15} />{s.data.termin}</span>}
                   {r ? (
-                    <span style="font-size:15px;padding-top:10px;border-top:1px solid var(--line)"><strong style="color:var(--ink)">{long(r.data.termin, lang)}</strong> — {r.data.tytul} <span class="muted">({r.data.prelegent})</span></span>
+                    <span style="font-size:15px;padding-top:10px;border-top:1px solid var(--line)"><strong style="color:var(--ink)">{long(r.data.termin, lang)}{r.data.sala && `, ${sala(r.data.sala, lang)}`}</strong> — {r.data.tytul} <span class="muted">({r.data.prelegent})</span></span>
                   ) : (
                     <span class="muted" style="font-size:14px;padding-top:10px;border-top:1px solid var(--line)">{t(lang, 'brakNadchodzacych')}</span>
                   )}

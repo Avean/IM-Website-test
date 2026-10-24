@@ -7,7 +7,8 @@ import Ikona from '../components/Ikona.astro';
 import { u, isExternal } from '../lib/url';
 import { t, wJezyku, wybierz, RODZAJE } from '../lib/i18n';
 import { longWithDay, short, time, now, today, hasTime, type Lang } from '../lib/daty';
-import { referaty, seminariumReferatu, slugOf, sala, zaklady, type Seminarium } from '../lib/tresci';
+import { referaty, seminariumReferatu, slugOf, sala, zaklady, pracownicy, type Seminarium } from '../lib/tresci';
+import { zTytulem } from '../lib/osoby';
 import ustawienia from '../data/ustawienia.json';
 
 interface Props { seminarium: Seminarium; lang: Lang }
@@ -22,20 +23,37 @@ const nadchodzace = await Promise.all(wszystkie.filter(przyszle).map(async (r) =
 const minione = await Promise.all(wszystkie.filter((r) => !przyszle(r)).reverse().map(async (r) => ({ r, C: (await render(r)).Content })));
 const href = (a: string) => (isExternal(a) ? a : u(a));
 const T = (pl: string, en: string) => (lang === 'en' ? en : pl);
-// zakład(y), do których należy seminarium — link zamiast listy prowadzących (skład jest na stronie zakładu)
+// zakład(y), do których należy seminarium — link zamiast listy uczestników (skład jest na stronie zakładu)
 const zakladySem = (await zaklady()).filter((z) => d.zaklad.includes(z.id));
+// Koordynator(zy) = pole „prowadzący”: nazwisko z tytułem ze spisu pracowników, link do strony domowej, jeśli jest.
+// Termin i sala nie są stałe — każdy referat ma własne.
+const osoby = await pracownicy();
+const koordynatorzy = d.prowadzacy.map((imie) => {
+  const kand = osoby.filter((p) => p.data.imie_nazwisko === imie.trim());
+  const o = kand.find((p) => p.data.grupa === 'nauczyciel') ?? kand.find((p) => p.data.grupa !== 'administracja') ?? kand[0];
+  return { nazwa: zTytulem(o?.data.stopien, imie), strona: o?.data.strona as string | undefined };
+});
 // Adres automatu listy mailingowej (Google Apps Script, patrz README → „Powiadomienia e-mail”); pusty = zapisy wyłączone.
 const adresListy = ((ustawienia as any).powiadomienia?.adres ?? '') as string;
 ---
 <Baza tytul={nazwa} opis={`${RODZAJE.referat[lang]}: ${nazwa}`} opublikowany={d.opublikowany}>
   <NaglowekStrony tytul={nazwa} lang={lang} wstecz={{ etykieta: t(lang, 'wszystkieSeminaria'), adres: '/seminaria' }}>
-    {(d.termin || zakladySem.length > 0 || d.kontakt || d.strona) && (
-      <ul class="sem-meta">
-        {d.termin && <li><Ikona nazwa="zegar" rozmiar={18} /><span><span class="sr-only">{t(lang, 'termin')}: </span>{d.termin}</span></li>}
-        {zakladySem.map((z) => <li><Ikona nazwa="ludzie" rozmiar={18} /><a href={u(wJezyku(`/instytut/zaklady/${z.id}`, lang))}>{wybierz(z.data, 'nazwa', lang)}</a></li>)}
-        {d.kontakt && <li><Ikona nazwa="mail" rozmiar={18} /><a href={`mailto:${d.kontakt}`}>{d.kontakt}</a></li>}
-        {d.strona && <li><Ikona nazwa="zewnetrzny" rozmiar={18} /><a href={d.strona}>{t(lang, 'stronaSeminarium')}</a></li>}
-      </ul>
+    {(koordynatorzy.length > 0 || zakladySem.length > 0 || d.kontakt || d.strona) && (
+      <div class="sem-koord">
+        {koordynatorzy.length > 0 && (
+          <p class="sem-koord-osoby">
+            <span class="sem-koord-l">{koordynatorzy.length > 1 ? T('Koordynatorzy', 'Coordinators') : T('Koordynator', 'Coordinator')}</span>
+            <span class="sem-koord-n">{koordynatorzy.map((k, i) => <>{i > 0 && ', '}{k.strona ? <a href={k.strona}>{k.nazwa}</a> : k.nazwa}</>)}</span>
+          </p>
+        )}
+        {(d.kontakt || zakladySem.length > 0 || d.strona) && (
+          <ul class="sem-meta">
+            {d.kontakt && <li><Ikona nazwa="mail" rozmiar={18} /><a href={`mailto:${d.kontakt}`}>{d.kontakt}</a></li>}
+            {zakladySem.map((z) => <li><Ikona nazwa="ludzie" rozmiar={18} /><a href={u(wJezyku(`/instytut/zaklady/${z.id}`, lang))}>{wybierz(z.data, 'nazwa', lang)}</a></li>)}
+            {d.strona && <li><Ikona nazwa="zewnetrzny" rozmiar={18} /><a href={d.strona}>{t(lang, 'stronaSeminarium')}</a></li>}
+          </ul>
+        )}
+      </div>
     )}
   </NaglowekStrony>
   <div class="wrap layout">
