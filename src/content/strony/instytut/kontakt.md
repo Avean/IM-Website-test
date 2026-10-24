@@ -22,6 +22,7 @@ tresc_en: |
   - [Institute management](/en/instytut/wladze)
   - [Student affairs contacts](/en/studia/sprawy-studenckie)
 opublikowany: true
+pasek_boczny: brak
 ---
 
 ## Instytut Matematyczny

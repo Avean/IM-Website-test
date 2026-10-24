@@ -46,6 +46,7 @@ tresc_en: |
 
   [← IT infrastructure](/en/instytut/infrastruktura-informatyczna)
 opublikowany: true
+pasek_boczny: brak
 ---
 
 > Na podstawie dokumentu „Sieć komputerowa dla pracowników i doktorantów” z poprzedniej strony Instytutu (plik z września 2023 r.).

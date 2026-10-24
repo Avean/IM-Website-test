@@ -41,6 +41,7 @@ tresc_en: |
 
   [← IT infrastructure](/en/instytut/infrastruktura-informatyczna)
 opublikowany: true
+pasek_boczny: brak
 ---
 
 > Informacje przeniesione z poprzedniej strony Instytutu — część z nich może być nieaktualna (zob. uwagi poniżej). Pytania: [admin@math.uni.wroc.pl](mailto:admin@math.uni.wroc.pl), pok. 402.

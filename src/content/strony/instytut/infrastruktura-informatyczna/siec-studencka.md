@@ -32,6 +32,7 @@ tresc_en: |
 
   [← IT infrastructure](/en/instytut/infrastruktura-informatyczna)
 opublikowany: true
+pasek_boczny: brak
 ---
 
 > Na podstawie dokumentu „Sieć studencka i laboratoria komputerowe” z poprzedniej strony Instytutu (plik z października 2023 r.).

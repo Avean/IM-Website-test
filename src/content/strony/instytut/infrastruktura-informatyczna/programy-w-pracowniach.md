@@ -34,6 +34,7 @@ tresc_en: |
 
   [← IT infrastructure](/en/instytut/infrastruktura-informatyczna)
 opublikowany: true
+pasek_boczny: brak
 ---
 
 > Wykaz przeniesiony z poprzedniej strony Instytutu (bez daty aktualizacji; najnowsza wymieniona tam wersja programu to Maple 2022) — może być nieaktualny. Aktualne informacje: administratorzy sieci, [admin@math.uni.wroc.pl](mailto:admin@math.uni.wroc.pl), pok. 402.

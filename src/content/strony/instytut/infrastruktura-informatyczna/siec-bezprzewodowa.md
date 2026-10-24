@@ -30,6 +30,7 @@ tresc_en: |
 
   [← IT infrastructure](/en/instytut/infrastruktura-informatyczna)
 opublikowany: true
+pasek_boczny: brak
 ---
 
 ## Sieć eduroam

@@ -33,6 +33,7 @@ tresc_en: |
 
   [← IT infrastructure](/en/instytut/infrastruktura-informatyczna)
 opublikowany: true
+pasek_boczny: brak
 ---
 
 Instytut Matematyczny posiada pięć laboratoriów dla studentów. Komputery w pracowniach są przeznaczone głównie do zajęć dydaktycznych, ale gdy zajęcia się w nich nie odbywają, laboratoria są dostępne dla wszystkich użytkowników. Można też korzystać z tych pracowni podczas zajęć, w których się nie uczestniczy, ale wyłącznie za zgodą prowadzącego.

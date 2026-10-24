@@ -24,6 +24,7 @@ tresc_en: |
   - [Software available to students and staff](/en/instytut/infrastruktura-informatyczna/programy-dla-studentow-i-pracownikow) — MS Office 365, Microsoft programs, STATISTICA, KNOPPIX.
   - [FriCAS](http://axiom-wiki.newsynthesis.org/) — project website (FriCAS is available on the Linux computers in the labs).
 opublikowany: true
+pasek_boczny: brak
 ---
 
 Siecią i pracowniami komputerowymi opiekuje się Laboratorium komputerowe ([kontakt w spisie pracowników](/pracownicy)). Z administratorami sieci można się skontaktować, pisząc na adres [admin@math.uni.wroc.pl](mailto:admin@math.uni.wroc.pl), lub w pokoju 402.

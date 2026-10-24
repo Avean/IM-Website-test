@@ -31,6 +31,7 @@ tresc_en: |
 
   [← IT infrastructure](/en/instytut/infrastruktura-informatyczna)
 opublikowany: true
+pasek_boczny: brak
 ---
 
 > Instrukcja przeniesiona z poprzedniej strony Instytutu. Dotyczy oprogramowania SMART Board 2012 i może być nieaktualna. Opracował: Michał Śliwiński.

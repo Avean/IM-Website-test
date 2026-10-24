@@ -39,15 +39,16 @@ const pasek = d.pasek_boczny ?? 'spis';
   <NaglowekStrony tytul={tytul} lead={opis} lang={lang} okruszki={[...(dzial ? [{ etykieta: wybierz(dzial, 'etykieta', lang), adres: dzial.adres }] : []), ...(rodzic ? [{ etykieta: wybierz(rodzic, 'etykieta', lang), adres: rodzic.adres }] : []), { etykieta: tytul }]} />
   <div class="wrap layout">
     <div class="main">
-      {pasek !== 'menu' && <SpisTresci naglowki={naglowki} lang={lang} wariant="gora" />}
+      {(pasek === 'spis' || pasek === 'oba') && <SpisTresci naglowki={naglowki} lang={lang} wariant="gora" />}
       {tylkoPolski && <p class="notice">{t('en', 'wersjaPolska')}</p>}
       <div class="prose" lang={tylkoPolski ? 'pl' : undefined}>
         {htmlEn ? <Fragment set:html={htmlEn} /> : <Content />}
       </div>
     </div>
+    {pasek !== 'brak' && (
     <aside class="side" data-pagefind-ignore>
-      {pasek !== 'menu' && <SpisTresci naglowki={naglowki} lang={lang} wariant="bok" />}
-      {pasek !== 'spis' && linkiDzialu.length > 0 && (
+      {(pasek === 'spis' || pasek === 'oba') && <SpisTresci naglowki={naglowki} lang={lang} wariant="bok" />}
+      {(pasek === 'menu' || pasek === 'oba') && linkiDzialu.length > 0 && (
         <nav class="side-box side-nav" aria-label={wybierz(dzial, 'etykieta', lang)}>
           <h2>{wybierz(dzial, 'etykieta', lang)}</h2>
           <div style="display:flex;flex-direction:column">
@@ -60,5 +61,6 @@ const pasek = d.pasek_boczny ?? 'spis';
         </nav>
       )}
     </aside>
+    )}
   </div>
 </Baza>

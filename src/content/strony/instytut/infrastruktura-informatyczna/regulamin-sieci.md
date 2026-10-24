@@ -65,6 +65,7 @@ tresc_en: |
 
   [← IT infrastructure](/en/instytut/infrastruktura-informatyczna)
 opublikowany: true
+pasek_boczny: brak
 ---
 
 Każdego użytkownika Sieci Komputerowej i Laboratorium Komputerowego Instytutu Matematycznego Uniwersytetu Wrocławskiego obowiązują:

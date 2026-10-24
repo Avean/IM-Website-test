@@ -947,6 +947,7 @@ content:
             - { name: oba, label: "Oba (spis i menu działu)" }
             - { name: spis, label: "Tylko spis „Na tej stronie”" }
             - { name: menu, label: "Tylko menu działu (podstrony)" }
+            - { name: brak, label: "Bez prawego paska (strona na całą szerokość)" }
       - name: body
         label: Treść
         type: rich-text
