@@ -437,7 +437,7 @@ do_uzupelnienia:
 - Zasady realizacji kształcenia nauczycielskiego dla programu od 2026/27 (odpowiednik PDF dla programu z 2022 r.), jeśli powstaną.
 - Zakres egzaminu magisterskiego dla programu od 2026/27 (dostępny zakres dotyczy programu z 2022 r.).
 - Aktualne przykładowe tematy prac (dostępne listy — 2017 r. dla prac licencjackich, 2022 i 2024 r. dla magisterskich).
-- Opisy w USOS: brak opisu przedmiotów Warsztaty zadaniowe dla nauczycieli, Warsztaty – popularyzacja matematyki I/II, Warsztaty pomocy dydaktycznych, Konwersatorium dydaktyczne – Mathematical Laboratory in the Classroom (opisy warsztatów wzięto z uchwały 48/2026).
+- Brak opisów w katalogu USOS dla przedmiotów Warsztaty zadaniowe dla nauczycieli, Warsztaty – popularyzacja matematyki I/II, Warsztaty pomocy dydaktycznych, Konwersatorium dydaktyczne – Mathematical Laboratory in the Classroom (opisy warsztatów wzięto z uchwały 48/2026).
 - Seminarium badawcze lub koło naukowe związane ze specjalnością (na starej stronie jest tylko wzmianka z 2010 r. o SKN Matematyków Specjalności Nauczycielskiej) — czy istnieje.
 opublikowany: true
 tresc_en: |
