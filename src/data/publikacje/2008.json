@@ -1,0 +1,479 @@
+{
+  "rok": 2008,
+  "pochodzenie": "strona",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2008"
+  ],
+  "uwagi": "W oryginalnym wykazie część prac była powtórzona przy nazwiskach kolejnych współautorów; powtórzenia pominięto.",
+  "uwagi_en": "In the original list some papers were repeated under the names of further co-authors; the repetitions have been omitted.",
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "J. Bartoszewicz, M. Skolimowska",
+          "opis": "Block-Savits characterization and star ordering of exponential mixtures Communications in Statistics, Theory and Methods 37, No. 16 (2008) 2461-2471."
+        },
+        {
+          "autorzy": "A. Bendikov, M. Barczy, G. Pap",
+          "opis": "Limit theorems on locally compact Abelian groups Mathematische Nachrichten 12 (2008) 1-20."
+        },
+        {
+          "autorzy": "P. Biler",
+          "opis": "Radially symmetric solutions of a chemotaxis model in the plane - the supercritical case Banach Center Publications 81 (2008) 31-42."
+        },
+        {
+          "autorzy": "P. Biler, G. Wu",
+          "opis": "Two-dimensional chemotaxis models with fractional diffusion Mathematical Methods in the Applied Sciences 32 (2008) 112-126."
+        },
+        {
+          "autorzy": "M. Bożejko",
+          "opis": "Bessis-Moussa-Villani conjecture and generalized random variables Infinite Dimensional Analysis Quantum Probability and Related Topics 11(3) (2008) 313-321."
+        },
+        {
+          "autorzy": "M. Bożejko, A.D. Krystek, W. Młotkowski, J. Wysoczański",
+          "opis": "Noncommutative Harmonic Analysis with Applications to Probability (tom, mimo daty 2007r., ukazał się dopiero w roku 2008, praca nie była sprawozdawana w 2007r.) Banach Center Publications 78 (2007) 320 stron."
+        },
+        {
+          "autorzy": "M. Bożejko",
+          "opis": "Remarks on q-CCR relations for (q) >1(praca, mimo daty 2007, ukazała się dopiero w 2008 roku, praca nie była sprawozdawana w roku 2007). Banach Center Publications 78 (2007) 59-67."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, M.K. Karray",
+          "opis": "An efficient analitytical method for dimensioning of CDMA cellular networks serving streaming calls Proceedings of ACM/ICST VALUETOOLS Athens (2008) Oct. 2008."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, F. Baccelli, E. Ermel, P. Muhlethaler",
+          "opis": "An optimized relay self selection technique for opportunistic routing in mobile ad hoc networks Proceedings of IEEE European Wireless Conference Prague (2008) June 2008."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, A. Laouiti, P. Muhlethaler, Y. Toor",
+          "opis": "Comparison for VANETs: conventional routing vs an advanced opportunistic routing scheme usingactive signaling Proceedings of ITST Phuket, Thailand (2008) Nov. 2008."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, M.K. Karray",
+          "opis": "Impact of mean user speed on blocking and cuts of streaming traffic in cellular networks Proceedings of IEEE European Wireless Conference Prague (2008) June 2008."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, F. Bacelli, P. Muhlethaler",
+          "opis": "On the performance of time-space opportunistic routing in multihop mobile ad hoc networks Proceedings of IEEE WiOpt Berlin (2008) April 2008."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, A. Laouiti, P. Muhlethaler, Y. Toor",
+          "opis": "Opportunistic broadcast in VANETs (OB-VAN) using signaling for relays selection Proceedings of ITST Phuket, Thailand (2008) Nov. 2008."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, B. Radunovic",
+          "opis": "Using transmit-only sensors to reduce deployment cost of wireless sensor networks Proceedings of IEEE INFOCOM Phoenix, AZ (2008) March 2008."
+        },
+        {
+          "autorzy": "W. Czaja, P. Jaming, M. Matolcsi",
+          "opis": "An efficient algorithm for positive realizations Systems & Control Letters 57 (5) (2008) 436-441."
+        },
+        {
+          "autorzy": "W. Czaja, J. Zienkiewicz",
+          "opis": "Atomic characterization of the Hardy space H-L (1) (R) of one-dimensional Schrodinger operators with nonnegative potentials Proceedings of the American Mathematical Society 136 (1) (2008) 89-94."
+        },
+        {
+          "autorzy": "W. Czaja, G. Kutyniok, D. Speegle",
+          "opis": "Beurling dimension of Gabor pseudoframes for affine subspaces Journal of Fourier Analysis and Applications 14 (4) (2008) 514-537."
+        },
+        {
+          "autorzy": "W. Czaja",
+          "opis": "Remarks on Naimark's duality Proceedings of the American Mathematical Society 136 (3) (2008) 867-871."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "opis": "Rozkład normalny Matematyka w Szkole 31 (2008) 3-5."
+        },
+        {
+          "autorzy": "J. Dziubański",
+          "opis": "Hardy spaces associated with semigroups generated by Bessel operators with potentials Houston Journal of Mathematics 34, No. 1 (2008) 205-234."
+        },
+        {
+          "autorzy": "J. Dziubański",
+          "opis": "Hardy Spaces for Laguerre Expansions Constructive Approximation 27 (2008) 269-287."
+        },
+        {
+          "autorzy": "K. Dębicki, P. Kisowski",
+          "opis": "A note on upper estimates for Pickands constants Statistics and Probability Letters 78 (2008) 2046-2051."
+        },
+        {
+          "autorzy": "K. Dębicki, P. Kisowski",
+          "opis": "Asymptotics of supremum distribution of $alfa (t)$-locally stationary Gaussian processes Stochastic Processes and Their Applications 118 (2008) 2022-2037."
+        },
+        {
+          "autorzy": "T. Elsner",
+          "opis": "Flats and the flat torus theorem in systolic spaces Geometry and Topology 13 (2008) 661-698."
+        },
+        {
+          "autorzy": "Ś.R. Gal",
+          "opis": "Asymptotic dimension and uniform embeddings Groups, Geometry and Dynamics 2 (1) (2008) 63-84."
+        },
+        {
+          "autorzy": "J. Gismatullin",
+          "opis": "Combinatorial geometries of field extensions Bulletin of the London Mathematical Society 40, no. 5 (2008) 789-800."
+        },
+        {
+          "autorzy": "J. Gismatullin, L. Newelski",
+          "opis": "G-compactness and groups Archive for Mathematical Logic 47, no. 5 (2008) 479-501."
+        },
+        {
+          "autorzy": "M. Grech, A. Jeż, A. Kisielewicz",
+          "opis": "Graphical complexity of products of permutation groups Discrete Mathematics 308 (2008) 1142-1152."
+        },
+        {
+          "autorzy": "B. Hajduk",
+          "opis": "Exotic smooth structures and symplectic forms on closede manifolds Geometriae Dedicata 132 (1) (2008) 31-42."
+        },
+        {
+          "autorzy": "M. Hinz, W. Młotkowski",
+          "opis": "Free cumulants of some probability measures (praca, mimo daty 2007, ukazała się dopiero w roku 2008; nie była sprawozdawana w roku 2007) Banach Center Publications 78 (2007) 165-170."
+        },
+        {
+          "autorzy": "M. Hinz, W. Młotkowski",
+          "opis": "Limit measures related to the conditionally free convolution Bulletin of the Polish Academy of Sciences, Mathematics 56, no. 1 (2008) 75-81."
+        },
+        {
+          "autorzy": "B. Jasiulis, J.K. Misiewicz",
+          "opis": "On the connections between weakly stable and pseudo-isotropic distributions Statistics and Probability Letters 78 (16) (2008) 2751-2755."
+        },
+        {
+          "autorzy": "Z.J. Jurek",
+          "opis": "A calculus on Lévy exponents and selfdecomposability on Banach spaces Probability and Mathematical Statistics 28 (2) (2008) 271-280."
+        },
+        {
+          "autorzy": "G. Karch, L. Brandolese",
+          "opis": "Far field asymptotics of solutions to convection equation withanomalous diffusion Journal of Evolution Equations 8 (2008) 307-326."
+        },
+        {
+          "autorzy": "G. Karch, W.A. Woyczyński",
+          "opis": "Fractal Hamilton-Jacobi-KPZ equations Transactions of the American Mathematical Society 360 (2008) 2423-2442."
+        },
+        {
+          "autorzy": "G. Karch, C. Miao, X. Xu",
+          "opis": "On Convergence of Solutions of Fractal Burgers Equation toward Rarefaction Waves SIAM Journal on Mathematical Analysis 39 (2008) 1536-1549."
+        },
+        {
+          "autorzy": "G. Karch, N. Prioux",
+          "opis": "Self-similarity in viscous Boussinesq equations Proceedings of the American Mathematical Society 136 (2008) 879-888."
+        },
+        {
+          "autorzy": "A. Kasprzyk, W. Szczotka",
+          "opis": "Two types of Markov property Probability and Mathematical Statistics 28, No. 1 (2008) 75-90."
+        },
+        {
+          "autorzy": "A. Kisielewicz, P. Gawrychowski",
+          "opis": "2-synchronizing words, Language and Automata Theory and Applications Lecture Notes in Computer Science 5196 (2008) 221-231."
+        },
+        {
+          "autorzy": "A. Kisielewicz, A. Cherubini, B. Piochi",
+          "opis": "A bound for the length of shortest 2-collapsing words WORDS 2007, Proceedings of the 6th International Conference on Words, Institut de Math. de Luminy (2008) 90-99."
+        },
+        {
+          "autorzy": "P. Kowalski",
+          "opis": "A note on a theorem of Ax Annals of Pure and Applied Logic 156 (2008) 96-109."
+        },
+        {
+          "autorzy": "P. Kowalski, A. Hasson",
+          "opis": "Strongly minimal expansions of (C, +) definable in o-minimal fields Proceedings of the London Mathematical Society (3) 97 (2008) 117-154."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "opis": "Błąd na maturze Matematyka 6 (2008) 340-341."
+        },
+        {
+          "autorzy": "J. Kraszewski, M. Bolanowska, J. Nowak, I. Wendt",
+          "opis": "Matura 2008 - w cieniu błędu? Matematyka 7 (2008) 396-404."
+        },
+        {
+          "autorzy": "K. Krupiński, C. Ealy, A. Pillay",
+          "opis": "Superrosy dependent groups having finitely satisfiable generics Annals of Pure and Applied Logic 151 (2008) 1-21."
+        },
+        {
+          "autorzy": "P. Krupski, D. Cichoń, K. Omiljanowski",
+          "opis": "Monotone maps, the likeness relation and G-structures Topology and Its Applications 155 (2008) 2031-2040."
+        },
+        {
+          "autorzy": "P. Krupski, D. Cichoń, K. Omiljanowski",
+          "opis": "Refinable and monotone maps revisited Topology and Its Applications 155 (2008) 207-212."
+        },
+        {
+          "autorzy": "Y. Kryakin, A.G. Babenko",
+          "opis": "Integral approximation of characteristic function of interval by trigonometric polynomials Trudy Instituta Matematiki i Mekhaniki 14, no. 3 in Russian (2008) 19-37."
+        },
+        {
+          "autorzy": "A.D. Krystek",
+          "opis": "Infinite divisibility for the conditionally free convolution Infinite Dimensional Analysis Quantum Probability and Related Topics 10(4) (2008) 499-522."
+        },
+        {
+          "autorzy": "A.D. Krystek",
+          "opis": "The V_ alfa - deformation of the classical convolution (praca, mimo daty 2007, ukazała się dopiero w roku 2008; praca nie była sprawozdawana w 2007 roku) Banach Center Publications 78 (2007) 185-199."
+        },
+        {
+          "autorzy": "I. Królak",
+          "opis": "Bargmann representationof q-commutation relations for q>1 and associated measures (praca, mimo daty 2007, ukazała się dopiero w roku 2008; praca nie była sprawozdawana w roku 2007) Banach Center Publications 78 (2007) 171-183."
+        },
+        {
+          "autorzy": "R. Kulik, M. Csorgo",
+          "opis": "Reduction principles for quantile and Bahadur-Kiefer processes of long-range dependent linear sequences Probability Theory and Related Fields 142 (3-4) (2008) 339-366."
+        },
+        {
+          "autorzy": "R. Kulik",
+          "opis": "Sums of extreme values of subordinated long-range dependent sequences: moving averages with finite variance Electronic Journal of Probability 13, no. 32 (2008)."
+        },
+        {
+          "autorzy": "R. Kulik, M. Csorgo",
+          "opis": "Weak convergence of Vervaat error processes of long-range dependent sequences Journal of Theoretical Probability 21 (3) (2008) 672-686."
+        },
+        {
+          "autorzy": "B. Majcher-Iwanow",
+          "opis": "Polish group actions, nice topologies and admissible sets Mathematical Logic Quarterly 54, No. 6 (2008) 597-616."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, M. Kordos, D. Kwietniak, M. Preisner, M. Siankowska",
+          "opis": "Ćwiczenia ze wstążką Magazyn Miłośników Matematyki 1/08 (2008) 14-25."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Gdzie się kończy nieskończoność? Magazyn Miłośników Matematyki 3/08 (2008) 15-22."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Koła i szprychy Magazyn Miłośników Matematyki 2/08 (2008) 12-17."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LIII Quadratic Trinomial Matematyka 1/2008 (2008) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LIV Induction & Intuition Matematyka 4/2008 (2008) 253-254."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LIV Symbolic Logic Matematyka 2/2008 (2008) 125-126."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LIX Proofs in Geometry Matematyka 7/2008 (2008) 445-446."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LV Deductive Thinking Matematyka 3/2008 (2008) 189-190."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LVII Types of Proofs Matematyka 5/2008 (2008) 317-318."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LVIII Proof by a Mathematical Induction Matematyka 6/2008 (2008) 381-382."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LX Proof Writing Matematyka 8/2008 (2008) 509-510."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXI Fallacies in Thinking Matematyka 9/2008 (2008) 573-574."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXII Basic trigonometry Matematyka 10/2008 (2008) 632-633."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "O powierzchniach Magazyn Miłośników Matematyki 1/08 (2008) 9-13."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, R. Janiszewski",
+          "opis": "Obrazki z wystawy Magazyn Miłośników Matematyki 2/08 (2008) 34-36."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, J. Stokłosa",
+          "opis": "Proste i koła (2) Magazyn Miłośników Matematyki 4/08 (2008) 20-25."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Proste i okręgi Magazyn Miłośników Matematyki 2/08 (2008) 11."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "opis": "Wstęgi wokół nas Magazyn Miłośników Matematyki 1/08 (2008) 26-28."
+        },
+        {
+          "autorzy": "K. Musiał, B. Bongiorno, L. Di Piazza",
+          "opis": "Approximation of Banach space valued nonabsolutely integrable functions by step functions Glasgow Mathematical Journal 50 (2008) 583-593."
+        },
+        {
+          "autorzy": "D. Osajda",
+          "opis": "Ideal boundary of 7-systolic complexes and groups Algebraic and Geometric Topology 8 (2008) 81-99."
+        },
+        {
+          "autorzy": "Z. Palmowski, F. Avram, M. Pistorius",
+          "opis": "A two-dimensional ruin problem on the positive quadrant Insurance: Mathematics and Economics 42 (1) (2008) 227-234."
+        },
+        {
+          "autorzy": "Z. Palmowski, F. Avram, M. Pistorius",
+          "opis": "Exit problem of a two-dimensional risk process from a cone: exact and asymptotic results Annals of Applied Probability 18 (6) (2008) 2421-2449."
+        },
+        {
+          "autorzy": "Z. Palmowski, A. Kyprianou",
+          "opis": "Fluctuations of spectrally negative Markov Additive processes Seminaire de Probabilites XLI, Lecture Notes in Mathematics 1934 (2008) 121-135."
+        },
+        {
+          "autorzy": "J. Pawlikowski, M. Sabok",
+          "opis": "Two Stars Archive for Mathematical Logic 47 (2008) 673-676."
+        },
+        {
+          "autorzy": "G. Plebanek, M. Dzamonja",
+          "opis": "Strictly Positive Measures on boolean Algebras Journal of Symbolic Logic 73 (2008) 1416-1432."
+        },
+        {
+          "autorzy": "T. Pytlik, R. Szwarc",
+          "opis": "Weak type radial convolution operators on free groups Studia Mathematica 186 (1) (2008) 77-86."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "opis": "Stability property of the two-dimensional Keller-Segel model Asymptotic Analysis 61 (2008) 35-59."
+        },
+        {
+          "autorzy": "T. Rolski, S. Asmussen, P. Fiorini, L. Lipsky, R. Sheahan",
+          "opis": "Asymptotic Behavior of Total Times For Jobs That Must start Over If a Failure Occurs Mathematics of Operations Research 33 (2008) 932-944."
+        },
+        {
+          "autorzy": "T. Rolski, Z. Puchała",
+          "opis": "The exact asymptotic of the collision time tail distribution for independent Brownian particles with different drifts Probability Theory and Related Fields 142 (2008) 595-617."
+        },
+        {
+          "autorzy": "R. Stańczy",
+          "opis": "Stationary solutions of the generalized Smoluchowski-Poisson equation Banach Center Publications 81 (2008) 493-500."
+        },
+        {
+          "autorzy": "R. Szekli, H. Daduna",
+          "opis": "Impact of routeing on correlation strength in stationary queueing network processes Journal of Applied Probability 45, No. 3 (2008) 846-878."
+        },
+        {
+          "autorzy": "R. Szekli, H. Daduna, C. Malchin",
+          "opis": "Weak convergence limits for sojourn times in cyclic queues under heavy traffic conditions Journal of Applied Probability 45, No. 2 (2008) 333-346."
+        },
+        {
+          "autorzy": "R. Szwarc, K. Topolski",
+          "opis": "Limit theorems for stochastic dynamical system arising in Ising model analysis Probability and Mathematical Statistics 28.2 (2008) 257-270."
+        },
+        {
+          "autorzy": "R. Szwarc, J. Obermaier",
+          "opis": "Orthogonal Polynomials of Discrete Variable and Boundedness of Dirichlet Kernel Constructive Approximation 27 (2008) 1-13."
+        },
+        {
+          "autorzy": "P. Śniady, A. Rattan",
+          "opis": "Upper bound on the characters of the symmetric groups for balanced Young diagrams and a generalized Frobenius formula Advances in Mathematics 218 (2008) 673-695."
+        },
+        {
+          "autorzy": "J. Świątkowski, U. Oertel",
+          "opis": "A contamination carrying criterion for branched surfaces Annals of Global Analysis and Geometry 34 (2008) 135-152."
+        },
+        {
+          "autorzy": "J. Świątkowski, F. Haglund",
+          "opis": "Seperating quasi-convex subgroups in 7-systolic groups Groups, Geometry and Dynamics 2 (2008) 223-244."
+        },
+        {
+          "autorzy": "R. Urban",
+          "opis": "Algebraic numbers and density modulo 1 Journal of Number Theory 128, No. 3 (2008) 645-661."
+        },
+        {
+          "autorzy": "R. Urban, J. Zienkiewicz",
+          "opis": "Fractional time-dependent Schroedinger equation on the Heisenberg group Mathematische Zeitschrift 260, No. 4 (2008) 931-948."
+        },
+        {
+          "autorzy": "R. Urban",
+          "opis": "Sequences of algebraic numbers and density modulo 1 Publicationes Mathematicae - Debrecen 72, No. 1-2 (2008) 141-154."
+        },
+        {
+          "autorzy": "R. Wencel",
+          "opis": "Weakly o-minimal non-valuational structures Annals of Pure and Applied Logic 154 (2008) 139-162."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "opis": "Algebra w pracach Leonharda Eulera Antiquitates Mathematicae 2 (2008) 121-132."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "opis": "Artur Cayley (1821-1895) - matematyk wszechstronny Matematyka 10 (2008) 579-585."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "opis": "Carl Weierstrass (1815-1897) - mistrz analizy Matematyka 8 (2008) 451-457."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "opis": "Evariste Galois (1811-1832) - błysk meteoru Matematyka 2 (2008) 67-73."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "opis": "Joseph Liouville (1809-1882) - odkrywca liczb przestępnych Matematyka 6 (2008) 323-329."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "opis": "Liczba pi i kwadratura koła u Eulera Antiquitates Mathematicae 2 (2008) 133-142."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "opis": "Podręczniki arytmetyki i algebry w Polsce w XVIII wieku Matematyka 1 (2008) 12-22."
+        },
+        {
+          "autorzy": "Ł.J. Wojakowski",
+          "opis": "The Levy-Khintchine formula and Nica-Speicher property for deformations of the free convolution (praca, mimo daty 2007, ukazała się dopiero w roku 2008; praca nie była sprawozdawana w roku 2007) Banach Center Publications 78 (2007) 309-314."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "opis": "George Boole (1815-1864) Matematyka 7 (2008) 387."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "opis": "Leopold Infeld i jego książka Matematyka 2 (2008) 74."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "opis": "Niels Henrik Abel Matematyka 1 (2008) 3."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "opis": "Nowe projekty MEN (komentarze) Matematyka 8 (2008) 458."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "opis": "O podstawie programowej dla LO Matematyka 2 (2008) 75."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "opis": "Podstawa programowa matematyki Matematyka 1 (2008) 23."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "opis": "Przed egzaminem gimnazjalnym Matematyka 4 (2008) 232."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "opis": "Zadania dla gimnazjum Matematyka 5 (2008) 310."
+        },
+        {
+          "autorzy": "J. Wróblewski, A. Choudhry",
+          "opis": "Ideal Solutions of the Tarry-Escott Problem of degree eleven with applications to Sums of Thirteenth Powers Hardy-Ramanujan Journal 31 (2008) 1-13."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "opis": "bm-Central Limit Theorems for Positive Definite Real Symmetric Matrices Infinite Dimensional Analysis Quantum Probability and Related Topics 11, No. 1 (2008) 1-19."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "opis": "bm-independence and central limit theorems associated with symmetric cones (praca, mimo daty 2007, ukazała się dopiero w roku 2008, praca nie była sprawozdawana w roku 2007) Banach Center Publications 78 (2007) 315-320."
+        },
+        {
+          "autorzy": "P. Żebrowski, A. Jurlewicz, A. Wyłomańska",
+          "opis": "Financial Data Analysis by Means of Coupled Continuous-Time Random Walk in Rachev-Ruschendorf Model Acta Physica Polonica Polonica A 114 (3) (2008)."
+        }
+      ]
+    }
+  ]
+}

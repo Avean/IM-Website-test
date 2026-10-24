@@ -1,0 +1,138 @@
+{
+  "wstep": "Wykazy publikacji naukowych pracowników Instytutu według roku wydania oraz czasopisma redagowane w Instytucie.",
+  "wstep_en": "Lists of research publications by members of the Institute, by year of publication, and journals edited at the Institute.",
+  "lata": [
+    {
+      "rok": 2025,
+      "plik": "/pliki/nauka/publikacje/publikacje_2025.pdf"
+    },
+    {
+      "rok": 2024,
+      "plik": "/pliki/nauka/publikacje/publikacje_2024.pdf"
+    },
+    {
+      "rok": 2023,
+      "plik": "/pliki/nauka/publikacje/publikacje_2023.pdf"
+    },
+    {
+      "rok": 2022,
+      "plik": "/pliki/nauka/publikacje/publikacje_2022.pdf"
+    },
+    {
+      "rok": 2021,
+      "plik": "/pliki/nauka/publikacje/publikacje_2021.pdf"
+    },
+    {
+      "rok": 2020,
+      "plik": "/pliki/nauka/publikacje/publikacje_2020.pdf"
+    },
+    {
+      "rok": 2019,
+      "plik": "/pliki/nauka/publikacje/publikacje_2019.pdf"
+    },
+    {
+      "rok": 2018,
+      "plik": "/pliki/nauka/publikacje/publikacje_2018.pdf"
+    },
+    {
+      "rok": 2017,
+      "plik": "/pliki/nauka/publikacje/publikacje_2017.pdf"
+    },
+    {
+      "rok": 2016,
+      "plik": "/pliki/nauka/publikacje/publikacje_2016.pdf"
+    },
+    {
+      "rok": 2015,
+      "plik": "/pliki/nauka/publikacje/publikacje_2015.pdf"
+    },
+    {
+      "rok": 2014
+    },
+    {
+      "rok": 2013
+    },
+    {
+      "rok": 2012
+    },
+    {
+      "rok": 2011
+    },
+    {
+      "rok": 2010
+    },
+    {
+      "rok": 2009
+    },
+    {
+      "rok": 2008
+    },
+    {
+      "rok": 2007
+    },
+    {
+      "rok": 2006
+    },
+    {
+      "rok": 2005
+    },
+    {
+      "rok": 2004
+    },
+    {
+      "rok": 2003
+    }
+  ],
+  "czasopisma_naglowek": "Czasopisma redagowane w Instytucie",
+  "czasopisma_naglowek_en": "Journals edited at the Institute",
+  "czasopisma": [
+    {
+      "nazwa": "Applicationes Mathematicae",
+      "opis": "Czasopismo poświęcone matematyce stosowanej, zwłaszcza modelowaniu matematycznemu i równaniom różniczkowym cząstkowym oraz ich zastosowaniom; publikuje także prace z matematyki finansowej i ubezpieczeniowej, optymalizacji, rachunku prawdopodobieństwa i statystyki oraz metod numerycznych. Dawniej „Zastosowania Matematyki”.",
+      "opis_en": "A journal dedicated to applied mathematics, especially mathematical modelling, partial differential equations and their applications; it also publishes papers on mathematics of finance and insurance, optimization, probability and statistics, and numerical methods. Formerly Zastosowania Matematyki.",
+      "wydawca": "Instytut Matematyczny PAN",
+      "wydawca_en": "Institute of Mathematics, Polish Academy of Sciences",
+      "issn": "1233-7234",
+      "eissn": "1730-6280",
+      "adres": "https://impan.pl/en/publishing-house/journals-and-series/applicationes-mathematicae"
+    },
+    {
+      "nazwa": "Colloquium Mathematicum",
+      "opis": "Oryginalne prace średniej długości adresowane do szerokiego grona matematyków: nowe wyniki, nowe dowody ważnych twierdzeń i prace przeglądowe ze wszystkich dziedzin matematyki czystej. Założycielami czasopisma byli Bronisław Knaster, Edward Marczewski, Hugo Steinhaus i Władysław Ślebodziński.",
+      "opis_en": "Original papers of moderate length addressed to a broad mathematical audience: research results, new proofs of important theorems and research-expository papers in all fields of pure mathematics. The journal was founded by Bronisław Knaster, Edward Marczewski, Hugo Steinhaus and Władysław Ślebodziński.",
+      "wydawca": "Instytut Matematyczny PAN",
+      "wydawca_en": "Institute of Mathematics, Polish Academy of Sciences",
+      "redakcja": "Instytut Matematyczny, Uniwersytet Wrocławski, pl. Grunwaldzki 2/4, 50-384 Wrocław",
+      "redakcja_en": "Institute of Mathematics, University of Wrocław, pl. Grunwaldzki 2/4, 50-384 Wrocław, Poland",
+      "issn": "0010-1354",
+      "eissn": "1730-6302",
+      "adres": "https://impan.pl/en/publishing-house/journals-and-series/colloquium-mathematicum"
+    },
+    {
+      "nazwa": "Probability and Mathematical Statistics",
+      "opis": "Oryginalne prace z teorii prawdopodobieństwa i statystyki matematycznej. Czasopismo powstało w 1980 roku z inicjatywy wrocławskiego środowiska probabilistów (Kazimierz Urbanik, Czesław Ryll-Nardzewski) i statystyków (Witold Klonecki); od 2007 roku jest czasopismem stowarzyszonym Institute of Mathematical Statistics. Wszystkie artykuły są dostępne bezpłatnie (diamentowy otwarty dostęp).",
+      "opis_en": "Original contributions to the theory of probability and mathematical statistics. The journal was founded in 1980 on the initiative of the Wrocław probability community led by Kazimierz Urbanik and Czesław Ryll-Nardzewski and the statistics community represented by Witold Klonecki; since 2007 it has been an affiliated journal of the Institute of Mathematical Statistics. All papers are freely available (diamond open access).",
+      "wydawca": "Oficyna Wydawnicza Politechniki Wrocławskiej",
+      "wydawca_en": "Publishing House of Wrocław University of Science and Technology",
+      "wsparcie": "Wydział Matematyki i Informatyki Uniwersytetu Wrocławskiego oraz Wydział Matematyki Politechniki Wrocławskiej",
+      "wsparcie_en": "Faculty of Mathematics and Computer Science, University of Wrocław, and Faculty of Pure and Applied Mathematics, Wrocław University of Science and Technology",
+      "kontakt": "pms@math.uni.wroc.pl",
+      "issn": "0208-4147",
+      "adres": "https://www.math.uni.wroc.pl/~pms/"
+    }
+  ],
+  "archiwum": "Preprinty Instytutu Matematycznego — seria wydawana do 2000 roku.",
+  "archiwum_en": "Preprints of the Mathematical Institute — a series published until 2000.",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/publikacje",
+    "https://www.math.uni.wroc.pl/redagowane-czasopisma",
+    "https://impan.pl/en/publishing-house/journals-and-series/colloquium-mathematicum",
+    "https://impan.pl/en/publishing-house/journals-and-series/applicationes-mathematicae",
+    "https://www.math.uni.wroc.pl/~pms/pmsins.php"
+  ],
+  "do_uzupelnienia": [
+    "Applicationes Mathematicae: według strony IMPAN redakcja mieści się w Warszawie (IMPAN, ul. Śniadeckich 8) — potwierdzić, czy czasopismo nadal jest redagowane w Instytucie.",
+    "Probability and Mathematical Statistics: strona czasopisma działa na serwerze starej strony (math.uni.wroc.pl/~pms) — sprawdzić adres po wyłączeniu starej strony.",
+    "Preprinty IM: dawny adres math.uni.wroc.pl/mathbank/preprinty/ już nie działa (404); jeśli seria jest gdzieś zarchiwizowana, dodać link."
+  ]
+}

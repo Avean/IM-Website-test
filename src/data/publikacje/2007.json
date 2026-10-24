@@ -1,0 +1,590 @@
+{
+  "rok": 2007,
+  "pochodzenie": "strona",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2007"
+  ],
+  "uwagi": "W oryginalnym wykazie część prac była powtórzona przy nazwiskach kolejnych współautorów; powtórzenia pominięto.",
+  "uwagi_en": "In the original list some papers were repeated under the names of further co-authors; the repetitions have been omitted.",
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "J. Bartoszewicz, P. Błażej",
+          "tytul": "Robust estimation of the scale parameter based on spacings in a weighted exponential model",
+          "zrodlo": "Applicationes Mathematicae 34 (2007) 405-411."
+        },
+        {
+          "autorzy": "A. Bendikov, P. Maheux",
+          "tytul": "Nash type inequalities for fractional powers of non-negative self-adjoint operators",
+          "zrodlo": "Transactions of the American Mathematical Society 359 (7) (2007) 3085-3097."
+        },
+        {
+          "autorzy": "A. Bendikov, T. Coulhon, L. Saloff-Coste",
+          "tytul": "Ultracontractivity and embedding into L-infinity",
+          "zrodlo": "Mathematische Annalen 337 (4) (2007) 817-853."
+        },
+        {
+          "autorzy": "P. Biler, W.A. Woyczyński",
+          "tytul": "General nonlocal diffusion-convection mean field models: nonexistence of global solutions",
+          "zrodlo": "Physica A - Statistical Mechanics and Its Applications 379 (2007) 523-533."
+        },
+        {
+          "autorzy": "M. Bożejko, M. Wodecki",
+          "tytul": "On the theoretical properties of swap multimoves",
+          "zrodlo": "Operations Research Letters 35, No. 2 (2007) 227-231."
+        },
+        {
+          "autorzy": "M. Bożejko",
+          "tytul": "Remarks on q-CCR relations for [q]>1, Noncommutative harmonic Analysis with Applications to Probability",
+          "zrodlo": "Banach Center Publications 78 (2007) 59-67."
+        },
+        {
+          "autorzy": "P. Borodulin-Nadzieja",
+          "tytul": "Measures on minimally generated Boolean algebras",
+          "zrodlo": "Topology and Its Applications 154 (2007) 3107-3124."
+        },
+        {
+          "autorzy": "D. Buraczewski, T. Martinez, J. Torrea",
+          "tytul": "Calderon-Zygmund operators associated to ultraspherical expansions",
+          "zrodlo": "Canadian Journal of Mathematics 59, No. 6 (2007) 1223-1244."
+        },
+        {
+          "autorzy": "D. Buraczewski",
+          "tytul": "On behavior at infinity of invariant measures of stochastic recursions in a critical case",
+          "zrodlo": "Annals of Applied Probability 17 (4) (2007) 1245-1272."
+        },
+        {
+          "autorzy": "D. Buraczewski",
+          "tytul": "On tails of stationary measures on a class of solvable groups",
+          "zrodlo": "Annales de L ' Institut Henri Poincare-Probabilites et Statistiques 43 (4) (2007) 417-440."
+        },
+        {
+          "autorzy": "D. Buraczewski, J.J. Betancor, J.C. Farina, T. Martinez, J. Torrea",
+          "tytul": "On the Riesz transform associated to Hankel transformation",
+          "zrodlo": "Proceedings of the Royal Society of Edinburgh Section A - Mathematics 137 (4) (2007) 701-725."
+        },
+        {
+          "autorzy": "P. Błażej",
+          "tytul": "Robust estimation of the scale and weighted distribution",
+          "zrodlo": "Applicationes Mathematicae 34,1 (2007) 29-38."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, B. Radunovic",
+          "tytul": "M/D/1/1 loss system with interference and applications to transmit-only sensor networks",
+          "zrodlo": "Proc. of SpaSWiN 2007 (2007)."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, M.K. Karray",
+          "tytul": "Performance evaluation of scalable congestion control schemes for elastic traffic in cellular networks",
+          "zrodlo": "Proceedings of IEEE Infocom 2007 (2007)."
+        },
+        {
+          "autorzy": "M. Czystołowski, W. Szczotka",
+          "tytul": "Tightness of stationary waiting times in Heavy Traffic for GI/GI/1 queues with thick tails",
+          "zrodlo": "Probability and Mathematical Statistics 27.1 (2007) 109-123."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Wartości typowe",
+          "zrodlo": "Matematyka w Szkole 26 (2007) 37-40."
+        },
+        {
+          "autorzy": "J. Dymara, D. Osajda",
+          "tytul": "Boundaries of right - angled hyperbolic buildings",
+          "zrodlo": "Fundamenta Mathematicae 197 (2007) 123-165."
+        },
+        {
+          "autorzy": "J. Dymara, M.W. Davis, T. Januszkiewicz, B. Okun",
+          "tytul": "Weighted L^2 - cohomology of Coxeter groups",
+          "zrodlo": "Geometry and Topology 11 (2007) 47-138."
+        },
+        {
+          "autorzy": "J. Dziubański",
+          "tytul": "Hardy spaces for Laguerre expansions",
+          "zrodlo": "Constructive Approximation 27, No. 3 (2007) 269-287."
+        },
+        {
+          "autorzy": "K. Dębicki, M. Mandjes, M. van Uitert",
+          "tytul": "A tandem queue with Levy input: a new representation of the downstream queue length",
+          "zrodlo": "Probability in the Engineering and Informational Sciences 21 (2007) 83-107."
+        },
+        {
+          "autorzy": "K. Dębicki, M. Mandjes",
+          "tytul": "A note on large buffer asymptotics for generalized processor sharing queues with Gaussian inputs",
+          "zrodlo": "Queueing Systems 55, No. 4 (2007) 251-254."
+        },
+        {
+          "autorzy": "K. Dębicki, T. Dieker, T. Rolski",
+          "tytul": "Quasi-product forms for Levy-driven fluid networks",
+          "zrodlo": "Mathematics of Operations Research 32, No. 3 (2007) 629-647."
+        },
+        {
+          "autorzy": "M. Grech",
+          "tytul": "Well- and better-quasi orderings in the lattice of varieties of commutative semigroups",
+          "zrodlo": "International Journal of Algebra and Computation 17, No.4 (2007) 869-879."
+        },
+        {
+          "autorzy": "P. Głowacki",
+          "tytul": "The Melin calculus for general homogeneous groups",
+          "zrodlo": "Arkiv for Matematik 45 (2007) 31-48."
+        },
+        {
+          "autorzy": "A. Hoffmann",
+          "tytul": "Matematyka, nasza niedostrzegalna kultura",
+          "zrodlo": "Matematyka 4 (2007) 247-249."
+        },
+        {
+          "autorzy": "A. Hoffmann",
+          "tytul": "Od zbioru zadań do wydawnictwa",
+          "zrodlo": "Matematyka 6 (2007) 365-367."
+        },
+        {
+          "autorzy": "A. Iwanow, K. Majcher",
+          "tytul": "Absolutely ubiquitous groups",
+          "zrodlo": "Algebra and Discrete Mathematics no. 3 (2007) 55-70."
+        },
+        {
+          "autorzy": "A. Iwanow, K. Majcher",
+          "tytul": "Ages of expansion of omega-categorical structures structures",
+          "zrodlo": "Notre Dame Journal of Formal Logic 48, no. 3 (2007) 371-380."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, J. Świątkowski",
+          "tytul": "Filling invariants of systolic complexes and groups",
+          "zrodlo": "Geometry and Topology 11 (2007) 727-759."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, M.W. Davis, I. Leary",
+          "tytul": "The L^2 - cohomology of hyperplane complements",
+          "zrodlo": "Geometry Groups and Dynamics 1 (2007) 301-309."
+        },
+        {
+          "autorzy": "Z.J. Jurek",
+          "tytul": "Random integral representations for free-infinitely divisible and tempered stable distributions",
+          "zrodlo": "Statistics and Probability Letters 77 (2007) 417-425."
+        },
+        {
+          "autorzy": "I. Kopocińska, B. Kopociński",
+          "tytul": "Zagadnienia Steinhausa o szacowaniu strat wojennych na podstawie analizy nekrologów prasowych",
+          "zrodlo": "Matematyka Stosowana 8 (2007) 155-160."
+        },
+        {
+          "autorzy": "P. Kowalski, A. Pillay",
+          "tytul": "On algebraic $sigma- groups",
+          "zrodlo": "Transactions of the American Mathematical Society 59 (2007) 1325-1337."
+        },
+        {
+          "autorzy": "J. Kraszewski, W. Kowalska, M. Nowak",
+          "tytul": "Matura 2007 - znów zmiany",
+          "zrodlo": "Matematyka 7 (2007) 400-407."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Pooliczyć każdy może",
+          "zrodlo": "Matematyka 6 (2007) 329."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Usunąć zbiór pusty",
+          "zrodlo": "Matematyka 6 (2007) 359."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Uzasadnij, że",
+          "zrodlo": "Matematyka 5 (2007) 268-269."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Z życia wzięte",
+          "zrodlo": "Matematyka 4 (2007) 206-208."
+        },
+        {
+          "autorzy": "K. Krupiński, C. Ealy, A. Pillay",
+          "tytul": "Superrosy dependent groups having finitely satisfiable generics",
+          "zrodlo": "Annals of Pure and Applied Logic 151 (2007) 1-21."
+        },
+        {
+          "autorzy": "P. Krupski",
+          "tytul": "Janusz Jerzy Charatonik 1934 - 2004",
+          "zrodlo": "Topology Proceedings 30 (2007)."
+        },
+        {
+          "autorzy": "P. Krupski",
+          "tytul": "Przestrzenie jednorodne I, Letnia Szkoła Algebry i Topologii",
+          "zrodlo": "Gliwice (2007) 11-32."
+        },
+        {
+          "autorzy": "P. Krupski, A. Samulewicz",
+          "tytul": "Strongly countable dimensional compacta form the Hurewicz set",
+          "zrodlo": "Topology and Its Applications 154, no. 5 (2007) 996-1001."
+        },
+        {
+          "autorzy": "Y. Kryakin, A.G. Babenko",
+          "tytul": "On approximation of step function by trigonometric polynomials in the integral metric",
+          "zrodlo": "Izv. Tul. Gos. Univ. Ser. Mat. Mekh. Inform. 12, no. 1 (2007) 27-56."
+        },
+        {
+          "autorzy": "Y. Kryakin, A.G. Babenko",
+          "tytul": "Polynomial interpolation-orthogonal basis",
+          "zrodlo": "International Summer Math. Stechkin Workshop on Function Theory, Proceedings, Tula (2007) 22-39."
+        },
+        {
+          "autorzy": "A.D. Krystek, Ł.J. Wojakowski",
+          "tytul": "Convolution associated with the free cosh-law",
+          "zrodlo": "QP-PQ: Quantum Probability and White Noise Analysis 20 (2007) 295-301."
+        },
+        {
+          "autorzy": "A.D. Krystek",
+          "tytul": "Infinite divisibility for the conditionally free convolution",
+          "zrodlo": "Infinite Dimensional Analysis Quantum Probability and Related Topics 10 (2007) 499-522."
+        },
+        {
+          "autorzy": "R. Kulik",
+          "tytul": "Bahadu-Kiefer Theory for sample quantiles of weakly dependent linear processes",
+          "zrodlo": "Bernoulli 13 (2007) 1071-1090."
+        },
+        {
+          "autorzy": "R. Kulik, C. Wichelhaus",
+          "tytul": "Dependence in Lag for Markov chains on partially ordered state spaces with applications to degradable networks",
+          "zrodlo": "Stochastic Models 23 (2007) 683-696."
+        },
+        {
+          "autorzy": "B. Majcher-Iwanow",
+          "tytul": "Strong boundedness and algebraically closed groups",
+          "zrodlo": "Comment. Math. Univ. Carolin. 48 (2007) 205-209."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Ile jest rodzajów liczb wymiernych",
+          "zrodlo": "Magazyn Miłośników Matematyki 3 (2007) 10-13."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Kant i matematyka",
+          "zrodlo": "Magazyn Miłośników Matematyki 2 (2007) 10-14."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Magiczne kwadraty",
+          "zrodlo": "Magazyn Miłośników Matematyki 1 (2007) 20-23."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. L Geometric Meaning of Equations",
+          "zrodlo": "Matematyka 8 (2007) 509-510."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LI Programming",
+          "zrodlo": "Matematyka 9 (2007) 573-574."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LII Polynomials",
+          "zrodlo": "Matematyka 10 (2007) 637-638."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XLIII Calculations with a calculator",
+          "zrodlo": "Matematyka 1 (2007) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XLIV Programming",
+          "zrodlo": "Matematyka 2 (2007) 125-126."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XLIX Solving Systems of Linear Equations",
+          "zrodlo": "Matematyka 7 (2007) 445-446."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XLV Algebraic expressions",
+          "zrodlo": "Matematyka 3 (2007) 189-190."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XLVI Equations and inequalities",
+          "zrodlo": "Matematyka 4 (2007) 253-254."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XLVII Methods of Solving Equations",
+          "zrodlo": "Matematyka 5 (2007) 317-318."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "MR MAT, Mały ilustrowany słownik terminów matematycznych, cz. XLVIII Systems of Linear Equations",
+          "zrodlo": "Matematyka 6 (2007) 381-382."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Pytania (nieco) przewrotne. Działania",
+          "zrodlo": "Magazyn Miłośników Matematyki 3 (2007) 20."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, J. Jaworski, K. Michałowska",
+          "tytul": "Słynne liczby niewymierne",
+          "zrodlo": "Magazyn Miłośników Matematyki 3 (2007) 24-30."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Vademecum agenta",
+          "zrodlo": "Magazyn Miłośników Matematyki 4 (2007) 11-18."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Zrób sobie enigmę",
+          "zrodlo": "Magazyn Miłośników Matematyki 4 (2007) 19-22."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Zrób sobie gwiazdę",
+          "zrodlo": "Magazyn Miłośników Matematyki 1 (2007) 16-17."
+        },
+        {
+          "autorzy": "K. Musiał, N.D. Macheras, W. Strauss",
+          "tytul": "Fubini type products for densities and liftings",
+          "zrodlo": "Journal of Theoretical Probability 20 (2007) 545-560."
+        },
+        {
+          "autorzy": "K. Musiał, N.D. Macheras, W. Strauss",
+          "tytul": "Splitting of liftings in products of probability spaces II",
+          "zrodlo": "Jounal of Mathematical Analysis and Applications 335 (1) (2007) 213-224."
+        },
+        {
+          "autorzy": "W. Narkiewicz",
+          "tytul": "Euclidean algorithm in small Abelian fields",
+          "zrodlo": "Functiones et Approximatio 37 (2007) 7-10."
+        },
+        {
+          "autorzy": "W. Narkiewicz",
+          "tytul": "Nieparzyste liczby doskonałe",
+          "zrodlo": "Delta 12 (2007) 4."
+        },
+        {
+          "autorzy": "W. Narkiewicz, M. Jarden",
+          "tytul": "On sums of units",
+          "zrodlo": "Monatshefte fur Mathematik 150 (2007) 327-332."
+        },
+        {
+          "autorzy": "W. Narkiewicz",
+          "tytul": "Sosuu Teiri no Shinten",
+          "zrodlo": "Japoński przekład \"Development of the Prime Number Theory\" Japan (2007)."
+        },
+        {
+          "autorzy": "W. Narkiewicz",
+          "tytul": "Teoria liczb w twórczości Eulera",
+          "zrodlo": "Wiadomości Matematyczne 43 (2007)."
+        },
+        {
+          "autorzy": "L. Newelski",
+          "tytul": "Relative Vaught conjecture for some meager groups",
+          "zrodlo": "Notre Dame Journal of Formal Logic 48 (2007) 115-132."
+        },
+        {
+          "autorzy": "Z. Palmowski, A. Kyprianou",
+          "tytul": "Distributional study of De Finetti ' s dividend problem for a general Levy insurance risk process",
+          "zrodlo": "Journal of Applied Probability 44(2) (2007) 428-443."
+        },
+        {
+          "autorzy": "Z. Palmowski, F. Avram, M. Pistorius",
+          "tytul": "On the optimal dividend problem for a spectrally negative Levy process",
+          "zrodlo": "Annals of Applied Probability 44(2) (2007) 349-365."
+        },
+        {
+          "autorzy": "Z. Palmowski, A. Zwart",
+          "tytul": "Tail asymptotics for the supremum of a regenerative process",
+          "zrodlo": "Journal of Applied Probability 44(2) (2007) 349-365."
+        },
+        {
+          "autorzy": "G. Plebanek, M. Dzamonja",
+          "tytul": "On Efimov spaces and Radon measures",
+          "zrodlo": "Topology and Its Applications 154 (2007) 2063-2072."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "tytul": "Weak $L^p$ solutions for a model of self-gravitating particles with an external potential",
+          "zrodlo": "Studia Mathematica 179 (3) (2007) 199-216."
+        },
+        {
+          "autorzy": "T. Rolski, D.J. Daley, R. Vesilo",
+          "tytul": "Long-range dependence in a Cox process directed by a Markov renewal process",
+          "zrodlo": "Journal of Applied Mathematics and Decision Science Article ID 83852 (2007) 15."
+        },
+        {
+          "autorzy": "R. Szekli",
+          "tytul": "Stochastic ordering for queueing networks",
+          "zrodlo": "Queueing networks: A fundamental approach (2007) 31."
+        },
+        {
+          "autorzy": "R. Szekli, H. Daduna, C. Malchin",
+          "tytul": "Weak convergence limits for sojurn times in cyclic queues under heavy traffic conditions",
+          "zrodlo": "Schwerpunkt mathematische statistik und stochastische prozesse No. 2007-04 (2007)."
+        },
+        {
+          "autorzy": "R. Szwarc",
+          "tytul": "Kaczmarz algorithm in Hilbert space and tight frames",
+          "zrodlo": "Applied And Computational Harmonic Analysis 22 (2007) 382-385."
+        },
+        {
+          "autorzy": "R. Szwarc, J. Obermaier",
+          "tytul": "Nonnegative linearization for little q-Laguerre polynomials and Faber basis",
+          "zrodlo": "Journal of Computational and Applied Mathematics 199 (2007) 89-94."
+        },
+        {
+          "autorzy": "R. Szwarc, J. Obermaier",
+          "tytul": "Orthogonal polynomials of discrete variable and boundedness of Dirichlet kernel",
+          "zrodlo": "Constructive Approximation 27 (2007) 1-13."
+        },
+        {
+          "autorzy": "R. Szwarc",
+          "tytul": "Tadek Pytlik in my memories",
+          "zrodlo": "Colloquium Mathematicum 108 (2007) 1-6."
+        },
+        {
+          "autorzy": "P. Śniady, B. Collins",
+          "tytul": "New scaling of Itzyskon-Zuber integrals",
+          "zrodlo": "Annales de L ' Institut Henri Poincare-Probabilites et Statistiques 43, no. 2 (2007) 139-146."
+        },
+        {
+          "autorzy": "P. Śniady, C. Moore, A. Russell",
+          "tytul": "On the possibility of a quantum sieve algorithm for graph isomorphism: unconditional results",
+          "zrodlo": "STOC ' 07: Proceedings of the thirty - ninth annual ACM symposium on Theory of computing (2007) 536-545."
+        },
+        {
+          "autorzy": "P. Śniady",
+          "tytul": "Permutations without long decreasing subsequences and random matrices",
+          "zrodlo": "Electronic Journal of Combinatorics 14(1) (2007) Artc. R.11."
+        },
+        {
+          "autorzy": "P. Śniady, J.A. Mingo, R. Speicher",
+          "tytul": "Second Order Freenes and Fluctuations of Random Matrices: II. Unitary Random Matrices",
+          "zrodlo": "Advances in Mathematics 209 (1) (2007) 212-240."
+        },
+        {
+          "autorzy": "P. Śniady, B. Collins, J.A. Mingo, R. Speicher",
+          "tytul": "Second Order Freeness and Fluctuations of Random Matrices, III. Higher order freenes and free cumulants",
+          "zrodlo": "Documenta Mathematica 12 (2007) 1-70."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "On density modulo 1 of some expressions containing algebraic integers",
+          "zrodlo": "Acta Arithmetica 127 (3) (2007) 217-229."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "Sequences of algebraic integers and density modulo",
+          "zrodlo": "J. Theor. Nombres Bordeaux 19(2) (2007) 759-766."
+        },
+        {
+          "autorzy": "R. Urban, J. Zienkiewicz",
+          "tytul": "Weak type (1,1) estimates for a class of discrete rough maximal functions",
+          "zrodlo": "Mathematical Research Letters 14(2) (2007) 227-237."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Carl Friedrich Gauss (1777-1855) - mistrz spokojnej pracy",
+          "zrodlo": "Matematyka 6 (2007) 323-329."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Historia algebry w pigułce",
+          "zrodlo": "Matematyka 3 (2007) 138, 148."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Jan Śniadecki (1756-1830) - uczony, mąż stanu, patriota",
+          "zrodlo": "Antiquitates Mathematicae 1 (2007) 173-197."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Matematyka Hoene-Wrońskiego i jego czasów",
+          "zrodlo": "Hoene-Wroński. Życie, matematyka i filozofia (2007) 1-17."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Matematyka polska epoki Oświecenia",
+          "zrodlo": "Warszawa (2007) 360."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Paolo Ruffini (1765-1822) - matematyk i lekarz",
+          "zrodlo": "Matematyka 3 (2007) 131-138."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Podręczniki arytmetyki i algebry w Polsce w XVIII wieku",
+          "zrodlo": "Matematyka 10 (2007) 565-576."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Prace magisterskie z matematyki na Uniwersytecie Wileńskim w XIX wieku",
+          "zrodlo": "Kwartalnik Historii Nauki i Techniki 52, nr 3/4 (2007) 1-22."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Ułamki egipskie - uzupełnienie",
+          "zrodlo": "Matematyka 3 (2007) 142-143."
+        },
+        {
+          "autorzy": "Ł.J. Wojakowski",
+          "tytul": "Probability interpolating between free and boolean",
+          "zrodlo": "Dissertationes Mathematicae (Rozprawy Matematyczne) 446 (2007)."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "A. L. Cauchy (1789-1857) - ojciec nowoczesnej analizy",
+          "zrodlo": "Matematyka 1 (2007) 515-519."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Co jest liczbą",
+          "zrodlo": "Matematyka 4 (2007) 250."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Co z czego wynika",
+          "zrodlo": "Matematyka 5 (2007) 277."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Język próbnej matury",
+          "zrodlo": "Matematyka 1 (2007) 25."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Legendre - ostatni komentator Euklidesa",
+          "zrodlo": "Matematyka 2 (2007) 67-71."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "O demokracji w matematyce",
+          "zrodlo": "Matematyka 4 (2007) 219."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Piątek, trzynastego",
+          "zrodlo": "Matematyka 2 (2007) 83-84."
+        },
+        {
+          "autorzy": "J. Wróblewski, A. Choudhry",
+          "tytul": "Quartic Diophantine Chains",
+          "zrodlo": "Acta Arithmetica 128.4 (2007) 339-348."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "tytul": "Monotonic independence associated with partially ordered sets",
+          "zrodlo": "Infinite Dimensional Analysis Quantum Probability and Related Topics 10, No. 1 (2007) 17-41."
+        },
+        {
+          "autorzy": "M. Zakrzewski",
+          "tytul": "Kula u nogi a kula u nogi",
+          "zrodlo": "Matematyka 1 (2007) 26-29."
+        }
+      ]
+    }
+  ]
+}

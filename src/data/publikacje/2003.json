@@ -1,0 +1,660 @@
+{
+  "rok": 2003,
+  "pochodzenie": "strona",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2003"
+  ],
+  "uwagi": "W oryginalnym wykazie część prac była powtórzona przy nazwiskach kolejnych współautorów; powtórzenia pominięto.",
+  "uwagi_en": "In the original list some papers were repeated under the names of further co-authors; the repetitions have been omitted.",
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "P. Biler, G. Karch",
+          "tytul": "Generalized Fokker-Planck equations and convergence to their equilibria",
+          "zrodlo": "Banach Center Publications 60 (2003) 307-318."
+        },
+        {
+          "autorzy": "P. Biler, T. Nadzieja",
+          "tytul": "Global and exploding solutions in a model of self - gravitating particles",
+          "zrodlo": "Reports on Mathematical Physics 52 (2003) 205-225."
+        },
+        {
+          "autorzy": "P. Biler, J. Dolbeault, M.J. Esteban, P.A. Markowich, T. Nadzieja",
+          "tytul": "Równania falowe. Warsztaty z równań różniczkowych cząstkowych",
+          "zrodlo": "Lecture Notes in Nonlinear Analysis 4 Toruń (2003) 7-30."
+        },
+        {
+          "autorzy": "P. Biler",
+          "tytul": "Równania różniczkowe cząstkowe na przełomie XX i XXI wieku",
+          "zrodlo": "Wiadomści Matematyczne 39 (2003) 65-84."
+        },
+        {
+          "autorzy": "P. Biler",
+          "tytul": "Warsztaty z równań różniczkowych cząstkowych",
+          "zrodlo": "Lecture Notes in Nonlinear Analysis 4 Toruń (2003) 1-137."
+        },
+        {
+          "autorzy": "M. Bożejko, R. Szwarc",
+          "tytul": "Algebraic length and Poincare series on reflection groups with applications to representations theory",
+          "zrodlo": "Proceedings of NATO ASI Asymptotic Combinatorics with Application to Mathematical Physics 1815 (2003) 201-221."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, R. Schott",
+          "tytul": "Approximate decomposition of some modulated-Poisson Voronoi tessellations",
+          "zrodlo": "Advances in Applied Probability 35 (2003) 847-862."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, F. Baccelli, F. Tournois",
+          "tytul": "Downlink admission/congestion control and maximal load in CDMA networks",
+          "zrodlo": "Proceeding of the IEEE Infocom 2003 (2003)."
+        },
+        {
+          "autorzy": "J.J. Charatonik",
+          "tytul": "A characterization of dendrites",
+          "zrodlo": "JP Journal of Geometry and Topology 3 (2003) 29-35."
+        },
+        {
+          "autorzy": "J.J. Charatonik, W.J. Charatonik, J.R. Prajs",
+          "tytul": "Arc property of Kelley and absolute retracts for hereditarily unicoherent continua",
+          "zrodlo": "Colloquium Mathematicum 97 (2003) 49-65."
+        },
+        {
+          "autorzy": "J.J. Charatonik",
+          "tytul": "Component restriction property for classes of mappings",
+          "zrodlo": "Mathematica Pannonica 14 (2003) 135-143."
+        },
+        {
+          "autorzy": "J.J. Charatonik, P. Krupski",
+          "tytul": "Dendrites and light mappings",
+          "zrodlo": "Proceedings of the American Mathematical Society 132 (2003) 1211-1217."
+        },
+        {
+          "autorzy": "J.J. Charatonik, W.J. Charatonik, J.R. Prajs",
+          "tytul": "Kernels in hereditarily unicoherent continua and absolute retracts",
+          "zrodlo": "Topology Proc. 26 (2003) 127-145."
+        },
+        {
+          "autorzy": "J.J. Charatonik, I. Puga",
+          "tytul": "More on unicoherence at subcontinua",
+          "zrodlo": "Math. Commun. 8 (2003) 173-185."
+        },
+        {
+          "autorzy": "J.J. Charatonik",
+          "tytul": "Nonseparating subcontinua and mappings",
+          "zrodlo": "Topology Proc. 26 (2003) 97-125."
+        },
+        {
+          "autorzy": "J.J. Charatonik",
+          "tytul": "On One-point Connectifications of Spaces",
+          "zrodlo": "Kyungpook Mathematical Journal 43 (2003) 149-156."
+        },
+        {
+          "autorzy": "J.J. Charatonik, I. Puga",
+          "tytul": "On weakly arcwise open dendroids",
+          "zrodlo": "JP Journal of Geometry and Topology 3 (2003) 89-100."
+        },
+        {
+          "autorzy": "J.J. Charatonik",
+          "tytul": "Recent research in hyperspace theory",
+          "zrodlo": "Extracta Mathematicae 18 (2003) 235-262."
+        },
+        {
+          "autorzy": "J.J. Charatonik",
+          "tytul": "Recent results on absolute retracts for various classes of continua",
+          "zrodlo": "Aportaciones Matematicas Serie Comunicaciones 32 (2003) 51-77."
+        },
+        {
+          "autorzy": "J.J. Charatonik",
+          "tytul": "Selected problems in continuum theory",
+          "zrodlo": "Topology Proc. 27, No. 1 (2003) 51-78."
+        },
+        {
+          "autorzy": "J.J. Charatonik",
+          "tytul": "Semi-Kelley continua and smoothness",
+          "zrodlo": "Questions and Answers in General Topology 21 (2003) 103-108."
+        },
+        {
+          "autorzy": "W. Czaja",
+          "tytul": "Boundedness of pseudodifferential operators on modulation spaces",
+          "zrodlo": "Jounal of Mathematical Analysis and Applications 284, no. 1 (2003) 389-396."
+        },
+        {
+          "autorzy": "W. Czaja, G. Gigante",
+          "tytul": "Continuous Gabor transform for strong hypergroups",
+          "zrodlo": "Journal of Fourier Analysis and Applications 9, no. 4 (2003) 321-339."
+        },
+        {
+          "autorzy": "W. Czaja, Z. Rzeszotnik",
+          "tytul": "Function spaces and classes of pseudodifferential operators",
+          "zrodlo": "Tohoku Mathematical Journal (2)55, no. 1 (2003) 131-140."
+        },
+        {
+          "autorzy": "W. Czaja, J.J. Benedetto, P.J. Gadziński, A.M. Powell",
+          "tytul": "The Balian-Low theorem and regularity of Gabor systems",
+          "zrodlo": "Journal of Geometric Analysis 13, No. 2 (2003) 239-254."
+        },
+        {
+          "autorzy": "W. Czaja, J.J. Benedetto, A.Y. Maltsev",
+          "tytul": "The Balian-Low theorem for the symplectic form on R^2d",
+          "zrodlo": "Journal of Mathematics Physics 44, No.4 (2003) 1735-1750."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Determinizm osobliwością probabilisty",
+          "zrodlo": "Matematyka, Społeczeństwo, Nauczanie 31 (2003) 12-19."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Co każdy o matematyce wiedzieć powinien (gawęda historyczna)",
+          "zrodlo": "Matematyka, Społeczeństwo, Nauczanie 31 (2003) 2-7."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Czy Bóg gra w kości? Nowa matematyka chaosu, recenzja książki I. Stewarta",
+          "zrodlo": "Wiadomości Matematyczne 39 (2003) 253-255."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Między duchem a materią pośredniczy matematyka",
+          "zrodlo": "Roczniki Filozoficzne 51.3 (2003) 151-156."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Philosophie de la Nature, recenzja książki, red. O. Bloch",
+          "zrodlo": "Arch. Intern. d'histoire des sciences (2003) 40-42."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Trzeci problem milenijny: hipoteza Poincarego",
+          "zrodlo": "Wiadomości Matematyczne 38 (2003) 63-90."
+        },
+        {
+          "autorzy": "J. Dudek, J.R. Cho, W.H. Kim",
+          "tytul": "A note on defining identities of distributive lattices",
+          "zrodlo": "East Asian Math. J. 19 (2003) 41-48."
+        },
+        {
+          "autorzy": "J. Dziubański, J. Zienkiewicz",
+          "tytul": "H^p spaces associated with Schroedinger operators with potentials from reverse Hoelder classes",
+          "zrodlo": "Colloquium Mathematicum 98.1 (2003) 5-38."
+        },
+        {
+          "autorzy": "K. Dębicki, M. Mandjes",
+          "tytul": "Exact overflow asymptotics for queues with many Gaussian inputs",
+          "zrodlo": "Journal of Applied Probability 40 (2003) 704-720."
+        },
+        {
+          "autorzy": "K. Dębicki, Z. Michna, T. Rolski",
+          "tytul": "Simulation of the asympotic constant in some fluid models",
+          "zrodlo": "Stochastic Models 19 (2003) 407-423."
+        },
+        {
+          "autorzy": "Ś.R. Gal, T. Januszkiewicz",
+          "tytul": "New a-T-menable HNN-extensions",
+          "zrodlo": "Journal of Lie Theory 13(2) (2003) 383-385."
+        },
+        {
+          "autorzy": "M. Grech",
+          "tytul": "Irreducible varieties of commutative semigroups",
+          "zrodlo": "Journal of Algebra 261, no. 1 (2003) 207-228."
+        },
+        {
+          "autorzy": "P. Głowacki",
+          "tytul": "A symbolic calculus and L^2-boundedness on nilpotent Lie groups",
+          "zrodlo": "Journal of Functional Analysis 206 (2003) 233-251."
+        },
+        {
+          "autorzy": "B. Hajduk, R. Walczak",
+          "tytul": "Invariant metrics on G-spaces",
+          "zrodlo": "Czechoslovak Mathematical Journal 53 (128) (2003) 449-466."
+        },
+        {
+          "autorzy": "W. Hebisch, T. Steger",
+          "tytul": "Multipliers and singular integrals on exponential growth groups",
+          "zrodlo": "Mathematische Zeitschrift 245 (2003) 37-61."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "tytul": "Cayley graphs having nice enumerations",
+          "zrodlo": "Israel Journal of Mathematics 137 (2003) 61-108."
+        },
+        {
+          "autorzy": "A. Janicki, P. Grądalski, A. Izydorczyk",
+          "tytul": "Computer Simulation of Stochastic Models with SDE-Solver Software Package",
+          "zrodlo": "Lecture Notes in Computer Science 2657 (2003) 361-370."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, M.W. Davis, R. Scott",
+          "tytul": "Fundamental groups of blowups",
+          "zrodlo": "Advances in Mathematics 177 (1) (2003) 115-179."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, J. Świątkowski",
+          "tytul": "Hyperbolic Coxeter groups of large dimension",
+          "zrodlo": "Commentarii Math. Helvetici 78 (2003) 555-583."
+        },
+        {
+          "autorzy": "Z.J. Jurek",
+          "tytul": "Generalized Levy stochastic areas and selfdecomposability",
+          "zrodlo": "Statistics and Probability Letters 64 (2003) 213-222."
+        },
+        {
+          "autorzy": "Z.J. Jurek",
+          "tytul": "Generalized Levy stochastic areas and selfdecomposability",
+          "zrodlo": "Statistics and Probability Letters 64 (2003) 213-222."
+        },
+        {
+          "autorzy": "Z.J. Jurek, A.M. Iksanov",
+          "tytul": "Shot noise distributions and selfdecomposability",
+          "zrodlo": "Stochastic Analysis and Applications 21, No. 3 (2003) 593-609."
+        },
+        {
+          "autorzy": "G. Karch",
+          "tytul": "O szóstym problemie milenijnym: istnienie i regularność rozwiązań układu Naviera -Stokesa",
+          "zrodlo": "Wiadomości Matematyczne 38 (2003) 121-130."
+        },
+        {
+          "autorzy": "G. Karch",
+          "tytul": "Równanie ciepła, Warsztaty z równań różniczkowych cząstkowych",
+          "zrodlo": "Lecture Notes in Nonlinear Analysis 4 (2003) 31-65."
+        },
+        {
+          "autorzy": "A. Kisielewicz",
+          "tytul": "Complete systems of subalgebras",
+          "zrodlo": "International Journal of Algebra and Computation 13 (2003) 69-79."
+        },
+        {
+          "autorzy": "A. Kisielewicz, M. Gutan",
+          "tytul": "Semigroups with good and bad magnifiers",
+          "zrodlo": "Journal of Algebra 267 (2003) 587-607."
+        },
+        {
+          "autorzy": "B. Kopociński, J. Dembiński",
+          "tytul": "Modelowanie przebiegu meczu koszykówki",
+          "zrodlo": "Człowiek i Ruch (Human Movement) 2 (8) (2003) 11-15."
+        },
+        {
+          "autorzy": "W. Krakowiak",
+          "tytul": "Remarks about the Dugue problem",
+          "zrodlo": "Probability and Mathematical Statistics 23 (2003) 93-104."
+        },
+        {
+          "autorzy": "K. Krupiński, L. Newelski",
+          "tytul": "On bounded type-definable equivalence relations",
+          "zrodlo": "Notre Dame Journal of Formal Logic 43 (2002) (2003) 231-242."
+        },
+        {
+          "autorzy": "P. Krupski",
+          "tytul": "Means on solenoids",
+          "zrodlo": "Proceedings of the American Mathematical Society 131 (2003) 1931-1933."
+        },
+        {
+          "autorzy": "P. Krupski",
+          "tytul": "More non-analytic classes of continua",
+          "zrodlo": "Topology and Its Applications 127 (2003) 299-312."
+        },
+        {
+          "autorzy": "Y. Kryakin, J. Gilewicz",
+          "tytul": "Froissart doublets in Pade approximation in the case of the polynomial noise",
+          "zrodlo": "Journal of Computational and Applied Mathematics 153 (2003) 235-242."
+        },
+        {
+          "autorzy": "A. Krystek, H. Yoshida",
+          "tytul": "The combinatorics of the r-free convolution",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 6, no. 4 (2003) 1-9."
+        },
+        {
+          "autorzy": "B. Majcher-Iwanow",
+          "tytul": "Complexity of conjugacy classes of A(Q)",
+          "zrodlo": "Topology and Its Applications 123/2-3 (2003) 173-188."
+        },
+        {
+          "autorzy": "B. Majcher-Iwanow",
+          "tytul": "Inert subgroups of uncountable locally finite groups",
+          "zrodlo": "Comment. Math. Univ. Carolin. 44,4 (2003) 615-622."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Gry w skreślanki",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/03 (2003) 6-13."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, L. Stawikowski",
+          "tytul": "Kolorowe grafy",
+          "zrodlo": "Magazyn Miłośników Matematyki 4/03 (2003) 18-20."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT Mały ilustrowany słownik terminów matematycznych, cz. XVIII Integral Calculus",
+          "zrodlo": "Matematyka 2 (2003) 125-126."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XIX Differential Equations",
+          "zrodlo": "Matematyka 3 (2003) 189-190."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XVII Differential Calculus",
+          "zrodlo": "Matematyka 1 (2003) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XX Conics",
+          "zrodlo": "Matematyka 4 (2003) 253-254."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXI Conics-properties",
+          "zrodlo": "Matematyka 6 (2003)."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "O podawaniu rąk",
+          "zrodlo": "Magazyn Miłośników Matematyki 4/03 (2003) 15-17."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Osiołek na pastwisku",
+          "zrodlo": "Magazyn Miłośników Matematyki 3/03 (2003) 11-12."
+        },
+        {
+          "autorzy": "K. Musiał, N.D. Macheras, W. Strauss",
+          "tytul": "On strong liftings on projective limits",
+          "zrodlo": "Glasgow Mathematical Journal 45 (2003) 503-525."
+        },
+        {
+          "autorzy": "W. Narkiewicz",
+          "tytul": "Teoria Liczb, III wydanie zmienione",
+          "zrodlo": "Warszawa (2003) 399."
+        },
+        {
+          "autorzy": "L. Newelski",
+          "tytul": "An essay on model theory",
+          "zrodlo": "Central European Journal of Mathematics 3 (2003) 405-417."
+        },
+        {
+          "autorzy": "L. Newelski",
+          "tytul": "Modular types in some supersimple theories",
+          "zrodlo": "Journal of Symbolic Logic 67 (2003) 1601-1615."
+        },
+        {
+          "autorzy": "L. Newelski",
+          "tytul": "The diameter of a Lascar strong type",
+          "zrodlo": "Fundamenta Mathematicae 176 (2003) 157-170."
+        },
+        {
+          "autorzy": "L. Newelski",
+          "tytul": "Very simple theories without forking",
+          "zrodlo": "Archive for Mathematical Logic 42 (2003) 601-616."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "CaRowanie równoległobokiem",
+          "zrodlo": "Matematyka 1 (2003) 26-27."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Reforma średniej",
+          "zrodlo": "Matematyka 2 (2003) 101-105."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Wykreskówki (3)",
+          "zrodlo": "Matematyka 1 (2003) 42-43."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Zamieszanie z przelewaniem",
+          "zrodlo": "Matematyka 5 (2003) 289-294."
+        },
+        {
+          "autorzy": "Z. Palmowski",
+          "tytul": "A note on importance sampling simulation for a germ-grain model",
+          "zrodlo": "Probability and Mathematical Statistics 23 Fasc. 2 (2003) 293-304."
+        },
+        {
+          "autorzy": "Z. Palmowski, O. Boxma, S. Schlegel",
+          "tytul": "A tandem queue with a gate mechanism",
+          "zrodlo": "Queueing Systems 43 (2003) 349-364."
+        },
+        {
+          "autorzy": "Z. Palmowski, A. Borovkov, O. Boxma",
+          "tytul": "On the integral of the workload process of the single server queue",
+          "zrodlo": "Journal of Applied Probability 40.1 (2003) 200-225."
+        },
+        {
+          "autorzy": "M. Paluszyński, H. Sikić, G. Weiss, S. Xiao",
+          "tytul": "Tight frame wavelets, their dimension functions, MRA tight frame wavelets and connectivity properties. Frames.",
+          "zrodlo": "Advances in Computational Mathematics 18 (2003) 297-327."
+        },
+        {
+          "autorzy": "J. Pawlikowski, K. Ciesielski",
+          "tytul": "Covering Property Axiom CPA cube and its consequences",
+          "zrodlo": "Fundamenta Mathematicae 176 (2003) 63-75."
+        },
+        {
+          "autorzy": "J. Pawlikowski, K. Ciesielski",
+          "tytul": "Crowded and selective ultrafilters under the covering poperty axiom",
+          "zrodlo": "Journal of Applied Analysis 9 (2003) 19-55."
+        },
+        {
+          "autorzy": "J. Pawlikowski, P. Matet",
+          "tytul": "Q-pointness, P-pointness and feebleness of ideals",
+          "zrodlo": "Journal of Symbolic Logic 68 (1) (2003) 235-261."
+        },
+        {
+          "autorzy": "J. Pawlikowski, K. Ciesielski, A. Millan",
+          "tytul": "Uncountable y-sets under axiom CPA (game, cube)",
+          "zrodlo": "Fundamenta Mathematicae 176 (2003) 143-155."
+        },
+        {
+          "autorzy": "T. Pezda",
+          "tytul": "Cycles of polynomial mappings in several variables over rings of integers in finite extensions of the rationals",
+          "zrodlo": "Acta Arithmetica 108.2 (2003) 127-146."
+        },
+        {
+          "autorzy": "G. Plebanek, M. Dzamonja",
+          "tytul": "Generalisations of E-density",
+          "zrodlo": "Acta Universitatis Carolinae - Mathematica et Physica 44 (2003) 57-64."
+        },
+        {
+          "autorzy": "G. Plebanek, D.H. Fremlin",
+          "tytul": "Large families of mutually singular Radon measures",
+          "zrodlo": "Bulletin of the Polish Academy of Sciences, Mathematics 51, No. 2 (2003) 169-174."
+        },
+        {
+          "autorzy": "G. Plebanek",
+          "tytul": "On compact spaces carrying Radon measures of large Maharam type",
+          "zrodlo": "Acta Universitatis Carolinae - Mathematica et Physica 43 (2003) 87-99."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "tytul": "A singular problem with non-constant temperature - steady states",
+          "zrodlo": "Proceedings of the conference Equadiff 2003, Hasselt, Belgium (2003)."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "tytul": "Existence of solutions for a model of self-gravitating particles with external potential",
+          "zrodlo": "Banach Center Publications (2003)."
+        },
+        {
+          "autorzy": "Z. Rzeszotnik, M. Bownik",
+          "tytul": "The spectral function of shift-invariant spaces",
+          "zrodlo": "Michigan Mathematical Journal 51, no. 2 (2003) 387-414."
+        },
+        {
+          "autorzy": "A. Samulewicz",
+          "tytul": "The space of size maps is homeomorphic to the Hilbert space l_2",
+          "zrodlo": "Bol. Soc. Mat. Mexicana 10, No. 3 (2003)."
+        },
+        {
+          "autorzy": "R. Stańczy",
+          "tytul": "Positive solutions for superlinear elliptic equations",
+          "zrodlo": "Journal of Mathematical Analysis and Applications 283(1) (2003) 159-166."
+        },
+        {
+          "autorzy": "W. Szczotka, W.A. Woyczyński",
+          "tytul": "Distributions of suprema of Levy processes via the heavy traffic invariance principle",
+          "zrodlo": "Probability and Mathematical Statistics 23 (2003) 251-272."
+        },
+        {
+          "autorzy": "R. Szekli, H. Daduna",
+          "tytul": "Dependence structure of sojourn times via partition separated ordering",
+          "zrodlo": "Operations Research Letters 31 (2003) 462-472."
+        },
+        {
+          "autorzy": "R. Szwarc",
+          "tytul": "A necessary and sufficient condition for nonnegative product linearization of orthogonal polynomials",
+          "zrodlo": "Constructive Approximation 19 (2003) 565-573."
+        },
+        {
+          "autorzy": "R. Szwarc",
+          "tytul": "Absolute continuity of spectral measure for certain unbounded Jacobi matrices",
+          "zrodlo": "Advanced Problems in Constructive Approximation 142 (2003) 255-262."
+        },
+        {
+          "autorzy": "R. Szwarc",
+          "tytul": "Sharp estimates for Jacobi matrices and chain sequences, II",
+          "zrodlo": "Journal of Approximation Theory 125 (2) (2003) 295-302."
+        },
+        {
+          "autorzy": "R. Szwarc",
+          "tytul": "Structure of geodesics in the Cayley graph of infinite Coxeter groups",
+          "zrodlo": "Colloquium Mathematicum 95 (2003) 79-90."
+        },
+        {
+          "autorzy": "P. Śniady",
+          "tytul": "Inequality for Voiculescu's free entropy in terms of Brown measure",
+          "zrodlo": "International Mathematics Research Notices 1 (2003) 51-64."
+        },
+        {
+          "autorzy": "P. Śniady",
+          "tytul": "Multinomial identities arising| from the free probability theory",
+          "zrodlo": "Journal of Combinatorial Theory Series A 101 (1) (2003) 1-19."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "Estimates for derivatives of the Green functions for the noncoercive differential manifolds of negative curvature, II",
+          "zrodlo": "Journal of Differential Equations 86 (2003) 1-8."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "Estimates for derivatives of the Green functions for the noncoercive differential manifolds of negative curvature",
+          "zrodlo": "Potential Analysis 19 , No. 4 (2003) 317-339."
+        },
+        {
+          "autorzy": "R. Wencel",
+          "tytul": "Definable sets in Boolean ordered o-minimal structures. II",
+          "zrodlo": "Journal of Symbolic Logic 68 (2003) 35-51."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "300 lat Uniwersytetu Wrocławskiego",
+          "zrodlo": "Matematyka 2 (2003) 76-80."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Ferdinand Lindemann-pi po raz dziewiętnasty",
+          "zrodlo": "Matematyka 3 (2003) 139-140."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Igła Buffona-pi po raz dwudziesty",
+          "zrodlo": "Matematyka 4 (2003) 203-204."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Koła w zeszycie- pi po raz dwudziesty drugi",
+          "zrodlo": "Matematyka 6 (2003) 326-328."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Magia wzorów-pi po raz dwudziesty pierwszy",
+          "zrodlo": "Matematyka 5 (2003) 265-266."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Matematyka wileńska za czasów Adama Mickiewicza. Personalia.",
+          "zrodlo": "Wiadomości Matematyczne 39 (2003) 117-149."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Mathematica Wratislaviensis-some historical remarks",
+          "zrodlo": "Proceedings of the Sixth Conference Function Spaces, Wrocław, 3-8 Sept. 2001, World Scientific 2003 (2003) 30-38."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Mierzenie pojemności beczek, Algorytmy w dziejach matematyki",
+          "zrodlo": "Zeszyty naukowe Uniwersytetu Opolskiego 31 (2003) 203-214."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Od pomiaru koła do wyznaczania pi, Algorytmy w dziejach matematyki",
+          "zrodlo": "Zeszyty naukowe Uniwersytetu Opolskiego 31 (2003) 215-247."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Rekordy-pi po raz siedemnasty",
+          "zrodlo": "Matematyka 1 (2003) 11-13."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Ułamki łańcuchowe-pi po raz osiemnasty",
+          "zrodlo": "Matematyka 2 (2003) 82-83."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Wileńskie peregrynacje. Tajemnice archiwów wileńskich",
+          "zrodlo": "Przegląd Uniwersytecki 7/8 (88/89) (2003) 20-23."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Francois Viete - w czterechsetlecie śmierci",
+          "zrodlo": "Matematyka 6 (2003) 324-326."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Jak wypełnić przestrzeń R^3 rozłącznymi okręgami",
+          "zrodlo": "Matematyka 2 (2003) 81."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Lekcja ćwiczeniowa",
+          "zrodlo": "Matematyka 6 (2003) 346-348."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Pytanie do Czytelników",
+          "zrodlo": "Matematyka 1 (2003) 21."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Sprawdzian dla klasy VI",
+          "zrodlo": "Matematyka 2 (2003) 91-92."
+        },
+        {
+          "autorzy": "D. Zaremba",
+          "tytul": "O porównywaniu ułamków",
+          "zrodlo": "Matematyka w Szkole 21 (2003)."
+        },
+        {
+          "autorzy": "D. Zaremba",
+          "tytul": "Precz z iksem w obliczeniach procentowych",
+          "zrodlo": "Matematyka 2 (2003)."
+        },
+        {
+          "autorzy": "D. Zaremba",
+          "tytul": "Równanie prostej w gimnazjum",
+          "zrodlo": "Matematyka w Szkole 22 (2003)."
+        },
+        {
+          "autorzy": "J. Zienkiewicz",
+          "tytul": "A note on analytic regularity of heat kernels on nilpotent Lie groups",
+          "zrodlo": "Colloquium Mathematicum 97 (2003) 163-168."
+        }
+      ]
+    }
+  ]
+}

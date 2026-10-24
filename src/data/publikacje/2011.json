@@ -1,0 +1,460 @@
+{
+  "rok": 2011,
+  "pochodzenie": "strona",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2011"
+  ],
+  "uwagi": "W oryginalnym wykazie część prac była powtórzona przy nazwiskach kolejnych współautorów; powtórzenia pominięto.",
+  "uwagi_en": "In the original list some papers were repeated under the names of further co-authors; the repetitions have been omitted.",
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "M. Arendarczyk, K. Dębicki",
+          "tytul": "Asymptotics of supremum distribution of a Gaussian process over a Weibullian time",
+          "zrodlo": "Bernoulli 17, No. 1 (2011) 194-210."
+        },
+        {
+          "autorzy": "A. Barecka, W. Charatonik",
+          "tytul": "The Paramatrized Complexity of Chosen Problems for Finite Automata on Trees",
+          "zrodlo": "LATA 2011 Lecture Notes in Computer Science (2011) 129-141."
+        },
+        {
+          "autorzy": "A. Bendikov, B. Bobikau, C. Pittet",
+          "tytul": "Some Spectral and Geometric Aspects of Countable Groups",
+          "zrodlo": "Progress in Probability 64 (2011) 227-234."
+        },
+        {
+          "autorzy": "A. Bendikov, L. Saloff-Coste, M. Salvatori, W. Woess",
+          "tytul": "The heat semigroup and Brownian motion on strip complexes",
+          "zrodlo": "Advances in Mathematics 226 (2011) 992-1055."
+        },
+        {
+          "autorzy": "P. Biler, T. Nadzieja",
+          "tytul": "An elementary approach to nonexistence of solutions of linear parabolic equations",
+          "zrodlo": "Colloquium Mathematicum 122 (2011) 125-134."
+        },
+        {
+          "autorzy": "P. Biler, C. Imbert, G. Karch",
+          "tytul": "Barenblatt profiles for a nonlocal porous medium equation",
+          "zrodlo": "Comptes Rendus Mathematique 349 (2011) 641-645."
+        },
+        {
+          "autorzy": "P. Biler, L. Corrias, J. Dolbeault",
+          "tytul": "Large mass self-similar solutions of the parabolic-parabolic Keller-Segel model",
+          "zrodlo": "Journal of Mathematical Biology 63 (2011) 1-32."
+        },
+        {
+          "autorzy": "M. Bożejko, E. Lytvynov",
+          "tytul": "Meixner class of non-commutative generalized stochastic processes with freely independent values, II. The generating function",
+          "zrodlo": "Communications in Mathematical Physics 302 (2011) 425-451."
+        },
+        {
+          "autorzy": "M. Bożejko, A. Belinschi, F. Lehner, R. Speicher",
+          "tytul": "The normal distribution is free infinitely divisible",
+          "zrodlo": "Advances in Mathematics 226 (2011) 3677-3698."
+        },
+        {
+          "autorzy": "P. Borodulin-Nadzieja, S. Głąb",
+          "tytul": "Ideals with bases of unbounded Borel complexity",
+          "zrodlo": "Mathematical Logic Quarterly 57, No. 6 (2011) 582-590."
+        },
+        {
+          "autorzy": "D. Buraczewski, E. Damek, M. Mirek",
+          "tytul": "Asymptotics of stationary solutions of multivariate stochastic recursions with heavy tailed inputs and related limit theorems",
+          "zrodlo": "Stochastic Processes and Their Applications 122 (1) (2011) 42-67."
+        },
+        {
+          "autorzy": "I. Czarna, Z. Palmowski",
+          "tytul": "De Finetti's dividend problem and impulse control for a two-dimensional insurance risk process",
+          "zrodlo": "Stochastic Models 27 (2011) 220-250."
+        },
+        {
+          "autorzy": "A. Czyżewska-Jankowska, Z.J. Jurek",
+          "tytul": "Factorization property of generalized s-selfdecomposable measures and class L^f distributions",
+          "zrodlo": "Theory of Probability and its Applications 55, No. 4 (2011) 692-698."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Mandaty z urny",
+          "zrodlo": "Delta 12 (2011) 4-7."
+        },
+        {
+          "autorzy": "J. Dziubański, M. Preisner",
+          "tytul": "On Riesz Transforms Characterization of H^1 Spaces Associated with some Schroedinger Operators",
+          "zrodlo": "Potential Analysis 35 (2011) 39-50."
+        },
+        {
+          "autorzy": "K. Dębicki, K. Tabiś",
+          "tytul": "Extremes of time-average of stationary Gaussian processes",
+          "zrodlo": "Stochastic Processes and Their Applications 121 (2011) 2049-2063."
+        },
+        {
+          "autorzy": "K. Dębicki, G. Sikora",
+          "tytul": "Finite time asymptotics of fluid and ruin models: multiplexed fractional Brownian motions case",
+          "zrodlo": "Applicationes Mathematicae 38,1 (2011) 107-116."
+        },
+        {
+          "autorzy": "K. Dębicki, M. Mandjes",
+          "tytul": "Levy-driven queues",
+          "zrodlo": "Surveys in Operations Research and Management Science 17 (2011) 15-37."
+        },
+        {
+          "autorzy": "K. Dębicki, M. Mandjes",
+          "tytul": "Open problems in Gaussian queueing fluid theory",
+          "zrodlo": "Queueing Systems 68 (2011) 267-273."
+        },
+        {
+          "autorzy": "Ś.R. Gal, J. Kędra",
+          "tytul": "A cocycle on the group of symplectic diffeomorphisms",
+          "zrodlo": "Advances of Geometry 11, No. 1 (2011) 73-88."
+        },
+        {
+          "autorzy": "Ś.R. Gal, J. Kędra",
+          "tytul": "On bi-invariant word metrics",
+          "zrodlo": "Journal of Topology and Analysis 3, No. 2 (2011) 161-175."
+        },
+        {
+          "autorzy": "Ś.R. Gal, J. Kędra",
+          "tytul": "On distortion in groups of homeomorphisms",
+          "zrodlo": "Journal of Modern Dynamics 5, No. 3 (2011) 609-622."
+        },
+        {
+          "autorzy": "Ś.R. Gal, J. Kędra, A. Tralle",
+          "tytul": "On the algebraic independence of Hamiltonian characteristic classes",
+          "zrodlo": "Juornal of Symplectic Geometry 9, No. 1 (2011) 1-9."
+        },
+        {
+          "autorzy": "J. Gismatullin",
+          "tytul": "Model theoretic connected components of groups",
+          "zrodlo": "Israel Journal of Mathematics 184 (2011) 251-274."
+        },
+        {
+          "autorzy": "M. Grech",
+          "tytul": "The graphical complexity of direct products of permutation groups",
+          "zrodlo": "Journal of Graph Theory 66 (2011) 303-318."
+        },
+        {
+          "autorzy": "W. Hebisch, M. Rubey",
+          "tytul": "Extended rate, more GFUN",
+          "zrodlo": "Journal of Symbolic Computation 46 (2011) 889-903."
+        },
+        {
+          "autorzy": "M. Hinz, W. Młotkowski",
+          "tytul": "Free powers of the free Poisson measure",
+          "zrodlo": "Colloquium Mathematicum 123, No 2 (2011) 285-290."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "tytul": "Generating Sym(w) by permutations preserving dense orders",
+          "zrodlo": "Order 28 (2011) 267-271."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, M.W. Davis, I. Leary",
+          "tytul": "Cohomology of Hyperplane Complements with Group Ring Coefficients",
+          "zrodlo": "International Mathematics Research Notices 9 (2011) 2110-2116."
+        },
+        {
+          "autorzy": "B.H. Jasiulis-Gołdyn, J.K. Misiewicz",
+          "tytul": "On the Uniqueness of the Kendall Generalized Convolution",
+          "zrodlo": "Journal of Theoretical Probability 24(3) (2011) 746-755."
+        },
+        {
+          "autorzy": "Z.J. Jurek",
+          "tytul": "The random integral representation conjecture: a quarter of a century later",
+          "zrodlo": "Lithuanian Mathematical Journal 51, No. 3 (2011) 362-369."
+        },
+        {
+          "autorzy": "G. Karch, D. Pilarczyk",
+          "tytul": "Asymptotic Stability of Landau Solutions to Navier-Stokes System",
+          "zrodlo": "Archive for Rational Mechanics and Analysis 202 (2011) 115-131."
+        },
+        {
+          "autorzy": "G. Karch, K. Suzuki",
+          "tytul": "Blow-up versus global existence of solutions to aggregation equations",
+          "zrodlo": "Applicationes Mathematicae 38,3 (2011) 243-258."
+        },
+        {
+          "autorzy": "A. Kisielewicz, M. Szykuła",
+          "tytul": "Rainbow induced subgraphs in proper vertex colorings",
+          "zrodlo": "Fundamenta Informaticae 111 (2011) 437-451."
+        },
+        {
+          "autorzy": "A. Kisielewicz",
+          "tytul": "Supergraphs and graphical complexity of permutation groups",
+          "zrodlo": "Ars Combinatoria 101 (2011) 193-207."
+        },
+        {
+          "autorzy": "A. Kisielewicz",
+          "tytul": "Sztuczna inteligencja i logika. Podsumowanie przedsięwzięcia naukowego",
+          "zrodlo": "Warszawa (2011) 380."
+        },
+        {
+          "autorzy": "P. Klusik, Z. Palmowski",
+          "tytul": "Quantile hedging for equality-linked contracts",
+          "zrodlo": "Insurance: Mathematics and Economics 48 (2) (2011) 280-286."
+        },
+        {
+          "autorzy": "J. Kraszewski, M. Bolanowska",
+          "tytul": "A może ... pomyśleć?",
+          "zrodlo": "Matematyka 5 (2011) 35."
+        },
+        {
+          "autorzy": "J. Kraszewski, M. Bolanowska, M. Chrobot, D. Wójcik",
+          "tytul": "Matura 2011 - rutyna?",
+          "zrodlo": "Matematyka 8 (2011) 43-55."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Na przestrzeni dziejów. Jak liczyli starożytni Egipcjanie - zadania",
+          "zrodlo": "Matematyka 11 (2011) 15-17."
+        },
+        {
+          "autorzy": "J. Kraszewski, M. Bolanowska",
+          "tytul": "Taka zwykła próbna matura?",
+          "zrodlo": "Matematyka 1 (2011) 28-34."
+        },
+        {
+          "autorzy": "K. Krupiński",
+          "tytul": "On relationships between algebraic properties of groups and rings in some model-theoretic contexts",
+          "zrodlo": "Journal of Symbolic Logic 76 (2011) 1403-1417."
+        },
+        {
+          "autorzy": "K. Krupiński, A. Pillay",
+          "tytul": "On stable fields and weight",
+          "zrodlo": "Journal of the Institute of Mathematics of Jussieu 10 (2011) 349-358."
+        },
+        {
+          "autorzy": "P. Krupski, A. Illanes",
+          "tytul": "Blockers in hyperspaces",
+          "zrodlo": "Topology and Its Applications 158 (2011) 653-659."
+        },
+        {
+          "autorzy": "P. Krupski, M. Tuncali",
+          "tytul": "Maps of rank m",
+          "zrodlo": "Houston Journal of Mathematics 37 (2011) 653-675."
+        },
+        {
+          "autorzy": "P. Krupski, V. Valov",
+          "tytul": "Mazurkiewicz manifolds and homogeneity",
+          "zrodlo": "Rocky Mountain Journal of Mathematics 41 (2011) 1933-1938."
+        },
+        {
+          "autorzy": "Y. Kryakin, A.G. Babenko, V.A. Yudin",
+          "tytul": "On a result by Geronimus",
+          "zrodlo": "Proceedings of the Steklov Institute of Mathematics 273, Suppl. 1 (2011) 37-48."
+        },
+        {
+          "autorzy": "P. Lorek, R. Kulik",
+          "tytul": "Some results on random design regression with long memory errors and predictors",
+          "zrodlo": "Journal of Statistical Planning and Inference 141 (2011) 508-523."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminow matematycznych, cz. LXXXVII Random sampling",
+          "zrodlo": "Matematyka 3 (2011) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XCII Complex numbers",
+          "zrodlo": "Matematyka 8 (2011) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXXIX Statistics Estimators",
+          "zrodlo": "Matematyka 5 (2011) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXXV Regression functions",
+          "zrodlo": "Matematyka 1 (2011) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XC Significance testing",
+          "zrodlo": "Matematyka 6 (2011) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XCI Chi-squared test",
+          "zrodlo": "Matematyka 7 (2011) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XCIII Powers and roots of complex numbers",
+          "zrodlo": "Matematyka 9 (2011) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XCIV Matrices",
+          "zrodlo": "Matematyka 10 (2011) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XCV Determinants",
+          "zrodlo": "Matematyka 11 (2011) 62-63."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, K. Omiljanowski",
+          "tytul": "O konkursach Fundacji Matematyków Wrocławskich słów kilka",
+          "zrodlo": "Delta 5 (2011) 1-3."
+        },
+        {
+          "autorzy": "M. Mirek",
+          "tytul": "Heavy tail phenomenon and convergence to stable laws for iterated Lipschitz maps",
+          "zrodlo": "Probability Theory and Related Fields 151, No. 3 (2011) 705-734."
+        },
+        {
+          "autorzy": "K. Musiał",
+          "tytul": "Pettis integrability of multifunctions with values in arbitrary Banach spaces",
+          "zrodlo": "Journal of Convex Analysis 18, No. 3 (2011) 769-810."
+        },
+        {
+          "autorzy": "P. Nowak",
+          "tytul": "A note on stochastic ordering of estimators of exponential reliability",
+          "zrodlo": "Applicationes Mathematicae 38(4) (2011) 485-494."
+        },
+        {
+          "autorzy": "Z. Palmowski, M. Vlasiou",
+          "tytul": "A Levy input model with additional state-dependent services",
+          "zrodlo": "Stochastic Processes and Their Applications 121 (7) (2011) 1546-1564."
+        },
+        {
+          "autorzy": "Z. Palmowski, M. Mandjes, V. Shneer",
+          "tytul": "Introduction to special issue on open problems",
+          "zrodlo": "Queueing Systems 68 (3-4) (2011) 217-220."
+        },
+        {
+          "autorzy": "Z. Palmowski, P. Świątek",
+          "tytul": "Loss rate for a general Levy process with downward periodic barrier",
+          "zrodlo": "Journal of Applied Probability 48A (2011) 99-108."
+        },
+        {
+          "autorzy": "Z. Palmowski, B. Zwart",
+          "tytul": "On perturbed random walks",
+          "zrodlo": "Journal of Applied Probability 47(4) (2011) 1203-1204."
+        },
+        {
+          "autorzy": "Z. Palmowski, R. Kulik",
+          "tytul": "Tail behaviour of the area under a random process with application to queueing systems, insurance and percolations",
+          "zrodlo": "Queueing Systems 68(3) (2011) 275-284."
+        },
+        {
+          "autorzy": "M. Paluszyński, H.Q. Bui",
+          "tytul": "On the phi and psi transforms of Frazier and Jawerth",
+          "zrodlo": "Mathematische Nachrichten 28 (2011) 186-198."
+        },
+        {
+          "autorzy": "G. Plebanek, M. Krupski",
+          "tytul": "A dichotomy for the convex spaces of probability measures",
+          "zrodlo": "Topology and Its Applications 158 (2011) 2184-2190."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "tytul": "Diffusion-dominated asymptotics of solution to chemotaxis model",
+          "zrodlo": "Journal of Evolution Equations 11 (2011) 509-529."
+        },
+        {
+          "autorzy": "T. Rolski, A. Tomanek",
+          "tytul": "Asymptotics of conditional moments of the summand in Poisson compounds",
+          "zrodlo": "Journal of Applied Probability 48A (2011) 65-76."
+        },
+        {
+          "autorzy": "T. Rolski, P. Glynn, T. Mikosch",
+          "tytul": "New Frontiers in Applied Probability. A Festschrift for Soren Asmussen. Edited by P. Glynn, T. Mikosch and T. Rolski",
+          "zrodlo": "Journal of Applied Probability, Special Volume 48A (2011)."
+        },
+        {
+          "autorzy": "M. Romanowska-Majsnerowska",
+          "tytul": "Jak matematyk pakuje się na wycieczkę?",
+          "zrodlo": "Magazyn Miłośników Matematyki (2011)."
+        },
+        {
+          "autorzy": "M. Sabok, J. Zapletal",
+          "tytul": "Forcing properties of ideals of closed sets",
+          "zrodlo": "Journal of Symbolic Logic 76 (3) (2011) 1075-1095."
+        },
+        {
+          "autorzy": "R. Stańczy",
+          "tytul": "On an evolution system describing self-gravitating particles in microcanonical setting",
+          "zrodlo": "Monatshefte fur Mathematik 162 (2011) 197-224."
+        },
+        {
+          "autorzy": "R. Szekli",
+          "tytul": "Chain Dependent Continuous Time Random Walk",
+          "zrodlo": "Probability and Mathematical Statistics 31, No. 2 (2011) 239-261."
+        },
+        {
+          "autorzy": "R. Szekli, G. Last",
+          "tytul": "Comparisons and asymptotics for empty space hazard functions of germ-grain models",
+          "zrodlo": "Advances in Applied Probability 43 (2011) 1-21."
+        },
+        {
+          "autorzy": "R. Szwarc, C. Berg",
+          "tytul": "The Smallest Eigenvalue of Hankel Matrices",
+          "zrodlo": "Constructive Approximation 34(1) (2011) 107-133."
+        },
+        {
+          "autorzy": "P. Śniady, V. Feray",
+          "tytul": "Asymptotics of characters of symmetric groups related to Stanley character formula",
+          "zrodlo": "Annals of Mathematics 173(2) (2011) 887-906."
+        },
+        {
+          "autorzy": "P. Śniady, J. Novak",
+          "tytul": "What is ... a free cumulant?",
+          "zrodlo": "Notices of the American Mathematical Society 58 (2011) 300-301."
+        },
+        {
+          "autorzy": "P. Śniady, V. Feray",
+          "tytul": "Zonal polynomials via Stanley's coordinates and free cumulants",
+          "zrodlo": "Journal of Algebra 334 (2011) 338-373."
+        },
+        {
+          "autorzy": "B. Trojan, C. Nana",
+          "tytul": "L(p)-Boundedness of Bergman projections in tube domains over homogeneous cones",
+          "zrodlo": "Annali Della Scuola Normale Superiore Di Pisa - Classe Di Scienze 10, No. 2 (2011) 477-511."
+        },
+        {
+          "autorzy": "R. Urban, R. Penney",
+          "tytul": "An upper bound for the Poisson on higher rank N A groups",
+          "zrodlo": "Potential Analysis 35, No.4 (2011) 373-386."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "Equidistribution in the d-dimensional a-adic solenoids",
+          "zrodlo": "Uniform Distribution Theory 6, No. 1 (2011) 21-31."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "On the factorization of the Haar measure on finite Coxeter group",
+          "zrodlo": "Probability and Mathematical Statistics 32, No. 1 (2011) 141-148."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Historia matematyki",
+          "zrodlo": "Dzieje nauki - nauki przyrodnicze i ścisłe, Warszawa (2011) 15-105."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Zygmunt Rewkowski. Pamiętniki. Tom I. Wilno. Ostatnie lata Uniwersytetu.",
+          "zrodlo": "Wrocław (2011) 188."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Zygmunt Rewkowski. Pamiętniki. Tom II. Zesłanie. W sołdaty na Kaukaz.",
+          "zrodlo": "Wrocław (2011) 218."
+        },
+        {
+          "autorzy": "B. Wróbel",
+          "tytul": "On g-functions for Laguerre function expansions of Hermite type",
+          "zrodlo": "Proceedings of the Indian Academy of Sciences - Mathematical Sciences 121 (1) (2011) 45-75."
+        },
+        {
+          "autorzy": "J. Zwierz",
+          "tytul": "Initial Enlargement of Filtrations and Entropy of Poisson Compensators",
+          "zrodlo": "Journal of Theoretical Probability 24 (1) (2011) 93-117."
+        }
+      ]
+    }
+  ]
+}

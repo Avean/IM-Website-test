@@ -1,0 +1,755 @@
+{
+  "rok": 2004,
+  "pochodzenie": "strona",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2004"
+  ],
+  "uwagi": "W oryginalnym wykazie część prac była powtórzona przy nazwiskach kolejnych współautorów; powtórzenia pominięto.",
+  "uwagi_en": "In the original list some papers were repeated under the names of further co-authors; the repetitions have been omitted.",
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "A. Bendikov",
+          "tytul": "On the sample paths of diagonal Brownian motions on the infinite dimensional torus",
+          "zrodlo": "Annales de L Institut Henri Poincare-Probabilites et Statistiques 40 (2004) 227-254."
+        },
+        {
+          "autorzy": "P. Biler, M. Guedda, G. Karch",
+          "tytul": "Asymptotic properties of solutions of a viscous Hamilton-Jacobi equation",
+          "zrodlo": "Journal of Evolution Equations 4 (2004) 75-97."
+        },
+        {
+          "autorzy": "P. Biler, M. Cannone, G. Karch",
+          "tytul": "Asymptotic stability of the Navier-Stokes flow past an obstacle",
+          "zrodlo": "Banach Center Publications 66 (2004) 47-59."
+        },
+        {
+          "autorzy": "P. Biler, M. Cannone, I.A. Guerra, G. Karch",
+          "tytul": "Global regular and singular solutions for a model of gravitating particles",
+          "zrodlo": "Mathematische Annalen 330, No. 4 (2004) 693-708."
+        },
+        {
+          "autorzy": "P. Biler, T. Nadzieja, R. Stańczy",
+          "tytul": "Nonisothermal systems of self-attracting Fermi-Dirac particles",
+          "zrodlo": "Banach Center Publications 66 (2004) 61-78."
+        },
+        {
+          "autorzy": "P. Biler, G. Karch, T. Nadzieja",
+          "tytul": "Nonlocal Eliptic and Parabolic Problems",
+          "zrodlo": "Proceedings of a conference held in Będlewo, Banach Center Publications Warsaw (2004) 1-351."
+        },
+        {
+          "autorzy": "P. Biler, P. Laurencot, T. Nadzieja",
+          "tytul": "On an evolution system describing self-gravitating Fermi-Dirac particles",
+          "zrodlo": "Advances in Differential Equations 9 (2004) 563-596."
+        },
+        {
+          "autorzy": "P. Biler, R. Stańczy",
+          "tytul": "Parabolic-elliptic systems with general density-pressure relation",
+          "zrodlo": "Proc. RIMS conference\"Variational Mathods and Related Topics\", Surikaisekikenkyusho Kokyuroku 1405 (2004) 31-53."
+        },
+        {
+          "autorzy": "P. Biler, J. Dolbeault, M.J. Esteban, P.A. Markowich, T. Nadzieja",
+          "tytul": "Steady states for Streater's energy -transport models of self-gravitating particles",
+          "zrodlo": "Transport in Transition Regimes, The IMA Volumes in Mathematics and Its Applications 135 New York (2004) 37-56."
+        },
+        {
+          "autorzy": "D. Buraczewski, C. Benson, E. Damek, G. Ratcliff",
+          "tytul": "Differential systems of type (1, 1) on Hermitian symmetric spaces and their solutions",
+          "zrodlo": "Journal of Functional Analysis 215 (2) (2004) 427-475."
+        },
+        {
+          "autorzy": "D. Buraczewski, A. Bonami, E. Damek, A. Hulanicki, P. Jaming",
+          "tytul": "Maximum boundary regularity of bounded Hua-harmonic functions on tube domains",
+          "zrodlo": "Journal of Geometric Analysis 14 (3) (2004) 457-486."
+        },
+        {
+          "autorzy": "D. Buraczewski",
+          "tytul": "The Hua system on irreducible Hermitian symmetric spaces of nontube type",
+          "zrodlo": "Annales de l'Institut Fourier 54 (2004) 81-128."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, F. Baccelli, P. Muhlethaler",
+          "tytul": "An Aloha protocol for multihop mobile wireless networks",
+          "zrodlo": "Proc. of 16 ITC Specialist Seminar, Antwerpia, Belgia (2004)."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn",
+          "tytul": "Approximate decomposition of some modulated Poisson point process with locally dependent marking",
+          "zrodlo": "Proc. of the International Coference on spatial point processes and its applications (SPPA) (2004)."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, R. Schott",
+          "tytul": "Approximations of functionals of some modulated-Poisson Voronoi tessellations with applications to modeling of comunication networks",
+          "zrodlo": "Proceedings of International Symposium on Voronoi Diagrams in Science and Engineering,Tokio,Japonia (2004)."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, K. Tchoumatchenko",
+          "tytul": "Performance characteristics of multicast flows on random trees",
+          "zrodlo": "Stochastic Models 20 (2004) 341-361."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, T. Rolski",
+          "tytul": "Podstawy matematyki ubezpieczeń na życie, Wydawnictwo Naukowo-Techniczne",
+          "zrodlo": "Warszawa (2004) 1-391."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, F. Baccelli, M.K. Karray",
+          "tytul": "Up and downlink admission-congestion control and maximal load in large Homogeneous CDMA networks",
+          "zrodlo": "Mobile Networks and Applications 9 (2004) 605-617."
+        },
+        {
+          "autorzy": "J.J. Charatonik, G. Acosta",
+          "tytul": "Continua with periodic-recurrent property",
+          "zrodlo": "Mathematica Pannonica 15/2 (2004) 153-174."
+        },
+        {
+          "autorzy": "J.J. Charatonik, P. Krupski",
+          "tytul": "Dendrites and light mappings",
+          "zrodlo": "Proceedings of the American Mathematical Society 132, no. 4 (2004) 1211-1217."
+        },
+        {
+          "autorzy": "J.J. Charatonik, W.J. Charatonik, J.R. Prajs",
+          "tytul": "Hereditarily unicoherent continua and their absolute retracts",
+          "zrodlo": "Rocky Mountain Journal of Mathematics 34.1 (2004) 83-89."
+        },
+        {
+          "autorzy": "J.J. Charatonik",
+          "tytul": "Local connectedness of spaces at subsets",
+          "zrodlo": "Questions and Answers in General Topology 22 (2004) 137-146."
+        },
+        {
+          "autorzy": "J.J. Charatonik, A. Illanes",
+          "tytul": "Mappings on dendrites",
+          "zrodlo": "Topology and Its Applications 144 (2004) 109-132."
+        },
+        {
+          "autorzy": "J.J. Charatonik, J.R. Prajs",
+          "tytul": "On lifting properties for confluent mappings",
+          "zrodlo": "Proceedings of the American Mathematical Society 133.2 (2004) 577-585."
+        },
+        {
+          "autorzy": "J.J. Charatonik",
+          "tytul": "Unicoherence and Multicoherence",
+          "zrodlo": "Encyclopedia of General Topology (2004) 31-333."
+        },
+        {
+          "autorzy": "J.J. Charatonik, W.J. Charatonik",
+          "tytul": "Weak and small Whitney properties",
+          "zrodlo": "Topology Proceedings 28.1 (2004) 69-79."
+        },
+        {
+          "autorzy": "W. Czaja, M. Wickerhauser",
+          "tytul": "A simple nonlinear filter for edge detection in images",
+          "zrodlo": "Proceedings of the SPIE 5439 (2004) 24-31."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Kody korygujące błędy",
+          "zrodlo": "Delta 9 (2004) 4-6."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Kody na co dzień",
+          "zrodlo": "Delta 9 (2004) 4-6."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Pierwszych 39 Szkół Matematyki Poglądowej",
+          "zrodlo": "Matematyka, Społeczeństwo, Nauczanie 32 (2004) 21-25."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Stanisław Gnot",
+          "zrodlo": "Wiadomości Matematyczne 39 (2004) 212-219."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Eduard Cech and topology",
+          "zrodlo": "Prague Studies in the History of Science and Technology, New Series 7 (2004) 73-80."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Emigracja matematyków z ziem polskich",
+          "zrodlo": "Wiadomości Matematyczne 40 (2004) 175-211."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Jeszcze o sprawie akademika Łuzina",
+          "zrodlo": "Wiadomości Matematyczne 40 (2004) 129-138."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Matematyka a chaos",
+          "zrodlo": "J. Mozrzymas, O nauce i sztuce Wrocław (2004) 163-169."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "On the Warsaw interactions of logic and mathematics in the years 1919-1939",
+          "zrodlo": "Annals of Pure and Applied Logic 127 (2004) 289-301."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Przestrzeń fizyczna w matematyce",
+          "zrodlo": "J. Mozrzymas, O nauce i sztuce Wrocław (2004) 351-376."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Recenzja książki: J. Kalbarczyk, Polscy pracownicy nauki, Ofiary zbrodni sowieckich w latach II wojny światowej",
+          "zrodlo": "Wiadomości Matematyczne 40 (2004) 282-285."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Regula falsi przez wieki",
+          "zrodlo": "Materiały XVI Szkoły Historii Matematyki, Zeszyty Naukowe Uniwersytetu Opolskiego, Matematyka (2004) 21-30."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Wprowadzenie do dyskusji",
+          "zrodlo": "J. Mozrzymas, O nauce i sztuce Wrocław (2004) 32-35."
+        },
+        {
+          "autorzy": "J. Dymara",
+          "tytul": "L^2-cohomology of buildings with fundamental class",
+          "zrodlo": "Proceedings of the American Mathematical Society 132 (2004) 1839-1843."
+        },
+        {
+          "autorzy": "J. Dziubański, J. Ludwig, C. Molitor-Braun",
+          "tytul": "Functional calculus in weighted group algebras",
+          "zrodlo": "Revista Matematica Universidad Complutense Madrid 17 (2004) 321-357."
+        },
+        {
+          "autorzy": "J. Dziubański, J. Zienkiewicz",
+          "tytul": "Hardy spaces H^1 for Schroedinger operators with certain potentials",
+          "zrodlo": "Studia Mathematica 164 (2004) 39-53."
+        },
+        {
+          "autorzy": "K. Dębicki",
+          "tytul": "Gaussian processes",
+          "zrodlo": "Encyclopedia of Actuarial Science, John Wiley & Sons 2 (2004) 752-757."
+        },
+        {
+          "autorzy": "K. Dębicki, S. Borst, A. Zwart",
+          "tytul": "The supremum of a Gaussian process over a random interval",
+          "zrodlo": "Statistics and Probability Letters 68, no. 3 (2004) 221-234."
+        },
+        {
+          "autorzy": "K. Dębicki, M. Mandjes",
+          "tytul": "Traffic with an FBM limit: convergence of the workload process",
+          "zrodlo": "Queueing Systems 46 (2004) 113-127."
+        },
+        {
+          "autorzy": "Ś.R. Gal",
+          "tytul": "a-T-menability of groups acting on trees",
+          "zrodlo": "Bulletin of the Australian Mathematical Society 69 (2004) 297-303."
+        },
+        {
+          "autorzy": "M. Grech, A. Kisielewicz",
+          "tytul": "Direct product of automorphisms group of colored graphs",
+          "zrodlo": "Discrete Mathematics 289, no. 1-3 (2004) 81-86."
+        },
+        {
+          "autorzy": "W. Hebisch, G. Mauceri, S. Meda",
+          "tytul": "Holomorphy of spectral multipliers of the Ornstein-Uhlenbeck operator",
+          "zrodlo": "Journal of Functional Analysis 210, no. 1 (2004) 101-124."
+        },
+        {
+          "autorzy": "A. Iwanow, R. Kossak",
+          "tytul": "Automorphism group actions on trees",
+          "zrodlo": "Mathematical Logic Quarterly 50 (2004) 71-76."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "tytul": "Group actions on pretrees and definability",
+          "zrodlo": "Communications in Algebra 32 (2004) 561-577."
+        },
+        {
+          "autorzy": "A. Janicki",
+          "tytul": "Bounds for the range of American Contingent Claim Prices in the Jump-Diffusion Model",
+          "zrodlo": "Applicationes Mathematicae 36,1 (2004) 1-16."
+        },
+        {
+          "autorzy": "A. Janicki, J. Zwierz",
+          "tytul": "Construction of Quasi Optimal Portfolio for Stochastic Models of Financial Market, Computational Science - ICCS 2004, 4th International Conference, Kraków, Poland, June 2004",
+          "zrodlo": "Lecture Notes in Computer Science 3039 (2004) 803-810."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, A. Derdziński",
+          "tytul": "Immersions of surfaces in spin _c-manifolds with a generic positive spinor",
+          "zrodlo": "Annals of Global Analysis and Geometry 26, no. 2, no. 3 (2004) 175-199."
+        },
+        {
+          "autorzy": "Z.J. Jurek, M.A. Bertram, A.M. Iksanov, B. Schreiber",
+          "tytul": "A new factorization property of the selfdecomposable probability measures",
+          "zrodlo": "Annals of Probability 32 (2004) 1356-1369."
+        },
+        {
+          "autorzy": "Z.J. Jurek, M. Yor",
+          "tytul": "Selfdecomposable laws associated with hyperbolic functions",
+          "zrodlo": "Probability and Mathematical Statistics 24, Fasc. 1 (2004) 181-190."
+        },
+        {
+          "autorzy": "Z.J. Jurek",
+          "tytul": "The random integral representation hypothesis revisited: new classes of s-selfdecomposable laws, M. Dekker, NY",
+          "zrodlo": "Proc. Conf. Abstract and Applied Analysis, ICM Beying 2002 Satellite Conf. (2004) 495-514."
+        },
+        {
+          "autorzy": "G. Karch, S. Benachour, P. Laurencot",
+          "tytul": "Asymptotic profiles of solutions to convection-difussion equations",
+          "zrodlo": "Comptes Rendus Acad. Sci. Paris Ser. I Mathematique 338 (2004) 369-374."
+        },
+        {
+          "autorzy": "G. Karch, S. Benachour, P. Laurencot",
+          "tytul": "Asymptotic profiles of solutions to viscous Hamilton-Jacobi equations",
+          "zrodlo": "Journal de Mathematiques, Pures et Appliquees 83 (2004) 1275-1308."
+        },
+        {
+          "autorzy": "G. Karch, M. Cannone",
+          "tytul": "Smooth or singular solutions to the Navier-Stokes system?",
+          "zrodlo": "Journal of Differential Equations 197.2 (2004) 247-274."
+        },
+        {
+          "autorzy": "A. Kisielewicz",
+          "tytul": "Complexity of identity checking problem for semigroups",
+          "zrodlo": "International Journal of Algebra and Computation 14 (2004) 455-464."
+        },
+        {
+          "autorzy": "A. Kisielewicz",
+          "tytul": "Definability in the lattice of equational theories of commutative semigroups",
+          "zrodlo": "Transactions American Mathematical Society 356 (2004) 3483-3504."
+        },
+        {
+          "autorzy": "A. Kisielewicz, P. Jipsen",
+          "tytul": "Minimal expansions of semilattices",
+          "zrodlo": "International Journal of Algebra and Computation 14 (2004) 465-477."
+        },
+        {
+          "autorzy": "A. Kisielewicz, W. Peisert",
+          "tytul": "Pseudo-random properties of self-complementary symmetric graphs",
+          "zrodlo": "Journal of Graph theory 47 (2004) 310-316."
+        },
+        {
+          "autorzy": "A. Kisielewicz, M. Gutan",
+          "tytul": "Reversible group rings",
+          "zrodlo": "Journal of Algebra 279 (2004) 280-291."
+        },
+        {
+          "autorzy": "I. Kopocińska, B. Kopociński, A. Okulewicz",
+          "tytul": "A class of distributions applicable to description of the number of nematodes parasiting in birds",
+          "zrodlo": "IMA Journal of Mathematics Applied in Medicine and Biology 21 (1) (2004) 35-48."
+        },
+        {
+          "autorzy": "B. Kopociński",
+          "tytul": "Eksperymenty przy urnie",
+          "zrodlo": "Delta 9 (364) (2004) 7."
+        },
+        {
+          "autorzy": "B. Kopociński",
+          "tytul": "Jestem za, a nawet przeciw (Próba matematycznego modelowania sposobu myślenia Lecha Wałęsy)",
+          "zrodlo": "Matematyka Stosowana 5 (46) (2004) 32-36."
+        },
+        {
+          "autorzy": "B. Kopociński",
+          "tytul": "Random split of the interval [0,1]",
+          "zrodlo": "Applicationes Mathematicae 31,1 (2004) 97-106."
+        },
+        {
+          "autorzy": "B. Kopociński",
+          "tytul": "Study of synergy in basketball with uncorrelated factors in blocks of variables, Święty Krzyż, Poland, 22-25 September 2004",
+          "zrodlo": "Proceedings of the Tenth National Conference on Applications of Mathematics in Biology and Medicine (2004) 25-30."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "The covering number and the transitive covering number may be totally different",
+          "zrodlo": "Acta Mathematica Hungarica 105(1-2) (2004) 115-119."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Transitive properties of ideals on generalized Cantor spaces",
+          "zrodlo": "Bulletin of the Polish Academy of Sciences, Mathematics 52(2) (2004) 115-118."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Transitive properties of the ideal S_2",
+          "zrodlo": "Real Analysis Exchange 29(2) (2004) 629-638."
+        },
+        {
+          "autorzy": "P. Krupski",
+          "tytul": "Families of continua with the property of Kelley, arc continua and curves of pseudo-arcs",
+          "zrodlo": "Houston Journal of Mathematics 30, no. 2 (2004) 459-482."
+        },
+        {
+          "autorzy": "A. Krystek, H. Yoshida",
+          "tytul": "Generalized t-transformations of probability measures and deformed convolution",
+          "zrodlo": "Probability and Mathematical Statistics 24.1 (2004) 97-119."
+        },
+        {
+          "autorzy": "I. Królak",
+          "tytul": "Factoriality of Yang-Baxter algebras-finite dimensional case",
+          "zrodlo": "Proceedings of 25th QP Conference Quantum Probability (2004)."
+        },
+        {
+          "autorzy": "R. Kulik, R. Szekli",
+          "tytul": "Dependence orderings for some functionals of marked point processes",
+          "zrodlo": "Journal of Multivariate Analysis 92 (2004) 145-173."
+        },
+        {
+          "autorzy": "R. Kulik",
+          "tytul": "Monotonicity in lag for non-monotone Markov chains",
+          "zrodlo": "Probability in the Engineering and Informational Sciences 18 (2004) 485-492."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Geometria nożyczek",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/04 (2004) 6-10."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, K. Omiljanowski",
+          "tytul": "Igrzyska na ekranie",
+          "zrodlo": "Magazyn Miłośników Matematyki 3/04 (2004) 26-27."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Kalendarz olimpijski",
+          "zrodlo": "Magazyn Miłośników Matematyki 3/04 (2004) 23-25."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mała Delta. MMM z wizytą w Delcie, czyli lekcja z okazji Festiwalu Nauki",
+          "zrodlo": "Delta 9/04 (2004) 10-11."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, M. Paszyńska",
+          "tytul": "Matematyczne marsze na orientację",
+          "zrodlo": "Magazyn Miłośników Matematyki 3/04 (2004) 7-10."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXII Arithmetic and Geometric Progression",
+          "zrodlo": "Matematyka 1/2004 (2004) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXIII Means",
+          "zrodlo": "Matematyka 2/2004 (2004) 125-126."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXIV Means (2)",
+          "zrodlo": "Matematyka 4/2004 (2004) 253-254."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXV Means (3)",
+          "zrodlo": "Matematyka 5/2004 (2004) 317-318."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "MR MAT. Mały ilustrowany słownik terminów matematycznych, cz. XXVI Sequences",
+          "zrodlo": "Matematyka 6/2004 (2004) 374-375."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, M. Śliwiński",
+          "tytul": "Pierwszy gigant",
+          "zrodlo": "Magazyn Miłośników Matematyki 1/04 (2004) 26-27."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Punkt Toricellego",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/04 (2004) 12-13."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, M. Śliwiński",
+          "tytul": "Wypijmy za zdrowie pi",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/04 (2004) 14-17."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, P. Kumor, B. Lichowska, A. Szendera",
+          "tytul": "Zagubiony w lesie",
+          "zrodlo": "Magazyn Miłośników Matematyki 4/04 (2004) 13-16."
+        },
+        {
+          "autorzy": "K. Musiał, N.D. Macheras, W. Strauss",
+          "tytul": "Existence of linear liftings with invariant sections in product measure",
+          "zrodlo": "Archiv der Mathematik 83 (2004) 467-480."
+        },
+        {
+          "autorzy": "K. Musiał, N.D. Macheras, W. Strauss",
+          "tytul": "Non-existence of certain types of liftings and densities in product spaces with sigma-ideals",
+          "zrodlo": "Real Analysis Exchange 29 (2004) 473-480."
+        },
+        {
+          "autorzy": "K. Musiał, N.D. Macheras, W. Strauss",
+          "tytul": "Splitting of liftings in products of probability spaces",
+          "zrodlo": "Annals of Probability 32 (2004) 2389-2408."
+        },
+        {
+          "autorzy": "W. Młotkowski",
+          "tytul": "Lambda-free probability",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 7/1 (2004) 27-41."
+        },
+        {
+          "autorzy": "W. Młotkowski",
+          "tytul": "Limit theorems in Lambda-Boolean probability",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 7/3 (2004) 449-459."
+        },
+        {
+          "autorzy": "W. Narkiewicz, V. Laohakosol, P. Ruengsinsub",
+          "tytul": "An addendum to the paper \"Arithmetic functions over rings with zero divisors\"",
+          "zrodlo": "Bulletin of the Malaysian Mathematical Society 27 (2) (2004) 87-90."
+        },
+        {
+          "autorzy": "W. Narkiewicz",
+          "tytul": "Elementary and Analytic Theory of Algebraic Numbers, III wydanie zmienione",
+          "zrodlo": "Springer Monographs in Mathematics Berlin -Heidelberg (2004) 1-708."
+        },
+        {
+          "autorzy": "M. Olech",
+          "tytul": "Nonuniqueness of steady states in annular domains for Streater equations",
+          "zrodlo": "Applicationes Mathematicae 31,3 (2004) 303-312."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Jakie to liczby",
+          "zrodlo": "Matematyka 3 (2004) 179-."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Lekkomatematyka",
+          "zrodlo": "Matematyka 5 (2004) 299-304."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Namioty",
+          "zrodlo": "Matematyka 3 (2004) 149-151."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Rysy i Ninie Rysy",
+          "zrodlo": "Matematyka 1 (2004) 9-13."
+        },
+        {
+          "autorzy": "Z. Palmowski, A. Kyprianou",
+          "tytul": "A martingale review of some fluctuation theory for spectrally negative Levy processes",
+          "zrodlo": "Seminaire de Probabilites 38 (2004) 16-29."
+        },
+        {
+          "autorzy": "Z. Palmowski, H. Ayhan, S. Schlegel",
+          "tytul": "Cyclic queueing networks with subexponential service times",
+          "zrodlo": "Journal of Applied Probability 41.3 (2004) 791-801."
+        },
+        {
+          "autorzy": "Z. Palmowski, T. Rolski",
+          "tytul": "Markov processes conditioned to never exit a subspace of the state space",
+          "zrodlo": "Probability and Mathematical Statistics (2004)."
+        },
+        {
+          "autorzy": "J. Pawlikowski, K. Ciesielski",
+          "tytul": "Continuous images of big sets and additivity of s _0 under CPA _prism",
+          "zrodlo": "Real Analysis Exchange 29 , no. 2 (2004) 755-762."
+        },
+        {
+          "autorzy": "J. Pawlikowski, K. Ciesielski",
+          "tytul": "Covering Property Axiom CPA. A combinatorial core of the iterated perfect set model, Cambridge University Press",
+          "zrodlo": "Cambridge Tracts in Mathematics (2004)."
+        },
+        {
+          "autorzy": "J. Pawlikowski, K. Ciesielski",
+          "tytul": "Nice Hamel bases under the Covering Property Axiom",
+          "zrodlo": "Acta Mathematica Hungarica 105 (3) (2004) 197-213."
+        },
+        {
+          "autorzy": "J. Pawlikowski, K. Ciesielski",
+          "tytul": "Uncountable intersections of open sets under CPA",
+          "zrodlo": "Proceedings of the American Mathematical Society 132 no. 11 (2004) 3379-3385."
+        },
+        {
+          "autorzy": "T. Pezda",
+          "tytul": "Cycles of polynomial mappings in two variables over rings of integers in quadratic fields",
+          "zrodlo": "Central European Journal of Mathematics 2 (2) (2004) 294-331."
+        },
+        {
+          "autorzy": "G. Plebanek",
+          "tytul": "A construction of a Banach space C (K) with few operators",
+          "zrodlo": "Topology and Its Applications 143 (2004) 217-239."
+        },
+        {
+          "autorzy": "G. Plebanek, M. Dzamonja",
+          "tytul": "Precalibre pairs of measure algebras",
+          "zrodlo": "Topology and Its Applications 144 (2004) 67-94."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "tytul": "Existence of solutions for a modelof self-gravitating particles with external potential",
+          "zrodlo": "Banach Center Publications 66 (2004) 263-275."
+        },
+        {
+          "autorzy": "T. Rolski",
+          "tytul": "Change of measure",
+          "zrodlo": "Encyclopedia of Actuarial Science, John Wiley & Sons (2004) 263-267."
+        },
+        {
+          "autorzy": "T. Rolski",
+          "tytul": "Point processes",
+          "zrodlo": "Encyclopedia of Actuarial Science, John Wiley & Sons (2004) 1290-1295."
+        },
+        {
+          "autorzy": "T. Rolski, N. Miyoshi",
+          "tytul": "Ross type conjectures on monotonicity of queues",
+          "zrodlo": "Australian and New Zealand Journal of Statistics 46 (2004) 121-132."
+        },
+        {
+          "autorzy": "Z. Rzeszotnik, Xiaofei, Zhang",
+          "tytul": "Unitary operators preserving wavelets",
+          "zrodlo": "Proceedings of the American Mathematical Society 132, no. 5 (2004) 1463-1471."
+        },
+        {
+          "autorzy": "R. Stańczy, P. Fijałkowski, B. Przeradzki",
+          "tytul": "A nonlocal elliptic equation in a bounded domain",
+          "zrodlo": "Banach Center Publications 66 (2004) 127-133."
+        },
+        {
+          "autorzy": "W. Szczotka, W. A. Woyczyński",
+          "tytul": "Heavy Tailed Dependent Queues in Heavy Traffic",
+          "zrodlo": "Probability and Mathematical Statistics 24.1 (2004) 67-96."
+        },
+        {
+          "autorzy": "R. Szekli, H. Daduna",
+          "tytul": "On the correlation structure of closed queueing networks",
+          "zrodlo": "Stochastic Models 20 (2004) 1-29."
+        },
+        {
+          "autorzy": "R. Szwarc, F. Filbir, R. Lasser",
+          "tytul": "Reiter's condition P_1 and approximate identities for hypergroups",
+          "zrodlo": "Monatshefte fur Mathematik 143, No. 3 (2004) 189-203."
+        },
+        {
+          "autorzy": "M. Śliwiński",
+          "tytul": "Konkurs noworoczny rozstrzygnięty",
+          "zrodlo": "Magazyn Miłośników Matematyki 3 (2004)."
+        },
+        {
+          "autorzy": "M. Śliwiński",
+          "tytul": "Mathematics Without Limits",
+          "zrodlo": "Magazyn Miłośników Matematyki 1 (2004)."
+        },
+        {
+          "autorzy": "M. Śliwiński",
+          "tytul": "Zadanie \"Maksymalna szybkość\"",
+          "zrodlo": "Magazyn Miłośników Matematyki 2 (2004)."
+        },
+        {
+          "autorzy": "M. Śliwiński",
+          "tytul": "Zagadka Alberta",
+          "zrodlo": "Magazyn Miłośników Matematyki 4 (2004)."
+        },
+        {
+          "autorzy": "P. Śniady",
+          "tytul": "Factoriality of Bożejko-Speicher von Neumann algebras",
+          "zrodlo": "Communications in Mathematical Physics 246 (3) (2004) 561-567."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "Estimates for derivatives of the Green functions on homogeneous manifolds of negative curvature",
+          "zrodlo": "Acta Mathematica Universitatis Comenianae 73, No. 1 (2004) 43-53."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "Estimates for the mixed derivatives of the Green functions on homogeneous manifolds of negative curvature",
+          "zrodlo": "Electronic Journal of Differential Equations No. 145 (2004) 1-10."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "Note on the factorization of the Haar measure on finite Coxeter groups",
+          "zrodlo": "Probability and Mathematical Statistics 24, No. 1 (2004) 173-180."
+        },
+        {
+          "autorzy": "K. Urbanik",
+          "tytul": "Musielak-Orlicz spaces and prediction problems",
+          "zrodlo": "Orlicz Centenary Volume, Banach Center Publications 64 (2004) 207-219."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Algebra w XX wieku. Rys historyczny",
+          "zrodlo": "Wiadomości Matematyczne 40 (2004) 35-65."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Cyfry rzymskie",
+          "zrodlo": "Matematyka w Szkole 24 (2004) 30-32."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Exempla mensurae capacitatis cuparum",
+          "zrodlo": "25 (2004) 23-40."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "How much wine can be in a barrel?",
+          "zrodlo": "Algorismus, Studien zur Geschichteder Mathematik und der Naturwissenchaften 44 (2004) 143-153."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Listy Wacława Sierpińskiego do Stanisława Ruziewicza",
+          "zrodlo": "Wiadomości Matematyczne 40 (2004) 139-167."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Matematycy Societatis Jesu na Litwie i obrzeżach Rzeczypospolitej w XVII-XIX wieku",
+          "zrodlo": "Wkład jezuitów do nauki i kultury w Rzeczpospolitej Obojga Narodów i pod zaborami (2004) 269-320."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Mathematicians of Bohemia, Moravia and Silesia in XVII-XVIII centuries",
+          "zrodlo": "25 (2004) 7-22."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Nieznany rękopis Jana Śniadeckiego",
+          "zrodlo": "Kwartalnik Historii Nauki i Techniki 49, nr 3-4 (2004) 167-196."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "O czym jeszcze nie wiemy - pi po raz dwudziesty trzeci",
+          "zrodlo": "Matematyka 1 (2004) 7-8."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Teaching of mathematics at Jesuits Academy in Wratislavia in XVIII century",
+          "zrodlo": "Algorismus, Studien zur Geschichte der Mathematik und Naturwissenschaften, Wege zu Adam Ries. 43 (2004) 417-426."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Two Abel's theorems",
+          "zrodlo": "Mathematics throughout the ages II,Research Centre for the History of Sciences and Humanities,Prague 25 (2004) 41-49."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Przez pomyłkę ... do matury",
+          "zrodlo": "Matematyka 4/2004 (2004) 220."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Zadania, przed egzaminem",
+          "zrodlo": "Matematyka 6/2004 (2004) 357."
+        },
+        {
+          "autorzy": "J. Wróblewski",
+          "tytul": "Gammmalimatias-comiesięczna rubryka w czasopiśmie Delta",
+          "zrodlo": "Delta (2004)."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "tytul": "Twisted product structure and representation theory of the quantum group U_q (2)",
+          "zrodlo": "Reports on Mathematical Physics 54, No. 3 (2004) 327-347."
+        },
+        {
+          "autorzy": "J. Zienkiewicz",
+          "tytul": "Schroedinger equation on the Heisenberg group",
+          "zrodlo": "Acta Arithmetica 2 (2004) 99-111."
+        }
+      ]
+    }
+  ]
+}

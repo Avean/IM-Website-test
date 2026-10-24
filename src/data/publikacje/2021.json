@@ -1,0 +1,458 @@
+{
+  "rok": 2021,
+  "pochodzenie": "pdf",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2021.pdf"
+  ],
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "Bendikov Alexander, Grigor'yan Alexander, Hu Eryan, Hu Jiaxin",
+          "tytul": "Heat kernels and non-local Dirichlet forms on ultrametric spaces",
+          "zrodlo": "Ann. Scuola Norm. Super. Pisa-Cl. Sci., 2021, 22, 399-461.",
+          "if": "1.041"
+        },
+        {
+          "autorzy": "Bendikov Alexander, Grigor'yan Alexander, Molchanov Stanislav",
+          "tytul": "Hierarchical Schrödinger type operators: the case of locally bounded potentials",
+          "zrodlo": "in: Operator theory and harmonic analysis, OTHA 2020, Part II : Probability-analytical models, methods and applications / red.Alexey N. Karapetyants, Igor V. Pavlov, Albert N. Shiryaev, Springer, Cham, 2021, 43-89."
+        },
+        {
+          "autorzy": "Biler Piotr, Karch Grzegorz, Laurencot Philippe, Boritchev Alexandre",
+          "tytul": "Concentration phenomena in a diffusive aggregation model",
+          "zrodlo": "J. Differ. Equ, 2021, 271, 1092-1108.",
+          "if": "2.615"
+        },
+        {
+          "autorzy": "Bisewski Krzysztof, Dębicki Krzysztof, Mandjes Michel",
+          "tytul": "Bounds for expected supremum of fractional Brownian motion with drift",
+          "zrodlo": "J. Appl. Probab., 2021, 58, 411-427.",
+          "if": "1.116"
+        },
+        {
+          "autorzy": "Bogdan Małgorzata",
+          "tytul": "Predicting the redshift of γ-ray-loud AGNs using supervised machine learning",
+          "zrodlo": "Astrophys. J., 2021, 920, 1-20.",
+          "if": "5.521"
+        },
+        {
+          "autorzy": "Bors Dorota, Stańczy Robert",
+          "tytul": "Models of particles of the Michie-King type",
+          "zrodlo": "Commun. Math. Phys., 2021, 382, 1243-1262.",
+          "if": "2.361"
+        },
+        {
+          "autorzy": "Bors Dorota, Stańczy Robert",
+          "tytul": "Existence and multiplicity results for Dirichlet problem with fractional Laplacian and nonlinearity",
+          "zrodlo": "Journal of Fixed Point Theory and Applications, 2021, 23, 1-16.",
+          "if": "2"
+        },
+        {
+          "autorzy": "Bourgain Jean, Mirek Mariusz, Stein Elias, Wróbel Błażej",
+          "tytul": "On the Hardy-Littlewood maximal functions in high dimensions: continuous and discrete perspective",
+          "zrodlo": "in: Geometric aspects of harmonic analysis / red.Paolo Ciatti, Alessio Martini Springer, Cham, 2021, 107-148."
+        },
+        {
+          "autorzy": "Brzyski Damian, Karas Marta, Ances Beau M., Dzemidzic Mario, Goñi Joaquín, Randolph Timothy W., Harezlak Jarosław",
+          "tytul": "Connectivity‐informed adaptive regularization for generalized outcomes",
+          "zrodlo": "Can. J. Stat., 2021, 49, 203-227.",
+          "if": "0.758"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Dovgay Bohdan, Marynych Alexander",
+          "tytul": "Moderate parts in regenerative compositions: the case of regular variation",
+          "zrodlo": "J. Math. Anal. Appl., 2021, 497, 1-20.",
+          "if": "1.417"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Iksanov Oleksandr, Mallein Bastien",
+          "tytul": "On the derivative martingale in a branching random walk",
+          "zrodlo": "Annals of Probability, 2021, 49, 1164-1204.",
+          "if": "2.288"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Kolesko Konrad, Meiners Matthias",
+          "tytul": "Self-similar solutions to kinetic-type evolution equations: beyond the boundary case",
+          "zrodlo": "Electron. J. Probab., 2021, 26, 1-18.",
+          "if": "1.134"
+        },
+        {
+          "autorzy": "Cabello Sánchez Félix, Avilés Antonio, Borodulin-Nadzieja Piotr, Chodounský David, Guzmán Osvaldo",
+          "tytul": "Splitting chains, tunnels and twisted sums",
+          "zrodlo": "Isr. J. Math., 2021, 241, 955-989.",
+          "if": "1.089"
+        },
+        {
+          "autorzy": "Calderoni Filippo, Kwiatkowska Aleksandra, Tent Katrin",
+          "tytul": "Simplicity of the automorphism groups of order and tournament expansions of homogeneous structures",
+          "zrodlo": "Journal of Algebra, 2021, 580, 43-62.",
+          "if": "0.908"
+        },
+        {
+          "autorzy": "Casals-Ruiz Montserrat, Kazachkov Ilya, Zakharov Alexander",
+          "tytul": "Commensurability of Baumslag-Solitar groups",
+          "zrodlo": "Indiana University Mathematics Journal, 2021, 70, 2527-2555.",
+          "if": "1.059"
+        },
+        {
+          "autorzy": "Celiński Rafał, Hilhorst Danielle, Karch Grzegorz, Mimura Masayasu, Roux Pierre",
+          "tytul": "Mathematical treatment of PDE model of chemotactic E. coli colonies",
+          "zrodlo": "J. Differ. Equ, 2021, 278, 73-99.",
+          "if": "2.615"
+        },
+        {
+          "autorzy": "Chirvasitu Alexandru, Hajac Piotr M., Tobolski Mariusz",
+          "tytul": "Non‐surjective pullbacks of graph C * ‐algebras from non‐injective pushouts of graphs",
+          "zrodlo": "Bulletin of the London Mathematical Society, 2021, 53, 1-15.",
+          "if": "1.036"
+        },
+        {
+          "autorzy": "Chirvasitu Alexandru, Passer Benjamin, Tobolski Mariusz",
+          "tytul": "Equivariant dimensions of graph C*-algebras",
+          "zrodlo": "J. Funct. Anal., 2021, 280, 1-32.",
+          "if": "1.891"
+        },
+        {
+          "autorzy": "Cygan Szymon",
+          "tytul": "Pattern formation in nonlocal Kondo model",
+          "zrodlo": "Math. Meth. Appl. Sci., 2021, 44, 10804-10822.",
+          "if": "3.007"
+        },
+        {
+          "autorzy": "Cygan Szymon, Karch Grzegorz, Krawczyk Krzysztof, Wakui Hiroshi",
+          "tytul": "Stability of constant steady states of a chemotaxis model",
+          "zrodlo": "J. Evol. Equ., 2021, 21, 4873-4896.",
+          "if": "1.261"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Sandrić Nikola, Šebek Stjepan",
+          "tytul": "Functional CLT for the range of stable random walks",
+          "zrodlo": "Bull. Malays. Math. Sci. Soc., 2021, 44, 1371-1386.",
+          "if": "1.397"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Sandrić Nikola, Šebek Stjepan",
+          "tytul": "Limit theorems for a stable sausage",
+          "zrodlo": "Stoch. Dyn., 2021, 21, 1-34.",
+          "if": "1.45"
+        },
+        {
+          "autorzy": "Cygan Wojciech, Šebek Stjepan",
+          "tytul": "Transition probability estimates for subordinate random walks",
+          "zrodlo": "Math. Nachr., 2021, 294, 518-558.",
+          "if": "1.199"
+        },
+        {
+          "autorzy": "Damek Ewa, Ghardallou Zeineb",
+          "tytul": "Entire solutions to sublinear elliptic problems on harmonic NA groups and Euclidean spaces",
+          "zrodlo": "Ann. Mat. Pura Appl., 2021, 200, 67-80.",
+          "if": "0.986"
+        },
+        {
+          "autorzy": "Das Biswarup, Franz Uwe, Wang Xumin",
+          "tytul": "Invariant Markov semigroups on quantum homogeneous spaces",
+          "zrodlo": "Journal of Noncommutative Geometry, 2021, 15, 531-580.",
+          "if": "0.768"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Krystecki Konrad",
+          "tytul": "Finite-time ruin probability for correlated Brownian motions",
+          "zrodlo": "Scandinavian Actuarial Journal, 2021, 2021, 890-915.",
+          "if": "1.782"
+        },
+        {
+          "autorzy": "Dobrowolski Jan, Kim Byunghan, Kolesnikov Alexei, Lee Junguk",
+          "tytul": "The relativized Lascar groups, type-amalgamation, and algebraicity",
+          "zrodlo": "J. Symb. Log., 2021, 86, 531-557.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Hejna Agnieszka",
+          "tytul": "On semigroups generated by sums of even powers of Dunkl operators",
+          "zrodlo": "Integr. Equ. Oper. Theory, 2021, 93, 1-30.",
+          "if": "0.72"
+        },
+        {
+          "autorzy": "Dziubański Jacek, Sikora Adam",
+          "tytul": "Lie group approach to Grushin operators",
+          "zrodlo": "Journal of Lie Theory, 2021, 31, 1-14.",
+          "if": "0.376"
+        },
+        {
+          "autorzy": "Ejsmont Wiktor, Biernacki Marek",
+          "tytul": "Application of the free tangent law in quantification of household satisfaction from durable consumer goods",
+          "zrodlo": "Entropy, 2021, 23, 1-11.",
+          "if": "2.738"
+        },
+        {
+          "autorzy": "Ejsmont Wiktor, Lehner Franz",
+          "tytul": "The trace method for cotangent sums",
+          "zrodlo": "J. Comb. Theory Ser. A, 2021, 177, 1-32.",
+          "if": "1.263"
+        },
+        {
+          "autorzy": "Ejsmont Wiktor, Lehner Franz",
+          "tytul": "Sums of commutators in free probability",
+          "zrodlo": "J. Funct. Anal., 2021, 280, 1-29.",
+          "if": "1.891"
+        },
+        {
+          "autorzy": "Georgakopoulos Agelos, Kolesko Konrad",
+          "tytul": "Brownian motion on graph-like spaces",
+          "zrodlo": "Studia Math., 2021, 261, 121-155.",
+          "if": "0.914"
+        },
+        {
+          "autorzy": "Hejna Agnieszka",
+          "tytul": "Schrödinger operators with reverse Hölder class potentials in the Dunkl setting and their Hardy spaces",
+          "zrodlo": "J. Fourier Anal. Appl., 2021, 27, 1-42.",
+          "if": "1.273"
+        },
+        {
+          "autorzy": "Hejna Agnieszka",
+          "tytul": "Behavior of eigenvalues of certain Schrödinger operators in the rational Dunkl setting",
+          "zrodlo": "Anal. Math. Phys., 2021, 11, 1-18.",
+          "if": "1.57"
+        },
+        {
+          "autorzy": "Huang Jingyin, Osajda Damian",
+          "tytul": "Helly meets Garside and Artin",
+          "zrodlo": "Invent. Math., 2021, 225, 395–426.",
+          "if": "3.128"
+        },
+        {
+          "autorzy": "Iksanov Oleksandr, Kolesko Konrad, Meiners Matthias",
+          "tytul": "Gaussian fluctuations and a law of the iterated logarithm for Nerman’s martingale in the supercritical general branching process",
+          "zrodlo": "Electron. J. Probab., 2021, 26, 1-22.",
+          "if": "1.134"
+        },
+        {
+          "autorzy": "Jagiella Grzegorz",
+          "tytul": "Topological dynamics and NIP fields",
+          "zrodlo": "Ann. Pure Appl. Log., 2021, 172, 1-15.",
+          "if": "0.776"
+        },
+        {
+          "autorzy": "Jasiulis-Gołdyn Barbara, Cegiełka Bożena",
+          "tytul": "Modeling the impact of air pollution on the respiratory system diseases",
+          "zrodlo": "in: Proceedings 63rd ISI World Statistics Congress, International Statistical Institute, Virtual, 2021, 392-395."
+        },
+        {
+          "autorzy": "Jasiulis-Gołdyn Barbara, Nowakowski Dominik",
+          "tytul": "Statistical approach to the impact of air pollution on the otolaryngology system diseases",
+          "zrodlo": "in: Proceedings 63rd ISI World Statistics Congress, International Statistical Institute, Virtual, 2021, 118-121."
+        },
+        {
+          "autorzy": "Jurek Zbigniew",
+          "tytul": "On a limit theorem for a non-linear scaling",
+          "zrodlo": "Stat. Probab. Lett., 2021, 177, 1-6.",
+          "if": "0.718"
+        },
+        {
+          "autorzy": "Jurek Zbigniew",
+          "tytul": "On background driving distribution functions (BDDF) for some selfdecomposable variables",
+          "zrodlo": "Matematyka Stosowana, 2021, 49, 85-109.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Kania-Strojec Edyta",
+          "tytul": "The atomic Hardy space for a general Bessel operator",
+          "zrodlo": "Mon.heft. Math., 2021, 196, 785–822.",
+          "if": "0.901"
+        },
+        {
+          "autorzy": "Kaplan Itay, Rzepecki Tomasz, Siniora Daoud",
+          "tytul": "On the automorphism group of the universal homogeneous meet-tree",
+          "zrodlo": "J. Symb. Log., 2021, 86, 1508-1540.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Klusik Przemysław",
+          "tytul": "Hedging of equity-linked contract with maximal success factor",
+          "zrodlo": "Śląski Przegląd Statystyczny, 2021, 19 (25), 31-39.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Lee Junguk, Lee Wan",
+          "tytul": "On the structure of certain valued fields",
+          "zrodlo": "Ann. Pure Appl. Log., 2021, 172, 1-24.",
+          "if": "0.776"
+        },
+        {
+          "autorzy": "Martin Alexandre, Osajda Damian",
+          "tytul": "A combination theorem for combinatorially non-positively curved complexes of hyperbolic groups",
+          "zrodlo": "Math. Proc. Camb. Philos. Soc., 2021, 170, 445-477.",
+          "if": "0.949"
+        },
+        {
+          "autorzy": "Martino Armando, Tointon Matthew C. H., Valiunas Motiejus, Ventura Enric",
+          "tytul": "Probabilistic nilpotence in infinite groups",
+          "zrodlo": "Isr. J. Math., 2021, 244, 539-588.",
+          "if": "1.089"
+        },
+        {
+          "autorzy": "Matsui Muneya, Świątkowski Witold",
+          "tytul": "Tail indices for AX+B recursion with triangular matrices",
+          "zrodlo": "J. Theor. Probab., 2021, 34, 1831-1869.",
+          "if": "0.733"
+        },
+        {
+          "autorzy": "Meda Stefano, Wróbel Błażej",
+          "tytul": "Marcinkiewicz-type multipliers on products of noncompact symmetric spaces",
+          "zrodlo": "Ann. Scuola Norm. Super. Pisa-Cl. Sci., 2021, 22, 1747-1804.",
+          "if": "1.041"
+        },
+        {
+          "autorzy": "Meir Nadav",
+          "tytul": "Pseudo-finite sets, pseudo-o-minimality",
+          "zrodlo": "J. Symb. Log., 2021, 86, 577-599.",
+          "if": "0.634"
+        },
+        {
+          "autorzy": "Musiał Kazimierz",
+          "tytul": "Multimeasures with values in conjugate Banach spaces and the weak Radon-Nikodým property",
+          "zrodlo": "Journal of Convex Analysis, 2021, 28, 879-902.",
+          "if": "0.622"
+        },
+        {
+          "autorzy": "Nowak Adam, Sjögren Peter, Szarek Tomasz Zachary",
+          "tytul": "Genuinely sharp heat kernel estimates on compact rank-one symmetric spaces, for Jacobi expansions, on a ball and on a simplex",
+          "zrodlo": "Math. Ann., 2021, 381, 1455-1476.",
+          "if": "1.334"
+        },
+        {
+          "autorzy": "Osajda Damian, Przytycki Piotr, McCammond Jon",
+          "tytul": "Tits Alternative for groups acting properly on 2-dimensional recurrent complexes",
+          "zrodlo": "Adv. Math., 2021, 391, 1-22.",
+          "if": "1.675"
+        },
+        {
+          "autorzy": "Oussi Lahcen, Wysoczański Janusz",
+          "tytul": "Noncommutative analogues of the Law of Small Numbers for random variables indexed by elements of positive symmetric cones",
+          "zrodlo": "ALEA-Latin Am. J. Probab. Math., 2021, 18, 35-67.",
+          "if": "0.732"
+        },
+        {
+          "autorzy": "Paluszyński Maciej, Zienkiewicz Jacek",
+          "tytul": "A remark on atomic decompositions of martingale Hardy’s spaces",
+          "zrodlo": "Journal of Geometric Analysis, 2021, 31, 8866-8878.",
+          "if": "1.002"
+        },
+        {
+          "autorzy": "Paluszyński Maciej, Zienkiewicz Jacek",
+          "tytul": "On inverses of discrete rough Hilbert transforms",
+          "zrodlo": "Colloq. Math., 2021, 164, 305-325.",
+          "if": "0.631"
+        },
+        {
+          "autorzy": "Pawłowski Adam, Topolski Krzysztof, Herden Elżbieta",
+          "tytul": "Quantitative analysis of bibliographic corpora",
+          "zrodlo": "in: Language and text : data, models, information and applications / red.Adam Pawłowski, Jan Mačutek, Sheila Embleton, George Mikros, John Benjamins Publishing Company, Amsterdam, Holandia, 2021, 240-256."
+        },
+        {
+          "autorzy": "Pezda Tadeusz",
+          "tytul": "An algorithm determining the set of lengths of polynomial cycles in ZNK",
+          "zrodlo": "Colloq. Math., 2021, 166, 151-169.",
+          "if": "0.631"
+        },
+        {
+          "autorzy": "Plebanek Grzegorz",
+          "tytul": "Monolithic spaces of measures",
+          "zrodlo": "Fundam. Math., 2021, 254, 335-348.",
+          "if": "0.589"
+        },
+        {
+          "autorzy": "Plebanek Grzegorz, Alarcón Alberto Salguero",
+          "tytul": "On the three space property for C(K)-spaces",
+          "zrodlo": "J. Funct. Anal., 2021, 281, 1-15.",
+          "if": "1.891"
+        },
+        {
+          "autorzy": "Preisner Marcin, Kania-Strojec Edyta, Plewa Paweł",
+          "tytul": "Local atomic decompositions for multidimensional Hardy spaces",
+          "zrodlo": "Rev. Mat. Complut., 2021, 34, 409-434.",
+          "if": "1.009"
+        },
+        {
+          "autorzy": "Rzepecki Tomasz",
+          "tytul": "Hereditary G-compactness",
+          "zrodlo": "Arch. Math. Log., 2021, 60, 837-856.",
+          "if": "0.492"
+        },
+        {
+          "autorzy": "Servien Rémi, Tardivel Patrick, Concordet Didier",
+          "tytul": "Powerful multiple testing procedures derived from hyperrectangular confidence regions having a minimal volume",
+          "zrodlo": "J. SFdS, 2021, 162, 2-21.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Sikora Adam, Zienkiewicz Jacek",
+          "tytul": "Probabilistic approach to the quantum separation effect for the Feynman-Kac semigroup",
+          "zrodlo": "Studia Math., 2021, 257, 1-24.",
+          "if": "0.914"
+        },
+        {
+          "autorzy": "Szwarc Ryszard",
+          "tytul": "Positivity of Turán determinants for orthogonal polynomials II",
+          "zrodlo": "J. Approx. Theory, 2021, 270, 1-10.",
+          "if": "0.993"
+        },
+        {
+          "autorzy": "Świątkowski Jacek",
+          "tytul": "Reflection trees of graphs as boundaries of Coxeter groups",
+          "zrodlo": "Algebraic and Geometric Topology, 2021, 21, 351-420.",
+          "if": "0.76"
+        },
+        {
+          "autorzy": "Świderski Grzegorz, Trojan Bartosz",
+          "tytul": "Asymptotic behaviour of Christoffel-Darboux kernel via three-term recurrence relation I",
+          "zrodlo": "Constr. Approx., 2021, 54, 49-116.",
+          "if": "1.779"
+        },
+        {
+          "autorzy": "Świderski Grzegorz, Trojan Bartosz",
+          "tytul": "Asymptotic behavior of Christoffel-Darboux kernel via three-term recurrence relation II",
+          "zrodlo": "J. Approx. Theory, 2021, 261, 1-48.",
+          "if": "0.993"
+        },
+        {
+          "autorzy": "Urban Roman",
+          "tytul": "Donsker's fuzzy invariance principle under the Lindeberg condition",
+          "zrodlo": "Mathematica Slovaca, 2021, 71, 439-454.",
+          "if": "0.996"
+        },
+        {
+          "autorzy": "Valiunas Motiejus",
+          "tytul": "Acylindrical hyperbolicity of groups acting on quasi-median graphs and equations in graph products",
+          "zrodlo": "Group. Geom. Dyn., 2021, 15, 143-195.",
+          "if": "0.541"
+        },
+        {
+          "autorzy": "Valiunas Motiejus",
+          "tytul": "On equationally Noetherian and residually finite groups",
+          "zrodlo": "Journal of Algebra, 2021, 587, 638-677.",
+          "if": "0.908"
+        },
+        {
+          "autorzy": "Wallin Jonas, Bogdan Małgorzata, Szulc Piotr, Doerge Rebecca W., Siegmund David Oliver",
+          "tytul": "Ghost QTL and hotspots in experimental crosses: novel approach for modeling polygenic effects",
+          "zrodlo": "Genetics, 2021, 217, 1-17.",
+          "if": "4.402"
+        },
+        {
+          "autorzy": "Wyłupek Grzegorz",
+          "tytul": "A permutation test for the two-sample right-censored model",
+          "zrodlo": "Ann. Inst. Stat. Math., 2021, 73, 1037-1061.",
+          "if": "1.18"
+        },
+        {
+          "autorzy": "Wysoczański Janusz, Crismale Vitonofrio, Griseta Maria Elena",
+          "tytul": "Distributions for nonsymmetric monotone and weakly monotone position operators",
+          "zrodlo": "Complex Anal. Oper. Theory, 2021, 15, 1-26.",
+          "if": "0.819"
+        }
+      ]
+    }
+  ]
+}

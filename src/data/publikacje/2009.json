@@ -1,0 +1,590 @@
+{
+  "rok": 2009,
+  "pochodzenie": "strona",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2009"
+  ],
+  "uwagi": "W oryginalnym wykazie część prac była powtórzona przy nazwiskach kolejnych współautorów; powtórzenia pominięto.",
+  "uwagi_en": "In the original list some papers were repeated under the names of further co-authors; the repetitions have been omitted.",
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "J. Bartoszewicz",
+          "tytul": "On a representation of weighted distributions",
+          "zrodlo": "Statistics and Probability Letters 79 (2009) 1690-1694."
+        },
+        {
+          "autorzy": "J. Bartoszewicz, M. Benduch",
+          "tytul": "Some properties of the generalized TTT transform",
+          "zrodlo": "Journal of Statistical Planning and Inference 139 (2009) 2208-2217."
+        },
+        {
+          "autorzy": "P. Biler, G. Karch, P. Laurencot",
+          "tytul": "Blowup of solutions to a diffusive aggregation model",
+          "zrodlo": "Nonlinearity 22 (2009) 1559-1568."
+        },
+        {
+          "autorzy": "P. Biler, L. Brandolese",
+          "tytul": "On the parabolic-elliptic limit of the doubly parabolic Keller-Segel system modelling chemotaxis",
+          "zrodlo": "Studia Mathematica 193 (2009) 241-261."
+        },
+        {
+          "autorzy": "P. Biler, G. Wu",
+          "tytul": "Two-dimensional chemotaxis models with fractional diffusion",
+          "zrodlo": "Mathematical Methods in the Applied Sciences 32 (2009) 112-126."
+        },
+        {
+          "autorzy": "M. Bożejko, W. Bryc",
+          "tytul": "A Quadratic Regression problem for two-state algebras with an application to the central limit theorem",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 12, No.2 (2009) 231-249."
+        },
+        {
+          "autorzy": "M. Bożejko, N. Demni",
+          "tytul": "Generating functions of Cauchy-Stieltjes type for orthogonal polynomials",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 12, No.1 (2009) 91-98."
+        },
+        {
+          "autorzy": "M. Bożejko, E. Lytvynov",
+          "tytul": "Meixner class of non-commutative generalized stochastic processes with freely independent values, I. A characterization.",
+          "zrodlo": "Communications in Mathematical Physics 292 (2009) 99-129."
+        },
+        {
+          "autorzy": "D. Buraczewski",
+          "tytul": "On tails of fixed points of the smoothing transform in the boundary case",
+          "zrodlo": "Stochastic Processes and Their Applications 119 (2009) 3955-3961."
+        },
+        {
+          "autorzy": "D. Buraczewski, E. Damek, Y. Guivarc'h, A. Hulanicki, R. Urban",
+          "tytul": "Tail-homogeneity of stationary measures for some multidimensional stochastic recursions",
+          "zrodlo": "Probability Theory and Related Fields 145, Numbers 3-4 (2009) 385-420."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, D. Yogeshwaran",
+          "tytul": "Directionally convex ordering of random measures, shot-noise fields and some applications to wireless networks",
+          "zrodlo": "Advances in Applied Probability 41 (2009) 623-646."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, M.K. Karray",
+          "tytul": "Dismensioning of the downlink in OFDMA cellular networks via an erlang's loss model",
+          "zrodlo": "Proceedings of IEEE European Wireless Conference (2009)."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, M.K. Karray",
+          "tytul": "Fading effect on the dynamic performance evaluation of OFDMA cellular networks",
+          "zrodlo": "Proc. of ComNet, Hammamet, Tunisia (2009)."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, P. Muhlethaler, Y. Toor",
+          "tytul": "Maximizing throughput of Linear Vehicular Ad-hoc NET (Vanets) - a stochastic approach",
+          "zrodlo": "Proceedings of IEEE European Wireless Conference (2009)."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, P. Muhlethaler, Y. Toor",
+          "tytul": "Performance of MAC protocols in linear VANETs under different attenuation and fading conditions",
+          "zrodlo": "Proc. of IEE ITSC (2009)."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn",
+          "tytul": "Stochastic analysisof spatial and opportunistic Aloha",
+          "zrodlo": "IEEE Journal on Selected Areas in Communications 27 (2009) 1105-1119."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, F. Baccelli",
+          "tytul": "Stochastic Geometry and Wireless Networks, Volume I - Theory",
+          "zrodlo": "Foundations and Trends in Networking College Park, USA (2009) ss.150."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, F. Baccelli",
+          "tytul": "Stochastic Geometry and Wireless Networks, Volume II - Applications",
+          "zrodlo": "Foundations and Trends in Networking College Park, USA (2009) ss. 209."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, F. Baccelli, P. Muhlethaler",
+          "tytul": "Time-space opportunistic routing in wireless ad hoc networks, algorithms and performance",
+          "zrodlo": "Computer Journal (2009)."
+        },
+        {
+          "autorzy": "A. Czyżewska-Jankowska, Z.J. Jurek",
+          "tytul": "A note on the composition of two random integral mappings J beta and some examples",
+          "zrodlo": "Stochastic Analysis and Applications 27 (6) (2009) 1212-1222."
+        },
+        {
+          "autorzy": "M. Czystołowski, W. Szczotka",
+          "tytul": "A note on properties of stationary waiting time distribution and its heavy traffic limit",
+          "zrodlo": "Sankhya: The Indian Journal of Statistics 71-A (1) (2009) 35-48."
+        },
+        {
+          "autorzy": "E. Damek, J. Dziubański, P. Jaming, S. Perez-Esteva",
+          "tytul": "Distributions that are convolvable with generalized Poisson kernel of solvable extensions of homogeneous Lie groups",
+          "zrodlo": "Mathematica Scandinavica 105, no. 1 (2009) 31-65."
+        },
+        {
+          "autorzy": "J. Dymara, T. Schick",
+          "tytul": "Buildings have finite asymptotic dimension",
+          "zrodlo": "Russian Journal of Mathematical Physics 16 (2009) 409-412."
+        },
+        {
+          "autorzy": "J. Dziubański",
+          "tytul": "Atomic decomposition of Hardy spaces associated with certain Laguerre expansions",
+          "zrodlo": "Journal of Fourier Analysis and Applications 15, no. 2 (2009) 129-152."
+        },
+        {
+          "autorzy": "J. Dziubański, J.J. Betancor, J. Torrea",
+          "tytul": "On Hardy spaces associated with Bessel operators",
+          "zrodlo": "Journal d 'Analyse Mathematique 107 (2009) 195-219."
+        },
+        {
+          "autorzy": "J. Dziubański, M. Preisner",
+          "tytul": "Remarks on spectral multiplier theorems on Hardy spaces associated with semigroups of operators",
+          "zrodlo": "Revista de la Union Matematica Argentina 50, no. 2 (2009) 201-215."
+        },
+        {
+          "autorzy": "J. Dziubański, P. Głowacki",
+          "tytul": "Sobolev spaces related to Schroedinger operators with polynomial potentials",
+          "zrodlo": "Mathematische Zeitschrift 262, no. 4 (2009) 881-894."
+        },
+        {
+          "autorzy": "K. Dębicki, A. Es-Saghouani, M. Mandjes",
+          "tytul": "Transient characteristics of Gaussian fluid queues",
+          "zrodlo": "Queueing Systems 62 (4) (2009) 383-409."
+        },
+        {
+          "autorzy": "T. Elsner",
+          "tytul": "Flats and the flat torus theorem in systolic spaces",
+          "zrodlo": "Geometry and Topology 13 (2009) 661-698."
+        },
+        {
+          "autorzy": "T. Elsner",
+          "tytul": "Isometries of systolic spaces",
+          "zrodlo": "Fundamenta Mathematicae 204 (2009) 39-55."
+        },
+        {
+          "autorzy": "M. Grech",
+          "tytul": "Automorphisms of the lattice of equational theories of commutative semigroups",
+          "zrodlo": "Transactions of the American Mathematical Society 361, No. 7 (2009) 3435-3462."
+        },
+        {
+          "autorzy": "M. Grech",
+          "tytul": "Direct products of automorphism groups of graphs",
+          "zrodlo": "Journal of Graph Theory 61 (2009) 26-36."
+        },
+        {
+          "autorzy": "M. Grech, A. Kisielewicz",
+          "tytul": "Totally symmetric colored graphs",
+          "zrodlo": "Journal of Graph Theory 62 (2009) 329-345."
+        },
+        {
+          "autorzy": "W. Hebisch, B. Zegarlinski",
+          "tytul": "Coercive Inequalities on Metric Measure Spaces",
+          "zrodlo": "Journal of Functional Analysis 258 (2009) 814-851."
+        },
+        {
+          "autorzy": "W. Hebisch, W. Młotkowski",
+          "tytul": "Irreducible representations of the free product of groups",
+          "zrodlo": "Indiana University Mathematics Journal 58/6 (2009)."
+        },
+        {
+          "autorzy": "A. Hoffmann",
+          "tytul": "Pomoce dydaktyczne-konieczność, możliwość czy balast?",
+          "zrodlo": "XVIII Krajowa Konferencja SNM, Bielsko Biała (2009) 29-38."
+        },
+        {
+          "autorzy": "A. Hulanicki, M. Letachowicz",
+          "tytul": "Functional calculi for convolution operators on a discrete, periodic, solvable group",
+          "zrodlo": "Journal of Functional Analysis 256 (2009) 700-717."
+        },
+        {
+          "autorzy": "A. Iwanow, K. Majcher",
+          "tytul": "Nice enumerations of omega-categorical groups",
+          "zrodlo": "Communications in Algebra 37, no. 7 (2009) 2236-2245."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, J. Behrstock, W. Neumann",
+          "tytul": "Commensurability and QI classification of free products of finitely generated abelian groups",
+          "zrodlo": "Proceedings of the American Mathematical Society 137, No.3 (2009) 811-813."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, G. Arzhantseva, M. Bridson, A. Minasyan, J. Świątkowski",
+          "tytul": "Infinite groups with fixed point properties",
+          "zrodlo": "Geometry and Topology 13 (2009) 1229-1263."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, A. Derdziński",
+          "tytul": "Totally real immersions of surfaces",
+          "zrodlo": "Transactions of the American Mathematical Society 360 (2009) 53-115."
+        },
+        {
+          "autorzy": "Z.J. Jurek",
+          "tytul": "On relations between Urbanik and Mehler semigroups",
+          "zrodlo": "Probability and Mathematical Statistics 29(2) (2009) 297-308."
+        },
+        {
+          "autorzy": "G. Karch",
+          "tytul": "Nonlinear evolution equations with anomalous diffusion, \"Qualitative properties of solutions to partial differential equations\"",
+          "zrodlo": "Lecture notes of the Necas Center for Mathematical Modeling MATFYZPRESS (2009) 25-65."
+        },
+        {
+          "autorzy": "A. Kisielewicz, A. Cherubini",
+          "tytul": "Collapsing words, permutation conditions and coherent colorings of trees",
+          "zrodlo": "Theoretical Computer Science 410 (2009) 2135-2147."
+        },
+        {
+          "autorzy": "A. Kisielewicz, A. Cherubini, B. Piochi",
+          "tytul": "On the length of shortest 2-collapsing words",
+          "zrodlo": "Discrete Mathematics and Theoretical Computer Science 11 (2009) 33-44."
+        },
+        {
+          "autorzy": "B. Kopociński",
+          "tytul": "Modeling Rope Reliability",
+          "zrodlo": "Complex Systems 18 (2009) 245-253."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Everywhere meagre and everywhere null sets",
+          "zrodlo": "Houston Journal of Mathematics 35(1) (2009) 103-111."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Georg Cantor . w stronę nieskończoności",
+          "zrodlo": "Matematyka 9 (2009) 522-530."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Matura 2009 . było trudno?",
+          "zrodlo": "Matematyka 8 (2009) 458-466."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Matura na gorąco",
+          "zrodlo": "Matematyka 6 (2009) 337-338."
+        },
+        {
+          "autorzy": "J. Kraszewski, M. Bolanowska",
+          "tytul": "Matura oceniana po nowemu",
+          "zrodlo": "Matematyka 11 (2009) 684-687."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Omijać z daleka!",
+          "zrodlo": "Matematyka 6 (2009) 380-381."
+        },
+        {
+          "autorzy": "J. Kraszewski, M. Bolanowska",
+          "tytul": "Próbna matura za nami",
+          "zrodlo": "Matematyka 11 (2009) 682-683."
+        },
+        {
+          "autorzy": "K. Krupiński",
+          "tytul": "Hausdorff dimension and hierarchical system dynamics",
+          "zrodlo": "Proceedings of the Steklov Institute of Mathematics 265 (2009) 148-153."
+        },
+        {
+          "autorzy": "Y. Kryakin, A.G. Babenko",
+          "tytul": "Integral approximation of the characteristic function of an interval by trigonometric polynomials",
+          "zrodlo": "Proceedings of the Steklov Institute of Mathematics 264, Suppl. 1 (2009) 19-38."
+        },
+        {
+          "autorzy": "Y. Kryakin, A.G. Babenko",
+          "tytul": "Integral approximation of the characteristics function of an interval and the Jackson inequality in C(T)",
+          "zrodlo": "Proceedings of the Steklov Institute of Mathematics 265, Suppl. 1 (2009) 56-63."
+        },
+        {
+          "autorzy": "Y. Kryakin, S. Foucart, A. Shadrin",
+          "tytul": "On the exact constants in the Jackson-Stechkin inequality for the uniform metric",
+          "zrodlo": "Constructive Approximation 29 (2009) 157-179."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Kodowanie choinki",
+          "zrodlo": "Magazyn Miłośników Matematyki 1/09 (2009) 31."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Kwadratura paraboli",
+          "zrodlo": "Magazyn Miłośników Matematyki 4/09 (2009)."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Labirynty i matematyka",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/09 (2009) 18-29."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Labirynty i mejzy",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/09 (2009) 7-15."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Linie rytmiczne",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/09 (2009) 16-17."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXIII Trigonometric Identities",
+          "zrodlo": "Magazyn Miłośników Matematyki 1/09 (2009) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXIV Solving Triangles",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/09 (2009) 125-126."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXIX Applications of Vectors (2)",
+          "zrodlo": "Matematyka 7/09 (2009) 446-447."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXV Vectors",
+          "zrodlo": "Matematyka 3/09 (2009) 190-191."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXVI Vectors in Coordinate System",
+          "zrodlo": "Matematyka 4/09 (2009) 254-255."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXVII Vectors in Coordinate system (2)",
+          "zrodlo": "Matematyka 5/09 (2009) 318-319."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXVIII Application of Vectors (1)",
+          "zrodlo": "Matematyka 6/09 (2009) 382-383."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXX Sets",
+          "zrodlo": "Matematyka 8/09 (2009) 509-510."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXI Operations on sets",
+          "zrodlo": "Matematyka 9/09 (2009) 574-575."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXII Properties of Set Operations",
+          "zrodlo": "Matematyka 10/09 (2009) 638-639."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. LXXIII Relations",
+          "zrodlo": "Matematyka 11/09 (2009) 702-703."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Największa elipsa świata",
+          "zrodlo": "Magazyn Miłośników Matematyki 4/09 (2009)."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "O kuli i walcu",
+          "zrodlo": "Magazyn Miłośników Matematyki 3/09 (2009) 20-21."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, M. Śliwiński",
+          "tytul": "Wielkie poszukiwanie",
+          "zrodlo": "Magazyn Miłośników Matematyki 1/09 (2009) 22-25."
+        },
+        {
+          "autorzy": "K. Musiał, B. Bongiorno, L. Di Piazza",
+          "tytul": "A characterization of the weak Radon-Nikodym property by finitely additive interval functions",
+          "zrodlo": "Bulletin of the Australian Mathematical Society 80 (2009) 476-485."
+        },
+        {
+          "autorzy": "K. Musiał, L. Di Piazza",
+          "tytul": "A decmposition of Henstock-Kurzweil-Pettis integrable multifunctions",
+          "zrodlo": "Operator Theory: Advances and Applications 201 (2009) 171-182."
+        },
+        {
+          "autorzy": "K. Musiał, B. Bongiorno, L. Di Piazza",
+          "tytul": "A variational Henstock integral characterization of the Radon-Nikodym property",
+          "zrodlo": "Illinois Journal of Mathematics 53, No.1 (2009) 87-99."
+        },
+        {
+          "autorzy": "K. Musiał, M.R. Burke, N.D. Macheras, W. Strauss",
+          "tytul": "Various products of category densities and liftings",
+          "zrodlo": "Topology and Its Applications 156 (2009) 1253-1270."
+        },
+        {
+          "autorzy": "W. Młotkowski",
+          "tytul": "Combinatorial relation between free cumulants and Jacobi parameters",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics 12/2 (2009) 291-306."
+        },
+        {
+          "autorzy": "W. Młotkowski, M. Hamada, N. Konno",
+          "tytul": "Multiplicative free square of the free Poisson measure and examples of free symmetrization",
+          "zrodlo": "Interdisciplinary Information Sciences 15/3 (2009) 367-375."
+        },
+        {
+          "autorzy": "W. Młotkowski",
+          "tytul": "Some examples of conditionally free product",
+          "zrodlo": "RIMS Kokyuroku 1658 (2009) 136-139."
+        },
+        {
+          "autorzy": "L. Newelski",
+          "tytul": "Topological dynamics of definable group actions",
+          "zrodlo": "Journal of Symbolic Logic 74 (2009) 50-72."
+        },
+        {
+          "autorzy": "D. Osajda, P. Przytycki",
+          "tytul": "Boundaries of systolic groups",
+          "zrodlo": "Geometry and Topology 13, no. 5 (2009) 2807-2880."
+        },
+        {
+          "autorzy": "Z. Palmowski, M. Pistorius",
+          "tytul": "Cramer asymptotics for finite time first passage probabilities of general Levy processes",
+          "zrodlo": "Statistics and Probability Letters 79(16) (2009) 1752-1758."
+        },
+        {
+          "autorzy": "M. Paluszyński",
+          "tytul": "Andrzej Hulanicki (1933-2008)",
+          "zrodlo": "Wiadomości Matematyczne 45 (2009) 143-155."
+        },
+        {
+          "autorzy": "M. Paluszyński, K. Stempak",
+          "tytul": "On quasi-metric and metric spaces",
+          "zrodlo": "Proceedings of the American Mathematical Society 137 (2009) 4307-4312."
+        },
+        {
+          "autorzy": "M. Paluszyński",
+          "tytul": "Szyfry z kluczem publicznym",
+          "zrodlo": "Magazyn Miłośników Matematyki 1 (2009) 12-17."
+        },
+        {
+          "autorzy": "D. Pilarczyk",
+          "tytul": "Asymptotic stability of singular solution to nonlinear heat equation",
+          "zrodlo": "Discrete and Continuous Dynamical Systems 25, No. 3 (2009) 991-1001."
+        },
+        {
+          "autorzy": "A. Raczyński",
+          "tytul": "Satbility property of the two-dimensional Keller-Segel model",
+          "zrodlo": "Asymptotic Analysis 61 (2009) 35-59."
+        },
+        {
+          "autorzy": "T. Rolski, M. Miyazawa",
+          "tytul": "Tail asymptotics for a Levy-driven tandem queue with an intermediate input",
+          "zrodlo": "Queueing Systems 63 (2009) 323-353."
+        },
+        {
+          "autorzy": "M. Romanowska-Majsnerowska",
+          "tytul": "Wprowadzenie do rachunku prawdopodobieństwa z zadaniami",
+          "zrodlo": "Legionowo:Wyd. BTC (2009) ss.141."
+        },
+        {
+          "autorzy": "Z. Rzeszotnik, M. Bownik",
+          "tytul": "Construction and reconstruction of tight framelets and wavelets via matrix mask functions",
+          "zrodlo": "Journal of Functional Analysis 256, no. 4 (2009) 1065-1105."
+        },
+        {
+          "autorzy": "M. Sabok",
+          "tytul": "sigma-Continuity and related forcings",
+          "zrodlo": "Archive for Mathematical Logic 48, no. 5 (2009) 449-464."
+        },
+        {
+          "autorzy": "R. Stańczy",
+          "tytul": "On radially symmetric solutions of some chemotaxis system",
+          "zrodlo": "Banach Center Publications 86 (2009) 303-312."
+        },
+        {
+          "autorzy": "R. Stańczy",
+          "tytul": "The existence of equilibria of many-particle systems",
+          "zrodlo": "Proceedings of the Royal Society of Edinburgh Section A - Mathematics 139 A (2009) 623-631."
+        },
+        {
+          "autorzy": "R. Szwarc, C. Berg",
+          "tytul": "Bounds on Turan determinants",
+          "zrodlo": "Journal of Approximation Theory 161 (2009) 127-14."
+        },
+        {
+          "autorzy": "P. Śniady, M. Dołęga, V. Feray",
+          "tytul": "Characters of symmetric groups in terms of free cumulants and Frobenius coordinates",
+          "zrodlo": "Discrete Mathematics and Theoretical Computer Science (2009) 337-348."
+        },
+        {
+          "autorzy": "P. Śniady, B. Collins",
+          "tytul": "Representations of Lie groups and random matrices",
+          "zrodlo": "Transactions of the American Mathematical Society 361, no. 6 (2009) 3269-3287."
+        },
+        {
+          "autorzy": "J. Świątkowski, U. Oertel",
+          "tytul": "Contact structures, sigma-confoliations and contaminations in 3-manifolds",
+          "zrodlo": "Communications in Contemporary Mathematics 11, no. 2 (2009) 201-264."
+        },
+        {
+          "autorzy": "J. Świątkowski, P. Przytycki",
+          "tytul": "Flag-no-square triangulations and Gromov boundaries in dimension 3",
+          "zrodlo": "Groups, Geometry and Dynamics 3 (2009) 453-468."
+        },
+        {
+          "autorzy": "J. Świątkowski",
+          "tytul": "Fundamental pro-groups and Gromov boundaries of 7-systolic groups",
+          "zrodlo": "Journal of the London Mathematical Society 80 (2009) 649-664."
+        },
+        {
+          "autorzy": "R. Urban, J. Zienkiewicz",
+          "tytul": "Dimension free estimates for Riesz transforms of some Schroedinger operators",
+          "zrodlo": "Israel Journal of Mathematics 173 (2009) 157-176."
+        },
+        {
+          "autorzy": "R. Urban",
+          "tytul": "Multiplicatively independent integers and dense modulo 1 sets of sums",
+          "zrodlo": "Uniform Distribution Theory 4, No.1 (2009) 27-33."
+        },
+        {
+          "autorzy": "R. Wencel",
+          "tytul": "On expansions of weakly o-minimal structures by convex predicates",
+          "zrodlo": "Fundamenta Mathematicae 202 (2009) 147-159."
+        },
+        {
+          "autorzy": "R. Wencel",
+          "tytul": "Weakly o-minimal expansions of ordered fields of finite transcendence degree",
+          "zrodlo": "Bulletin of the London Mathematical Society 41 (2009) 109-116."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Charles Hermite (1822-1901) - nie tylko przestępność",
+          "zrodlo": "Matematyka 1 (2009) 3-10."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Julian Bayer (1806-1872) i jego prace z teorii liczb",
+          "zrodlo": "Antiquitates Mathematicae 3 (2009) 93-110."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Leopold Kronecker(1823-1891) - wybitny Legniczanin",
+          "zrodlo": "Matematyka 2 (2009) 67-74."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Seminarium Nauczycielskie w Wilnie (1803-1832)",
+          "zrodlo": "Studia Matematyczne Uniwersytetu Humanistyczno-Przyrodniczego Jana Kochanowskiego 11 (2009) 79-95."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Trygonometrya kulista Jana Śniadeckiego",
+          "zrodlo": "Kwartalnik Historii Nauki i Techniki 54, Nr 1 (2009) 29-36."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Zygmunt Rewkowski (1807-1893) - vitae pars prima",
+          "zrodlo": "Antiquitates Mathematicae 3 (2009) 111-129."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "tytul": "A generalization of the monotonic and boolean independence of algebras and application to probability, in \"New Trends in Infinite Dimensional Analysis and Quantum Probability\"",
+          "zrodlo": "Interdisciplinary Information Services 15, no. 3 (2009) 389-397."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "tytul": "On the Woronowicz's twisted product construction of quantum groups, with comments on related cubic Hecke algebra",
+          "zrodlo": "RIMS Kokyuroku 1658 (2009) 124-135."
+        }
+      ]
+    }
+  ]
+}

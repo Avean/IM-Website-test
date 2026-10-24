@@ -1,0 +1,529 @@
+{
+  "rok": 2015,
+  "pochodzenie": "pdf",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/sites/default/files/publikacje_2015.pdf"
+  ],
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "Anker Jean-Philippe, Ben Salem Néjib, Dziubański Jacek, Hamda Nabila",
+          "zrodlo": "Constr. Approx., 2015, 42, 93-128.",
+          "if": "1.346"
+        },
+        {
+          "autorzy": "Antoniuk Sylwia, Łuczak Tomasz, Świątkowski Jacek",
+          "tytul": "Random triangular groups at density 1/3",
+          "zrodlo": "Compositio Mathematica, 2015, 151, 167-178.",
+          "if": "1.069"
+        },
+        {
+          "autorzy": "Arzhantseva Goulnara, Osajda Damian",
+          "tytul": "Infinitely presented small cancellation groups have the Haagerup property",
+          "zrodlo": "Journal of Topology and Analysis, 2015, 7, 389-406.",
+          "if": "0.614"
+        },
+        {
+          "autorzy": "Asghari Naser M., Dębicki Krzysztof, Mandjes Michel",
+          "tytul": "Exact tail asymptotics of the supremum attained by a Lévy process",
+          "zrodlo": "Stat. Probab. Lett., 2015, 96, 180-184.",
+          "if": "0.506"
+        },
+        {
+          "autorzy": "Bendikov Alexander, Cygan Wojciech",
+          "tytul": "On massive sets for subordinated random walks",
+          "zrodlo": "MaMath. Nachr., 2015, 288, 841-853.",
+          "if": "0.688"
+        },
+        {
+          "autorzy": "Bendikov Alexander, Cygan Wojciech",
+          "tytul": "α-stable random walk has massive thorns",
+          "zrodlo": "Colloq. Math., 2015, 138, 105-129.",
+          "if": "0.333"
+        },
+        {
+          "autorzy": "Bendikov Alexander, Grigor'yan Alexander A., Molchanov Stanislav A, Samorodnitsky Gennady P",
+          "tytul": "On a class of random perturbations of the hierarchical Laplacian",
+          "zrodlo": "Izvestiya: Mathematics, 2015, 79, 859-893.",
+          "if": "0.505"
+        },
+        {
+          "autorzy": "Bendikov Alexander, Saloff-Coste Laurent, Salvatori Maura, Woess Wolfgang",
+          "tytul": "Brownian motion on treebolic space : escape to infinity",
+          "zrodlo": "Revista Matemática Iberoamericana, 2015, 31, 935-976.",
+          "if": "1.116"
+        },
+        {
+          "autorzy": "Berg Christian, Szwarc Ryszard",
+          "tytul": "A determinant characterization of moment sequences with finitely many mass points",
+          "zrodlo": "Linear Multilinear Algebra, 2015, 63, 1568-1576.",
+          "if": "0.761"
+        },
+        {
+          "autorzy": "Biler Piotr",
+          "tytul": "Wrocławska Nowa Księga Szkocka",
+          "zrodlo": "Pamięć i Przyszłość, 2015, 29, 1-6.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Biler Piotr, Buraczewski Dariusz",
+          "tytul": "Matematyka na Uniwersytecie Wrocławskim w latach 1945-2014",
+          "zrodlo": "in: Nauka w powojennym Wrocławiu 1945-2015 : w 70 rocznicę powstania polskiego środowiska naukowego we Wrocławiu, Ośrodek \"Pamięć i Przyszłość\", Wrocław, 2015, 265-279."
+        },
+        {
+          "autorzy": "Biler Piotr, Guerra Ignacio A., Karch Grzegorz",
+          "tytul": "Large global-in-time solutions of the parabolic-parabolic Keller-Segel system on the plane",
+          "zrodlo": "Communications on Pure and Applied Analysis, 2015, 14, 2117-2126.",
+          "if": "0.926"
+        },
+        {
+          "autorzy": "Biler Piotr, Imbert Cyril, Karch Grzegorz",
+          "tytul": "The nonlocal porous medium equation : Barenblatt profiles and other weak solutions",
+          "zrodlo": "Archive for Rational Mechanics and Analysis, 2015, 215, 497-529.",
+          "if": "2.321"
+        },
+        {
+          "autorzy": "Biler Piotr, Karch Grzegorz, Zienkiewicz Jacek",
+          "tytul": "Optimal criteria for blowup of radial and N-symmetric solutions of chemotaxis systems",
+          "zrodlo": "Nonlinearity, 2015, 28, 4369-4387.",
+          "if": "1.289"
+        },
+        {
+          "autorzy": "Biler Piotr, Krupski Paweł, Plebanek Grzegorz",
+          "tytul": "Selected problems",
+          "zrodlo": "in: The Scottish Book : mathematics from The Scottish Café, with selected problems from The New Scottish Book, Springer, Cham, 2015, 299-322."
+        },
+        {
+          "autorzy": "Biler Piotr, Krupski Paweł, Plebanek Grzegorz, Woyczyński Wojbor Andrzej",
+          "tytul": "Lwów of the West",
+          "zrodlo": "in: The Scottish Book : mathematics from The Scottish CafĮ'e, with selected problems from The New Scottish Book, Springer, Basel, 2015, 291-296."
+        },
+        {
+          "autorzy": "Biler Piotr, Zienkiewicz Jacek",
+          "tytul": "Existence of solutions for the Keller-Segel model of chemotaxis with measures as initial data",
+          "zrodlo": "Bulletin of the Polish Academy of Sciences. Mathematics, 2015, 63, 41-51.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Bogdan Krzysztof, Sydor Sebastian",
+          "tytul": "On nonlocal perturbations of integral kernels",
+          "zrodlo": "in: Semigroups of Operators - Theory and Applications, Będlewo, Poland, October 2013, Springer, New York, 2015, 27-42."
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Chodounský David",
+          "tytul": "Hausdorff gaps and towers in P(ω)/Fin",
+          "zrodlo": "Fundam. Math., 2015, 229, 197-229.",
+          "if": "0.553"
+        },
+        {
+          "autorzy": "Borodulin-Nadzieja Piotr, Farkas Barnabás, Plebanek Grzegorz",
+          "tytul": "Representations of ideals in Polish groups and in Banach spaces",
+          "zrodlo": "J. Symb. Log., 2015, 80, 1268-1289.",
+          "if": "0.541"
+        },
+        {
+          "autorzy": "Borowiecka-Olszewska Marta, Jasiulis-Gołdyn Barbara, Misiewicz Jolanta Krystyna, Rosiński Jan",
+          "tytul": "Lévy processes and stochastic integrals in the sense of generalized convolutions",
+          "zrodlo": "Bernoulli, 2015, 21, 2513-2551.",
+          "if": "1.372"
+        },
+        {
+          "autorzy": "Bożejko Marek, Ejsmont Wiktor, Hasebe Takahiro",
+          "tytul": "Fock space associated to Coxeter groups of type B",
+          "zrodlo": "J. Funct. Anal., 2015, 269, 1769-1795.",
+          "if": "1.273"
+        },
+        {
+          "autorzy": "Bradley Richard C., Jurek Zbigniew",
+          "tytul": "On a central limit theorem for shrunken weakly dependent random variables",
+          "zrodlo": "Houston Journal of Mathematics, 2015, 41, 621-638.",
+          "if": "0.273"
+        },
+        {
+          "autorzy": "Brofferio Sara, Buraczewski Dariusz",
+          "tytul": "On unbounded invariant measures of stochastic dynamical systems",
+          "zrodlo": "Annals of Probability, 2015, 43, 1456-1492.",
+          "if": "1.734"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Damek Ewa, Przebinda Tomasz",
+          "tytul": "On the rate of convergence in the Kesten renewal theorem",
+          "zrodlo": "Electron. J. Probab., 2015, 20, 1-35.",
+          "if": "0.852"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Damek Ewa, Zienkiewicz Jacek",
+          "tytul": "Precise tail asymptotics of fixed points of the smoothing transform with general weights",
+          "zrodlo": "Bernoulli, 2015, 21, 489-504.",
+          "if": "1.372"
+        },
+        {
+          "autorzy": "Buraczewski Dariusz, Iksanov Oleksandr",
+          "tytul": "Functional limit theorems for divergent perpetuities in the contractive case",
+          "zrodlo": "Electron. Commun. Probab., 2015, 20, 1-14.",
+          "if": "0.467"
+        },
+        {
+          "autorzy": "Chalopin Jérémie, Chepoi Victor, Osajda Damian",
+          "tytul": "On two conjectures of Maurer concerning basis graphs of matroids",
+          "zrodlo": "Journal of Combinatorial Theory, Series B, 2015, 114, 1-32.",
+          "if": "1.094"
+        },
+        {
+          "autorzy": "Chepoi Victor, Osajda Damian",
+          "tytul": "Dismantlability of weakly systolic complexes and applications",
+          "zrodlo": "Trans. Am. Math. Soc., 2015, 367, 1247-1272.",
+          "if": "1.196"
+        },
+        {
+          "autorzy": "Damek Ewa, Latała Rafał, Nayar Piotr, Tkocz Tomasz",
+          "zrodlo": "Stoch. Process. Their Appl., 2015, 125, 1688-1713.",
+          "if": "1.056"
+        },
+        {
+          "autorzy": "Das Biswarup, Franz Uwe, Wysoczańska-Kula Anna, Skalski Adam",
+          "tytul": "One-to-one correspondence between generating functionals and cocycles on quantum groups in presence of symmetry",
+          "zrodlo": "Math. Z., 2015, 281, 949-965.",
+          "if": "0.674"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Ji Lanpeng",
+          "tytul": "Gaussian risk models with financial constraints",
+          "zrodlo": "Scandinavian Actuarial Journal, 2015, 2015, 469-481.",
+          "if": "1.596"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Ji Lanpeng",
+          "tytul": "Parisian ruin of self-similar Gaussian risk processes",
+          "zrodlo": "J. Appl. Probab., 2015, 52, 688-702.",
+          "if": "0.665"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Ji Lanpeng, Ling Chengxiu",
+          "tytul": "Extremes of order statistics of stationary processes",
+          "zrodlo": "TEST, 2015, 24, 229-248.",
+          "if": "1.207"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Ji Lanpeng, Tabiś Kamil",
+          "tytul": "Extremes of vector-valued Gaussian processes : exact asymptotics",
+          "zrodlo": "Stoch. Process. Their Appl., 2015, 125, 4039-4065.",
+          "if": "1.056"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Hashorva Enkelejd, Soja-Kukieła Natalia",
+          "tytul": "Extremes of homogeneous Gaussian random fields",
+          "zrodlo": "J. Appl. Probab., 2015, 52, 55-67.",
+          "if": "0.665"
+        },
+        {
+          "autorzy": "Dębicki Krzysztof, Mandjes Michel",
+          "tytul": "Queues and Lévy fluctuation theory",
+          "zrodlo": "Springer, Cham, 2015, 255., ISBN 9783319206929"
+        },
+        {
+          "autorzy": "Dobrowolski Jan",
+          "tytul": "Topologies induced by group actions",
+          "zrodlo": "Topology Appl., 2015, 189, 136-146.",
+          "if": "0.493"
+        },
+        {
+          "autorzy": "Dolbeault Jean, Stańczy Robert",
+          "tytul": "Bifurcation diagrams and multiplicity for nonlocal elliptic equations modeling gravitating systems based on Fermi - Dirac statistics",
+          "zrodlo": "Discret. Contin. Dyn. Syst.-Ser.A, 2015, 35, 139-154.",
+          "if": "1.127"
+        },
+        {
+          "autorzy": "Drygier Piotr, Plebanek Grzegorz",
+          "tytul": "Nonseparable growth of the integers supporting a measure",
+          "zrodlo": "Topology Appl., 2015, 191, 58-64.",
+          "if": "0.493"
+        },
+        {
+          "autorzy": "Elsner Tomasz, Januszkiewicz Lech Tadeusz, Januszkiewicz Lech Tadeusz",
+          "tytul": "Homotopical systole and hyperbolicity",
+          "zrodlo": "Bulletin of the London Mathematical Society, 2015, 47, 203-205.",
+          "if": "0.789"
+        },
+        {
+          "autorzy": "Farhat Ahmad",
+          "tytul": "The basis problem for subspaces of monotonically normal compacta",
+          "zrodlo": "Topology Appl., 2015, 195, 107-118.",
+          "if": "0.493"
+        },
+        {
+          "autorzy": "Führ Hartmut, Rzeszotnik Ziemowit",
+          "tytul": "On biunimodular vectors for unitary matrices",
+          "zrodlo": "Linear Alg. Appl., 2015, 484, 86-129.",
+          "if": "0.965"
+        },
+        {
+          "autorzy": "Garncarek Łukasz",
+          "tytul": "Property of rapid decay for extensions of compactly generated groups",
+          "zrodlo": "Publicacions Matemàtiques, 2015, 59, 301-312.",
+          "if": "1.128"
+        },
+        {
+          "autorzy": "Gismatullin Jakub, Krupiński Krzysztof",
+          "tytul": "On model-theoretic connected components in some group extensions",
+          "zrodlo": "J. Math. Log., 2015, 15, 1550009-1-1550009-51.",
+          "if": "0.762"
+        },
+        {
+          "autorzy": "Gismatullin Jakub, Penazzi Davide, Pillay Anand",
+          "tytul": "Some model theory of SL(2,R)",
+          "zrodlo": "Fundam. Math., 2015, 229, 117-128.",
+          "if": "0.553"
+        },
+        {
+          "autorzy": "Hebisch Waldemar",
+          "tytul": "Integration in terms of exponential integrals and incomplete gammafunctions",
+          "zrodlo": "ACM CCA, 2015, 49, 98-100.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Hoffmann Daniel, Kowalski Piotr",
+          "tytul": "Integrating Hasse-Schmidt derivations",
+          "zrodlo": "Journal of Pure and Applied Algebra, 2015, 219, 875-896.",
+          "if": "0.669"
+        },
+        {
+          "autorzy": "Illanes Alejandro, Krupski Paweł",
+          "tytul": "On local fixed or periodic point properties",
+          "zrodlo": "Journal of Fixed Point Theory and Applications, 2015, 17, 495-505.",
+          "if": "0.54"
+        },
+        {
+          "autorzy": "Iwanow Aleksander",
+          "tytul": "An ω-categorical structure with amenable automorphism group",
+          "zrodlo": "Mathematical Logic Quarterly, 2015, 61, 307-314.",
+          "if": "0.165"
+        },
+        {
+          "autorzy": "Jagiella Grzegorz",
+          "tytul": "Definable topological dynamics and real Lie groups",
+          "zrodlo": "Mathematical Logic Quarterly, 2015, 61, 45-55.",
+          "if": "0.165"
+        },
+        {
+          "autorzy": "Jasiulis-Gołdyn Barbara, Misiewicz Jolanta Krystyna",
+          "tytul": "Classical definitions of the Poisson process do not coincide in the case of generalized convolutions",
+          "zrodlo": "Lith. Math. J., 2015, 55, 518-542.",
+          "if": "0.314"
+        },
+        {
+          "autorzy": "Jasiulis-Gołdyn Barbara, Misiewicz Jolanta Krystyna",
+          "tytul": "Weak Levy-Khintchine representation for weak infinite divisibility",
+          "zrodlo": "Teoriâ veroâtnostej i eë primeneniâ, 2015, 60, 131-149.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Karch Grzegorz, Pudełko Anna, Xu Xiaojing",
+          "tytul": "Two-dimensional fractal Burgers equation with step-like initial conditions",
+          "zrodlo": "Math. Meth. Appl. Sci., 2015, 38, 2830-2839.",
+          "if": "1.002"
+        },
+        {
+          "autorzy": "Karch Grzegorz, Zheng Xiaoxin",
+          "tytul": "Time-dependent singularities in the Navier-Stokes system",
+          "zrodlo": "Discret. Contin. Dyn. Syst.-Ser.A, 2015, 35, 3039-3057.",
+          "if": "1.127"
+        },
+        {
+          "autorzy": "Kisielewicz Andrzej, Kowalski Jakub, Szykuła Marek",
+          "tytul": "Computing the shortest reset words of synchronizing automata",
+          "zrodlo": "Journal of Combinatorial Optimization, 2015, 29, 88-124.",
+          "if": "1.08"
+        },
+        {
+          "autorzy": "Kisielewicz Andrzej, Szykuła Marek",
+          "tytul": "Synchronizing automata with extremal properties",
+          "zrodlo": "in: Mathematical Foundations of Computer Science 2015 : 40th International Symposium, MFCS 2015, Milan, Italy, August 24-28, 2015, Proceedings, Part I Springer, Berlin, Heidelberg, 2015, 331-343."
+        },
+        {
+          "autorzy": "Kolesko Konrad, Latała Rafał",
+          "tytul": "Moment estimates for chaoses generated by symmetric random variables with logarithmically convex tails",
+          "zrodlo": "Stat. Probab. Lett., 2015, 107, 210-214.",
+          "if": "0.506"
+        },
+        {
+          "autorzy": "Kolesko Konrad, Mentemeier Sebastian",
+          "tytul": "Fixed points of the multivariate smoothing transform : the critical case",
+          "zrodlo": "Electron. J. Probab., 2015, 20, 1-24.",
+          "if": "0.852"
+        },
+        {
+          "autorzy": "Kowalski Jakub, Kisielewicz Andrzej",
+          "tytul": "Game description language for real-time games",
+          "zrodlo": "in: The IJCAI-15 Workshop on General Game Playing : General Intelligence in Game-Playing Agents, GIGA'15 : proceedings, [s.n.], , 2015, 23-30."
+        },
+        {
+          "autorzy": "Kowalski Jakub, Kisielewicz Andrzej",
+          "tytul": "Testing general game players against a Simplified Boardgames player using temporal-difference learning",
+          "zrodlo": "in: IEEE Congress on Evolutionary Computation, (CEC 2015), Sendai, Japan, May 25-28, 2015, Proceedings, Institute of Electrical and Electronics Engineers (IEEE), Piscataway, 2015, 1466-1473."
+        },
+        {
+          "autorzy": "Krupiński Krzysztof",
+          "tytul": "Superrosy fields and valuations",
+          "zrodlo": "Ann. Pure Appl. Log., 2015, 166, 342-357.",
+          "if": "0.582"
+        },
+        {
+          "autorzy": "Krystek Anna, Wojakowski Łukasz",
+          "tytul": "Conditionally free semi-stable distributions",
+          "zrodlo": "Infin. Dimens. Anal. Quantum, 2015, 18, 1550015-1-1550015-18.",
+          "if": "0.682"
+        },
+        {
+          "autorzy": "Lorek Paweł, Szekli Ryszard",
+          "tytul": "Computable bounds on the spectral gap for unreliable Jackson networks",
+          "zrodlo": "Adv. Appl. Probab., 2015, 47, 402-424.",
+          "if": "0.654"
+        },
+        {
+          "autorzy": "Martin Alexandre, Świątkowski Jacek",
+          "tytul": "Infinitely-ended hyperbolic groups with homeomorphic Gromov boundaries",
+          "zrodlo": "Journal of Group Theory, 2015, 18, 273-289.",
+          "if": "0.505"
+        },
+        {
+          "autorzy": "Mikołajczyk Małgorzata",
+          "tytul": "Nagroda Abela 2015",
+          "zrodlo": "Wrocławski Portal Matematyczny [Dokument elektroniczny], 2015,.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Mikołajczyk Małgorzata",
+          "tytul": "70. rocznica śmierci Banacha",
+          "zrodlo": "Wrocławski Portal Matematyczny [Dokument elektroniczny], 2015,.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Mikołajczyk Małgorzata",
+          "tytul": "Słońcem malowane",
+          "zrodlo": "Wrocławski Portal Matematyczny [Dokument elektroniczny], 2015,.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Mikołajczyk Małgorzata",
+          "tytul": "Zachowana pamięć",
+          "zrodlo": "Wrocławski Portal Matematyczny [Dokument elektroniczny], 2015,.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Mirek Mariusz",
+          "zrodlo": "Math. Z., 2015, 279, 27-59.",
+          "if": "0.674"
+        },
+        {
+          "autorzy": "Mirek Mariusz",
+          "tytul": "Weak type (1, 1) inequalities for discrete rough maximal functions",
+          "zrodlo": "J. Anal. Math., 2015, 127, 247-281.",
+          "if": "1.054"
+        },
+        {
+          "autorzy": "Mirek Mariusz",
+          "tytul": "Roth's theorem in the Piatetski-Shapiro primes",
+          "zrodlo": "Revista Matemática Iberoamericana, 2015, 31, 617-656.",
+          "if": "1.116"
+        },
+        {
+          "autorzy": "Mirek Mariusz, Trojan Bartosz",
+          "tytul": "Cotlar's ergodic theorem along the prime numbers",
+          "zrodlo": "J. Differ. Equ. Appl., 2015, 21, 822-848.",
+          "if": "0.912"
+        },
+        {
+          "autorzy": "Młotkowski Wojciech, Nowak Maciej A, Penson Karol, Życzkowski Karol",
+          "tytul": "Spectral density of generalized Wishart matrices and free multiplicative convolution",
+          "zrodlo": "Physical Review. E, 2015, 92, 012121-012129.",
+          "if": "2.252"
+        },
+        {
+          "autorzy": "Morawiec Adam",
+          "tytul": "Zwodniczy urok analogii",
+          "zrodlo": "Matematyka, 2015, 2, 42-46.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Morawiec Adam",
+          "tytul": "In defense of Paul Wittich : + 9 January 1587",
+          "zrodlo": "Sudhoffs Archiv : Zeitschrift für Wissenschaftsgeschichte, 2015, 99, 235-239.",
+          "if": "0"
+        },
+        {
+          "autorzy": "Musiał Kazimierz",
+          "tytul": "A decomposition theorem for Banach space valued fuzzy Henstock integral",
+          "zrodlo": "Fuzzy Sets and Systems, 2015, 259, 21-28.",
+          "if": "2.098"
+        },
+        {
+          "autorzy": "Osajda Damian",
+          "tytul": "Combinatorial negative curvature and triangulations of 3-manifolds",
+          "zrodlo": "Indiana University Mathematics Journal, 2015, 64, 943-956.",
+          "if": "0.794"
+        },
+        {
+          "autorzy": "Osajda Damian, Świątkowski Jacek",
+          "tytul": "On asymptotically hereditarily aspherical groups",
+          "zrodlo": "Proc. London Math. Soc., 2015, 111, 93-126.",
+          "if": "1.079"
+        },
+        {
+          "autorzy": "Pawlikowski Janusz",
+          "tytul": "On the concept of analytic hardness",
+          "zrodlo": "Proc. Amer. Math. Soc., 2015, 143, 1745-1747.",
+          "if": "0.7"
+        },
+        {
+          "autorzy": "Pawlikowski Janusz",
+          "tytul": "Selivanovski hard sets are hard",
+          "zrodlo": "Fundam. Math., 2015, 228, 17-25.",
+          "if": "0.553"
+        },
+        {
+          "autorzy": "Pezda Tadeusz",
+          "tytul": "Cycles of polynomial mappings in several variables over discrete valuation rings and over Z",
+          "zrodlo": "Michigan Mathematical Journal, 2015, 64, 109-142.",
+          "if": "0.741"
+        },
+        {
+          "autorzy": "Plebanek Grzegorz",
+          "tytul": "On isomorphisms of Banach spaces of continuous functions",
+          "zrodlo": "Isr. J. Math., 2015, 209, 1-13.",
+          "if": "0.738"
+        },
+        {
+          "autorzy": "Plebanek Grzegorz, Sobota Damian",
+          "tytul": "Countable tightness in the spaces of regular probability measures",
+          "zrodlo": "Fundam. Math., 2015, 229, 159-169.",
+          "if": "0.553"
+        },
+        {
+          "autorzy": "Rolski Tomasz, Serfozo Richard F, Stoyan Dietrich",
+          "tytul": "Service-time ages, residuals, and lengths in an M/GI/∞ service system",
+          "zrodlo": "Queueing Syst., 2015, 79, 173-181.",
+          "if": "0.875"
+        },
+        {
+          "autorzy": "Więsław Witold",
+          "tytul": "Mathematica Wratislaviensis (1702-2011) : some historical remarks",
+          "zrodlo": "in: Commemorative Book for the 200th Anniversary of the Establishment of the State University in Wrocław. Vol. 4, Wrocław University in the European Culture of the 19th and 20th Centuries : papers from the International Scientific Conference, Wrocław 4-7 October 2011, Wydawnictwo Uniwersytetu Wrocławskiego, , 2015, 641-646."
+        },
+        {
+          "autorzy": "Wróbel Błażej",
+          "tytul": "Multivariate spectral multipliers for the Dunkl transform and the Dunkl harmonic oscillator",
+          "zrodlo": "Forum Mathematicum, 2015, 27, 2301-2322.",
+          "if": "0.823"
+        },
+        {
+          "autorzy": "Wysoczańska-Kula Anna",
+          "tytul": "Woronowicz construction of compact quantum groups for functions on permutations : classification result for N=3",
+          "zrodlo": "J. Math. Anal. Appl., 2015, 421, 1673-1712.",
+          "if": "1.014"
+        }
+      ]
+    }
+  ]
+}

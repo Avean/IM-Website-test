@@ -1,0 +1,670 @@
+{
+  "rok": 2006,
+  "pochodzenie": "strona",
+  "zrodla": [
+    "https://www.math.uni.wroc.pl/prace-opublikowane-w-roku-2006"
+  ],
+  "uwagi": "W oryginalnym wykazie część prac była powtórzona przy nazwiskach kolejnych współautorów; powtórzenia pominięto.",
+  "uwagi_en": "In the original list some papers were repeated under the names of further co-authors; the repetitions have been omitted.",
+  "grupy": [
+    {
+      "prace": [
+        {
+          "autorzy": "J. Bartoszewicz, M. Skolimowska",
+          "tytul": "Preservation of classes of life distributions and stochastic orders under weighting",
+          "zrodlo": "Statistics and Probability Letters 76 (2006) 587-596."
+        },
+        {
+          "autorzy": "J. Bartoszewicz, M. Skolimowska",
+          "tytul": "Preservation of stochastic orders under exponential mixtures",
+          "zrodlo": "Probability in the Engineering and Informational Sciences 20 (2006) 655-666."
+        },
+        {
+          "autorzy": "J. Bartoszewicz, M. Skolimowska",
+          "tytul": "Weighting, likelihood ratio order and life distributions",
+          "zrodlo": "Applicationes Mathematicae 33, No. 3-4 (2006)."
+        },
+        {
+          "autorzy": "W. Bąk, A. Hulanicki",
+          "tytul": "Remarks on spectra and $L^1$multipliers for convolution operators",
+          "zrodlo": "Proceedings of the American Mathematical Society 134, No. 5 (2006)."
+        },
+        {
+          "autorzy": "A. Bendikov",
+          "tytul": "Hypoelliptic bi-invariant Laplacians on infinite dimensional compact groups",
+          "zrodlo": "Canadian Journal of Mathematics 58 (4) (2006) 691-725."
+        },
+        {
+          "autorzy": "P. Biler",
+          "tytul": "A note on the paper of Y. Naito",
+          "zrodlo": "Self-Similar Solutions in Nonlinear PDE, Banach Center Publications 74 (2006) 33-40."
+        },
+        {
+          "autorzy": "P. Biler, L. Brandolese",
+          "tytul": "Global existence versus blow up for some models of interacting particles",
+          "zrodlo": "Colloquium Mathematicum 106 (2006) 293-303."
+        },
+        {
+          "autorzy": "P. Biler",
+          "tytul": "Kazimierz Urbanik (1930-2005) (translation of an article by Z. J. Jurek, J. Rosiński and W. A. Woyczyński)",
+          "zrodlo": "Wiadomości Matematyczne 42 (2006) 1-19."
+        },
+        {
+          "autorzy": "P. Biler, R. Stańczy",
+          "tytul": "Mean field models for self-gravitating particles",
+          "zrodlo": "Folia Mathematica, Universitatis Lodziensis, University of Łódź Press 13 (2006) 3-19."
+        },
+        {
+          "autorzy": "P. Biler, R. Stańczy",
+          "tytul": "Nonlinear diffusion models for self-gravitating particles",
+          "zrodlo": "Int. Series of Numerical Mathematics, Free Boundary Problems Theory and Applications, Birkhauser 154 (2006) 107-116."
+        },
+        {
+          "autorzy": "P. Biler",
+          "tytul": "Radially symmetric solutions of a chemotaxis model in the critical case",
+          "zrodlo": "Proc. RIMS conference \"Variational Problems and Related Topics, 2005\" 1464 (2006) 107-121."
+        },
+        {
+          "autorzy": "P. Biler, G. Karch",
+          "tytul": "Self-Similar Solutions in Nonlinear PDE",
+          "zrodlo": "Proceedings of a conference held in Będlewo, Banach Center Publications 74 (2006) 1-255."
+        },
+        {
+          "autorzy": "P. Biler, G. Karch, P. Laurencot, T. Nadzieja",
+          "tytul": "The 8 pi-problem for radially symmetric solutions of a chemotaxis model in the disc",
+          "zrodlo": "Topological Methods in Nonlinear Analysis 27 (2006) 133-147."
+        },
+        {
+          "autorzy": "P. Biler, G. Karch, P. Laurencot, T. Nadzieja",
+          "tytul": "The 8 pi-problem for radially symmetric solutions of a chemotaxis model in the plane",
+          "zrodlo": "Mathematical Methods in the Applied Sciences 29 (2006) 1563-1583."
+        },
+        {
+          "autorzy": "M. Bożejko, G. Fendler",
+          "tytul": "A note on certain partial sum operators",
+          "zrodlo": "Quantum Probability, Banach Center Publications 73 (2006) 117-125."
+        },
+        {
+          "autorzy": "M. Bożejko, H. Yoshida",
+          "tytul": "Generalized q-deformed random variables",
+          "zrodlo": "Quantum Probability, Banach Center Publications 73 (2006) 127-140."
+        },
+        {
+          "autorzy": "M. Bożejko, K. Dykkema, F. Lehner",
+          "tytul": "Isomorphism of Cayley graphs of surface groups",
+          "zrodlo": "Algebra and Discrete Mathematics (2006)."
+        },
+        {
+          "autorzy": "M. Bożejko, W. Bryc",
+          "tytul": "On a class of free Levy laws related to a regression problem",
+          "zrodlo": "Journal of Functional Analysis 236 (2006) 59-77."
+        },
+        {
+          "autorzy": "M. Bożejko, W. Młotkowski, J. Wysoczański",
+          "tytul": "Quantum Probability, Banach Center Publications, 73",
+          "zrodlo": "Warszawa (2006) 1-438."
+        },
+        {
+          "autorzy": "M. Bożejko, A.D. Krystek, Ł.J. Wojakowski",
+          "tytul": "Remarks on the r - and Delta-convolutions",
+          "zrodlo": "Mathematische Zeitschrift 253 (2006) 177-196."
+        },
+        {
+          "autorzy": "D. Buraczewski, E. Damek, A. Hulanicki",
+          "tytul": "Asymptotic behavior of Poisson kernels on NA groups",
+          "zrodlo": "Communications in Partial Differential Equations 31 (2006) 1547-1589."
+        },
+        {
+          "autorzy": "D. Buraczewski, T. Martinez, J. Torrea, D. Urban",
+          "tytul": "On the Riesz transform and weighted inequalities associated with the ultraspherical polynomials",
+          "zrodlo": "Journal d 'Analyse Mathematique 98 (2006) 113-143."
+        },
+        {
+          "autorzy": "B. Błaszczyszyn, F. Baccelli, P. Muhlethaler",
+          "tytul": "An Aloha protocol for multihop mobile wireless networks",
+          "zrodlo": "IEEE Transactions on Information Theory 52 (2) (2006) 421-436."
+        },
+        {
+          "autorzy": "W. Czaja, J.J. Benedetto, A.M. Powell, J. Sterbenz",
+          "tytul": "$(1, )$ Balian-Low Theorem",
+          "zrodlo": "Mathematical Research Letters 13 (2006) 467-474."
+        },
+        {
+          "autorzy": "W. Czaja, J.J. Benedetto, A.M. Powell",
+          "tytul": "An optimal example for the Balian-Low uncertainty principle",
+          "zrodlo": "SIAM Journal on Mathematical Analysis 38, No. 1 (2006) 333-345."
+        },
+        {
+          "autorzy": "W. Czaja, G. Kutyniok, D. Speegle",
+          "tytul": "Geometry of sets of parameters of wave packets",
+          "zrodlo": "Applied And Computational Harmonic Analysis 20, No. 1 (2006) 108-125."
+        },
+        {
+          "autorzy": "W. Czaja, A.M. Powell",
+          "tytul": "Recent Developments in the Balian-Low Theorem",
+          "zrodlo": "Harmonic Analysis and Applications. In honor of John J. Benedetto (eds. Heil ,Christopher) Basel (2006) 79-100."
+        },
+        {
+          "autorzy": "W. Czaja, J. Zienkiewicz",
+          "tytul": "Uncertainty principle for Gabor systems and the Zak transform",
+          "zrodlo": "Journal of Mathematics Physics 47 (2006)."
+        },
+        {
+          "autorzy": "M. Czystołowski, K. Kowalczyk, T. Niedzielski",
+          "tytul": "Statistical procedure to analyse sparse data on the morphometric parameters of aeolian sand ripples obtained by the shadow cast technique",
+          "zrodlo": "Estuarine, Coastal and Shelf Science 70 (2006) 180-186."
+        },
+        {
+          "autorzy": "E. Damek, A. Hulanicki",
+          "tytul": "Asymptotic behavior of the invariant measure for a diffusion related to a NA group",
+          "zrodlo": "Colloquium Mathematicum 104, nr 2 (2006) 285-309."
+        },
+        {
+          "autorzy": "E. Damek, G. Garrigos, E. Harboure, J. Torrea",
+          "tytul": "Weighted inequalities and a.e. convergence for Poisson integrals in light-cones",
+          "zrodlo": "Mathematische Annalen 336, no. 3 (2006) 727-746."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Polski wynalazek",
+          "zrodlo": "Matematyka w Szkole 23 (2006) 31-37."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Porządki w statystyce",
+          "zrodlo": "Matematyka, Społeczeństwo, Nauczanie 36 (2006) 4-9."
+        },
+        {
+          "autorzy": "A. Dąbrowski",
+          "tytul": "Staniny i inne skale",
+          "zrodlo": "Matematyka w Szkole 21 (2006) 7-9."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Matematyka a strukturalizm",
+          "zrodlo": "Struktura - Emergencja, Materiały IX Konferencji Metodologicznej Kraków (2006) 59-78."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Przemówienie wygłoszone 13 stycznia 2006 roku na uroczystości pożegnania akademickiego Ś. P. Profesora Jana Mozrzymasa",
+          "zrodlo": "Przegląd Uniwersytecki 2 (199) (2006) 38."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Ślązacy z wyboru - pionierzy matematyki w powojennym Wrocławiu",
+          "zrodlo": "w książce M. Hałub, A. Mańko-Matysiak (red.), Śląska republika uczonych, tom 2 Wrocław (2006) 450-470."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Uzupełnienie listy emigrantów",
+          "zrodlo": "Wiadomości Matematyczne 42 (2006) 177-180."
+        },
+        {
+          "autorzy": "R. Duda",
+          "tytul": "Wrocławska Szkoła Matematyczna",
+          "zrodlo": "Wiadomości Matematyczne 42 (2006) 73-101."
+        },
+        {
+          "autorzy": "J. Dymara, M.W. Davis, T. Januszkiewicz, B. Okun",
+          "tytul": "Cohomology of Coxeter groups with group ring coefficients II",
+          "zrodlo": "Algebraic and Geometric Topology 6 (2006) 1289-1318."
+        },
+        {
+          "autorzy": "J. Dymara",
+          "tytul": "Thin buildings",
+          "zrodlo": "Geometry and Topology 10 (2006) 667-694."
+        },
+        {
+          "autorzy": "K. Dębicki, M. Uitert",
+          "tytul": "Large buffer asymptotics for generalized processor sharing queues with Gaussian inputs",
+          "zrodlo": "Queueing Systems 54 (2) (2006) 111-129."
+        },
+        {
+          "autorzy": "K. Dębicki",
+          "tytul": "Some properties of generalized Pickands constants",
+          "zrodlo": "Theory of Probability and its Applications 50 (2006) 290-298."
+        },
+        {
+          "autorzy": "Ś.R. Gal, J. Kędra",
+          "tytul": "Sympletic Configurations",
+          "zrodlo": "International Mathematics Research Notices (2006)."
+        },
+        {
+          "autorzy": "B. Hajduk, A. Tralle",
+          "tytul": "Diffeomorphisms and almost complex structures on tori",
+          "zrodlo": "Annals of Global Analysis and Geometry 28 (2006) 337-349."
+        },
+        {
+          "autorzy": "B. Hajduk",
+          "tytul": "Journal of Symplectic Geometry 3 (4)",
+          "zrodlo": "Speccial Issue: Proceedings of the Conference on Symplectic Topology in Stare Jabłonki (2006)."
+        },
+        {
+          "autorzy": "B. Hajduk, R. Walczak",
+          "tytul": "Symplectic forms invariant under free circle actions on 4-manifolds",
+          "zrodlo": "Transactions of the American Mathematical Society 358, No. 5 (2006) 1953-1970."
+        },
+        {
+          "autorzy": "W. Hebisch, G. Mauceri, S. Meda",
+          "tytul": "Spectral multipliers for sublaplacians with drift on Lie groups",
+          "zrodlo": "Mathematische Zeitschrift 251, no. 4 (2006) 899-927."
+        },
+        {
+          "autorzy": "A. Hoffmann",
+          "tytul": "Nowa książka do nauczania matematyki",
+          "zrodlo": "Matematyka 3 (2006) 183-184."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "tytul": "Strongly bounded automorphism groups",
+          "zrodlo": "Colloquium Mathematicum 105 (2006) 57-67."
+        },
+        {
+          "autorzy": "A. Iwanow",
+          "tytul": "Strongly determined types and G-compactness",
+          "zrodlo": "Fundamenta Mathematicae 191 (2006) 227-247."
+        },
+        {
+          "autorzy": "A. Janicki",
+          "tytul": "Computer Construction of Quasi Optimal Portfolio for Stochastic Models with Jumps of Financial Market",
+          "zrodlo": "Lecture Notes in Computer Science 3994 (2006) 301-307."
+        },
+        {
+          "autorzy": "T. Januszkiewicz, J. Świątkowski",
+          "tytul": "Simplicial nonpositive curvature",
+          "zrodlo": "Publications Mathematiques de l' IHES 104 (2006) 1-85."
+        },
+        {
+          "autorzy": "Z.J. Jurek",
+          "tytul": "Cauchy transforms of measures viewed as some functionals of Fourier transforms",
+          "zrodlo": "Probability and Mathematical Statistics 26, no. 1 (2006) 187-200."
+        },
+        {
+          "autorzy": "G. Karch, J. Dolbeault",
+          "tytul": "Large time behaviour of solutions to nonhomogeneous diffusion equations",
+          "zrodlo": "Banach Center Publications 74 (2006) 133-147."
+        },
+        {
+          "autorzy": "A. Kasprzyk, W. Szczotka",
+          "tytul": "Covariance structure of Markov processes in wide sense of order k>1",
+          "zrodlo": "Applicationes Mathematicae 33, No. 2 (2006) 129-143."
+        },
+        {
+          "autorzy": "A. Kisielewicz, A. Cherubini, P. Gawrychowski, B. Piochi",
+          "tytul": "A combinatorial approach to collapsing words",
+          "zrodlo": "Lecture Notes in Computer Science 4162 (2006) 256-266."
+        },
+        {
+          "autorzy": "A. Kisielewicz, M. Gutan",
+          "tytul": "Rings and semigroups with permutable zero products",
+          "zrodlo": "Journal of Pure and Applied Algebra 3 (2006) 355-369."
+        },
+        {
+          "autorzy": "I. Kopocińska, B. Kopociński",
+          "tytul": "Cummulative processes in basketball games",
+          "zrodlo": "Applicationes Mathematicae 33,1 (2006) 61-69."
+        },
+        {
+          "autorzy": "I. Kopocińska, B. Kopociński",
+          "tytul": "Maximum length of series in a Markovian binary sequences with an application to the description of basketball games",
+          "zrodlo": "Applicationes Mathematicae 33,1 (2006) 61-69."
+        },
+        {
+          "autorzy": "I. Kopocińska, J. Dembiński, B. Kopociński",
+          "tytul": "Two tests for synergy of player in basketball games",
+          "zrodlo": "International Journal of Mathematics and Mathematical Sciences 5,1 (2006) 41."
+        },
+        {
+          "autorzy": "P. Kowalski, A. Pillay",
+          "tytul": "On algebraic sigma-groups",
+          "zrodlo": "Transactions of the American Mathematical Society 359 (2006) 1325-1337."
+        },
+        {
+          "autorzy": "P. Kowalski, A. Pillay",
+          "tytul": "Quantifier elimination for algebraic D-groups",
+          "zrodlo": "Transactions of the American Mathematical Society 358 (2006) 167-181."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Matura 2006 - było łatwiej ?",
+          "zrodlo": "Matematyka 7 (2006) 400-407."
+        },
+        {
+          "autorzy": "J. Kraszewski, M. Kysiak",
+          "tytul": "Productivity versus Weak Fubini Property",
+          "zrodlo": "Acta Mathematica Hungarica 111 (4) (2006) 347-353."
+        },
+        {
+          "autorzy": "J. Kraszewski",
+          "tytul": "Wstęp do matematyki",
+          "zrodlo": "Wydawnictwa Naukowo-Techniczne Warszawa (2006)."
+        },
+        {
+          "autorzy": "K. Krupiński",
+          "tytul": "Profinite structures interpretable in fields",
+          "zrodlo": "Annals of Pure and Applied Logic 142 (2006) 19-54."
+        },
+        {
+          "autorzy": "K. Krupiński, F. Wagner",
+          "tytul": "Small profinite groups and rings",
+          "zrodlo": "Journal of Algebra 306 (2006) 494-506."
+        },
+        {
+          "autorzy": "A.D. Krystek",
+          "tytul": "Remarks on the Boolean convolution and Kerov's alfa-transformation",
+          "zrodlo": "Quantum Probability, Banach Center Publications 73 (2006) 285-298."
+        },
+        {
+          "autorzy": "I. Królak",
+          "tytul": "Factoriality of von Neumann algebras connected with general commutation relations - finite dimensional case",
+          "zrodlo": "Quantum Probability, Banach Center Publications 73 (2006) 277-284."
+        },
+        {
+          "autorzy": "R. Kulik, H. Daduna, C. Sauer, R. Szekli",
+          "tytul": "Isotone Differences Ordering for Unreliable Markovian Queueing Networks",
+          "zrodlo": "Probability in the Engineering and Informational Sciences 20 (2006) 575-594."
+        },
+        {
+          "autorzy": "R. Kulik, H. Daduna, C. Sauer, M. Schwarz, R. Szekli",
+          "tytul": "M/M/1 Queueing systems with inventory",
+          "zrodlo": "Queueing Systems 54 (2006) 55-78."
+        },
+        {
+          "autorzy": "P. Lorek, M. Dynia, J. Kutyłowski, F. Meyer auf der Heide",
+          "tytul": "Maintaining Communication Between an Explorer and and a Base Station",
+          "zrodlo": "in Proceedings of the 1st IFIP Int. Conference on Biologically Inspired Cooperative Computing 216 (2006) 137-146."
+        },
+        {
+          "autorzy": "R. Marszałek, W. Narkiewicz",
+          "tytul": "Finite polynomial orbits in quadratic rings",
+          "zrodlo": "Ramanujan Journal 12 (2006) 91-130."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Czy można nauczyć pomysłowości ?",
+          "zrodlo": "Matematyka, Społeczeństwo, Nauczanie 37 (2006) 1-5."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Domino",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/06 (2006) 23-26."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Drzewo języków",
+          "zrodlo": "Magazyn Miłośników Matematyki 1/06 (2006) 19-22."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Jak rosną słoneczniki ?",
+          "zrodlo": "Magazyn Miłośników Matematyki 2/06 (2006) 15-19."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XL Maths at Work",
+          "zrodlo": "Matematyka 8 (2006) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XLI Stock Exchange",
+          "zrodlo": "Matematyka 9 (2006) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XLII Devices for Computations",
+          "zrodlo": "Matematyka 10 (2006) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXXIII Converting Fractions",
+          "zrodlo": "Matematyka 1 (2006) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXXIV Calculations with Integers",
+          "zrodlo": "Matematyka 2 (2006) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXXIX Banking Business",
+          "zrodlo": "Matematyka 7 (2006) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXXV Calculations with Fractions",
+          "zrodlo": "Matematyka 3 (2006) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXXVI Per cent",
+          "zrodlo": "Matematyka 4 (2006) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXXVII Interest",
+          "zrodlo": "Matematyka 5 (2006) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk, A. Morawiec",
+          "tytul": "Mr MAT, Mały ilustrowany słownik terminów matematycznych, cz. XXXVIII Trade/Commerce",
+          "zrodlo": "Matematyka 6 (2006) 61-62."
+        },
+        {
+          "autorzy": "M. Mikołajczyk",
+          "tytul": "Zrób sobie heptadekagon",
+          "zrodlo": "Magazyn Miłośników Matematyki 4/06 (2006) 12-16."
+        },
+        {
+          "autorzy": "K. Musiał, L. Di Piazza",
+          "tytul": "A decomposition theorem for compact-valued Henstock integral",
+          "zrodlo": "Monatshefte fur Mathematik 148 (2006) 119-126."
+        },
+        {
+          "autorzy": "K. Musiał, M.R. Burke, N.D. Macheras, W. Strauss",
+          "tytul": "Category product densities and liftings",
+          "zrodlo": "Topology and Its Applications 153 (2006) 1164-1191."
+        },
+        {
+          "autorzy": "K. Musiał, L. Di Piazza",
+          "tytul": "Characterizations of Kurzweil-Henstock-Pettis integrable functions",
+          "zrodlo": "Studia Mathematica 176 (2006) 159-176."
+        },
+        {
+          "autorzy": "K. Musiał, B. Bongiorno, L. Di Piazza",
+          "tytul": "Kurzweil-Henstock and Kurzweil-Henstock-Pettis integrability of strongly measurable functions",
+          "zrodlo": "Mathematica Bohemica 131 (2006) 211-223."
+        },
+        {
+          "autorzy": "W. Młotkowski",
+          "tytul": "Some class of polynomial hypergroups",
+          "zrodlo": "Quantum Probability, Banach Center Publications 73 (2006) 357-362."
+        },
+        {
+          "autorzy": "W. Narkiewicz",
+          "tytul": "Polynomial cycles in cubic fields of negative discriminant",
+          "zrodlo": "Functiones et Approximatio, tom na 75-lecie prof. E. Wirsinga 35 (2006) 261-269."
+        },
+        {
+          "autorzy": "L. Newelski, M. Petrykowski",
+          "tytul": "Weak generic types and coverings of groups I",
+          "zrodlo": "Fundamenta Mathematicae 191 (2006) 201-225."
+        },
+        {
+          "autorzy": "K. Omiljanowski",
+          "tytul": "Mnogość. Kwadraty w ....",
+          "zrodlo": "Matematyka 8 (2006) 32-40."
+        },
+        {
+          "autorzy": "Z. Palmowski, F. Avram, M. Pistorius",
+          "tytul": "A two-dimensional ruin problem on the positive quadrant, with exponential claims: Feynman-Kac formula, Laplace transform and its inversion",
+          "zrodlo": "Monografias del Seminario Matematico Garcia de Galdeano 33 (2006) 199-205."
+        },
+        {
+          "autorzy": "Z. Palmowski",
+          "tytul": "Aproksymacja prawdopodobieństwa ruiny firmy ubezpieczeniowej w dyfuzyjnym modelu Coxa",
+          "zrodlo": "Prace matematyczne Akademii Ekonomicznej we Wrocławiu 1108 (2006) 34-54."
+        },
+        {
+          "autorzy": "Z. Palmowski, T. Rolski",
+          "tytul": "On the exact asymptotics of the busy period in GI/G/1 queues",
+          "zrodlo": "Advances in Applied Probability 38 (3) (2006) 792-803."
+        },
+        {
+          "autorzy": "Z. Palmowski, A. Kyprianou",
+          "tytul": "Quasi-stationary distributions for Levy processes",
+          "zrodlo": "Bernoulli 12 (4) (2006) 571-581."
+        },
+        {
+          "autorzy": "J. Pawlikowski, K. Ciesielski",
+          "tytul": "On additive almost continuous functions under CPA",
+          "zrodlo": "Journal of Applied Analysis 11 (2) (2006) 153-170."
+        },
+        {
+          "autorzy": "R. Stańczy",
+          "tytul": "On some parabolic-elliptic system with self-similar pressure term",
+          "zrodlo": "Self-Similar Solutions in Nonlinear PDE, Banach Center Publications 74 (2006) 205-215."
+        },
+        {
+          "autorzy": "W. Szczotka",
+          "tytul": "Weak convergence of mutually independent $X^B_n$ and $X^A_n$ under weak convergence of $X _nX^B_n - X^A_n$",
+          "zrodlo": "Applicationes Mathematicae 33, No. 1 (2006) 41-49."
+        },
+        {
+          "autorzy": "R. Szekli, H. Daduna",
+          "tytul": "Dependence ordering for Markov processes on partially ordered spaces",
+          "zrodlo": "Journal of Applied Probability 43 (2006) 1-22."
+        },
+        {
+          "autorzy": "P. Śniady",
+          "tytul": "Asymptotics of characters of symmetric groups, genus expansion and free probability",
+          "zrodlo": "Discrete Mathematics 306 (7) (2006) 624-665."
+        },
+        {
+          "autorzy": "P. Śniady",
+          "tytul": "Gaussian fluctuations of characters of symmetric groups and of Young diagrams",
+          "zrodlo": "Probability Theory and Related Fields 136, no. 2 (2006) 263-297."
+        },
+        {
+          "autorzy": "P. Śniady",
+          "tytul": "Gaussian fluctuations of representations of wreath products",
+          "zrodlo": "Infinite Dimensional Analysis, Quantum Probability and Related Topics (2006) 529-546."
+        },
+        {
+          "autorzy": "P. Śniady",
+          "tytul": "Generalized Cauchy identities, trees and multidimensional Brownian motions. Part I: bijective proof of generalized Cauchy identities",
+          "zrodlo": "Electronic Journal of Combinatorics 13 (1) (2006)."
+        },
+        {
+          "autorzy": "P. Śniady, B. Colllins",
+          "tytul": "Integration with respect to the Haar measure on unitary, orthogonal and symplectic groups",
+          "zrodlo": "Communications in Mathematical Physics 264 (2006) 773-795."
+        },
+        {
+          "autorzy": "P. Śniady, J.A. Mingo, R. Speicher",
+          "tytul": "Second Order Freeness and Fluctuations of Random Matrices: II. Unitary Random Matrices",
+          "zrodlo": "Advances in Mathematics 209, no. 1 (2006) 212-240."
+        },
+        {
+          "autorzy": "J. Świątkowski",
+          "tytul": "Filling radius and simplicial nonpositive curvature",
+          "zrodlo": "Mathematisches Forschungsinstitut Oberwolfach, Topological Methods in Group Theory No.19 (2006) 21-22."
+        },
+        {
+          "autorzy": "J. Świątkowski",
+          "tytul": "Regular path systems and (bi)automatic groups",
+          "zrodlo": "Geometriae Dedicata 118 (2006) 23-48."
+        },
+        {
+          "autorzy": "K. Topolski, K. Lukierska-Walasek",
+          "tytul": "p-adic description of hierarchical systems dynamics",
+          "zrodlo": "Proceedings of the 2nd International Conference on p-Adic Mathematical Physics, 2005 826 (2006) 81-90."
+        },
+        {
+          "autorzy": "K. Topolski, K. Lukierska-Walasek",
+          "tytul": "Random walk on p-adics and hierarchical systems",
+          "zrodlo": "Physical Review B 73 (2006) 54419(1)-9."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Akademia Zamojska (1594-1784)",
+          "zrodlo": "w tomie \"Wokół Bernoullich\", Materiały z XIX Ogólnopolskiej Szkoły Historii Matematyki, Lublin (2006) 11-15."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Jan Śniadecki (1756-1830) - nie tylko matematyk",
+          "zrodlo": "Wiadomości Matematyczne 10 (2006) 579-589."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Jan Śniadecki - rektor Uniwersytetu Wileńskiego",
+          "zrodlo": "w tomie \"Jan Śniadecki 1756-1830, 250 rocznica urodzin\", Materiały konferencyjne, Żnin (2006) 29-49."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Jana Śniadeckiego Rachunek Zdarzeń i Przypadków Losu z roku 1790",
+          "zrodlo": "w tomie \"Wokół Bernoullich\", Materiały z XIX Ogólnopolskiej Szkoły Historii Matematyki, Lublin (2006) 109-129."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Joseph Louis Lagrange (1736-1813) - kontynuator Eulera",
+          "zrodlo": "Matematyka 8 (2006) 451-456."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Leonhard Euler (1707-1783) - tytan pracy",
+          "zrodlo": "Matematyka 6 (2006) 322-331."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Matematyka wileńska za czasów Adama Mickiewicza. Archiwalia",
+          "zrodlo": "Wiadomości Matematyczne 42 (2006) 1-25."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Nieznane rękopisy i notatki Jana Śniadeckiego w Archiwum Historycznym Wilna",
+          "zrodlo": "Roczniki Biblioteczne 50 (2006) 167-181."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Pierwsze polskie teksty z rachunku prawdopodobieństwa",
+          "zrodlo": "w tomie \"Wokół Bernoullich\", Materiały z XIX Ogólnopolskiej Szkoły Historii Matematyki, Lublin (2006) 101-108."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "Reform of education in Poland in XVIII century",
+          "zrodlo": "Mathematik und Unterricht IV, Mathematik im Wandel Berlin (2006) 202-209."
+        },
+        {
+          "autorzy": "W. Więsław",
+          "tytul": "W sprawie listu Stanisława Augusta do Eulera",
+          "zrodlo": "Wiadomości Matematyczne 42 (2006) 220-221."
+        },
+        {
+          "autorzy": "Ł.J. Wojakowski",
+          "tytul": "Moments of measure orthogonalizing the 2-dimensional Chebyshev polynomials",
+          "zrodlo": "Quantum Probability, Banach Center Publications 73 (2006) 429-433."
+        },
+        {
+          "autorzy": "A. Wojciechowska-Waszkiewicz",
+          "tytul": "Jak napełniać stożek wodą",
+          "zrodlo": "Matematyka 10 (2006)."
+        },
+        {
+          "autorzy": "J. Wróblewski",
+          "tytul": "1729",
+          "zrodlo": "Matematyka, Społeczeństwo, Nauczanie 36 (2006)."
+        },
+        {
+          "autorzy": "J. Wysoczański",
+          "tytul": "The von Neumann algebra associated with an infinite number of t-free noncommutative gaussian random variables",
+          "zrodlo": "Quantum Probability, Banach Center Publications 73 (2006) 435-438."
+        },
+        {
+          "autorzy": "S. Żeberski",
+          "tytul": "On weakly measurable functions",
+          "zrodlo": "Bulletin of the Polish Academy of Sciences, Mathematics 53 (2006) 421-428."
+        }
+      ]
+    }
+  ]
+}
