@@ -101,6 +101,9 @@ export const TEKSTY = {
     od: 'od',
     do: 'do',
     filtry: 'Filtry planu',
+    filtryPrzycisk: 'Filtry',
+    zima: 'Zima',
+    lato: 'Lato',
   },
   en: {
     dni: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'],
@@ -146,6 +149,9 @@ export const TEKSTY = {
     od: 'from',
     do: 'to',
     filtry: 'Timetable filters',
+    filtryPrzycisk: 'Filters',
+    zima: 'Winter',
+    lato: 'Summer',
   },
 };
 
@@ -209,6 +215,7 @@ export default function PlanZajec({ lang, kierunki, daneId }: Props) {
   const [f, setF] = useState<Filtry>(PUSTE);
   const [domyslny, setDomyslny] = useState('');
   const [waski, setWaski] = useState(false);
+  const [filtryOtwarte, setFiltryOtwarte] = useState(false);
 
   // start: dane z <script type="application/json">, filtry z adresu albo z localStorage
   useEffect(() => {
@@ -326,6 +333,8 @@ export default function PlanZajec({ lang, kierunki, daneId }: Props) {
 
   const ustaw = (k: keyof Filtry, v: string) => setF((s) => ({ ...s, [k]: v }));
   const aktywne = !!(f.kierunek || f.kategoria || f.typ || f.prowadzacy || f.sala || f.q);
+  const ileFiltrow = [f.kierunek, f.kategoria, f.typ, f.prowadzacy, f.sala].filter(Boolean).length;
+  const krotkaNazwa = (id: string) => { const m = id.match(/^(\d{4})\/(\d{2})-([ZL])$/); return m ? `${m[3] === 'Z' ? T.zima : T.lato} ${m[1]}/${m[2]}` : id; };
   const widok = f.widok || (waski ? 'dni' : 'tydzien');
   const efektywny = waski && widok === 'tydzien' ? 'dni' : widok;
   const typNazwa = (typ: string) => dane.typy?.[typ]?.[lang] || typ;
@@ -555,7 +564,8 @@ export default function PlanZajec({ lang, kierunki, daneId }: Props) {
         <div className="chips pz-semestry" role="group" aria-label={T.semestr}>
           {dane.semestry.map((s) => (
             <button key={s.id} type="button" className="chip" aria-pressed={s.id === semId} onClick={() => ustaw('semestr', s.id === domyslny ? '' : s.id)}>
-              {(lang === 'en' && s.nazwa_en) || s.nazwa}
+              <span className="pz-pelna">{(lang === 'en' && s.nazwa_en) || s.nazwa}</span>
+              <span className="pz-krotka" aria-hidden="true">{krotkaNazwa(s.id)}</span>
             </button>
           ))}
         </div>
@@ -567,7 +577,12 @@ export default function PlanZajec({ lang, kierunki, daneId }: Props) {
           <span className="sr-only">{T.szukaj}</span>
           <input type="search" value={f.q} placeholder={T.szukaj} onChange={(e) => ustaw('q', e.target.value)} />
         </label>
-        <div className="pz-pola">
+        {waski && (
+          <button type="button" className="btn btn-small pz-przelacz" aria-expanded={filtryOtwarte} aria-controls="pz-pola" onClick={() => setFiltryOtwarte((o) => !o)}>
+            {T.filtryPrzycisk}{ileFiltrow ? ` (${ileFiltrow})` : ''}
+          </button>
+        )}
+        <div className="pz-pola" id="pz-pola" hidden={waski && !filtryOtwarte}>
           {opcje.kierunki.length > 0 && (
             wybor('kierunek', T.kierunek, T.wszystkieKierunki, opcje.kierunki.map((k) => ({ v: k.id, t: k.nazwa })))
           )}
