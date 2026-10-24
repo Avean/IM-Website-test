@@ -280,7 +280,10 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .prose table { width: 100%; border-collapse: collapse; margin: 1em 0 1.4em; font-size: 16px; display: block; overflow-x: auto; }
 .prose th, .prose td { padding: 8px 12px; border-bottom: 1px solid var(--line); text-align: left; vertical-align: top; }
 .prose th { font-weight: 800; color: var(--ink); background: var(--surface); }
-.prose blockquote { margin: 1em 0; padding: 4px 20px; border-left: 4px solid var(--accent); color: var(--muted); }
+/* Cytat w Markdown („> ...”) służy jako wyróżniona ramka z ważną informacją. */
+.prose blockquote { margin: 1.2em 0; padding: 14px 18px; border-left: 4px solid var(--accent); border-radius: 0 var(--radius) var(--radius) 0; background: var(--tint); color: var(--tint-ink); font-size: 17px; }
+.prose blockquote > :last-child { margin-bottom: 0; }
+.prose blockquote a { color: inherit; }
 .prose code { padding: 1px 6px; border-radius: 6px; background: var(--surface); font-size: .92em; }
 .prose .katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
 
