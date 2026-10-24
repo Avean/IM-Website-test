@@ -9,14 +9,14 @@
           "nazwa_en": "People",
           "linki": [
             {
-              "etykieta": "Pracownicy",
-              "etykieta_en": "Staff",
-              "adres": "/pracownicy"
-            },
-            {
               "etykieta": "Władze",
               "etykieta_en": "Management",
               "adres": "/instytut/wladze"
+            },
+            {
+              "etykieta": "Pracownicy",
+              "etykieta_en": "Staff",
+              "adres": "/pracownicy"
             }
           ]
         },
