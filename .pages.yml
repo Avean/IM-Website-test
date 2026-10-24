@@ -1104,6 +1104,71 @@ content:
           - { name: sekretariat_zakres, label: "Kontakt: czym zajmuje się sekretariat dydaktyczny", type: string }
           - { name: sekretariat_zakres_en, label: "EN: zakres sekretariatu", type: string }
 
+      - name: wladze
+        label: Władze Instytutu (strona /instytut/wladze)
+        description: "Pierwsza osoba na liście = dyrektor (duża karta). Tytuł, e-mail, pokój, stronę domową i zakład strona bierze z „Pracowników” — imię i nazwisko wpisz dokładnie jak tam. Telefonów pracowników naukowych nie podajemy."
+        type: file
+        path: src/data/wladze.json
+        format: json
+        fields:
+          - { name: tytul, label: Tytuł strony, type: string }
+          - { name: tytul_en, label: "EN: tytuł", type: string }
+          - { name: wstep, label: Tekst pod tytułem, type: text }
+          - { name: wstep_en, label: "EN: tekst pod tytułem", type: text }
+          - name: osoby
+            label: Dyrekcja (pierwsza osoba = dyrektor)
+            type: object
+            list: true
+            fields:
+              - { name: rola, label: "Funkcja (np. Zastępca dyrektora ds. dydaktycznych)", type: string, required: true }
+              - { name: imie_nazwisko, label: "Imię i nazwisko (dokładnie jak w Pracownikach)", type: string, required: true }
+              - { name: zakres, label: "Zakres obowiązków (1–2 zdania, opcjonalnie)", type: text }
+              - { name: dyzur, label: "Dyżur / godziny przyjęć (opcjonalnie)", type: string }
+              - { name: zdjecie, label: "Zdjęcie (portret pionowy 4:5, np. 600×750 px)", type: image, options: { path: public/pliki/wladze } }
+              - { name: rola_en, label: "EN: funkcja", type: string }
+              - { name: zakres_en, label: "EN: zakres obowiązków", type: text }
+              - { name: dyzur_en, label: "EN: dyżur", type: string }
+              - { name: stopien, label: "Tytuł/stopień — tylko gdy osoby nie ma w Pracownikach", type: string }
+              - { name: email, label: "E-mail — tylko gdy osoby nie ma w Pracownikach", type: string }
+              - { name: pokoj, label: "Pokój — tylko gdy osoby nie ma w Pracownikach", type: string }
+              - { name: strona, label: "Strona domowa — tylko gdy osoby nie ma w Pracownikach", type: string }
+          - name: sekretariat
+            label: Sekretariat
+            type: object
+            fields:
+              - { name: nazwa, label: Nazwa sekcji, type: string }
+              - { name: opis, label: "Zdanie pod nazwą (opcjonalnie)", type: string }
+              - { name: email, label: E-mail, type: string }
+              - { name: telefony, label: "Telefony (np. +48 71 375 74 01)", type: string, list: true }
+              - { name: adres, label: Adres, type: string }
+              - { name: pokoj, label: Pokój, type: string }
+              - { name: godziny, label: Godziny pracy, type: string }
+              - { name: osoby, label: "Osoby (imię i nazwisko jak w Pracownikach — e-mail i telefon dobiorą się same)", type: string, list: true }
+              - { name: nazwa_en, label: "EN: nazwa sekcji", type: string }
+              - { name: opis_en, label: "EN: zdanie pod nazwą", type: string }
+              - { name: adres_en, label: "EN: adres", type: string }
+              - { name: godziny_en, label: "EN: godziny pracy", type: string }
+          - { name: kadencja, label: "Kadencja (Markdown; puste = sekcja ukryta)", type: text }
+          - { name: kadencja_en, label: "EN: kadencja", type: text }
+          - name: rada
+            label: Rada Instytutu
+            type: object
+            fields:
+              - { name: tytul, label: Nagłówek, type: string }
+              - { name: opis, label: "Opis (Markdown; puste = sekcja ukryta)", type: text }
+              - { name: tytul_en, label: "EN: nagłówek", type: string }
+              - { name: opis_en, label: "EN: opis", type: text }
+          - name: linki
+            label: Zobacz też (linki na dole strony)
+            type: object
+            list: true
+            fields:
+              - { name: etykieta, label: Napis, type: string, required: true }
+              - { name: adres, label: "Adres (https://… albo /ścieżka)", type: string, required: true }
+              - { name: etykieta_en, label: "EN: napis", type: string }
+          - { name: zrodla, label: Źródła (nie wyświetlają się), type: string, list: true }
+          - { name: do_uzupelnienia, label: Do uzupełnienia (nie wyświetla się), type: string, list: true }
+
       - name: popularyzacja
         label: Popularyzacja (strona /popularyzacja)
         type: file
