@@ -33,6 +33,8 @@ const inny = alternatywa === null ? null : alternatywa ?? drugiJezyk(sciezka);
 const plAdres = lang === 'pl' ? sciezka : inny;
 const enAdres = lang === 'en' ? sciezka : inny;
 const ogObraz = absolute(obraz || ustawienia.baner.zdjecie, Astro.site);
+// Wersja testowa na github.io nie powinna trafiać do Google (docelowo strona będzie pod domeną UWr).
+const testowa = (Astro.site?.hostname ?? '').endsWith('github.io');
 ---
 <!doctype html>
 <html lang={lang}>
@@ -41,7 +43,8 @@ const ogObraz = absolute(obraz || ustawienia.baner.zdjecie, Astro.site);
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{pelnyTytul}</title>
     <meta name="description" content={opisMeta} />
-    {opublikowany ? <link rel="canonical" href={kanoniczny} /> : <meta name="robots" content="noindex, nofollow" />}
+    {opublikowany && <link rel="canonical" href={kanoniczny} />}
+    {(!opublikowany || testowa) && <meta name="robots" content="noindex, nofollow" />}
     {opublikowany && plAdres && <link rel="alternate" hreflang="pl" href={absolute(plAdres, Astro.site)} />}
     {opublikowany && enAdres && <link rel="alternate" hreflang="en" href={absolute(enAdres, Astro.site)} />}
     <meta property="og:type" content={typ} />
