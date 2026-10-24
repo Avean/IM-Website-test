@@ -124,13 +124,15 @@
      "strona": "/",
      "selektor": "#tresc > section:nth-child(1) > figure > figcaption",
      "kontekst": "<figcaption>Fot. fotopolska.eu</figcaption>",
-     "komunikat": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)"
+     "komunikat": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+     "kontrast": "NIE potwierdzone ponownym pomiarem axe-core po pełnym załadowaniu (prawdopodobnie fałszywy alarm — sprawdzić ręcznie)"
     },
     {
      "strona": "/",
      "selektor": "#h1-glowna",
      "kontekst": "<h1 id=\"h1-glowna\">Instytut Matematyczny</h1>",
-     "komunikat": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)"
+     "komunikat": "Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)",
+     "kontrast": "NIE potwierdzone ponownym pomiarem axe-core po pełnym załadowaniu (prawdopodobnie fałszywy alarm — sprawdzić ręcznie)"
     }
    ],
    "pliki": "src/layouts/Baza.astro"

@@ -1,18 +1,7 @@
 {
  "zepsute": [
   {
-   "url": "http://www.math.uni.wroc.pl/~karch/pattern/",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2016-mathematics-of-pattern-formation/"
-   ]
-  },
-  {
-   "url": "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf",
+   "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf",
    "kod": 404,
    "status": "Rejected status code: 404 Not Found",
    "strony": [
@@ -32,15 +21,6 @@
    ]
   },
   {
-   "url": "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
-   ]
-  },
-  {
    "url": "http://forum2019.math.uni.wroc.pl/",
    "kod": null,
    "status": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://forum2019.math.uni.wroc.pl/))",
@@ -49,17 +29,6 @@
     "/en/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/",
     "/nauka/konferencje/",
     "/nauka/konferencje/2019-forum-on-partial-differential-equations-xi/"
-   ]
-  },
-  {
-   "url": "https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=harezlak",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/instytut/zaklady/statystyka/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/statystyka/",
-    "/pracownicy/"
    ]
   },
   {
@@ -74,6 +43,46 @@
    ]
   },
   {
+   "url": "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/studia/skrypty/",
+    "/studia/skrypty/"
+   ]
+  },
+  {
+   "url": "http://math.uni.wroc.pl/~nadav",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/instytut/zaklady/algebra-i-teoria-modeli/",
+    "/en/pracownicy/",
+    "/instytut/zaklady/algebra-i-teoria-modeli/",
+    "/pracownicy/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/studia/skrypty/",
+    "/studia/skrypty/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~karch/pattern/",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2016-mathematics-of-pattern-formation/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2016-mathematics-of-pattern-formation/"
+   ]
+  },
+  {
    "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/wizualizacja.pdf",
    "kod": 404,
    "status": "Rejected status code: 404 Not Found",
@@ -83,7 +92,18 @@
    ]
   },
   {
-   "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf",
+   "url": "https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=harezlak",
+   "kod": 404,
+   "status": "Rejected status code: 404 Not Found",
+   "strony": [
+    "/en/instytut/zaklady/statystyka/",
+    "/en/pracownicy/",
+    "/instytut/zaklady/statystyka/",
+    "/pracownicy/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf",
    "kod": 404,
    "status": "Rejected status code: 404 Not Found",
    "strony": [
@@ -98,15 +118,6 @@
    "strony": [
     "/en/nauka/publikacje/",
     "/nauka/publikacje/"
-   ]
-  },
-  {
-   "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/studia/skrypty/",
-    "/studia/skrypty/"
    ]
   },
   {
@@ -126,118 +137,18 @@
     "/en/seminaria/rownania-rozniczkowe/",
     "/seminaria/rownania-rozniczkowe/"
    ]
-  },
-  {
-   "url": "http://math.uni.wroc.pl/~nadav",
-   "kod": 404,
-   "status": "Rejected status code: 404 Not Found",
-   "strony": [
-    "/en/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/en/pracownicy/",
-    "/instytut/zaklady/algebra-i-teoria-modeli/",
-    "/pracownicy/"
-   ]
   }
  ],
  "niepewne": [
   {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/"
-   ]
-  },
-  {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-random",
-   "kod": 302,
-   "status": "Rejected status code: 302 Found",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2020-random-models/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2020-random-models/"
-   ]
-  },
-  {
-   "url": "http://bcc.impan.pl/14PAHA/",
+   "url": "http://bcc.impan.pl/13Levy/",
    "kod": 502,
    "status": "Rejected status code: 502 Bad Gateway",
    "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+    "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/"
-   ]
-  },
-  {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-probabilistic",
-   "kod": 302,
-   "status": "Rejected status code: 302 Found",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/"
-   ]
-  },
-  {
-   "url": "https://combandgroups.wordpress.com/",
-   "kod": 403,
-   "status": "Rejected status code: 403 Forbidden",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2016-combinatorics-and-groups/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2016-combinatorics-and-groups/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/"
+    "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/"
    ]
   },
   {
@@ -252,60 +163,12 @@
    ]
   },
   {
-   "url": "https://www.facebook.com/knmtuwr",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
+   "url": "https://erc.europa.eu/",
+   "kod": 403,
+   "status": "Rejected status code: 403 Forbidden",
    "strony": [
-    "/en/studia/sprawy-studenckie/",
-    "/studia/sprawy-studenckie/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-17-rusza-tutornia",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-10-17-rusza-tutornia/"
-   ]
-  },
-  {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/22-19thworkshop",
-   "kod": 302,
-   "status": "Rejected status code: 302 Found",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/"
-   ]
-  },
-  {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-19thworkshop",
-   "kod": 302,
-   "status": "Rejected status code: 302 Found",
-   "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
-    "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-06-16-seminarium-wydzialowe/"
+    "/en/nauka/granty/",
+    "/nauka/granty/"
    ]
   },
   {
@@ -320,160 +183,58 @@
    ]
   },
   {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
+   "url": "https://combandgroups.wordpress.com/",
+   "kod": 403,
+   "status": "Rejected status code: 403 Forbidden",
    "strony": [
-    "/en/aktualnosci/2026-06-19-seminarium-ze-statystyki/"
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2016-combinatorics-and-groups/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2016-combinatorics-and-groups/"
    ]
   },
   {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/"
-   ]
-  },
-  {
-   "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-probabilistic",
    "kod": 302,
    "status": "Rejected status code: 302 Found",
    "strony": [
-    "/en/studia/matematyka/",
-    "/en/studia/zajecia/",
-    "/studia/matematyka/",
-    "/studia/zajecia/"
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2020-probabilistic-aspects-of-harmonic-analysis/"
    ]
   },
   {
-   "url": "http://bcc.impan.pl/13Levy/",
-   "kod": 502,
-   "status": "Rejected status code: 502 Bad Gateway",
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/17-modeltheory",
+   "kod": 302,
+   "status": "Rejected status code: 302 Found",
    "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/",
+    "/en/nauka/konferencje/2017-model-theory-conference/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2013-7th-international-conference-on-levy-processes-theory-and-applications/"
+    "/nauka/konferencje/2017-model-theory-conference/"
    ]
   },
   {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/"
-   ]
-  },
-  {
-   "url": "http://www.impan.pl/~set_theory/dmvptm14/",
-   "kod": 403,
-   "status": "Rejected status code: 403 Forbidden",
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-paha",
+   "kod": 302,
+   "status": "Rejected status code: 302 Found",
    "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2014-workshop-in-set-theory/",
+    "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2014-workshop-in-set-theory/"
+    "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/"
    ]
   },
   {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/"
-   ]
-  },
-  {
-   "url": "https://erc.europa.eu/",
-   "kod": 403,
-   "status": "Rejected status code: 403 Forbidden",
-   "strony": [
-    "/en/nauka/granty/",
-    "/nauka/granty/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/"
-   ]
-  },
-  {
-   "url": "http://bcc.impan.pl/16PAHA/",
-   "kod": 502,
-   "status": "Rejected status code: 502 Bad Gateway",
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-workshop18",
+   "kod": 302,
+   "status": "Rejected status code: 302 Found",
    "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+    "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-06-09-ankiety-ewaluacyjne/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/"
+    "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/"
    ]
   },
   {
@@ -743,6 +504,28 @@
    ]
   },
   {
+   "url": "http://bcc.impan.pl/14PAHA/",
+   "kod": 502,
+   "status": "Rejected status code: 502 Bad Gateway",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2014-probabilistic-aspect-of-harmonic-analysis/"
+   ]
+  },
+  {
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/22-19thworkshop",
+   "kod": 302,
+   "status": "Rejected status code: 302 Found",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2022-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/"
+   ]
+  },
+  {
    "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
    "kod": 302,
    "status": "Rejected status code: 302 Found",
@@ -752,75 +535,32 @@
    ]
   },
   {
-   "url": "http://www.math.uni.wroc.pl/ivmrt2014",
-   "kod": 403,
-   "status": "Rejected status code: 403 Forbidden",
+   "url": "https://www.ptm.org.pl/konkursy/wyklady-im-waclawa-sierpinskiego",
+   "kod": 503,
+   "status": "Rejected status code: 503 Service Unavailable",
    "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/"
+    "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
+    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/"
    ]
   },
   {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-workshop18",
+   "url": "https://www.facebook.com/knmtuwr",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/studia/sprawy-studenckie/",
+    "/studia/sprawy-studenckie/"
+   ]
+  },
+  {
+   "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
    "kod": 302,
    "status": "Rejected status code: 302 Found",
    "strony": [
-    "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/",
-    "/nauka/konferencje/",
-    "/nauka/konferencje/2018-18th-workshop-noncommutative-probability-operators-algebras-random-matrices-and/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/WRSSWMI/",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/studia/sprawy-studenckie/",
-    "/studia/sprawy-studenckie/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/KNZM.UWr/",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/studia/sprawy-studenckie/",
-    "/studia/sprawy-studenckie/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-06-16-seminarium-wydzialowe/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/"
+    "/en/studia/matematyka/",
+    "/en/studia/zajecia/",
+    "/studia/matematyka/",
+    "/studia/zajecia/"
    ]
   },
   {
@@ -835,90 +575,78 @@
    ]
   },
   {
-   "url": "https://www.ptm.org.pl/konkursy/wyklady-im-waclawa-sierpinskiego",
-   "kod": 503,
-   "status": "Rejected status code: 503 Service Unavailable",
+   "url": "http://bcc.impan.pl/16PAHA/",
+   "kod": 502,
+   "status": "Rejected status code: 502 Bad Gateway",
    "strony": [
-    "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/",
-    "/en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/"
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2016-probabilistic-aspect-of-harmonic-analysis/"
    ]
   },
   {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-paha",
+   "url": "https://www.facebook.com/KNZM.UWr/",
+   "kod": 400,
+   "status": "Rejected status code: 400 Bad Request",
+   "strony": [
+    "/en/studia/sprawy-studenckie/",
+    "/studia/sprawy-studenckie/"
+   ]
+  },
+  {
+   "url": "http://www.math.uni.wroc.pl/ivmrt2014",
+   "kod": 403,
+   "status": "Rejected status code: 403 Forbidden",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2014-integration-vector-measures-and-related-topics/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2014-integration-vector-measures-and-related-topics/"
+   ]
+  },
+  {
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-19thworkshop",
    "kod": 302,
    "status": "Rejected status code: 302 Found",
    "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/",
+    "/en/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+    "/en/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2018-probabilistic-aspects-of-harmonic-analysis/"
+    "/nauka/konferencje/2020-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/",
+    "/nauka/konferencje/2021-19th-workshop-noncommutative-probability-noncommucative-harmonic-analysis-and-re/"
    ]
   },
   {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego",
+   "url": "https://www.facebook.com/WRSSWMI/",
    "kod": 400,
    "status": "Rejected status code: 400 Bad Request",
    "strony": [
-    "/en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/"
+    "/en/studia/sprawy-studenckie/",
+    "/studia/sprawy-studenckie/"
    ]
   },
   {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-17-rusza-tutornia",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-10-17-rusza-tutornia/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-06-19-seminarium-ze-statystyki/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/"
-   ]
-  },
-  {
-   "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku",
-   "kod": 400,
-   "status": "Rejected status code: 400 Bad Request",
-   "strony": [
-    "/en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/"
-   ]
-  },
-  {
-   "url": "https://www.impan.pl/en/activities/banach-center/conferences/17-modeltheory",
+   "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-random",
    "kod": 302,
    "status": "Rejected status code: 302 Found",
    "strony": [
     "/en/nauka/konferencje/",
-    "/en/nauka/konferencje/2017-model-theory-conference/",
+    "/en/nauka/konferencje/2020-random-models/",
     "/nauka/konferencje/",
-    "/nauka/konferencje/2017-model-theory-conference/"
+    "/nauka/konferencje/2020-random-models/"
+   ]
+  },
+  {
+   "url": "http://www.impan.pl/~set_theory/dmvptm14/",
+   "kod": 403,
+   "status": "Rejected status code: 403 Forbidden",
+   "strony": [
+    "/en/nauka/konferencje/",
+    "/en/nauka/konferencje/2014-workshop-in-set-theory/",
+    "/nauka/konferencje/",
+    "/nauka/konferencje/2014-workshop-in-set-theory/"
    ]
   },
   {
@@ -944,15 +672,15 @@
    ]
   }
  ],
- "sprawdzone": 443,
+ "sprawdzone": 400,
  "lychee": {
-  "total": 443,
-  "successful": 369,
-  "errors": 72,
+  "total": 400,
+  "successful": 360,
+  "errors": 38,
   "excludes": 0,
   "timeouts": 2,
   "unknown": 0,
-  "redirects": 92
+  "redirects": 83
  },
  "kod_lychee": "2"
 }

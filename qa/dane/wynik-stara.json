@@ -12,13 +12,13 @@
     "strony": 36
    },
    "strony": {
-    "wystapienia": 1769,
-    "adresy": 67,
+    "wystapienia": 1689,
+    "adresy": 44,
     "strony": 259
    },
-   "strony domowe (~)": {
-    "wystapienia": 898,
-    "adresy": 109,
+   "strony domowe (~, /users/)": {
+    "wystapienia": 978,
+    "adresy": 132,
     "strony": 259
    }
   }
@@ -36,13 +36,13 @@
     "strony": 36
    },
    "strony": {
-    "wystapienia": 176,
-    "adresy": 64,
-    "strony": 52
+    "wystapienia": 96,
+    "adresy": 41,
+    "strony": 36
    },
-   "strony domowe (~)": {
-    "wystapienia": 380,
-    "adresy": 108,
+   "strony domowe (~, /users/)": {
+    "wystapienia": 460,
+    "adresy": 131,
     "strony": 56
    }
   }
@@ -60,13 +60,13 @@
     "strony": 18
    },
    "strony": {
-    "wystapienia": 88,
-    "adresy": 64,
-    "strony": 26
+    "wystapienia": 48,
+    "adresy": 41,
+    "strony": 18
    },
-   "strony domowe (~)": {
-    "wystapienia": 190,
-    "adresy": 108,
+   "strony domowe (~, /users/)": {
+    "wystapienia": 230,
+    "adresy": 131,
     "strony": 28
    }
   }

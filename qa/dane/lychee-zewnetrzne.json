@@ -1,145 +1,178 @@
 {
-  "total": 443,
-  "unique": 443,
-  "successful": 369,
+  "total": 400,
+  "unique": 400,
+  "successful": 360,
   "unknown": 0,
   "unsupported": 0,
   "timeouts": 2,
-  "redirects": 92,
+  "redirects": 83,
   "remaps": 0,
   "excludes": 0,
-  "errors": 72,
+  "errors": 38,
   "cached": 0,
   "success_map": {},
   "error_map": {
     "qa-wyniki/zewnetrzne.html": [
       {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego",
+        "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf",
         "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 230,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 163689807
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 223,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 120619363
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 224,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 64521905
-        }
-      },
-      {
-        "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-random",
-        "status": {
-          "text": "Rejected status code: 302 Found",
-          "code": 302
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
         },
         "redirects": {
-          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/20-random",
+          "origin": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf",
           "redirects": [
             {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
+              "url": "https://dbura.math.uni.wroc.pl/dydaktyka/fundacja8.pdf",
+              "code": 301
             }
           ]
         },
         "span": {
-          "line": 263,
+          "line": 48,
           "column": 10
         },
         "duration": {
-          "secs": 3,
-          "nanos": 345586664
+          "secs": 2,
+          "nanos": 404810144
         }
       },
       {
-        "url": "http://bcc.impan.pl/14PAHA/",
+        "url": "http://www.math.uni.wroc.pl/~hebisch/",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 66,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 451489788
+        }
+      },
+      {
+        "url": "http://bcc.impan.pl/13Levy/",
         "status": {
           "text": "Rejected status code: 502 Bad Gateway",
           "code": 502
         },
         "redirects": {
-          "origin": "http://bcc.impan.pl/14PAHA/",
+          "origin": "http://bcc.impan.pl/13Levy/",
           "redirects": [
             {
-              "url": "https://bcc.impan.pl/14PAHA/",
+              "url": "https://bcc.impan.pl/13Levy/",
               "code": 308
             }
           ]
         },
         "span": {
-          "line": 4,
+          "line": 3,
           "column": 10
         },
         "duration": {
           "secs": 1,
-          "nanos": 725097994
+          "nanos": 722916133
+        }
+      },
+      {
+        "url": "http://bcc.impan.pl/14Young/",
+        "status": {
+          "text": "Rejected status code: 502 Bad Gateway",
+          "code": 502
+        },
+        "redirects": {
+          "origin": "http://bcc.impan.pl/14Young/",
+          "redirects": [
+            {
+              "url": "https://bcc.impan.pl/14Young/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 5,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 713166006
+        }
+      },
+      {
+        "url": "http://forum2019.math.uni.wroc.pl/",
+        "status": {
+          "text": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://forum2019.math.uni.wroc.pl/))",
+          "details": "Connection failed. Check network connectivity and firewall settings"
+        },
+        "span": {
+          "line": 7,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 113870579
+        }
+      },
+      {
+        "url": "https://erc.europa.eu/",
+        "status": {
+          "text": "Rejected status code: 403 Forbidden",
+          "code": 403
+        },
+        "span": {
+          "line": 153,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 271437908
+        }
+      },
+      {
+        "url": "http://magweb.math.uni.wroc.pl/analiza/bedlewo17/",
+        "status": {
+          "text": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://magweb.math.uni.wroc.pl/analiza/bedlewo17/))",
+          "details": "Connection failed. Check network connectivity and firewall settings"
+        },
+        "span": {
+          "line": 12,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 113233162
+        }
+      },
+      {
+        "url": "https://panda.pwr.edu.pl/",
+        "status": {
+          "text": "Rejected status code: 503 Service Unavailable",
+          "code": 503
+        },
+        "span": {
+          "line": 176,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 649776792
+        }
+      },
+      {
+        "url": "https://combandgroups.wordpress.com/",
+        "status": {
+          "text": "Rejected status code: 403 Forbidden",
+          "code": 403
+        },
+        "span": {
+          "line": 149,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 64405577
         }
       },
       {
@@ -194,1401 +227,12 @@
           ]
         },
         "span": {
-          "line": 262,
-          "column": 10
-        },
-        "duration": {
-          "secs": 3,
-          "nanos": 598111648
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 235,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 384541913
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 242,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 511602031
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/~karch/pattern/",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "redirects": {
-          "origin": "http://www.math.uni.wroc.pl/~karch/pattern/",
-          "redirects": [
-            {
-              "url": "https://karch.math.uni.wroc.pl/pattern/",
-              "code": 301
-            }
-          ]
-        },
-        "span": {
-          "line": 77,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 833336733
-        }
-      },
-      {
-        "url": "https://combandgroups.wordpress.com/",
-        "status": {
-          "text": "Rejected status code: 403 Forbidden",
-          "code": 403
-        },
-        "span": {
-          "line": 158,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 67472455
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "redirects": {
-          "origin": "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf",
-          "redirects": [
-            {
-              "url": "https://jdziuban.math.uni.wroc.pl/fourier.pdf",
-              "code": 301
-            }
-          ]
-        },
-        "span": {
-          "line": 71,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 35350091
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/~hebisch/",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "span": {
-          "line": 66,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 362611279
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "redirects": {
-          "origin": "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf",
-          "redirects": [
-            {
-              "url": "https://jdziuban.math.uni.wroc.pl/calki.pdf",
-              "code": 301
-            }
-          ]
-        },
-        "span": {
-          "line": 70,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 291740092
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 250,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 499523017
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 226,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 130737532
-        }
-      },
-      {
-        "url": "http://forum2019.math.uni.wroc.pl/",
-        "status": {
-          "text": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://forum2019.math.uni.wroc.pl/))",
-          "details": "Connection failed. Check network connectivity and firewall settings"
-        },
-        "span": {
-          "line": 7,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 441170569
-        }
-      },
-      {
-        "url": "http://bcc.impan.pl/14Young/",
-        "status": {
-          "text": "Rejected status code: 502 Bad Gateway",
-          "code": 502
-        },
-        "redirects": {
-          "origin": "http://bcc.impan.pl/14Young/",
-          "redirects": [
-            {
-              "url": "https://bcc.impan.pl/14Young/",
-              "code": 308
-            }
-          ]
-        },
-        "span": {
-          "line": 5,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 732175450
-        }
-      },
-      {
-        "url": "https://www.facebook.com/knmtuwr",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "redirects": {
-          "origin": "https://www.facebook.com/knmtuwr",
-          "redirects": [
-            {
-              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fknmtuwr",
-              "code": 302
-            }
-          ]
-        },
-        "span": {
-          "line": 222,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 184241679
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-17-rusza-tutornia",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 256,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 614948908
-        }
-      },
-      {
-        "url": "https://www.impan.pl/en/activities/banach-center/conferences/22-19thworkshop",
-        "status": {
-          "text": "Rejected status code: 302 Found",
-          "code": 302
-        },
-        "redirects": {
-          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/22-19thworkshop",
-          "redirects": [
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            }
-          ]
-        },
-        "span": {
-          "line": 264,
-          "column": 10
-        },
-        "duration": {
-          "secs": 3,
-          "nanos": 270815112
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 237,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 241327340
-        }
-      },
-      {
-        "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-19thworkshop",
-        "status": {
-          "text": "Rejected status code: 302 Found",
-          "code": 302
-        },
-        "redirects": {
-          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/20-19thworkshop",
-          "redirects": [
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            }
-          ]
-        },
-        "span": {
-          "line": 261,
-          "column": 10
-        },
-        "duration": {
-          "secs": 3,
-          "nanos": 595271780
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 231,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 273994698
-        }
-      },
-      {
-        "url": "https://panda.pwr.edu.pl/",
-        "status": {
-          "text": "Rejected status code: 503 Service Unavailable",
-          "code": 503
-        },
-        "span": {
-          "line": 185,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 677511206
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 249,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 164742838
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 254,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 257393601
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 227,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 155126693
-        }
-      },
-      {
-        "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
-        "status": {
-          "text": "Rejected status code: 302 Found",
-          "code": 302
-        },
-        "redirects": {
-          "origin": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
-          "redirects": [
-            {
-              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
-              "code": 302
-            },
-            {
-              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
-              "code": 302
-            },
-            {
-              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
-              "code": 302
-            },
-            {
-              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
-              "code": 302
-            },
-            {
-              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
-              "code": 302
-            },
-            {
-              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
-              "code": 302
-            },
-            {
-              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
-              "code": 302
-            },
-            {
-              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
-              "code": 302
-            },
-            {
-              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
-              "code": 302
-            },
-            {
-              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
-              "code": 302
-            }
-          ]
-        },
-        "span": {
-          "line": 209,
-          "column": 10
-        },
-        "duration": {
-          "secs": 2,
-          "nanos": 769097336
-        }
-      },
-      {
-        "url": "http://bcc.impan.pl/13Levy/",
-        "status": {
-          "text": "Rejected status code: 502 Bad Gateway",
-          "code": 502
-        },
-        "redirects": {
-          "origin": "http://bcc.impan.pl/13Levy/",
-          "redirects": [
-            {
-              "url": "https://bcc.impan.pl/13Levy/",
-              "code": 308
-            }
-          ]
-        },
-        "span": {
-          "line": 3,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 724766740
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 234,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 238790390
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 241,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 579931110
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 252,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 486920970
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 238,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 109374784
-        }
-      },
-      {
-        "url": "http://www.impan.pl/~set_theory/dmvptm14/",
-        "status": {
-          "text": "Rejected status code: 403 Forbidden",
-          "code": 403
-        },
-        "redirects": {
-          "origin": "http://www.impan.pl/~set_theory/dmvptm14/",
-          "redirects": [
-            {
-              "url": "https://www.impan.pl/~set_theory/dmvptm14/",
-              "code": 308
-            }
-          ]
-        },
-        "span": {
-          "line": 26,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 983589550
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 225,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 107762935
-        }
-      },
-      {
-        "url": "https://erc.europa.eu/",
-        "status": {
-          "text": "Rejected status code: 403 Forbidden",
-          "code": 403
-        },
-        "span": {
-          "line": 162,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 234760623
-        }
-      },
-      {
-        "url": "https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=harezlak",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "span": {
-          "line": 190,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 333374000
-        }
-      },
-      {
-        "url": "http://magweb.math.uni.wroc.pl/analiza/bedlewo17/",
-        "status": {
-          "text": "Network error: Connection failed. Check network connectivity and firewall settings (error sending request for url (http://magweb.math.uni.wroc.pl/analiza/bedlewo17/))",
-          "details": "Connection failed. Check network connectivity and firewall settings"
-        },
-        "span": {
-          "line": 12,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 391770095
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 245,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 500248677
-        }
-      },
-      {
-        "url": "http://bcc.impan.pl/16PAHA/",
-        "status": {
-          "text": "Rejected status code: 502 Bad Gateway",
-          "code": 502
-        },
-        "redirects": {
-          "origin": "http://bcc.impan.pl/16PAHA/",
-          "redirects": [
-            {
-              "url": "https://bcc.impan.pl/16PAHA/",
-              "code": 308
-            }
-          ]
-        },
-        "span": {
-          "line": 6,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 738291217
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 255,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 233325475
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 229,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 149225727
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 236,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 236929550
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/wizualizacja.pdf",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "redirects": {
-          "origin": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/wizualizacja.pdf",
-          "redirects": [
-            {
-              "url": "https://dbura.math.uni.wroc.pl/dydaktyka/wizualizacja.pdf",
-              "code": 301
-            }
-          ]
-        },
-        "span": {
-          "line": 50,
-          "column": 10
-        },
-        "duration": {
-          "secs": 2,
-          "nanos": 370888627
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 246,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 223082663
-        }
-      },
-      {
-        "url": "https://www.facebook.com/IMUWr",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "redirects": {
-          "origin": "https://www.facebook.com/IMUWr",
-          "redirects": [
-            {
-              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIMUWr",
-              "code": 302
-            }
-          ]
-        },
-        "span": {
           "line": 219,
           "column": 10
         },
         "duration": {
-          "secs": 0,
-          "nanos": 262191997
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "redirects": {
-          "origin": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf",
-          "redirects": [
-            {
-              "url": "https://dbura.math.uni.wroc.pl/dydaktyka/random_walks.pdf",
-              "code": 301
-            }
-          ]
-        },
-        "span": {
-          "line": 49,
-          "column": 10
-        },
-        "duration": {
-          "secs": 2,
-          "nanos": 208730148
-        }
-      },
-      {
-        "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
-        "status": {
-          "text": "Rejected status code: 302 Found",
-          "code": 302
-        },
-        "redirects": {
-          "origin": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
-          "redirects": [
-            {
-              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
-              "code": 302
-            },
-            {
-              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
-              "code": 302
-            },
-            {
-              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
-              "code": 302
-            },
-            {
-              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
-              "code": 302
-            },
-            {
-              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
-              "code": 302
-            },
-            {
-              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
-              "code": 302
-            },
-            {
-              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
-              "code": 302
-            },
-            {
-              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
-              "code": 302
-            },
-            {
-              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
-              "code": 302
-            },
-            {
-              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
-              "code": 302
-            }
-          ]
-        },
-        "span": {
-          "line": 210,
-          "column": 10
-        },
-        "duration": {
-          "secs": 2,
-          "nanos": 695690743
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/ivmrt2014",
-        "status": {
-          "text": "Rejected status code: 403 Forbidden",
-          "code": 403
-        },
-        "redirects": {
-          "origin": "http://www.math.uni.wroc.pl/ivmrt2014",
-          "redirects": [
-            {
-              "url": "http://www.math.uni.wroc.pl/ivmrt2014/",
-              "code": 301
-            }
-          ]
-        },
-        "span": {
-          "line": 33,
-          "column": 10
-        },
-        "duration": {
           "secs": 3,
-          "nanos": 703220115
-        }
-      },
-      {
-        "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-workshop18",
-        "status": {
-          "text": "Rejected status code: 302 Found",
-          "code": 302
-        },
-        "redirects": {
-          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/18-workshop18",
-          "redirects": [
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            }
-          ]
-        },
-        "span": {
-          "line": 260,
-          "column": 10
-        },
-        "duration": {
-          "secs": 3,
-          "nanos": 399608377
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/mathbank/preprinty/index.php",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "span": {
-          "line": 34,
-          "column": 10
-        },
-        "duration": {
-          "secs": 2,
-          "nanos": 766592745
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 240,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 263890001
-        }
-      },
-      {
-        "url": "https://www.facebook.com/WRSSWMI/",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "redirects": {
-          "origin": "https://www.facebook.com/WRSSWMI/",
-          "redirects": [
-            {
-              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FWRSSWMI%2F",
-              "code": 302
-            }
-          ]
-        },
-        "span": {
-          "line": 221,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 155215330
-        }
-      },
-      {
-        "url": "https://www.facebook.com/KNZM.UWr/",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "redirects": {
-          "origin": "https://www.facebook.com/KNZM.UWr/",
-          "redirects": [
-            {
-              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FKNZM.UWr%2F",
-              "code": 302
-            }
-          ]
-        },
-        "span": {
-          "line": 220,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 258195431
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 248,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 140492584
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "redirects": {
-          "origin": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/fundacja8.pdf",
-          "redirects": [
-            {
-              "url": "https://dbura.math.uni.wroc.pl/dydaktyka/fundacja8.pdf",
-              "code": 301
-            }
-          ]
-        },
-        "span": {
-          "line": 48,
-          "column": 10
-        },
-        "duration": {
-          "secs": 2,
-          "nanos": 457508573
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/~grzes/dydaktyka13_14/fr_main.pdf",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "span": {
-          "line": 65,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 355612522
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 251,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 799834553
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 243,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 870710509
-        }
-      },
-      {
-        "url": "http://www.impan.pl/~set_theory/Workshop2013/",
-        "status": {
-          "text": "Rejected status code: 403 Forbidden",
-          "code": 403
-        },
-        "redirects": {
-          "origin": "http://www.impan.pl/~set_theory/Workshop2013/",
-          "redirects": [
-            {
-              "url": "https://www.impan.pl/~set_theory/Workshop2013/",
-              "code": 308
-            }
-          ]
-        },
-        "span": {
-          "line": 25,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 150300055
-        }
-      },
-      {
-        "url": "https://www.ptm.org.pl/konkursy/wyklady-im-waclawa-sierpinskiego",
-        "status": {
-          "text": "Rejected status code: 503 Service Unavailable",
-          "code": 503
-        },
-        "span": {
-          "line": 441,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 110976532
-        }
-      },
-      {
-        "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-paha",
-        "status": {
-          "text": "Rejected status code: 302 Found",
-          "code": 302
-        },
-        "redirects": {
-          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/18-paha",
-          "redirects": [
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            },
-            {
-              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
-              "code": 302
-            }
-          ]
-        },
-        "span": {
-          "line": 259,
-          "column": 10
-        },
-        "duration": {
-          "secs": 3,
-          "nanos": 415535707
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 247,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 718880053
-        }
-      },
-      {
-        "url": "http://www.math.uni.wroc.pl/~stanczr/semin/semin.html",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "span": {
-          "line": 120,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 400733950
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 244,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 356542665
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-17-rusza-tutornia",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 239,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 308381416
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 232,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 148217124
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 228,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 169092167
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 233,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 167671895
-        }
-      },
-      {
-        "url": "https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku",
-        "status": {
-          "text": "Rejected status code: 400 Bad Request",
-          "code": 400
-        },
-        "span": {
-          "line": 253,
-          "column": 10
-        },
-        "duration": {
-          "secs": 0,
-          "nanos": 629085019
-        }
-      },
-      {
-        "url": "http://math.uni.wroc.pl/~nadav",
-        "status": {
-          "text": "Rejected status code: 404 Not Found",
-          "code": 404
-        },
-        "span": {
-          "line": 18,
-          "column": 10
-        },
-        "duration": {
-          "secs": 1,
-          "nanos": 97625604
+          "nanos": 567202247
         }
       },
       {
@@ -1643,12 +287,858 @@
           ]
         },
         "span": {
-          "line": 258,
+          "line": 215,
           "column": 10
         },
         "duration": {
           "secs": 3,
-          "nanos": 246515314
+          "nanos": 549529225
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-paha",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/18-paha",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 216,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 519360525
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~jdziuban/fourier.pdf",
+          "redirects": [
+            {
+              "url": "https://jdziuban.math.uni.wroc.pl/fourier.pdf",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 71,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 322938117
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/18-workshop18",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/18-workshop18",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 217,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 698827700
+        }
+      },
+      {
+        "url": "http://math.uni.wroc.pl/~nadav",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 18,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 22078914
+        }
+      },
+      {
+        "url": "https://www.facebook.com/IMUWr",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "redirects": {
+          "origin": "https://www.facebook.com/IMUWr",
+          "redirects": [
+            {
+              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FIMUWr",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 210,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 234549826
+        }
+      },
+      {
+        "url": "http://bcc.impan.pl/14PAHA/",
+        "status": {
+          "text": "Rejected status code: 502 Bad Gateway",
+          "code": 502
+        },
+        "redirects": {
+          "origin": "http://bcc.impan.pl/14PAHA/",
+          "redirects": [
+            {
+              "url": "https://bcc.impan.pl/14PAHA/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 4,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 724094588
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/22-19thworkshop",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/22-19thworkshop",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 221,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 595431589
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/random_walks.pdf",
+          "redirects": [
+            {
+              "url": "https://dbura.math.uni.wroc.pl/dydaktyka/random_walks.pdf",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 49,
+          "column": 10
+        },
+        "duration": {
+          "secs": 2,
+          "nanos": 501773001
+        }
+      },
+      {
+        "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+          "redirects": [
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dnews%2Frejestracje%2FrejJednostki%26jed_org_kod%3D28&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=news/rejestracje/rejJednostki&jed_org_kod=28",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 201,
+          "column": 10
+        },
+        "duration": {
+          "secs": 2,
+          "nanos": 536448936
+        }
+      },
+      {
+        "url": "https://www.ptm.org.pl/konkursy/wyklady-im-waclawa-sierpinskiego",
+        "status": {
+          "text": "Rejected status code: 503 Service Unavailable",
+          "code": 503
+        },
+        "span": {
+          "line": 398,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 868589241
+        }
+      },
+      {
+        "url": "https://www.facebook.com/knmtuwr",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "redirects": {
+          "origin": "https://www.facebook.com/knmtuwr",
+          "redirects": [
+            {
+              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2Fknmtuwr",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 213,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 295787289
+        }
+      },
+      {
+        "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+          "redirects": [
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+              "code": 302
+            },
+            {
+              "url": "https://login.usos.uwr.edu.pl/cas/login?service=https%3A%2F%2Fusosweb.uwr.edu.pl%2Fkontroler.php%3F_action%3Dkatalog2%252Fprzedmioty%252FszukajPrzedmiotu%26_pattern%3D%26_prz_kod_pattern%3D28-MT&locale=pl&gateway=true",
+              "code": 302
+            },
+            {
+              "url": "https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 200,
+          "column": 10
+        },
+        "duration": {
+          "secs": 2,
+          "nanos": 579232922
+        }
+      },
+      {
+        "url": "http://www.impan.pl/~set_theory/Workshop2013/",
+        "status": {
+          "text": "Rejected status code: 403 Forbidden",
+          "code": 403
+        },
+        "redirects": {
+          "origin": "http://www.impan.pl/~set_theory/Workshop2013/",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/~set_theory/Workshop2013/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 25,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 327498566
+        }
+      },
+      {
+        "url": "http://bcc.impan.pl/16PAHA/",
+        "status": {
+          "text": "Rejected status code: 502 Bad Gateway",
+          "code": 502
+        },
+        "redirects": {
+          "origin": "http://bcc.impan.pl/16PAHA/",
+          "redirects": [
+            {
+              "url": "https://bcc.impan.pl/16PAHA/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 6,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 729383763
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~karch/pattern/",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~karch/pattern/",
+          "redirects": [
+            {
+              "url": "https://karch.math.uni.wroc.pl/pattern/",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 77,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 819143528
+        }
+      },
+      {
+        "url": "https://www.facebook.com/KNZM.UWr/",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "redirects": {
+          "origin": "https://www.facebook.com/KNZM.UWr/",
+          "redirects": [
+            {
+              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FKNZM.UWr%2F",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 211,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 227260046
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/wizualizacja.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~dbura/dydaktyka/wizualizacja.pdf",
+          "redirects": [
+            {
+              "url": "https://dbura.math.uni.wroc.pl/dydaktyka/wizualizacja.pdf",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 50,
+          "column": 10
+        },
+        "duration": {
+          "secs": 2,
+          "nanos": 460615941
+        }
+      },
+      {
+        "url": "https://publichealth.indiana.edu/research/faculty-directory/profile.html?user=harezlak",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 181,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 396857197
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/ivmrt2014",
+        "status": {
+          "text": "Rejected status code: 403 Forbidden",
+          "code": 403
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/ivmrt2014",
+          "redirects": [
+            {
+              "url": "http://www.math.uni.wroc.pl/ivmrt2014/",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 33,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 658523908
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "redirects": {
+          "origin": "http://www.math.uni.wroc.pl/~jdziuban/calki.pdf",
+          "redirects": [
+            {
+              "url": "https://jdziuban.math.uni.wroc.pl/calki.pdf",
+              "code": 301
+            }
+          ]
+        },
+        "span": {
+          "line": 70,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 85541457
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-19thworkshop",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/20-19thworkshop",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 218,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 672499184
+        }
+      },
+      {
+        "url": "https://www.facebook.com/WRSSWMI/",
+        "status": {
+          "text": "Rejected status code: 400 Bad Request",
+          "code": 400
+        },
+        "redirects": {
+          "origin": "https://www.facebook.com/WRSSWMI/",
+          "redirects": [
+            {
+              "url": "https://www.facebook.com/login/?next=https%3A%2F%2Fwww.facebook.com%2FWRSSWMI%2F",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 212,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 243165597
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/mathbank/preprinty/index.php",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 34,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 493015826
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~grzes/dydaktyka13_14/fr_main.pdf",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 65,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 435714427
+        }
+      },
+      {
+        "url": "http://www.math.uni.wroc.pl/~stanczr/semin/semin.html",
+        "status": {
+          "text": "Rejected status code: 404 Not Found",
+          "code": 404
+        },
+        "span": {
+          "line": 120,
+          "column": 10
+        },
+        "duration": {
+          "secs": 0,
+          "nanos": 401536937
+        }
+      },
+      {
+        "url": "https://www.impan.pl/en/activities/banach-center/conferences/20-random",
+        "status": {
+          "text": "Rejected status code: 302 Found",
+          "code": 302
+        },
+        "redirects": {
+          "origin": "https://www.impan.pl/en/activities/banach-center/conferences/20-random",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            },
+            {
+              "url": "https://www.impan.pl/en/activities/banach-center/conferences/404.html",
+              "code": 302
+            }
+          ]
+        },
+        "span": {
+          "line": 220,
+          "column": 10
+        },
+        "duration": {
+          "secs": 3,
+          "nanos": 867100357
+        }
+      },
+      {
+        "url": "http://www.impan.pl/~set_theory/dmvptm14/",
+        "status": {
+          "text": "Rejected status code: 403 Forbidden",
+          "code": 403
+        },
+        "redirects": {
+          "origin": "http://www.impan.pl/~set_theory/dmvptm14/",
+          "redirects": [
+            {
+              "url": "https://www.impan.pl/~set_theory/dmvptm14/",
+              "code": 308
+            }
+          ]
+        },
+        "span": {
+          "line": 26,
+          "column": 10
+        },
+        "duration": {
+          "secs": 1,
+          "nanos": 321116313
         }
       }
     ]
@@ -1667,7 +1157,7 @@
         },
         "duration": {
           "secs": 42,
-          "nanos": 6213026
+          "nanos": 6858451
         }
       },
       {
@@ -1682,7 +1172,7 @@
         },
         "duration": {
           "secs": 42,
-          "nanos": 49684340
+          "nanos": 6319498
         }
       }
     ]
@@ -1691,8 +1181,8 @@
   "redirect_map": {},
   "excluded_map": {},
   "duration": {
-    "secs": 66,
-    "nanos": 809054673
+    "secs": 62,
+    "nanos": 569150081
   },
   "detailed_stats": false
 }

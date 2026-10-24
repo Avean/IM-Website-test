@@ -1,6 +1,6 @@
 # Raport kontroli jakości
 
-Gałąź `qa-1`, commit `fa71c8e`, przebieg https://github.com/Avean/IM-Website-test/actions/runs/40107883086
+Gałąź `qa-1`, commit `d76f0f3`, przebieg https://github.com/Avean/IM-Website-test/actions/runs/40108257806
 
 Strony HTML: 259, linki: 29057.
 
@@ -17,7 +17,7 @@ Brak zepsutych linków wewnętrznych.
 
 ## 2. Linki zewnętrzne (ostrzeżenia)
 
-Sprawdzono 443 adresów. Zepsute: 14, niepewne (403/429/5xx/timeout): 60. lychee: `{"total": 443, "successful": 369, "errors": 72, "excludes": 0, "timeouts": 2, "unknown": 0, "redirects": 92}` (kod 2)
+Sprawdzono 400 adresów. Zepsute: 14, niepewne (403/429/5xx/timeout): 26. lychee: `{"total": 400, "successful": 360, "errors": 38, "excludes": 0, "timeouts": 2, "unknown": 0, "redirects": 83}` (kod 2)
 
 ### Zepsute
 
@@ -68,40 +68,6 @@ Sprawdzono 443 adresów. Zepsute: 14, niepewne (403/429/5xx/timeout): 60. lychee
 | 400 | https://www.facebook.com/WRSSWMI/ | 2: /en/studia/sprawy-studenckie/, /studia/sprawy-studenckie/ |
 | 400 | https://www.facebook.com/knmtuwr | 2: /en/studia/sprawy-studenckie/, /studia/sprawy-studenckie/ |
 | 503 | https://www.ptm.org.pl/konkursy/wyklady-im-waclawa-sierpinskiego | 2: /aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/, /en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki | 1: /aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta | 1: /aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego | 1: /aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award | 1: /aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki | 1: /aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza | 1: /aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne | 1: /aktualnosci/2026-06-09-ankiety-ewaluacyjne/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego | 1: /aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe | 1: /aktualnosci/2026-06-16-seminarium-wydzialowe/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki | 1: /aktualnosci/2026-06-19-seminarium-ze-statystyki/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon | 1: /aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus | 1: /aktualnosci/2026-08-03-kategoria-naukowa-a-plus/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza | 1: /aktualnosci/2026-09-10-wyklad-prof-uwe-franza/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku | 1: /aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow | 1: /aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku | 1: /aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Faktualnosci%2F2026-10-17-rusza-tutornia | 1: /aktualnosci/2026-10-17-rusza-tutornia/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-25-zmiany-w-regulaminie-biblioteki | 1: /en/aktualnosci/2026-04-25-zmiany-w-regulaminie-biblioteki/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-04-30-konkurs-na-stypendium-dla-doktoranta | 1: /en/aktualnosci/2026-04-30-konkurs-na-stypendium-dla-doktoranta/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego | 1: /en/aktualnosci/2026-05-21-nagroda-kuratowskiego-dla-macieja-kucharskiego/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-22-mirek-i-wrobel-frontiers-of-science-award | 1: /en/aktualnosci/2026-05-22-mirek-i-wrobel-frontiers-of-science-award/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki | 1: /en/aktualnosci/2026-05-29-lvzhou-chen-laureatem-nagrody-im-kamila-duszenki/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza | 1: /en/aktualnosci/2026-05-29-medal-sierpinskiego-dla-prof-tadeusza-januszkiewicza/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-09-ankiety-ewaluacyjne | 1: /en/aktualnosci/2026-06-09-ankiety-ewaluacyjne/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-nagroda-im-andrzeja-hulanickiego | 1: /en/aktualnosci/2026-06-16-nagroda-im-andrzeja-hulanickiego/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-16-seminarium-wydzialowe | 1: /en/aktualnosci/2026-06-16-seminarium-wydzialowe/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-06-19-seminarium-ze-statystyki | 1: /en/aktualnosci/2026-06-19-seminarium-ze-statystyki/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-07-14-szkola-baby-steps-beyond-the-horizon | 1: /en/aktualnosci/2026-07-14-szkola-baby-steps-beyond-the-horizon/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-08-03-kategoria-naukowa-a-plus | 1: /en/aktualnosci/2026-08-03-kategoria-naukowa-a-plus/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-10-wyklad-prof-uwe-franza | 1: /en/aktualnosci/2026-09-10-wyklad-prof-uwe-franza/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-20-kurs-dla-studentow-pierwszego-roku | 1: /en/aktualnosci/2026-09-20-kurs-dla-studentow-pierwszego-roku/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-09-23-2-kongres-mlodych-odkrywcow | 1: /en/aktualnosci/2026-09-23-2-kongres-mlodych-odkrywcow/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-01-witamy-studentow-pierwszego-roku | 1: /en/aktualnosci/2026-10-01-witamy-studentow-pierwszego-roku/ |
-| 400 | https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A8080%2Fen%2Faktualnosci%2F2026-10-17-rusza-tutornia | 1: /en/aktualnosci/2026-10-17-rusza-tutornia/ |
 
 ## 3. Dług migracyjny — linki do math.uni.wroc.pl
 
@@ -109,16 +75,16 @@ Sprawdzono 443 adresów. Zepsute: 14, niepewne (403/429/5xx/timeout): 60. lychee
 |---|---|---|---|---|
 | wszystko | **razem** | 2893 | 287 | 259 |
 | wszystko | pliki | 226 | 111 | 36 |
-| wszystko | strony | 1769 | 67 | 259 |
-| wszystko | strony domowe (~) | 898 | 109 | 259 |
+| wszystko | strony | 1689 | 44 | 259 |
+| wszystko | strony domowe (~, /users/) | 978 | 132 | 259 |
 | w treści (PL+EN) | **razem** | 782 | 283 | 102 |
 | w treści (PL+EN) | pliki | 226 | 111 | 36 |
-| w treści (PL+EN) | strony | 176 | 64 | 52 |
-| w treści (PL+EN) | strony domowe (~) | 380 | 108 | 56 |
+| w treści (PL+EN) | strony | 96 | 41 | 36 |
+| w treści (PL+EN) | strony domowe (~, /users/) | 460 | 131 | 56 |
 | w treści, tylko PL | **razem** | 391 | 283 | 51 |
 | w treści, tylko PL | pliki | 113 | 111 | 18 |
-| w treści, tylko PL | strony | 88 | 64 | 26 |
-| w treści, tylko PL | strony domowe (~) | 190 | 108 | 28 |
+| w treści, tylko PL | strony | 48 | 41 | 18 |
+| w treści, tylko PL | strony domowe (~, /users/) | 230 | 131 | 28 |
 
 W szablonie (menu/stopka, na ≥50% stron): http://www.math.uni.wroc.pl/~jwr/trapez/, https://www.math.uni.wroc.pl/, https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php, https://www.math.uni.wroc.pl/sukcesy
 
@@ -172,8 +138,10 @@ Przetestowano 47 adresów, problemów: 67, reguł: 4.
 **[axe] color-contrast** — Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)
 - `/` `#tresc > section:nth-child(1) > figure > figcaption` — Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)
   - `<figcaption>Fot. fotopolska.eu</figcaption>`
+  - kontrast: NIE potwierdzone ponownym pomiarem axe-core po pełnym załadowaniu (prawdopodobnie fałszywy alarm — sprawdzić ręcznie)
 - `/` `#h1-glowna` — Elements must meet minimum color contrast ratio thresholds (https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=axeAPI)
   - `<h1 id="h1-glowna">Instytut Matematyczny</h1>`
+  - kontrast: NIE potwierdzone ponownym pomiarem axe-core po pełnym załadowaniu (prawdopodobnie fałszywy alarm — sprawdzić ręcznie)
 
 **[axe] label-title-only** — Form elements should have a visible label (https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=axeAPI)
 - `/szukaj/` `#szukajka > div > form > input` — Form elements should have a visible label (https://dequeuniversity.com/rules/axe/4.11/label-title-only?application=axeAPI)
