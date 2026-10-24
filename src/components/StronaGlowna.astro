@@ -19,7 +19,7 @@ interface Props { lang: Lang }
 const { lang } = Astro.props;
 const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
 // Kafelek „Na skróty” z tym adresem pokazuje dzisiejszy kolor dnia (KafelekKoloryDni).
-const KOLORY_DNI = '/studia/kalendarz-zajec';
+const KOLORY_DNI = '/studia/rok-akademicki';
 
 // Wydarzenia tylko, gdy są blisko (domyślnie 5 dni roboczych przed początkiem) — inaczej sekcji nie ma.
 const dniWydarzen = Number((ustawienia as any).wydarzenia_dni_robocze ?? 5) || 5;

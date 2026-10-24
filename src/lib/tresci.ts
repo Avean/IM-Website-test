@@ -1,7 +1,7 @@
 // Wspólne zapytania do treści: aktualności, wydarzenia, seminaria, obrony.
 import { getCollection, type CollectionEntry } from 'astro:content';
 import { now, today, weekRange, weekday, addDays, hasTime, plusMinutes, type Lang } from './daty';
-import { swietaPanstwowe } from './kolory-dni';
+import { swietaPanstwowe, pozycjeZamianDni } from './kolory-dni';
 
 export type Aktualnosc = CollectionEntry<'aktualnosci'>;
 export type Obrona = CollectionEntry<'obrony'>;
@@ -244,6 +244,8 @@ export interface PozycjaListy {
   wydarzenie?: string;
   wyroznij_do?: string;
   id: string;
+  // pilne = automatyczne ogłoszenie o zamianie dni (src/lib/kolory-dni.ts) — na stronie głównej zawsze na górze
+  pilne?: boolean;
 }
 
 export async function listaAktualnosci(lang: Lang = 'pl'): Promise<PozycjaListy[]> {
@@ -261,6 +263,8 @@ export async function listaAktualnosci(lang: Lang = 'pl'): Promise<PozycjaListy[
       zajawka: o.data.tytul_rozprawy, dla: [], href: `/obrony-doktorskie/${slugOf(o.id)}`, wydarzenie: o.data.termin, id: `obr-${slugOf(o.id)}`,
     });
   }
+  // Ogłoszenia o zamianach dni z src/data/kolory-dni.json — tylko od N dni roboczych przed zamianą do dnia zamiany.
+  items.push(...pozycjeZamianDni(lang, today()));
   return items.sort((a, b) => (a.data < b.data ? 1 : a.data > b.data ? -1 : 0));
 }
 
@@ -269,10 +273,11 @@ export async function aktualnosciNaGlowna(limit = 6, lang: Lang = 'pl', wNajbliz
   const lista = await listaAktualnosci(lang);
   const pominiete = new Set(wNajblizszych);
   const d = today();
-  const wyroznione = lista.filter((p) => p.wyroznij_do && p.wyroznij_do >= d);
-  const reszta = lista.filter((p) => !(p.wyroznij_do && p.wyroznij_do >= d) && !pominiete.has(p.href));
+  const pilne = lista.filter((p) => p.pilne);
+  const wyroznione = lista.filter((p) => !p.pilne && p.wyroznij_do && p.wyroznij_do >= d);
+  const reszta = lista.filter((p) => !p.pilne && !(p.wyroznij_do && p.wyroznij_do >= d) && !pominiete.has(p.href));
   // obrony doktorskie na dalszym planie: po zwykłych aktualnościach
-  return [...wyroznione, ...reszta.filter((p) => p.rodzaj !== 'obrona'), ...reszta.filter((p) => p.rodzaj === 'obrona')].slice(0, limit);
+  return [...pilne, ...wyroznione, ...reszta.filter((p) => p.rodzaj !== 'obrona'), ...reszta.filter((p) => p.rodzaj === 'obrona')].slice(0, limit);
 }
 
 export async function wyroznionaAktualnosc(lang: Lang = 'pl'): Promise<PozycjaListy | undefined> {

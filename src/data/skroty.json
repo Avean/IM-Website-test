@@ -1,9 +1,8 @@
 {
   "kafelki": [
     { "etykieta": "Plan zajęć", "etykieta_en": "Timetable", "adres": "/studia/plan-zajec", "ikona": "kalendarz" },
-    { "etykieta": "Kalendarz zajęć", "etykieta_en": "Class calendar", "adres": "/studia/kalendarz-zajec", "ikona": "kalendarz" },
+    { "etykieta": "Kalendarz zajęć", "etykieta_en": "Class calendar", "adres": "/studia/rok-akademicki", "ikona": "kalendarz" },
     { "etykieta": "Pracownicy", "etykieta_en": "Staff", "adres": "/pracownicy", "ikona": "ludzie" },
-    { "etykieta": "Seminaria", "etykieta_en": "Seminars", "adres": "/seminaria", "ikona": "tablica" },
-    { "etykieta": "Terminy", "etykieta_en": "Key dates", "adres": "/studia/rok-akademicki", "ikona": "flaga" }
+    { "etykieta": "Seminaria", "etykieta_en": "Seminars", "adres": "/seminaria", "ikona": "tablica" }
   ]
 }

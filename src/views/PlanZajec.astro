@@ -2,19 +2,24 @@
 // Plan zajęć Instytutu: /studia/plan-zajec (EN: /en/studia/plan-zajec).
 // Układ jak dawny plan math.uni.wroc.pl/studia/plany_zajec/planZ.php i planL.php: alfabetyczna lista przedmiotów
 // w tych samych sekcjach (O, L, M, E, S, H, N, NP, pozostałe), przy przedmiocie grupy, typ, prowadzący, termin, sala, uwagi.
-// Strona statyczna (bez JavaScriptu); oba semestry jeden pod drugim (kotwice #zimowy i #letni).
+// Semestry przełączane pigułkami (PrzelacznikSemestrow.astro; domyślnie wg daty, #zimowy / #letni w adresie otwiera
+// właściwy semestr); bez JavaScriptu oba semestry jeden pod drugim. Prawy pasek: spis sekcji przedmiotów aktywnego
+// semestru z podświetleniem widocznej sekcji (SpisTresci.astro; kotwice #zimowy-o, #letni-l …), na węższych ekranach zwinięty nad planem.
 // Dane: src/data/plan/plan.json — pobierane automatycznie z USOS (anonimowo) przez skrypty/plan/pobierz_plan.py,
 // uruchamiany przez workflow .github/workflows/plan-zajec.yml kilka razy dziennie. Danych nie edytuje się ręcznie.
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
+import PrzelacznikSemestrow from '../components/PrzelacznikSemestrow.astro';
+import SpisTresci from '../components/SpisTresci.astro';
+import { wybierzSemestr } from '../components/wyborSemestru';
 import surowe from '../data/plan/plan.json';
-import type { Lang } from '../lib/daty';
+import { today, type Lang } from '../lib/daty';
 import '../styles/plan.css';
 
 type Fragm = string | { t: string; a: string };
 interface Zajecie { kod: string; typ: string; grupa?: number | string; prowadzacy?: string[]; dzien?: number; od?: string; do?: string; czestotliwosc?: string; sala?: string; uwagi?: Fragm[] }
 interface Przedmiot { kod: string; nazwa: string; nazwa_en?: string; kategoria: string; usos: string }
-interface Semestr { id: string; nazwa: string; nazwa_en?: string; zaktualizowano?: string | null; przedmioty: Przedmiot[]; zajecia: Zajecie[] }
+interface Semestr { id: string; nazwa: string; nazwa_en?: string; od?: string | null; do?: string | null; zaktualizowano?: string | null; przedmioty: Przedmiot[]; zajecia: Zajecie[] }
 interface Dane { semestry?: Semestr[]; typy?: Record<string, { pl: string; en: string }>; kategorie?: { id: string; pl: string; en: string }[] }
 
 interface Props { lang: Lang }
@@ -87,30 +92,33 @@ const semestry = (dane.semestry || []).map((s) => {
         .map((p) => ({ ...p, nazwaW: (en && p.nazwa_en) || p.nazwa, zajecia: s.zajecia.filter((z) => z.kod === p.kod) })),
     }))
     .filter((k) => k.przedmioty.length);
-  return { s, kotwica: m ? (zimowy ? 'zimowy' : 'letni') : s.id.replace(/[^\w-]/g, '-'), krotko: (en && s.nazwa_en) || s.nazwa, tytul, sekcje };
+  const kotwica = m ? (zimowy ? 'zimowy' : 'letni') : s.id.replace(/[^\w-]/g, '-');
+  // kotwice sekcji: #zimowy-o, #letni-np … (nie kolidują z #zimowy / #letni)
+  const spis = sekcje.map((k) => ({ depth: 2, slug: `${kotwica}-${k.id.toLowerCase().replace(/[^\w-]/g, '-')}`, text: k.nazwa }));
+  return { s, kotwica, krotko: (en && s.nazwa_en) || s.nazwa, tytul, sekcje, spis };
 });
+// Przełącznik semestrów: wybór podczas budowania (w przeglądarce poprawiany wg daty i adresu).
+const wiele = semestry.length > 1;
+const aktywny = semestry[wybierzSemestr(semestry.map((x) => ({ od: x.s.od, do: x.s.do })), today())]?.kotwica ?? '';
 // identyfikatory nagłówków przedmiotów (do aria-labelledby tabel)
 let licznik = 0;
 const idPrzedmiotu = () => `pz-p${++licznik}`;
 ---
 <Baza tytul={T.tytul} opis={T.lead}>
-  <NaglowekStrony tytul={T.tytul} lead={T.lead} lang={lang} okruszki={[{ etykieta: en ? 'Study' : 'Studia', adres: '/studia' }, { etykieta: T.tytul }]}>
-    {semestry.length > 1 && (
-      <nav class="pz-semestry" aria-label={en ? 'Semesters' : 'Semestry'}>
-        {semestry.map((x) => <a class="chip" href={`#${x.kotwica}`}>{x.krotko}</a>)}
-      </nav>
-    )}
-  </NaglowekStrony>
+  <NaglowekStrony tytul={T.tytul} lead={T.lead} lang={lang} okruszki={[{ etykieta: en ? 'Study' : 'Studia', adres: '/studia' }, { etykieta: T.tytul }]} />
 
-  <div class="wrap plan-strona" style="padding-top:20px;padding-bottom:64px">
+  <div class="wrap layout plan-strona">
+    <div class="main">
     {semestry.length === 0 && <p class="pz-stan">{T.brak}</p>}
+    <PrzelacznikSemestrow semestry={semestry.map((x) => ({ id: x.kotwica, etykieta: x.krotko, od: x.s.od, do: x.s.do }))} aktywny={aktywny} lang={lang} etykieta={en ? 'Semesters' : 'Semestry'} />
     {semestry.map((x) => (
-      <section class="pz-semestr" id={x.kotwica}>
+      <section class="pz-semestr" id={x.kotwica} data-ps-panel={wiele ? '' : undefined} data-ps-aktywny={wiele && x.kotwica === aktywny ? '' : undefined}>
         <h2>{x.tytul}</h2>
         {x.s.zaktualizowano && <p class="pz-data">{T.aktualizacja}: {dataGodzina(x.s.zaktualizowano)}</p>}
         <ul class="pz-uwagi-ogolne">
           {T.uwagiOgolne.map((u) => <li>{u}</li>)}
         </ul>
+        <SpisTresci naglowki={x.spis} lang={lang} wariant="gora" />
         {x.sekcje.length === 0 && <p class="pz-stan">{T.brakSem}</p>}
         {x.sekcje.length > 0 && (
           <table class="pz-tabela pz-naglowek" aria-hidden="true">
@@ -118,9 +126,9 @@ const idPrzedmiotu = () => `pz-p${++licznik}`;
             <thead><tr><th>{T.kol.gr}</th><th>{T.kol.typ}</th><th>{T.kol.prow}</th><th>{T.kol.dzien}</th><th>{T.kol.godz}</th><th>{T.kol.sala}</th><th>{T.kol.uwagi}</th></tr></thead>
           </table>
         )}
-        {x.sekcje.map((k) => (
+        {x.sekcje.map((k, ki) => (
           <div class="pz-sekcja">
-            <h3>{k.nazwa}</h3>
+            <h3 id={x.spis[ki].slug}>{k.nazwa}</h3>
             {k.przedmioty.map((p) => {
               const id = idPrzedmiotu();
               return (
@@ -159,5 +167,16 @@ const idPrzedmiotu = () => `pz-p${++licznik}`;
       </section>
     ))}
     {semestry.length > 0 && <p class="pz-zrodlo">{T.zrodlo}</p>}
+    </div>
+
+    {semestry.some((x) => x.spis.length > 1) && (
+      <aside class="side pz-bok" data-pagefind-ignore>
+        {semestry.map((x) => (
+          <div class="pz-spis" data-ps-dla={wiele ? x.kotwica : undefined} data-ps-aktywny={wiele && x.kotwica === aktywny ? '' : undefined}>
+            <SpisTresci naglowki={x.spis} lang={lang} wariant="bok" />
+          </div>
+        ))}
+      </aside>
+    )}
   </div>
 </Baza>
