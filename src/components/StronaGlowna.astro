@@ -48,29 +48,17 @@ const kafelki = [
 ];
 ---
 <Baza tytul={t(lang, 'instytut')} stronaGlowna>
-  <section aria-labelledby="h1-glowna">
-    {baner.zdjecie && (
-      <figure class="hero-fig">
-        <img
-          src={u(baner.zdjecie)}
-          srcset={(baner as any).zdjecie_male ? `${u((baner as any).zdjecie_male)} 1200w, ${u(baner.zdjecie)} 2400w` : undefined}
-          sizes="100vw"
-          alt={baner.opis}
-          style={`object-position:${baner.kadr || 'center'}`}
-          fetchpriority="high"
-        />
-        {baner.podpis && <figcaption>{baner.podpis}</figcaption>}
-      </figure>
-    )}
-    <div class="wrap">
-      <div class="hero-card" style={baner.zdjecie ? undefined : 'margin-top:32px'}>
+  {/* Baner: granatowy pas — tekst z lewej, zdjęcie w ramce z prawej (na telefonie pod tekstem). Style: global.css, „baner (strona główna)”. */}
+  <section class:list={['hero', { 'hero-bez-zdjecia': !baner.zdjecie }]} aria-labelledby="h1-glowna">
+    <div class="wrap hero-in">
+      <div class="hero-txt">
         {wyrozniona && (
           <a class="hero-flag" href={href(wyrozniona.href)}>{wyrozniona.tytul}<Ikona nazwa="strzalka" rozmiar={15} /></a>
         )}
         <span class="hero-logo" role="img" aria-label={t(lang, 'uwr')} style={`--logo-pelne:url(${u('/pliki/uwr-logo.png')})`}></span>
         <h1 id="h1-glowna">{t(lang, 'instytut')}</h1>
-        <p>{lang === 'en' ? ustawienia.wstep_en : ustawienia.wstep}</p>
-        <div class="btn-row">
+        <p class="hero-lead">{lang === 'en' ? ustawienia.wstep_en : ustawienia.wstep}</p>
+        <div class="btn-row hero-btns">
           {ustawienia.przyciski.map((b, i) => (
             <a class={`btn${i === 0 ? ' btn-primary' : ''}`} href={href(b.adres)}>
               {wybierz(b, 'etykieta', lang)}{i === 0 && <Ikona nazwa="strzalka" rozmiar={16} />}
@@ -78,6 +66,19 @@ const kafelki = [
           ))}
         </div>
       </div>
+      {baner.zdjecie && (
+        <figure class="hero-fig">
+          <img
+            src={u(baner.zdjecie)}
+            srcset={(baner as any).zdjecie_male ? `${u((baner as any).zdjecie_male)} 1200w, ${u(baner.zdjecie)} 2400w` : undefined}
+            sizes="(max-width: 900px) 100vw, 55vw"
+            alt={baner.opis}
+            style={`object-position:${baner.kadr || 'center'}`}
+            fetchpriority="high"
+          />
+          {baner.podpis && <figcaption>{baner.podpis}</figcaption>}
+        </figure>
+      )}
     </div>
   </section>
 

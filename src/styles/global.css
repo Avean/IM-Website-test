@@ -123,8 +123,6 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search input, .js .hdr.hdr-stopka:not(.menu-otwarte) .hdr-search input { color: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search input::placeholder, .js .hdr.hdr-stopka:not(.menu-otwarte) .hdr-search input::placeholder { color: rgb(255 255 255 / .8); }
 .hdr .brand-name, .hdr .brand-sub, .hdr .nav > a, .hdr .nav-pill, .hdr .icon-btn, .hdr-search { transition: color .25s, background-color .25s; }
-.js .hdr-foto ~ main .hero-fig::after { content: ''; position: absolute; inset: 0 0 auto 0; height: max(45%, 190px); background: linear-gradient(rgb(6 11 22 / .74), rgb(6 11 22 / .38) 55%, rgb(6 11 22 / 0)); pointer-events: none; }
-.js .hdr-foto ~ main .hero-fig figcaption { top: calc(var(--hdr-h) + 12px); z-index: 1; }
 .hdr-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 70px; }
 /* nagłówek szerszy niż treść strony, żeby logotyp, nazwa i menu miały oddech */
 .hdr > .wrap.hdr-row { max-width: 1520px; }
@@ -202,18 +200,44 @@ details[open] > summary .chev { transform: rotate(180deg); }
   .brand-name { font-size: 16px; }
 }
 
-/* ---------- baner (strona główna) ---------- */
-.hero-logo { display: block; height: clamp(44px, 5vw, 56px); aspect-ratio: 500 / 160; margin: 0 0 14px; background: var(--uwr); -webkit-mask: var(--logo-pelne) left center / contain no-repeat; mask: var(--logo-pelne) left center / contain no-repeat; }
-.hero-fig { position: relative; margin: 0; height: clamp(260px, 34vw, 480px); background: var(--photo); overflow: hidden; }
+/* ---------- baner (strona główna) ----------
+   Granatowy pas pod nagłówkiem: z lewej logotyp UWr, nazwa, wstęp i przyciski; z prawej zdjęcie w zaokrąglonej
+   ramce, które wystaje dołem poza pas (--hero-wystaje). Tekst nie leży na zdjęciu — kontrast nie zależy od kadru,
+   a zdjęcie (jasne czy ciemne) nie jest przyciemniane. Na telefonie: tekst, pod nim zdjęcie.
+   Nagłówek strony głównej (.hdr-foto) leży na pasie; zanim zrobi się biały (skrypt w Naglowek.astro: gdy dół
+   .hero-fig dojdzie do nagłówka), ma kolor pasa — przewijany baner nie prześwituje pod napisami menu. */
+:root { --hero-pas: #1b2d52; --hero-pas2: #111f3e; }
+:root[data-theme='dark'] { --hero-pas: #16223d; --hero-pas2: #111a2e; }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) { background: var(--hero-pas); }
+.hero { --hero-wystaje: clamp(36px, 4.5vw, 64px); position: relative; color: #fff;
+  background: linear-gradient(var(--hero-pas), var(--hero-pas2)) top / 100% calc(100% - var(--hero-wystaje)) no-repeat; }
+.hero-in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: end; gap: clamp(32px, 4.5vw, 64px); padding-top: 40px; }
+.js .hdr-foto ~ main .hero-in { padding-top: calc(var(--hdr-h) + 32px); }
+.hero-txt { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding-bottom: calc(var(--hero-wystaje) + clamp(28px, 3vw, 44px)); }
+.hero-logo { display: block; height: clamp(40px, 4vw, 52px); aspect-ratio: 500 / 160; margin-bottom: 4px; background: #fff; -webkit-mask: var(--logo-pelne) left center / contain no-repeat; mask: var(--logo-pelne) left center / contain no-repeat; }
+.hero h1 { margin: 0; color: #fff; font-size: clamp(40px, 5vw, 70px); font-weight: 800; line-height: .98; letter-spacing: -0.035em; }
+.hero-lead { margin: 0; max-width: 30em; font-size: clamp(17px, 1.3vw, 19px); line-height: 1.55; color: rgb(255 255 255 / .88); }
+.hero-btns { margin-top: 6px; }
+.hero .btn { background: transparent; border-color: rgb(255 255 255 / .5); color: #fff; }
+.hero .btn:hover { background: rgb(255 255 255 / .12); border-color: #fff; color: #fff; }
+.hero .btn-primary { background: var(--accent); border-color: var(--accent); color: #1b2d52; }
+.hero .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: #1b2d52; filter: brightness(1.06); }
+.hero-flag { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px; border-radius: 999px; background: var(--accent); color: #1b2d52; font-size: 14px; font-weight: 700; text-decoration: none; }
+.hero-flag:hover { color: #1b2d52; filter: brightness(1.05); }
+.hero-fig { position: relative; margin: 0; height: clamp(300px, 31vw, 440px); border-radius: var(--radius-l); background: var(--photo); overflow: hidden; box-shadow: 0 24px 48px -12px rgb(6 11 22 / .45); }
 .hero-fig img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.hero-fig figcaption { position: absolute; top: 16px; right: var(--gutter); padding: 6px 10px; border-radius: 8px; background: rgba(10, 16, 32, .66); color: #fff; font-size: 12px; font-weight: 600; }
-.hero-card { position: relative; margin-top: -150px; max-width: 680px; padding: clamp(24px, 4vw, 40px); border-radius: var(--radius-l); background: var(--bg); box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 18px; }
-.hero-card h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); font-weight: 800; line-height: 1.02; letter-spacing: -0.03em; }
-.hero-card p { margin: 0; font-size: 18px; line-height: 1.6; }
-.hero-flag { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font-size: 14px; font-weight: 700; text-decoration: none; }
-.hero-flag:hover { color: var(--accent-ink); filter: brightness(1.05); }
+.hero-fig figcaption { position: absolute; right: 12px; bottom: 12px; padding: 5px 10px; border-radius: 8px; background: rgb(10 16 32 / .7); color: #fff; font-size: 12px; font-weight: 600; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
-@media (max-width: 640px) { .hero-card { margin-top: -90px; } }
+/* bez zdjęcia w Ustawieniach: sam pas z tekstem */
+.hero-bez-zdjecia { --hero-wystaje: 0px; }
+.hero-bez-zdjecia .hero-in { grid-template-columns: 1fr; }
+@media (max-width: 1180px) { .hero-in { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } }
+@media (max-width: 900px) {
+  .hero-in { grid-template-columns: 1fr; gap: 0; }
+  .hero-txt { padding-bottom: 28px; }
+  .hero-fig { height: clamp(190px, 50vw, 360px); }
+  .hero-bez-zdjecia .hero-txt { padding-bottom: 36px; }
+}
 
 /* ---------- kafelki na skróty ---------- */
 .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; padding-top: 32px; }
