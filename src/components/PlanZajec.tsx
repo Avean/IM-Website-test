@@ -329,10 +329,6 @@ export default function PlanZajec({ lang, kierunki, daneId }: Props) {
   const widok = f.widok || (waski ? 'dni' : 'tydzien');
   const efektywny = waski && widok === 'tydzien' ? 'dni' : widok;
   const typNazwa = (typ: string) => dane.typy?.[typ]?.[lang] || typ;
-  const etykietaZajec = (z: Zajecie) => {
-    const r = rodzina(z.typ);
-    return `${r === 'inne' ? typNazwa(z.typ) : T.krotko[r]}${wieleGrup(z) ? ` ${T.gr} ${z.grupa}` : ''}`;
-  };
   const kier = (z: Zajecie) => opcje.kierunki.filter((k) => (z.kierunki || []).includes(k.id));
 
   const wiersz = (z: Zajecie, klucz: number, zDniem?: boolean) => {
@@ -387,28 +383,36 @@ export default function PlanZajec({ lang, kierunki, daneId }: Props) {
     const t0 = Math.floor(Math.min(8 * 60, ...zt.map((z) => minuty(z.od))) / 60) * 60;
     const t1 = Math.ceil(Math.max(16 * 60, ...zt.map((z) => minuty(z.do))) / 60) * 60;
     const PX = 1.15; // pikseli na minutę
-    const uklad = new Map<Zajecie, { pas: number; pasow: number }>();
+    // równoległe grupy tego samego przedmiotu i typu (ten sam dzień i godziny) → jeden blok
+    interface Blok { klucz: string; dzien: number; od: string; do: string; zaj: Zajecie[]; pas: number; pasow: number }
+    const bloki: Blok[] = [];
+    const wgKlucza: Record<string, Blok> = {};
+    zt.forEach((z) => {
+      const klucz = `${z.kod}|${z.typ}|${z.dzien}|${z.od}|${z.do}|${z.czestotliwosc ?? ''}`;
+      if (!wgKlucza[klucz]) bloki.push((wgKlucza[klucz] = { klucz, dzien: z.dzien!, od: z.od!, do: z.do!, zaj: [], pas: 0, pasow: 1 }));
+      wgKlucza[klucz].zaj.push(z);
+    });
     const pasowDnia: Record<number, number> = {};
     for (const d of dni) {
-      const lista = zt.filter((z) => z.dzien === d).sort((a, b) => minuty(a.od) - minuty(b.od) || minuty(b.do) - minuty(a.do));
-      let klaster: Zajecie[] = [];
+      const lista = bloki.filter((b) => b.dzien === d).sort((a, b) => minuty(a.od) - minuty(b.od) || minuty(b.do) - minuty(a.do));
+      let klaster: Blok[] = [];
       let konce: number[] = [];
       let koniec = -1;
       const zamknij = () => {
-        klaster.forEach((z) => { uklad.get(z)!.pasow = konce.length; });
+        klaster.forEach((b) => { b.pasow = konce.length; });
         pasowDnia[d] = Math.max(pasowDnia[d] || 1, konce.length);
         klaster = [];
         konce = [];
         koniec = -1;
       };
-      for (const z of lista) {
-        const s = minuty(z.od);
-        const e = minuty(z.do);
+      for (const b of lista) {
+        const s = minuty(b.od);
+        const e = minuty(b.do);
         if (klaster.length && s >= koniec) zamknij();
         let pas = konce.findIndex((k) => k <= s);
         if (pas < 0) { pas = konce.length; konce.push(e); } else konce[pas] = e;
-        uklad.set(z, { pas, pasow: 1 });
-        klaster.push(z);
+        b.pas = pas;
+        klaster.push(b);
         koniec = Math.max(koniec, e);
       }
       if (klaster.length) zamknij();
@@ -416,7 +420,8 @@ export default function PlanZajec({ lang, kierunki, daneId }: Props) {
     const godziny: number[] = [];
     for (let h = t0 / 60; h <= t1 / 60; h++) godziny.push(h);
     const wys = (t1 - t0) * PX;
-    const kolumny = `3.4rem ${dni.map((d) => `minmax(${Math.max(140, (pasowDnia[d] || 1) * 86)}px, 1fr)`).join(' ')}`;
+    const kolumny = `3.4rem ${dni.map((d) => `minmax(${Math.max(130, (pasowDnia[d] || 1) * 76)}px, 1fr)`).join(' ')}`;
+    const unikalne = (a: (string | undefined)[]) => [...new Set(a.filter(Boolean) as string[])];
     return (
       <div className="pz-tydzien" style={{ ['--godz' as any]: `${60 * PX}px` }}>
         {!aktywne && zt.length > 60 && <p className="pz-opis pz-wskazowka">{T.wskazowka}</p>}
@@ -429,29 +434,43 @@ export default function PlanZajec({ lang, kierunki, daneId }: Props) {
             </div>
             {dni.map((d) => (
               <div key={`k${d}`} className="pz-kolumna" style={{ height: wys }}>
-                {zt.filter((z) => z.dzien === d).map((z, i) => {
-                  const u = uklad.get(z)!;
+                {bloki.filter((b) => b.dzien === d).map((b) => {
+                  const z = b.zaj[0];
                   const p = przedmioty[z.kod];
                   const r = rodzina(z.typ);
                   const czest = z.czestotliwosc ? T.czestotliwosc[z.czestotliwosc] : '';
+                  const grupy = b.zaj.filter(wieleGrup).map((x) => x.grupa);
+                  const typ = r === 'inne' ? typNazwa(z.typ) : T.krotko[r];
+                  const sale = unikalne(b.zaj.map((x) => x.sala));
+                  const uwagi = unikalne(b.zaj.map((x) => tekstUwag(x.uwagi)));
                   return (
                     <a
-                      key={i}
+                      key={b.klucz}
                       href={p?.usos}
                       className={`pz-blok pz-${r}`}
                       style={{
-                        top: (minuty(z.od) - t0) * PX,
-                        ['--hh' as any]: `${Math.max((minuty(z.do) - minuty(z.od)) * PX - 3, 20)}px`,
-                        left: `calc(${(u.pas / u.pasow) * 100}% + 1px)`,
-                        width: `calc(${100 / u.pasow}% - 3px)`,
+                        top: (minuty(b.od) - t0) * PX,
+                        ['--hh' as any]: `${Math.max((minuty(b.do) - minuty(b.od)) * PX - 3, 20)}px`,
+                        left: `calc(${(b.pas / b.pasow) * 100}% + 1px)`,
+                        width: `calc(${100 / b.pasow}% - 3px)`,
                       }}
                     >
-                      <span className="sr-only">{T.dni[d]} {z.od}–{z.do}: </span>
+                      <span className="sr-only">{T.dni[d]} {b.od}–{b.do}: </span>
                       <strong>{nazwaPrzedmiotu(p, z.kod, lang)}</strong>
-                      <span className="pz-blok-linia">{etykietaZajec(z)}{z.sala ? ` · ${z.sala}` : ''}</span>
-                      <span className="pz-blok-linia pz-blok-czas" aria-hidden="true">{z.od}–{z.do}{czest ? ` · ${czest}` : ''}</span>
-                      {(z.prowadzacy || []).length > 0 && <span className="pz-blok-linia pz-blok-osoby">{(z.prowadzacy || []).join(', ')}</span>}
-                      {z.uwagi && z.uwagi.length > 0 && <span className="pz-blok-linia pz-blok-uwagi">{tekstUwag(z.uwagi)}</span>}
+                      <span className="pz-blok-linia">
+                        {typ}{grupy.length ? ` ${T.gr} ${grupy.join(', ')}` : ''}{sale.length ? ` · ${sale.join(', ')}` : ''}
+                      </span>
+                      <span className="pz-blok-linia pz-blok-czas">{b.od}–{b.do}{czest ? ` · ${czest}` : ''}</span>
+                      {b.zaj.length === 1 ? (
+                        (z.prowadzacy || []).length > 0 && <span className="pz-blok-linia pz-blok-osoby">{(z.prowadzacy || []).join(', ')}</span>
+                      ) : (
+                        b.zaj.map((x, i) => (
+                          <span key={i} className="pz-blok-linia pz-blok-grupa">
+                            {x.grupa != null ? `${T.gr} ${x.grupa}: ` : ''}{(x.prowadzacy || []).join(', ') || '—'}{x.sala ? ` · ${x.sala}` : ''}
+                          </span>
+                        ))
+                      )}
+                      {uwagi.map((t, i) => <span key={`u${i}`} className="pz-blok-linia pz-blok-uwagi">{t}</span>)}
                     </a>
                   );
                 })}

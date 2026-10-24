@@ -76,13 +76,15 @@ html:not(.js) .pz-app { display: none; }
 }
 .pz-blok strong { font-size: 12.5px; font-weight: 800; overflow-wrap: anywhere; }
 .pz-blok-linia { display: block; overflow-wrap: anywhere; }
-.pz-blok-czas, .pz-blok-uwagi { display: none; }
+.pz-blok-czas, .pz-blok-uwagi, .pz-blok-grupa { display: none; }
 .pz-blok:hover, .pz-blok:focus-visible {
   z-index: 6; height: auto; min-height: var(--hh); min-width: min(260px, 70vw);
   box-shadow: inset 4px 0 0 var(--ck), 0 10px 26px rgb(0 0 0 / .22); color: var(--ink);
 }
 .pz-blok:hover .pz-blok-czas, .pz-blok:focus-visible .pz-blok-czas,
+.pz-blok:hover .pz-blok-grupa, .pz-blok:focus-visible .pz-blok-grupa,
 .pz-blok:hover .pz-blok-uwagi, .pz-blok:focus-visible .pz-blok-uwagi { display: block; }
+.pz-blok-uwagi { white-space: pre-line; color: var(--muted); }
 .pz-blok:focus-visible { outline: 3px solid var(--accent); outline-offset: 1px; }
 
 /* ---------- listy ---------- */
