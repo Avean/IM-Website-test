@@ -1,13 +1,15 @@
 ---
-// Strona projektu (powstaje dla każdego projektu): metadane z karty projektu, a pod nimi opis — jeśli jest.
+// Strona projektu (powstaje dla każdego projektu): pod tytułem plakietki (źródło, program, stan), karta danych projektu,
+// opis (jeśli jest) i inne projekty tego samego zakładu. Jeden link wstecz — nad tytułem; prawy pasek pusty (jak konferencje).
 import { render } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
+import WierszGrantu from '../components/WierszGrantu.astro';
 import Ikona from '../components/Ikona.astro';
 import { u } from '../lib/url';
 import { wJezyku, wybierz, RODZAJE_GRANTOW } from '../lib/i18n';
 import { today, type Lang } from '../lib/daty';
-import { granty, pracownicy, zaklady, zakladGrantu, osobaGrantu, slugOf, type Grant } from '../lib/tresci';
+import { granty, pracownicy, zaklady, zakladGrantu, kierownicyGrantu, lataGrantu, type Grant } from '../lib/tresci';
 
 interface Props { grant: Grant; lang: Lang }
 const { grant, lang } = Astro.props;
@@ -18,38 +20,29 @@ const tytul = (lang === 'en' && d.tytul_en) || d.tytul;
 const tytulDrugi = lang === 'en' ? (d.tytul_en ? { tekst: d.tytul, lang: 'pl' } : undefined) : d.tytul_en ? { tekst: d.tytul_en, lang: 'en' } : undefined;
 const maOpis = !!grant.body?.trim();
 const { Content } = await render(grant);
-const lata = (g: Grant) => (g.data.rok_od && g.data.rok_do && g.data.rok_od !== g.data.rok_do ? `${g.data.rok_od}–${g.data.rok_do}` : String(g.data.rok_od ?? g.data.rok_do ?? ''));
-const okres = lata(grant);
+const okres = lataGrantu(grant);
 const trwa = d.rok_do !== undefined && d.rok_do >= Number(today().slice(0, 4));
 const rodzaj = RODZAJE_GRANTOW[d.rodzaj][lang];
+// Pełna nazwa źródła w karcie danych (plakietka pod tytułem ma skrót).
+const FINANSOWANIE: Record<string, [string, string]> = {
+  ncn: ['Narodowe Centrum Nauki (NCN)', 'National Science Centre (NCN)'],
+  ue: ['Programy UE i międzynarodowe', 'EU and international programmes'],
+  wewnetrzny: ['Środki wewnętrzne', 'Internal funding'],
+  inny: ['Inne źródła', 'Other sources'],
+};
+const finansowanie = FINANSOWANIE[d.rodzaj] ? T(...FINANSOWANIE[d.rodzaj]) : rodzaj;
 
-// Kierownik (albo kilku, rozdzielonych przecinkami) ze spisu pracowników: link do strony domowej, a gdy jej brak — do zakładu.
-// Fragment z samym tytułem („dr hab. Jan Dymara, prof. UWr”, „dr hab., prof. UWr Jan Dymara”) zostaje przy sąsiedniej osobie.
+// Kierownik (albo kilku) ze spisu pracowników: imię i nazwisko z tytułem; link do strony domowej, a gdy jej brak — do zakładu.
 const osoby = await pracownicy();
-const TYTUL = /^(prof|dr|hab|inż|mgr|uwr)$/i;
-const kierownicy: { tekst: string; strona?: string; zaklad?: string }[] = [];
-let przedrostek = '';
-for (const czesc of (d.kierownik ?? '').split(/[,;]/).map((s) => s.trim()).filter(Boolean)) {
-  const zImieniem = czesc.split(/[\s.]+/).some((w) => /\p{L}/u.test(w) && !TYTUL.test(w.replace(/[^\p{L}]/gu, '')));
-  if (!zImieniem) {
-    if (kierownicy.length) kierownicy[kierownicy.length - 1].tekst += `, ${czesc}`;
-    else przedrostek += `${czesc}, `;
-    continue;
-  }
-  const o = osobaGrantu(czesc, osoby);
-  kierownicy.push({ tekst: przedrostek + czesc, strona: o?.data.strona, zaklad: o?.data.zaklad });
-  przedrostek = '';
-}
-if (!kierownicy.length && d.kierownik) kierownicy.push({ tekst: d.kierownik });
-const zakladId = zakladGrantu(grant, osoby);
+const kierownicy = kierownicyGrantu(d.kierownik, osoby);
 const wszystkieZaklady = await zaklady();
-const zaklad = wszystkieZaklady.find((z) => z.id === zakladId);
+const zaklad = wszystkieZaklady.find((z) => z.id === zakladGrantu(grant, osoby));
 const adresZakladu = (id: string) => u(wJezyku(`/instytut/zaklady/${id}`, lang));
-const adresGrantu = (g: Grant) => u(wJezyku(`/nauka/granty/${slugOf(g.id)}`, lang));
+const zakladOsoby = (id?: string) => (id && wszystkieZaklady.some((z) => z.id === id) ? id : undefined);
 
-// Inne projekty tego samego zakładu (najnowsze), do bocznej ramki.
+// Inne projekty tego samego zakładu (najnowsze): pięć pod kartą, resztę pokazuje strona zakładu.
 const inne = zaklad ? (await granty()).filter((g) => g.id !== grant.id && zakladGrantu(g, osoby) === zaklad.id) : [];
-const opis = [`${T('Projekt', 'Project')}: ${rodzaj}${d.program ? ` (${d.program})` : ''}`, okres, d.kierownik ? `${T('kierownik', 'PI')}: ${d.kierownik}` : '']
+const opis = [`${T('Projekt', 'Project')}: ${rodzaj}${d.program ? ` (${d.program})` : ''}`, okres, kierownicy.length ? `${T('kierownik', 'PI')}: ${kierownicy.map((k) => k.nazwa).join(', ')}` : '']
   .filter(Boolean)
   .join(', ');
 ---
@@ -59,67 +52,82 @@ const opis = [`${T('Projekt', 'Project')}: ${rodzaj}${d.program ? ` (${d.program
     <div class="tags">
       <span class={`badge${d.rodzaj === 'ncn' ? ' badge-wydarzenie' : d.rodzaj === 'ue' ? ' badge-sukces' : ''}`}>{rodzaj}</span>
       {d.program && <span class="badge">{d.program}</span>}
-      {d.rok_do !== undefined && <span class="badge">{trwa ? T('realizowany', 'ongoing') : T('zakończony', 'completed')}</span>}
+      {d.rok_do !== undefined && <span class={`badge gr-stan${trwa ? ' gr-trwa' : ''}`}>{trwa ? T('realizowany', 'ongoing') : T('zakończony', 'completed')}</span>}
     </div>
   </NaglowekStrony>
   <div class="wrap layout">
     <div class="main">
-      <section class="grant-karta" aria-label={T('Informacje o projekcie', 'Project details')}>
-        <dl class="info-list">
-          <dt>{T('Finansowanie', 'Funding')}</dt><dd>{rodzaj}{d.program ? ` — ${d.program}` : ''}</dd>
-          {d.kod && <><dt>{T('Numer', 'Number')}</dt><dd class="grant-kod">{d.kod}</dd></>}
-          {okres && <><dt>{T('Realizacja', 'Duration')}</dt><dd>{okres}</dd></>}
-          {d.kwota && <><dt>{T('Kwota', 'Budget')}</dt><dd>{d.kwota}</dd></>}
+      <section class="gr-karta" aria-label={T('Informacje o projekcie', 'Project details')}>
+        <dl class="gr-fakty">
+          <div><dt>{T('Finansowanie', 'Funding')}</dt><dd>{finansowanie}{d.program ? ` — ${d.program}` : ''}</dd></div>
+          {d.kod && <div><dt>{T('Numer', 'Number')}</dt><dd class="gr-kod">{d.kod}</dd></div>}
+          {okres && <div><dt>{T('Realizacja', 'Duration')}</dt><dd>{okres}</dd></div>}
+          {d.kwota && <div><dt>{T('Kwota', 'Budget')}</dt><dd>{d.kwota}</dd></div>}
+          {zaklad && <div><dt>{T('Zakład', 'Department')}</dt><dd><a href={adresZakladu(zaklad.id)}>{wybierz(zaklad.data, 'nazwa', lang)}</a></dd></div>}
           {kierownicy.length > 0 && (
-            <>
+            <div class="gr-szeroki">
               <dt>{kierownicy.length > 1 ? T('Kierownicy', 'Principal investigators') : T('Kierownik', 'Principal investigator')}</dt>
               <dd>
-                {kierownicy.map((k, i) => (
-                  <>
-                    {i > 0 && ', '}
-                    {k.strona
-                      ? <a href={k.strona}>{k.tekst}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
-                      : k.zaklad && wszystkieZaklady.some((z) => z.id === k.zaklad) ? <a href={adresZakladu(k.zaklad)}>{k.tekst}</a> : k.tekst}
-                  </>
-                ))}
+                {kierownicy.map((k, i) => {
+                  const z = zakladOsoby(k.osoba?.data.zaklad);
+                  return (
+                    <>
+                      {i > 0 && ', '}
+                      {k.osoba?.data.strona
+                        ? <a href={k.osoba.data.strona}>{k.nazwa}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
+                        : z ? <a href={adresZakladu(z)}>{k.nazwa}</a> : k.nazwa}
+                    </>
+                  );
+                })}
               </dd>
-            </>
+            </div>
           )}
-          {d.wykonawcy && <><dt>{T('Wykonawcy', 'Team')}</dt><dd>{d.wykonawcy}</dd></>}
-          {zaklad && <><dt>{T('Zakład', 'Department')}</dt><dd><a href={adresZakladu(zaklad.id)}>{wybierz(zaklad.data, 'nazwa', lang)}</a></dd></>}
+          {d.wykonawcy && <div class="gr-szeroki"><dt>{T('Wykonawcy', 'Team')}</dt><dd>{d.wykonawcy}</dd></div>}
         </dl>
-        {d.strona && <p class="grant-akcje"><a class="btn btn-primary" href={d.strona}>{T('Strona projektu', 'Project website')}<Ikona nazwa="zewnetrzny" rozmiar={16} /></a></p>}
+        {d.strona && <p class="gr-akcje"><a class="btn btn-primary" href={d.strona}>{T('Strona projektu', 'Project website')}<Ikona nazwa="zewnetrzny" rozmiar={16} /></a></p>}
       </section>
-      {maOpis && <div class="prose grant-opis"><Content /></div>}
-    </div>
-    <aside class="side" data-pagefind-ignore>
-      {zaklad && (
-        <div class="side-box">
-          <h2>{T('Projekty zakładu', 'Department projects')}</h2>
-          <a class="link-arrow" href={adresZakladu(zaklad.id)}>{wybierz(zaklad.data, 'nazwa', lang)}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-          {inne.length > 0 && (
-            <ul class="plain-list grant-inne">
-              {inne.slice(0, 5).map((g) => <li><a href={adresGrantu(g)}>{(lang === 'en' && g.data.tytul_en) || g.data.tytul}</a> <span class="muted">({lata(g)})</span></li>)}
-            </ul>
+
+      {maOpis && <div class="prose gr-opis"><Content /></div>}
+
+      {zaklad && inne.length > 0 && (
+        <section class="gr-inne" aria-labelledby="inne-projekty">
+          <h2 id="inne-projekty">{T('Inne projekty zakładu', 'Other projects of the department')}</h2>
+          <ul class="gw-lista">
+            {inne.slice(0, 5).map((g) => <WierszGrantu grant={g} kierownicy={kierownicyGrantu(g.data.kierownik, osoby)} lang={lang} />)}
+          </ul>
+          {inne.length > 5 && (
+            <a class="link-arrow gr-wiecej" href={`${adresZakladu(zaklad.id)}#granty`}>
+              {T(`Wszystkie projekty zakładu (${inne.length + 1})`, `All department projects (${inne.length + 1})`)}<Ikona nazwa="strzalka" rozmiar={16} />
+            </a>
           )}
-          {inne.length > 5 && <a class="link-arrow" href={`${adresZakladu(zaklad.id)}#granty`}>{T(`Wszystkie projekty zakładu (${inne.length + 1})`, `All department projects (${inne.length + 1})`)}<Ikona nazwa="strzalka" rozmiar={16} /></a>}
-        </div>
+        </section>
       )}
-    </aside>
+    </div>
+    <div class="side" aria-hidden="true"></div>
   </div>
 </Baza>
 
 <style>
-  .grant-karta { padding: 20px 22px; border-radius: var(--radius-l); background: var(--surface); border: 1px solid var(--line); }
-  .grant-karta .info-list dd { overflow-wrap: anywhere; }
-  .grant-karta .info-list a { display: inline-flex; align-items: center; gap: 4px; }
-  .grant-kod { font-variant-numeric: tabular-nums; }
-  .grant-akcje { margin: 18px 0 0; }
-  .grant-opis { margin-top: 28px; }
-  .grant-inne { font-size: 15px; line-height: 1.45; }
+  .gr-stan { background: var(--bg); color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--line); }
+  .gr-trwa { box-shadow: inset 0 0 0 1.5px var(--ink); }
+  .gr-trwa::before { content: ''; width: 8px; height: 8px; margin-right: 6px; border-radius: 50%; background: var(--accent); }
+
+  .gr-karta { padding: 24px; border-radius: var(--radius-l); background: var(--surface); border: 1px solid var(--line); }
+  .gr-fakty { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 18px 28px; margin: 0; }
+  .gr-fakty > div { min-width: 0; }
+  .gr-szeroki { grid-column: 1 / -1; }
+  .gr-fakty dt { margin-bottom: 4px; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .gr-fakty dd { margin: 0; font-size: 16px; line-height: 1.5; color: var(--ink); overflow-wrap: anywhere; }
+  .gr-fakty dd a { display: inline-flex; align-items: center; gap: 4px; }
+  .gr-kod { font-variant-numeric: tabular-nums; }
+  .gr-akcje { margin: 22px 0 0; }
+  .gr-opis { margin-top: 28px; }
+
+  .gr-inne { margin-top: 40px; }
+  .gr-inne h2 { margin: 0 0 10px; font-size: 22px; font-weight: 800; }
+  .gr-wiecej { margin-top: 6px; }
   @media (max-width: 520px) {
-    .grant-karta { padding: 16px; }
-    .grant-karta .info-list { grid-template-columns: 1fr; gap: 0; }
-    .grant-karta .info-list dd { margin-bottom: 10px; }
+    .gr-karta { padding: 18px 16px; }
+    .gr-inne .gw-lista { margin: 0 -14px; }
   }
 </style>
