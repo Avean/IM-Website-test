@@ -462,6 +462,12 @@ details[open] > summary .chev { transform: rotate(180deg); }
 }
 /* duże ekrany: luźniej (po regułach podstawowych, żeby je nadpisać) */
 @media (min-width: 1400px) {
+  .hdr-row { gap: 20px; }
+  .nav { gap: 2px; }
+  .nav > a, .nav-pill { padding: 0 10px; }
+  .hdr-search input { width: 84px; }
+}
+@media (min-width: 1600px) {
   .hdr-row { gap: 24px; }
   .nav { gap: 4px; }
   .nav > a, .nav-pill { padding: 0 12px; }
