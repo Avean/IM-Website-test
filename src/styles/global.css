@@ -103,7 +103,7 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.2; letter-spacing: -0.01em; }
 :root { --hdr-h: 71px; }
 /* Pływający nagłówek: zostaje u góry przy przewijaniu; kotwice i spis treści omijają jego wysokość. */
 html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
-.hdr { position: sticky; top: 0; z-index: 30; background: var(--bg); border-bottom: 1px solid var(--line); transition: box-shadow .2s; }
+.hdr { position: sticky; top: 0; z-index: 30; background: var(--bg); border-bottom: 1px solid var(--line); transition: background-color .25s, border-color .25s, box-shadow .2s; }
 .hdr.przewiniety { box-shadow: 0 4px 18px rgb(0 0 0 / .08); }
 :root[data-theme='dark'] .hdr.przewiniety { box-shadow: 0 4px 18px rgb(0 0 0 / .45); }
 /* Strona główna: nagłówek na zdjęciu (przyciemnionym u góry), po przewinięciu kawałka — białe tło. Bez JS zwykły nagłówek. */
