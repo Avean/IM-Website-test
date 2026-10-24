@@ -177,7 +177,7 @@ const sekcje = [
           {wieleProgramow && (
             <div class="tabs" role="tablist" aria-label={T('Program studiów', 'Curriculum')}>
               {d.programy.map((p, i) => (
-                <button type="button" role="tab" class="chip" id={`tab-${i}`} aria-controls={`prog-${i}`} aria-selected={i === 0 ? 'true' : 'false'} aria-pressed={i === 0 ? 'true' : 'false'} data-od={p.od_roku} data-do={p.do_roku}>{w(p, 'nazwa')}</button>
+                <button type="button" role="tab" class="chip" id={`tab-${i}`} aria-controls={`prog-${i}`} aria-selected={i === 0 ? 'true' : 'false'} data-od={p.od_roku} data-do={p.do_roku}>{w(p, 'nazwa')}</button>
               ))}
             </div>
           )}
@@ -289,7 +289,6 @@ const sekcje = [
   const pokaz = (i: number) => {
     tabs.forEach((t, j) => {
       t.setAttribute('aria-selected', String(i === j));
-      t.setAttribute('aria-pressed', String(i === j));
       t.tabIndex = i === j ? 0 : -1;
     });
     panels.forEach((p, j) => (p.hidden = i !== j));

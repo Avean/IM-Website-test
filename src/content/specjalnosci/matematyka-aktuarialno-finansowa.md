@@ -223,7 +223,7 @@ kariera: |
 
   Uzasadnienie programu zwraca uwagę, że rozwój rynków kapitałowych i sektora ubezpieczeniowego tworzy zapotrzebowanie na specjalistów od wyceny ryzyka — ekspertów matematyki aktuarialnej i inżynierii finansowej, którzy potrafią budować i kalibrować modele procesów finansowych oraz wyceniać skomplikowane instrumenty pochodne.
 
-  Jak to wygląda w praktyce, widać w dziale [Oferty pracy](https://www.math.uni.wroc.pl/oferty-pracy) na stronie Instytutu, gdzie pracodawcy publikują ogłoszenia dla studentów i absolwentów matematyki. W ostatnich latach były wśród nich m.in.:
+  Jak to wygląda w praktyce, widać w dziale [Oferty pracy](/aktualnosci?rodzaj=kariera) na stronie Instytutu, gdzie pracodawcy publikują ogłoszenia dla studentów i absolwentów matematyki. W ostatnich latach były wśród nich m.in.:
 
   - płatny wakacyjny staż w departamencie aktuarialnym towarzystwa ubezpieczeń (2025),
   - stanowiska Quantitative Analyst oraz Junior Quantitative Analyst / Researcher (2021–2025),
@@ -235,7 +235,7 @@ kariera_en: |
 
   The rationale of the programme points out that the growth of capital markets and of the insurance sector creates demand for specialists in risk pricing — experts in actuarial mathematics and financial engineering who can build and calibrate models of financial processes and price complex derivatives.
 
-  What this looks like in practice can be seen in the [Job offers](https://www.math.uni.wroc.pl/oferty-pracy) section of the Institute's website, where employers post offers for mathematics students and graduates. In recent years these have included, among others:
+  What this looks like in practice can be seen in the [Job offers](/aktualnosci?rodzaj=kariera) section of the Institute's website, where employers post offers for mathematics students and graduates. In recent years these have included, among others:
 
   - a paid summer internship in the actuarial department of an insurance company (2025),
   - Quantitative Analyst and Junior Quantitative Analyst / Researcher positions (2021–2025),
@@ -305,7 +305,7 @@ linki:
     adres: /studia/egzaminy-i-dyplom
   - etykieta: Oferty pracy
     etykieta_en: Job offers
-    adres: https://www.math.uni.wroc.pl/oferty-pracy
+    adres: /aktualnosci?rodzaj=kariera
 faq:
   - pytanie: Kiedy i jak wybieram tę specjalność?
     pytanie_en: When and how do I choose this specialisation?

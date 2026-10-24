@@ -97,7 +97,7 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.2; letter-spacing: -0.01em; }
 .badge-sukces { background: var(--accent); color: var(--accent-ink); }
 .badge-obrona { background: var(--bg); color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--ink); }
 .chip { min-height: 40px; padding: 0 16px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--bg); color: var(--ink); font: inherit; font-size: 14px; font-weight: 700; cursor: pointer; }
-.chip[aria-pressed='true'] { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
+.chip[aria-pressed='true'], .chip[role='tab'][aria-selected='true'] { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
 
 /* ---------- nagłówek ---------- */
 :root { --hdr-h: 71px; }

@@ -127,8 +127,8 @@ specjalnosci:
   zaklad: rownania-rozniczkowe
   opis: 'Modelowanie zjawisk deterministycznych i losowych: równania różniczkowe, procesy stochastyczne, metody numeryczne i symulacje, z elementami analizy danych i nauk przyrodniczych.'
   opis_en: 'Modelling deterministic and random phenomena: differential equations, stochastic processes, numerical methods and simulations, combined with data analysis and the natural sciences.'
-  dla_kogo: Dla osób, które chcą zrozumieć świat przez modele matematyczne.
-  dla_kogo_en: For those who want to understand the world through mathematical models.
+  dla_kogo: Dla osób, które lubią równania różniczkowe i rachunek prawdopodobieństwa, chcą łączyć matematykę z programowaniem i obliczeniami oraz interesują się zastosowaniami w naukach przyrodniczych.
+  dla_kogo_en: For those who enjoy differential equations and probability, want to combine mathematics with programming and computation, and are interested in applications in the natural sciences.
   kariera: Praca w sektorach wymagających wysokich kompetencji, krytycznego myślenia i rozwiązywania nietypowych problemów — m.in. w przemyśle i innowacyjnych startupach.
   kariera_en: Work in sectors requiring high competence, critical thinking and non-standard problem solving — e.g. industry and innovative start-ups.
   opiekunowie: prof. dr hab. Grzegorz Karch
@@ -159,12 +159,12 @@ specjalnosci:
   strona: matematyka-nauczycielska
   nazwa_en: Mathematics teaching
   zaklad: dydaktyka
-  opis: Matematyka razem z przygotowaniem pedagogicznym i praktykami w szkołach.
-  opis_en: Mathematics together with teacher training and placements in schools.
+  opis: Matematyka z przygotowaniem psychologicznym, pedagogicznym i dydaktycznym oraz praktykami w szkołach — po studiach II stopnia pełne kwalifikacje do nauczania matematyki.
+  opis_en: Mathematics with psychological, pedagogical and didactic training and school placements — full qualifications to teach mathematics after the master's degree.
   dla_kogo: Dla przyszłych nauczycielek i nauczycieli matematyki.
   dla_kogo_en: For future mathematics teachers.
-  kariera: Praca nauczyciela matematyki w szkołach.
-  kariera_en: Teaching mathematics in schools.
+  kariera: Praca nauczyciela matematyki w szkołach wszystkich typów (pełne kwalifikacje po studiach II stopnia).
+  kariera_en: Teaching mathematics in all types of schools (full qualifications after the master's degree).
   opiekunowie: dr Elżbieta Kalinowska, prof. dr hab. Jacek Świątkowski
 - nazwa: Matematyka w ekonomii
   nazwa_en: Mathematics in economics

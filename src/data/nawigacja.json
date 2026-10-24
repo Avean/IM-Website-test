@@ -46,11 +46,6 @@
               "adres": "/instytut/infrastruktura-informatyczna"
             },
             {
-              "etykieta": "Sukcesy",
-              "etykieta_en": "Achievements",
-              "adres": "https://www.math.uni.wroc.pl/sukcesy"
-            },
-            {
               "etykieta": "Biblioteka",
               "etykieta_en": "Library",
               "adres": "https://wmi.uwr.edu.pl/biblioteka-wydzialowa/"
@@ -98,6 +93,11 @@
           "nazwa": "Stopnie naukowe",
           "nazwa_en": "Degrees",
           "linki": [
+            {
+              "etykieta": "Sukcesy",
+              "etykieta_en": "Achievements",
+              "adres": "/nauka/sukcesy"
+            },
             {
               "etykieta": "Obrony doktorskie",
               "etykieta_en": "PhD defences",
@@ -198,8 +198,8 @@
               "adres": "/studia/program-most"
             },
             {
-              "etykieta": "Skrypty",
-              "etykieta_en": "Lecture notes",
+              "etykieta": "Skrypty i materiały",
+              "etykieta_en": "Lecture notes and materials",
               "adres": "/studia/skrypty"
             }
           ]

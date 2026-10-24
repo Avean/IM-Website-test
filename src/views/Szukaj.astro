@@ -30,6 +30,9 @@ const teksty = lang === 'en'
       var ui = new PagefindUI({ element: '#szukajka', bundlePath: bundle, showSubResults: true, showImages: false, translations: teksty, autofocus: true });
       var q = new URLSearchParams(location.search).get('q');
       if (q) ui.triggerSearch(q);
+      // etykieta pola wyszukiwania dla czytników ekranu (Pagefind daje tylko placeholder)
+      var pole = document.querySelector('#szukajka .pagefind-ui__search-input');
+      if (pole) pole.setAttribute('aria-label', teksty.placeholder || 'Szukaj');
     };
     s.onerror = function () {
       document.getElementById('szukajka').textContent = teksty.zero_results.replace('[SEARCH_TERM]', '');

@@ -17,6 +17,8 @@ tresc_en: |
   - [Selected course pages in SKOS](https://skos.ii.uni.wroc.pl/course/index.php?categoryid=21)
   - [USOSweb](https://usosweb.uwr.edu.pl/)
 
+  <a id="konsultacje"></a>
+
   ## Office hours
 
   The list of office hours at the Mathematical Institute is published for each semester, separately for staff and for PhD students (office hours and room numbers). The list for the winter semester 2026/27 will be posted here.

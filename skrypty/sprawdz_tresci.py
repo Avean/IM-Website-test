@@ -37,6 +37,12 @@ def sprawdz(p):
         v = dane.get(k)
         if v is not None and not isinstance(v, list):
             bledy.append(f'{p}: pole „{k}” musi być listą')
+    for k in ('umiejetnosci', 'umiejetnosci_en', 'zrodla', 'do_uzupelnienia', 'obszary', 'obszary_en', 'prowadzacy', 'promotorzy'):
+        v = dane.get(k)
+        if isinstance(v, list):
+            for el in v:
+                if not isinstance(el, str):
+                    bledy.append(f'{p}: element listy „{k}” nie jest tekstem (np. „: ” w środku — weź tekst w cudzysłów): {el!r}'[:300])
     if kol == 'specjalnosci':
         katalog = p.split('src/content/')[0] + 'src/content/seminaria/'
         for sid in dane.get('seminaria') or []:

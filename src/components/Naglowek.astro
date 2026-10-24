@@ -66,6 +66,7 @@ const logo = (ustawienia as any).logo as string | undefined;
         <Ikona nazwa="szukaj" rozmiar={18} />
         <label class="sr-only" for="szukaj-naglowek">{t(lang, 'szukaj')}</label>
         <input id="szukaj-naglowek" type="search" name="q" placeholder={t(lang, 'szukaj')} />
+        <button type="submit" class="sr-only">{t(lang, 'szukaj')}</button>
       </form>
       <a class="icon-btn search-narrow" href={u(wJezyku('/szukaj', lang))} aria-label={t(lang, 'szukaj')}><Ikona nazwa="szukaj" /></a>
       {inny && (

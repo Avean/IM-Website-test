@@ -291,7 +291,7 @@ kariera: |-
 
   Według programu studiów kształcenie na tej specjalności odpowiada na istotny deficyt na rynku pracy — zapotrzebowanie na nowoczesną kadrę pedagogiczną — a system edukacji potrzebuje nauczycieli z pełnym przygotowaniem merytorycznym i metodycznym do nauczania matematyki we wszystkich typach szkół.
 
-  Na stronie Instytutu z [ofertami pracy](https://www.math.uni.wroc.pl/oferty-pracy) regularnie pojawiają się ogłoszenia szkół z Wrocławia i regionu, które szukają nauczycieli matematyki — niektóre są skierowane także do studentów ostatnich lat. Absolwenci Instytutu uczą w wielu szkołach regionu: w pierwszym Dolnośląskim Kongresie Nauczycieli Matematyki na naszym Wydziale (2025) wzięło udział ponad 120 nauczycieli, częstokroć naszych absolwentów.
+  Na stronie Instytutu z [ofertami pracy](/aktualnosci?rodzaj=kariera) regularnie pojawiają się ogłoszenia szkół z Wrocławia i regionu, które szukają nauczycieli matematyki — niektóre są skierowane także do studentów ostatnich lat. Absolwenci Instytutu uczą w wielu szkołach regionu: w pierwszym Dolnośląskim Kongresie Nauczycieli Matematyki na naszym Wydziale (2025) wzięło udział ponad 120 nauczycieli, częstokroć naszych absolwentów.
 
   Instytut prowadzi też kwalifikacyjne studia podyplomowe *Nauczanie matematyki* — zobacz [studia podyplomowe](/studia/podyplomowe).
 kariera_en: |-
@@ -299,7 +299,7 @@ kariera_en: |-
 
   According to the curriculum, this specialisation responds to a significant shortage on the labour market — the demand for modern teaching staff — and the education system needs teachers fully prepared, in both content and teaching methods, to teach mathematics in all types of schools.
 
-  The Institute's [job offers page](https://www.math.uni.wroc.pl/oferty-pracy) (Polish) regularly lists schools from Wrocław and the region looking for mathematics teachers — some offers are also open to final-year students. Our graduates teach in many schools in the region: the first Lower Silesian Congress of Mathematics Teachers at our Faculty (2025) was attended by over 120 teachers, many of them our graduates.
+  The Institute's [job offers page](/aktualnosci?rodzaj=kariera) (Polish) regularly lists schools from Wrocław and the region looking for mathematics teachers — some offers are also open to final-year students. Our graduates teach in many schools in the region: the first Lower Silesian Congress of Mathematics Teachers at our Faculty (2025) was attended by over 120 teachers, many of them our graduates.
 
   The Institute also runs a postgraduate qualification programme in *Teaching Mathematics* — see [postgraduate studies](/en/studia/podyplomowe).
 tematy_prac:
@@ -373,7 +373,7 @@ linki:
   adres: https://usosweb.uwr.edu.pl/kontroler.php?_action=katalog2%2Fprzedmioty%2FszukajPrzedmiotu&_pattern=&_prz_kod_pattern=28-MT
 - etykieta: Oferty pracy
   etykieta_en: Job offers
-  adres: https://www.math.uni.wroc.pl/oferty-pracy
+  adres: /aktualnosci?rodzaj=kariera
 faq:
 - pytanie: Kiedy i jak deklaruję wybór specjalności?
   pytanie_en: When and how do I declare this specialisation?
