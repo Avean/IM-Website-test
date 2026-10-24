@@ -1,4 +1,12 @@
 {
+  "aktualnosci": {
+    "wlaczone": true,
+    "dni_robocze_przed": 5,
+    "tytul": "Zamiana dni: {w_dniu} {data} zajęcia {jak_w_dniu}",
+    "tytul_en": "Day swap on {dzien_tygodnia}, {data}: {plan_dnia} timetable",
+    "tresc": "{W_dniu}, {data} r., obowiązuje zamiana dni: zostaną przeprowadzone zajęcia według planu {plan_dnia}. Będzie to dzień {kolor}.",
+    "tresc_en": "{W_dniu}, {data}, the days are swapped: classes will follow the {plan_dnia} timetable. Day colour: {kolor}."
+  },
   "semestry": [
     {
       "nazwa": "Semestr zimowy 2026/27",
@@ -9,7 +17,8 @@
       "uwagi": "",
       "uwagi_en": "",
       "wolne": [
-        { "od": "2026-11-12", "do": "2026-11-13", "opis": "Dni rektorskie (Święto Uniwersytetu)", "opis_en": "Rector's days off (University Day)" },
+        { "od": "2026-11-12", "do": "", "opis": "Dzień rektorski", "opis_en": "Rector's day off" },
+        { "od": "2026-11-13", "do": "", "opis": "Dzień rektorski (Święto Uniwersytetu)", "opis_en": "Rector's day off (University Day)" },
         { "od": "2026-12-21", "do": "2027-01-06", "opis": "Przerwa świąteczna", "opis_en": "Christmas break" }
       ],
       "zamiany": [
@@ -27,8 +36,8 @@
       "uwagi_en": "Colours calculated automatically from the academic year schedule — the Institute has not yet published the calendar for this semester.",
       "wolne": [
         { "od": "2027-03-26", "do": "2027-03-30", "opis": "Przerwa świąteczna", "opis_en": "Easter break" },
-        { "od": "2027-05-07", "do": "", "opis": "Dzień rektorski", "opis_en": "Rector's day off" },
-        { "od": "2027-05-28", "do": "", "opis": "Dzień rektorski (Juwenalia)", "opis_en": "Rector's day off (Juwenalia)" }
+        { "od": "2027-05-07", "do": "", "opis": "Dzień rektorski (Juwenalia)", "opis_en": "Rector's day off (Juwenalia student festival)" },
+        { "od": "2027-05-28", "do": "", "opis": "Dzień rektorski", "opis_en": "Rector's day off" }
       ],
       "zamiany": [
         { "data": "2027-03-24", "jak_dzien": "pt" },

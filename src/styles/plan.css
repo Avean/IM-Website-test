@@ -3,11 +3,23 @@
    Układ jak dawny planZ.php: sekcje, a w nich przedmioty z tabelą grup. Kolumny wszystkich tabel
    mają te same szerokości (table-layout: fixed + <colgroup>), więc tworzą jedną wspólną siatkę
    z nagłówkiem kolumn na górze semestru. Na telefonie wiersz tabeli zamienia się w kartę.
+   Semestry przełącza PrzelacznikSemestrow.astro; prawy pasek (.pz-bok) to spis sekcji aktywnego semestru.
    ========================================================================== */
 
-.pz-semestry { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 4px; }
-.pz-semestry .chip { display: inline-flex; align-items: center; text-decoration: none; }
-.pz-semestry .chip:hover { border-color: var(--ink); color: var(--ink); }
+/* ---------- układ: plan + prawy pasek ze spisem sekcji ---------- */
+.plan-strona > .side { flex: 1 1 250px; max-width: 280px; }
+.pz-spis { display: contents; } /* spis przyklejony (sticky) względem całego paska */
+.js .pz-semestr[data-ps-panel] { margin-top: 0; padding-top: 0; border-top: 0; }
+/* tabela potrzebuje szerokości: pasek tylko na szerokich ekranach, niżej spis zwinięty nad planem */
+@media (max-width: 1239px) {
+  .plan-strona > .side { display: none; }
+  .plan-strona .toc-top { display: block; }
+}
+/* bez JavaScriptu (wszystkie semestry naraz): spis zwinięty w każdym semestrze zamiast paska */
+html:not(.js) .plan-strona > .side { display: none; }
+html:not(.js) .plan-strona .toc-top { display: block; }
+.plan-strona .toc-top { margin: 0 0 4px; }
+.pz-sekcja h3 { scroll-margin-top: 44px; } /* pod przyklejonym nagłówkiem kolumn (html ma już scroll-padding na nagłówek strony) */
 
 .pz-stan { padding: 16px 18px; border-radius: var(--radius); background: var(--surface); color: var(--muted); font-weight: 600; }
 .pz-semestr { scroll-margin-top: calc(var(--hdr-h, 71px) + 12px); }
@@ -71,7 +83,7 @@
 /* ---------- wydruk ---------- */
 @media print {
   @page { margin: 12mm; }
-  .hdr, .ftr, .skip, .crumbs, .pz-semestry { display: none !important; }
+  .hdr, .ftr, .skip, .crumbs, .pz-bok, .toc-top { display: none !important; }
   .page-head { background: none; border: 0; }
   .page-head .wrap { padding: 0 0 6px; }
   .page-head h1 { font-size: 18pt; }

@@ -1,4 +1,5 @@
-// Kolory dni („Dzień N” — niebieski, „Dzień P” — pomarańczowy) liczone z src/data/kolory-dni.json.
+// Kolory dni (niebieski / pomarańczowy) liczone z src/data/kolory-dni.json — strona /studia/rok-akademicki,
+// kafelek na stronie głównej i automatyczne aktualności o zamianach dni.
 // Bez zależności od astro:content — działa przy budowaniu i w skrypcie przeglądarki.
 //
 // Reguła (sprawdzona dzień po dniu na kalendarzach PDF Instytutu z lat 2021/22–2026/27):
@@ -8,7 +9,7 @@
 // („w piątek zajęcia środowe”) liczy się jak dzień, którego plan obowiązuje.
 // Wyjątek zmienia kolor jednego dnia i nie przesuwa liczenia kolejnych dni.
 import dane from '../data/kolory-dni.json';
-import { addDays, weekday, dayShort, dayNum, monthShort, longWithDay, type Lang } from './daty';
+import { addDays, weekday, dayShort, dayNum, monthShort, long, longWithDay, type Lang } from './daty';
 
 export type Kolor = 'niebieski' | 'pomaranczowy';
 
@@ -44,6 +45,7 @@ export interface DzienSemestru extends Dzien { semestr: Semestr }
 const DNI_PL = ['', 'poniedziałek', 'wtorek', 'środa', 'czwartek', 'piątek', 'sobota', 'niedziela'];
 const DNI_PL_JAK = ['', 'w poniedziałek', 'we wtorek', 'w środę', 'w czwartek', 'w piątek', 'w sobotę', 'w niedzielę'];
 const DNI_PL_PRZYM = ['', 'poniedziałkowe', 'wtorkowe', 'środowe', 'czwartkowe', 'piątkowe'];
+const DNI_PL_DOP = ['', 'poniedziałku', 'wtorku', 'środy', 'czwartku', 'piątku', 'soboty', 'niedzieli'];
 const DNI_EN = ['', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday', 'Sunday'];
 export const DNI_SKROT = { pl: ['', 'pon.', 'wt.', 'śr.', 'czw.', 'pt.', 'sob.', 'niedz.'], en: ['', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'] };
 
@@ -51,10 +53,11 @@ export const NAZWA_KOLORU: Record<Lang, Record<Kolor, string>> = {
   pl: { niebieski: 'niebieski', pomaranczowy: 'pomarańczowy' },
   en: { niebieski: 'blue', pomaranczowy: 'orange' },
 };
-// Litera w komórce kalendarza (kolor nie jest jedyną informacją). „N”/„P” jak w PDF-ach Instytutu.
-export const LITERA: Record<Lang, Record<Kolor, string>> = {
-  pl: { niebieski: 'N', pomaranczowy: 'P' },
-  en: { niebieski: 'B', pomaranczowy: 'O' },
+// Duży napis w komórce dnia z zamianą: według planu którego dnia są zajęcia („ŚR” = plan środy).
+// W komórkach nie ma liter N/P — kolor dnia podaje tekst dla czytników ekranu i legenda.
+export const SKROT_PLANU: Record<Lang, string[]> = {
+  pl: ['', 'PN', 'WT', 'ŚR', 'CZ', 'PT', 'SO', 'ND'],
+  en: ['', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT', 'SUN'],
 };
 
 // ---------- pomocnicze ----------
@@ -234,14 +237,14 @@ export function statystykiSemestru(s: Semestr) {
 }
 
 // Dni wolne od zajęć (pon–pt) w okresie zajęć, zgrupowane w zakresy (weekendy w środku nie przerywają zakresu).
-export function wolneSemestru(s: Semestr): { od: string; do: string; opis: string; opis_en: string }[] {
-  const out: { od: string; do: string; opis: string; opis_en: string }[] = [];
+export function wolneSemestru(s: Semestr): { od: string; do: string; opis: string; opis_en: string; swieto: boolean }[] {
+  const out: { od: string; do: string; opis: string; opis_en: string; swieto: boolean }[] = [];
   let ost: Dzien | null = null;
   for (const d of oblicz(s).values()) {
     if (d.wolne) {
       const g = out[out.length - 1];
       if (g && ost && ost.wolne && g.opis === d.wolne.opis) g.do = d.data;
-      else out.push({ od: d.data, do: d.data, opis: d.wolne.opis, opis_en: d.wolne.opis_en });
+      else out.push({ od: d.data, do: d.data, opis: d.wolne.opis, opis_en: d.wolne.opis_en, swieto: d.wolne.swieto });
       ost = d;
     } else if (d.kolor || d.dzienTygodnia <= 5) {
       ost = null;
@@ -279,15 +282,16 @@ const porzadkowy = (n: number) => {
 export interface TekstDnia {
   data: string;
   kolor: Kolor | null; // kolor dzisiejszego dnia (null = brak zajęć)
-  litera: string; // litera do kółka („N”, „P” albo „–”)
-  tytul: string; // np. „Dziś: dzień niebieski”
+  zamiana: number | null; // dziś zamiana dni: według planu którego dnia (1–5), inaczej null
+  litera: string; // napis w kółku: skrót dnia planu przy zamianie („ŚR”), „–” bez zajęć, inaczej pusty
+  tytul: string; // np. „Dziś: dzień niebieski” albo „Dziś zajęcia jak w środę”
   opis: string; // krótki dopisek (kafelek)
-  opisDlugi: string; // pełne zdanie (strona kolorów dni)
+  opisDlugi: string; // pełne zdanie (strona Rok akademicki)
   nastepny: DzienSemestru | null;
   nastepnyKolor: Kolor | null;
 }
 
-// Wspólne napisy dla kafelka na stronie głównej i strony /studia/kalendarz-zajec.
+// Wspólne napisy dla kafelka na stronie głównej i strony /studia/rok-akademicki.
 export function tekstDnia(data: string, lang: Lang = 'pl'): TekstDnia {
   const T = (pl: string, en: string) => (lang === 'en' ? en : pl);
   const info = infoDnia(data);
@@ -295,6 +299,7 @@ export function tekstDnia(data: string, lang: Lang = 'pl'): TekstDnia {
   const nk = nastepny?.kolor ?? null;
   const opisNast = nastepny && nk
     ? T(`Następny dzień zajęć: ${krotkaData(nastepny.data, lang)} — ${NAZWA_KOLORU.pl[nk]}`, `Next class day: ${krotkaData(nastepny.data, lang)} — ${NAZWA_KOLORU.en[nk]}`)
+      + (nastepny.zamiana && nastepny.plan ? ` (${jakWDniu(nastepny.plan, lang)})` : '')
     : '';
   const dlugiNast = nastepny && nk
     ? T(`Następny dzień zajęć: ${longWithDay(nastepny.data, lang)} — dzień ${NAZWA_KOLORU.pl[nk]}`, `Next class day: ${longWithDay(nastepny.data, lang)} — ${NAZWA_KOLORU.en[nk]} day`)
@@ -302,16 +307,18 @@ export function tekstDnia(data: string, lang: Lang = 'pl'): TekstDnia {
     : '';
   if (info?.kolor) {
     const k = info.kolor;
-    const zam = info.zamiana && info.plan ? opisZamiany(info.plan, lang) : '';
+    const zam = info.zamiana && info.plan ? info.plan : null;
+    const nazwaK = T(`dzień ${NAZWA_KOLORU.pl[k]}`, `${NAZWA_KOLORU.en[k]} day`);
+    const ktory = info.plan && info.ktory
+      ? T(`${nazwaDnia(info.plan, 'pl')[0].toUpperCase()}${nazwaDnia(info.plan, 'pl').slice(1)} występuje w semestrze po raz ${info.ktory}.`, `The ${porzadkowy(info.ktory)} ${nazwaDnia(info.plan, 'en')} of the semester.`)
+      : '';
     return {
-      data, kolor: k, litera: LITERA[lang][k], nastepny, nastepnyKolor: nk,
-      tytul: T(`Dziś: dzień ${NAZWA_KOLORU.pl[k]}`, `Today: ${NAZWA_KOLORU.en[k]} day`),
-      opis: zam ? `${krotkaData(data, lang)} · ${zam}` : krotkaData(data, lang),
+      data, kolor: k, zamiana: zam, litera: zam ? SKROT_PLANU[lang][zam] : '', nastepny, nastepnyKolor: nk,
+      tytul: zam ? T(`Dziś zajęcia ${jakWDniu(zam, 'pl')}`, `Today: ${DNI_EN[zam]} timetable`) : T(`Dziś: dzień ${NAZWA_KOLORU.pl[k]}`, `Today: ${NAZWA_KOLORU.en[k]} day`),
+      opis: zam ? `${krotkaData(data, lang)} · ${nazwaK}` : krotkaData(data, lang),
       opisDlugi: [
-        info.plan && info.ktory
-          ? T(`${nazwaDnia(info.plan, 'pl')[0].toUpperCase()}${nazwaDnia(info.plan, 'pl').slice(1)} występuje w semestrze po raz ${info.ktory}.`, `The ${porzadkowy(info.ktory)} ${nazwaDnia(info.plan, 'en')} of the semester.`)
-          : '',
-        zam ? T(`Dziś ${zam}.`, `Today: ${zam}.`) : '',
+        zam ? T(`Zamiana dni: dziś zajęcia odbywają się według planu ${DNI_PL_DOP[zam]}. To ${nazwaK}.`, `Day swap: today classes follow the ${DNI_EN[zam]} timetable. It is ${k === 'pomaranczowy' ? 'an' : 'a'} ${nazwaK}.`) : '',
+        ktory,
         dlugiNast,
       ].filter(Boolean).join(' '),
     };
@@ -319,11 +326,156 @@ export function tekstDnia(data: string, lang: Lang = 'pl'): TekstDnia {
   const brak = !nastepny;
   const powod = info?.wolne ? T(info.wolne.opis, info.wolne.opis_en) : '';
   return {
-    data, kolor: null, litera: '–', nastepny, nastepnyKolor: nk,
+    data, kolor: null, zamiana: null, litera: '–', nastepny, nastepnyKolor: nk,
     tytul: brak ? T('Kalendarz zajęć', 'Class calendar') : T('Dziś brak zajęć', 'No classes today'),
     opis: brak ? T('Brak danych o kolejnym semestrze', 'No data for the next semester') : opisNast,
     opisDlugi: brak
       ? T('Brak danych o kolejnym semestrze.', 'No data for the next semester yet.')
       : [powod ? `${powod}.` : '', dlugiNast].filter(Boolean).join(' '),
   };
+}
+
+// ---------- automatyczne aktualności o zamianach dni ----------
+// Dla każdej zamiany z kolory-dni.json powstaje ogłoszenie widoczne na listach aktualności od dnia, który jest
+// N dni roboczych przed zamianą (domyślnie 5), do dnia zamiany włącznie. Strona jest statyczna i przebudowuje się
+// 2× dziennie, więc widoczność liczy się podczas budowania (today() z daty.ts). Tekst — szablon z pola „aktualnosci”.
+export interface SzablonAktualnosci {
+  wlaczone: boolean;
+  dni_robocze_przed: number;
+  tytul: string;
+  tytul_en: string;
+  tresc: string;
+  tresc_en: string;
+}
+
+export const DOMYSLNY_SZABLON: SzablonAktualnosci = {
+  wlaczone: true,
+  dni_robocze_przed: 5,
+  tytul: 'Zamiana dni: {w_dniu} {data} zajęcia {jak_w_dniu}',
+  tytul_en: 'Day swap on {dzien_tygodnia}, {data}: {plan_dnia} timetable',
+  tresc: '{W_dniu}, {data} r., obowiązuje zamiana dni: zostaną przeprowadzone zajęcia według planu {plan_dnia}. Będzie to dzień {kolor}.',
+  tresc_en: '{W_dniu}, {data}, the days are swapped: classes will follow the {plan_dnia} timetable. Day colour: {kolor}.',
+};
+
+const tekst = (v: unknown, dom: string) => (typeof v === 'string' && v.trim() ? v.trim() : dom);
+
+export function szablonAktualnosci(): SzablonAktualnosci {
+  const a = ((dane as any).aktualnosci ?? {}) as Record<string, unknown>;
+  const n = Number(a.dni_robocze_przed);
+  return {
+    wlaczone: a.wlaczone !== false && a.wlaczone !== 'false',
+    dni_robocze_przed: a.dni_robocze_przed !== '' && a.dni_robocze_przed != null && Number.isFinite(n) ? Math.min(30, Math.max(0, Math.round(n))) : DOMYSLNY_SZABLON.dni_robocze_przed,
+    tytul: tekst(a.tytul, DOMYSLNY_SZABLON.tytul),
+    tytul_en: tekst(a.tytul_en, DOMYSLNY_SZABLON.tytul_en),
+    tresc: tekst(a.tresc, DOMYSLNY_SZABLON.tresc),
+    tresc_en: tekst(a.tresc_en, DOMYSLNY_SZABLON.tresc_en),
+  };
+}
+
+// Dni wolne od zajęć z danych (wszystkie semestry) — nie są dniami roboczymi.
+let wolneZDanych: Set<string> | null = null;
+const swietaRoku = new Map<number, Map<string, { pl: string; en: string }>>();
+function wolnyZDanych(d: string): boolean {
+  if (!wolneZDanych) {
+    wolneZDanych = new Set();
+    for (const s of SEMESTRY) {
+      for (const w of s.wolne ?? []) {
+        const od = dzien(w?.od), d0 = dzien(w?.do);
+        if (!poprawna(od)) continue;
+        const doD = poprawna(d0) && d0 >= od ? d0 : od;
+        for (let x = od; x <= doD; x = addDays(x, 1)) wolneZDanych.add(x);
+      }
+    }
+  }
+  return wolneZDanych.has(d);
+}
+
+// Dzień roboczy: poniedziałek–piątek, bez świąt ustawowych i bez dni wolnych od zajęć z danych.
+export function dzienRoboczy(d: string): boolean {
+  if (dzienTygodnia(d) > 5) return false;
+  const rok = Number(d.slice(0, 4));
+  if (!swietaRoku.has(rok)) swietaRoku.set(rok, swietaPanstwowe(rok));
+  if (swietaRoku.get(rok)!.has(d)) return false;
+  return !wolnyZDanych(d);
+}
+
+// Pierwszy dzień widoczności: N dni roboczych przed datą (N = 0 → sam dzień zamiany).
+export function poczatekOkna(data: string, n: number): string {
+  let d = data;
+  for (let k = 0; k < n; ) {
+    d = addDays(d, -1);
+    if (dzienRoboczy(d)) k++;
+  }
+  return d;
+}
+
+// Pola do podstawienia w szablonie. Wielka pierwsza litera w nazwie ({W_dniu}) = wielka litera w tekście.
+export function polaZamiany(d: Dzien, lang: Lang = 'pl'): Record<string, string> {
+  const dt = d.dzienTygodnia, plan = d.plan ?? dt;
+  return {
+    data: long(d.data, lang, false),
+    dzien_tygodnia: nazwaDnia(dt, lang),
+    w_dniu: lang === 'en' ? `on ${DNI_EN[dt]}` : DNI_PL_JAK[dt],
+    plan_dnia: lang === 'en' ? DNI_EN[plan] : DNI_PL_DOP[plan],
+    jak_w_dniu: jakWDniu(plan, lang),
+    kolor: d.kolor ? NAZWA_KOLORU[lang][d.kolor] : '',
+  };
+}
+
+export function wypelnijSzablon(szablon: string, pola: Record<string, string>): string {
+  return szablon.replace(/\{([A-Za-zĄĆĘŁŃÓŚŹŻąćęłńóśźż_]+)\}/g, (cale, klucz: string) => {
+    const v = pola[klucz.toLowerCase()];
+    if (v == null) return cale;
+    const p = klucz.charAt(0);
+    return p !== p.toLowerCase() ? v.charAt(0).toUpperCase() + v.slice(1) : v;
+  });
+}
+
+// Zwykły tekst z krótkiego Markdownu (zajawka na kartach aktualności).
+const bezMarkdownu = (s: string) =>
+  s.replace(/\[([^\]]*)\]\([^)]*\)/g, '$1').replace(/[*_`#>]+/g, '').replace(/\s+/g, ' ').trim();
+
+export interface AktualnoscZamiany {
+  data: string; // dzień zamiany
+  od: string; // pierwszy dzień widoczności na listach
+  dzien: Dzien;
+  semestr: Semestr;
+  tytul: string;
+  tresc: string; // Markdown
+  zajawka: string; // zwykły tekst (pierwszy akapit)
+  wOknie: boolean; // czy w dniu `dzis` widać ją na listach
+  href: string;
+}
+
+// Wszystkie zamiany dni z danych (daty, rosnąco) — do wygenerowania stron /aktualnosci/zamiana-dni-RRRR-MM-DD.
+export function datyZamian(): string[] {
+  return [...new Set(SEMESTRY.flatMap((s) => zamianySemestru(s).map((d) => d.data)))].sort();
+}
+
+export function aktualnoscZamiany(data: string, lang: Lang, dzis: string): AktualnoscZamiany | null {
+  const info = infoDnia(data);
+  if (!info || !info.zamiana || !info.plan) return null;
+  const sz = szablonAktualnosci();
+  const pola = polaZamiany(info, lang);
+  const tresc = wypelnijSzablon(lang === 'en' ? sz.tresc_en : sz.tresc, pola);
+  const od = poczatekOkna(info.data, sz.dni_robocze_przed);
+  const { semestr, ...dz } = info;
+  return {
+    data: info.data, od, dzien: dz, semestr,
+    tytul: wypelnijSzablon(lang === 'en' ? sz.tytul_en : sz.tytul, pola),
+    tresc, zajawka: bezMarkdownu(tresc.split(/\n\s*\n/)[0] ?? ''),
+    wOknie: sz.wlaczone && od <= dzis && dzis <= info.data,
+    href: `/aktualnosci/zamiana-dni-${info.data}`,
+  };
+}
+
+// Pozycje do list aktualności (format PozycjaListy z src/lib/tresci.ts) — tylko te w oknie widoczności.
+export function pozycjeZamianDni(lang: Lang, dzis: string) {
+  return datyZamian()
+    .map((d) => aktualnoscZamiany(d, lang, dzis))
+    .filter((a): a is AktualnoscZamiany => !!a && a.wOknie)
+    .map((a) => ({
+      rodzaj: 'ogloszenie', tytul: a.tytul, data: a.od, zajawka: a.zajawka, dla: ['studenci', 'pracownicy'],
+      href: a.href, wydarzenie: a.data, id: `zam-${a.data}`, pilne: true,
+    }));
 }
