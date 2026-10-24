@@ -1,0 +1,234 @@
+{
+  "tytul": "Popularyzacja matematyki",
+  "tytul_en": "Mathematics outreach",
+  "wstep": "Matematycy z Instytutu — razem z Fundacją Matematyków Wrocławskich, Wydziałem Matematyki i Informatyki UWr i Wrocławskim Oddziałem PTM — prowadzą kółka i obozy dla uczniów, konkursy, wykłady popularnonaukowe oraz szkolenia dla nauczycieli. Poniżej najważniejsze inicjatywy i linki do ich stron.",
+  "wstep_en": "Together with the Wrocław Mathematicians Foundation, the Faculty of Mathematics and Computer Science and the Wrocław Branch of the Polish Mathematical Society, mathematicians from the Institute run maths circles and camps for pupils, competitions, popular science lectures and training for teachers. Below are the main initiatives, with links to their websites.",
+  "grupy": [
+    {
+      "nazwa": "Dla uczniów",
+      "nazwa_en": "For pupils",
+      "opis": "Kółka, konkursy, olimpiady i obozy — od szkoły podstawowej do liceum.",
+      "opis_en": "Maths circles, competitions, olympiads and camps — from primary to secondary school.",
+      "pozycje": [
+        {
+          "nazwa": "Międzyszkolne Kółka Matematyczne",
+          "nazwa_en": "Inter-school Maths Circles",
+          "opis": "Zajęcia dla utalentowanych matematycznie uczniów, prowadzone przez Fundację Matematyków Wrocławskich we współpracy z Instytutem Matematycznym UWr. Kółka olimpijskie przygotowują do Olimpiady Matematycznej i Olimpiady Matematycznej Juniorów; działają też grupy „Matematyka dla Myślących”. Uczestnicy mogą startować w konkursach, grach miejskich i obozach Fundacji.",
+          "opis_en": "Classes for mathematically talented pupils, run by the Wrocław Mathematicians Foundation in cooperation with the Mathematical Institute. The olympiad circles prepare for the Mathematical Olympiad and the Junior Mathematical Olympiad; there are also “Mathematics for Thinkers” groups. Participants can take part in the Foundation's competitions, city games and camps.",
+          "dla": "uczniowie od 3 klasy szkoły podstawowej do szkoły średniej",
+          "dla_en": "pupils from year 3 of primary school to secondary school",
+          "adres": "https://fmw.math.uni.wroc.pl/dla-uczni%C3%B3w/k%C3%B3%C5%82ka-matematyczne/mi%C4%99dzyszkolne-k%C3%B3%C5%82ka-matematyczne",
+          "przycisk": "Grupy, harmonogram i zapisy",
+          "przycisk_en": "Groups, schedule and enrolment"
+        },
+        {
+          "nazwa": "Wrocławski Maraton Matematyczny",
+          "nazwa_en": "Wrocław Mathematical Marathon",
+          "opis": "Otwarty i bezpłatny konkurs indywidualny z finałem w Instytucie Matematycznym UWr. Zawodnicy startują w kategoriach: młodzicy (klasy 3–5 SP), juniorzy (klasy 6–8 SP), licealiści oraz dorośli — profesjonaliści i amatorzy. Uczniów zgłaszają szkoły i kółka matematyczne.",
+          "opis_en": "An open, free individual competition with the final held at the Mathematical Institute. Contestants compete in categories for primary school years 3–5 and 6–8, secondary school pupils, and adults — professionals and amateurs. Pupils are entered by their schools and maths circles.",
+          "dla": "uczniowie i dorośli miłośnicy matematyki",
+          "dla_en": "pupils and adult maths enthusiasts",
+          "adres": "https://fmw.math.uni.wroc.pl/dla-uczni%C3%B3w/maraton-matematyczny/maraton-matematyczny",
+          "przycisk": "Regulamin i zgłoszenia",
+          "przycisk_en": "Rules and registration"
+        },
+        {
+          "nazwa": "Olimpiada Lingwistyki Matematycznej",
+          "nazwa_en": "Mathematical Linguistics Olympiad",
+          "opis": "Interdyscyplinarny konkurs, w którym uczniowie rozwiązują zadania o nieznanych językach, odkrywając ich wzorce i struktury drogą rozumowania dedukcyjnego. Jest ogólnopolskimi eliminacjami do Międzynarodowej Olimpiady Lingwistycznej; organizuje ją Fundacja Matematyków Wrocławskich.",
+          "opis_en": "An interdisciplinary competition in which pupils solve problems about unfamiliar languages, uncovering their patterns and structures by deductive reasoning. It serves as the national qualifying round for the International Linguistics Olympiad and is organised by the Wrocław Mathematicians Foundation.",
+          "dla": "uczniowie szkół średnich",
+          "dla_en": "secondary school pupils",
+          "adres": "https://olm.math.uni.wroc.pl/",
+          "przycisk": "Strona olimpiady",
+          "przycisk_en": "Olympiad website"
+        },
+        {
+          "nazwa": "Młodzi Odkrywcy",
+          "nazwa_en": "Young Discoverers",
+          "opis": "Projekt popularyzujący matematykę, informatykę i sztuczną inteligencję, realizowany w latach 2025–2026 przez Fundację Matematyków Wrocławskich i Wydział Matematyki i Informatyki UWr. Obejmuje Dolnośląskie Kongresy Młodych Odkrywców — dwudniowe spotkania z wykładami, warsztatami i grą terenową — a także jednodniowe warsztaty i Uniwersytecki Obóz Olimpiady Matematycznej.",
+          "opis_en": "A project promoting mathematics, computer science and artificial intelligence, run in 2025–2026 by the Wrocław Mathematicians Foundation and the Faculty of Mathematics and Computer Science. It includes the Lower Silesian Young Discoverers Congresses — two-day events with lectures, workshops and an outdoor game — as well as one-day workshops and the University Mathematical Olympiad Camp.",
+          "dla": "uczniowie szkół średnich",
+          "dla_en": "secondary school pupils",
+          "adres": "https://odkrywcy.math.uni.wroc.pl/",
+          "przycisk": "Strona projektu",
+          "przycisk_en": "Project website"
+        },
+        {
+          "nazwa": "Obozy matematyczne",
+          "nazwa_en": "Maths camps",
+          "opis": "Fundacja Matematyków Wrocławskich organizuje obozy naukowe dla uzdolnionej matematycznie młodzieży, m.in. Zimowe Szkoły Matematyki (od 1989 roku, około 100 uczestników) oraz obozy przygotowujące do Olimpiady Matematycznej i Olimpiady Matematycznej Juniorów. Zajęcia na Zimowych Szkołach prowadzą studenci, doktoranci i pracownicy naukowi Instytutu; uczniów zgłaszają nauczyciele matematyki lub opiekunowie kółek.",
+          "opis_en": "The Wrocław Mathematicians Foundation organises camps for mathematically gifted young people, including the Winter Schools of Mathematics (held since 1989, about 100 participants) and camps preparing for the Mathematical Olympiad and the Junior Mathematical Olympiad. Classes at the Winter Schools are taught by students, PhD students and researchers of the Institute; pupils are nominated by their mathematics teachers or maths circle leaders.",
+          "dla": "uzdolniona matematycznie młodzież",
+          "dla_en": "mathematically gifted young people",
+          "adres": "https://fmw.math.uni.wroc.pl/dla-uczni%C3%B3w/zimowa-szko%C5%82a-matematyki/zimowe-szko%C5%82y-matematyki",
+          "przycisk": "Zimowe Szkoły Matematyki",
+          "przycisk_en": "Winter Schools of Mathematics"
+        },
+        {
+          "nazwa": "Klasy uniwersyteckie",
+          "nazwa_en": "University classes",
+          "opis": "Klasy matematyczno-informatyczne pod patronatem Wydziału Matematyki i Informatyki UWr w Szkole Podstawowej nr 3 i Szkole Podstawowej nr 76 we Wrocławiu. Uczniowie realizują autorski program matematyki w zwiększonym wymiarze godzin; do klas przyjmuje się na podstawie testu kompetencji matematycznych.",
+          "opis_en": "Mathematics and computer science classes under the patronage of the Faculty of Mathematics and Computer Science, at Primary Schools No. 3 and No. 76 in Wrocław. Pupils follow a dedicated mathematics curriculum with extra teaching hours; admission is based on a mathematical aptitude test.",
+          "dla": "kandydaci do 7 klasy szkoły podstawowej",
+          "dla_en": "candidates for year 7 of primary school",
+          "adres": "https://wmi.uwr.edu.pl/klasy_uniwersyteckie/",
+          "przycisk": "Rekrutacja i informacje",
+          "przycisk_en": "Admissions and information"
+        },
+        {
+          "nazwa": "Olimpiada Sztucznej Inteligencji",
+          "nazwa_en": "Artificial Intelligence Olympiad",
+          "opis": "Trzyetapowy ogólnopolski konkurs, którego jednym z głównych organizatorów jest Wydział Matematyki i Informatyki UWr; zawody drugiego etapu odbywają się m.in. we Wrocławiu. Na stronie olimpiady są zadania z poprzednich edycji i wykłady szkoleniowe.",
+          "opis_en": "A three-stage national competition; the Faculty of Mathematics and Computer Science is one of its main organisers, and the second stage is held in several cities, including Wrocław. The olympiad website offers problems from previous editions and training lectures.",
+          "dla": "uczniowie",
+          "dla_en": "school pupils",
+          "adres": "https://www.oai.edu.pl/",
+          "przycisk": "Strona olimpiady",
+          "przycisk_en": "Olympiad website"
+        }
+      ]
+    },
+    {
+      "nazwa": "Dla nauczycieli",
+      "nazwa_en": "For teachers",
+      "opis": "Seminaria, konferencje i kursy doskonalące dla nauczycieli matematyki.",
+      "opis_en": "Seminars, conferences and professional development courses for mathematics teachers.",
+      "pozycje": [
+        {
+          "nazwa": "Seminarium nauczycielskie I³",
+          "nazwa_en": "I³ seminar for teachers",
+          "opis": "Cotygodniowe spotkania nauczycieli i studentów matematyki w Instytucie Matematycznym w czasie roku akademickiego, prowadzone od semestru letniego 2003/2004. Odbywają się w grupach dla nauczycieli szkół podstawowych i średnich, a zwykle raz w miesiącu — posiedzenie plenarne. W programie: warsztaty metodyczne, odczyty popularnonaukowe, nowości w literaturze fachowej i dyskusje z zaproszonymi gośćmi. Nazwa to skrót od słów: Inspiracja, Indywidualizacja, Interdyscyplinarność.",
+          "opis_en": "Weekly meetings of mathematics teachers and students at the Mathematical Institute during the academic year, held since the summer semester of 2003/2004. They take place in groups for primary and secondary school teachers, usually with a plenary session once a month. The programme includes teaching workshops, popular science talks, news from the professional literature and discussions with invited guests. The name stands for Inspiration, Individualisation, Interdisciplinarity.",
+          "dla": "nauczyciele i studenci matematyki",
+          "dla_en": "mathematics teachers and students",
+          "adres": "https://fmw.math.uni.wroc.pl/dla-nauczycieli/seminarium-i3/seminarium-dla-nauczycieli-i3",
+          "przycisk": "Strona seminarium",
+          "przycisk_en": "Seminar page"
+        },
+        {
+          "nazwa": "Dolnośląski Kongres Nauczycieli Matematyki",
+          "nazwa_en": "Lower Silesian Congress of Mathematics Teachers",
+          "opis": "Jednodniowa konferencja na Wydziale Matematyki i Informatyki UWr dla nauczycieli matematyki szkół średnich z Dolnego Śląska i okolic, z wykładami i warsztatami. Pierwsza edycja odbyła się w marcu 2025 roku, druga — w marcu 2026 roku; w każdej wzięło udział ponad 120 nauczycieli.",
+          "opis_en": "A one-day conference at the Faculty of Mathematics and Computer Science for secondary school mathematics teachers from Lower Silesia and the surrounding area, with lectures and workshops. The first edition took place in March 2025 and the second in March 2026; each was attended by more than 120 teachers.",
+          "dla": "nauczyciele matematyki szkół średnich",
+          "dla_en": "secondary school mathematics teachers",
+          "adres": "https://dokonamat2.math.uni.wroc.pl/",
+          "przycisk": "Strona kongresu",
+          "przycisk_en": "Congress website"
+        },
+        {
+          "nazwa": "Kursy i szkolenia Fundacji",
+          "nazwa_en": "Courses and training by the Foundation",
+          "opis": "Fundacja Matematyków Wrocławskich organizuje lub wspiera kursy dla nauczycieli: studia podyplomowe „Nowoczesne Metody Nauczania Matematyki”, kursy o specyficznych trudnościach w uczeniu się matematyki (dyskalkulii) i o programowaniu w klasach 1–3, kursy zawodowego języka angielskiego i niemieckiego dla nauczycieli matematyki oraz kursy dla wychowawców i kierowników kolonii.",
+          "opis_en": "The Wrocław Mathematicians Foundation organises or supports courses for teachers: the postgraduate programme “Modern Methods of Teaching Mathematics”, courses on specific difficulties in learning mathematics (dyscalculia) and on programming in years 1–3, professional English and German courses for mathematics teachers, and courses for holiday camp tutors and leaders.",
+          "dla": "nauczyciele (niektóre kursy także studenci i rodzice)",
+          "dla_en": "teachers (some courses also for students and parents)",
+          "adres": "https://fmw.math.uni.wroc.pl/dla-nauczycieli/szkolenia-dla-nauczycieli-matematyki",
+          "przycisk": "Oferta szkoleń",
+          "przycisk_en": "Training offer"
+        }
+      ]
+    },
+    {
+      "nazwa": "Dla wszystkich",
+      "nazwa_en": "For everyone",
+      "opis": "Wykłady popularnonaukowe, portal z zadaniami i artykułami oraz archiwalne materiały do samodzielnej nauki.",
+      "opis_en": "Popular science lectures, a portal with problems and articles, and archived materials for self-study.",
+      "pozycje": [
+        {
+          "nazwa": "Wrocławski Portal Matematyczny",
+          "nazwa_en": "Wrocław Mathematical Portal",
+          "opis": "Portal popularyzujący matematykę, działający od 2007 roku jako wspólna inicjatywa prezydenta Wrocławia i rektora Uniwersytetu Wrocławskiego; redaktorką naczelną jest Małgorzata Mikołajczyk z Instytutu. Publikuje artykuły i ciekawostki, kalendarz imprez matematycznych, informacje o konkursach i materiały dla nauczycieli, a także prowadzi ligi zadaniowe — 12 lig szkolnych i tematycznych.",
+          "opis_en": "A portal promoting mathematics, running since 2007 as a joint initiative of the Mayor of Wrocław and the Rector of the University of Wrocław; its editor-in-chief is Małgorzata Mikołajczyk of the Institute. It publishes articles and curiosities, a calendar of mathematical events, competition news and materials for teachers, and runs problem-solving leagues — 12 school and thematic leagues.",
+          "dla": "uczniowie, nauczyciele, rodzice i miłośnicy matematyki",
+          "dla_en": "pupils, teachers, parents and maths enthusiasts",
+          "adres": "http://www.matematyka.wroc.pl/",
+          "przycisk": "Przejdź do portalu",
+          "przycisk_en": "Go to the portal"
+        },
+        {
+          "nazwa": "Wrocławskie Spotkania Matematyczne",
+          "nazwa_en": "Wrocław Mathematical Meetings",
+          "opis": "Cykl odczytów popularnonaukowych, który od 1991 roku odbywa się w Instytucie Matematycznym raz w miesiącu przez cały rok szkolny. Wykłady wygłaszają pracownicy i doktoranci Instytutu oraz goście z innych uczelni.",
+          "opis_en": "A series of popular science talks held at the Mathematical Institute once a month throughout the school year since 1991. The speakers are researchers and PhD students of the Institute and guests from other universities.",
+          "dla": "młodzież szkolna, nauczyciele i studenci",
+          "dla_en": "school pupils, teachers and students",
+          "adres": "https://fmw.math.uni.wroc.pl/dla-uczni%C3%B3w/spotkania-matematyczne/wroc%C5%82awskie-spotkania-matematyczne",
+          "przycisk": "Kalendarium spotkań",
+          "przycisk_en": "Lecture calendar"
+        },
+        {
+          "nazwa": "Dolnośląski Festiwal Nauki",
+          "nazwa_en": "Lower Silesian Science Festival",
+          "opis": "Festiwal odbywa się co roku we wrześniu. Wydział Matematyki i Informatyki UWr przygotowuje na niego wykłady popularnonaukowe z matematyki i informatyki, a w jego ramach odbywa się też Wrocławski Maraton Matematyczny.",
+          "opis_en": "The festival takes place every September. The Faculty of Mathematics and Computer Science prepares popular science lectures in mathematics and computer science for it, and the Wrocław Mathematical Marathon is also held as part of the festival.",
+          "dla": "wszyscy zainteresowani, także grupy szkolne",
+          "dla_en": "everyone interested, including school groups",
+          "adres": "https://www.festiwal.wroc.pl/",
+          "przycisk": "Program festiwalu",
+          "przycisk_en": "Festival programme"
+        },
+        {
+          "nazwa": "Tygodnik „Trapez”",
+          "nazwa_en": "“Trapez” weekly",
+          "opis": "Autorski tygodnik matematyczny Jarosława Wróblewskiego z Instytutu, wydawany w latach 2015–2019 (221 numerów). Zawiera łamigłówki i zadania — z rozwiązaniami w kolejnych numerach — ułożone w cykle tematyczne, m.in. o nierówności między średnimi, chińskim twierdzeniu o resztach i zadaniach na kolorowanie, a także cykl dla początkujących olimpijczyków.",
+          "opis_en": "A mathematical weekly written by Jarosław Wróblewski of the Institute, published from 2015 to 2019 (221 issues). It contains puzzles and problems — with solutions in later issues — arranged in thematic series, e.g. on the AM–GM inequality, the Chinese remainder theorem and colouring problems, as well as a series for beginning olympiad participants.",
+          "adres": "https://www.math.uni.wroc.pl/~jwr/trapez/",
+          "przycisk": "Archiwum numerów",
+          "przycisk_en": "Issue archive",
+          "archiwalne": true
+        },
+        {
+          "nazwa": "Matematyka dla Myślących",
+          "nazwa_en": "Mathematics for Thinkers",
+          "opis": "Kurs prowadzony w Instytucie w latach 2008/09 i 2009/10, który miał pokazać, że matematyka jest ciekawa, mądra i potrzebna, a jej nauka nie polega na odtwarzaniu wyuczonych algorytmów. Materiały kursu — dziesięć części (bez rozwiązań i z rozwiązaniami) oraz testy sprawdzające — można przerabiać samodzielnie.",
+          "opis_en": "A course run at the Institute in 2008/09 and 2009/10, meant to show that mathematics is interesting, wise and useful, and that learning it is not about reproducing memorised algorithms. The course materials — ten parts (with and without solutions) and self-assessment tests — are available for independent study.",
+          "adres": "https://www.math.uni.wroc.pl/matematyka-dla-myslacych",
+          "przycisk": "Materiały kursu",
+          "przycisk_en": "Course materials",
+          "archiwalne": true
+        }
+      ]
+    },
+    {
+      "nazwa": "Organizatorzy",
+      "nazwa_en": "Organisers",
+      "opis": "Pracownia Instytutu, fundacja i towarzystwo naukowe, które prowadzą i wspierają te inicjatywy.",
+      "opis_en": "The Institute's unit, the foundation and the learned society that run and support these initiatives.",
+      "pozycje": [
+        {
+          "nazwa": "Pracownia Dydaktyki i Popularyzacji Matematyki",
+          "nazwa_en": "Mathematics Education and Outreach Unit",
+          "opis": "Jednostka Instytutu zajmująca się dydaktyką matematyki i kształceniem przyszłych nauczycieli, a także popularyzacją matematyki wśród uczniów i nauczycieli.",
+          "opis_en": "The Institute's unit working on mathematics education and the training of future teachers, as well as on popularising mathematics among pupils and teachers.",
+          "adres": "/instytut/zaklady/dydaktyka",
+          "przycisk": "Strona pracowni",
+          "przycisk_en": "Unit page"
+        },
+        {
+          "nazwa": "Fundacja Matematyków Wrocławskich",
+          "nazwa_en": "Wrocław Mathematicians Foundation",
+          "opis": "Fundacja powstała w 2007 roku i kontynuuje działalność Fundacji Stypendialnej Matematyków Wrocławskich z lat 1991–2007. Przyznaje stypendia uzdolnionym uczniom, studentom i młodym matematykom, prowadzi międzyszkolne kółka matematyczne, organizuje konkursy, obozy naukowe i imprezy popularnonaukowe, szkoli nauczycieli oraz wspiera wydawanie książek, materiałów dydaktycznych i portali o matematyce.",
+          "opis_en": "Established in 2007, the foundation continues the work of the Wrocław Mathematicians Scholarship Foundation (1991–2007). It awards scholarships to talented pupils, students and young mathematicians, runs inter-school maths circles, organises competitions, camps and popular science events, trains teachers, and supports the publication of books, teaching materials and websites about mathematics.",
+          "dla": "uczniowie, nauczyciele i studenci",
+          "dla_en": "pupils, teachers and students",
+          "adres": "https://fmw.math.uni.wroc.pl/",
+          "przycisk": "Strona Fundacji",
+          "przycisk_en": "Foundation website"
+        },
+        {
+          "nazwa": "Wrocławski Oddział PTM",
+          "nazwa_en": "Polish Mathematical Society, Wrocław Branch",
+          "opis": "Oddział Polskiego Towarzystwa Matematycznego, do którego mogą należeć osoby z wykształceniem matematycznym lub pokrewnym. Organizuje Konkurs na najlepszą pracę studencką z rachunku prawdopodobieństwa i zastosowań matematyki — jeden z najstarszych wciąż odbywających się konkursów na prace studenckie w Polsce. Jego historia sięga 1967 roku, gdy zainicjował go Józef Łukaszewicz z Uniwersytetu Wrocławskiego.",
+          "opis_en": "The Wrocław branch of the Polish Mathematical Society, open to people with a background in mathematics or a related field. It runs the Competition for the Best Student Paper in Probability and Applied Mathematics — one of the oldest still-running student paper competitions in Poland. The competition dates back to 1967, when it was initiated by Józef Łukaszewicz of the University of Wrocław.",
+          "dla": "studenci i matematycy",
+          "dla_en": "students and mathematicians",
+          "adres": "https://ptm.math.uni.wroc.pl/",
+          "przycisk": "Strona oddziału",
+          "przycisk_en": "Branch website"
+        }
+      ]
+    }
+  ]
+}
