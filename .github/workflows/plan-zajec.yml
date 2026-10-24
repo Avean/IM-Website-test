@@ -1,12 +1,13 @@
 name: Plan zajęć z USOS
 
 # Pobiera plan zajęć z USOS (anonimowo — bez klucza API i bez logowania) do src/data/plan/plan.json.
-# Na main: gdy plan się zmienił, commituje plik i zleca przebudowę strony (repository_dispatch „przebuduj”,
-# bo commit zrobiony tokenem GITHUB_TOKEN sam nie uruchamia innych workflowów).
-# Na innych gałęziach (zmiana skryptu): tylko próbne pobranie — wynik do obejrzenia jako artefakt „plan-json”.
+# Gdy plan się zmienił, commituje plik na gałąź, na której działa przebieg:
+#  - main (harmonogram / ręczne uruchomienie): po commicie zleca przebudowę strony (repository_dispatch
+#    „przebuduj” — commit zrobiony tokenem GITHUB_TOKEN sam nie uruchamia innych workflowów);
+#  - gałąź robocza, na której zmieniono skrypt: próbne pobranie zapisane na tej gałęzi.
 on:
   schedule:
-    # 3 razy dziennie (czas UTC; w Polsce +1/+2 h), tuż przed porannym i popołudniowym przebudowaniem strony
+    # 3 razy dziennie (czas UTC; w Polsce +1/+2 h), przed porannym i popołudniowym budowaniem strony
     - cron: '47 1 * * *'
     - cron: '37 9 * * *'
     - cron: '47 15 * * *'
@@ -34,20 +35,12 @@ jobs:
       - name: Pobranie planu z USOS
         run: python3 skrypty/plan/pobierz_plan.py
 
-      - name: Wynik próbny (gałęzie robocze)
-        if: github.ref != 'refs/heads/main'
-        uses: actions/upload-artifact@v4
-        with:
-          name: plan-json
-          path: src/data/plan/plan.json
-          retention-days: 7
-
-      - name: Zapis zmian i przebudowa strony (main)
-        if: github.ref == 'refs/heads/main'
+      - name: Zapis zmian
         env:
           GH_TOKEN: ${{ github.token }}
+          GALAZ: ${{ github.ref_name }}
         run: |
-          if git diff --quiet -- src/data/plan/plan.json; then
+          if git diff --quiet -- src/data/plan/plan.json && [ -z "$(git status --porcelain -- src/data/plan/plan.json)" ]; then
             echo "::notice title=Plan zajęć::Bez zmian w USOS — nic do zapisania."
             exit 0
           fi
@@ -56,9 +49,11 @@ jobs:
           git add src/data/plan/plan.json
           git commit -m "Plan zajęć: aktualizacja z USOS"
           for i in 1 2 3; do
-            if git push; then break; fi
-            git pull --rebase
+            if git push origin "HEAD:$GALAZ"; then break; fi
+            git pull --rebase origin "$GALAZ"
           done
-          gh api "repos/${{ github.repository }}/dispatches" -f event_type=przebuduj \
-            || echo "::warning title=Plan zajęć::Nie udało się zlecić przebudowy — strona odświeży się przy najbliższym planowym budowaniu."
-          echo "::notice title=Plan zajęć::Zapisano nowy plan i zlecono przebudowę strony."
+          if [ "$GALAZ" = "main" ]; then
+            gh api "repos/${{ github.repository }}/dispatches" -f event_type=przebuduj \
+              || echo "::warning title=Plan zajęć::Nie udało się zlecić przebudowy — strona odświeży się przy najbliższym planowym budowaniu."
+          fi
+          echo "::notice title=Plan zajęć::Zapisano nowy plan na gałęzi $GALAZ."
