@@ -61,7 +61,7 @@ const T = (pl: string, en: string) => (lang === 'en' ? en : pl);
 const naglowki = [
   { depth: 2, slug: 'o-zakladzie', text: T('O zakładzie', 'About') },
   { depth: 2, slug: 'sklad', text: T('Skład', 'People') },
-  ...(sem.length ? [{ depth: 2, slug: 'seminaria', text: T('Seminaria', 'Seminars') }] : []),
+  ...(sem.length ? [{ depth: 2, slug: 'seminaria', text: sem.length > 1 ? T('Seminaria', 'Seminars') : T('Seminarium', 'Seminar') }] : []),
   ...(gr.length ? [{ depth: 2, slug: 'granty', text: T('Projekty i granty', 'Grants') }] : []),
   ...(konf.length ? [{ depth: 2, slug: 'konferencje', text: T('Konferencje', 'Conferences') }] : []),
   ...(obr.length ? [{ depth: 2, slug: 'obrony', text: T('Obrony doktorskie', 'PhD defences') }] : []),
@@ -120,7 +120,7 @@ const wszystkieZaklady = await zaklady();
 
       {sem.length > 0 && (
         <section class="zsec" aria-labelledby="seminaria">
-          <h2 id="seminaria">{T('Seminaria', 'Seminars')}</h2>
+          <h2 id="seminaria">{sem.length > 1 ? T('Seminaria', 'Seminars') : T('Seminarium', 'Seminar')}</h2>
           <div class="sem-cards">
             {sem.map((s) => {
               const r = nastepny(s.id);

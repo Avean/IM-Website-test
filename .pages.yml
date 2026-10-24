@@ -246,10 +246,11 @@ content:
       - { name: kontakt, label: E-mail kontaktowy (pod nazwiskiem koordynatora), type: string }
       - { name: archiwum, label: "Link do archiwum referatów (np. dawna strona seminarium; pokazuje się pod minionymi referatami)", type: string }
       - name: zaklad
-        label: Zakład (można wybrać kilka)
+        label: "Zakład (puste = seminarium niezależne)"
+        description: "Każdy zakład ma jedno seminarium. Seminarium niezwiązane z zakładem zostaw bez zakładu — pokaże się w grupie „Seminaria niezależne”."
         type: select
         options:
-          multiple: true
+          multiple: false
           values:
             - { name: algebra-i-teoria-modeli, label: Algebra i teoria modeli }
             - { name: analiza-funkcjonalna, label: Analiza funkcjonalna }
@@ -261,6 +262,7 @@ content:
             - { name: statystyka, label: Statystyka }
             - { name: dydaktyka, label: Pracownia Dydaktyki i Popularyzacji Matematyki }
       - { name: aktywne, label: Aktywne, type: boolean, default: true }
+      - { name: do_uzupelnienia, label: "Do uzupełnienia (notatka redakcyjna, niewyświetlana)", type: string, list: true }
       - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
       - name: body
         label: Opis (Markdown, wzory w $...$)
