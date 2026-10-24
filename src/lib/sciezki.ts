@@ -44,3 +44,8 @@ export async function sciezkiZakladow() {
   const z = await zaklady(true);
   return z.map((zaklad) => ({ params: { slug: zaklad.id }, props: { zaklad } }));
 }
+
+export async function sciezkiKierunkow() {
+  const k = await getCollection('kierunki');
+  return k.map((kierunek) => ({ params: { kierunek: kierunek.id }, props: { kierunek } }));
+}

@@ -310,6 +310,172 @@ content:
         options:
           format: markdown
 
+  # ---------------------------------------------------------------- KIERUNKI STUDIÓW
+  - name: kierunki
+    label: Kierunki studiów
+    description: Strona kierunku (np. Matematyka) składa się z sekcji — każdą wypełnia się osobno, wygląd dba szablon.
+    type: collection
+    path: src/content/kierunki
+    format: yaml-frontmatter
+    filename: "{primary}.md"
+    view:
+      fields: [nazwa]
+      primary: nazwa
+    fields:
+      - { name: nazwa, label: Nazwa kierunku, type: string, required: true }
+      - { name: podtytul, label: "Nadtytuł (np. Studia I i II stopnia)", type: string }
+      - { name: opis, label: Jedno zdanie pod nazwą, type: text }
+      - { name: opublikowany, label: Opublikowany, type: boolean, default: true }
+      - name: przyciski
+        label: Przyciski pod opisem
+        type: object
+        list: true
+        fields:
+          - { name: etykieta, label: Etykieta, type: string }
+          - { name: etykieta_en, label: "EN: etykieta", type: string }
+          - { name: adres, label: Adres, type: string }
+      - name: fakty
+        label: Liczby w nagłówku (np. 3 lata — studia I stopnia)
+        type: object
+        list: true
+        fields:
+          - { name: wartosc, label: Wartość, type: string }
+          - { name: etykieta, label: Opis, type: string }
+          - { name: etykieta_en, label: "EN: opis", type: string }
+      - name: body
+        label: O kierunku
+        type: rich-text
+        options:
+          format: markdown
+      - name: dlaczego
+        label: Dlaczego warto (kafelki)
+        type: object
+        list: true
+        fields:
+          - { name: tytul, label: Tytuł, type: string }
+          - { name: opis, label: Opis, type: text }
+          - name: ikona
+            label: Ikona
+            type: select
+            options:
+              values: [flaga, czapka, ludzie, zewnetrzny, kalendarz, tablica, zegar, plik]
+          - { name: tytul_en, label: "EN: tytuł", type: string }
+          - { name: opis_en, label: "EN: opis", type: text }
+      - name: etapy
+        label: Jak wyglądają studia (oś czasu)
+        type: object
+        list: true
+        fields:
+          - name: stopien
+            label: Stopień
+            type: select
+            options:
+              values: [I, II]
+          - { name: kiedy, label: "Kiedy (np. Semestry 1–2)", type: string }
+          - { name: tytul, label: Tytuł etapu, type: string }
+          - { name: opis, label: Opis, type: text }
+          - { name: termin, label: "Ważny termin (opcjonalnie)", type: string }
+          - { name: formularz, label: "Formularz (np. Formularz C2)", type: string }
+          - { name: formularz_adres, label: Link do formularza, type: string }
+          - { name: kiedy_en, label: "EN: kiedy", type: string }
+          - { name: tytul_en, label: "EN: tytuł", type: string }
+          - { name: opis_en, label: "EN: opis", type: text }
+          - { name: termin_en, label: "EN: termin", type: string }
+      - name: specjalnosci
+        label: Specjalności
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: skrot, label: "Skrót (np. AD)", type: string }
+          - { name: opis, label: Czego się uczysz, type: text }
+          - { name: dla_kogo, label: Dla kogo, type: text }
+          - { name: kariera, label: Po studiach, type: text }
+          - { name: opiekunowie, label: Opiekun(owie), type: string }
+          - { name: zaklad, label: "Zakład (identyfikator, np. statystyka)", type: string }
+          - { name: wygaszana, label: Wygaszana, type: boolean }
+          - { name: nazwa_en, label: "EN: nazwa", type: string }
+          - { name: opis_en, label: "EN: czego się uczysz", type: text }
+          - { name: dla_kogo_en, label: "EN: dla kogo", type: text }
+          - { name: kariera_en, label: "EN: po studiach", type: text }
+      - name: programy
+        label: Programy studiów (zakładki)
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: "Nazwa zakładki (np. Nowy program od 2026/27)", type: string }
+          - { name: dotyczy, label: Kogo dotyczy, type: string }
+          - { name: od_roku, label: Dla rozpoczynających od roku, type: number }
+          - { name: do_roku, label: … do roku, type: number }
+          - name: dokumenty
+            label: Dokumenty
+            type: object
+            list: true
+            fields:
+              - { name: nazwa, label: Nazwa, type: string }
+              - { name: plik, label: Plik lub link, type: string }
+              - { name: opis, label: Krótki opis (opcjonalnie), type: string }
+              - { name: nazwa_en, label: "EN: nazwa", type: string }
+          - { name: nazwa_en, label: "EN: nazwa zakładki", type: string }
+          - { name: dotyczy_en, label: "EN: kogo dotyczy", type: string }
+      - name: terminy
+        label: Terminy i formularze (tabela)
+        type: object
+        list: true
+        fields:
+          - { name: co, label: Sprawa, type: string }
+          - { name: kogo, label: Kogo dotyczy, type: string }
+          - { name: termin, label: Termin, type: string }
+          - { name: formularz, label: "Formularz (np. C2)", type: string }
+          - { name: formularz_adres, label: Link do formularza, type: string }
+          - { name: co_en, label: "EN: sprawa", type: string }
+          - { name: kogo_en, label: "EN: kogo dotyczy", type: string }
+          - { name: termin_en, label: "EN: termin", type: string }
+      - { name: praktyki, label: "Praktyki pedagogiczne (Markdown)", type: text }
+      - name: praktyki_dokumenty
+        label: Dokumenty praktyk
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: plik, label: Plik lub link, type: string }
+          - { name: nazwa_en, label: "EN: nazwa", type: string }
+      - { name: kariera, label: "Po studiach (Markdown)", type: text }
+      - name: faq
+        label: Pytania i odpowiedzi
+        type: object
+        list: true
+        fields:
+          - { name: pytanie, label: Pytanie, type: string }
+          - { name: odpowiedz, label: "Odpowiedź (Markdown)", type: text }
+          - { name: pytanie_en, label: "EN: pytanie", type: string }
+          - { name: odpowiedz_en, label: "EN: odpowiedź", type: text }
+      - name: kontakt
+        label: Kontakt
+        type: object
+        list: true
+        fields:
+          - { name: rola, label: "Rola (np. Sekretariat dydaktyczny)", type: string }
+          - { name: osoba, label: Osoba, type: string }
+          - { name: email, label: E-mail, type: string }
+          - { name: telefon, label: Telefon, type: string }
+          - { name: pokoj, label: Pokój, type: string }
+          - { name: rola_en, label: "EN: rola", type: string }
+      - name: akty
+        label: Akty prawne
+        type: object
+        list: true
+        fields:
+          - { name: nazwa, label: Nazwa, type: string }
+          - { name: plik, label: Plik lub link, type: string }
+          - { name: nazwa_en, label: "EN: nazwa", type: string }
+      - { name: nazwa_en, label: "EN: nazwa kierunku", type: string }
+      - { name: podtytul_en, label: "EN: nadtytuł", type: string }
+      - { name: opis_en, label: "EN: zdanie pod nazwą", type: text }
+      - { name: tresc_en, label: "EN: o kierunku (Markdown)", type: text }
+      - { name: praktyki_en, label: "EN: praktyki (Markdown)", type: text }
+      - { name: kariera_en, label: "EN: po studiach (Markdown)", type: text }
+
   # ---------------------------------------------------------------- ZAKŁADY
   - name: zaklady
     label: Zakłady

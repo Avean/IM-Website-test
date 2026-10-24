@@ -1,0 +1,315 @@
+---
+// Strona kierunku studiów (np. Matematyka). Treść: src/content/kierunki/<kierunek>.md (edycja w Pages CMS).
+import { render } from 'astro:content';
+import type { CollectionEntry } from 'astro:content';
+import Baza from '../layouts/Baza.astro';
+import Ikona from '../components/Ikona.astro';
+import SpisTresci from '../components/SpisTresci.astro';
+import { u, isExternal } from '../lib/url';
+import { t, wJezyku, wybierz } from '../lib/i18n';
+import { today, type Lang } from '../lib/daty';
+import { renderMarkdown } from '../lib/markdown';
+import { zaklady } from '../lib/tresci';
+
+interface Props { kierunek: CollectionEntry<'kierunki'>; lang: Lang }
+const { kierunek, lang } = Astro.props;
+const d = kierunek.data;
+const T = (pl: string, en: string) => (lang === 'en' ? en : pl);
+const w = (o: any, pole: string) => wybierz(o, pole, lang);
+const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
+const { Content } = await render(kierunek);
+const htmlEn = lang === 'en' && d.tresc_en ? await renderMarkdown(d.tresc_en) : '';
+const md = (pl?: string, en?: string) => renderMarkdown((lang === 'en' && en) || pl || '');
+const kariera = await md(d.kariera, d.kariera_en);
+const praktyki = await md(d.praktyki, d.praktyki_en);
+const faq = await Promise.all(d.faq.map(async (f) => ({ q: w(f, 'pytanie'), a: await md(f.odpowiedz, f.odpowiedz_en) })));
+const nazwyZakladow = Object.fromEntries((await zaklady()).map((z) => [z.id, z]));
+
+const nazwa = w(d, 'nazwa');
+const etapyI = d.etapy.filter((e) => e.stopien === 'I');
+const etapyII = d.etapy.filter((e) => e.stopien === 'II');
+const rok = Number(today().slice(0, 4));
+const lata = Array.from({ length: rok - 2016 + 1 }, (_, i) => rok - i);
+
+const sekcje = [
+  { slug: 'o-kierunku', text: T('O kierunku', 'About') },
+  ...(d.etapy.length ? [{ slug: 'przebieg', text: T('Jak wyglądają studia', 'How the studies work') }] : []),
+  ...(d.specjalnosci.length ? [{ slug: 'specjalnosci', text: T('Specjalności', 'Specialisations') }] : []),
+  ...(d.programy.length ? [{ slug: 'program', text: T('Program studiów', 'Curriculum') }] : []),
+  ...(d.terminy.length ? [{ slug: 'terminy', text: T('Terminy i formularze', 'Deadlines and forms') }] : []),
+  ...(praktyki ? [{ slug: 'praktyki', text: T('Praktyki pedagogiczne', 'Teaching placements') }] : []),
+  ...(kariera ? [{ slug: 'po-studiach', text: T('Po studiach', 'After graduation') }] : []),
+  ...(faq.length ? [{ slug: 'pytania', text: T('Pytania i odpowiedzi', 'FAQ') }] : []),
+  ...(d.kontakt.length ? [{ slug: 'kontakt', text: T('Kontakt', 'Contact') }] : []),
+  ...(d.akty.length ? [{ slug: 'akty', text: T('Akty prawne', 'Regulations') }] : []),
+].map((s) => ({ depth: 2, ...s }));
+---
+<Baza tytul={nazwa} opis={w(d, 'opis')} opublikowany={d.opublikowany}>
+  <div class="page-head">
+    <div class="wrap">
+      <nav class="crumbs" aria-label={T('Okruszki', 'Breadcrumbs')}>
+        <ol>
+          <li><a href={u(wJezyku('/', lang))}>{t(lang, 'stronaGlowna')}</a></li>
+          <li>{T('Studia', 'Study')}</li>
+          <li>{nazwa}</li>
+        </ol>
+      </nav>
+      {d.podtytul && <p class="eyebrow">{w(d, 'podtytul')}</p>}
+      <h1>{nazwa}</h1>
+      {d.opis && <p class="lead">{w(d, 'opis')}</p>}
+      {d.przyciski.length > 0 && (
+        <div class="btn-row" style="margin-top:6px">
+          {d.przyciski.map((p, i) => (
+            <a class={`btn${i === 0 ? ' btn-accent' : ''}`} href={href(p.adres)}>{w(p, 'etykieta')}{isExternal(p.adres) && <Ikona nazwa="zewnetrzny" rozmiar={14} />}</a>
+          ))}
+        </div>
+      )}
+      {d.fakty.length > 0 && (
+        <div class="stats" style="margin:14px 0 0">
+          {d.fakty.map((f) => <div class="stat" style="background:var(--bg)"><span class="n">{f.wartosc}</span><span class="l">{w(f, 'etykieta')}</span></div>)}
+        </div>
+      )}
+    </div>
+  </div>
+
+  <div class="wrap layout">
+    <div class="main">
+      <div class="entry-cards">
+        <a class="entry" href="#o-kierunku">
+          <Ikona nazwa="czapka" rozmiar={26} />
+          <span><strong>{T('Chcę studiować', 'I want to study here')}</strong><span>{T('O kierunku, specjalności i perspektywy po studiach', 'About the programme, specialisations and careers')}</span></span>
+        </a>
+        <a class="entry" href="#przebieg">
+          <Ikona nazwa="kalendarz" rozmiar={26} />
+          <span><strong>{T('Już studiuję', 'I am a student')}</strong><span>{T('Przebieg studiów, programy, terminy i formularze', 'Study path, curricula, deadlines and forms')}</span></span>
+        </a>
+      </div>
+      <SpisTresci naglowki={sekcje} lang={lang} wariant="gora" />
+
+      <section class="zsec" aria-labelledby="o-kierunku">
+        <h2 id="o-kierunku">{T('O kierunku', 'About')}</h2>
+        <div class="prose">{htmlEn ? <Fragment set:html={htmlEn} /> : <Content />}</div>
+        {d.dlaczego.length > 0 && (
+          <div class="why-grid">
+            {d.dlaczego.map((x) => (
+              <div class="why">
+                <Ikona nazwa={x.ikona || 'flaga'} rozmiar={24} />
+                <strong>{w(x, 'tytul')}</strong>
+                <span>{w(x, 'opis')}</span>
+              </div>
+            ))}
+          </div>
+        )}
+      </section>
+
+      {d.etapy.length > 0 && (
+        <section class="zsec" aria-labelledby="przebieg">
+          <h2 id="przebieg">{T('Jak wyglądają studia', 'How the studies work')}</h2>
+          <div class="tracks">
+            {[{ h: T('Studia I stopnia (licencjackie)', "Bachelor's studies"), lista: etapyI }, { h: T('Studia II stopnia (magisterskie)', "Master's studies"), lista: etapyII }].map((tr) => tr.lista.length > 0 && (
+              <div class="track">
+                <h3>{tr.h}</h3>
+                <ol class="steps">
+                  {tr.lista.map((e) => (
+                    <li class="step">
+                      <span class="when">{w(e, 'kiedy')}</span>
+                      <strong>{w(e, 'tytul')}</strong>
+                      {e.opis && <span class="desc">{w(e, 'opis')}</span>}
+                      {e.termin && (
+                        <span class="deadline">
+                          <Ikona nazwa="zegar" rozmiar={14} />{w(e, 'termin')}
+                          {e.formularz && (e.formularz_adres ? <a href={e.formularz_adres}>{e.formularz}</a> : <span class="muted"> · {e.formularz}</span>)}
+                        </span>
+                      )}
+                    </li>
+                  ))}
+                </ol>
+              </div>
+            ))}
+          </div>
+          <p class="muted" style="font-size:15px">{T('Szczegóły egzaminów i prac dyplomowych:', 'Exams and theses in detail:')} <a href={u(wJezyku('/studia/egzaminy-i-dyplom', lang))}>{T('Egzaminy i dyplom', 'Exams and diploma')}</a>.</p>
+        </section>
+      )}
+
+      {d.specjalnosci.length > 0 && (
+        <section class="zsec" aria-labelledby="specjalnosci">
+          <h2 id="specjalnosci">{T('Specjalności', 'Specialisations')}</h2>
+          <div class="spec-grid">
+            {d.specjalnosci.map((s) => (
+              <article class={`spec${s.wygaszana ? ' spec-off' : ''}`}>
+                <div class="news-meta">
+                  {s.skrot && <span class="badge">{s.skrot}</span>}
+                  {s.wygaszana && <span class="badge">{T('wygaszana', 'phased out')}</span>}
+                </div>
+                <h3>{w(s, 'nazwa')}</h3>
+                {s.opis && <p>{w(s, 'opis')}</p>}
+                {s.dla_kogo && <p><span class="lbl">{T('Dla kogo', 'For whom')}</span>{w(s, 'dla_kogo')}</p>}
+                {s.kariera && <p><span class="lbl">{T('Po studiach', 'Careers')}</span>{w(s, 'kariera')}</p>}
+                {(s.opiekunowie || (s.zaklad && nazwyZakladow[s.zaklad])) && (
+                  <p class="foot">
+                    {s.opiekunowie && <span><span class="muted">{T('Opiekun', 'Coordinator')}:</span> {s.opiekunowie}</span>}
+                    {s.zaklad && nazwyZakladow[s.zaklad] && <a href={u(wJezyku(`/instytut/zaklady/${s.zaklad}`, lang))}>{wybierz(nazwyZakladow[s.zaklad].data, 'nazwa', lang)}</a>}
+                  </p>
+                )}
+              </article>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {d.programy.length > 0 && (
+        <section class="zsec" aria-labelledby="program">
+          <h2 id="program">{T('Program studiów', 'Curriculum')}</h2>
+          <label class="year-pick">
+            <span>{T('Rozpocząłem / rozpoczęłam studia w roku', 'I started my studies in')}</span>
+            <select data-rok>
+              <option value="">—</option>
+              {lata.map((r) => <option value={r}>{r}/{String(r + 1).slice(2)}</option>)}
+            </select>
+          </label>
+          <div class="tabs" role="tablist" aria-label={T('Program studiów', 'Curriculum')}>
+            {d.programy.map((p, i) => (
+              <button type="button" role="tab" class="chip" id={`tab-${i}`} aria-controls={`prog-${i}`} aria-selected={i === 0 ? 'true' : 'false'} aria-pressed={i === 0 ? 'true' : 'false'} data-od={p.od_roku} data-do={p.do_roku}>{w(p, 'nazwa')}</button>
+            ))}
+          </div>
+          {d.programy.map((p, i) => (
+            <div class="tabpanel" role="tabpanel" id={`prog-${i}`} aria-labelledby={`tab-${i}`} data-panel>
+              {p.dotyczy && <p class="notice" style="margin:0 0 12px">{w(p, 'dotyczy')}</p>}
+              <ul class="files">
+                {p.dokumenty.map((x) => (
+                  <li><a href={href(x.plik)}><Ikona nazwa="plik" /><span>{w(x, 'nazwa')}{x.opis && <small class="muted" style="display:block;font-weight:500">{x.opis}</small>}</span></a></li>
+                ))}
+              </ul>
+            </div>
+          ))}
+        </section>
+      )}
+
+      {d.terminy.length > 0 && (
+        <section class="zsec" aria-labelledby="terminy">
+          <h2 id="terminy">{T('Terminy i formularze', 'Deadlines and forms')}</h2>
+          <div class="table-wrap">
+            <table class="staff">
+              <thead><tr><th>{T('Sprawa', 'What')}</th><th>{T('Kogo dotyczy', 'Who')}</th><th>{T('Termin', 'Deadline')}</th><th>{T('Formularz', 'Form')}</th></tr></thead>
+              <tbody>
+                {d.terminy.map((x) => (
+                  <tr>
+                    <td class="n" data-l={T('Sprawa', 'What')}>{w(x, 'co')}</td>
+                    <td data-l={T('Kogo dotyczy', 'Who')}>{w(x, 'kogo')}</td>
+                    <td data-l={T('Termin', 'Deadline')}><strong>{w(x, 'termin')}</strong></td>
+                    <td data-l={T('Formularz', 'Form')}>{x.formularz && (x.formularz_adres ? <a class="btn btn-small" href={x.formularz_adres}>{x.formularz}</a> : x.formularz)}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          <p class="muted" style="font-size:15px">{T('Wszystkie formularze i zasady rejestracji:', 'All forms and registration rules:')} <a href={u(wJezyku('/studia/zajecia', lang))}>{T('Zajęcia i konsultacje', 'Classes and office hours')}</a>.</p>
+        </section>
+      )}
+
+      {praktyki && (
+        <section class="zsec" aria-labelledby="praktyki">
+          <h2 id="praktyki">{T('Praktyki pedagogiczne', 'Teaching placements')}</h2>
+          <div class="prose"><Fragment set:html={praktyki} /></div>
+          {d.praktyki_dokumenty.length > 0 && (
+            <ul class="files">{d.praktyki_dokumenty.map((x) => <li><a href={href(x.plik)}><Ikona nazwa="plik" />{w(x, 'nazwa')}</a></li>)}</ul>
+          )}
+        </section>
+      )}
+
+      {kariera && (
+        <section class="zsec" aria-labelledby="po-studiach">
+          <h2 id="po-studiach">{T('Po studiach', 'After graduation')}</h2>
+          <div class="prose"><Fragment set:html={kariera} /></div>
+        </section>
+      )}
+
+      {faq.length > 0 && (
+        <section class="zsec" aria-labelledby="pytania">
+          <h2 id="pytania">{T('Pytania i odpowiedzi', 'FAQ')}</h2>
+          <div class="faq">
+            {faq.map((f) => (
+              <details>
+                <summary>{f.q}<Ikona nazwa="dol" class="chev" rozmiar={18} /></summary>
+                <div class="prose" style="font-size:16px"><Fragment set:html={f.a} /></div>
+              </details>
+            ))}
+          </div>
+        </section>
+      )}
+
+      {d.kontakt.length > 0 && (
+        <section class="zsec" aria-labelledby="kontakt">
+          <h2 id="kontakt">{T('Kontakt', 'Contact')}</h2>
+          <ul class="people">
+            {d.kontakt.map((k) => (
+              <li class="person">
+                <span class="role" style="font-size:12px;font-weight:800;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)">{w(k, 'rola')}</span>
+                <span class="os-n">{k.osoba}</span>
+                <span class="os-c">
+                  {k.email && <a href={`mailto:${k.email}`}>{k.email}</a>}
+                  {k.telefon && <span>{T('tel.', 'phone')} {k.telefon}</span>}
+                  {k.pokoj && <span>{T('pok.', 'room')} {k.pokoj}</span>}
+                </span>
+              </li>
+            ))}
+          </ul>
+        </section>
+      )}
+
+      {d.akty.length > 0 && (
+        <section class="zsec" aria-labelledby="akty">
+          <h2 id="akty">{T('Akty prawne', 'Regulations')}</h2>
+          <details class="more">
+            <summary>{T('Pokaż dokumenty', 'Show documents')} ({d.akty.length})</summary>
+            <ul class="files" style="margin-top:10px">{d.akty.map((x) => <li><a href={href(x.plik)}><Ikona nazwa="plik" />{w(x, 'nazwa')}</a></li>)}</ul>
+          </details>
+        </section>
+      )}
+    </div>
+
+    <aside class="side" data-pagefind-ignore>
+      <SpisTresci naglowki={sekcje} lang={lang} wariant="bok" />
+      <div class="side-box">
+        <h2>{T('Na skróty', 'Quick links')}</h2>
+        <a class="link-arrow" href="https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php">{T('Plan zajęć', 'Timetable')}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
+        <a class="link-arrow" href="https://usosweb.uwr.edu.pl/">USOSweb<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
+        <a class="link-arrow" href={u(wJezyku('/studia/rok-akademicki', lang))}>{T('Rok akademicki', 'Academic year')}<Ikona nazwa="strzalka" rozmiar={14} /></a>
+        <a class="link-arrow" href={u(wJezyku('/studia/pierwszy-rok', lang))}>{T('Pierwszy rok', 'First year')}<Ikona nazwa="strzalka" rozmiar={14} /></a>
+      </div>
+    </aside>
+  </div>
+</Baza>
+
+<script>
+  // Zakładki programów studiów + wybór roku rozpoczęcia studiów.
+  const tabs = Array.from(document.querySelectorAll<HTMLButtonElement>('.tabs [role="tab"]'));
+  const panels = Array.from(document.querySelectorAll<HTMLElement>('[data-panel]'));
+  const pokaz = (i: number) => {
+    tabs.forEach((t, j) => {
+      t.setAttribute('aria-selected', String(i === j));
+      t.setAttribute('aria-pressed', String(i === j));
+      t.tabIndex = i === j ? 0 : -1;
+    });
+    panels.forEach((p, j) => (p.hidden = i !== j));
+  };
+  if (tabs.length) {
+    pokaz(0);
+    tabs.forEach((t, i) => {
+      t.addEventListener('click', () => pokaz(i));
+      t.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight' || e.key === 'ArrowLeft') {
+          const j = (i + (e.key === 'ArrowRight' ? 1 : -1) + tabs.length) % tabs.length;
+          pokaz(j);
+          tabs[j].focus();
+        }
+      });
+    });
+    document.querySelector<HTMLSelectElement>('[data-rok]')?.addEventListener('change', (e) => {
+      const r = Number((e.target as HTMLSelectElement).value);
+      if (!r) return;
+      const i = tabs.findIndex((t) => Number(t.dataset.od) <= r && r <= Number(t.dataset.do));
+      if (i >= 0) pokaz(i);
+    });
+  }
+</script>

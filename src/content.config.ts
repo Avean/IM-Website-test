@@ -152,6 +152,82 @@ const zaklady = defineCollection({
   }),
 });
 
+// Kierunek studiów (np. matematyka): treść w polach, a wygląd w szablonie src/views/Kierunek.astro.
+const lista = <T extends z.ZodTypeAny>(item: T) => z.preprocess((v) => (v == null || v === '' ? [] : v), z.array(item));
+const link = z.object({ etykieta: z.string(), etykieta_en: optStr, adres: z.string() });
+const dokument = z.object({ nazwa: z.string(), nazwa_en: optStr, plik: z.string(), opis: optStr });
+
+const kierunki = defineCollection({
+  loader: glob({ pattern: '**/*.md', base: './src/content/kierunki' }),
+  schema: z.object({
+    nazwa: z.string(),
+    nazwa_en: optStr,
+    podtytul: optStr,
+    podtytul_en: optStr,
+    opis: optStr,
+    opis_en: optStr,
+    fakty: lista(z.object({ wartosc: z.string(), etykieta: z.string(), etykieta_en: optStr })),
+    przyciski: lista(link),
+    dlaczego: lista(z.object({ tytul: z.string(), tytul_en: optStr, opis: z.string(), opis_en: optStr, ikona: optStr })),
+    etapy: lista(z.object({
+      stopien: z.string(),
+      kiedy: z.string(),
+      kiedy_en: optStr,
+      tytul: z.string(),
+      tytul_en: optStr,
+      opis: optStr,
+      opis_en: optStr,
+      termin: optStr,
+      termin_en: optStr,
+      formularz: optStr,
+      formularz_adres: optStr,
+    })),
+    specjalnosci: lista(z.object({
+      nazwa: z.string(),
+      nazwa_en: optStr,
+      skrot: optStr,
+      opis: optStr,
+      opis_en: optStr,
+      dla_kogo: optStr,
+      dla_kogo_en: optStr,
+      kariera: optStr,
+      kariera_en: optStr,
+      opiekunowie: optStr,
+      zaklad: optStr,
+      wygaszana: z.preprocess((v) => (v == null || v === '' ? false : v), z.boolean()),
+    })),
+    programy: lista(z.object({
+      nazwa: z.string(),
+      nazwa_en: optStr,
+      dotyczy: optStr,
+      dotyczy_en: optStr,
+      od_roku: z.preprocess(empty, z.coerce.number().int().optional()),
+      do_roku: z.preprocess(empty, z.coerce.number().int().optional()),
+      dokumenty: lista(dokument),
+    })),
+    terminy: lista(z.object({
+      co: z.string(),
+      co_en: optStr,
+      kogo: optStr,
+      kogo_en: optStr,
+      termin: optStr,
+      termin_en: optStr,
+      formularz: optStr,
+      formularz_adres: optStr,
+    })),
+    praktyki: optStr,
+    praktyki_en: optStr,
+    praktyki_dokumenty: lista(dokument),
+    kariera: optStr,
+    kariera_en: optStr,
+    faq: lista(z.object({ pytanie: z.string(), pytanie_en: optStr, odpowiedz: z.string(), odpowiedz_en: optStr })),
+    kontakt: lista(z.object({ rola: z.string(), rola_en: optStr, osoba: z.string(), email: optStr, telefon: optStr, pokoj: optStr })),
+    akty: lista(dokument),
+    tresc_en: optStr,
+    opublikowany: published,
+  }),
+});
+
 const konferencje = defineCollection({
   loader: glob({ pattern: '**/*.md', base: './src/content/konferencje' }),
   schema: z.object({
@@ -188,4 +264,4 @@ const granty = defineCollection({
   }),
 });
 
-export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony, konferencje, granty, zaklady };
+export const collections = { aktualnosci, strony, pracownicy, seminaria, referaty, obrony, konferencje, granty, zaklady, kierunki };

@@ -13,6 +13,9 @@ export async function GET(context: APIContext) {
   for (const k of await konferencje()) sciezki.push(`/nauka/konferencje/${slugOf(k.id)}`);
   for (const g of await granty()) if (g.body?.trim()) sciezki.push(`/nauka/granty/${slugOf(g.id)}`);
   for (const s of await getCollection('strony')) if (s.data.opublikowany !== false) sciezki.push(`/${s.id}`);
+  for (const k of await getCollection('kierunki')) if (k.data.opublikowany !== false) sciezki.push(`/studia/${k.id}`);
+  for (const z of await getCollection('zaklady')) if (z.data.opublikowany !== false) sciezki.push(`/instytut/zaklady/${z.id}`);
+  sciezki.push('/instytut/struktura');
   const url = (p: string) => absolute(p, context.site);
   const wpisy = sciezki
     .map((p) => {
