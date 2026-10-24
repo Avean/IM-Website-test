@@ -3,6 +3,7 @@
 import '@fontsource-variable/manrope';
 import 'katex/dist/katex.min.css';
 import '../styles/global.css';
+import '../styles/tlo.css';
 import Naglowek from '../components/Naglowek.astro';
 import Stopka from '../components/Stopka.astro';
 import { u, absolute, stripBase } from '../lib/url';
@@ -35,6 +36,13 @@ const enAdres = lang === 'en' ? sciezka : inny;
 const ogObraz = absolute(obraz || ustawienia.baner.zdjecie, Astro.site);
 // Wersja testowa na github.io nie powinna trafiać do Google (docelowo strona będzie pod domeną UWr).
 const testowa = (Astro.site?.hostname ?? '').endsWith('github.io');
+// Tło strony i oprawa sekcji (Ustawienia → „Tło strony”, „Sekcje”; style w src/styles/tlo.css).
+// tlo_strony: pole | kratka | penrose | zmierzch | brak (stare true/false z pola-przełącznika = pole / brak).
+const tloUst = (ustawienia as any).tlo_strony;
+const tlo = tloUst === true ? 'pole' : ['pole', 'kratka', 'penrose', 'zmierzch'].includes(tloUst) ? tloUst : undefined;
+// sekcje: pasy | linia | karty | brak (bez pola w ustawieniach — pasy).
+const sekcjeUst = (ustawienia as any).sekcje ?? 'pasy';
+const sekcje = ['pasy', 'linia', 'karty'].includes(sekcjeUst) ? sekcjeUst : undefined;
 ---
 <!doctype html>
 <html lang={lang}>
@@ -70,7 +78,7 @@ const testowa = (Astro.site?.hostname ?? '').endsWith('github.io');
     </script>
     <slot name="head" />
   </head>
-  <body class:list={[{ 'tlo-fale': (ustawienia as any).tlo_strony }]}>
+  <body data-tlo={tlo} data-sekcje={sekcje}>
     <a class="skip" href="#tresc">{lang === 'en' ? 'Skip to content' : 'Przejdź do treści'}</a>
     <Naglowek lang={lang} sciezka={sciezka} inny={inny} naZdjeciu={stronaGlowna && !!ustawienia.baner?.zdjecie} />
     {!opublikowany && (

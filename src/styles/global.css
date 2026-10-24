@@ -687,16 +687,3 @@ details[open] > summary .chev { transform: rotate(180deg); }
   .os-link:has(.os-a:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
 }
 @media (prefers-reduced-motion: reduce) { .os-link { transition: none; } }
-
-/* ---------- tło strony: delikatne fale (Ustawienia → „Tło strony”) ----------
-   Warstwa stała (position: fixed) — tło stoi w miejscu, a treść przewija się nad nim (działa też na iPhonie,
-   gdzie background-attachment: fixed nie jest obsługiwane). Tylko tryb jasny; w ciemnym zwykłe tło. */
-body.tlo-fale { background: transparent; }
-body.tlo-fale::before { content: ''; position: fixed; inset: 0; z-index: -1; background: var(--bg) url('../assets/tlo-fale.webp') center / cover no-repeat; pointer-events: none; }
-:root[data-theme='dark'] body.tlo-fale { background: var(--bg); }
-:root[data-theme='dark'] body.tlo-fale::before { display: none; }
-:root:not([data-theme='dark']) body.tlo-fale { --surface: rgb(255 255 255 / .72); }
-:root:not([data-theme='dark']) body.tlo-fale .hdr { --surface: #f2f5fb; }
-:where(:root:not([data-theme='dark']) .tlo-fale) .page-head { background: rgb(255 255 255 / .38); }
-:where(:root:not([data-theme='dark']) .tlo-fale) .section-alt { background: rgb(255 255 255 / .45); }
-:where(.tlo-fale) .toc-side { box-shadow: none; }
