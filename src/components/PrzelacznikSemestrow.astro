@@ -17,6 +17,11 @@ interface Props {
   etykieta?: string;
 }
 const { semestry, aktywny, lang, etykieta = lang === 'en' ? 'Semesters' : 'Semestry' } = Astro.props;
+// Na wąskim ekranie krótsza etykieta, żeby dwa przyciski zmieściły się obok siebie: „Zimowy 2026/27”, „Winter 2026/27”.
+const krotka = (e: string) => {
+  const k = e.replace(/^semestr\s+/i, '').replace(/\s+semester\b/i, '');
+  return k.charAt(0).toUpperCase() + k.slice(1);
+};
 ---
 {semestry.length > 1 && (
   <div class="tabs ps-tabs" role="tablist" aria-label={etykieta} data-ps>
@@ -31,7 +36,7 @@ const { semestry, aktywny, lang, etykieta = lang === 'en' ? 'Semesters' : 'Semes
         tabindex={s.id === aktywny ? 0 : -1}
         data-od={s.od ?? ''}
         data-do={s.do ?? ''}
-      >{s.etykieta}</button>
+      >{krotka(s.etykieta) === s.etykieta ? s.etykieta : <><span class="ps-pelna">{s.etykieta}</span><span class="ps-krotka">{krotka(s.etykieta)}</span></>}</button>
     ))}
   </div>
 )}
@@ -51,9 +56,13 @@ const { semestry, aktywny, lang, etykieta = lang === 'en' ? 'Semesters' : 'Semes
       p.tabIndex = 0;
     });
 
-    // Przewinięcie do panelu ma pokazać też przełącznik nad nim (scroll-margin-top panelu).
-    const wysokosc = () => P.forEach((p) => p.style.setProperty('--ps-h', `${lista.offsetHeight + 18}px`));
-    wysokosc();
+    // Przewinięcie do panelu ma pokazać też przełącznik nad nim: scroll-margin-top panelu = odległość od góry przełącznika.
+    const wysokosc = () => {
+      const widoczny = P.find((p) => p.getClientRects().length > 0);
+      if (!widoczny) return;
+      const h = Math.round(widoczny.getBoundingClientRect().top - lista.getBoundingClientRect().top);
+      if (h > 0) P.forEach((p) => p.style.setProperty('--ps-h', `${h}px`));
+    };
     let ramka = 0;
     window.addEventListener('resize', () => {
       cancelAnimationFrame(ramka);
@@ -70,6 +79,7 @@ const { semestry, aktywny, lang, etykieta = lang === 'en' ? 'Semesters' : 'Semes
         p.hidden = i !== j;
         document.querySelectorAll(`[data-ps-dla="${CSS.escape(p.id)}"]`).forEach((el) => el.toggleAttribute('data-ps-aktywny', i === j));
       });
+      wysokosc();
     };
     const celZAdresu = (): HTMLElement | null => {
       let h = '';
@@ -131,5 +141,10 @@ const { semestry, aktywny, lang, etykieta = lang === 'en' ? 'Semesters' : 'Semes
   html.js [data-ps-panel] { scroll-margin-top: var(--ps-h, 56px); }
   [data-ps-panel]:focus-visible { outline-offset: 6px; }
   .ps-tabs { margin: 0 0 18px; }
+  .ps-krotka { display: none; }
+  @media (max-width: 479px) {
+    .ps-pelna { display: none; }
+    .ps-krotka { display: inline; }
+  }
   @media print { .ps-tabs { display: none !important; } }
 </style>
