@@ -19,7 +19,7 @@ const lead = lang === 'en'
   : 'Publiczne obrony rozpraw doktorskich z matematyki: zawiadomienia, rozprawy, streszczenia i recenzje.';
 ---
 <Baza tytul={t(lang, 'obrony')} opis={lead}>
-  <NaglowekStrony tytul={t(lang, 'obrony')} lead={lead} lang={lang} okruszki={[{ etykieta: lang === 'en' ? 'Research' : 'Nauka' }, { etykieta: t(lang, 'obrony') }]} />
+  <NaglowekStrony tytul={t(lang, 'obrony')} lead={lead} lang={lang} okruszki={[{ etykieta: lang === 'en' ? 'Research' : 'Nauka', adres: '/nauka' }, { etykieta: t(lang, 'obrony') }]} />
   <div class="wrap layout">
     <div class="main">
     {[{ h: t(lang, 'nadchodzaceObrony'), lista: przyszle }, { h: t(lang, 'odbyteObrony'), lista: odbyte }].map(({ h, lista }) => lista.length > 0 && (

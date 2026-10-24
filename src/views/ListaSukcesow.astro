@@ -35,7 +35,7 @@ const najnowszy = lata.length ? lata[0].rok : '';
 const archiwumStarejStrony = 'https://www.math.uni.wroc.pl/sukcesy';
 ---
 <Baza tytul={naglowek} opis={lead}>
-  <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: T('Nauka', 'Research') }, { etykieta: naglowek }]} />
+  <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: T('Nauka', 'Research'), adres: '/nauka' }, { etykieta: naglowek }]} />
   <div class="wrap layout">
     <div class="main">
       {sukcesy.length > 0 && (

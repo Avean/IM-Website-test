@@ -969,7 +969,7 @@ content:
             fields:
               - { name: etykieta, label: Etykieta, type: string }
               - { name: etykieta_en, label: "EN: etykieta", type: string }
-              - { name: adres, label: "Adres (tylko dla pozycji bez rozwijanej listy)", type: string }
+              - { name: adres, label: "Adres (klik w napis; przy pozycji z rozwijaną listą — strona działu, np. /instytut)", type: string }
               - name: grupy
                 label: Grupy w rozwijanym menu
                 type: object

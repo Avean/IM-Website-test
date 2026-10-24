@@ -26,7 +26,7 @@ const lead = lang === 'en'
   : 'Projekty badawcze realizowane w Instytucie Matematycznym, finansowane przez Narodowe Centrum Nauki, programy unijne i inne źródła.';
 ---
 <Baza tytul={naglowek} opis={lead}>
-  <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: lang === 'en' ? 'Research' : 'Nauka' }, { etykieta: naglowek }]}>
+  <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: lang === 'en' ? 'Research' : 'Nauka', adres: '/nauka' }, { etykieta: naglowek }]}>
     <div class="filters">
       <div class="chips" role="group" aria-label={lang === 'en' ? 'Funding' : 'Źródło finansowania'}>
         <button type="button" class="chip" aria-pressed="true" data-rodzaj="">{t(lang, 'wszystkie')}</button>

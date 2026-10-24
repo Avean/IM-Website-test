@@ -52,7 +52,8 @@
             }
           ]
         }
-      ]
+      ],
+      "adres": "/instytut"
     },
     {
       "etykieta": "Nauka",
@@ -110,7 +111,8 @@
             }
           ]
         }
-      ]
+      ],
+      "adres": "/nauka"
     },
     {
       "etykieta": "Studia",
@@ -190,7 +192,8 @@
             }
           ]
         }
-      ]
+      ],
+      "adres": "/studia"
     },
     {
       "etykieta": "Aktualności",

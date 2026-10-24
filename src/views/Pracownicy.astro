@@ -45,7 +45,7 @@ const lead = lang === 'en'
   : 'Dane kontaktowe pracowników, doktorantów i administracji Instytutu Matematycznego.';
 ---
 <Baza tytul={t(lang, 'pracownicy')} opis={lead}>
-  <NaglowekStrony tytul={t(lang, 'pracownicy')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut') }, { etykieta: t(lang, 'pracownicy') }]} />
+  <NaglowekStrony tytul={t(lang, 'pracownicy')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut'), adres: '/instytut' }, { etykieta: t(lang, 'pracownicy') }]} />
   <div class="wrap" style="padding-top:28px;padding-bottom:64px">
     <TabelaPracownikow client:load osoby={osoby} grupy={grupy} zaklady={zaklady} napisy={napisy} />
   </div>

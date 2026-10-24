@@ -16,7 +16,8 @@ const menu: Pozycja[] = await menuGlowne();
 
 const bezJezyka = sciezka.replace(/^\/en(?=\/|$)/, '') || '/';
 const pasuje = (adres: string) => !isExternal(adres) && adres !== '/' && (bezJezyka === adres || bezJezyka.startsWith(adres.replace(/#.*$/, '') + '/'));
-const aktywna = (p: Pozycja) => (p.adres ? pasuje(p.adres) : (p.grupy ?? []).some((g) => g.linki.some((l) => pasuje(l.adres))));
+const aktywna = (p: Pozycja) => (p.adres ? pasuje(p.adres) : false) || (p.grupy ?? []).some((g) => g.linki.some((l) => pasuje(l.adres)));
+const tuJestem = (adres?: string) => !!adres && !isExternal(adres) && bezJezyka.replace(/\/$/, '') === adres.replace(/\/$/, '');
 const href = (adres: string) => (isExternal(adres) ? adres : u(wJezyku(adres, lang)));
 const logo = (ustawienia as any).logo as string | undefined;
 ---
@@ -31,11 +32,14 @@ const logo = (ustawienia as any).logo as string | undefined;
     </a>
 
     <nav class="nav" aria-label={lang === 'en' ? 'Main menu' : 'Menu główne'}>
-      {menu.map((p) =>
+      {menu.map((p, i) =>
         p.grupy ? (
-          <details class={aktywna(p) ? 'is-current' : undefined}>
-            <summary>{wybierz(p, 'etykieta', lang)}<Ikona nazwa="dol" class="chev" rozmiar={14} /></summary>
-            <div class="dropdown">
+          <div class:list={['nav-item', { 'is-current': aktywna(p) }]}>
+            {p.adres
+              ? <a class="nav-top" href={href(p.adres)} aria-current={tuJestem(p.adres) ? 'page' : undefined}>{wybierz(p, 'etykieta', lang)}</a>
+              : <button type="button" class="nav-top" data-rozwin aria-expanded="false" aria-controls={`menu-${i}`}>{wybierz(p, 'etykieta', lang)}</button>}
+            <button type="button" class="nav-arrow" data-rozwin aria-expanded="false" aria-controls={`menu-${i}`} aria-label={`${wybierz(p, 'etykieta', lang)}: ${lang === 'en' ? 'show links' : 'pokaż listę'}`}><Ikona nazwa="dol" class="chev" rozmiar={14} /></button>
+            <div class="dropdown" id={`menu-${i}`}>
               {p.grupy.map((g) => (
                 <div class="dropdown-group">
                   <h3>{wybierz(g, 'nazwa', lang)}</h3>
@@ -48,7 +52,7 @@ const logo = (ustawienia as any).logo as string | undefined;
                 </div>
               ))}
             </div>
-          </details>
+          </div>
         ) : (
           <a href={href(p.adres!)} aria-current={aktywna(p) ? 'page' : undefined}>
             {wybierz(p, 'etykieta', lang)}
@@ -86,6 +90,7 @@ const logo = (ustawienia as any).logo as string | undefined;
         <details open={aktywna(p) || undefined}>
           <summary>{wybierz(p, 'etykieta', lang)}<Ikona nazwa="dol" class="chev" rozmiar={18} /></summary>
           <div class="mgroup">
+            {p.adres && <a class="mgroup-top" href={href(p.adres)} aria-current={tuJestem(p.adres) ? 'page' : undefined}>{lang === 'en' ? 'Overview' : 'Przegląd działu'}<Ikona nazwa="strzalka" rozmiar={16} /></a>}
             {p.grupy.map((g) => (
               <>
                 <h3>{wybierz(g, 'nazwa', lang)}</h3>
@@ -145,15 +150,25 @@ const logo = (ustawienia as any).logo as string | undefined;
     burger.setAttribute('aria-label', (otwarte ? burger.dataset.zamknij : burger.dataset.otworz) || '');
   });
 
-  // Rozwijane menu: tylko jedno otwarte, zamykanie kliknięciem obok i klawiszem Esc
-  const grupy = Array.from(document.querySelectorAll<HTMLDetailsElement>('.nav details'));
-  grupy.forEach((d) =>
-    d.addEventListener('toggle', () => {
-      if (d.open) grupy.forEach((o) => o !== d && (o.open = false));
-    })
+  // Menu działów: klik w napis otwiera stronę działu, lista rozwija się po najechaniu myszką
+  // albo strzałką (klawiatura, ekrany dotykowe). Tylko jedna otwarta; Esc i klik obok zamykają.
+  const pozycje = Array.from(document.querySelectorAll<HTMLElement>('.nav-item'));
+  const ustaw = (p: HTMLElement, otwarta: boolean) => {
+    p.classList.toggle('open', otwarta);
+    p.querySelectorAll('[data-rozwin]').forEach((b) => b.setAttribute('aria-expanded', String(otwarta)));
+  };
+  const zamknijMenu = (poza?: HTMLElement) => pozycje.forEach((p) => p !== poza && ustaw(p, false));
+  pozycje.forEach((p) =>
+    p.querySelectorAll<HTMLButtonElement>('[data-rozwin]').forEach((b) =>
+      b.addEventListener('click', () => {
+        const otworz = !p.classList.contains('open');
+        zamknijMenu(p);
+        ustaw(p, otworz);
+      })
+    )
   );
   document.addEventListener('click', (e) => {
-    if (!(e.target as Element).closest('.nav details')) grupy.forEach((d) => (d.open = false));
+    if (!(e.target as Element).closest('.nav-item')) zamknijMenu();
   });
   // Przyciski „Kopiuj adres” (data-kopiuj="adres")
   document.querySelectorAll<HTMLButtonElement>('[data-kopiuj]').forEach((b) =>
@@ -170,10 +185,12 @@ const logo = (ustawienia as any).logo as string | undefined;
 
   document.addEventListener('keydown', (e) => {
     if (e.key !== 'Escape') return;
-    const otwarta = grupy.find((d) => d.open);
+    const otwarta = pozycje.find((p) => p.classList.contains('open') || p.contains(document.activeElement));
     if (otwarta) {
-      otwarta.open = false;
-      otwarta.querySelector('summary')?.focus();
+      ustaw(otwarta, false);
+      otwarta.querySelector<HTMLElement>('.nav-arrow')?.focus();
+      otwarta.classList.add('bez-hover');
+      otwarta.addEventListener('mouseleave', () => otwarta.classList.remove('bez-hover'), { once: true });
     }
   });
 </script>

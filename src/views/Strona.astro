@@ -34,7 +34,7 @@ const rodzic = linkiDzialu.filter((l) => !isExternal(l.adres) && adres.startsWit
 const href = (a: string) => (isExternal(a) ? a : u(wJezyku(a, lang)));
 ---
 <Baza tytul={tytul} opis={opis} opublikowany={d.opublikowany}>
-  <NaglowekStrony tytul={tytul} lead={opis} lang={lang} okruszki={[...(dzial ? [{ etykieta: wybierz(dzial, 'etykieta', lang) }] : []), ...(rodzic ? [{ etykieta: wybierz(rodzic, 'etykieta', lang), adres: rodzic.adres }] : []), { etykieta: tytul }]} />
+  <NaglowekStrony tytul={tytul} lead={opis} lang={lang} okruszki={[...(dzial ? [{ etykieta: wybierz(dzial, 'etykieta', lang), adres: dzial.adres }] : []), ...(rodzic ? [{ etykieta: wybierz(rodzic, 'etykieta', lang), adres: rodzic.adres }] : []), { etykieta: tytul }]} />
   <div class="wrap layout">
     <div class="main">
       <SpisTresci naglowki={naglowki} lang={lang} wariant="gora" />

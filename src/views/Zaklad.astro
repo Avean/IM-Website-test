@@ -69,7 +69,7 @@ const naglowki = [
 const wszystkieZaklady = await zaklady();
 ---
 <Baza tytul={nazwa} opis={opis} opublikowany={d.opublikowany} obraz={d.zdjecie}>
-  <NaglowekStrony tytul={nazwa} lead={opis} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut') }, { etykieta: T('Struktura i zakłady', 'Structure and departments'), adres: '/instytut/struktura' }]}>
+  <NaglowekStrony tytul={nazwa} lead={opis} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut'), adres: '/instytut' }, { etykieta: T('Struktura i zakłady', 'Structure and departments'), adres: '/instytut/struktura' }]}>
     {obszary.length > 0 && <div class="tags">{obszary.map((o) => <span class="badge">{o}</span>)}</div>}
   </NaglowekStrony>
 

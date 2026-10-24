@@ -29,7 +29,7 @@ const lead = lang === 'en'
   : 'Konferencje i warsztaty organizowane lub współorganizowane przez pracowników Instytutu Matematycznego.';
 ---
 <Baza tytul={naglowek} opis={lead}>
-  <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: lang === 'en' ? 'Research' : 'Nauka' }, { etykieta: naglowek }]} />
+  <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: lang === 'en' ? 'Research' : 'Nauka', adres: '/nauka' }, { etykieta: naglowek }]} />
   <div class="wrap layout">
     <div class="main">
       <section aria-labelledby="h-nadch" style="margin-bottom:32px">

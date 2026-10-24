@@ -25,7 +25,7 @@ const naglowek = T('Struktura i zakłady', 'Structure and departments');
 const lead = T('Instytut tworzy osiem zakładów naukowych i Pracownia Dydaktyki i Popularyzacji Matematyki.', 'The Institute consists of eight research departments and the Mathematics Education and Outreach Unit.');
 ---
 <Baza tytul={naglowek} opis={lead}>
-  <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut') }, { etykieta: naglowek }]} />
+  <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut'), adres: '/instytut' }, { etykieta: naglowek }]} />
   <div class="wrap" style="padding-top:32px;padding-bottom:64px">
     <div class="stats">
       {liczby.map((x) => <div class="stat"><span class="n">{x.n}</span><span class="l">{x.l}</span></div>)}
