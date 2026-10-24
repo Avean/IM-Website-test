@@ -4,6 +4,7 @@
 // obejmuje całe pole (klasy .os-link / .os-a w global.css), a e-mail i zakład są osobnymi linkami.
 // Kolumna „Telefon” pojawia się tylko w sekcjach, w których ktoś ma numer (w praktyce: administracja).
 // Doktoranci są podzieleni według roku studiów (Rok 1, Rok 2, …; bez roku — na końcu).
+import { zTytulem } from '../lib/osoby';
 import { Fragment, useMemo, useState } from 'react';
 
 export interface Osoba {
