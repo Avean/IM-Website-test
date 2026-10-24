@@ -87,8 +87,8 @@ const wszystkieZaklady = await zaklady();
         {(kierownik || d.kierownik) && (
           <div class="person lead-person">
             <span class="role">{T('Kierownik', 'Head')}</span>
-            <span class="pn">{kierownik ? `${kierownik.data.stopien ?? ''} ${kierownik.data.imie_nazwisko}` : d.kierownik}</span>
-            <span class="pc">
+            <span class="os-n">{kierownik ? `${kierownik.data.stopien ?? ''} ${kierownik.data.imie_nazwisko}` : d.kierownik}</span>
+            <span class="os-c">
               {kierownik?.data.email && <a href={`mailto:${kierownik.data.email}`}><Ikona nazwa="mail" rozmiar={14} />{kierownik.data.email}</a>}
               {(kierownik?.data.telefon || d.telefon) && <span><Ikona nazwa="telefon" rozmiar={14} />{kierownik?.data.telefon || d.telefon}</span>}
               {kierownik?.data.pokoj && <span>{T('pok.', 'room')} {kierownik.data.pokoj}</span>}
@@ -102,8 +102,8 @@ const wszystkieZaklady = await zaklady();
             <ul class="people">
               {g.osoby.map((o) => (
                 <li class="person">
-                  <span class="pn">{o.data.strona ? <a href={o.data.strona}>{o.data.stopien} {o.data.imie_nazwisko}</a> : `${o.data.stopien ?? ''} ${o.data.imie_nazwisko}`}</span>
-                  <span class="pc">
+                  <span class="os-n">{o.data.strona ? <a href={o.data.strona}>{o.data.stopien} {o.data.imie_nazwisko}</a> : `${o.data.stopien ?? ''} ${o.data.imie_nazwisko}`}</span>
+                  <span class="os-c">
                     {o.data.email && <a href={`mailto:${o.data.email}`}>{o.data.email}</a>}
                     {o.data.pokoj && <span>{T('pok.', 'room')} {o.data.pokoj}</span>}
                   </span>
@@ -199,7 +199,6 @@ const wszystkieZaklady = await zaklady();
     </div>
 
     <aside class="side" data-pagefind-ignore>
-      <SpisTresci naglowki={naglowki} lang={lang} wariant="bok" />
       <nav class="side-box side-nav" aria-label={T('Zakłady', 'Departments')}>
         <h2>{T('Zakłady', 'Departments')}</h2>
         <div style="display:flex;flex-direction:column">
@@ -208,6 +207,7 @@ const wszystkieZaklady = await zaklady();
           ))}
         </div>
       </nav>
+      <SpisTresci naglowki={naglowki} lang={lang} wariant="bok" />
     </aside>
   </div>
 </Baza>

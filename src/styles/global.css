@@ -408,7 +408,7 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .toc a { display: block; padding: 7px 0 7px 12px; border-left: 2px solid var(--line); font-size: 15px; font-weight: 600; line-height: 1.35; text-decoration: none; color: var(--muted); }
 .toc a:hover { color: var(--ink); border-left-color: var(--ink); }
 .toc a[aria-current] { color: var(--ink); border-left-color: var(--accent); font-weight: 800; }
-.toc-side { position: sticky; top: 16px; }
+.toc-side { position: sticky; top: 16px; z-index: 2; box-shadow: 0 0 0 8px var(--bg); }
 .toc-top { display: none; margin-bottom: 20px; padding: 12px 16px; border-radius: var(--radius); background: var(--surface); }
 .toc-top summary { cursor: pointer; font-weight: 800; color: var(--ink); min-height: 32px; display: flex; align-items: center; }
 .toc-top ol { margin-top: 6px; }
@@ -444,14 +444,14 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .subhead { margin: 22px 0 8px; font-size: 13px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
 .people { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 8px; }
 .person { display: flex; flex-direction: column; gap: 2px; padding: 12px 14px; border-radius: 12px; background: var(--surface); min-width: 0; }
-.person .pn { font-weight: 800; color: var(--ink); font-size: 15px; }
-.person .pn a { color: var(--ink); }
-.person .pc { display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
-.person .pc a { color: var(--muted); display: inline-flex; align-items: center; gap: 4px; }
-.person .pc span { display: inline-flex; align-items: center; gap: 4px; }
+.person .os-n { font-weight: 800; color: var(--ink); font-size: 15px; }
+.person .os-n a { color: var(--ink); }
+.person .os-c { display: flex; flex-wrap: wrap; gap: 2px 12px; font-size: 13px; color: var(--muted); overflow-wrap: anywhere; }
+.person .os-c a { color: var(--muted); display: inline-flex; align-items: center; gap: 4px; }
+.person .os-c span { display: inline-flex; align-items: center; gap: 4px; }
 .lead-person { background: var(--tint); margin-bottom: 4px; }
 .lead-person .role { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--tint-ink); }
-.lead-person .pn { font-size: 18px; }
+.lead-person .os-n { font-size: 18px; }
 .plain-list { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; }
 .more { margin-top: 10px; }
 .more summary { cursor: pointer; font-weight: 700; color: var(--primary); min-height: 36px; display: flex; align-items: center; }
