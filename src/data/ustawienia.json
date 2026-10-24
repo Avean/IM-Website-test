@@ -88,5 +88,8 @@
   "facebook": "https://www.facebook.com/IMUWr",
   "youtube": "https://www.youtube.com/channel/UCO0NMxdgMe2ZISJAbEcKH4w",
   "archiwum": "https://www.math.uni.wroc.pl/",
-  "partnerzy": []
+  "partnerzy": [],
+  "powiadomienia": {
+    "adres": ""
+  }
 }

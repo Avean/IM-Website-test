@@ -225,8 +225,6 @@ const kierunki = defineCollection({
     faq: lista(z.object({ pytanie: z.string(), pytanie_en: optStr, odpowiedz: z.string(), odpowiedz_en: optStr })),
     kontakt: lista(z.object({ rola: z.string(), rola_en: optStr, osoba: z.string(), email: optStr, telefon: optStr, pokoj: optStr })),
     akty: lista(dokument),
-    // panel „Na skróty” po prawej; gdy pusty — domyślne linki (plan zajęć IM, USOSweb, rok akademicki, pierwszy rok)
-    na_skroty: lista(link),
     tresc_en: optStr,
     opublikowany: published,
   }),

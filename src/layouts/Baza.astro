@@ -61,6 +61,7 @@ const testowa = (Astro.site?.hostname ?? '').endsWith('github.io');
     <script is:inline>
       (function () {
         var d = document.documentElement, m;
+        d.classList.add('js');
         try { m = localStorage.getItem('motyw'); } catch (e) {}
         // Domyślnie tryb jasny (także na telefonach z ciemnym motywem systemu); ciemny tylko po wybraniu przyciskiem.
         if (m !== 'dark' && m !== 'light') m = 'light';
@@ -71,7 +72,7 @@ const testowa = (Astro.site?.hostname ?? '').endsWith('github.io');
   </head>
   <body>
     <a class="skip" href="#tresc">{lang === 'en' ? 'Skip to content' : 'Przejdź do treści'}</a>
-    <Naglowek lang={lang} sciezka={sciezka} inny={inny} />
+    <Naglowek lang={lang} sciezka={sciezka} inny={inny} naZdjeciu={stronaGlowna && !!ustawienia.baner?.zdjecie} />
     {!opublikowany && (
       <div class="notice notice-warn" role="status" style="border-radius:0;text-align:center">{t(lang, 'podglad')}</div>
     )}

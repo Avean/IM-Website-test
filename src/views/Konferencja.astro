@@ -8,7 +8,7 @@ import { u } from '../lib/url';
 import { t, wJezyku } from '../lib/i18n';
 import { dayNum, monthShort, range, type Lang } from '../lib/daty';
 import { slugOf, trwaLubBedzie, type Konferencja, type Wydarzenie } from '../lib/tresci';
-import { linkGoogle, adresIcs } from '../lib/kalendarz';
+import { adresIcs } from '../lib/kalendarz';
 
 interface Props { konferencja: Konferencja; lang: Lang }
 const { konferencja, lang } = Astro.props;
@@ -35,7 +35,6 @@ const naglowek = lang === 'en' ? 'Conferences' : 'Konferencje';
           {d.odwolana ? <span class="status">{lang === 'en' ? 'Cancelled' : 'Odwołana'}</span> : przyszla ? (
             <>
               <a class="btn btn-small" href={u(adresIcs(w.uid))} download><Ikona nazwa="kalendarz" rozmiar={16} />{t(lang, 'dodajDoKalendarza')}</a>
-              <a class="btn btn-small" href={linkGoogle(w, Astro.site)}>Google</a>
             </>
           ) : <span class="status">{t(lang, 'odbylo')}</span>}
         </div>

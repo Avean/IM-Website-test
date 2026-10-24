@@ -4,11 +4,11 @@ import { render } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
 import Ikona from '../components/Ikona.astro';
-import { u, isExternal, absolute } from '../lib/url';
+import { u, isExternal } from '../lib/url';
 import { t, wJezyku, RODZAJE } from '../lib/i18n';
 import { longWithDay, short, time, now, today, hasTime, type Lang } from '../lib/daty';
 import { referaty, seminariumReferatu, slugOf, sala, type Seminarium } from '../lib/tresci';
-import { adresIcs } from '../lib/kalendarz';
+import ustawienia from '../data/ustawienia.json';
 
 interface Props { seminarium: Seminarium; lang: Lang }
 const { seminarium, lang } = Astro.props;
@@ -21,8 +21,9 @@ const przyszle = (r: (typeof wszystkie)[number]) => (hasTime(r.data.termin) ? r.
 const nadchodzace = await Promise.all(wszystkie.filter(przyszle).map(async (r) => ({ r, C: (await render(r)).Content })));
 const minione = await Promise.all(wszystkie.filter((r) => !przyszle(r)).reverse().map(async (r) => ({ r, C: (await render(r)).Content })));
 const href = (a: string) => (isExternal(a) ? a : u(a));
-const feed = adresIcs(`seminarium-${seminarium.id}`);
-const webcal = absolute(feed, Astro.site).replace(/^https?:/, 'webcal:');
+const T = (pl: string, en: string) => (lang === 'en' ? en : pl);
+// Adres automatu listy mailingowej (Google Apps Script, patrz README → „Powiadomienia e-mail”); pusty = zapisy wyłączone.
+const adresListy = ((ustawienia as any).powiadomienia?.adres ?? '') as string;
 ---
 <Baza tytul={nazwa} opis={`${RODZAJE.referat[lang]}: ${nazwa}`} opublikowany={d.opublikowany}>
   <NaglowekStrony tytul={nazwa} lang={lang} okruszki={[{ etykieta: t(lang, 'seminaria'), adres: '/seminaria' }]} />
@@ -81,17 +82,50 @@ const webcal = absolute(feed, Astro.site).replace(/^https?:/, 'webcal:');
           {d.kontakt && <><dt>{t(lang, 'kontaktowy')}</dt><dd><a href={`mailto:${d.kontakt}`}>{d.kontakt}</a></dd></>}
         </dl>
         {d.strona && <a class="link-arrow" href={d.strona}>{t(lang, 'stronaSeminarium')}<Ikona nazwa="zewnetrzny" rozmiar={14} /></a>}
-        {d.grupa_google && <a class="btn btn-primary" href={d.grupa_google}><Ikona nazwa="mail" rozmiar={16} />{t(lang, 'zapiszSie')}</a>}
       </div>
-      <div class="side-box">
-        <h2>{t(lang, 'subskrypcja')}</h2>
-        <div style="display:flex;flex-wrap:wrap;gap:6px">
-          <button type="button" class="btn btn-small" data-kopiuj={absolute(feed, Astro.site)} data-ok={t(lang, 'skopiowano')}><Ikona nazwa="link" rozmiar={15} /><span>{t(lang, 'kopiuj')}</span></button>
-          <a class="btn btn-small" href={`https://calendar.google.com/calendar/render?cid=${encodeURIComponent(webcal)}`}>Google</a>
-          <a class="btn btn-small" href={webcal}>Apple / Outlook</a>
-        </div>
+      <div class="side-box" id="powiadomienia">
+        <h2>{T('Powiadomienia e-mail', 'Email notifications')}</h2>
+        <p style="margin:0;font-size:15px">{T('Zostaw adres, a o każdym nowym referacie tego seminarium dostaniesz wiadomość (po angielsku). Z listy wypiszesz się jednym kliknięciem w każdej wiadomości.', 'Leave your address to get an email about every new talk in this seminar. Every message has a one-click unsubscribe link.')}</p>
+        {adresListy ? (
+          <form class="zapis" data-zapis action={adresListy} method="post" data-ok={T('Sprawdź skrzynkę — wysłaliśmy link potwierdzający zapis (jeśli nie widzisz wiadomości, zajrzyj do spamu).', 'Check your inbox — we have sent a confirmation link (look in the spam folder if you cannot see it).')} data-blad={T('Nie udało się wysłać zgłoszenia. Spróbuj ponownie za chwilę.', 'Something went wrong. Please try again in a moment.')}>
+            <input type="hidden" name="akcja" value="zapisz" />
+            <input type="hidden" name="seminarium" value={seminarium.id} />
+            <input type="hidden" name="jezyk" value={lang} />
+            <label class="sr-only" for="zapis-email">{T('Adres e-mail', 'Email address')}</label>
+            <input id="zapis-email" type="email" name="email" required autocomplete="email" inputmode="email" placeholder={T('twój@adres.pl', 'you@example.com')} />
+            <div class="hp" aria-hidden="true"><label>Nie wypełniaj / leave empty <input type="text" name="www" tabindex="-1" autocomplete="off" /></label></div>
+            <button type="submit" class="btn btn-primary btn-small"><Ikona nazwa="mail" rozmiar={16} />{T('Zapisz mnie', 'Subscribe')}</button>
+            <p class="zapis-stan" role="status" aria-live="polite"></p>
+          </form>
+        ) : (
+          <p class="notice" style="font-size:14px;margin:0">{T('Zapisy na listę ruszą wkrótce.', 'Sign-up will open soon.')}</p>
+        )}
+        <p class="muted" style="font-size:13px;margin:0">{T('Adres służy wyłącznie do tych powiadomień —', 'Your address is used only for these notifications —')} <a href={u(wJezyku('/polityka-prywatnosci', lang))}>{T('polityka prywatności', 'privacy policy')}</a>.</p>
       </div>
       <a class="link-arrow" href={u(wJezyku('/seminaria', lang))}><Ikona nazwa="wstecz" rozmiar={16} />{t(lang, 'wszystkieSeminaria')}</a>
     </aside>
   </div>
 </Baza>
+
+<script>
+  // Zapis na listę: wysyłka w tle (bez przeładowania strony). Automat zawsze odpowiada tak samo,
+  // żeby nie zdradzać, czy adres już jest na liście.
+  document.querySelectorAll<HTMLFormElement>('form[data-zapis]').forEach((f) =>
+    f.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const stan = f.querySelector<HTMLElement>('.zapis-stan');
+      const btn = f.querySelector<HTMLButtonElement>('button[type="submit"]');
+      if (btn) btn.disabled = true;
+      let ok = true;
+      try {
+        await fetch(f.action, { method: 'POST', body: new URLSearchParams(new FormData(f) as any) });
+      } catch (err) {
+        // Odpowiedź automatu bywa blokowana przez przeglądarkę (CORS), choć zgłoszenie dotarło — błąd tylko bez sieci.
+        ok = navigator.onLine;
+      }
+      if (stan) stan.textContent = (ok ? f.dataset.ok : f.dataset.blad) || '';
+      if (ok) f.reset();
+      if (btn) btn.disabled = false;
+    })
+  );
+</script>

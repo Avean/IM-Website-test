@@ -245,7 +245,6 @@ content:
       - { name: termin, label: "Stały termin (np. czwartek 12:15–14:00, sala 711)", type: string }
       - { name: kontakt, label: E-mail kontaktowy, type: string }
       - { name: strona, label: Zewnętrzna strona seminarium, type: string }
-      - { name: grupa_google, label: Link do zapisu na listę (Google Groups), type: string }
       - { name: archiwum, label: Link do archiwum referatów, type: string }
       - name: zaklad
         label: Zakład (można wybrać kilka)
@@ -472,14 +471,6 @@ content:
           - { name: nazwa, label: Nazwa, type: string }
           - { name: plik, label: Plik lub link, type: string }
           - { name: nazwa_en, label: "EN: nazwa", type: string }
-      - name: na_skroty
-        label: "Panel „Na skróty” (puste = domyślne: plan zajęć, USOSweb, rok akademicki, pierwszy rok)"
-        type: object
-        list: true
-        fields:
-          - { name: etykieta, label: Etykieta, type: string }
-          - { name: adres, label: Adres, type: string }
-          - { name: etykieta_en, label: "EN: etykieta", type: string }
       - { name: nazwa_en, label: "EN: nazwa kierunku", type: string }
       - { name: podtytul_en, label: "EN: nadtytuł", type: string }
       - { name: opis_en, label: "EN: zdanie pod nazwą", type: text }
@@ -911,6 +902,11 @@ content:
           - { name: facebook, label: Facebook, type: string }
           - { name: youtube, label: YouTube, type: string }
           - { name: archiwum, label: Adres archiwum starej strony, type: string }
+          - name: powiadomienia
+            label: Powiadomienia e-mail o referatach
+            type: object
+            fields:
+              - { name: adres, label: "Adres automatu listy mailingowej (Google Apps Script, …/exec; puste = zapisy wyłączone)", type: string }
           - name: partnerzy
             label: Partnerzy (logotypy w stopce)
             type: object

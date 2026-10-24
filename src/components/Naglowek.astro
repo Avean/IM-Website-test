@@ -8,8 +8,9 @@ import { u, isExternal } from '../lib/url';
 import { t, wJezyku, wybierz } from '../lib/i18n';
 import type { Lang } from '../lib/daty';
 
-interface Props { lang: Lang; sciezka: string; inny: string | null }
-const { lang, sciezka, inny } = Astro.props;
+// naZdjeciu: strona główna z banerem — nagłówek leży na przyciemnionym zdjęciu, po przewinięciu robi się zwykły (biały)
+interface Props { lang: Lang; sciezka: string; inny: string | null; naZdjeciu?: boolean }
+const { lang, sciezka, inny, naZdjeciu = false } = Astro.props;
 
 type Link = { etykieta: string; etykieta_en?: string; adres: string };
 type Grupa = { nazwa: string; nazwa_en?: string; linki: Link[] };
@@ -22,7 +23,7 @@ const aktywna = (p: Pozycja) => (p.adres ? pasuje(p.adres) : (p.grupy ?? []).som
 const href = (adres: string) => (isExternal(adres) ? adres : u(wJezyku(adres, lang)));
 const logo = (ustawienia as any).logo as string | undefined;
 ---
-<header class="hdr">
+<header class:list={['hdr', { 'hdr-foto': naZdjeciu }]}>
   <div class="wrap hdr-row">
     <a class="brand" href={u(wJezyku('/', lang))}>
       {logo && <img src={u(logo)} alt="" width="44" height="44" />}
@@ -119,11 +120,21 @@ const logo = (ustawienia as any).logo as string | undefined;
     })
   );
 
+  // Pływający nagłówek: cień po przewinięciu; na stronie głównej przezroczysty na zdjęciu tylko u góry strony
+  const hdr = document.querySelector<HTMLElement>('.hdr');
+  const odswiezNaglowek = () => hdr?.classList.toggle('przewiniety', window.scrollY > 40);
+  let ramka = 0;
+  window.addEventListener('scroll', () => {
+    if (!ramka) ramka = requestAnimationFrame(() => { ramka = 0; odswiezNaglowek(); });
+  }, { passive: true });
+  odswiezNaglowek();
+
   // Menu na telefon
   const burger = document.querySelector<HTMLButtonElement>('[data-burger]');
   const mnav = document.getElementById('menu-telefon');
   burger?.addEventListener('click', () => {
     const otwarte = mnav?.classList.toggle('open') ?? false;
+    hdr?.classList.toggle('menu-otwarte', otwarte);
     burger.setAttribute('aria-expanded', String(otwarte));
     burger.setAttribute('aria-label', (otwarte ? burger.dataset.zamknij : burger.dataset.otworz) || '');
   });

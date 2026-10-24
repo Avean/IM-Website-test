@@ -100,7 +100,25 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.2; letter-spacing: -0.01em; }
 .chip[aria-pressed='true'] { background: var(--primary); border-color: var(--primary); color: var(--primary-ink); }
 
 /* ---------- nagłówek ---------- */
-.hdr { position: relative; z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); }
+:root { --hdr-h: 71px; }
+/* Pływający nagłówek: zostaje u góry przy przewijaniu; kotwice i spis treści omijają jego wysokość. */
+html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
+.hdr { position: sticky; top: 0; z-index: 30; background: var(--bg); border-bottom: 1px solid var(--line); transition: box-shadow .2s; }
+.hdr.przewiniety { box-shadow: 0 4px 18px rgb(0 0 0 / .08); }
+:root[data-theme='dark'] .hdr.przewiniety { box-shadow: 0 4px 18px rgb(0 0 0 / .45); }
+/* Strona główna: nagłówek na zdjęciu (przyciemnionym u góry), po przewinięciu kawałka — białe tło. Bez JS zwykły nagłówek. */
+.js .hdr-foto { margin-bottom: calc(-1 * var(--hdr-h)); transition: background-color .25s, border-color .25s, box-shadow .2s; }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) { background: transparent; border-bottom-color: transparent; }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-name, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav > a, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav summary, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .icon-btn:not(.burger) { color: #fff; }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .brand-sub { color: rgb(255 255 255 / .82); }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav > a:hover, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav summary:hover, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav details[open] > summary, .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .icon-btn:not(.burger):hover { background: rgb(255 255 255 / .16); color: #fff; }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav a[aria-current='page'], .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .nav .is-current > summary { background: rgb(255 255 255 / .22); color: #fff; }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search { background: rgb(255 255 255 / .16); color: rgb(255 255 255 / .85); }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search input { color: #fff; }
+.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search input::placeholder { color: rgb(255 255 255 / .8); }
+.hdr .brand-name, .hdr .brand-sub, .hdr .nav > a, .hdr .nav summary, .hdr .icon-btn, .hdr-search { transition: color .25s, background-color .25s; }
+.js .hdr-foto ~ main .hero-fig::after { content: ''; position: absolute; inset: 0 0 auto 0; height: max(45%, 190px); background: linear-gradient(rgb(6 11 22 / .74), rgb(6 11 22 / .38) 55%, rgb(6 11 22 / 0)); pointer-events: none; }
+.js .hdr-foto ~ main .hero-fig figcaption { top: calc(var(--hdr-h) + 12px); z-index: 1; }
 .hdr-row { display: flex; align-items: center; justify-content: space-between; gap: 20px; min-height: 70px; }
 .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; min-width: 0; }
 .brand img { width: auto; height: 44px; }
@@ -127,7 +145,7 @@ h1, h2, h3, h4 { color: var(--ink); line-height: 1.2; letter-spacing: -0.01em; }
 .burger { display: none; background: var(--primary); color: var(--primary-ink); }
 .burger:hover { background: var(--primary); color: var(--primary-ink); filter: brightness(1.12); }
 .mnav { display: none; border-top: 1px solid var(--line); padding: 8px var(--gutter) 20px; }
-.mnav.open { display: block; }
+.mnav.open { display: block; max-height: calc(100vh - var(--hdr-h)); max-height: calc(100dvh - var(--hdr-h)); overflow-y: auto; overscroll-behavior: contain; }
 .mnav details, .mnav > a { border-bottom: 1px solid var(--line); }
 .mnav summary, .mnav > a { display: flex; align-items: center; justify-content: space-between; min-height: 52px; font-size: 18px; font-weight: 700; text-decoration: none; color: var(--ink); cursor: pointer; list-style: none; }
 .mnav summary::-webkit-details-marker { display: none; }
@@ -411,7 +429,7 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .toc a { display: block; padding: 7px 0 7px 12px; border-left: 2px solid var(--line); font-size: 15px; font-weight: 600; line-height: 1.35; text-decoration: none; color: var(--muted); }
 .toc a:hover { color: var(--ink); border-left-color: var(--ink); }
 .toc a[aria-current] { color: var(--ink); border-left-color: var(--accent); font-weight: 800; }
-.toc-side { position: sticky; top: 16px; z-index: 2; box-shadow: 0 0 0 8px var(--bg); }
+.toc-side { position: sticky; top: calc(var(--hdr-h) + 16px); z-index: 2; box-shadow: 0 0 0 8px var(--bg); }
 .toc-top { display: none; margin-bottom: 20px; padding: 12px 16px; border-radius: var(--radius); background: var(--surface); }
 .toc-top summary { cursor: pointer; font-weight: 800; color: var(--ink); min-height: 32px; display: flex; align-items: center; }
 .toc-top ol { margin-top: 6px; }
@@ -530,3 +548,13 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .spec-link h3 a:focus-visible { outline: none; }
 .spec-link:has(h3 a:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
 @media (prefers-reduced-motion: reduce) { .spec-link, .spec-link .link-arrow svg { transition: none; transform: none !important; } }
+
+/* ---------- zapis na listę powiadomień (strona seminarium) ---------- */
+.zapis { position: relative; display: flex; flex-direction: column; gap: 8px; }
+.zapis input[type='email'] { min-height: 44px; padding: 0 14px; border: 1.5px solid var(--line); border-radius: 12px; background: var(--bg); color: var(--ink); font: inherit; font-size: 16px; }
+.zapis input[type='email']:focus { outline: none; border-color: var(--ink); box-shadow: 0 0 0 3px var(--tint); }
+.zapis .btn { align-self: flex-start; }
+.zapis .btn:disabled { opacity: .6; cursor: wait; }
+.zapis .hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.zapis-stan { margin: 0; font-size: 14px; font-weight: 600; color: var(--ink); }
+.zapis-stan:empty { display: none; }

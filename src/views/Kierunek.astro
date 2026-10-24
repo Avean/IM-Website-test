@@ -278,19 +278,6 @@ const sekcje = [
 
     <aside class="side" data-pagefind-ignore>
       <SpisTresci naglowki={sekcje} lang={lang} wariant="bok" />
-      <div class="side-box">
-        <h2>{T('Na skróty', 'Quick links')}</h2>
-        {d.na_skroty.length > 0 ? d.na_skroty.map((l) => (
-          <a class="link-arrow" href={href(l.adres)}>{w(l, 'etykieta')}<Ikona nazwa={isExternal(l.adres) ? 'zewnetrzny' : 'strzalka'} rozmiar={isExternal(l.adres) ? 13 : 14} /></a>
-        )) : (
-          <>
-            <a class="link-arrow" href="https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php">{T('Plan zajęć', 'Timetable')}<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
-            <a class="link-arrow" href="https://usosweb.uwr.edu.pl/">USOSweb<Ikona nazwa="zewnetrzny" rozmiar={13} /></a>
-            <a class="link-arrow" href={u(wJezyku('/studia/rok-akademicki', lang))}>{T('Rok akademicki', 'Academic year')}<Ikona nazwa="strzalka" rozmiar={14} /></a>
-            <a class="link-arrow" href={u(wJezyku('/studia/pierwszy-rok', lang))}>{T('Pierwszy rok', 'First year')}<Ikona nazwa="strzalka" rozmiar={14} /></a>
-          </>
-        )}
-      </div>
     </aside>
   </div>
 </Baza>
