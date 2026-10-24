@@ -472,6 +472,14 @@ content:
           - { name: nazwa, label: Nazwa, type: string }
           - { name: plik, label: Plik lub link, type: string }
           - { name: nazwa_en, label: "EN: nazwa", type: string }
+      - name: na_skroty
+        label: "Panel „Na skróty” (puste = domyślne: plan zajęć, USOSweb, rok akademicki, pierwszy rok)"
+        type: object
+        list: true
+        fields:
+          - { name: etykieta, label: Etykieta, type: string }
+          - { name: adres, label: Adres, type: string }
+          - { name: etykieta_en, label: "EN: etykieta", type: string }
       - { name: nazwa_en, label: "EN: nazwa kierunku", type: string }
       - { name: podtytul_en, label: "EN: nadtytuł", type: string }
       - { name: opis_en, label: "EN: zdanie pod nazwą", type: text }

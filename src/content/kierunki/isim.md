@@ -264,10 +264,26 @@ akty:
   plik: https://wmi.uwr.edu.pl/wp-content/uploads/sites/288/2024/04/egzaminy_isim.pdf
 - nazwa: Wytyczne dla prac dyplomowych w Instytucie Matematycznym
   nazwa_en: Thesis guidelines, Mathematical Institute (Polish)
-  plik: https://www.math.uni.wroc.pl/sites/default/files/46-2017.pdf
+  plik: /pliki/studia/46-2017.pdf
 - nazwa: Wychowanie fizyczne
   nazwa_en: Physical education (Polish)
   plik: https://bip.uni.wroc.pl/download/attachment/53077/nr-148-2026-z-dnia-18092026-regulamin-organizacji-i-zaliczen-wf.pdf?v=1789731867
+na_skroty:
+- etykieta: Plan zajęć IM
+  etykieta_en: Mathematical Institute timetable
+  adres: https://www.math.uni.wroc.pl/studia/plany_zajec/planZ.php
+- etykieta: System Zapisów II
+  etykieta_en: CS Institute registration system
+  adres: https://zapisy.ii.uni.wroc.pl/
+- etykieta: USOSweb
+  etykieta_en: USOSweb
+  adres: https://usosweb.uwr.edu.pl/
+- etykieta: Rok akademicki
+  etykieta_en: Academic year
+  adres: /studia/rok-akademicki
+- etykieta: Pierwszy rok
+  etykieta_en: First year
+  adres: /studia/pierwszy-rok
 tresc_en: |-
   ISIM is a three-year, full-time bachelor's programme taught in Polish and run jointly by the Institute of Computer Science and the Mathematical Institute of the University of Wrocław. It is an interdisciplinary programme: throughout your studies you build knowledge and skills in computer science and mathematics in parallel, and you design your own study path — according to your interests and abilities, with the help of a tutor.
 
