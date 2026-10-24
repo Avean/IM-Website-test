@@ -112,8 +112,10 @@
       "nazwa": "Probability and Mathematical Statistics",
       "opis": "Oryginalne prace z teorii prawdopodobieństwa i statystyki matematycznej. Czasopismo powstało w 1980 roku z inicjatywy wrocławskiego środowiska probabilistów (Kazimierz Urbanik, Czesław Ryll-Nardzewski) i statystyków (Witold Klonecki); od 2007 roku jest czasopismem stowarzyszonym Institute of Mathematical Statistics. Wszystkie artykuły są dostępne bezpłatnie (diamentowy otwarty dostęp).",
       "opis_en": "Original contributions to the theory of probability and mathematical statistics. The journal was founded in 1980 on the initiative of the Wrocław probability community led by Kazimierz Urbanik and Czesław Ryll-Nardzewski and the statistics community represented by Witold Klonecki; since 2007 it has been an affiliated journal of the Institute of Mathematical Statistics. All papers are freely available (diamond open access).",
-      "wydawca": "Oficyna Wydawnicza Politechniki Wrocławskiej (przy wsparciu Wydziału Matematyki i Informatyki UWr i Wydziału Matematyki Politechniki Wrocławskiej)",
-      "wydawca_en": "Publishing House of Wrocław University of Science and Technology (sponsored by the Faculty of Mathematics and Computer Science, University of Wrocław, and the Faculty of Pure and Applied Mathematics, Wrocław University of Science and Technology)",
+      "wydawca": "Oficyna Wydawnicza Politechniki Wrocławskiej",
+      "wydawca_en": "Publishing House of Wrocław University of Science and Technology",
+      "wsparcie": "Wydział Matematyki i Informatyki Uniwersytetu Wrocławskiego oraz Wydział Matematyki Politechniki Wrocławskiej",
+      "wsparcie_en": "Faculty of Mathematics and Computer Science, University of Wrocław, and Faculty of Pure and Applied Mathematics, Wrocław University of Science and Technology",
       "kontakt": "pms@math.uni.wroc.pl",
       "issn": "0208-4147",
       "adres": "https://www.math.uni.wroc.pl/~pms/"

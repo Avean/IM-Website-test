@@ -11,7 +11,7 @@ export interface Wykaz { rok: number; pochodzenie?: 'pdf' | 'strona'; zrodla?: s
 export interface RokWpis { rok: number; plik?: string; link?: string; uwagi?: string; uwagi_en?: string }
 export interface Czasopismo {
   nazwa: string; opis?: string; opis_en?: string; wydawca?: string; wydawca_en?: string; redakcja?: string; redakcja_en?: string;
-  kontakt?: string; issn?: string; eissn?: string; adres?: string;
+  wsparcie?: string; wsparcie_en?: string; kontakt?: string; issn?: string; eissn?: string; adres?: string;
 }
 export interface DanePublikacji {
   wstep?: string; wstep_en?: string; lata?: RokWpis[]; czasopisma_naglowek?: string; czasopisma_naglowek_en?: string;
@@ -74,6 +74,9 @@ export function tekstHtml(s: string | undefined, linki = false): string {
   for (const m of s.matchAll(URL_RE)) {
     const url = m[0].replace(/[.,;:)]+$/, '');
     const i = m.index ?? 0;
+    // Adres przerwany nietypowym znakiem (błąd w źródle, np. „…/→ms/…”) zostaje zwykłym tekstem.
+    const dalej = s.charAt(i + m[0].length);
+    if (dalej && !/\s/.test(dalej)) continue;
     out += zWzorami(s.slice(last, i)) + `<a href="${esc(url)}">${esc(url)}</a>`;
     last = i + url.length;
   }
