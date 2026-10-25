@@ -44,7 +44,7 @@ const ozdobny = wariant !== 'prosty';
 // jak na stronie głównej na zdjęciu (klasa .hdr-foto, style w global.css). Skrypt działa od razu przy wczytywaniu,
 // zanim pas się narysuje, żeby nic nie przeskakiwało; bez JS — zwykły biały nagłówek nad pasem.
 const naPasie = wariant === 'granat'
-  ? "(function(s){var p=s.parentElement,h=document.querySelector('.hdr');if(h&&p&&!p.previousElementSibling&&p.parentElement&&p.parentElement.id==='tresc'&&h.nextElementSibling===p.parentElement)h.classList.add('hdr-foto');})(document.currentScript)"
+  ? "(function(s){var p=s.parentElement,h=document.querySelector('.hdr');if(h&&p&&!p.previousElementSibling&&p.parentElement&&p.parentElement.id==='tresc'&&(function(n){while(n&&/^(SCRIPT|TEMPLATE|STYLE|LINK)$/.test(n.tagName))n=n.nextElementSibling;return n===p.parentElement;})(h.nextElementSibling))h.classList.add('hdr-foto');})(document.currentScript)"
   : '';
 ---
 <div class:list={['page-head', ozdobny && ['ph', `ph-${wariant}`], zdjecie && 'ph-z-foto']} data-dzial={ozdobny ? dzial : undefined}>
