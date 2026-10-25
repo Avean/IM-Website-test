@@ -49,6 +49,7 @@ const rok = new Date().getFullYear();
     <div class="ftr-bottom">
       <span>© {rok} {t(lang, 'uwr')} · <span lang="en">Created by</span> Szymon Cygan</span>
       <nav aria-label={lang === 'en' ? 'Legal' : 'Informacje prawne'}>
+        <a href={u(wJezyku('/o-stronie', lang))}>{lang === 'en' ? 'About this site' : 'O stronie'}</a>
         <a href={u(wJezyku('/deklaracja-dostepnosci', lang))}>{t(lang, 'deklaracja')}</a>
         <a href={u(wJezyku('/polityka-prywatnosci', lang))}>{t(lang, 'prywatnosc')}</a>
         <a href={ustawienia.archiwum}>{t(lang, 'archiwum')}</a>
