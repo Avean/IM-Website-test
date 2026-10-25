@@ -29,7 +29,10 @@ const rodzaje = ['ogloszenie', 'wydarzenie', 'sukces', 'kariera', 'obrona'].filt
 const lead = lang === 'en' ? 'Announcements, events and achievements of the Mathematical Institute.' : 'Ogłoszenia, wydarzenia i sukcesy Instytutu Matematycznego.';
 ---
 <Baza tytul={t(lang, 'aktualnosci')} opis={lead}>
-  <NaglowekStrony tytul={t(lang, 'aktualnosci')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'aktualnosci') }]}>
+  <NaglowekStrony tytul={t(lang, 'aktualnosci')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'aktualnosci') }]} />
+
+  <!-- Rodzaje wpisów i wyszukiwarka pod nagłówkiem (nie na granatowym pasie). -->
+  <div class="wrap" style="padding-top:clamp(24px, 4vw, 40px)">
     <div class="filters">
       <div class="chips" role="group" aria-label={lang === 'en' ? 'Filter by type' : 'Filtruj według rodzaju'}>
         <button type="button" class="chip" aria-pressed="true" data-rodzaj="">{t(lang, 'wszystkie')}</button>
@@ -47,9 +50,9 @@ const lead = lang === 'en' ? 'Announcements, events and achievements of the Math
       <span>{lang === 'en' ? 'Showing posts for:' : 'Pokazuję wpisy dla:'} {Object.entries(ODBIORCY).map(([k, v]) => <strong data-dla-etykieta={k} hidden>{v[lang].toLowerCase()}</strong>)}</span>
       <button type="button" class="chip" data-dla-wyczysc>{lang === 'en' ? 'Show all' : 'Pokaż wszystkie'}</button>
     </p>
-  </NaglowekStrony>
+  </div>
 
-  <div class="wrap layout">
+  <div class="wrap layout" style="padding-top:24px">
     <div class="main" data-lista>
       {grupy.map((g) => (
         <section data-grupa>
