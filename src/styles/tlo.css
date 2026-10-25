@@ -193,10 +193,11 @@ body[data-sekcje='pasy'] .prose h2 { margin: 1.4em 0 .55em; padding: .3em .7em .
 body[data-sekcje='pasy'] .prose > h2:first-child { margin-top: 0; }
 
 /* --- 2. Linia: kreska przez całą szerokość nad sekcją, z bursztynowym początkiem --- */
-body[data-sekcje='linia'] .zsec { position: relative; margin-bottom: 44px; padding-top: 30px; border-top: 1px solid var(--line); }
+/* wariant „Portal”: mniejsze odstępy między sekcjami */
+body[data-sekcje='linia'] .zsec { position: relative; margin-bottom: 20px; padding-top: 16px; border-top: 1px solid var(--line); }
 body[data-sekcje='linia'] .zsec::before, body[data-sekcje='linia'] .prose h2::before { content: ''; position: absolute; top: -2px; left: 0; width: 64px; height: 3px; border-radius: 2px; background: var(--accent); }
-body[data-sekcje='linia'] :is(.section-head h2, .studia-head h2)::before { content: ''; display: block; width: 64px; height: 3px; margin-bottom: 16px; border-radius: 2px; background: var(--accent); }
-body[data-sekcje='linia'] .prose h2 { position: relative; margin-top: 2.1em; padding-top: 24px; border-top: 1px solid var(--line); }
+body[data-sekcje='linia'] :is(.section-head h2, .studia-head h2)::before { content: ''; display: block; width: 64px; height: 3px; margin-bottom: 10px; border-radius: 2px; background: var(--accent); }
+body[data-sekcje='linia'] .prose h2 { position: relative; margin-top: 1.6em; padding-top: 14px; border-top: 1px solid var(--line); }
 body[data-sekcje='linia'] .prose > h2:first-child { margin-top: 0; }
 /* Strona główna (sekcje .section): bez kolorowego pasa, każda sekcja zaczyna się kreską z bursztynowym początkiem,
    tak jak .zsec na podstronach (Studia, Nauka, Instytut). */

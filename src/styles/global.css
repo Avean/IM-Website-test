@@ -452,7 +452,7 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .pn .t { font-size: 16px; font-weight: 800; color: var(--ink); }
 
 /* tabela pracowników */
-.staff-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+.staff-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 8px 12px; margin-bottom: 10px; }
 .search { display: flex; align-items: center; gap: 8px; height: 46px; padding: 0 14px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--bg); color: var(--muted); min-width: min(320px, 100%); }
 .search input { flex: 1; min-width: 0; border: 0; background: transparent; font: inherit; font-size: 16px; color: var(--ink); outline: none; }
 .search:focus-within { border-color: var(--ink); }
@@ -682,25 +682,30 @@ details[open] > summary .chev { transform: rotate(180deg); }
    ukryty przed czytnikami) ma ten sam układ kolumn. Kolumna „Telefon” istnieje tylko w sekcjach z klasą
    .z-tel (tam, gdzie ktoś ma numer — w praktyce administracja). Etykiety .lbl („E-mail:”, „Pokój:”) są
    dla czytników ekranu, a na wąskim ekranie także widoczne. Doktoranci mają podnagłówki roku (.staff-sub). */
-.staff-dir { --staff-cols: minmax(0, 2.4fr) minmax(0, 1.8fr) minmax(4.5em, .5fr) 5em; }
-.staff-dir.z-tel { --staff-cols: minmax(0, 2.4fr) minmax(0, 1.8fr) 9.5em minmax(4.5em, .5fr) 5em; }
-.staff-head, .staff-row { display: grid; grid-template-columns: var(--staff-cols); gap: 4px 16px; padding: 12px 14px; }
-.staff-head { padding-top: 10px; padding-bottom: 10px; border-bottom: 1.5px solid var(--line); font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
-.staff-sub { margin: 20px 0 2px 14px; }
+/* wariant „Portal”: kolumna .z (zakład / funkcja) obok nazwiska, niższe wiersze */
+.staff-dir { --staff-cols: minmax(0, 2.1fr) minmax(0, 1.5fr) minmax(0, 1.9fr) minmax(4.5em, .45fr) 4.5em; }
+.staff-dir.z-tel { --staff-cols: minmax(0, 2fr) minmax(0, 1.6fr) minmax(0, 1.8fr) 9.5em minmax(4.5em, .45fr) 4.5em; }
+.staff-head, .staff-row { display: grid; grid-template-columns: var(--staff-cols); gap: 2px 16px; padding: 7px 12px; }
+.staff-head { padding-top: 6px; padding-bottom: 6px; border-bottom: 1.5px solid var(--line); font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.staff-sub { margin: 12px 0 0 12px; }
 .staff-list { list-style: none; margin: 0; padding: 0; }
 .staff-row { position: relative; border: 1px solid transparent; border-radius: 12px; font-size: 15px; overflow-wrap: anywhere; }
 .staff-row::before { content: ''; position: absolute; left: 14px; right: 14px; bottom: -1px; height: 1px; background: var(--line); }
 .staff-row .n { font-weight: 800; color: var(--ink); }
 .staff-row .n small { display: block; font-size: 14px; font-weight: 500; color: var(--muted); }
 .staff-row .n small a { color: inherit; }
+.staff-row .z { font-size: 14px; line-height: 1.4; color: var(--muted); }
+.staff-row .z a { color: inherit; }
 .staff-row .lbl { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
 .staff-row .www { display: flex; align-items: center; gap: 4px; align-self: start; font-size: 13px; font-weight: 800; letter-spacing: .04em; color: var(--muted); }
 @media (max-width: 760px) {
   .staff-head { display: none; }
-  .staff-row { grid-template-columns: minmax(0, 1fr); gap: 2px; padding: 12px; }
+  .staff-row { display: flex; flex-wrap: wrap; gap: 0 14px; padding: 8px 12px; }
+  .staff-row .n, .staff-row .z { flex: 1 1 100%; }
+  .staff-row .z:empty { display: none; }
   .staff-row::before { left: 12px; right: 12px; }
   .staff-row .c:empty { display: none; }
-  .staff-row .n { margin-bottom: 2px; }
+  .staff-row .n { margin-bottom: 0; }
   .staff-row .lbl { position: static; width: auto; height: auto; margin: 0; overflow: visible; clip: auto; white-space: normal; font-size: 13px; color: var(--muted); }
   .staff-sub { margin-left: 12px; }
 }

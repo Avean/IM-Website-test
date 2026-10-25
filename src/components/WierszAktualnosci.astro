@@ -1,5 +1,7 @@
 ---
 // Pozycja na liście aktualności.
+// Wariant „Portal”: zwarty wiersz — data i rodzaj/adresaci w lewej kolumnie, obok tytuł, termin wydarzenia i zajawka,
+// z prawej mała miniatura zdjęcia. Na telefonie data i plakietki w jednym wierszu nad tytułem.
 import { u, isExternal } from '../lib/url';
 import { wJezyku, RODZAJE, ODBIORCY } from '../lib/i18n';
 import { short, range, type Lang } from '../lib/daty';
@@ -9,16 +11,32 @@ interface Props { p: PozycjaListy; lang: Lang }
 const { p, lang } = Astro.props;
 const href = isExternal(p.href) ? p.href : u(wJezyku(p.href, lang));
 ---
-<a class="row-item" href={href} data-rodzaj={p.rodzaj} data-dla={p.dla.join(' ')}>
-  <span class="body">
-    <span class="news-meta">
+<a class="row-item wa-row" href={href} data-rodzaj={p.rodzaj} data-dla={p.dla.join(' ')}>
+  <span class="wa-meta">
+    <time datetime={p.data}>{short(p.data)}</time>
+    <span class="wa-badges">
       <span class={`badge badge-${p.rodzaj}`}>{RODZAJE[p.rodzaj]?.[lang]}</span>
       {p.dla.map((d) => <span class="badge">{ODBIORCY[d]?.[lang]}</span>)}
-      <time datetime={p.data}>{short(p.data)}</time>
     </span>
+  </span>
+  <span class="body">
     <span class="t">{p.tytul}</span>
     {p.wydarzenie && <span class="news-meta"><strong>{lang === 'en' ? 'When:' : 'Kiedy:'}</strong> {range(p.wydarzenie, undefined, lang)}</span>}
     {p.zajawka && <span class="x">{p.zajawka}</span>}
   </span>
   {p.zdjecie && <span class="thumb"><img src={u(p.zdjecie)} alt="" loading="lazy" /></span>}
 </a>
+
+<style>
+  .wa-row { display: grid; grid-template-columns: 118px minmax(0, 1fr) auto; gap: 4px 18px; align-items: start; }
+  .wa-meta { display: flex; flex-direction: column; align-items: flex-start; gap: 4px; padding-top: 2px; }
+  .wa-meta time { font-size: 14px; font-weight: 800; color: var(--ink); font-variant-numeric: tabular-nums; }
+  .wa-badges { display: flex; flex-wrap: wrap; gap: 4px; }
+  .wa-badges .badge { padding: 1px 8px; font-size: 12.5px; }
+  .wa-row .thumb { width: 104px; height: 70px; }
+  @media (max-width: 640px) {
+    .wa-row { grid-template-columns: minmax(0, 1fr) auto; }
+    .wa-meta { grid-column: 1 / -1; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 4px 10px; padding-top: 0; }
+    .wa-row .thumb { display: block; width: 72px; height: 54px; }
+  }
+</style>

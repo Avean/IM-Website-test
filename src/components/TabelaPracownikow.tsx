@@ -4,6 +4,7 @@
 // obejmuje całe pole (klasy .os-link / .os-a w global.css), a e-mail i zakład są osobnymi linkami.
 // Kolumna „Telefon” pojawia się tylko w sekcjach, w których ktoś ma numer (w praktyce: administracja).
 // Doktoranci są podzieleni według roku studiów (Rok 1, Rok 2, …; bez roku — na końcu).
+// Wariant „Portal”: zakład i funkcja w osobnej kolumnie obok nazwiska (.z), więc osoba zajmuje jeden zwarty wiersz.
 import { zTytulem } from '../lib/osoby';
 import { Fragment, useMemo, useState } from 'react';
 
@@ -72,7 +73,7 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
     .map((g) => {
       const os = widoczne.filter((o) => o.grupa === g.id);
       const podsekcje: Podsekcja[] = g.id === 'doktorant' ? wedlugRoku(os, napisy) : [{ klucz: 'wszyscy', osoby: os }];
-      return { ...g, osoby: os, podsekcje, maTel: os.some((o) => !!o.telefon) };
+      return { ...g, osoby: os, podsekcje, maTel: os.some((o) => !!o.telefon), maZaklad: os.some((o) => !!o.zaklad), maFunkcje: os.some((o) => !!o.funkcja) };
     })
     .filter((g) => g.osoby.length > 0);
 
@@ -83,13 +84,11 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
       <li key={o.id} className={o.strona ? 'staff-row os-link' : 'staff-row'}>
         <div className="c n">
           {o.strona ? <a className="os-a" href={o.strona}>{nazwa}</a> : <span>{nazwa}</span>}
-          {(o.funkcja || linkZakladu) && (
-            <small>
-              {o.funkcja}
-              {o.funkcja && linkZakladu && ' · '}
-              {linkZakladu && <a href={linkZakladu}>{nazwyZakladow[o.zaklad as string]}</a>}
-            </small>
-          )}
+        </div>
+        <div className="c z">
+          {o.funkcja}
+          {o.funkcja && linkZakladu && ' · '}
+          {linkZakladu && <a href={linkZakladu}>{nazwyZakladow[o.zaklad as string]}</a>}
         </div>
         <div className="c">
           {o.email && (
@@ -169,10 +168,11 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
       </p>
 
       {sekcje.map((g) => (
-        <section key={g.id} className={g.maTel ? 'staff-dir z-tel' : 'staff-dir'} style={{ marginBottom: 36 }}>
-          <h2 style={{ fontSize: 22, margin: '18px 0 8px' }}>{g.nazwa}</h2>
+        <section key={g.id} className={g.maTel ? 'staff-dir z-tel' : 'staff-dir'} style={{ marginBottom: 22 }}>
+          <h2 style={{ fontSize: 20, margin: '14px 0 4px' }}>{g.nazwa}</h2>
           <div className="staff-head" aria-hidden="true">
             <span>{napisy.imie}</span>
+            <span>{g.maZaklad ? (g.maFunkcje ? napisy.zakladFunkcja : napisy.zaklad) : napisy.funkcja}</span>
             <span>{napisy.email}</span>
             {g.maTel && <span>{napisy.telefon}</span>}
             <span>{napisy.pokoj}</span>
