@@ -25,10 +25,8 @@ const KOLORY_DNI = '/studia/rok-akademicki';
 const dniWydarzen = Number((ustawienia as any).wydarzenia_dni_robocze ?? 5) || 5;
 const wydarzenia = await wydarzeniaNaGlowna(3, lang, dniWydarzen);
 const wyrozniona = await wyroznionaAktualnosc(lang);
-const lista = await aktualnosciNaGlowna(6, lang, wydarzenia.map((w) => w.href));
-// Pierwsza aktualność ze zdjęciem zajmuje dwie kolumny — wtedy pokazujemy o jedną mniej.
-const pierwszaZeZdjeciem = !!lista[0]?.zdjecie;
-const aktualnosci = pierwszaZeZdjeciem ? lista.slice(0, 5) : lista;
+// Wariant redakcyjny: aktualności jako zwarta lista wierszy (data | tytuł | rodzaj) — mieści się ich więcej.
+const aktualnosci = await aktualnosciNaGlowna(8, lang, wydarzenia.map((w) => w.href));
 const referaty = await referatyWTygodniu(lang);
 const tydzien = tydzienSeminariow();
 const baner = ustawienia.baner;
@@ -82,8 +80,8 @@ const kafelki = [
     </div>
   </section>
 
-  <section aria-label={t(lang, 'naSkroty')}>
-    <div class="wrap tiles">
+  <section class="skroty-pas" aria-label={t(lang, 'naSkroty')}>
+    <div class="wrap skroty">
       {skroty.kafelki.map((k) => (
         k.adres === KOLORY_DNI ? (
           <KafelekKoloryDni lang={lang} adres={k.adres} etykieta={wybierz(k, 'etykieta', lang)} />
@@ -99,12 +97,12 @@ const kafelki = [
 
   {wydarzenia.length > 0 && (
     <section class="section wydarzenia-pas" aria-labelledby="h2-wyd" data-wydarzenia>
-      <div class="wrap">
-        <div class="section-head">
+      <div class="wrap k2">
+        <div class="k2-h">
           <h2 id="h2-wyd">{t(lang, 'najblizsze')}</h2>
           <a class="link-arrow" href={href('/kalendarz')}>{t(lang, 'kalendarz')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
         </div>
-        <div class="event-grid">
+        <div class="k2-b event-grid">
           {wydarzenia.map((w) => <KartaWydarzenia w={w} lang={lang} />)}
         </div>
       </div>
@@ -112,29 +110,25 @@ const kafelki = [
   )}
 
   <section class="section" aria-labelledby="h2-akt">
-    <div class="wrap">
-      <div class="section-head">
+    <div class="wrap k2">
+      <div class="k2-h">
         <h2 id="h2-akt">{t(lang, 'aktualnosci')}</h2>
         <a class="link-arrow" href={href('/aktualnosci')}>{t(lang, 'wszystkieAktualnosci')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
       </div>
-      <div class="news-grid">
-        {aktualnosci.map((p, i) => <KartaAktualnosci p={p} lang={lang} wyrozniona={i === 0 && pierwszaZeZdjeciem} />)}
+      <div class="k2-b nlist">
+        {aktualnosci.map((p) => <KartaAktualnosci p={p} lang={lang} />)}
       </div>
     </div>
   </section>
 
   <section class="section section-alt" aria-labelledby="h3-sem">
-    <div class="wrap">
-      <div class="sem-week sem-week-sam">
-        <div class="section-head" style="margin-bottom:14px">
-          <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px">
-            <h2 id="h3-sem" class="sem-week-h">{t(lang, tydzien.przyszly ? 'seminariaPrzyszly' : 'seminariaTydzien')}</h2>
-            <span class="muted" style="font-size:14px;font-weight:600">{range(tydzien.od, tydzien.do, lang)}</span>
-          </div>
-          <div style="display:flex;flex-wrap:wrap;gap:0 20px">
-            <a class="link-arrow" href={href('/seminaria')}>{t(lang, 'wszystkieSeminaria')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-          </div>
-        </div>
+    <div class="wrap k2">
+      <div class="k2-h">
+        <h2 id="h3-sem" class="sem-week-h">{t(lang, tydzien.przyszly ? 'seminariaPrzyszly' : 'seminariaTydzien')}</h2>
+        <a class="link-arrow" href={href('/seminaria')}>{t(lang, 'wszystkieSeminaria')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
+        <p>{range(tydzien.od, tydzien.do, lang)}</p>
+      </div>
+      <div class="k2-b">
         <TabelaReferatow
           wiersze={referaty}
           lang={lang}
@@ -146,15 +140,13 @@ const kafelki = [
   </section>
 
   <section class="section studia" aria-labelledby="h2-studia">
-    <div class="wrap">
-      <div class="studia-head">
-        <div>
-          <h2 id="h2-studia">{wybierz(st, 'tytul', lang)}</h2>
-          <p>{wybierz(st, 'opis', lang)}</p>
-        </div>
-        <a class="btn btn-accent" href={st.rekrutacja}>{t(lang, 'rekrutacja')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
+    <div class="wrap k2">
+      <div class="k2-h">
+        <h2 id="h2-studia">{wybierz(st, 'tytul', lang)}</h2>
+        <p>{wybierz(st, 'opis', lang)}</p>
+        <a class="btn btn-accent btn-small" href={st.rekrutacja}>{t(lang, 'rekrutacja')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
       </div>
-      <div class="prog-grid">
+      <div class="k2-b prog-grid">
         {kafelki.map((k) => (
           <a class="prog" href={href(k.adres)}>
             <span class="l">{wybierz(k, 'poziom', lang)}</span>
