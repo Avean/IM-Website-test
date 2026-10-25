@@ -473,7 +473,8 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .sem-card { display: flex; flex-direction: column; gap: 10px; padding: 22px; border-radius: var(--radius-l); border: 1px solid var(--line); text-decoration: none; color: var(--text); }
 .sem-card:hover { border-color: var(--ink); color: var(--text); }
 .sem-card .t { font-size: 21px; font-weight: 800; line-height: 1.25; color: var(--ink); }
-.talk { padding: 18px 0; border-top: 1px solid var(--line); scroll-margin-top: 20px; }
+/* (article.talk = wpis referatu na stronie seminarium; w tabeli seminariów komórka .talk w wierszu nie dostaje kreski ani odstępu) */
+article.talk { padding: 18px 0; border-top: 1px solid var(--line); scroll-margin-top: 20px; }
 .talk-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; font-size: 14px; color: var(--muted); }
 .talk h3 { margin: 6px 0 4px; font-size: 19px; font-weight: 800; }
 .talk .who { font-size: 15px; font-weight: 600; }
