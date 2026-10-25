@@ -202,11 +202,14 @@ body[data-sekcje='linia'] .prose > h2:first-child { margin-top: 0; }
    tak jak .zsec na podstronach (Studia, Nauka, Instytut). */
 body[data-sekcje='linia'] .section-alt { background: none; }
 body[data-sekcje='linia'] .studia { border-top: 0; }
-body[data-sekcje='linia'] main > .section { padding-top: 14px; padding-bottom: clamp(30px, 4vw, 44px); }
-body[data-sekcje='linia'] main > .section > .wrap:first-child { position: relative; padding-top: 30px; }
+body[data-sekcje='linia'] main > .section { padding-top: 10px; padding-bottom: clamp(22px, 2.8vw, 32px); }
+body[data-sekcje='linia'] main > .section > .wrap:first-child { position: relative; padding-top: 20px; }
 body[data-sekcje='linia'] main > .section > .wrap:first-child::before { content: ''; position: absolute; top: 0; left: var(--gutter); right: var(--gutter); height: 1px; background: var(--line); }
 body[data-sekcje='linia'] main > .section > .wrap:first-child::after { content: ''; position: absolute; top: -1px; left: var(--gutter); width: 64px; height: 3px; border-radius: 2px; background: var(--accent); }
 body[data-sekcje='linia'] main > .section :is(.section-head h2, .studia-head h2)::before { content: none; }
+/* wariant redakcyjny: kreska sekcji zastępuje bursztynową kreskę nad tytułem i linię między sekcjami (global.css) */
+body[data-sekcje='linia'] main > .section :is(.k2-h, .front-h) h2::before { content: none; }
+body[data-sekcje='linia'] .section + .section { border-top: 0; }
 
 /* --- 3. Karty: każda sekcja na osobnej, pełnej karcie nad tłem --- */
 body[data-sekcje='karty'] .zsec:not(.dz-paths) { margin-bottom: 22px; padding: clamp(20px, 3vw, 32px); border: 1px solid var(--line); border-radius: var(--radius-l); background: var(--sek-karta); box-shadow: var(--sek-cien); }
