@@ -200,7 +200,7 @@ const kafelki = [
   /* „Na skróty” w kolumnie: kafelki jako wiersze (ikona z lewej, napis obok; kafelek koloru dnia z opisem pod napisem) */
   .pt-skroty { list-style: none; margin: 0; padding: 0; }
   .pt-skroty li + li { border-top: 1px solid var(--line); }
-  .pt-skroty :global(.tile) { display: grid; grid-template-columns: 24px minmax(0, 1fr); align-items: center; gap: 0 12px; min-height: 44px; padding: 8px 6px; border-radius: 8px; background: transparent; font-size: 15px; line-height: 1.3; }
+  .pt-skroty :global(.tile) { display: grid; grid-template-columns: 24px minmax(0, 1fr); align-items: center; gap: 0 12px; min-height: 44px; padding: 8px 6px; border: 0; border-radius: 8px; background: transparent; box-shadow: none; font-size: 15px; line-height: 1.3; }
   .pt-skroty :global(.tile:hover) { background: var(--tint); }
   .pt-skroty :global(.tile .kd-pod) { grid-column: 2; margin-top: 1px; }
   .pt-glowna .pt-stopka { padding-top: 8px; }
