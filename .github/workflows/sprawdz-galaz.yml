@@ -1,14 +1,17 @@
 name: Sprawdzenie gałęzi (bez publikacji)
 
 # Budowanie gałęzi roboczych (agent-*, qa-*) — tylko kontrola, że strona się buduje.
-# Nic nie jest publikowane; wynik i błędy widać w adnotacjach przebiegu.
+# Nic nie jest publikowane na GitHub Pages; wynik i błędy widać w adnotacjach przebiegu.
+# Gałąź z „podglad” w nazwie (np. agent-38-podglad-gesta): zbudowana strona (bez public/pliki) trafia dodatkowo
+# na gałąź podglad-<nazwa gałęzi>, skąd można ją pobrać gitem i obejrzeć lokalnie (zrzuty ekranu wariantów).
+# Push tokenem GITHUB_TOKEN nie uruchamia innych workflowów.
 on:
   push:
     branches: ['agent-*', 'qa-*']
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: sprawdz-${{ github.ref }}
@@ -46,3 +49,17 @@ jobs:
           warn=$(sed -e 's/\x1b\[[0-9;]*m//g' build.log | grep -iE 'warn|error|failed|not found' | head -40 | sed -e 's/%/%25/g' | awk '{printf "%s%%0A", $0}' || true)
           if [ -n "$warn" ]; then echo "::warning title=Ostrzeżenia budowania::${warn}"; fi
           echo "::notice title=Wynik budowania::$(find dist -name '*.html' | wc -l) stron HTML, $(du -sh dist | cut -f1)"
+
+      - name: Podgląd zbudowanej strony (tylko gałęzie z „podglad” w nazwie)
+        if: contains(github.ref_name, 'podglad')
+        env:
+          TOKEN: ${{ github.token }}
+        run: |
+          cd dist
+          rm -rf pliki
+          git init -q
+          git add -A
+          git -c user.name='github-actions[bot]' -c user.email='41898282+github-actions[bot]@users.noreply.github.com' \
+            commit -qm "Podgląd ${GITHUB_REF_NAME} @ ${GITHUB_SHA::7}"
+          git push -qf "https://x-access-token:${TOKEN}@github.com/${GITHUB_REPOSITORY}.git" "HEAD:refs/heads/podglad-${GITHUB_REF_NAME}"
+          echo "::notice title=Podgląd::gałąź podglad-${GITHUB_REF_NAME} ($(du -sh . | cut -f1))"
