@@ -46,7 +46,13 @@ const lead = lang === 'en'
 ---
 <Baza tytul={t(lang, 'pracownicy')} opis={lead}>
   <NaglowekStrony tytul={t(lang, 'pracownicy')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut'), adres: '/instytut' }, { etykieta: t(lang, 'pracownicy') }]} />
-  <div class="wrap" style="padding-top:28px;padding-bottom:64px">
+  <div class="wrap pr-wrap">
     <TabelaPracownikow client:load osoby={osoby} grupy={grupy} zaklady={zaklady} napisy={napisy} />
   </div>
 </Baza>
+
+<style>
+  .pr-wrap { padding-top: 28px; padding-bottom: 64px; }
+  /* telefon (≤ 760 px): wygląd „Portal” — mniej miejsca nad i pod spisem */
+  @media (max-width: 760px) { .pr-wrap { padding-top: 16px; padding-bottom: 40px; } }
+</style>

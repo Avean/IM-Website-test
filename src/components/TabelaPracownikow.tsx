@@ -169,8 +169,8 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
       </p>
 
       {sekcje.map((g) => (
-        <section key={g.id} className={g.maTel ? 'staff-dir z-tel' : 'staff-dir'} style={{ marginBottom: 36 }}>
-          <h2 style={{ fontSize: 22, margin: '18px 0 8px' }}>{g.nazwa}</h2>
+        <section key={g.id} className={g.maTel ? 'staff-dir z-tel' : 'staff-dir'}>
+          <h2 className="staff-h">{g.nazwa}</h2>
           <div className="staff-head" aria-hidden="true">
             <span>{napisy.imie}</span>
             <span>{napisy.email}</span>

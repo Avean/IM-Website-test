@@ -680,7 +680,8 @@ article.talk { padding: 18px 0; border-top: 1px solid var(--line); scroll-margin
    ukryty przed czytnikami) ma ten sam układ kolumn. Kolumna „Telefon” istnieje tylko w sekcjach z klasą
    .z-tel (tam, gdzie ktoś ma numer — w praktyce administracja). Etykiety .lbl („E-mail:”, „Pokój:”) są
    dla czytników ekranu, a na wąskim ekranie także widoczne. Doktoranci mają podnagłówki roku (.staff-sub). */
-.staff-dir { --staff-cols: minmax(0, 2.4fr) minmax(0, 1.8fr) minmax(4.5em, .5fr) 5em; }
+.staff-dir { --staff-cols: minmax(0, 2.4fr) minmax(0, 1.8fr) minmax(4.5em, .5fr) 5em; margin-bottom: 36px; }
+.staff-dir > .staff-h { font-size: 22px; margin: 18px 0 8px; }
 .staff-dir.z-tel { --staff-cols: minmax(0, 2.4fr) minmax(0, 1.8fr) 9.5em minmax(4.5em, .5fr) 5em; }
 .staff-head, .staff-row { display: grid; grid-template-columns: var(--staff-cols); gap: 4px 16px; padding: 12px 14px; }
 .staff-head { padding-top: 10px; padding-bottom: 10px; border-bottom: 1.5px solid var(--line); font-size: 13px; font-weight: 800; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }

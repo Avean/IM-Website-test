@@ -79,28 +79,29 @@ const sekcje = [
 ].map((s) => ({ depth: 2, ...s }));
 ---
 <Baza tytul={nazwa} opis={w(d, 'opis')} opublikowany={d.opublikowany}>
-  <div class="page-head">
+  {/* Telefon (≤ 760 px) — wygląd „Portal”: niższy nagłówek, fakty 2×2, zwartsze sekcje (style na dole); znaczniki te same. */}
+  <div class="page-head kh">
     <div class="wrap">
       <Wstecz etykieta={T('Studia', 'Study')} adres="/studia" lang={lang} />
       {d.podtytul && <p class="eyebrow">{w(d, 'podtytul')}</p>}
       <h1>{nazwa}</h1>
       {d.opis && <p class="lead">{w(d, 'opis')}</p>}
       {d.przyciski.length > 0 && (
-        <div class="btn-row" style="margin-top:6px">
+        <div class="btn-row kh-btns">
           {d.przyciski.map((p, i) => (
             <a class={`btn${i === 0 ? ' btn-accent' : ''}`} href={href(p.adres)}>{w(p, 'etykieta')}{isExternal(p.adres) && <Ikona nazwa="zewnetrzny" rozmiar={14} />}</a>
           ))}
         </div>
       )}
       {d.fakty.length > 0 && (
-        <div class="stats" style="margin:14px 0 0">
-          {d.fakty.map((f) => <div class="stat" style="background:var(--bg)"><span class="n">{f.wartosc}</span><span class="l">{w(f, 'etykieta')}</span></div>)}
+        <div class="stats kh-fakty">
+          {d.fakty.map((f) => <div class="stat"><span class="n">{f.wartosc}</span><span class="l">{w(f, 'etykieta')}</span></div>)}
         </div>
       )}
     </div>
   </div>
 
-  <div class="wrap layout">
+  <div class="wrap layout kier">
     <div class="main">
       <div class="entry-cards">
         <a class="entry" href="#o-kierunku">
@@ -118,7 +119,7 @@ const sekcje = [
       </div>
       <SpisTresci naglowki={sekcje} lang={lang} wariant="gora" />
 
-      <section class="zsec" aria-labelledby="o-kierunku">
+      <section class="zsec kier-o" aria-labelledby="o-kierunku">
         <h2 id="o-kierunku">{N.o}</h2>
         <div class="prose">{htmlEn ? <Fragment set:html={htmlEn} /> : <Content />}</div>
         {d.dlaczego.length > 0 && (
@@ -304,7 +305,7 @@ const sekcje = [
       )}
     </div>
 
-    <aside class="side" data-pagefind-ignore>
+    <aside class="side tylko-komputer" data-pagefind-ignore>
       <SpisTresci naglowki={sekcje} lang={lang} wariant="bok" />
     </aside>
   </div>
@@ -341,3 +342,37 @@ const sekcje = [
     });
   }
 </script>
+
+<style>
+  .kh-btns { margin-top: 6px; }
+  .kh-fakty { margin: 14px 0 0; }
+  .kh-fakty .stat { background: var(--bg); }
+
+  /* ---------- telefon (≤ 760 px): wygląd „Portal” ---------- */
+  @media (max-width: 760px) {
+    /* nagłówek: tekst, przyciski i fakty (2×2) ciaśniej */
+    .kh .wrap { gap: 6px; }
+    .kh-btns { margin-top: 4px; }
+    .kh-fakty { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
+    /* treść na pełną szerokość (spis sekcji jest i tak rozwijaną listą nad treścią) */
+    .kier { display: block; padding-top: clamp(14px, 2vw, 22px); padding-bottom: clamp(28px, 4vw, 44px); }
+    /* „O kierunku”: „Dlaczego warto” pod tekstem, dwie w rzędzie (na wąskim telefonie jedna) */
+    .kier-o .prose { display: flow-root; }
+    .kier-o .why-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); margin-top: 16px; }
+    /* przebieg studiów: „kiedy” w jednym wierszu z nazwą etapu */
+    .step { flex-direction: row; flex-wrap: wrap; align-items: baseline; column-gap: 10px; }
+    .step > .desc, .step > .deadline { flex-basis: 100%; }
+    .step > .deadline { flex-basis: auto; }
+    /* specjalności: etykiety („Dla kogo”, „Po studiach”) w wierszu z treścią */
+    .spec .lbl { display: inline; margin-right: 6px; }
+    .spec-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+    /* dokumenty programu, praktyk i akty prawne: siatka (na szerszym telefonie dwie kolumny) */
+    .tabpanel .files, .zsec > .files, .more .files { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+  }
+  @media (max-width: 480px) {
+    .kier-o .why-grid { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 420px) {
+    .kh-fakty .stat .n { font-size: 22px; }
+  }
+</style>
