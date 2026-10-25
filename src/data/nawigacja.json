@@ -146,11 +146,6 @@
               "adres": "/studia/plan-zajec"
             },
             {
-              "etykieta": "USOSweb",
-              "etykieta_en": "USOSweb",
-              "adres": "https://usosweb.uwr.edu.pl/"
-            },
-            {
               "etykieta": "Rok akademicki",
               "etykieta_en": "Academic year",
               "adres": "/studia/rok-akademicki"
@@ -164,6 +159,11 @@
               "etykieta": "Pierwszy rok",
               "etykieta_en": "First year",
               "adres": "/studia/pierwszy-rok"
+            },
+            {
+              "etykieta": "USOSweb",
+              "etykieta_en": "USOSweb",
+              "adres": "https://usosweb.uwr.edu.pl/"
             }
           ]
         },

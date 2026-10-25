@@ -135,8 +135,10 @@ const logo = (ustawienia as any).logo as string | undefined;
   const odswiezNaglowek = () => {
     if (!hdr) return;
     // na stronie ze zdjęciem nagłówek zostaje przezroczysty, dopóki nie zbliżymy się do końca zdjęcia
-    const foto = hdr.classList.contains('hdr-foto') ? document.querySelector<HTMLElement>('.hero-fig') : null;
-    const przewiniety = foto ? foto.getBoundingClientRect().bottom <= hdr.offsetHeight + 72 : window.scrollY > 40;
+    // (strona główna: zdjęcie .hero-fig; podstrony: granatowy pas .ph na samej górze — wtedy biały dopiero przy jego końcu)
+    const foto = hdr.classList.contains('hdr-foto') ? document.querySelector<HTMLElement>('.hero-fig, #tresc > .ph') : null;
+    const zapas = foto?.classList.contains('ph') ? 16 : 72;
+    const przewiniety = foto ? foto.getBoundingClientRect().bottom <= hdr.offsetHeight + zapas : window.scrollY > 40;
     hdr.classList.toggle('przewiniety', przewiniety);
     if (stopka) {
       const naDole = przewiniety && (stopka.getBoundingClientRect().top < window.innerHeight - 80
