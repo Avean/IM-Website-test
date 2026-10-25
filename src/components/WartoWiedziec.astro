@@ -107,11 +107,11 @@ const klasaZewn = uklad === 'glowna' ? 'section section-alt' : uklad === 'dzial'
   /* Górne pole: zdjęcie z rokiem na plakietce albo duży rok na jasnym tle */
   .ww-media {
     position: relative; display: flex; flex-direction: column; justify-content: flex-end; gap: 10px;
-    min-height: 84px; padding: 12px 16px; background: var(--tint); color: var(--tint-ink);
+    min-height: 72px; padding: 10px 16px; background: var(--tint); color: var(--tint-ink);
   }
   .ww-media:not(.ww-foto)::after { content: ''; display: block; width: 36px; height: 3px; border-radius: 2px; background: var(--accent); }
   .ww-media:not(.ww-foto) .ww-rok { font-size: clamp(28px, 2.6vw, 36px); font-weight: 800; line-height: 1; letter-spacing: -0.03em; font-variant-numeric: tabular-nums; }
-  .ww-foto { height: 100px; padding: 0; background: var(--photo); }
+  .ww-foto { height: 88px; padding: 0; background: var(--photo); }
   .ww-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; transition: transform .25s; }
   .ww-foto .ww-rok {
     position: absolute; left: 12px; bottom: 10px; padding: 2px 10px; border-radius: 999px;
