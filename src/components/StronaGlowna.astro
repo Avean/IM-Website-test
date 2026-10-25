@@ -95,29 +95,30 @@ const kafelki = [
     </div>
   </section>
 
-  {wydarzenia.length > 0 && (
-    <section class="section wydarzenia-pas" aria-labelledby="h2-wyd" data-wydarzenia>
-      <div class="wrap k2">
-        <div class="k2-h">
-          <h2 id="h2-wyd">{t(lang, 'najblizsze')}</h2>
-          <a class="link-arrow" href={href('/kalendarz')}>{t(lang, 'kalendarz')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
+  {/* Pas „pierwszej strony”: aktualności jako zwarta lista, obok (gdy są) najbliższe wydarzenia w wąskiej kolumnie.
+      Bez wydarzeń kolumny nie ma, a lista zajmuje całą szerokość. Na telefonie wydarzenia są nad aktualnościami. */}
+  <section class="section front-pas">
+    <div class="wrap front">
+      <section class="front-main" aria-labelledby="h2-akt">
+        <div class="front-h">
+          <h2 id="h2-akt">{t(lang, 'aktualnosci')}</h2>
+          <a class="link-arrow" href={href('/aktualnosci')}>{t(lang, 'wszystkieAktualnosci')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
         </div>
-        <div class="k2-b event-grid">
-          {wydarzenia.map((w) => <KartaWydarzenia w={w} lang={lang} />)}
+        <div class="nlist">
+          {aktualnosci.map((p) => <KartaAktualnosci p={p} lang={lang} />)}
         </div>
-      </div>
-    </section>
-  )}
-
-  <section class="section" aria-labelledby="h2-akt">
-    <div class="wrap k2">
-      <div class="k2-h">
-        <h2 id="h2-akt">{t(lang, 'aktualnosci')}</h2>
-        <a class="link-arrow" href={href('/aktualnosci')}>{t(lang, 'wszystkieAktualnosci')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-      </div>
-      <div class="k2-b nlist">
-        {aktualnosci.map((p) => <KartaAktualnosci p={p} lang={lang} />)}
-      </div>
+      </section>
+      {wydarzenia.length > 0 && (
+        <section class="front-side" aria-labelledby="h2-wyd" data-wydarzenia>
+          <div class="front-h">
+            <h2 id="h2-wyd">{t(lang, 'najblizsze')}</h2>
+            <a class="link-arrow" href={href('/kalendarz')}>{t(lang, 'kalendarz')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
+          </div>
+          <div class="front-ev">
+            {wydarzenia.map((w) => <KartaWydarzenia w={w} lang={lang} />)}
+          </div>
+        </section>
+      )}
     </div>
   </section>
 

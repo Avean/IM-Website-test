@@ -71,24 +71,24 @@ const klasaZewn = uklad === 'glowna' ? 'section section-alt' : uklad === 'dzial'
       )}
       <div class={`ww-grid${uklad !== 'lista' ? ' k2-b' : ''}${karty.length === 1 ? ' ww-jedna' : ''}`}>
         {karty.map((k) => (
-          <article class={`ww-card${k.cel ? ' ww-link' : ''}${k.obraz ? ' ww-z-foto' : ''}`}>
-            {k.obraz && (
-              <div class="ww-media ww-foto">
-                <img src={u(k.obraz)} alt="" loading="lazy" decoding="async" />
-              </div>
-            )}
+          <article class={`ww-card${k.cel ? ' ww-link' : ''}`}>
+            <span class="ww-rok">{k.rok}</span>
             <div class="ww-body">
-              {k.rok && <span class="ww-rok">{k.rok}</span>}
               <H class="ww-t">
                 {k.cel ? (
                   <a href={href(k.cel)}>{k.tytul}{k.zewnetrzny && <span class="sr-only"> {T('(strona zewnętrzna)', '(external site)')}</span>}</a>
                 ) : k.tytul}
               </H>
               {k.zajawka && <p class="ww-x">{k.zajawka}</p>}
-              {k.cel && (
-                <span class="ww-go" aria-hidden="true">{k.dalej}<Ikona nazwa={k.zewnetrzny ? 'zewnetrzny' : 'strzalka'} rozmiar={15} /></span>
-              )}
             </div>
+            {k.cel && (
+              <span class="ww-go" aria-hidden="true">{k.dalej}<Ikona nazwa={k.zewnetrzny ? 'zewnetrzny' : 'strzalka'} rozmiar={15} /></span>
+            )}
+            {k.obraz && (
+              <div class="ww-foto">
+                <img src={u(k.obraz)} alt="" loading="lazy" decoding="async" />
+              </div>
+            )}
           </article>
         ))}
       </div>
@@ -97,32 +97,32 @@ const klasaZewn = uklad === 'glowna' ? 'section section-alt' : uklad === 'dzial'
 )}
 
 <style>
-  /* Pozycje „Warto wiedzieć” w kolumnach: cienka linia u góry, rok jako mała etykieta, zdjęcie (gdy jest) jako
-     niewielka miniatura obok tekstu. Cała pozycja klikalna (link w tytule rozciągnięty na pozycję). */
-  .ww-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr)); gap: 0 28px; }
-  .ww-jedna { max-width: 640px; }
+  /* Wariant redakcyjny: pozycje „Warto wiedzieć” jako wiersze listy — rok | tytuł i zajawka | „Czytaj więcej” i miniatura
+     zdjęcia (gdy jest). Cała pozycja klikalna (link w tytule rozciągnięty na wiersz). */
+  .ww-grid { display: flex; flex-direction: column; border-top: 1px solid var(--rule); }
   .ww-card {
-    position: relative; display: grid; grid-template-columns: minmax(0, 1fr); gap: 0 14px; align-items: start;
-    padding: 10px 0 14px; border-top: 1px solid var(--rule); color: var(--text);
+    position: relative; display: grid; grid-template-columns: 5em minmax(0, 1fr) 9.5em; grid-template-areas: 'r b g' 'r b f';
+    gap: 0 20px; align-items: baseline; padding: 10px 0 11px; border-bottom: 1px solid var(--line); color: var(--text);
   }
-  .ww-z-foto { grid-template-columns: 84px minmax(0, 1fr); }
-  .ww-media { position: relative; margin-top: 4px; }
-  .ww-foto { width: 84px; height: 84px; border-radius: var(--radius-s); overflow: hidden; background: var(--photo); }
-  .ww-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
-  .ww-body { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
-  .ww-rok { font-size: 12px; font-weight: 800; letter-spacing: .08em; color: var(--muted); font-variant-numeric: tabular-nums; }
-  .ww-t { margin: 0; font-size: 16.5px; font-weight: 800; line-height: 1.3; letter-spacing: -0.005em; color: var(--ink); }
+  .ww-rok { grid-area: r; font-size: 14px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .ww-body { grid-area: b; display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .ww-t { margin: 0; font-size: 16.5px; font-weight: 800; line-height: 1.3; color: var(--ink); }
   .ww-t a { color: inherit; text-decoration: none; }
-  .ww-x { margin: 0; font-size: 15px; line-height: 1.5; }
-  .ww-go { margin-top: 2px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--primary); }
+  .ww-x { margin: 0; font-size: 15px; line-height: 1.45; color: var(--muted); }
+  .ww-go { grid-area: g; justify-self: end; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--primary); white-space: nowrap; }
   :global(:root[data-theme='dark']) .ww-go { color: var(--accent); }
   .ww-go :global(svg) { transition: transform .15s; }
+  .ww-foto { grid-area: f; justify-self: end; align-self: start; position: relative; width: 96px; height: 64px; margin-top: 6px; border-radius: var(--radius-s); overflow: hidden; background: var(--photo); }
+  .ww-foto img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
   .ww-link .ww-t a::after { content: ''; position: absolute; inset: 0; }
-  .ww-link:hover, .ww-link:focus-within { border-top-color: var(--ink); }
   .ww-link:hover .ww-t a { text-decoration: underline; text-underline-offset: 3px; }
   .ww-link:hover .ww-go :global(svg) { transform: translateX(3px); }
   .ww-link .ww-t a:focus-visible { outline: none; }
   .ww-link:has(.ww-t a:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
+  @media (max-width: 640px) {
+    .ww-card { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: 'r g' 'b b'; gap: 3px 12px; }
+    .ww-foto { display: none; }
+  }
   @media (prefers-reduced-motion: reduce) {
     .ww-go :global(svg) { transition: none; transform: none !important; }
   }
