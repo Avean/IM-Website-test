@@ -79,22 +79,25 @@ const sekcje = [
 ].map((s) => ({ depth: 2, ...s }));
 ---
 <Baza tytul={nazwa} opis={w(d, 'opis')} opublikowany={d.opublikowany}>
-  <div class="page-head">
+  {/* Wariant „Portal”: najważniejsze fakty o kierunku obok tytułu (na telefonie pod nim). */}
+  <div class="page-head kh">
     <div class="wrap">
-      <Wstecz etykieta={T('Studia', 'Study')} adres="/studia" lang={lang} />
-      {d.podtytul && <p class="eyebrow">{w(d, 'podtytul')}</p>}
-      <h1>{nazwa}</h1>
-      {d.opis && <p class="lead">{w(d, 'opis')}</p>}
-      {d.przyciski.length > 0 && (
-        <div class="btn-row" style="margin-top:6px">
-          {d.przyciski.map((p, i) => (
-            <a class={`btn${i === 0 ? ' btn-accent' : ''}`} href={href(p.adres)}>{w(p, 'etykieta')}{isExternal(p.adres) && <Ikona nazwa="zewnetrzny" rozmiar={14} />}</a>
-          ))}
-        </div>
-      )}
+      <div class="kh-txt">
+        <Wstecz etykieta={T('Studia', 'Study')} adres="/studia" lang={lang} />
+        {d.podtytul && <p class="eyebrow">{w(d, 'podtytul')}</p>}
+        <h1>{nazwa}</h1>
+        {d.opis && <p class="lead">{w(d, 'opis')}</p>}
+        {d.przyciski.length > 0 && (
+          <div class="btn-row" style="margin-top:4px">
+            {d.przyciski.map((p, i) => (
+              <a class={`btn${i === 0 ? ' btn-accent' : ''}`} href={href(p.adres)}>{w(p, 'etykieta')}{isExternal(p.adres) && <Ikona nazwa="zewnetrzny" rozmiar={14} />}</a>
+            ))}
+          </div>
+        )}
+      </div>
       {d.fakty.length > 0 && (
-        <div class="stats" style="margin:14px 0 0">
-          {d.fakty.map((f) => <div class="stat" style="background:var(--bg)"><span class="n">{f.wartosc}</span><span class="l">{w(f, 'etykieta')}</span></div>)}
+        <div class="kh-fakty">
+          {d.fakty.map((f) => <div class="stat"><span class="n">{f.wartosc}</span><span class="l">{w(f, 'etykieta')}</span></div>)}
         </div>
       )}
     </div>
@@ -341,3 +344,25 @@ const sekcje = [
     });
   }
 </script>
+
+<style>
+  /* Wariant „Portal”: nagłówek w dwóch kolumnach — tekst | fakty (2×2) */
+  .kh .wrap { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 460px); gap: 14px 40px; align-items: end; }
+  .kh-txt { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+  .kh-fakty { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .kh-fakty .stat { background: var(--bg); }
+  @media (max-width: 900px) {
+    .kh .wrap { grid-template-columns: minmax(0, 1fr); }
+  }
+  @media (max-width: 420px) { .kh-fakty .stat .n { font-size: 22px; } }
+  /* przebieg studiów: „kiedy” w jednym wierszu z nazwą etapu */
+  .step { flex-direction: row; flex-wrap: wrap; align-items: baseline; column-gap: 10px; }
+  .step > .desc, .step > .deadline { flex-basis: 100%; }
+  .step > .deadline { flex-basis: auto; }
+  /* specjalności: etykiety („Dla kogo”, „Po studiach”) w wierszu z treścią */
+  .spec .lbl { display: inline; margin-right: 6px; }
+  /* dokumenty programu, praktyk i akty prawne w dwóch kolumnach */
+  .tabpanel .files, .zsec > .files, .more .files { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+  .why-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+</style>
+

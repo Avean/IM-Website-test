@@ -18,7 +18,7 @@ const { wiersze, lang, pusty, etykieta, lista = false } = Astro.props;
       {wiersze.map((w) => (
         <li>
           <a class="pt-item" href={u(wJezyku(w.href, lang))}>
-            <span class="pt-d pt-d-szer">{dayShort(w.termin, lang)} {short(w.termin).slice(0, 5)}<br />{time(w.termin)}</span>
+            <span class="pt-d pt-d-szer">{`${dayShort(w.termin, lang)} ${short(w.termin).slice(0, 5)}`}<br />{time(w.termin)}</span>
             <span class="pt-b">
               <span class="pt-k">{w.seminarium}{sala(w.sala, lang) && <span class="pt-k-m"> · {sala(w.sala, lang)}</span>}</span>
               <span class="pt-t">{w.tytul}</span>

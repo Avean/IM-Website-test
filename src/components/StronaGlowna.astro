@@ -25,7 +25,7 @@ const dniWydarzen = Number((ustawienia as any).wydarzenia_dni_robocze ?? 5) || 5
 const wydarzenia = await wydarzeniaNaGlowna(3, lang, dniWydarzen);
 const wyrozniona = await wyroznionaAktualnosc(lang);
 // Wariant „Portal”: więcej aktualności (zwarta lista: data, rodzaj lub adresat, tytuł; miniatura, gdy wpis ma zdjęcie).
-const aktualnosci = await aktualnosciNaGlowna(9, lang, wydarzenia.map((w) => w.href));
+const aktualnosci = await aktualnosciNaGlowna(11, lang, wydarzenia.map((w) => w.href));
 const etykieta = (p: (typeof aktualnosci)[number]) =>
   p.rodzaj !== 'ogloszenie' ? RODZAJE[p.rodzaj]?.[lang] : p.dla[0] ? ODBIORCY[p.dla[0]]?.[lang] : RODZAJE.ogloszenie[lang];
 const referaty = await referatyWTygodniu(lang);
@@ -81,11 +81,11 @@ const kafelki = [
     </div>
   </section>
 
-  {/* Wariant „Portal”: zaraz pod banerem trzy kolumny — aktualności | wydarzenia i seminaria tygodnia | na skróty i studia.
+  {/* Wariant „Portal”: zaraz pod banerem trzy kolumny — aktualności | wydarzenia, seminaria tygodnia i „Warto wiedzieć” | na skróty i studia.
        Na telefonie kolumny układają się jedna pod drugą. Style: src/styles/portal.css i <style> poniżej. */}
   <div class="pt-sekcja pt-glowna">
     <div class="wrap pt-grid">
-      <section class="pt-box" aria-labelledby="h2-akt">
+      <section class="pt-box pt-akt" aria-labelledby="h2-akt">
         <div class="pt-h">
           <h2 id="h2-akt">{t(lang, 'aktualnosci')}</h2>
           <a class="pt-all" href={href('/aktualnosci')}>{t(lang, 'wszystkieAktualnosci')}<Ikona nazwa="strzalka" rozmiar={14} /></a>
@@ -124,7 +124,6 @@ const kafelki = [
               <h2 id="h2-sem">{t(lang, tydzien.przyszly ? 'seminariaPrzyszly' : 'seminariaTydzien')}</h2>
               <span class="pt-zakres">{range(tydzien.od, tydzien.do, lang)}</span>
             </span>
-            <a class="pt-all" href={href('/seminaria')}>{t(lang, 'wszystkieSeminaria')}<Ikona nazwa="strzalka" rozmiar={14} /></a>
           </div>
           <TabelaReferatow
             lista
@@ -133,11 +132,13 @@ const kafelki = [
             etykieta={t(lang, tydzien.przyszly ? 'seminariaPrzyszly' : 'seminariaTydzien')}
             pusty={t(lang, tydzien.przyszly ? 'brakReferatowPrzyszly' : 'brakReferatow')}
           />
+          <p class="pt-stopka"><a class="pt-all" href={href('/seminaria')}>{t(lang, 'wszystkieSeminaria')}<Ikona nazwa="strzalka" rozmiar={14} /></a></p>
         </section>
+        <WartoWiedziec lang={lang} uklad="portal" glowna limit={4} />
       </div>
 
       <div class="pt-col pt-szeroka-sr">
-        <section class="pt-box" aria-labelledby="h2-skroty">
+        <section class="pt-box pt-skroty-box" aria-labelledby="h2-skroty">
           <div class="pt-h"><h2 id="h2-skroty">{t(lang, 'naSkroty')}</h2></div>
           <ul class="pt-skroty">
             {skroty.kafelki.map((k) => (
@@ -177,11 +178,6 @@ const kafelki = [
     </div>
   </div>
 
-  <div class="pt-sekcja">
-    <div class="wrap">
-      <WartoWiedziec lang={lang} uklad="portal" glowna poziomo limit={4} />
-    </div>
-  </div>
 </Baza>
 
 <script>
@@ -207,5 +203,11 @@ const kafelki = [
   .pt-skroty :global(.tile) { display: grid; grid-template-columns: 24px minmax(0, 1fr); align-items: center; gap: 0 12px; min-height: 44px; padding: 8px 6px; border-radius: 8px; background: transparent; font-size: 15px; line-height: 1.3; }
   .pt-skroty :global(.tile:hover) { background: var(--tint); }
   .pt-skroty :global(.tile .kd-pod) { grid-column: 2; margin-top: 1px; }
-  .pt-glowna .pt-stopka { padding-top: 10px; }
+  .pt-glowna .pt-stopka { padding-top: 8px; }
+  /* telefon: kolumny jedna pod drugą; „Na skróty” na samej górze (jak kafelki pod banerem), aktualności — sześć najnowszych */
+  @media (max-width: 680px) {
+    .pt-glowna .pt-col { display: contents; }
+    .pt-glowna .pt-skroty-box { order: -1; }
+    .pt-glowna .pt-akt .pt-list > li:nth-child(n + 7) { display: none; }
+  }
 </style>
