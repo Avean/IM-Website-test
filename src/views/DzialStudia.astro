@@ -231,7 +231,7 @@ const wstep = w(tekst, 'wstep');
             <a class="tile" href={href(l.adres)}>
               <Ikona nazwa={ikona(l.adres)} />
               <span>{l.etykieta}</span>
-              <span class="tylko-telefon dz-wiecej-ico"><Ikona nazwa={isExternal(l.adres) ? 'zewnetrzny' : 'strzalka'} rozmiar={16} />{isExternal(l.adres) && <span class="sr-only">{T('(strona zewnętrzna)', '(external site)')}</span>}</span>
+              <span class="tylko-telefon dz-wiecej-ico" data-pagefind-ignore><Ikona nazwa={isExternal(l.adres) ? 'zewnetrzny' : 'strzalka'} rozmiar={16} />{isExternal(l.adres) && <span class="sr-only">{T('(strona zewnętrzna)', '(external site)')}</span>}</span>
             </a>
           ))}
         </div>

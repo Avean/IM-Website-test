@@ -101,7 +101,7 @@ const sukcesyOpis = wybierz(dzial, 'sukcesy_opis', lang);
     {listaZakladow.length > 0 && (
       <section class="zsec dz-karty" aria-labelledby="zaklady">
         <h2 id="zaklady">{T('Zakłady', 'Departments')}</h2>
-        <a class="pt-all dz-head-link tylko-telefon" href={href('/instytut/struktura')}>{T('Struktura i zakłady', 'Structure and departments')}<Ikona nazwa="strzalka" rozmiar={14} /></a>
+        <a class="pt-all dz-head-link tylko-telefon" data-pagefind-ignore href={href('/instytut/struktura')}>{T('Struktura i zakłady', 'Structure and departments')}<Ikona nazwa="strzalka" rozmiar={14} /></a>
         {zakladyOpis && <p class="dz-intro">{zakladyOpis}</p>}
         <div class="spec-grid">
           {listaZakladow.map((z) => {
@@ -125,7 +125,7 @@ const sukcesyOpis = wybierz(dzial, 'sukcesy_opis', lang);
     {sukcesy.length > 0 && (
       <section class="zsec dz-ramka-sek dz-sukcesy" aria-labelledby="sukcesy">
         <h2 id="sukcesy">{T('Ostatnie sukcesy', 'Recent achievements')}</h2>
-        <a class="pt-all dz-head-link tylko-telefon" href={href('/nauka/sukcesy')}>{T('Wszystkie sukcesy', 'All achievements')}<Ikona nazwa="strzalka" rozmiar={14} /></a>
+        <a class="pt-all dz-head-link tylko-telefon" data-pagefind-ignore href={href('/nauka/sukcesy')}>{T('Wszystkie sukcesy', 'All achievements')}<Ikona nazwa="strzalka" rozmiar={14} /></a>
         <span class="dz-kreska tylko-telefon" aria-hidden="true"></span>
         {sukcesyOpis && <p class="dz-intro">{sukcesyOpis}</p>}
         <div class="spec-grid">
@@ -253,11 +253,12 @@ const sukcesyOpis = wybierz(dzial, 'sukcesy_opis', lang);
     .dz-karty .spec .foot > span { color: var(--text); font-weight: 600; }
     .dz-karty .spec .foot .muted { font-weight: 400; }
     /* sukcesy: sekcja w ramce (kreska sekcji nad nią zostaje); ramka narysowana pod treścią (::after), wpisy jako wiersze */
-    .zsec.dz-ramka-sek { position: relative; isolation: isolate; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 14px; margin-bottom: 12px; padding: 27px 15px 9px; }
+    .zsec.dz-ramka-sek { position: relative; isolation: isolate; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; column-gap: 14px; margin-bottom: 12px; padding: 27px 15px 9px; }
     .zsec.dz-ramka-sek::after { content: ''; position: absolute; inset: 16px 0 0; z-index: -1; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); pointer-events: none; }
     .dz-ramka-sek > * { flex: 1 1 100%; min-width: 0; }
     .dz-ramka-sek > h2 { flex: 0 1 auto; margin: 0; padding-bottom: 0; border-bottom: 0; }
-    .dz-kreska { display: block; height: 2px; margin: 5px 0 4px; background: var(--ink); }
+    /* kreska pod tytułem i linkiem (osobny element, bo tytuł musi zostać bezpośrednio w sekcji) */
+    .dz-kreska { display: block; height: 2px; margin: 7px 0 4px; background: var(--ink); }
     :global(:root[data-theme='dark']) .dz-kreska { background: var(--line); }
     .dz-ramka-sek .dz-intro { margin: 6px 0 4px; font-size: 14px; line-height: 1.45; }
     .dz-sukcesy .spec-grid { display: block; }
