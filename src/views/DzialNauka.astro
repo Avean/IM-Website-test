@@ -40,7 +40,8 @@ const rok = Number(dzis.slice(0, 4));
 const realizowane = listaGrantow.filter((g) => (g.data.rok_do ?? 0) >= rok);
 const maOpis = (g: Grant) => !!g.body?.trim();
 // Przykłady: najpierw projekty z opisem, potem najnowsze (każdy ma własną podstronę).
-const przyklady = [...realizowane.filter(maOpis), ...realizowane.filter((g) => !maOpis(g))].slice(0, 4);
+// (wariant redakcyjny: wiersze tabeli zamiast kart — mieści się sześć)
+const przyklady = [...realizowane.filter(maOpis), ...realizowane.filter((g) => !maOpis(g))].slice(0, 6);
 const lata = (g: Grant) => (g.data.rok_od && g.data.rok_do && g.data.rok_od !== g.data.rok_do ? `${g.data.rok_od}–${g.data.rok_do}` : String(g.data.rok_od ?? g.data.rok_do ?? ''));
 const tytulGrantu = (g: Grant) => (lang === 'en' && g.data.tytul_en) || g.data.tytul;
 
@@ -84,28 +85,26 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
 ---
 <Baza tytul={naglowek} opis={lead || undefined}>
   <NaglowekStrony tytul={naglowek} lead={lead || undefined} lang={lang} okruszki={[{ etykieta: naglowek }]} />
-  <div class="wrap" style="padding-top:32px;padding-bottom:64px">
+  <div class="wrap dz-wrap">
     {liczby.length > 0 && (
       <div class="stats">
         {liczby.map((x) => <div class="stat"><span class="n">{x.n}</span><span class="l">{x.l}</span></div>)}
       </div>
     )}
 
+    {/* Wariant redakcyjny: każda sekcja w dwóch kolumnach — nagłówek po lewej (.k2-h), treść po prawej (.k2-b). */}
     {grupy.length > 0 && (
-      <section class="zsec" aria-labelledby="w-dziale">
-        <h2 id="w-dziale">{T('W tym dziale', 'In this section')}</h2>
-        <div class="dz-groups">
+      <section class="zsec k2" aria-labelledby="w-dziale">
+        <div class="k2-h"><h2 id="w-dziale">{T('W tym dziale', 'In this section')}</h2></div>
+        <div class="k2-b dz-groups">
           {grupy.map((g) => (
             <div class="dz-g">
               <h3>{wybierz(g, 'nazwa', lang)}</h3>
-              <div class="tiles dz-tiles">
+              <ul class="dz-linki">
                 {g.linki.map((l) => (
-                  <a class="tile dz-tile" href={href(l.adres)}>
-                    <span>{wybierz(l, 'etykieta', lang)}</span>
-                    <Ikona nazwa={isExternal(l.adres) ? 'zewnetrzny' : 'strzalka'} rozmiar={20} />
-                  </a>
+                  <li><a href={href(l.adres)}><span>{wybierz(l, 'etykieta', lang)}</span><Ikona nazwa={isExternal(l.adres) ? 'zewnetrzny' : 'strzalka'} rozmiar={15} /></a></li>
                 ))}
-              </div>
+              </ul>
             </div>
           ))}
         </div>
@@ -113,10 +112,13 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
     )}
 
     {listaZakladow.length > 0 && (
-      <section class="zsec" aria-labelledby="obszary">
-        <h2 id="obszary">{T('Obszary badań', 'Research areas')}</h2>
-        {obszaryOpis && <p class="dz-intro">{obszaryOpis}</p>}
-        <div class="spec-grid">
+      <section class="zsec k2" aria-labelledby="obszary">
+        <div class="k2-h">
+          <h2 id="obszary">{T('Obszary badań', 'Research areas')}</h2>
+          <a class="link-arrow" href={href('/instytut/struktura')}>{T('Struktura i zakłady', 'Structure and departments')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
+          {obszaryOpis && <p>{obszaryOpis}</p>}
+        </div>
+        <div class="k2-b spec-grid">
           {listaZakladow.map((z) => (
             <article class="spec spec-link">
               <h3><a href={href(`/instytut/zaklady/${z.id}`)}>{nazwaKrotka(z)}</a></h3>
@@ -125,18 +127,18 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
             </article>
           ))}
         </div>
-        <p class="dz-more">
-          <a class="link-arrow" href={href('/instytut/struktura')}>{T('Struktura i zakłady', 'Structure and departments')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-        </p>
       </section>
     )}
 
     <WartoWiedziec lang={lang} dzial="nauka" />
 
-    <section class="zsec" aria-labelledby="seminaria">
-      <h2 id="seminaria">{naglowekSeminariow}</h2>
-      <p class="dz-intro">{range(tydzien.od, tydzien.do, lang)}</p>
-      <div class="dz-ramka">
+    <section class="zsec k2" aria-labelledby="seminaria">
+      <div class="k2-h">
+        <h2 id="seminaria">{naglowekSeminariow}</h2>
+        <a class="link-arrow" href={href('/seminaria')}>{t(lang, 'wszystkieSeminaria')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
+        <p>{range(tydzien.od, tydzien.do, lang)}</p>
+      </div>
+      <div class="k2-b">
         <TabelaReferatow
           wiersze={referaty}
           lang={lang}
@@ -144,116 +146,117 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
           pusty={t(lang, tydzien.przyszly ? 'brakReferatowPrzyszly' : 'brakReferatow')}
         />
       </div>
-      <p class="dz-more">
-        <a class="link-arrow" href={href('/seminaria')}>{t(lang, 'wszystkieSeminaria')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-      </p>
     </section>
 
-    <section class="zsec" aria-labelledby="konferencje">
-      <h2 id="konferencje">{nadchodzaceKonf.length ? T('Najbliższe konferencje', 'Upcoming conferences') : T('Konferencje', 'Conferences')}</h2>
-      {nadchodzaceKonf.length === 0 && (
-        <p class="dz-intro">
-          {T('Nie zapowiedziano jeszcze kolejnych konferencji.', 'No upcoming conferences have been announced yet.')}
-          {pokazKonf.length > 0 && ` ${T('Ostatnio odbyły się:', 'Most recent:')}`}
-        </p>
-      )}
-      {pokazKonf.length > 0 && (
-        <div class="event-grid">
-          {pokazKonf.map((k) => (
-            <a class="event dz-event" href={href(`/nauka/konferencje/${slugOf(k.id)}`)}>
-              <span class={`datebox${nadchodzaceKonf.length ? '' : ' light'}`} aria-hidden="true"><span class="d">{dayNum(k.data.poczatek)}</span><span class="m">{monthShort(k.data.poczatek, lang)}</span></span>
-              <span class="event-body">
-                <span class="k">{range(k.data.poczatek, k.data.koniec, lang)}</span>
-                <span class="t">{wybierz(k.data, 'tytul', lang)}</span>
-                {k.data.miejsce && <span class="s">{k.data.miejsce}</span>}
-                {k.data.odwolana && <span><span class="badge">{T('odwołana', 'cancelled')}</span></span>}
-              </span>
-            </a>
-          ))}
-        </div>
-      )}
-      <p class="dz-more">
+    <section class="zsec k2" aria-labelledby="konferencje">
+      <div class="k2-h">
+        <h2 id="konferencje">{nadchodzaceKonf.length ? T('Najbliższe konferencje', 'Upcoming conferences') : T('Konferencje', 'Conferences')}</h2>
         <a class="link-arrow" href={href('/nauka/konferencje')}>{T('Wszystkie konferencje', 'All conferences')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-      </p>
-    </section>
-
-    <section class="zsec" aria-labelledby="granty">
-      <h2 id="granty">{T('Realizowane projekty', 'Ongoing projects')} <span class="muted dz-ile">({realizowane.length})</span></h2>
-      {realizowane.length === 0 && <p class="dz-intro">{T('Obecnie brak realizowanych projektów.', 'No ongoing projects at the moment.')}</p>}
-      {realizowane.length > przyklady.length && <p class="dz-intro">{T(`Wybrane spośród ${realizowane.length} realizowanych projektów.`, `A selection of ${realizowane.length} ongoing projects.`)}</p>}
-      {przyklady.length > 0 && (
-        <div class="dz-granty">
-          {przyklady.map((g) => (
-            <article class="spec spec-link">
-              <div class="news-meta">
-                <span class={`badge${g.data.rodzaj === 'ncn' ? ' badge-wydarzenie' : g.data.rodzaj === 'ue' ? ' badge-sukces' : ''}`}>{RODZAJE_GRANTOW[g.data.rodzaj][lang]}</span>
-                {g.data.program && <span class="badge">{g.data.program}</span>}
-                {lata(g) && <span>{lata(g)}</span>}
-              </div>
-              <h3><a href={href(`/nauka/granty/${slugOf(g.id)}`)}>{tytulGrantu(g)}</a></h3>
-              {g.data.kierownik && <p><span class="lbl">{T('Kierownik', 'Principal investigator')}</span>{g.data.kierownik}</p>}
-              {(g.data.kod || g.data.strona) && (
-                <p class="foot">
-                  {g.data.kod && <span class="dz-kod">{g.data.kod}</span>}
-                  {g.data.strona && <a href={g.data.strona}>{T('Strona projektu', 'Project website')} <Ikona nazwa="zewnetrzny" rozmiar={13} /></a>}
-                </p>
-              )}
-            </article>
-          ))}
-        </div>
-      )}
-      <p class="dz-more">
-        <a class="link-arrow" href={href('/nauka/granty')}>{T('Wszystkie projekty i granty', 'All projects and grants')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-      </p>
-    </section>
-
-    <section class="zsec" aria-labelledby="obrony">
-      <h2 id="obrony">{t(lang, 'obrony')}</h2>
-      {pokazObrony.length === 0 && <p class="dz-intro">{T('Brak zapowiedzianych obron.', 'No PhD defences announced.')}</p>}
-      {pokazObrony.length > 0 && (
-        <div class="dz-obrony">
-          {pokazObrony.map((o) => {
-            const bedzie = obronaBedzie(o);
-            return (
-              <a class="row-item" href={href(`/obrony-doktorskie/${slugOf(o.id)}`)}>
-                <span class={`datebox small${bedzie ? '' : ' light'}`} aria-hidden="true"><span class="d">{dayNum(o.data.termin)}</span><span class="m">{monthShort(o.data.termin, lang)}</span></span>
-                <span class="body">
-                  <span class="news-meta">
-                    {bedzie && <span class="badge badge-obrona">{T('nadchodząca', 'upcoming')}</span>}
-                    <span>{longWithDay(o.data.termin, lang)}</span>
-                    {o.data.miejsce && <span>· {o.data.miejsce}</span>}
-                  </span>
-                  <span class="t">{o.data.kandydat}</span>
-                  <span class="x" lang="en">{o.data.tytul_rozprawy}</span>
+      </div>
+      <div class="k2-b">
+        {nadchodzaceKonf.length === 0 && (
+          <p class="k2-uwaga">
+            {T('Nie zapowiedziano jeszcze kolejnych konferencji.', 'No upcoming conferences have been announced yet.')}
+            {pokazKonf.length > 0 && ` ${T('Ostatnio odbyły się:', 'Most recent:')}`}
+          </p>
+        )}
+        {pokazKonf.length > 0 && (
+          <div class="event-grid dz-konf">
+            {pokazKonf.map((k) => (
+              <a class="event" href={href(`/nauka/konferencje/${slugOf(k.id)}`)}>
+                <span class={`datebox${nadchodzaceKonf.length ? '' : ' light'}`} aria-hidden="true"><span class="d">{dayNum(k.data.poczatek)}</span><span class="m">{monthShort(k.data.poczatek, lang)}</span></span>
+                <span class="event-body">
+                  <span class="k">{range(k.data.poczatek, k.data.koniec, lang)}</span>
+                  <span class="t">{wybierz(k.data, 'tytul', lang)}</span>
+                  {k.data.miejsce && <span class="s">{k.data.miejsce}</span>}
+                  {k.data.odwolana && <span><span class="badge">{T('odwołana', 'cancelled')}</span></span>}
                 </span>
               </a>
-            );
-          })}
-        </div>
-      )}
-      <p class="dz-more">
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+
+    <section class="zsec k2" aria-labelledby="granty">
+      <div class="k2-h">
+        <h2 id="granty">{T('Realizowane projekty', 'Ongoing projects')} <span class="k2-ile">({realizowane.length})</span></h2>
+        <a class="link-arrow" href={href('/nauka/granty')}>{T('Wszystkie projekty i granty', 'All projects and grants')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
+        {realizowane.length > przyklady.length && <p>{T(`Wybrane spośród ${realizowane.length} realizowanych projektów.`, `A selection of ${realizowane.length} ongoing projects.`)}</p>}
+      </div>
+      <div class="k2-b">
+        {realizowane.length === 0 && <p class="k2-uwaga">{T('Obecnie brak realizowanych projektów.', 'No ongoing projects at the moment.')}</p>}
+        {przyklady.length > 0 && (
+          <div class="dz-lista">
+            {przyklady.map((g) => (
+              <article class="dz-grant">
+                <span class="dz-lata">{lata(g)}</span>
+                <div class="dz-gb">
+                  <h3><a href={href(`/nauka/granty/${slugOf(g.id)}`)}>{tytulGrantu(g)}</a></h3>
+                  {g.data.kierownik && <p><span class="muted">{T('Kierownik', 'Principal investigator')}:</span> {g.data.kierownik}</p>}
+                </div>
+                <div class="dz-gm">
+                  <span class="dz-rodzaj">{RODZAJE_GRANTOW[g.data.rodzaj][lang]}{g.data.program && ` · ${g.data.program}`}</span>
+                  {g.data.kod && <span class="dz-kod">{g.data.kod}</span>}
+                  {g.data.strona && <a href={g.data.strona}>{T('Strona projektu', 'Project website')} <Ikona nazwa="zewnetrzny" rozmiar={13} /></a>}
+                </div>
+              </article>
+            ))}
+          </div>
+        )}
+      </div>
+    </section>
+
+    <section class="zsec k2" aria-labelledby="obrony" style="margin-bottom:0">
+      <div class="k2-h">
+        <h2 id="obrony">{t(lang, 'obrony')}</h2>
         <a class="link-arrow" href={href('/obrony-doktorskie')}>{T('Wszystkie obrony', 'All PhD defences')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
-      </p>
+      </div>
+      <div class="k2-b">
+        {pokazObrony.length === 0 && <p class="k2-uwaga">{T('Brak zapowiedzianych obron.', 'No PhD defences announced.')}</p>}
+        {pokazObrony.length > 0 && (
+          <div class="dz-lista dz-obrony">
+            {pokazObrony.map((o) => {
+              const bedzie = obronaBedzie(o);
+              return (
+                <a class="row-item" href={href(`/obrony-doktorskie/${slugOf(o.id)}`)}>
+                  <span class={`datebox small${bedzie ? '' : ' light'}`} aria-hidden="true"><span class="d">{dayNum(o.data.termin)}</span><span class="m">{monthShort(o.data.termin, lang)}</span></span>
+                  <span class="body">
+                    <span class="news-meta">
+                      {bedzie && <span class="badge badge-obrona">{T('nadchodząca', 'upcoming')}</span>}
+                      <span>{longWithDay(o.data.termin, lang)}</span>
+                      {o.data.miejsce && <span>· {o.data.miejsce}</span>}
+                    </span>
+                    <span class="t">{o.data.kandydat}</span>
+                    <span class="x" lang="en">{o.data.tytul_rozprawy}</span>
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+        )}
+      </div>
     </section>
   </div>
 </Baza>
 
 <style>
-  /* Układ wspólny ze stroną działu „Instytut” (DzialInstytut.astro). */
-  .dz-intro { margin: -4px 0 16px; max-width: 760px; color: var(--muted); font-size: 16px; line-height: 1.6; }
-  .dz-more { display: flex; flex-wrap: wrap; gap: 0 24px; margin: 10px 0 0; }
-  .dz-groups { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: 20px 16px; }
-  .dz-g h3 { margin: 0 0 10px; font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-  .dz-tiles { grid-template-columns: 1fr; gap: 8px; padding-top: 0; }
-  .dz-tile { flex-direction: row; align-items: center; justify-content: space-between; gap: 12px; min-height: 56px; }
-  .dz-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-  /* Tylko na stronie „Nauka”. */
-  .dz-ile { font-size: 16px; font-weight: 600; }
-  .dz-ramka { border: 1px solid var(--line); border-radius: var(--radius); overflow: hidden; }
-  .dz-event { background: var(--surface); }
-  .dz-granty { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 250px), 1fr)); gap: 14px; }
-  .dz-granty h3 { font-size: 17px; line-height: 1.3; }
+  /* Realizowane projekty jako wiersze: lata | tytuł i kierownik | rodzaj, kod, strona */
+  .dz-grant { position: relative; display: grid; grid-template-columns: 6.5em minmax(0, 1fr) minmax(0, 13em); gap: 2px 20px; align-items: baseline; padding: 9px 0 10px; border-bottom: 1px solid var(--line); }
+  .dz-lata { font-size: 14px; font-weight: 700; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .dz-gb h3 { margin: 0; font-size: 16px; font-weight: 800; line-height: 1.3; }
+  .dz-gb h3 a { color: var(--ink); text-decoration: none; }
+  .dz-gb h3 a::after { content: ''; position: absolute; inset: 0; }
+  .dz-grant:hover h3 a { text-decoration: underline; text-underline-offset: 3px; }
+  .dz-gb p { margin: 1px 0 0; font-size: 14px; }
+  .dz-gm { display: flex; flex-direction: column; align-items: flex-end; gap: 1px; font-size: 13.5px; text-align: right; }
+  .dz-gm a { position: relative; z-index: 1; }
+  .dz-rodzaj { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
   .dz-kod { color: var(--muted); font-variant-numeric: tabular-nums; }
   .dz-obrony { border-bottom: 1px solid var(--line); }
-  .dz-obrony .t { font-size: 19px; }
+  .dz-obrony .row-item:first-child { border-top: 0; }
+  @media (max-width: 640px) {
+    .dz-grant { grid-template-columns: minmax(0, 1fr); }
+    .dz-gm { flex-direction: row; flex-wrap: wrap; align-items: baseline; gap: 2px 12px; text-align: left; }
+  }
 </style>

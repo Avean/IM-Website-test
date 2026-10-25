@@ -120,8 +120,8 @@ const ikona = (a: string) =>
   : /zajecia|plan/.test(a) ? 'zegar'
   : 'strzalka';
 
-// ④ Aktualności dla studentów.
-const aktualnosci = (await listaAktualnosci(lang)).filter((p) => p.dla.includes('studenci')).slice(0, 3);
+// ④ Aktualności dla studentów (w wariancie redakcyjnym zwarta lista — pięć zamiast trzech kart).
+const aktualnosci = (await listaAktualnosci(lang)).filter((p) => p.dla.includes('studenci')).slice(0, 5);
 
 // ⑤ Kontakt: sekretariat dydaktyczny i zastępca dyrektora ds. dydaktycznych — z pól „Kontakt” kierunków (bez dubli).
 // Telefon podajemy tylko przy sekretariacie (administracja).
@@ -139,17 +139,18 @@ const wstep = w(tekst, 'wstep');
 ---
 <Baza tytul={tytul} opis={wstep}>
   <NaglowekStrony tytul={tytul} lead={wstep} lang={lang} okruszki={[{ etykieta: tytul }]} />
-  <div class="wrap" style="padding-top:32px;padding-bottom:64px">
+  <div class="wrap dz-wrap">
     {liczby.length > 0 && (
       <div class="stats">
         {liczby.map((x) => <div class="stat"><span class="n">{x.n}</span><span class="l">{x.l}</span></div>)}
       </div>
     )}
 
+    {/* Wariant redakcyjny: każda sekcja w dwóch kolumnach — nagłówek po lewej (.k2-h), treść po prawej (.k2-b). */}
     {karty.length > 0 && (
-      <section class="zsec" aria-labelledby="kierunki">
-        <h2 id="kierunki">{T('Kierunki studiów', 'Programmes')}</h2>
-        <div class="prog-grid">
+      <section class="zsec k2" aria-labelledby="kierunki">
+        <div class="k2-h"><h2 id="kierunki">{T('Kierunki studiów', 'Programmes')}</h2></div>
+        <div class="k2-b prog-grid">
           {karty.map((k) => (
             <a class="prog dz-prog" href={href(k.adres)}>
               <span class="l">{k.poziom}</span>
@@ -163,110 +164,93 @@ const wstep = w(tekst, 'wstep');
       </section>
     )}
 
-    {sciezki.length > 0 && (
-      <div class="zsec dz-paths">
-        {sciezki.map((s) => (
-          <section class="dz-path" aria-labelledby={s.id}>
-            <div class="dz-path-h">
-              <Ikona nazwa={s.ikona} rozmiar={26} />
-              <div>
-                <h2 id={s.id}>{s.tytul}</h2>
-                {s.opis && <p>{s.opis}</p>}
-              </div>
-            </div>
-            <ul>
-              {s.linki.map((l) => (
-                <li>
-                  <a href={href(l.adres)}>
-                    <span>{l.etykieta}</span>
-                    <Ikona nazwa={isExternal(l.adres) ? 'zewnetrzny' : 'strzalka'} rozmiar={16} />
-                    {isExternal(l.adres) && <span class="sr-only">{T('(strona zewnętrzna)', '(external site)')}</span>}
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </section>
-        ))}
-      </div>
-    )}
+    {sciezki.map((s) => (
+      <section class="zsec k2" aria-labelledby={s.id}>
+        <div class="k2-h">
+          <h2 id={s.id}>{s.tytul}</h2>
+          {s.opis && <p>{s.opis}</p>}
+        </div>
+        <ul class="k2-b dz-linki">
+          {s.linki.map((l) => (
+            <li>
+              <a href={href(l.adres)}>
+                <span>{l.etykieta}</span>
+                <Ikona nazwa={isExternal(l.adres) ? 'zewnetrzny' : 'strzalka'} rozmiar={15} />
+                {isExternal(l.adres) && <span class="sr-only">{T('(strona zewnętrzna)', '(external site)')}</span>}
+              </a>
+            </li>
+          ))}
+        </ul>
+      </section>
+    ))}
 
     {pozostale.length > 0 && (
-      <section class="zsec" aria-labelledby="wiecej">
-        <h2 id="wiecej">{T('Więcej dla studentów', 'More for students')}</h2>
-        <div class="tiles dz-tiles">
+      <section class="zsec k2" aria-labelledby="wiecej">
+        <div class="k2-h"><h2 id="wiecej">{T('Więcej dla studentów', 'More for students')}</h2></div>
+        <ul class="k2-b dz-linki">
           {pozostale.map((l) => (
-            <a class="tile" href={href(l.adres)}>
-              <Ikona nazwa={ikona(l.adres)} />
-              <span>{l.etykieta}</span>
-            </a>
+            <li>
+              <a href={href(l.adres)}>
+                <span>{l.etykieta}</span>
+                <Ikona nazwa={isExternal(l.adres) ? 'zewnetrzny' : 'strzalka'} rozmiar={15} />
+                {isExternal(l.adres) && <span class="sr-only">{T('(strona zewnętrzna)', '(external site)')}</span>}
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </section>
     )}
 
     <WartoWiedziec lang={lang} dzial="studia" />
 
-    <section class="zsec" aria-labelledby="aktualnosci">
-      <div class="dz-head">
+    <section class="zsec k2" aria-labelledby="aktualnosci">
+      <div class="k2-h">
         <h2 id="aktualnosci">{T('Aktualności dla studentów', 'News for students')}</h2>
         <a class="link-arrow" href={`${u(wJezyku('/aktualnosci', lang))}?dla=studenci`}>{T('Wszystkie', 'All')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
       </div>
       {aktualnosci.length > 0 ? (
-        <div class="news-grid">
+        <div class="k2-b nlist">
           {aktualnosci.map((p) => <KartaAktualnosci p={p} lang={lang} />)}
         </div>
       ) : (
-        <p class="muted" style="margin:0">{T('Na razie brak aktualności dla studentów.', 'No news for students at the moment.')}</p>
+        <p class="k2-b muted" style="margin:0">{T('Na razie brak aktualności dla studentów.', 'No news for students at the moment.')}</p>
       )}
     </section>
 
-    <section class="zsec" aria-labelledby="kontakt" style="margin-bottom:0">
-      <h2 id="kontakt">{T('Kontakt', 'Contact')}</h2>
-      {osobyKontakt.length > 0 && (
-        <ul class="people">
-          {osobyKontakt.map((k) => (
-            <li class="person">
-              <span class="dz-rola">{w(k, 'rola')}</span>
-              <span class="os-n">{k.osoba}</span>
-              {k.zakres && <span class="dz-zakres">{k.zakres}</span>}
-              <span class="os-c">
-                {k.email && <a href={`mailto:${k.email}`}>{k.email}</a>}
-                {k.tel && <span>{T('tel.', 'phone')} {k.tel}</span>}
-                {k.pokoj && <span>{T('pok.', 'room')} {k.pokoj}</span>}
-              </span>
-            </li>
-          ))}
-        </ul>
-      )}
-      <a class="link-arrow" href={href('/studia/sprawy-studenckie')}>{T('Kto za co odpowiada — wszystkie kontakty', 'Who handles what — all contacts')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
+    <section class="zsec k2" aria-labelledby="kontakt" style="margin-bottom:0">
+      <div class="k2-h">
+        <h2 id="kontakt">{T('Kontakt', 'Contact')}</h2>
+        <a class="link-arrow" href={href('/studia/sprawy-studenckie')}>{T('Kto za co odpowiada — wszystkie kontakty', 'Who handles what — all contacts')}<Ikona nazwa="strzalka" rozmiar={16} /></a>
+      </div>
+      <div class="k2-b">
+        {osobyKontakt.length > 0 && (
+          <ul class="people">
+            {osobyKontakt.map((k) => (
+              <li class="person">
+                <span class="dz-rola">{w(k, 'rola')}</span>
+                <span class="os-n">{k.osoba}</span>
+                {k.zakres && <span class="dz-zakres">{k.zakres}</span>}
+                <span class="os-c">
+                  {k.email && <a href={`mailto:${k.email}`}>{k.email}</a>}
+                  {k.tel && <span>{T('tel.', 'phone')} {k.tel}</span>}
+                  {k.pokoj && <span>{T('pok.', 'room')} {k.pokoj}</span>}
+                </span>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
     </section>
   </div>
 </Baza>
 
 <style>
-  .dz-prog { min-height: 180px; }
-  .dz-prog .p { margin-top: -4px; font-size: 14px; color: var(--muted); }
+  .dz-prog .p { margin-top: -2px; font-size: 14px; color: var(--muted); }
   .dz-prog .go { margin-top: auto; padding-top: 4px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--primary); }
   :global(:root[data-theme='dark']) .dz-prog .go { color: var(--accent); }
   .dz-prog .go :global(svg) { transition: transform .15s; }
   .dz-prog:hover .go :global(svg) { transform: translateX(3px); }
-  .dz-paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 16px; }
-  .dz-path { display: flex; flex-direction: column; gap: 14px; padding: 22px; border-radius: var(--radius-l); border: 1.5px solid var(--line); }
-  .dz-path-h { display: flex; gap: 14px; align-items: flex-start; }
-  .dz-path-h :global(svg) { flex: none; margin-top: 2px; color: var(--primary); }
-  :global(:root[data-theme='dark']) .dz-path-h :global(svg) { color: var(--accent); }
-  .dz-path h2 { margin: 0; font-size: 22px; font-weight: 800; color: var(--ink); scroll-margin-top: 16px; }
-  .dz-path p { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
-  .dz-path ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
-  .dz-path li { border-bottom: 1px solid var(--line); }
-  .dz-path li a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; padding: 10px 8px; font-weight: 700; color: var(--ink); text-decoration: none; }
-  .dz-path li a:hover { background: var(--tint); }
-  .dz-path li a :global(svg) { flex: none; color: var(--muted); }
-  .dz-tiles { padding-top: 0; }
-  .dz-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 20px; margin-bottom: 10px; }
-  .dz-head h2 { margin: 0; font-size: 26px; font-weight: 800; scroll-margin-top: 16px; }
-  .dz-rola { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-  .dz-zakres { font-size: 14px; margin: 2px 0 4px; }
-  .people + .link-arrow { margin-top: 8px; }
+  .dz-rola { font-size: 11.5px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .dz-zakres { font-size: 14px; margin: 1px 0 2px; }
   @media (prefers-reduced-motion: reduce) { .dz-prog .go :global(svg) { transition: none; transform: none !important; } }
 </style>

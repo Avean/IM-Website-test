@@ -1,5 +1,6 @@
 ---
-// Pozycja na liście aktualności.
+// Pozycja na liście aktualności: wiersz „data | tytuł, termin i zajawka | rodzaj i odbiorcy” (+ miniatura zdjęcia).
+// Klasa .row-item i atrybuty data-* są potrzebne filtrom i wyszukiwarce w ListaAktualnosci.astro.
 import { u, isExternal } from '../lib/url';
 import { wJezyku, RODZAJE, ODBIORCY } from '../lib/i18n';
 import { short, range, type Lang } from '../lib/daty';
@@ -9,16 +10,16 @@ interface Props { p: PozycjaListy; lang: Lang }
 const { p, lang } = Astro.props;
 const href = isExternal(p.href) ? p.href : u(wJezyku(p.href, lang));
 ---
-<a class="row-item" href={href} data-rodzaj={p.rodzaj} data-dla={p.dla.join(' ')}>
-  <span class="body">
-    <span class="news-meta">
-      <span class={`badge badge-${p.rodzaj}`}>{RODZAJE[p.rodzaj]?.[lang]}</span>
-      {p.dla.map((d) => <span class="badge">{ODBIORCY[d]?.[lang]}</span>)}
-      <time datetime={p.data}>{short(p.data)}</time>
-    </span>
-    <span class="t">{p.tytul}</span>
-    {p.wydarzenie && <span class="news-meta"><strong>{lang === 'en' ? 'When:' : 'Kiedy:'}</strong> {range(p.wydarzenie, undefined, lang)}</span>}
-    {p.zajawka && <span class="x">{p.zajawka}</span>}
+<a class="row-item nrow nrow-l" href={href} data-rodzaj={p.rodzaj} data-dla={p.dla.join(' ')}>
+  <time class="nrow-d" datetime={p.data}>{short(p.data)}</time>
+  <span class="nrow-b">
+    <span class="nrow-t">{p.tytul}</span>
+    {p.wydarzenie && <span class="nrow-k"><strong>{lang === 'en' ? 'When:' : 'Kiedy:'}</strong> {range(p.wydarzenie, undefined, lang)}</span>}
+    {p.zajawka && <span class="nrow-x">{p.zajawka}</span>}
+  </span>
+  <span class={`nrow-r r-${p.rodzaj}`}>
+    <span>{RODZAJE[p.rodzaj]?.[lang]}</span>
+    {p.dla.map((d) => <small>{ODBIORCY[d]?.[lang]}</small>)}
   </span>
   {p.zdjecie && <span class="thumb"><img src={u(p.zdjecie)} alt="" loading="lazy" /></span>}
 </a>

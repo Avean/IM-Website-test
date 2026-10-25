@@ -191,10 +191,12 @@ body[data-sekcje='pasy'] .prose h2 { margin: 1.5em 0 .55em; padding: .3em .6em .
 body[data-sekcje='pasy'] .prose > h2:first-child { margin-top: 0; }
 
 /* --- 2. Linia: kreska przez całą szerokość nad sekcją, z bursztynowym początkiem --- */
-body[data-sekcje='linia'] .zsec { position: relative; margin-bottom: 44px; padding-top: 30px; border-top: 1px solid var(--line); }
+body[data-sekcje='linia'] .zsec { position: relative; margin-bottom: 30px; padding-top: 20px; border-top: 1px solid var(--line); }
+/* sekcja dwukolumnowa (.k2, wariant redakcyjny): bursztynowy początek kreski stoi nad nagłówkiem — bez drugiej kreski przy tytule */
+body[data-sekcje='linia'] .zsec .k2-h h2::before { display: none; }
 body[data-sekcje='linia'] .zsec::before, body[data-sekcje='linia'] .prose h2::before { content: ''; position: absolute; top: -2px; left: 0; width: 64px; height: 3px; border-radius: 2px; background: var(--accent); }
-body[data-sekcje='linia'] :is(.section-head h2, .studia-head h2)::before { content: ''; display: block; width: 64px; height: 3px; margin-bottom: 16px; border-radius: 2px; background: var(--accent); }
-body[data-sekcje='linia'] .prose h2 { position: relative; margin-top: 2.1em; padding-top: 24px; border-top: 1px solid var(--line); }
+body[data-sekcje='linia'] :is(.section-head h2, .studia-head h2)::before { content: ''; display: block; width: 40px; height: 3px; margin-bottom: 10px; border-radius: 2px; background: var(--accent); }
+body[data-sekcje='linia'] .prose h2 { position: relative; margin-top: 1.6em; padding-top: 16px; border-top: 1px solid var(--line); }
 body[data-sekcje='linia'] .prose > h2:first-child { margin-top: 0; }
 /* Strona główna (sekcje .section): bez kolorowego pasa, każda sekcja zaczyna się kreską z bursztynowym początkiem,
    tak jak .zsec na podstronach (Studia, Nauka, Instytut). */

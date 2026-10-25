@@ -83,13 +83,13 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
       <li key={o.id} className={o.strona ? 'staff-row os-link' : 'staff-row'}>
         <div className="c n">
           {o.strona ? <a className="os-a" href={o.strona}>{nazwa}</a> : <span>{nazwa}</span>}
-          {(o.funkcja || linkZakladu) && (
-            <small>
-              {o.funkcja}
-              {o.funkcja && linkZakladu && ' · '}
-              {linkZakladu && <a href={linkZakladu}>{nazwyZakladow[o.zaklad as string]}</a>}
-            </small>
-          )}
+        </div>
+        {/* wariant redakcyjny: funkcja i zakład w osobnej kolumnie — wiersz osoby mieści się w jednej linii */}
+        <div className="c z">
+          {(o.funkcja || linkZakladu) && <span className="lbl">{napisy.zakladFunkcja}: </span>}
+          {o.funkcja}
+          {o.funkcja && linkZakladu && ' · '}
+          {linkZakladu && <a href={linkZakladu}>{nazwyZakladow[o.zaklad as string]}</a>}
         </div>
         <div className="c">
           {o.email && (
@@ -169,10 +169,11 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
       </p>
 
       {sekcje.map((g) => (
-        <section key={g.id} className={g.maTel ? 'staff-dir z-tel' : 'staff-dir'} style={{ marginBottom: 36 }}>
-          <h2 style={{ fontSize: 22, margin: '18px 0 8px' }}>{g.nazwa}</h2>
+        <section key={g.id} className={g.maTel ? 'staff-dir z-tel' : 'staff-dir'} style={{ marginBottom: 22 }}>
+          <h2>{g.nazwa}</h2>
           <div className="staff-head" aria-hidden="true">
             <span>{napisy.imie}</span>
+            <span>{napisy.zakladFunkcja}</span>
             <span>{napisy.email}</span>
             {g.maTel && <span>{napisy.telefon}</span>}
             <span>{napisy.pokoj}</span>

@@ -38,6 +38,7 @@ const napisy = {
   link: 'WWW',
   brak: lang === 'en' ? 'Nobody matches the search.' : 'Nikogo nie znaleziono.',
   zaklad: lang === 'en' ? 'Department' : 'Zakład',
+  zakladFunkcja: lang === 'en' ? 'Department / role' : 'Zakład / funkcja',
   wszystkieZaklady: lang === 'en' ? 'All departments' : 'Wszystkie zakłady',
 };
 const lead = lang === 'en'
@@ -46,7 +47,7 @@ const lead = lang === 'en'
 ---
 <Baza tytul={t(lang, 'pracownicy')} opis={lead}>
   <NaglowekStrony tytul={t(lang, 'pracownicy')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut'), adres: '/instytut' }, { etykieta: t(lang, 'pracownicy') }]} />
-  <div class="wrap" style="padding-top:28px;padding-bottom:64px">
+  <div class="wrap" style="padding-top:18px;padding-bottom:44px">
     <TabelaPracownikow client:load osoby={osoby} grupy={grupy} zaklady={zaklady} napisy={napisy} />
   </div>
 </Baza>
