@@ -1,6 +1,6 @@
 /* ==========================================================================
    Tło strony i nagłówki podstron
-   - Tło: Ustawienia → „Tło strony” (ustawienia.tlo_strony): pole | kratka | penrose | zmierzch | brak.
+   - Tło: Ustawienia → „Tło strony” (ustawienia.tlo_strony): pole | kratka | penrose | zmierzch | fale | brak.
      Baza.astro ustawia <body data-tlo="…">; bez atrybutu strona ma zwykłe białe (ciemne) tło.
    - Nagłówki podstron: NaglowekStrony.astro (klasy .ph, .ph-motyw / .ph-zdjecie / .ph-granat, data-dzial).
    ========================================================================== */
@@ -56,6 +56,23 @@ body[data-tlo='zmierzch']::before {
     radial-gradient(110% 90% at 100% 100%, var(--tlo-swiatlo2), transparent 62%),
     var(--bg);
 }
+
+/* 5. Fale — izolinie (poziomice) z obrazu właściciela: jasny gradient, błękit w rogach, bursztyn z prawej u dołu.
+      Jasny: sam obraz (fale.webp, 1920 px). Ciemny: te same linie jasną kreską na granacie — maska fale-linie.webp
+      wyciągnięta z obrazu (kanał alfa = linie) — i światło w tych samych rogach co na obrazie (błękit, bursztyn).
+      Na telefonie (ekran pionowy) obraz jest przesunięty w prawo, żeby było widać wiry z prawego górnego rogu. */
+body[data-tlo='fale'] { --tlo-linie: rgb(214 228 245 / .42); --tlo-swiatlo1: rgb(5 100 156 / .15); --tlo-swiatlo2: rgb(242 163 58 / .08); --tlo-kadr: center; }
+body[data-tlo='fale']::before { background: url('../assets/tlo/fale.webp') var(--tlo-kadr) / cover no-repeat, var(--bg); }
+:root[data-theme='dark'] body[data-tlo='fale']::before {
+  background:
+    radial-gradient(60% 55% at 100% 0%, var(--tlo-swiatlo1), transparent 70%),
+    radial-gradient(60% 55% at 0% 100%, var(--tlo-swiatlo1), transparent 70%),
+    radial-gradient(55% 50% at 100% 100%, var(--tlo-swiatlo2), transparent 70%),
+    var(--bg);
+}
+:root[data-theme='dark'] body[data-tlo='fale']::after { background: var(--tlo-linie);
+  -webkit-mask: url('../assets/tlo/fale-linie.webp') var(--tlo-kadr) / cover no-repeat; mask: url('../assets/tlo/fale-linie.webp') var(--tlo-kadr) / cover no-repeat; }
+@media (max-aspect-ratio: 1/1) { body[data-tlo='fale'] { --tlo-kadr: 82% center; } }
 
 /* ---------- treść nad wzorem ----------
    Karty i ramki zostają pełne (czytelność); pasy .section-alt i nagłówek podstrony są lekko przezroczyste,
