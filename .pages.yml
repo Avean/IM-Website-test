@@ -1046,7 +1046,7 @@ content:
             label: Tło strony
             type: select
             default: zmierzch
-            options: { values: [ { name: zmierzch, label: "Zmierzch" }, { name: pole, label: "Pole kierunków" }, { name: kratka, label: "Kratka / tablica" }, { name: penrose, label: "Kafelkowanie Penrose'a" }, { name: brak, label: "Brak (białe)" } ] }
+            options: { values: [ { name: zmierzch, label: "Zmierzch" }, { name: pole, label: "Pole kierunków" }, { name: kratka, label: "Kratka / tablica" }, { name: penrose, label: "Kafelkowanie Penrose'a" }, { name: fale, label: "Fale (izolinie)" }, { name: brak, label: "Brak (białe)" } ] }
           - name: sekcje
             label: Oddzielanie sekcji
             type: select
