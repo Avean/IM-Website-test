@@ -48,8 +48,21 @@ const kafelki = [
 ];
 ---
 <Baza tytul={t(lang, 'instytut')} stronaGlowna>
-  {/* Baner: granatowy pas — tekst z lewej, zdjęcie w ramce z prawej (na telefonie pod tekstem). Style: global.css, „baner (strona główna)”. */}
+  {/* Baner: zdjęcie na całą szerokość, tekst na przyciemnieniu z lewej (na telefonie pod zdjęciem). Style: global.css, „baner (strona główna)”. */}
   <section class:list={['hero', { 'hero-bez-zdjecia': !baner.zdjecie }]} aria-labelledby="h1-glowna">
+    {baner.zdjecie && (
+      <figure class="hero-fig">
+        <img
+          src={u(baner.zdjecie)}
+          srcset={(baner as any).zdjecie_male ? `${u((baner as any).zdjecie_male)} 1200w, ${u(baner.zdjecie)} 2400w` : undefined}
+          sizes="100vw"
+          alt={baner.opis}
+          style={`object-position:${baner.kadr || 'center'}`}
+          fetchpriority="high"
+        />
+        {baner.podpis && <figcaption>{baner.podpis}</figcaption>}
+      </figure>
+    )}
     <div class="wrap hero-in">
       <div class="hero-txt">
         {wyrozniona && (
@@ -66,19 +79,6 @@ const kafelki = [
           ))}
         </div>
       </div>
-      {baner.zdjecie && (
-        <figure class="hero-fig">
-          <img
-            src={u(baner.zdjecie)}
-            srcset={(baner as any).zdjecie_male ? `${u((baner as any).zdjecie_male)} 1200w, ${u(baner.zdjecie)} 2400w` : undefined}
-            sizes="(max-width: 900px) 100vw, 55vw"
-            alt={baner.opis}
-            style={`object-position:${baner.kadr || 'center'}`}
-            fetchpriority="high"
-          />
-          {baner.podpis && <figcaption>{baner.podpis}</figcaption>}
-        </figure>
-      )}
     </div>
   </section>
 

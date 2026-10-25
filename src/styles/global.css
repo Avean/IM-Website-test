@@ -201,42 +201,52 @@ details[open] > summary .chev { transform: rotate(180deg); }
 }
 
 /* ---------- baner (strona główna) ----------
-   Granatowy pas pod nagłówkiem: z lewej logotyp UWr, nazwa, wstęp i przyciski; z prawej zdjęcie w zaokrąglonej
-   ramce, które wystaje dołem poza pas (--hero-wystaje). Tekst nie leży na zdjęciu — kontrast nie zależy od kadru,
-   a zdjęcie (jasne czy ciemne) nie jest przyciemniane. Na telefonie: tekst, pod nim zdjęcie.
-   Nagłówek strony głównej (.hdr-foto) leży na pasie; zanim zrobi się biały (skrypt w Naglowek.astro: gdy dół
-   .hero-fig dojdzie do nagłówka), ma kolor pasa — przewijany baner nie prześwituje pod napisami menu. */
-:root { --hero-pas: #1b2d52; --hero-pas2: #111f3e; }
-:root[data-theme='dark'] { --hero-pas: #16223d; --hero-pas2: #111a2e; }
-.js .hdr-foto:not(.przewiniety):not(.menu-otwarte) { background: var(--hero-pas); }
-.hero { --hero-wystaje: clamp(36px, 4.5vw, 64px); position: relative; color: #fff;
-  background: linear-gradient(var(--hero-pas), var(--hero-pas2)) top / 100% calc(100% - var(--hero-wystaje)) no-repeat; }
-.hero-in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr); align-items: end; gap: clamp(32px, 4.5vw, 64px); padding-top: 40px; }
-.js .hdr-foto ~ main .hero-in { padding-top: calc(var(--hdr-h) + 32px); }
-.hero-txt { display: flex; flex-direction: column; align-items: flex-start; gap: 16px; padding-bottom: calc(var(--hero-wystaje) + clamp(28px, 3vw, 44px)); }
+   Zdjęcie na całą szerokość, na nim z lewej u dołu: plakietka wyróżnionej aktualności, logotyp UWr, nazwa, wstęp
+   i przyciski (bez karty). Przyciemnienie tylko pod tekstem: pas od lewej do końca kolumny tekstu (--hero-tekst),
+   dalej wygasa — prawa część zdjęcia zostaje naturalna. Najsłabsze miejsce pod tekstem ma krycie 0.68, więc biały
+   tekst ma kontrast ≥ 4.5:1 nawet na całkiem białym zdjęciu. U góry osobne przyciemnienie pod napisami nagłówka.
+   Nagłówek (.hdr-foto) jest przezroczysty, dopóki dół .hero-fig nie dojdzie do nagłówka (skrypt w Naglowek.astro).
+   Telefon: zdjęcie u góry przechodzi od dołu w granat, tekst pod nim na granacie. */
+.hero { --hero-noc: #0d1830; --hero-cien: 9 16 34; --hero-tekst: 600px; position: relative; isolation: isolate; background: var(--hero-noc); color: #fff; }
+.hero-fig { position: absolute; inset: 0; z-index: -1; margin: 0; background: var(--hero-noc); overflow: hidden; }
+.hero-fig img { display: block; width: 100%; height: 100%; object-fit: cover; }
+.hero-fig::before { content: ''; position: absolute; inset: 0; pointer-events: none;
+  --k: calc(max(0px, (100% - var(--wrap)) / 2) + var(--gutter) + var(--hero-tekst));
+  background: linear-gradient(90deg, rgb(var(--hero-cien) / .86) 0, rgb(var(--hero-cien) / .68) var(--k), rgb(var(--hero-cien) / .3) calc(var(--k) + 150px), rgb(var(--hero-cien) / 0) calc(var(--k) + 340px)); }
+.js .hdr-foto ~ main .hero-fig::after { content: ''; position: absolute; inset: 0 0 auto 0; height: calc(var(--hdr-h) + 110px); pointer-events: none;
+  background: linear-gradient(rgb(6 11 22 / .78), rgb(6 11 22 / .58) 40%, rgb(6 11 22 / 0)); }
+.hero-fig figcaption { position: absolute; right: var(--gutter); bottom: 14px; z-index: 1; padding: 5px 10px; border-radius: 8px; background: rgb(10 16 32 / .7); color: #fff; font-size: 12px; font-weight: 600; }
+.hero-in { position: relative; display: flex; align-items: flex-end; min-height: clamp(440px, 40vw, 580px); padding-top: 40px; padding-bottom: clamp(40px, 5vw, 60px); }
+.js .hdr-foto ~ main .hero-in { padding-top: calc(var(--hdr-h) + 36px); }
+.hero-bez-zdjecia .hero-in { min-height: 0; }
+.hero-txt { max-width: var(--hero-tekst); display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
 .hero-logo { display: block; height: clamp(40px, 4vw, 52px); aspect-ratio: 500 / 160; margin-bottom: 4px; background: #fff; -webkit-mask: var(--logo-pelne) left center / contain no-repeat; mask: var(--logo-pelne) left center / contain no-repeat; }
-.hero h1 { margin: 0; color: #fff; font-size: clamp(40px, 5vw, 70px); font-weight: 800; line-height: .98; letter-spacing: -0.035em; }
-.hero-lead { margin: 0; max-width: 30em; font-size: clamp(17px, 1.3vw, 19px); line-height: 1.55; color: rgb(255 255 255 / .88); }
-.hero-btns { margin-top: 6px; }
-.hero .btn { background: transparent; border-color: rgb(255 255 255 / .5); color: #fff; }
-.hero .btn:hover { background: rgb(255 255 255 / .12); border-color: #fff; color: #fff; }
+.hero h1 { margin: 0; color: #fff; font-size: clamp(42px, 5.4vw, 76px); font-weight: 800; line-height: .98; letter-spacing: -0.035em; }
+.hero-lead { margin: 0; max-width: 32em; font-size: clamp(17px, 1.3vw, 19px); line-height: 1.55; color: #fff; }
+.hero-btns { margin-top: 8px; }
+.hero .btn { background: transparent; border-color: rgb(255 255 255 / .6); color: #fff; }
+.hero .btn:hover { background: rgb(255 255 255 / .14); border-color: #fff; color: #fff; }
 .hero .btn-primary { background: var(--accent); border-color: var(--accent); color: #1b2d52; }
 .hero .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: #1b2d52; filter: brightness(1.06); }
-.hero-flag { display: inline-flex; align-items: center; gap: 8px; padding: 5px 14px; border-radius: 999px; background: var(--accent); color: #1b2d52; font-size: 14px; font-weight: 700; text-decoration: none; }
-.hero-flag:hover { color: #1b2d52; filter: brightness(1.05); }
-.hero-fig { position: relative; margin: 0; height: clamp(300px, 31vw, 440px); border-radius: var(--radius-l); background: var(--photo); overflow: hidden; box-shadow: 0 24px 48px -12px rgb(6 11 22 / .45); }
-.hero-fig img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.hero-fig figcaption { position: absolute; right: 12px; bottom: 12px; padding: 5px 10px; border-radius: 8px; background: rgb(10 16 32 / .7); color: #fff; font-size: 12px; font-weight: 600; }
+.hero-flag { display: inline-flex; align-items: center; gap: 8px; min-height: 36px; padding: 4px 14px 4px 12px; border-radius: 999px; background: rgb(var(--hero-cien) / .55); box-shadow: inset 0 0 0 1px rgb(255 255 255 / .35); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; }
+.hero-flag::before { content: ''; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.hero-flag:hover { color: #fff; box-shadow: inset 0 0 0 1px #fff; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
-/* bez zdjęcia w Ustawieniach: sam pas z tekstem */
-.hero-bez-zdjecia { --hero-wystaje: 0px; }
-.hero-bez-zdjecia .hero-in { grid-template-columns: 1fr; }
-@media (max-width: 1180px) { .hero-in { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); } }
-@media (max-width: 900px) {
-  .hero-in { grid-template-columns: 1fr; gap: 0; }
-  .hero-txt { padding-bottom: 28px; }
-  .hero-fig { height: clamp(190px, 50vw, 360px); }
-  .hero-bez-zdjecia .hero-txt { padding-bottom: 36px; }
+/* Przy przewijaniu po zdjęciu przezroczysty nagłówek po ~80 px dostaje ciemne, matowe tło (aż do zmiany na białe przy
+   końcu zdjęcia) — napisy menu nie nakładają się na tytuł banera ani na jasne niebo. Tylko przeglądarki z
+   animation-timeline; w pozostałych nagłówek zostaje przezroczysty jak dotąd. */
+@supports (animation-timeline: scroll()) {
+  .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) { animation: hero-hdr linear both; animation-timeline: scroll(root); animation-range: 0px 80px; }
+  @keyframes hero-hdr { from { background-color: rgb(9 16 34 / 0); } to { background-color: rgb(9 16 34 / .84); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); } }
+}
+@media (max-width: 720px) {
+  .hero-fig { bottom: auto; height: calc(var(--hdr-h) + 230px); }
+  .hero-fig::before { background: linear-gradient(0deg, var(--hero-noc) 0, rgb(13 24 48 / .85) 30%, rgb(13 24 48 / .2) 68%, rgb(13 24 48 / 0) 100%); }
+  .hero-fig figcaption { top: calc(var(--hdr-h) + 10px); bottom: auto; }
+  .hero-in { min-height: 0; padding-top: 200px; padding-bottom: 36px; }
+  .js .hdr-foto ~ main .hero-in { padding-top: calc(var(--hdr-h) + 170px); }
+  .hero-bez-zdjecia .hero-in { padding-top: 36px; }
+  .hero-txt { gap: 14px; }
 }
 
 /* ---------- kafelki na skróty ---------- */
