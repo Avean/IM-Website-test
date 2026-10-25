@@ -141,8 +141,8 @@ body[data-tlo] .toc-side { box-shadow: none; }
    Dotyczy: sekcji .zsec (strony działów, kierunków, zakładów, władz), sekcji strony głównej (.section)
    i nagłówków ## w treści z Markdownu (.prose h2). Sekcja tytułowa strony głównej (baner) bez zmian.
    ========================================================================== */
-body[data-sekcje] { --sek-pas: rgb(232 238 247 / .86); --sek-karta: rgb(255 255 255 / .95); --sek-cien: 0 10px 30px rgb(11 27 58 / .07); }
-:root[data-theme='dark'] body[data-sekcje] { --sek-pas: rgb(24 36 62 / .93); --sek-karta: rgb(14 22 40 / .95); --sek-cien: 0 10px 30px rgb(0 0 0 / .35); }
+body[data-sekcje] { --sek-pas: rgb(232 238 247 / .55); --sek-karta: rgb(255 255 255 / .95); --sek-cien: 0 10px 30px rgb(11 27 58 / .07); }
+:root[data-theme='dark'] body[data-sekcje] { --sek-pas: rgb(24 36 62 / .6); --sek-karta: rgb(14 22 40 / .95); --sek-cien: 0 10px 30px rgb(0 0 0 / .35); }
 body[data-sekcje] .zsec > h2, body[data-sekcje] .zsec .dz-head h2, body[data-sekcje] .zsec .ww-head h2 { font-size: clamp(26px, 3vw, 30px); letter-spacing: -0.02em; }
 
 /* --- 1. Pasy: sekcje na przemian na jasnym pasie i na tle; tytuł sekcji z bursztynowym znacznikiem --- */
