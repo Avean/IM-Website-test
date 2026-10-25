@@ -86,14 +86,14 @@ const sekcje = [
       <h1>{nazwa}</h1>
       {d.opis && <p class="lead">{w(d, 'opis')}</p>}
       {d.przyciski.length > 0 && (
-        <div class="btn-row" style="margin-top:6px">
+        <div class="btn-row" style="margin-top:4px">
           {d.przyciski.map((p, i) => (
             <a class={`btn${i === 0 ? ' btn-accent' : ''}`} href={href(p.adres)}>{w(p, 'etykieta')}{isExternal(p.adres) && <Ikona nazwa="zewnetrzny" rozmiar={14} />}</a>
           ))}
         </div>
       )}
       {d.fakty.length > 0 && (
-        <div class="stats" style="margin:14px 0 0">
+        <div class="stats" style="margin:8px 0 0">
           {d.fakty.map((f) => <div class="stat" style="background:var(--bg)"><span class="n">{f.wartosc}</span><span class="l">{w(f, 'etykieta')}</span></div>)}
         </div>
       )}

@@ -26,7 +26,7 @@ const lead = T('W skład Instytutu wchodzi osiem zakładów naukowych i Pracowni
 ---
 <Baza tytul={naglowek} opis={lead}>
   <NaglowekStrony tytul={naglowek} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'instytut'), adres: '/instytut' }, { etykieta: naglowek }]} />
-  <div class="wrap" style="padding-top:32px;padding-bottom:64px">
+  <div class="wrap wrap-tresc">
     <div class="stats">
       {liczby.map((x) => <div class="stat"><span class="n">{x.n}</span><span class="l">{x.l}</span></div>)}
     </div>

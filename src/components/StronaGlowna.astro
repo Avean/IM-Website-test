@@ -25,10 +25,11 @@ const KOLORY_DNI = '/studia/rok-akademicki';
 const dniWydarzen = Number((ustawienia as any).wydarzenia_dni_robocze ?? 5) || 5;
 const wydarzenia = await wydarzeniaNaGlowna(3, lang, dniWydarzen);
 const wyrozniona = await wyroznionaAktualnosc(lang);
-const lista = await aktualnosciNaGlowna(6, lang, wydarzenia.map((w) => w.href));
+// Zwarty układ: 4 karty w rzędzie, więc 8 aktualności (dwa pełne rzędy).
+const lista = await aktualnosciNaGlowna(8, lang, wydarzenia.map((w) => w.href));
 // Pierwsza aktualność ze zdjęciem zajmuje dwie kolumny — wtedy pokazujemy o jedną mniej.
 const pierwszaZeZdjeciem = !!lista[0]?.zdjecie;
-const aktualnosci = pierwszaZeZdjeciem ? lista.slice(0, 5) : lista;
+const aktualnosci = pierwszaZeZdjeciem ? lista.slice(0, 7) : lista;
 const referaty = await referatyWTygodniu(lang);
 const tydzien = tydzienSeminariow();
 const baner = ustawienia.baner;
@@ -126,7 +127,7 @@ const kafelki = [
   <section class="section section-alt" aria-labelledby="h3-sem">
     <div class="wrap">
       <div class="sem-week sem-week-sam">
-        <div class="section-head" style="margin-bottom:14px">
+        <div class="section-head" style="margin-bottom:8px">
           <div style="display:flex;flex-wrap:wrap;align-items:baseline;gap:4px 14px">
             <h2 id="h3-sem" class="sem-week-h">{t(lang, tydzien.przyszly ? 'seminariaPrzyszly' : 'seminariaTydzien')}</h2>
             <span class="muted" style="font-size:14px;font-weight:600">{range(tydzien.od, tydzien.do, lang)}</span>

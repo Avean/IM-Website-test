@@ -152,7 +152,7 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
             ))}
           </select>
         </label>
-        <div className="chips" role="group" aria-label={napisy.grupa} style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+        <div className="chips" role="group" aria-label={napisy.grupa} style={{ display: 'flex', flexWrap: 'wrap', gap: 6 }}>
           <button type="button" className="chip" aria-pressed={grupa === ''} onClick={() => setGrupa('')}>
             {napisy.wszyscy}
           </button>
@@ -164,13 +164,13 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
         </div>
       </div>
 
-      <p className="count" aria-live="polite" style={{ margin: '0 0 8px', fontSize: 14, color: 'var(--muted)' }}>
+      <p className="count" aria-live="polite" style={{ margin: '0 0 4px', fontSize: 14, color: 'var(--muted)' }}>
         {napisy.osob}: {widoczne.length}
       </p>
 
       {sekcje.map((g) => (
-        <section key={g.id} className={g.maTel ? 'staff-dir z-tel' : 'staff-dir'} style={{ marginBottom: 36 }}>
-          <h2 style={{ fontSize: 22, margin: '18px 0 8px' }}>{g.nazwa}</h2>
+        <section key={g.id} className={g.maTel ? 'staff-dir z-tel' : 'staff-dir'} style={{ marginBottom: 22 }}>
+          <h2 style={{ fontSize: 20, margin: '12px 0 4px' }}>{g.nazwa}</h2>
           <div className="staff-head" aria-hidden="true">
             <span>{napisy.imie}</span>
             <span>{napisy.email}</span>

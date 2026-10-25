@@ -120,8 +120,8 @@ const ikona = (a: string) =>
   : /zajecia|plan/.test(a) ? 'zegar'
   : 'strzalka';
 
-// ④ Aktualności dla studentów.
-const aktualnosci = (await listaAktualnosci(lang)).filter((p) => p.dla.includes('studenci')).slice(0, 3);
+// ④ Aktualności dla studentów (4 — jeden pełny rząd kart w zwartym układzie).
+const aktualnosci = (await listaAktualnosci(lang)).filter((p) => p.dla.includes('studenci')).slice(0, 4);
 
 // ⑤ Kontakt: sekretariat dydaktyczny i zastępca dyrektora ds. dydaktycznych — z pól „Kontakt” kierunków (bez dubli).
 // Telefon podajemy tylko przy sekretariacie (administracja).
@@ -139,7 +139,7 @@ const wstep = w(tekst, 'wstep');
 ---
 <Baza tytul={tytul} opis={wstep}>
   <NaglowekStrony tytul={tytul} lead={wstep} lang={lang} okruszki={[{ etykieta: tytul }]} />
-  <div class="wrap" style="padding-top:32px;padding-bottom:64px">
+  <div class="wrap wrap-tresc">
     {liczby.length > 0 && (
       <div class="stats">
         {liczby.map((x) => <div class="stat"><span class="n">{x.n}</span><span class="l">{x.l}</span></div>)}
@@ -244,29 +244,30 @@ const wstep = w(tekst, 'wstep');
 </Baza>
 
 <style>
-  .dz-prog { min-height: 180px; }
+  .dz-prog { min-height: 0; }
   .dz-prog .p { margin-top: -4px; font-size: 14px; color: var(--muted); }
-  .dz-prog .go { margin-top: auto; padding-top: 4px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--primary); }
+  .dz-prog .go { margin-top: auto; padding-top: 2px; display: inline-flex; align-items: center; gap: 6px; font-size: 14px; font-weight: 700; color: var(--primary); }
   :global(:root[data-theme='dark']) .dz-prog .go { color: var(--accent); }
   .dz-prog .go :global(svg) { transition: transform .15s; }
   .dz-prog:hover .go :global(svg) { transform: translateX(3px); }
-  .dz-paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 16px; }
-  .dz-path { display: flex; flex-direction: column; gap: 14px; padding: 22px; border-radius: var(--radius-l); border: 1.5px solid var(--line); }
-  .dz-path-h { display: flex; gap: 14px; align-items: flex-start; }
+  .dz-paths { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 12px; }
+  .dz-path { display: flex; flex-direction: column; gap: 8px; padding: 14px 16px; border-radius: var(--radius-l); border: 1.5px solid var(--line); }
+  .dz-path-h { display: flex; gap: 12px; align-items: flex-start; }
   .dz-path-h :global(svg) { flex: none; margin-top: 2px; color: var(--primary); }
   :global(:root[data-theme='dark']) .dz-path-h :global(svg) { color: var(--accent); }
-  .dz-path h2 { margin: 0; font-size: 22px; font-weight: 800; color: var(--ink); scroll-margin-top: 16px; }
-  .dz-path p { margin: 2px 0 0; font-size: 15px; color: var(--muted); }
-  .dz-path ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); }
+  .dz-path h2 { margin: 0; font-size: 19px; font-weight: 800; color: var(--ink); scroll-margin-top: 16px; }
+  .dz-path p { margin: 0; font-size: 15px; line-height: 1.4; color: var(--muted); }
+  /* linki ścieżki w dwóch kolumnach, gdy się mieszczą (dłuższa lista „Już studiuję” o połowę niższa) */
+  .dz-path ul { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--line); display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 220px), 1fr)); column-gap: 16px; }
   .dz-path li { border-bottom: 1px solid var(--line); }
-  .dz-path li a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 48px; padding: 10px 8px; font-weight: 700; color: var(--ink); text-decoration: none; }
+  .dz-path li a { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-height: 40px; padding: 4px 8px; font-weight: 700; color: var(--ink); text-decoration: none; }
   .dz-path li a:hover { background: var(--tint); }
   .dz-path li a :global(svg) { flex: none; color: var(--muted); }
   .dz-tiles { padding-top: 0; }
-  .dz-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 20px; margin-bottom: 10px; }
-  .dz-head h2 { margin: 0; font-size: 26px; font-weight: 800; scroll-margin-top: 16px; }
+  .dz-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 20px; margin-bottom: 8px; }
+  .dz-head h2 { margin: 0; font-size: 22px; font-weight: 800; scroll-margin-top: 16px; }
   .dz-rola { font-size: 12px; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
-  .dz-zakres { font-size: 14px; margin: 2px 0 4px; }
-  .people + .link-arrow { margin-top: 8px; }
+  .dz-zakres { font-size: 14px; margin: 0 0 2px; }
+  .people + .link-arrow { margin-top: 4px; }
   @media (prefers-reduced-motion: reduce) { .dz-prog .go :global(svg) { transition: none; transform: none !important; } }
 </style>
