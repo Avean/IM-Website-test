@@ -368,6 +368,8 @@ const sekcje = [
     .spec-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
     /* dokumenty programu, praktyk i akty prawne: siatka (na szerszym telefonie dwie kolumny) */
     .tabpanel .files, .zsec > .files, .more .files { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+    /* krótkie sekcje (praktyki, po studiach, kontakt, akty prawne): odstęp akapitu na końcu zostaje w sekcji, jak w wariancie */
+    .zsec:is([aria-labelledby='praktyki'], [aria-labelledby='po-studiach'], [aria-labelledby='kontakt'], [aria-labelledby='akty']) { display: flow-root; }
   }
   @media (max-width: 480px) {
     .kier-o .why-grid { grid-template-columns: minmax(0, 1fr); }

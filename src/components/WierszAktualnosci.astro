@@ -40,7 +40,8 @@ const href = isExternal(p.href) ? p.href : u(wJezyku(p.href, lang));
   }
   @media (max-width: 640px) {
     .wa-row { grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto auto minmax(0, 1fr); }
-    .wa-meta { grid-column: 1 / -1; grid-row: 1; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 4px 10px; margin-bottom: 4px; padding-top: 0; }
+    .wa-meta { grid-column: 1 / -1; grid-row: 1; flex-direction: row; flex-wrap: wrap; align-items: center; gap: 4px; margin-bottom: 4px; padding-top: 0; }
+    .wa-meta time { margin-right: 6px; }
     .wa-row .t { grid-column: 1; grid-row: 2; }
     .wa-kiedy { grid-column: 1; grid-row: 3; }
     .wa-row .x { grid-column: 1; grid-row: 4; }

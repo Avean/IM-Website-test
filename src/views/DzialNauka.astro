@@ -358,7 +358,7 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
     :global(:root[data-theme='dark']) .dz-g h3 { border-bottom-color: var(--line); }
     .dz-tiles { display: block; }
     .dz-tile { gap: 10px; min-height: 40px; padding: 6px 4px; border: 0; border-radius: 0; background: transparent; box-shadow: none; font-size: 15px; line-height: 1.3; }
-    .dz-tile + .dz-tile { border-top: 1px solid var(--line); }
+    .dz-tile + .dz-tile { min-height: 41px; border-top: 1px solid var(--line); }
     .dz-tile:hover { background: var(--tint); }
     .dz-tile :global(svg) { width: 16px !important; height: 16px !important; color: var(--muted); }
     :global(:root[data-theme='dark']) .dz-tile :global(svg) { color: var(--muted); }
@@ -378,6 +378,8 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
     .dz-tags { display: block; margin: 2px 0 0; font-size: 14px; line-height: 1.45; color: var(--text); }
     .dz-tags .badge { display: inline; padding: 0; border-radius: 0; background: none; color: inherit; font-size: inherit; font-weight: 400; line-height: inherit; }
     .dz-tags .badge + .badge::before { content: ' · '; color: var(--muted); }
+    /* (jak w wariancie: akapit stopki karty zachowuje zwykły odstęp akapitu pod spodem) */
+    .dz-karty .spec .foot { margin-bottom: 1em; }
     .dz-karty .spec .foot, .dz-ramka-sek .spec .foot { margin-top: auto; padding-top: 6px; border-top: 0; font-size: 13.5px; line-height: 1.4; color: var(--muted); }
     /* projekty: sekcja w ramce (kreska sekcji nad nią zostaje); ramka narysowana pod treścią (::after) */
     .zsec.dz-ramka-sek { position: relative; isolation: isolate; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; column-gap: 14px; margin-bottom: 12px; padding: 27px 15px 9px; }
@@ -394,8 +396,8 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
     .dz-granty .news-meta { font-size: 13px; gap: 4px 8px; }
     .dz-granty .lbl { display: inline; margin-right: .3em; font-size: inherit; font-weight: 400; letter-spacing: 0; text-transform: none; color: var(--muted); }
     .dz-granty .lbl::after { content: ':'; }
-    .dz-granty .spec > p:not(.foot) { font-size: 14px; }
-    .dz-granty .foot { flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; }
+    .dz-granty .spec > p:not(.foot) { margin: 1em 0; font-size: 14px; }
+    .dz-granty .foot { flex-direction: row; flex-wrap: wrap; justify-content: space-between; gap: 2px 12px; margin-bottom: 1em; }
   }
   @media (max-width: 560px) {
     .dz-karty .spec-grid, .dz-granty { grid-template-columns: minmax(0, 1fr); }
