@@ -6,6 +6,7 @@ import Baza from '../layouts/Baza.astro';
 import NaglowekStrony from '../components/NaglowekStrony.astro';
 import Ikona from '../components/Ikona.astro';
 import TabelaReferatow from '../components/TabelaReferatow.astro';
+import ListaReferatow from '../components/ListaReferatow.astro';
 import WartoWiedziec from '../components/WartoWiedziec.astro';
 import dzial from '../data/dzialy/nauka.json';
 import { u, isExternal } from '../lib/url';
@@ -129,8 +130,7 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
             <span class="pt-zakres">{range(tydzien.od, tydzien.do, lang)}</span>
           </span>
         </div>
-        <TabelaReferatow
-          lista
+        <ListaReferatow
           wiersze={referaty}
           lang={lang}
           etykieta={naglowekSeminariow}
@@ -382,11 +382,11 @@ const obszaryOpis = wybierz(dzial, 'obszary_opis', lang);
     .dz-karty .spec .foot { margin-bottom: 1em; }
     .dz-karty .spec .foot, .dz-ramka-sek .spec .foot { margin-top: auto; padding-top: 6px; border-top: 0; font-size: 13.5px; line-height: 1.4; color: var(--muted); }
     /* projekty: sekcja w ramce (kreska sekcji nad nią zostaje); ramka narysowana pod treścią (::after) */
-    .zsec.dz-ramka-sek { position: relative; isolation: isolate; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; column-gap: 14px; margin-bottom: 12px; padding: 27px 15px 9px; }
+    .zsec.dz-ramka-sek { position: relative; isolation: isolate; display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 2px 14px; margin-bottom: 12px; padding: 27px 15px 9px; }
     .zsec.dz-ramka-sek::after { content: ''; position: absolute; inset: 16px 0 0; z-index: -1; border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg); pointer-events: none; }
     .dz-ramka-sek > * { flex: 1 1 100%; min-width: 0; }
     .dz-ramka-sek > h2 { flex: 0 1 auto; margin: 0; padding-bottom: 0; border-bottom: 0; }
-    .dz-kreska { display: block; height: 2px; margin: 7px 0 4px; background: var(--ink); }
+    .dz-kreska { display: block; height: 2px; margin: 5px 0 4px; background: var(--ink); }
     :global(:root[data-theme='dark']) .dz-kreska { background: var(--line); }
     .dz-ramka-sek .dz-ile { margin-left: 4px; font-size: 13px; font-weight: 700; }
     .dz-ramka-sek .dz-intro { margin: 6px 0 4px; font-size: 14px; line-height: 1.45; }
