@@ -19,7 +19,7 @@ const href = isExternal(p.href) ? p.href : u(wJezyku(p.href, lang));
   </span>
   <span class={`nrow-r r-${p.rodzaj}`}>
     <span>{RODZAJE[p.rodzaj]?.[lang]}</span>
-    {p.dla.map((d) => <small>{ODBIORCY[d]?.[lang]}</small>)}
+    {p.dla.length > 0 && <small>{p.dla.map((d) => ODBIORCY[d]?.[lang]).join(', ')}</small>}
   </span>
   {p.zdjecie && <span class="thumb"><img src={u(p.zdjecie)} alt="" loading="lazy" /></span>}
 </a>
