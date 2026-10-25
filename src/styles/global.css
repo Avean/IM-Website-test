@@ -123,8 +123,6 @@ html { scroll-padding-top: calc(var(--hdr-h) + 8px); }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search input, .js .hdr.hdr-stopka:not(.menu-otwarte) .hdr-search input { color: #fff; }
 .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) .hdr-search input::placeholder, .js .hdr.hdr-stopka:not(.menu-otwarte) .hdr-search input::placeholder { color: rgb(255 255 255 / .8); }
 .hdr .brand-name, .hdr .brand-sub, .hdr .nav > a, .hdr .nav-pill, .hdr .icon-btn, .hdr-search { transition: color .25s, background-color .25s; }
-.js .hdr-foto ~ main .hero-fig::after { content: ''; position: absolute; inset: 0 0 auto 0; height: max(45%, 190px); background: linear-gradient(rgb(6 11 22 / .74), rgb(6 11 22 / .38) 55%, rgb(6 11 22 / 0)); pointer-events: none; }
-.js .hdr-foto ~ main .hero-fig figcaption { top: calc(var(--hdr-h) + 12px); z-index: 1; }
 .hdr-row { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 70px; }
 /* nagłówek szerszy niż treść strony, żeby logotyp, nazwa i menu miały oddech */
 .hdr > .wrap.hdr-row { max-width: 1520px; }
@@ -202,18 +200,54 @@ details[open] > summary .chev { transform: rotate(180deg); }
   .brand-name { font-size: 16px; }
 }
 
-/* ---------- baner (strona główna) ---------- */
-.hero-logo { display: block; height: clamp(44px, 5vw, 56px); aspect-ratio: 500 / 160; margin: 0 0 14px; background: var(--uwr); -webkit-mask: var(--logo-pelne) left center / contain no-repeat; mask: var(--logo-pelne) left center / contain no-repeat; }
-.hero-fig { position: relative; margin: 0; height: clamp(260px, 34vw, 480px); background: var(--photo); overflow: hidden; }
+/* ---------- baner (strona główna) ----------
+   Zdjęcie na całą szerokość, na nim z lewej u dołu: plakietka wyróżnionej aktualności, logotyp UWr, nazwa, wstęp
+   i przyciski (bez karty). Przyciemnienie tylko pod tekstem: pas od lewej do końca kolumny tekstu (--hero-tekst),
+   dalej wygasa — prawa część zdjęcia zostaje naturalna. Najsłabsze miejsce pod tekstem ma krycie 0.68, więc biały
+   tekst ma kontrast ≥ 4.5:1 nawet na całkiem białym zdjęciu. U góry osobne przyciemnienie pod napisami nagłówka.
+   Nagłówek (.hdr-foto) jest przezroczysty, dopóki dół .hero-fig nie dojdzie do nagłówka (skrypt w Naglowek.astro).
+   Telefon: zdjęcie u góry przechodzi od dołu w granat, tekst pod nim na granacie. */
+.hero { --hero-noc: #0d1830; --hero-cien: 9 16 34; --hero-tekst: 600px; position: relative; isolation: isolate; background: var(--hero-noc); color: #fff; }
+.hero-fig { position: absolute; inset: 0; z-index: -1; margin: 0; background: var(--hero-noc); overflow: hidden; }
 .hero-fig img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.hero-fig figcaption { position: absolute; top: 16px; right: var(--gutter); padding: 6px 10px; border-radius: 8px; background: rgba(10, 16, 32, .66); color: #fff; font-size: 12px; font-weight: 600; }
-.hero-card { position: relative; margin-top: -150px; max-width: 680px; padding: clamp(24px, 4vw, 40px); border-radius: var(--radius-l); background: var(--bg); box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 18px; }
-.hero-card h1 { margin: 0; font-size: clamp(36px, 6vw, 64px); font-weight: 800; line-height: 1.02; letter-spacing: -0.03em; }
-.hero-card p { margin: 0; font-size: 18px; line-height: 1.6; }
-.hero-flag { align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 6px 14px; border-radius: 999px; background: var(--accent); color: var(--accent-ink); font-size: 14px; font-weight: 700; text-decoration: none; }
-.hero-flag:hover { color: var(--accent-ink); filter: brightness(1.05); }
+.hero-fig::before { content: ''; position: absolute; inset: 0; pointer-events: none;
+  --k: calc(max(0px, (100% - var(--wrap)) / 2) + var(--gutter) + var(--hero-tekst));
+  background: linear-gradient(90deg, rgb(var(--hero-cien) / .86) 0, rgb(var(--hero-cien) / .68) var(--k), rgb(var(--hero-cien) / .3) calc(var(--k) + 150px), rgb(var(--hero-cien) / 0) calc(var(--k) + 340px)); }
+.js .hdr-foto ~ main .hero-fig::after { content: ''; position: absolute; inset: 0 0 auto 0; height: calc(var(--hdr-h) + 110px); pointer-events: none;
+  background: linear-gradient(rgb(6 11 22 / .78), rgb(6 11 22 / .58) 40%, rgb(6 11 22 / 0)); }
+.hero-fig figcaption { position: absolute; right: var(--gutter); bottom: 14px; z-index: 1; padding: 5px 10px; border-radius: 8px; background: rgb(10 16 32 / .7); color: #fff; font-size: 12px; font-weight: 600; }
+.hero-in { position: relative; display: flex; align-items: flex-end; min-height: clamp(440px, 40vw, 580px); padding-top: 40px; padding-bottom: clamp(40px, 5vw, 60px); }
+.js .hdr-foto ~ main .hero-in { padding-top: calc(var(--hdr-h) + 36px); }
+.hero-bez-zdjecia .hero-in { min-height: 0; }
+.hero-txt { max-width: var(--hero-tekst); display: flex; flex-direction: column; align-items: flex-start; gap: 16px; }
+.hero-logo { display: block; height: clamp(40px, 4vw, 52px); aspect-ratio: 500 / 160; margin-bottom: 4px; background: #fff; -webkit-mask: var(--logo-pelne) left center / contain no-repeat; mask: var(--logo-pelne) left center / contain no-repeat; }
+.hero h1 { margin: 0; color: #fff; font-size: clamp(42px, 5.4vw, 76px); font-weight: 800; line-height: .98; letter-spacing: -0.035em; }
+.hero-lead { margin: 0; max-width: 32em; font-size: clamp(17px, 1.3vw, 19px); line-height: 1.55; color: #fff; }
+.hero-btns { margin-top: 8px; }
+.hero .btn { background: transparent; border-color: rgb(255 255 255 / .6); color: #fff; }
+.hero .btn:hover { background: rgb(255 255 255 / .14); border-color: #fff; color: #fff; }
+.hero .btn-primary { background: var(--accent); border-color: var(--accent); color: #1b2d52; }
+.hero .btn-primary:hover { background: var(--accent); border-color: var(--accent); color: #1b2d52; filter: brightness(1.06); }
+.hero-flag { display: inline-flex; align-items: center; gap: 8px; min-height: 36px; padding: 4px 14px 4px 12px; border-radius: 999px; background: rgb(var(--hero-cien) / .55); box-shadow: inset 0 0 0 1px rgb(255 255 255 / .35); color: #fff; font-size: 14px; font-weight: 700; text-decoration: none; }
+.hero-flag::before { content: ''; flex: none; width: 8px; height: 8px; border-radius: 50%; background: var(--accent); }
+.hero-flag:hover { color: #fff; box-shadow: inset 0 0 0 1px #fff; }
 .btn-row { display: flex; flex-wrap: wrap; gap: 10px; }
-@media (max-width: 640px) { .hero-card { margin-top: -90px; } }
+/* Przy przewijaniu po zdjęciu przezroczysty nagłówek po ~80 px dostaje ciemne, matowe tło (aż do zmiany na białe przy
+   końcu zdjęcia) — napisy menu nie nakładają się na tytuł banera ani na jasne niebo. Tylko przeglądarki z
+   animation-timeline; w pozostałych nagłówek zostaje przezroczysty jak dotąd. */
+@supports (animation-timeline: scroll()) {
+  .js .hdr-foto:not(.przewiniety):not(.menu-otwarte) { animation: hero-hdr linear both; animation-timeline: scroll(root); animation-range: 0px 80px; }
+  @keyframes hero-hdr { from { background-color: rgb(9 16 34 / 0); } to { background-color: rgb(9 16 34 / .84); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); } }
+}
+@media (max-width: 720px) {
+  .hero-fig { bottom: auto; height: calc(var(--hdr-h) + 230px); }
+  .hero-fig::before { background: linear-gradient(0deg, var(--hero-noc) 0, rgb(13 24 48 / .85) 30%, rgb(13 24 48 / .2) 68%, rgb(13 24 48 / 0) 100%); }
+  .hero-fig figcaption { top: calc(var(--hdr-h) + 10px); bottom: auto; }
+  .hero-in { min-height: 0; padding-top: 200px; padding-bottom: 36px; }
+  .js .hdr-foto ~ main .hero-in { padding-top: calc(var(--hdr-h) + 170px); }
+  .hero-bez-zdjecia .hero-in { padding-top: 36px; }
+  .hero-txt { gap: 14px; }
+}
 
 /* ---------- kafelki na skróty ---------- */
 .tiles { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 12px; padding-top: 32px; }

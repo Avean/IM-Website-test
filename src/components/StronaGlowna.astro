@@ -48,7 +48,8 @@ const kafelki = [
 ];
 ---
 <Baza tytul={t(lang, 'instytut')} stronaGlowna>
-  <section aria-labelledby="h1-glowna">
+  {/* Baner: zdjęcie na całą szerokość, tekst na przyciemnieniu z lewej (na telefonie pod zdjęciem). Style: global.css, „baner (strona główna)”. */}
+  <section class:list={['hero', { 'hero-bez-zdjecia': !baner.zdjecie }]} aria-labelledby="h1-glowna">
     {baner.zdjecie && (
       <figure class="hero-fig">
         <img
@@ -62,15 +63,15 @@ const kafelki = [
         {baner.podpis && <figcaption>{baner.podpis}</figcaption>}
       </figure>
     )}
-    <div class="wrap">
-      <div class="hero-card" style={baner.zdjecie ? undefined : 'margin-top:32px'}>
+    <div class="wrap hero-in">
+      <div class="hero-txt">
         {wyrozniona && (
           <a class="hero-flag" href={href(wyrozniona.href)}>{wyrozniona.tytul}<Ikona nazwa="strzalka" rozmiar={15} /></a>
         )}
         <span class="hero-logo" role="img" aria-label={t(lang, 'uwr')} style={`--logo-pelne:url(${u('/pliki/uwr-logo.png')})`}></span>
         <h1 id="h1-glowna">{t(lang, 'instytut')}</h1>
-        <p>{lang === 'en' ? ustawienia.wstep_en : ustawienia.wstep}</p>
-        <div class="btn-row">
+        <p class="hero-lead">{lang === 'en' ? ustawienia.wstep_en : ustawienia.wstep}</p>
+        <div class="btn-row hero-btns">
           {ustawienia.przyciski.map((b, i) => (
             <a class={`btn${i === 0 ? ' btn-primary' : ''}`} href={href(b.adres)}>
               {wybierz(b, 'etykieta', lang)}{i === 0 && <Ikona nazwa="strzalka" rozmiar={16} />}
