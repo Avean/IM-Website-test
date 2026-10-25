@@ -103,7 +103,10 @@ const sekcje = [
     </div>
   </div>
 
-  <div class="wrap layout">
+  {/* Wariant „Portal”: spis sekcji jako poziomy pasek pod nagłówkiem (zamiast panelu z prawej) — treść ma pełną szerokość,
+       krótkie sekcje stoją obok siebie, a „Dlaczego warto” obok tekstu o kierunku. */}
+  <SpisTresci naglowki={sekcje} lang={lang} wariant="pasek" />
+  <div class="wrap kier">
     <div class="main">
       <div class="entry-cards">
         <a class="entry" href="#o-kierunku">
@@ -123,6 +126,7 @@ const sekcje = [
 
       <section class="zsec" aria-labelledby="o-kierunku">
         <h2 id="o-kierunku">{N.o}</h2>
+        <div class:list={['kier-o', { 'kier-o-2': d.dlaczego.length > 0 }]}>
         <div class="prose">{htmlEn ? <Fragment set:html={htmlEn} /> : <Content />}</div>
         {d.dlaczego.length > 0 && (
           <div class="why-grid">
@@ -135,6 +139,7 @@ const sekcje = [
             ))}
           </div>
         )}
+        </div>
       </section>
 
       {d.etapy.length > 0 && (
@@ -246,6 +251,7 @@ const sekcje = [
         </section>
       )}
 
+      <div class="kier-2">
       {praktyki && (
         <section class="zsec" aria-labelledby="praktyki">
           <h2 id="praktyki">{T('Praktyki pedagogiczne', 'Teaching placements')}</h2>
@@ -263,6 +269,8 @@ const sekcje = [
         </section>
       )}
 
+      </div>
+
       {faq.length > 0 && (
         <section class="zsec" aria-labelledby="pytania">
           <h2 id="pytania">{T('Pytania i odpowiedzi', 'FAQ')}</h2>
@@ -277,6 +285,7 @@ const sekcje = [
         </section>
       )}
 
+      <div class="kier-2">
       {d.kontakt.length > 0 && (
         <section class="zsec" aria-labelledby="kontakt">
           <h2 id="kontakt">{T('Kontakt', 'Contact')}</h2>
@@ -305,11 +314,9 @@ const sekcje = [
           </details>
         </section>
       )}
+      </div>
     </div>
 
-    <aside class="side" data-pagefind-ignore>
-      <SpisTresci naglowki={sekcje} lang={lang} wariant="bok" />
-    </aside>
   </div>
 </Baza>
 
@@ -364,5 +371,16 @@ const sekcje = [
   /* dokumenty programu, praktyk i akty prawne w dwóch kolumnach */
   .tabpanel .files, .zsec > .files, .more .files { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
   .why-grid { grid-template-columns: repeat(auto-fit, minmax(min(100%, 200px), 1fr)); }
+  /* pełna szerokość treści (bez panelu z prawej) */
+  .kier { padding-top: clamp(14px, 2vw, 22px); padding-bottom: clamp(28px, 4vw, 44px); }
+  .kier > .main { min-width: 0; }
+  /* „O kierunku”: tekst z lewej, „Dlaczego warto” (2×2) z prawej */
+  .kier-o-2 { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 520px); gap: 16px 32px; align-items: start; }
+  .kier-o-2 .why-grid { margin-top: 0; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  @media (max-width: 980px) { .kier-o-2 { grid-template-columns: minmax(0, 1fr); } }
+  @media (max-width: 480px) { .kier-o-2 .why-grid { grid-template-columns: minmax(0, 1fr); } }
+  /* krótkie sekcje parami obok siebie (praktyki | po studiach, kontakt | akty prawne) */
+  .kier-2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 460px), 1fr)); gap: 0 36px; align-items: start; }
+  .spec-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
 </style>
 

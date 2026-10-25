@@ -129,3 +129,16 @@ a.pt-card:hover, .pt-card.pt-link:hover, .pt-card.pt-link:focus-within { border-
 @media (max-width: 680px) { .pt-list-poziomo > li + li { border-top: 1px solid var(--line); } }
 .pt-cards-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 @media (max-width: 560px) { .pt-cards-2 { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- spis sekcji jako poziomy pasek (strona kierunku) ---------- */
+.toc-pasek { position: sticky; top: var(--hdr-h); z-index: 20; background: var(--bg); border-bottom: 1px solid var(--line); box-shadow: 0 6px 14px rgb(11 27 58 / .05); }
+.toc-pasek ol { display: flex; gap: 0 2px; margin: 0; padding: 0; list-style: none; overflow-x: auto; scrollbar-width: thin; }
+.toc-pasek a { display: flex; align-items: center; min-height: 44px; padding: 3px 10px 0; border-bottom: 3px solid transparent; white-space: nowrap; font-size: 14px; font-weight: 700; color: var(--muted); text-decoration: none; }
+.toc-pasek li:first-child a { padding-left: 0; }
+.toc-pasek a:hover { color: var(--ink); border-bottom-color: var(--line); }
+.toc-pasek a[aria-current] { color: var(--ink); border-bottom-color: var(--accent); }
+html:has(.toc-pasek) { scroll-padding-top: calc(var(--hdr-h) + 56px); }
+@media (max-width: 900px) {
+  .toc-pasek { display: none; }
+  html:has(.toc-pasek) { scroll-padding-top: calc(var(--hdr-h) + 8px); }
+}

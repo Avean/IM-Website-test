@@ -367,6 +367,7 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .wstecz a:hover { color: var(--primary); }
 .wstecz a:hover svg { transform: translateX(-3px); }
 .wstecz svg { transition: transform .15s; }
+@media (max-width: 760px) { .wstecz a { min-height: 40px; } }
 :root[data-theme='dark'] .wstecz a:hover { color: var(--accent); }
 .crumbs { font-size: 14px; color: var(--muted); }
 .crumbs a { color: var(--muted); }
