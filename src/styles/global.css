@@ -411,6 +411,8 @@ details[open] > summary .chev { transform: rotate(180deg); }
 @media (max-width: 560px) { .row-item .thumb { display: none; } }
 .filters { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; padding-top: 8px; }
 .filters .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.filters.filters-lewo { justify-content: flex-start; padding-top: 0; margin-bottom: 8px; }
+.filters-lewo + .dla-info { margin: 0 0 8px; }
 
 /* blok wydarzenia we wpisie */
 .event-box { display: flex; flex-wrap: wrap; align-items: center; gap: 16px 28px; padding: 20px 22px; border-radius: var(--radius-l); background: var(--surface); border: 1px solid var(--line); }

@@ -31,29 +31,26 @@ const lead = lang === 'en' ? 'Announcements, events and achievements of the Math
 <Baza tytul={t(lang, 'aktualnosci')} opis={lead}>
   <NaglowekStrony tytul={t(lang, 'aktualnosci')} lead={lead} lang={lang} okruszki={[{ etykieta: t(lang, 'aktualnosci') }]} />
 
-  <!-- Rodzaje wpisów i wyszukiwarka pod nagłówkiem (nie na granatowym pasie). -->
-  <div class="wrap" style="padding-top:clamp(24px, 4vw, 40px)">
-    <div class="filters">
-      <div class="chips" role="group" aria-label={lang === 'en' ? 'Filter by type' : 'Filtruj według rodzaju'}>
-        <button type="button" class="chip" aria-pressed="true" data-rodzaj="">{t(lang, 'wszystkie')}</button>
-        {rodzaje.map((r) => <button type="button" class="chip" aria-pressed="false" data-rodzaj={r}>{RODZAJE[r][lang]}</button>)}
-      </div>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
-        <label class="search">
-          <Ikona nazwa="szukaj" rozmiar={18} />
-          <span class="sr-only">{lang === 'en' ? 'Search news' : 'Szukaj w aktualnościach'}</span>
-          <input type="search" data-szukaj placeholder={lang === 'en' ? 'Search news' : 'Szukaj w aktualnościach'} />
-        </label>
-      </div>
-    </div>
-    <p class="dla-info" data-dla-info hidden>
-      <span>{lang === 'en' ? 'Showing posts for:' : 'Pokazuję wpisy dla:'} {Object.entries(ODBIORCY).map(([k, v]) => <strong data-dla-etykieta={k} hidden>{v[lang].toLowerCase()}</strong>)}</span>
-      <button type="button" class="chip" data-dla-wyczysc>{lang === 'en' ? 'Show all' : 'Pokaż wszystkie'}</button>
-    </p>
-  </div>
-
-  <div class="wrap layout" style="padding-top:24px">
+  <div class="wrap layout">
     <div class="main" data-lista>
+      {/* Rodzaje wpisów i wyszukiwarka w lewej kolumnie, nad listą (wyszukiwarka zaraz za przyciskami; bez wydarzeń kolumna jest szersza). */}
+      <div class="filters filters-lewo">
+        <div class="chips" role="group" aria-label={lang === 'en' ? 'Filter by type' : 'Filtruj według rodzaju'}>
+          <button type="button" class="chip" aria-pressed="true" data-rodzaj="">{t(lang, 'wszystkie')}</button>
+          {rodzaje.map((r) => <button type="button" class="chip" aria-pressed="false" data-rodzaj={r}>{RODZAJE[r][lang]}</button>)}
+        </div>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+          <label class="search">
+            <Ikona nazwa="szukaj" rozmiar={18} />
+            <span class="sr-only">{lang === 'en' ? 'Search news' : 'Szukaj w aktualnościach'}</span>
+            <input type="search" data-szukaj placeholder={lang === 'en' ? 'Search news' : 'Szukaj w aktualnościach'} />
+          </label>
+        </div>
+      </div>
+      <p class="dla-info" data-dla-info hidden>
+        <span>{lang === 'en' ? 'Showing posts for:' : 'Pokazuję wpisy dla:'} {Object.entries(ODBIORCY).map(([k, v]) => <strong data-dla-etykieta={k} hidden>{v[lang].toLowerCase()}</strong>)}</span>
+        <button type="button" class="chip" data-dla-wyczysc>{lang === 'en' ? 'Show all' : 'Pokaż wszystkie'}</button>
+      </p>
       {grupy.map((g) => (
         <section data-grupa>
           <h2 class="month">{g.miesiac}</h2>
