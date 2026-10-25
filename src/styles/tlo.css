@@ -60,9 +60,11 @@ body[data-tlo='zmierzch']::before {
 /* 5. Fale — izolinie (poziomice) z obrazu właściciela: jasny gradient, błękit w rogach, bursztyn z prawej u dołu.
       Jasny: sam obraz (fale.webp, 1920 px). Ciemny: te same linie jasną kreską na granacie — maska fale-linie.webp
       wyciągnięta z obrazu (kanał alfa = linie) — i światło w tych samych rogach co na obrazie (błękit, bursztyn).
-      Na telefonie (ekran pionowy) obraz jest przesunięty w prawo, żeby było widać wiry z prawego górnego rogu. */
-body[data-tlo='fale'] { --tlo-linie: rgb(214 228 245 / .42); --tlo-swiatlo1: rgb(5 100 156 / .15); --tlo-swiatlo2: rgb(242 163 58 / .08); --tlo-kadr: center; }
-body[data-tlo='fale']::before { background: url('../assets/tlo/fale.webp') var(--tlo-kadr) / cover no-repeat, var(--bg); }
+      Ekran pionowy (telefon): ten sam obraz odbity względem przekątnej (*-pion.webp) — przy „cover” poziomy obraz
+      pokazałby tylko pusty środkowy pas; po odbiciu wiry są w rogach, a bursztyn nadal z prawej u dołu.
+      Pobiera się tylko jeden plik: ten, który pasuje do motywu i orientacji ekranu. */
+body[data-tlo='fale'] { --tlo-linie: rgb(214 228 245 / .28); --tlo-swiatlo1: rgb(5 100 156 / .15); --tlo-swiatlo2: rgb(242 163 58 / .08); }
+body[data-tlo='fale']::before { background: url('../assets/tlo/fale.webp') center / cover no-repeat, var(--bg); }
 :root[data-theme='dark'] body[data-tlo='fale']::before {
   background:
     radial-gradient(60% 55% at 100% 0%, var(--tlo-swiatlo1), transparent 70%),
@@ -71,8 +73,11 @@ body[data-tlo='fale']::before { background: url('../assets/tlo/fale.webp') var(-
     var(--bg);
 }
 :root[data-theme='dark'] body[data-tlo='fale']::after { background: var(--tlo-linie);
-  -webkit-mask: url('../assets/tlo/fale-linie.webp') var(--tlo-kadr) / cover no-repeat; mask: url('../assets/tlo/fale-linie.webp') var(--tlo-kadr) / cover no-repeat; }
-@media (max-aspect-ratio: 1/1) { body[data-tlo='fale'] { --tlo-kadr: 82% center; } }
+  -webkit-mask: url('../assets/tlo/fale-linie.webp') center / cover no-repeat; mask: url('../assets/tlo/fale-linie.webp') center / cover no-repeat; }
+@media (max-aspect-ratio: 1/1) {
+  body[data-tlo='fale']::before { background-image: url('../assets/tlo/fale-pion.webp'); }
+  :root[data-theme='dark'] body[data-tlo='fale']::after { -webkit-mask-image: url('../assets/tlo/fale-linie-pion.webp'); mask-image: url('../assets/tlo/fale-linie-pion.webp'); }
+}
 
 /* ---------- treść nad wzorem ----------
    Karty i ramki zostają pełne (czytelność); pasy .section-alt i nagłówek podstrony są lekko przezroczyste,
