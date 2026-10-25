@@ -56,6 +56,32 @@
   "powiadomienia": {
     "adres": ""
   },
-  "tlo_strony": "pole",
-  "wydarzenia_dni_robocze": 5
+  "tlo_strony": "zmierzch",
+  "wydarzenia_dni_robocze": 5,
+  "sekcje": "pasy",
+  "naglowki_podstron": {
+    "wariant": "granat",
+    "zdjecia": {
+      "instytut": {
+        "zdjecie": "/pliki/naglowki/instytut.jpg",
+        "kadr": "center 45%"
+      },
+      "nauka": {
+        "zdjecie": "/pliki/naglowki/nauka.jpg",
+        "kadr": "center 40%"
+      },
+      "studia": {
+        "zdjecie": "/pliki/naglowki/studia.jpg",
+        "kadr": "center 35%"
+      },
+      "aktualnosci": {
+        "zdjecie": "/pliki/naglowki/aktualnosci.jpg",
+        "kadr": "center 40%"
+      },
+      "popularyzacja": {
+        "zdjecie": "/pliki/naglowki/popularyzacja.jpg",
+        "kadr": "center 50%"
+      }
+    }
+  }
 }

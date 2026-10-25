@@ -1042,7 +1042,30 @@ content:
               - { name: podpis, label: "Podpis (np. Fot. Jan Kowalski)", type: string }
               - { name: kadr, label: "Kadrowanie (np. center 55%)", type: string }
           - { name: logo, label: Logo w nagłówku (opcjonalnie), type: image, options: { path: public/pliki } }
-          - { name: tlo_strony, label: "Tło strony: delikatne fale zamiast białego (tryb jasny)", type: boolean, default: false }
+          - name: tlo_strony
+            label: Tło strony
+            type: select
+            default: zmierzch
+            options: { values: [ { name: zmierzch, label: "Zmierzch" }, { name: pole, label: "Pole kierunków" }, { name: kratka, label: "Kratka / tablica" }, { name: penrose, label: "Kafelkowanie Penrose'a" }, { name: brak, label: "Brak (białe)" } ] }
+          - name: sekcje
+            label: Oddzielanie sekcji
+            type: select
+            default: pasy
+            options: { values: [ { name: pasy, label: Pasy }, { name: linia, label: Linia }, { name: karty, label: Karty }, { name: brak, label: Brak } ] }
+          - name: naglowki_podstron
+            label: Nagłówki podstron
+            type: object
+            fields:
+              - { name: wariant, label: Wygląd, type: select, default: granat, options: { values: [ { name: granat, label: "Granatowy pas" }, { name: zdjecie, label: "Zdjęcie w ramce" }, { name: motyw, label: "Sam rysunek" }, { name: prosty, label: "Prosty" } ] } }
+              - name: zdjecia
+                label: "Zdjęcia działów (puste = sam rysunek)"
+                type: object
+                fields:
+                  - { name: instytut, label: Instytut, type: object, fields: [ { name: zdjecie, label: Zdjęcie, type: image, options: { path: public/pliki/naglowki } }, { name: kadr, label: "Kadr (np. center 40%)", type: string } ] }
+                  - { name: nauka, label: Nauka, type: object, fields: [ { name: zdjecie, label: Zdjęcie, type: image, options: { path: public/pliki/naglowki } }, { name: kadr, label: "Kadr (np. center 40%)", type: string } ] }
+                  - { name: studia, label: Studia, type: object, fields: [ { name: zdjecie, label: Zdjęcie, type: image, options: { path: public/pliki/naglowki } }, { name: kadr, label: "Kadr (np. center 40%)", type: string } ] }
+                  - { name: aktualnosci, label: Aktualności, type: object, fields: [ { name: zdjecie, label: Zdjęcie, type: image, options: { path: public/pliki/naglowki } }, { name: kadr, label: "Kadr (np. center 40%)", type: string } ] }
+                  - { name: popularyzacja, label: Popularyzacja, type: object, fields: [ { name: zdjecie, label: Zdjęcie, type: image, options: { path: public/pliki/naglowki } }, { name: kadr, label: "Kadr (np. center 40%)", type: string } ] }
           - { name: wydarzenia_dni_robocze, label: "Wydarzenia na stronie głównej: ile dni roboczych przed początkiem się pojawiają (sekcja znika, gdy nic nie ma)", type: number, default: 5 }
           - { name: wstep, label: Tekst pod nazwą Instytutu, type: text }
           - { name: wstep_en, label: "EN: tekst pod nazwą", type: text }
