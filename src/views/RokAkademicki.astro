@@ -140,8 +140,6 @@ const naglowki = [
           {(saTerminy || tekstRoku) && (
             <>
               <h2 id={ID.rok}>{T('Rok w skrócie', 'The year at a glance')}</h2>
-              {/* drugi zestaw przycisków: widać, który semestr jest pokazany, i można go zmienić bez przewijania do kalendarza */}
-              {saTerminy && <PrzelacznikSemestrow semestry={semestrySwitch} aktywny={aktywny} lang={lang} lustro />}
               {sem.filter((x) => x.terminy.length > 0).map((x) => (
                 <div {...ps(x.id)}>
                   <table class="kd-terminy">
@@ -333,6 +331,5 @@ const naglowki = [
   /* podpis semestru: widoczny bez JS (oba semestry naraz), z przełącznikiem tylko dla czytników ekranu */
   .kd-podpis { margin: 0 0 6px; font-weight: 800; color: var(--ink); }
   :global(html.js) .kd-podpis-ps { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
-  .kd-tekst :global(.ps-lustro) { margin: 4px 0 6px; }
   .kd-wspolny { margin-top: 4px; }
 </style>
