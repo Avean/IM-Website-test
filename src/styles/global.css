@@ -861,3 +861,11 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .dz-tags { display: block; margin: 0; font-size: 14px; line-height: 1.5; color: var(--muted); }
 .dz-tags .badge { display: inline; padding: 0; border-radius: 0; background: none; color: inherit; font-size: inherit; font-weight: 500; }
 .dz-tags .badge + .badge::before { content: ' · '; }
+
+/* telefon: cele dotykowe ≥ 40 px tam, gdzie na komputerze linki są niższe; spis pracowników — pokój i WWW w jednej linii */
+@media (max-width: 760px) {
+  .ftr-col a, .ftr-bottom a, .wstecz a { min-height: 40px; }
+  .toc-top a { padding-top: 9px; padding-bottom: 9px; }
+  .staff-row { display: flex; flex-wrap: wrap; align-items: baseline; gap: 1px 14px; }
+  .staff-row > .n, .staff-row > .z, .staff-row > .c:nth-child(3) { flex-basis: 100%; }
+}
