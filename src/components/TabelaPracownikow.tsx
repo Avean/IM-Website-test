@@ -4,10 +4,8 @@
 // obejmuje całe pole (klasy .os-link / .os-a w global.css), a e-mail i zakład są osobnymi linkami.
 // Kolumna „Telefon” pojawia się tylko w sekcjach, w których ktoś ma numer (w praktyce: administracja).
 // Doktoranci są podzieleni według roku studiów (Rok 1, Rok 2, …; bez roku — na końcu).
-// Pasek wyszukiwania i filtrów „pływa” pod nagłówkiem strony przy przewijaniu (.staff-tools, position: sticky);
-// po zmianie filtra, gdy pasek jest przypięty, strona wraca do początku listy, żeby wyniki nie zostały nad ekranem.
 import { zTytulem } from '../lib/osoby';
-import { Fragment, useEffect, useMemo, useRef, useState } from 'react';
+import { Fragment, useMemo, useState } from 'react';
 
 export interface Osoba {
   id: string;
@@ -57,38 +55,6 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
   const [q, setQ] = useState('');
   const [grupa, setGrupa] = useState('');
   const [zaklad, setZaklad] = useState('');
-  const kotwica = useRef<HTMLDivElement>(null);
-  const pasek = useRef<HTMLDivElement>(null);
-  const pierwszy = useRef(true);
-  const wysNaglowka = () => (document.querySelector('.hdr') as HTMLElement | null)?.offsetHeight ?? 0;
-
-  // Przypięty pasek: cień pod spodem tylko wtedy, gdy faktycznie „pływa”.
-  useEffect(() => {
-    let raf = 0;
-    const sprawdz = () => {
-      raf = 0;
-      const k = kotwica.current, p = pasek.current;
-      if (!k || !p) return;
-      const h = wysNaglowka();
-      p.style.setProperty('--przyp-top', `${h}px`);
-      p.classList.toggle('przypiety', k.getBoundingClientRect().top < h - 1);
-    };
-    const zaplanuj = () => { if (!raf) raf = requestAnimationFrame(sprawdz); };
-    sprawdz();
-    addEventListener('scroll', zaplanuj, { passive: true });
-    addEventListener('resize', zaplanuj);
-    return () => { removeEventListener('scroll', zaplanuj); removeEventListener('resize', zaplanuj); if (raf) cancelAnimationFrame(raf); };
-  }, []);
-
-  // Zmiana filtra przy przypiętym pasku: wróć do początku listy.
-  useEffect(() => {
-    if (pierwszy.current) { pierwszy.current = false; return; }
-    const k = kotwica.current;
-    if (!k) return;
-    const h = wysNaglowka();
-    const gora = k.getBoundingClientRect().top;
-    if (gora < h - 1) window.scrollTo({ top: window.scrollY + gora - h });
-  }, [q, grupa, zaklad]);
   const nazwyZakladow = useMemo(() => Object.fromEntries(zaklady.map((z) => [z.id, z.nazwa])), [zaklady]);
   const linkiZakladow = useMemo(() => Object.fromEntries(zaklady.map((z) => [z.id, z.href])), [zaklady]);
 
@@ -168,8 +134,7 @@ export default function TabelaPracownikow({ osoby, grupy, zaklady, napisy }: Pro
 
   return (
     <div>
-      <div ref={kotwica} aria-hidden="true" />
-      <div ref={pasek} className="staff-tools">
+      <div className="staff-tools">
         <label className="search">
           <svg className="ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" aria-hidden="true" style={{ width: 18, height: 18 }}>
             <circle cx="11" cy="11" r="7" />
