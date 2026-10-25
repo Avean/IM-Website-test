@@ -448,6 +448,17 @@ details[open] > summary .chev { transform: rotate(180deg); }
 
 /* tabela pracowników */
 .staff-tools { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 18px; }
+/* Pasek filtrów pracowników pływa pod nagłówkiem; tło rozciągnięte na całą szerokość okna (cień + clip-path, bez poziomego przewijania). */
+.staff-tools { position: sticky; top: var(--przyp-top, var(--hdr-h)); z-index: 6; padding-block: 12px; margin-top: -12px; background: var(--bg);
+  box-shadow: 0 0 0 100vmax var(--bg); clip-path: inset(0 -100vmax -1px); transition: box-shadow .2s; }
+.staff-tools.przypiety { box-shadow: 0 0 0 100vmax var(--bg), 0 1px 0 100vmax var(--line); }
+@media (max-width: 700px) {
+  /* Na telefonie przyciski grup w jednym przewijanym rzędzie, żeby pasek nie zasłaniał pół ekranu. */
+  .staff-tools .chips { flex-wrap: nowrap !important; overflow-x: auto; scrollbar-width: none; margin-inline: -16px; padding-inline: 16px; width: calc(100% + 32px); }
+  .staff-tools .chips::-webkit-scrollbar { display: none; }
+  .staff-tools .chip { flex: none; }
+  .staff-tools .search { flex: 1 1 100%; }
+}
 .search { display: flex; align-items: center; gap: 8px; height: 46px; padding: 0 14px; border-radius: 999px; border: 1.5px solid var(--line); background: var(--bg); color: var(--muted); min-width: min(320px, 100%); }
 .search input { flex: 1; min-width: 0; border: 0; background: transparent; font: inherit; font-size: 16px; color: var(--ink); outline: none; }
 .search:focus-within { border-color: var(--ink); }
