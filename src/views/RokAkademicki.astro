@@ -1,9 +1,9 @@
 ---
 // Rok akademicki (/studia/rok-akademicki, EN /en/studia/rok-akademicki) — jedna strona zamiast dawnych „Rok akademicki”
 // i „Kalendarz zajęć”. Kolejność: Dziś (kolor dnia / zamiana) → Kolory dni (przełącznik semestrów + kalendarz)
-// → Rok w skrócie (terminy semestru + wspólny tekst z src/data/rok-akademicki.md) → dni wolne i zamiany dni → PDF-y
-// → pole „dalej” (podstawa prawna). Przełącznik semestrów steruje kalendarzem i sekcjami „Rok w skrócie”, „Dni wolne”,
-// „Zamiany dni” (data-ps-dla); bez JS widać oba semestry, każdy podpisany.
+// → Rok w skrócie (terminy semestru, dni wolne, zamiany dni + wspólny tekst z src/data/rok-akademicki.md) → PDF-y
+// → pole „dalej” (podstawa prawna). Przełącznik semestrów steruje kalendarzem i sekcją „Rok w skrócie”
+// (data-ps-dla); bez JS widać oba semestry, każdy podpisany.
 // Jedno źródło dat: terminy semestru, okresy zajęć, dni wolne i zamiany dni są w src/data/kolory-dni.json (Pages CMS),
 // kolory liczy src/lib/kolory-dni.ts — ta strona jest też podglądem dla redaktora.
 import Baza from '../layouts/Baza.astro';
@@ -76,16 +76,12 @@ const semestrySwitch = zakladki.map((s) => ({ id: idPanelu(s), etykieta: nazwaSe
 const ID = {
   kolory: T('kolory-dni', 'day-colours'),
   rok: T('rok-w-skrócie', 'the-year-at-a-glance'),
-  wolne: T('dni-wolne-od-zajęć', 'days-without-classes'),
-  zamiany: T('zamiany-dni', 'day-swaps'),
   pobranie: T('do-pobrania', 'downloads'),
 };
 const naglowki = [
   { depth: 2, slug: ID.kolory, text: T('Kolory dni', 'Day colours') },
-  ...(saTerminy || tekstRoku ? [{ depth: 2, slug: ID.rok, text: T('Rok w skrócie', 'The year at a glance') }] : []),
+  ...(saTerminy || tekstRoku || saWolne || saZamiany ? [{ depth: 2, slug: ID.rok, text: T('Rok w skrócie', 'The year at a glance') }] : []),
   ...naglowkiTekstu,
-  ...(saWolne ? [{ depth: 2, slug: ID.wolne, text: T('Dni wolne od zajęć', 'Days without classes') }] : []),
-  ...(saZamiany ? [{ depth: 2, slug: ID.zamiany, text: T('Zamiany dni', 'Day swaps') }] : []),
   ...(pdfy.length ? [{ depth: 2, slug: ID.pobranie, text: T('Do pobrania', 'Downloads') }] : []),
   ...dalej.naglowki,
 ];
@@ -137,75 +133,62 @@ const naglowki = [
 
       {(saTerminy || tekstRoku || saWolne || saZamiany) && (
         <div class="prose kd-tekst">
-          {(saTerminy || tekstRoku) && (
+          {/* Jedna sekcja na semestr wybrany przełącznikiem nad kalendarzem: terminy, dni wolne od zajęć, zamiany dni. */}
+          <h2 id={ID.rok}>{T('Rok w skrócie', 'The year at a glance')}</h2>
+          {sem.filter((x) => x.terminy.length > 0 || saWolne || saZamiany).map((x) => (
+            <div {...ps(x.id)} class="kd-sem">
+              <p class:list={['kd-podpis', { 'kd-podpis-ps': panele }]}>{nazwaSemestru(x.s, lang)}</p>
+              {x.terminy.length > 0 && (
+                <table class="kd-terminy">
+                  <tbody>
+                    {x.terminy.map((w) => (
+                      <tr class:list={{ wazne: w.wazne }}><th scope="row">{w.etykieta}</th><td>{w.wartosc}</td></tr>
+                    ))}
+                  </tbody>
+                </table>
+              )}
+              {saWolne && (
+                <>
+                  <h3>{T('Dni wolne od zajęć', 'Days without classes')}</h3>
+                  {x.wolne.length > 0 ? (
+                    <ul>
+                      {x.wolne.map((w) => {
+                        const dt = dniTygodnia(w.od, w.do);
+                        return (
+                          <li>
+                            <strong>{zakresDat(w.od, w.do)}</strong>{dt && ` (${dt})`} — {T(w.opis, w.opis_en)}{w.swieto && w.od === w.do ? T(' (dzień ustawowo wolny od pracy)', ' (statutory public holiday)') : ''}
+                          </li>
+                        );
+                      })}
+                    </ul>
+                  ) : <p>{T('W tym semestrze nie ma dni wolnych od zajęć poza sobotami i niedzielami.', 'There are no days without classes in this semester apart from weekends.')}</p>}
+                </>
+              )}
+              {saZamiany && (
+                <>
+                  <h3>{T('Zamiany dni', 'Day swaps')}</h3>
+                  {x.zamiany.length > 0 ? (
+                    <>
+                      <p>{T('W te dni zajęcia odbywają się ', 'On these days classes follow ')}<strong>{T('według planu innego dnia tygodnia', 'the timetable of a different weekday')}</strong>:</p>
+                      <ul>
+                        {x.zamiany.map((d) => (
+                          <li>
+                            <strong>{long(d.data, lang, false)}</strong> ({nazwaDnia(d.dzienTygodnia, lang)}) — {opisZamiany(d.plan ?? 1, lang)}{d.kolor ? `, ${T(`dzień ${NAZWA_KOLORU.pl[d.kolor]}`, `${NAZWA_KOLORU.en[d.kolor]} day`)}` : ''}
+                          </li>
+                        ))}
+                      </ul>
+                    </>
+                  ) : <p>{T('W tym semestrze nie ma zamian dni.', 'There are no day swaps in this semester.')}</p>}
+                </>
+              )}
+            </div>
+          ))}
+          {tekstRoku && (
             <>
-              <h2 id={ID.rok}>{T('Rok w skrócie', 'The year at a glance')}</h2>
-              {sem.filter((x) => x.terminy.length > 0).map((x) => (
-                <div {...ps(x.id)}>
-                  <table class="kd-terminy">
-                    <caption class:list={['kd-podpis', { 'kd-podpis-ps': panele }]}>{nazwaSemestru(x.s, lang)}</caption>
-                    <tbody>
-                      {x.terminy.map((w) => (
-                        <tr class:list={{ wazne: w.wazne }}><th scope="row">{w.etykieta}</th><td>{w.wartosc}</td></tr>
-                      ))}
-                    </tbody>
-                  </table>
-                </div>
-              ))}
               {tylkoPolski && <p class="notice">{t('en', 'wersjaPolska')}</p>}
               <div lang={tylkoPolski ? 'pl' : undefined} class="kd-wspolny">
                 {tekstEn ? <Fragment set:html={tekstEn.html} /> : <Opis.Content />}
               </div>
-            </>
-          )}
-
-          {saWolne && (
-            <>
-              <h2 id={ID.wolne}>{T('Dni wolne od zajęć', 'Days without classes')}</h2>
-              {sem.map((x) => (
-                <div {...ps(x.id)}>
-                  <blockquote>
-                    <p class:list={['kd-podpis', { 'kd-podpis-ps': panele }]}>{nazwaSemestru(x.s, lang)}</p>
-                    {x.wolne.length > 0 ? (
-                      <ul>
-                        {x.wolne.map((w) => {
-                          const dt = dniTygodnia(w.od, w.do);
-                          return (
-                            <li>
-                              <strong>{zakresDat(w.od, w.do)}</strong>{dt && ` (${dt})`} — {T(w.opis, w.opis_en)}{w.swieto && w.od === w.do ? T(' (dzień ustawowo wolny od pracy)', ' (statutory public holiday)') : ''}
-                            </li>
-                          );
-                        })}
-                      </ul>
-                    ) : <p>{T('W tym semestrze nie ma dni wolnych od zajęć poza sobotami i niedzielami.', 'There are no days without classes in this semester apart from weekends.')}</p>}
-                  </blockquote>
-                </div>
-              ))}
-            </>
-          )}
-
-          {saZamiany && (
-            <>
-              <h2 id={ID.zamiany}>{T('Zamiany dni', 'Day swaps')}</h2>
-              {sem.map((x) => (
-                <div {...ps(x.id)}>
-                  <blockquote>
-                    <p class:list={['kd-podpis', { 'kd-podpis-ps': panele }]}>{nazwaSemestru(x.s, lang)}</p>
-                    {x.zamiany.length > 0 ? (
-                      <>
-                        <p>{T('W te dni zajęcia odbywają się ', 'On these days classes follow ')}<strong>{T('według planu innego dnia tygodnia', 'the timetable of a different weekday')}</strong>:</p>
-                        <ul>
-                          {x.zamiany.map((d) => (
-                            <li>
-                              <strong>{long(d.data, lang, false)}</strong> ({nazwaDnia(d.dzienTygodnia, lang)}) — {opisZamiany(d.plan ?? 1, lang)}{d.kolor ? `, ${T(`dzień ${NAZWA_KOLORU.pl[d.kolor]}`, `${NAZWA_KOLORU.en[d.kolor]} day`)}` : ''}
-                            </li>
-                          ))}
-                        </ul>
-                      </>
-                    ) : <p>{T('W tym semestrze nie ma zamian dni.', 'There are no day swaps in this semester.')}</p>}
-                  </blockquote>
-                </div>
-              ))}
             </>
           )}
         </div>
@@ -331,5 +314,6 @@ const naglowki = [
   /* podpis semestru: widoczny bez JS (oba semestry naraz), z przełącznikiem tylko dla czytników ekranu */
   .kd-podpis { margin: 0 0 6px; font-weight: 800; color: var(--ink); }
   :global(html.js) .kd-podpis-ps { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
-  .kd-wspolny { margin-top: 4px; }
+  .kd-wspolny { margin-top: 18px; }
+  .kd-sem h3 { margin-top: 1.4em; }
 </style>

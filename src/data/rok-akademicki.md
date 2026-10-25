@@ -1,8 +1,8 @@
 ---
 # Strona /studia/rok-akademicki (widok src/views/RokAkademicki.astro). Ten plik zawiera tylko tekst wspólny dla semestrów;
 # kolory dni, terminy semestru (tabela „Rok w skrócie”), dni wolne od zajęć i zamiany dni generują się z src/data/kolory-dni.json
-# i przełączają razem z semestrem. Kolejność: Dziś → Kolory dni → Rok w skrócie (tabela + treść tego pliku)
-# → Dni wolne od zajęć → Zamiany dni → Do pobrania → pole „dalej”.
+# i przełączają razem z semestrem. Kolejność: Dziś → Kolory dni → Rok w skrócie (terminy, dni wolne, zamiany dni,
+# na końcu treść tego pliku) → Do pobrania → pole „dalej”.
 tytul: "Rok akademicki"
 opis: "Kalendarz roku akademickiego 2026/27: kolory dni, semestry, sesje egzaminacyjne, przerwy, dni wolne od zajęć i zamiany dni."
 tytul_en: "Academic year"
