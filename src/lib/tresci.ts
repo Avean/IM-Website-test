@@ -22,7 +22,7 @@ export async function aktualnosci(wszystkie = false): Promise<Aktualnosc[]> {
   const items = await getCollection('aktualnosci');
   return items
     .filter((e) => wszystkie || opublikowane(e))
-    .sort((a, b) => (a.data.data < b.data.data ? 1 : a.data.data > b.data.data ? -1 : 0));
+    .sort((a, b) => (a.data.data < b.data.data ? 1 : a.data.data > b.data.data ? -1 : 0) || a.id.localeCompare(b.id));
 }
 
 export async function obrony(wszystkie = false): Promise<Obrona[]> {
@@ -328,7 +328,8 @@ export async function listaAktualnosci(lang: Lang = 'pl'): Promise<PozycjaListy[
   }
   // Ogłoszenia o zamianach dni z src/data/kolory-dni.json — tylko od N dni roboczych przed zamianą do dnia zamiany.
   items.push(...pozycjeZamianDni(lang, today()));
-  return items.sort((a, b) => (a.data < b.data ? 1 : a.data > b.data ? -1 : 0));
+  // przy tej samej dacie stała kolejność (po id), żeby lista nie zmieniała się między przebudowami
+  return items.sort((a, b) => (a.data < b.data ? 1 : a.data > b.data ? -1 : 0) || a.id.localeCompare(b.id));
 }
 
 // Strona główna: wyróżnione na górze, potem chronologicznie; bez dubli z "Najbliższymi wydarzeniami".
