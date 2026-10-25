@@ -61,7 +61,7 @@ jobs:
           # Statystyka: ile stron powstało.
           echo "::notice title=Wynik budowania::$(find dist -name '*.html' | wc -l) stron HTML, $(du -sh dist | cut -f1)"
 
-      # Warianty wyglądu do porównania: każda gałąź wariant-<nazwa> jest budowana obok głównej strony pod
+      # Warianty wyglądu do porównania (wariant-poprzednia = stan sprzed Portalu na telefonach): każda gałąź wariant-<nazwa> jest budowana obok głównej strony pod
       # <adres strony>/warianty/<nazwa>/ (bez PDF-ów i innych dokumentów, żeby paczka nie rosła). Na wszystkich
       # stronach (głównej i wariantach) w lewym dolnym rogu pojawia się przełącznik wariantów — dodawany tu, przy
       # publikacji, nie w kodzie strony. Po wyborze wariantu wystarczy usunąć gałęzie wariant-* (krok się pomija).
@@ -93,8 +93,8 @@ jobs:
           done
           [ -z "$ok" ] && exit 0
           linki=""
-          for n in obecna $(for x in zwarta portal redakcyjna; do case " $ok " in *" $x "*) echo "$x";; esac; done); do
-            case "$n" in obecna) e="Obecna"; w="";; zwarta) e="Zwarta"; w="$n";; portal) e="Portal"; w="$n";; redakcyjna) e="Redakcyjna"; w="$n";; *) e="$n"; w="$n";; esac
+          for n in obecna $(for x in poprzednia zwarta portal redakcyjna; do case " $ok " in *" $x "*) echo "$x";; esac; done); do
+            case "$n" in obecna) e="Obecna"; w="";; poprzednia) e="Poprzednia"; w="$n";; zwarta) e="Zwarta"; w="$n";; portal) e="Portal"; w="$n";; redakcyjna) e="Redakcyjna"; w="$n";; *) e="$n"; w="$n";; esac
             linki="$linki<a data-wariant=\"$w\" href=\"$BASE0/\">$e</a>"
           done
           export PASEK="<div class=\"wr-pasek\" data-pagefind-ignore role=\"navigation\" aria-label=\"Warianty wyglądu (podgląd)\"><span>Wariant:</span>$linki</div><style>.wr-pasek{position:fixed;left:10px;bottom:10px;z-index:9999;display:flex;flex-wrap:wrap;align-items:center;gap:2px;max-width:calc(100vw - 20px);padding:4px;border-radius:999px;background:#0b1630;box-shadow:0 4px 18px rgb(0 0 0/.35);font:700 12px/1 system-ui,sans-serif}.wr-pasek span{padding:0 6px 0 8px;color:#c4cee0}.wr-pasek a{padding:8px 10px;border-radius:999px;color:#fff;text-decoration:none}.wr-pasek a:hover{background:rgb(255 255 255/.14)}.wr-pasek a[aria-current]{background:#f2a33a;color:#101828}</style><script>(function(){var b='$BASE0',p=location.pathname,s=p.slice(b.length),m=s.match(/^\\/warianty\\/([^\\/]+)/),c=m?m[1]:'',r=(m?s.slice(m[0].length):s)||'/';document.querySelectorAll('.wr-pasek a').forEach(function(a){var w=a.getAttribute('data-wariant');a.href=b+(w?'/warianty/'+w:'')+r+location.hash;if(w===c)a.setAttribute('aria-current','true');});})();</script>"
