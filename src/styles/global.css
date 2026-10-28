@@ -342,6 +342,19 @@ details[open] > summary .chev { transform: rotate(180deg); }
 .ftr-bottom { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; padding-top: 18px; border-top: 1px solid var(--footer-line); font-size: 14px; color: var(--footer-muted); }
 .ftr-bottom nav { display: flex; flex-wrap: wrap; gap: 0 20px; }
 .ftr-bottom a { display: inline-flex; align-items: center; min-height: 36px; color: var(--footer-muted); }
+/* Komputer (≥ 761 px): stopka w wersji „zwartej” — mniejsze odstępy, ta sama treść. Telefon: telefon.css (Portal). */
+@media (min-width: 761px) {
+  .ftr-in { padding-top: clamp(22px, 3vw, 34px); padding-bottom: 14px; gap: 18px; }
+  .ftr-cols { gap: 18px 32px; }
+  .ftr-main { gap: 2px; }
+  .ftr-main .n { font-size: 18px; }
+  .ftr-main .a { line-height: 1.5; }
+  .ftr-col { flex-basis: 150px; gap: 0; }
+  .ftr-col h3, .ftr-label { margin: 0 0 4px; }
+  .ftr-col a { min-height: 30px; }
+  .ftr-bottom { gap: 4px 24px; padding-top: 10px; }
+  .ftr-bottom a { min-height: 32px; }
+}
 
 /* ---------- podstrony ---------- */
 .page-head { background: var(--surface); border-bottom: 1px solid var(--line); }
