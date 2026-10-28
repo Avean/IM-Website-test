@@ -327,12 +327,17 @@ const sekcje = [
 <style>
   .kh-btns { margin-top: 6px; }
   .kh-fakty { margin: 0 0 22px; }
+  /* liczby kierunku mniejsze niż w statystykach działów (34 px) — „6 semestrów”, „licencjat” mieszczą się w kafelku */
+  .kh-fakty .stat { padding: 16px 18px; }
+  .kh-fakty .stat .n { font-size: 24px; letter-spacing: -0.01em; overflow-wrap: anywhere; }
 
   /* ---------- telefon (≤ 760 px): wygląd „Portal” ---------- */
   @media (max-width: 760px) {
     /* nagłówek: tekst, przyciski i fakty (2×2) ciaśniej */
     .kh-btns { margin-top: 4px; }
     .kh-fakty { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0 0 16px; }
+    .kh-fakty .stat { padding: 12px 14px; }
+    .kh-fakty .stat .n { font-size: 21px; }
     /* treść na pełną szerokość (spis sekcji jest i tak rozwijaną listą nad treścią) */
     .kier { display: block; padding-top: clamp(14px, 2vw, 22px); padding-bottom: clamp(28px, 4vw, 44px); }
     /* „O kierunku”: „Dlaczego warto” pod tekstem, dwie w rzędzie (na wąskim telefonie jedna) */
@@ -352,8 +357,5 @@ const sekcje = [
   }
   @media (max-width: 480px) {
     .kier-o .why-grid { grid-template-columns: minmax(0, 1fr); }
-  }
-  @media (max-width: 420px) {
-    .kh-fakty .stat .n { font-size: 22px; }
   }
 </style>
