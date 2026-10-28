@@ -72,6 +72,7 @@ jobs:
         env:
           SITE0: ${{ steps.pages.outputs.origin }}
           BASE0: ${{ steps.pages.outputs.base_path }}
+          PRZELACZNIK: nie
         run: |
           WARIANTY=$(git ls-remote --heads origin 'wariant-*' | sed 's#.*refs/heads/wariant-##' | sort)
           if [ -z "$WARIANTY" ]; then echo "Brak gałęzi wariant-*"; exit 0; fi
@@ -98,7 +99,10 @@ jobs:
             linki="$linki<a data-wariant=\"$w\" href=\"$BASE0/\">$e</a>"
           done
           export PASEK="<div class=\"wr-pasek\" data-pagefind-ignore role=\"navigation\" aria-label=\"Warianty wyglądu (podgląd)\"><span>Wariant:</span>$linki</div><style>.wr-pasek{position:fixed;left:10px;bottom:10px;z-index:9999;display:flex;flex-wrap:wrap;align-items:center;gap:2px;max-width:calc(100vw - 20px);padding:4px;border-radius:999px;background:#0b1630;box-shadow:0 4px 18px rgb(0 0 0/.35);font:700 12px/1 system-ui,sans-serif}.wr-pasek span{padding:0 6px 0 8px;color:#c4cee0}.wr-pasek a{padding:8px 10px;border-radius:999px;color:#fff;text-decoration:none}.wr-pasek a:hover{background:rgb(255 255 255/.14)}.wr-pasek a[aria-current]{background:#f2a33a;color:#101828}</style><script>(function(){var b='$BASE0',p=location.pathname,s=p.slice(b.length),m=s.match(/^\\/warianty\\/([^\\/]+)/),c=m?m[1]:'',r=(m?s.slice(m[0].length):s)||'/';document.querySelectorAll('.wr-pasek a').forEach(function(a){var w=a.getAttribute('data-wariant');a.href=b+(w?'/warianty/'+w:'')+r+location.hash;if(w===c)a.setAttribute('aria-current','true');});})();</script>"
-          find dist -name '*.html' -print0 | xargs -0 perl -0pi -e 's/<\/body>/$ENV{PASEK}<\/body>/'
+          # Przełącznik wariantów w rogu strony: włączany zmienną PRZELACZNIK (tak/nie); podglądy pod /warianty/ działają niezależnie.
+          if [ "$PRZELACZNIK" = "tak" ]; then
+            find dist -name '*.html' -print0 | xargs -0 perl -0pi -e 's/<\/body>/$ENV{PASEK}<\/body>/'
+          fi
           echo "::notice title=Warianty::opublikowane:$ok"
 
       - uses: actions/upload-pages-artifact@v4
