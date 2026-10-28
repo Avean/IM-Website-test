@@ -8,8 +8,9 @@ import type { Lang } from '../lib/daty';
 import ustawienia from '../data/ustawienia.json';
 
 // Nad tytułem: link „← poziom wyżej”. Cel: `wstecz` albo ostatni z `okruszki`, który ma adres, albo strona główna.
-interface Props { tytul: string; lead?: string; lang: Lang; okruszki?: { etykieta: string; adres?: string }[]; wstecz?: { etykieta: string; adres: string } }
-const { tytul, lead, lang, okruszki = [], wstecz } = Astro.props;
+// nadtytul: mała etykieta nad tytułem (np. „Studia I i II stopnia” na stronie kierunku).
+interface Props { tytul: string; lead?: string; lang: Lang; okruszki?: { etykieta: string; adres?: string }[]; wstecz?: { etykieta: string; adres: string }; nadtytul?: string }
+const { tytul, lead, lang, okruszki = [], wstecz, nadtytul } = Astro.props;
 const zOkruszkow = [...okruszki].reverse().find((o) => o.adres) as { etykieta: string; adres: string } | undefined;
 const cel = wstecz ?? zOkruszkow ?? { etykieta: t(lang, 'stronaGlowna'), adres: '/' };
 
@@ -57,6 +58,7 @@ const naPasie = wariant === 'granat'
       </figure>
     )}
     <Wstecz etykieta={cel.etykieta} adres={cel.adres} lang={lang} />
+    {nadtytul && <p class="eyebrow">{nadtytul}</p>}
     <h1>{tytul}</h1>
     {lead && <p class="lead">{lead}</p>}
     <slot />

@@ -5,8 +5,8 @@ import { render, getCollection } from 'astro:content';
 import type { CollectionEntry } from 'astro:content';
 import Baza from '../layouts/Baza.astro';
 import Ikona from '../components/Ikona.astro';
+import NaglowekStrony from '../components/NaglowekStrony.astro';
 import SpisTresci from '../components/SpisTresci.astro';
-import Wstecz from '../components/Wstecz.astro';
 import { u, isExternal } from '../lib/url';
 import { t, wJezyku, wybierz } from '../lib/i18n';
 import { today, type Lang } from '../lib/daty';
@@ -79,44 +79,25 @@ const sekcje = [
 ].map((s) => ({ depth: 2, ...s }));
 ---
 <Baza tytul={nazwa} opis={w(d, 'opis')} opublikowany={d.opublikowany}>
-  {/* Telefon (≤ 760 px) — wygląd „Portal”: niższy nagłówek, fakty 2×2, zwartsze sekcje (style na dole); znaczniki te same. */}
-  <div class="page-head kh">
-    <div class="wrap">
-      <Wstecz etykieta={T('Studia', 'Study')} adres="/studia" lang={lang} />
-      {d.podtytul && <p class="eyebrow">{w(d, 'podtytul')}</p>}
-      <h1>{nazwa}</h1>
-      {d.opis && <p class="lead">{w(d, 'opis')}</p>}
-      {d.przyciski.length > 0 && (
-        <div class="btn-row kh-btns">
-          {d.przyciski.map((p, i) => (
-            <a class={`btn${i === 0 ? ' btn-accent' : ''}`} href={href(p.adres)}>{w(p, 'etykieta')}{isExternal(p.adres) && <Ikona nazwa="zewnetrzny" rozmiar={14} />}</a>
-          ))}
-        </div>
-      )}
+  {/* Telefon (≤ 760 px) — wygląd „Portal”: fakty 2×2, zwartsze sekcje (style na dole). */}
+  {/* Baner jak na stronie Studia (zdjęcie działu z NaglowekStrony); przyciski w banerze, liczby pod nim. */}
+  <NaglowekStrony tytul={nazwa} lead={d.opis ? w(d, 'opis') : undefined} lang={lang} nadtytul={d.podtytul ? w(d, 'podtytul') : undefined} wstecz={{ etykieta: T('Studia', 'Study'), adres: '/studia' }}>
+    {d.przyciski.length > 0 && (
+      <div class="btn-row kh-btns">
+        {d.przyciski.map((p, i) => (
+          <a class={`btn${i === 0 ? ' btn-accent' : ''}`} href={href(p.adres)}>{w(p, 'etykieta')}{isExternal(p.adres) && <Ikona nazwa="zewnetrzny" rozmiar={14} />}</a>
+        ))}
+      </div>
+    )}
+  </NaglowekStrony>
+
+  <div class="wrap layout kier">
+    <div class="main">
       {d.fakty.length > 0 && (
         <div class="stats kh-fakty">
           {d.fakty.map((f) => <div class="stat"><span class="n">{f.wartosc}</span><span class="l">{w(f, 'etykieta')}</span></div>)}
         </div>
       )}
-    </div>
-  </div>
-
-  <div class="wrap layout kier">
-    <div class="main">
-      <div class="entry-cards">
-        <a class="entry" href="#o-kierunku">
-          <Ikona nazwa="czapka" rozmiar={26} />
-          {doktorat
-            ? <span><strong>{T('Chcę zrobić doktorat', 'I want to do a PhD')}</strong><span>{T('O Kolegium, rekrutacja i stypendia', 'About the College, admissions and stipends')}</span></span>
-            : <span><strong>{T('Chcę studiować', 'I want to study here')}</strong><span>{specjalnosci.length ? T('O kierunku, specjalności i perspektywy po studiach', 'About the programme, specialisations and careers') : T('O kierunku i perspektywy po studiach', 'About the programme and careers')}</span></span>}
-        </a>
-        <a class="entry" href="#przebieg">
-          <Ikona nazwa="kalendarz" rozmiar={26} />
-          {doktorat
-            ? <span><strong>{T('Jestem doktorantem', 'I am a PhD student')}</strong><span>{T('Ścieżka doktoranta, programy, terminy i dokumenty', 'Doctoral path, programmes, deadlines and documents')}</span></span>
-            : <span><strong>{T('Już studiuję', 'I am a student')}</strong><span>{T('Przebieg studiów, programy, terminy i formularze', 'Study path, curricula, deadlines and forms')}</span></span>}
-        </a>
-      </div>
       <SpisTresci naglowki={sekcje} lang={lang} wariant="gora" />
 
       <section class="zsec kier-o" aria-labelledby="o-kierunku">
@@ -345,15 +326,13 @@ const sekcje = [
 
 <style>
   .kh-btns { margin-top: 6px; }
-  .kh-fakty { margin: 14px 0 0; }
-  .kh-fakty .stat { background: var(--bg); }
+  .kh-fakty { margin: 0 0 22px; }
 
   /* ---------- telefon (≤ 760 px): wygląd „Portal” ---------- */
   @media (max-width: 760px) {
     /* nagłówek: tekst, przyciski i fakty (2×2) ciaśniej */
-    .kh .wrap { gap: 6px; }
     .kh-btns { margin-top: 4px; }
-    .kh-fakty { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin-top: 8px; }
+    .kh-fakty { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; margin: 0 0 16px; }
     /* treść na pełną szerokość (spis sekcji jest i tak rozwijaną listą nad treścią) */
     .kier { display: block; padding-top: clamp(14px, 2vw, 22px); padding-bottom: clamp(28px, 4vw, 44px); }
     /* „O kierunku”: „Dlaczego warto” pod tekstem, dwie w rzędzie (na wąskim telefonie jedna) */
