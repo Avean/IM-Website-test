@@ -1,0 +1,95 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Instytut Matematyczny UWr//Strona IM//PL
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Seminarium: Równania różniczkowe
+X-WR-TIMEZONE:Europe/Warsaw
+REFRESH-INTERVAL;VALUE=DURATION:PT6H
+X-PUBLISHED-TTL:PT6H
+BEGIN:VTIMEZONE
+TZID:Europe/Warsaw
+BEGIN:DAYLIGHT
+TZOFFSETFROM:+0100
+TZOFFSETTO:+0200
+TZNAME:CEST
+DTSTART:19700329T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:+0200
+TZOFFSETTO:+0100
+TZNAME:CET
+DTSTART:19701025T030000
+RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:ref-rownania-rozniczkowe-2026-09-21-vazquez@avean.github.io
+DTSTAMP:20261029T201737Z
+DTSTART;TZID=Europe/Warsaw:20260921T151500
+DTEND;TZID=Europe/Warsaw:20260921T164500
+SUMMARY:PDE models of diffusion: linear and nonlinear\, local and nonlocal
+LOCATION:sala HS
+DESCRIPTION:Juan Luis Vázquez (Universidad Autónoma de Madrid)\nSeminariu
+ m: Równania różniczkowe\nhttps://avean.github.io/IM-Website-test/semina
+ ria/rownania-rozniczkowe#2026-09-21-vazquez
+URL:https://avean.github.io/IM-Website-test/seminaria/rownania-rozniczkowe#
+ 2026-09-21-vazquez
+END:VEVENT
+BEGIN:VEVENT
+UID:ref-rownania-rozniczkowe-2026-10-05-karch@avean.github.io
+DTSTAMP:20261029T201737Z
+DTSTART;TZID=Europe/Warsaw:20261005T151500
+DTEND;TZID=Europe/Warsaw:20261005T164500
+SUMMARY:Rozwiązania automorficzne (self-similar) równań konwekcji-dyfuzj
+ i
+LOCATION:sala 603
+DESCRIPTION:Grzegorz Karch (Uniwersytet Wrocławski)\nSeminarium: Równania
+  różniczkowe\nhttps://avean.github.io/IM-Website-test/seminaria/rownania
+ -rozniczkowe#2026-10-05-karch
+URL:https://avean.github.io/IM-Website-test/seminaria/rownania-rozniczkowe#
+ 2026-10-05-karch
+END:VEVENT
+BEGIN:VEVENT
+UID:ref-rownania-rozniczkowe-2026-10-12-karch-2@avean.github.io
+DTSTAMP:20261029T201737Z
+DTSTART;TZID=Europe/Warsaw:20261012T151500
+DTEND;TZID=Europe/Warsaw:20261012T164500
+SUMMARY:Rozwiązania automorficzne (self-similar) równań konwekcji-dyfuzj
+ i
+LOCATION:sala 605
+DESCRIPTION:Grzegorz Karch (Uniwersytet Wrocławski)\nSeminarium: Równania
+  różniczkowe\nhttps://avean.github.io/IM-Website-test/seminaria/rownania
+ -rozniczkowe#2026-10-12-karch-2
+URL:https://avean.github.io/IM-Website-test/seminaria/rownania-rozniczkowe#
+ 2026-10-12-karch-2
+END:VEVENT
+BEGIN:VEVENT
+UID:ref-rownania-rozniczkowe-2026-10-19-lien@avean.github.io
+DTSTAMP:20261029T201737Z
+DTSTART;TZID=Europe/Warsaw:20261019T151500
+DTEND;TZID=Europe/Warsaw:20261019T164500
+SUMMARY:A Schauder regularity theory for nonlocal viscous Hamilton–Jacobi
+  equations
+LOCATION:sala 605
+DESCRIPTION:Robin Østern Lien (NTNU)\nSeminarium: Równania różniczkowe\
+ nhttps://avean.github.io/IM-Website-test/seminaria/rownania-rozniczkowe#20
+ 26-10-19-lien
+URL:https://avean.github.io/IM-Website-test/seminaria/rownania-rozniczkowe#
+ 2026-10-19-lien
+END:VEVENT
+BEGIN:VEVENT
+UID:ref-rownania-rozniczkowe-2026-10-26-jakobsen@avean.github.io
+DTSTAMP:20261029T201737Z
+DTSTART;TZID=Europe/Warsaw:20261026T151500
+DTEND;TZID=Europe/Warsaw:20261026T164500
+SUMMARY:Long time behaviour of mean field games with fractional diffusion
+LOCATION:sala 605
+DESCRIPTION:Espen Jakobsen (NTNU)\nSeminarium: Równania różniczkowe\nhtt
+ ps://avean.github.io/IM-Website-test/seminaria/rownania-rozniczkowe#2026-1
+ 0-26-jakobsen
+URL:https://avean.github.io/IM-Website-test/seminaria/rownania-rozniczkowe#
+ 2026-10-26-jakobsen
+END:VEVENT
+END:VCALENDAR

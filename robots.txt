@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://avean.github.io/IM-Website-test/sitemap.xml
